@@ -61,7 +61,7 @@ src/main/resources/languages/missing/
 
 Main report:
 
-- [missing/SUMMARY.md](/Users/danielchen0322/Projects/TrialUHC/src/main/resources/languages/missing/SUMMARY.md)
+- [missing/SUMMARY.md](missing/SUMMARY.md)
 
 These reports show which keys are missing or blank for each language.
 
