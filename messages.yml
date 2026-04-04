@@ -58,7 +58,7 @@ language-menu-code-lore: "<#7b8aa0>Locale:</#7b8aa0> <white><language></white>"
 language-menu-translator-lore: "<#7b8aa0>Translator:</#7b8aa0> <white><translator></white>"
 language-menu-current-lore: "<#7b8aa0>Current:</#7b8aa0> <white><language></white>"
 language-menu-selected-lore: "<#6dd3a0>Currently selected.</#6dd3a0>"
-config-menu-title: "<#334155><bold>Server Config</bold></#334155>"
+config-menu-title: "<#334155><bold>Game Config</bold></#334155>"
 config-menu-filler: "<dark_gray> </dark_gray>"
 config-menu-no-permission: "<prefix><#f4d35e>You can view this menu, but only admins can edit values.</#f4d35e>"
 config-menu-admin-title: "<#6dd3a0><bold>Admin Edit Mode</bold></#6dd3a0>"
@@ -269,6 +269,9 @@ death-message-fire: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>w
 death-message-generic: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>died.</white>"
 portals-disabled: "<prefix><#f95738>Nether and End travel are disabled on this server.</#f95738>"
 potions-disabled: "<prefix><#f95738>Potions are disabled in this match.</#f95738>"
+suspicious-stew-disabled: "<prefix><#f95738>Suspicious stew is disabled in this match.</#f95738>"
+enchanting-disabled: "<prefix><#f95738>Enchanting is disabled in this match.</#f95738>"
+brewing-disabled: "<prefix><#f95738>Brewing is disabled in this match.</#f95738>"
 
 # Lobby systems and items
 lobby-pvp-hold-instruction: "<prefix><#f4d35e>Hold the PvP sword for <seconds>s to enable lobby PvP.</#f4d35e>"
