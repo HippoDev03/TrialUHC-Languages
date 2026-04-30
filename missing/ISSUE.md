@@ -1,9 +1,9 @@
-# Missing keys for `messages_zh_TW.yml`
+# Missing Translation Keys
 
-- Locale: `zh_TW`
-- Missing keys: `92`
+_Auto-updated by CI._
+**Total missing keys:** `92`
 
-## Missing
+## `messages_zh_TW.yml` (92)
 
 - `help-desc-killalloffline`
 - `killalloffline-done`
@@ -97,3 +97,4 @@
 - `team.visibility-private`
 - `team.visibility-public`
 - `team.winner`
+

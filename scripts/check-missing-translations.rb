@@ -52,6 +52,9 @@ language_files = Dir.children(ROOT)
 
 summary_lines = ["# Missing Translation Report", ""]
 total_missing = 0
+issue_lines = ["# Missing Translation Keys", ""]
+issue_lines << "_Auto-updated by CI._"
+issue_lines << ""
 
 language_files.each do |file_name|
   file_path = File.join(ROOT, file_name)
@@ -82,12 +85,24 @@ language_files.each do |file_name|
 
   File.write(report_path, lines.join("\n") + "\n")
   summary_lines << "- `#{file_name}`: #{missing_keys.size} missing"
+  issue_lines << "## `#{file_name}` (#{missing_keys.size})"
+  issue_lines << ""
+  if missing_keys.empty?
+    issue_lines << "- No missing keys."
+  else
+    missing_keys.each do |key|
+      issue_lines << "- `#{key}`"
+    end
+  end
+  issue_lines << ""
 end
 
 summary_lines << ""
 summary_lines << "Total missing keys: `#{total_missing}`"
+issue_lines.insert(3, "**Total missing keys:** `#{total_missing}`")
 
 File.write(File.join(REPORT_DIR, "SUMMARY.md"), summary_lines.join("\n") + "\n")
+File.write(File.join(REPORT_DIR, "ISSUE.md"), issue_lines.join("\n") + "\n")
 
 puts "Generated reports in #{REPORT_DIR}"
 puts "Total missing keys: #{total_missing}"
