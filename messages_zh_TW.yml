@@ -398,6 +398,11 @@ lobby-item:
     lore:
       - "<#cbd5e1>顯示頂尖玩家或排名。</#cbd5e1>"
       - "<#7b8aa0>開啟排行榜檢視器。</#7b8aa0>"
+  team_selector:
+    name: "<#7dd3fc><bold>隊伍</bold></#7dd3fc>"
+    lore:
+      - "<#cbd5e1>開啟隊伍選擇器。</#cbd5e1>"
+      - "<#7b8aa0>在比賽開始前加入或離開隊伍。</#7b8aa0>"
   lobby_spectator:
     name: "<#9db4c0><bold>觀戰比賽</bold></#9db4c0>"
     lore:
@@ -762,12 +767,6 @@ team-menu-click-join: "<#7dd3fc>點擊加入此隊伍。</#7dd3fc>"
 team-menu-selected: "<#6dd3a0>目前已選擇。</#6dd3a0>"
 team-menu-leave: "<#f95738><bold>離開隊伍</bold></#f95738>"
 team-menu-leave-lore: "<#cbd5e1>點擊離開目前的隊伍。</#cbd5e1>"
-lobby-item:
-  team_selector:
-    name: "<#7dd3fc><bold>隊伍</bold></#7dd3fc>"
-    lore:
-      - "<#cbd5e1>開啟隊伍選擇器。</#cbd5e1>"
-      - "<#7b8aa0>在比賽開始前加入或離開隊伍。</#7b8aa0>"
 list-entry-team: "<team_prefix><player>"
 title-winner-team: "<#6dd3a0><bold><team></bold></#6dd3a0>"
 subtitle-winner-team: "<white>贏得了比賽</white>"
