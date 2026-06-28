@@ -14,9 +14,10 @@ This repository stores TrialUHC translation files.
 Every language file must start with:
 
 ```yml
-language-name: "English (US)"
-language-code: "en_us"
-language-translator: "Your Name"
+language:
+  name: "English (US)"
+  code: "en_us"
+  translator: "Your Name"
 ```
 
 ## Naming Rules
@@ -39,9 +40,9 @@ language-translator: "Your Name"
 1. Copy `messages.yml`
 2. Rename it to `messages_<locale>.yml`
 3. Update:
-   - `language-name`
-   - `language-code`
-   - `language-translator`
+   - `language.name`
+   - `language.code`
+   - `language.translator`
 4. Translate values without changing keys
 
 ## How To Update Existing Translations

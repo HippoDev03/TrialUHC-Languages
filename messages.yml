@@ -1,815 +1,1491 @@
-# Language metadata
-language-name: "English (US)"
-language-code: "en_us"
-language-translator: "TrialUHC Team"
-
-# Core branding
+---
+language:
+  name: English (US)
+  code: en_us
+  translator: TrialUHC Team
+  current: |-
+    <prefix><#7b8aa0>Language mode:</#7b8aa0> <white><mode></white> <#7b8aa0>| Active:</#7b8aa0> <white><effective></white>
+    <prefix><#7b8aa0>Available:</#7b8aa0> <white><available></white>
+  set:
+    text: "<prefix><#6dd3a0>Your language is now set to <white><language></white>.</#6dd3a0>"
+    auto: "<prefix><#6dd3a0>Your language now follows your Minecraft client locale.</#6dd3a0>"
+  invalid: "<prefix><#f95738>Language <white><language></white> is not available.</#f95738>
+    <#7b8aa0>Available:</#7b8aa0> <white><available></white>"
+  menu:
+    title: "<#334155><bold>Select Language</bold></#334155>"
+    filler: "<dark_gray> </dark_gray>"
+    auto:
+      lore: "<#cbd5e1>Follow your Minecraft client locale.</#cbd5e1>"
+    language:
+      name: "<#f4d35e><bold><language></bold></#f4d35e>"
+    select:
+      lore: "<#cbd5e1>Click to use this language.</#cbd5e1>"
+    code:
+      lore: "<#7b8aa0>Locale:</#7b8aa0> <white><language></white>"
+    translator:
+      lore: "<#7b8aa0>Translator:</#7b8aa0> <white><translator></white>"
+    current:
+      lore: "<#7b8aa0>Current:</#7b8aa0> <white><language></white>"
+    selected:
+      lore: "<#6dd3a0>Currently selected.</#6dd3a0>"
 prefix: "<#7b8aa0>[</#7b8aa0><gradient:#f4d35e:#ee964b>TrialUHC</gradient><#7b8aa0>]</#7b8aa0> "
-info-title: "<gradient:#f4d35e:#ee964b><bold>TrialUHC</bold></gradient>"
-info-version: "<prefix><#7b8aa0>Version:</#7b8aa0> <white><version></white>"
-info-author: "<prefix><#7b8aa0>Author:</#7b8aa0> <#f95738><u>HippoDev03</u></#f95738>"
-info-author-hover: "<#faf0ca>Click to open GitHub</#faf0ca>"
-
-# Command usage
-usage: "<prefix><#f4d35e>Usage: /uhc <pause|resume|start|forcestart|stop|state|setlobby|skipGracePeriod|skipphase|reload|checkready|reset|gen [world] [terrain=normal|flat|amplified|large_biomes|void] [biome=PLAINS] [generator=Plugin:gen] [hardcore=false] [seed=123]|preloadworld [radius]|kill <player|selector>|level [player]|papi|recipes|revive <player>></#f4d35e>"
-kill-usage: "<prefix><#f4d35e>Usage: /uhc kill <player|selector></#f4d35e>"
-level-usage: "<prefix><#f4d35e>Usage: /uhc level [player]</#f4d35e>"
-revive-usage: "<prefix><#f4d35e>Usage: /uhc revive <player></#f4d35e>"
-lobbygame-usage: "<prefix><#f4d35e>Usage: /uhc lobbygame <start <math|unscramble [word]>|stop|word <add|remove|list> [word]></#f4d35e>"
-pm-usage: "<prefix><#f4d35e>Usage: /pm <player> <message></#f4d35e>"
-reply-usage: "<prefix><#f4d35e>Usage: /reply <message></#f4d35e>"
-profile-usage: "<prefix><#f4d35e>Usage: /profile [player]</#f4d35e>"
-world-usage: "<prefix><#f4d35e>Usage: /world <list|current|gen [world]|load <world>|unload <world>|preload [world] [radius]|select <world>|tp [world]|regen [world]|delete <world>|clean></#f4d35e>"
-world-load-usage: "<prefix><#f4d35e>Usage: /world load <world></#f4d35e>"
-world-unload-usage: "<prefix><#f4d35e>Usage: /world unload <world></#f4d35e>"
-world-tp-usage: "<prefix><#f4d35e>Usage: /world tp [world]</#f4d35e>"
-world-preload-usage: "<prefix><#f4d35e>Usage: /world preload <status|stop|[world] [radius]></#f4d35e>"
-border-usage: "<prefix><#f4d35e>Usage: /border <info|set <size>|center <x> <z>|shrink <size> <seconds>|reset></#f4d35e>"
-announce-usage: "<prefix><#f4d35e>Usage: /announce <message></#f4d35e>"
-heal-usage: "<prefix><#f4d35e>Usage: /heal [player]</#f4d35e>"
-freeze-usage: "<prefix><#f4d35e>Usage: /freeze <player></#f4d35e>"
-unfreeze-usage: "<prefix><#f4d35e>Usage: /unfreeze <player></#f4d35e>"
-preload-usage: "<prefix><#f4d35e>Usage: /uhc preloadworld <status|stop|[radius]></#f4d35e>"
-language-usage: "<prefix><#f4d35e>Usage: /language [locale|auto]</#f4d35e>"
-
-# General command feedback
+quick-actions:
+  menu:
+    title: "<bold>TrialUHC Menu</bold>"
+    label: "<#f4d35e><bold>TrialUHC Menu</bold></#f4d35e>"
+info:
+  title: "<gradient:#f4d35e:#ee964b><bold>TrialUHC</bold></gradient>"
+  version: "<prefix><#7b8aa0>Version:</#7b8aa0> <white><version></white>"
+  author:
+    text: "<prefix><#7b8aa0>Developed by:</#7b8aa0> <#f4d35e>HippoDev03</#f4d35e>"
+    hover: "<#faf0ca>Click to open GitHub</#faf0ca>"
+usage:
+  uhc:
+    root: "<prefix><#f4d35e>Usage: /uhc <pause|resume|start|forcestart|stop|state|setlobby|skipGracePeriod|skipphase|reload|checkready|reset|gen
+      [world] [terrain=normal|flat|amplified|large_biomes|void] [biome=PLAINS] [generator=Plugin:gen]
+      [hardcore=false] [seed=123]|preloadworld [radius]|kill <player|selector>|level
+      [player]|papi|recipes|revive <player>></#f4d35e>"
+    kill: "<prefix><#f4d35e>Usage: /uhc kill <player|selector></#f4d35e>"
+    level: "<prefix><#f4d35e>Usage: /uhc level [player]</#f4d35e>"
+    revive: "<prefix><#f4d35e>Usage: /uhc revive <player></#f4d35e>"
+    lobbygame: "<prefix><#f4d35e>Usage: /uhc lobbygame <start <math|unscramble [word]>|stop|word
+      <add|remove|list> [word]></#f4d35e>"
+    pm: "<prefix><#f4d35e>Usage: /pm <player> <message></#f4d35e>"
+    reply: "<prefix><#f4d35e>Usage: /reply <message></#f4d35e>"
+    profile: "<prefix><#f4d35e>Usage: /profile [player]</#f4d35e>"
+    world:
+      root: "<prefix><#f4d35e>Usage: /world <list|current|gen [world]|load <world>|unload
+        <world>|preload [world] [radius]|select <world>|tp [world]|regen [world]|delete
+        <world>|clean></#f4d35e>"
+      load: "<prefix><#f4d35e>Usage: /world load <world></#f4d35e>"
+      unload: "<prefix><#f4d35e>Usage: /world unload <world></#f4d35e>"
+      tp: "<prefix><#f4d35e>Usage: /world tp [world]</#f4d35e>"
+      preload: "<prefix><#f4d35e>Usage: /world preload <status|stop|[world] [radius]></#f4d35e>"
+    border: "<prefix><#f4d35e>Usage: /border <info|set <size>|center <x> <z>|shrink
+      <size> <seconds>|reset></#f4d35e>"
+    announce: "<prefix><#f4d35e>Usage: /announce <message></#f4d35e>"
+    heal: "<prefix><#f4d35e>Usage: /heal [player]</#f4d35e>"
+    invsee: "<prefix><#f4d35e>Usage: /invsee <player></#f4d35e>"
+    freeze: "<prefix><#f4d35e>Usage: /freeze <player></#f4d35e>"
+    unfreeze: "<prefix><#f4d35e>Usage: /unfreeze <player></#f4d35e>"
+    preloadworld: "<prefix><#f4d35e>Usage: /uhc preloadworld <status|stop|[radius]></#f4d35e>"
+    language: "<prefix><#f4d35e>Usage: /language [locale|auto]</#f4d35e>"
+    gen: "<prefix><#f4d35e>Usage: /uhc gen [world] [terrain=normal|flat|amplified|large_biomes|void]
+      [biome=PLAINS] [generator=Plugin:id] [biome-provider=Plugin:id] [generator-settings=data]
+      [seed=123] [pack=uhc] [structures=true|false] [hardcore=true|false]</#f4d35e>"
+    report: "<prefix><#f4d35e>Usage: /report <player> <reason></#f4d35e>"
+    kit:
+      create: "<prefix><#f4d35e>Usage: /kit create <kit></#f4d35e>"
+      edit: "<prefix><#f4d35e>Usage: /kit edit <kit></#f4d35e>"
+      save: "<prefix><#f4d35e>Usage: /kit save [kit]</#f4d35e>"
+  team:
+    root: "<prefix><#f4d35e>Usage: /team <open|list|join|leave|chat|create|rename|color|public|private|transfer|kick|disband></#f4d35e>"
+    join: "<prefix><#f4d35e>Usage: /team join <team></#f4d35e>"
+    create: "<prefix><#f4d35e>Usage: /team create [id] [display name]</#f4d35e>"
+    delete: "<prefix><#f4d35e>Usage: /teamadmin delete <team|--all></#f4d35e>"
+    set: "<prefix><#f4d35e>Usage: /teamadmin set <player> <team|none></#f4d35e>"
+    rename: "<prefix><#f4d35e>Usage: /teamadmin rename <team> <display name></#f4d35e>"
+    rename-own: "<prefix><#f4d35e>Usage: /team rename <display name></#f4d35e>"
+    color: "<prefix><#f4d35e>Usage: /teamadmin color <team> <color></#f4d35e>"
+    color-own: "<prefix><#f4d35e>Usage: /team color <color></#f4d35e>"
+    size: "<prefix><#f4d35e>Usage: /teamadmin size <amount></#f4d35e>"
+    transfer: "<prefix><#f4d35e>Usage: /team transfer <player></#f4d35e>"
+    kick: "<prefix><#f4d35e>Usage: /team kick <player></#f4d35e>"
+    invite: "<prefix><#f4d35e>Usage: /team invite <player></#f4d35e>"
+  teamadmin:
+    root: "<prefix><#f4d35e>Usage: /teamadmin <create|delete|set|shuffle|clear|rename|color|kick|disband|enable|disable|size></#f4d35e>"
 reloaded: "<prefix><#6dd3a0>Configuration reloaded.</#6dd3a0>"
-lobby-set: "<prefix><#6dd3a0>Lobby location updated.</#6dd3a0>"
-heal-self: "<prefix><#6dd3a0>You have been healed.</#6dd3a0>"
-heal-other: "<prefix><#6dd3a0>You healed <player>.</#6dd3a0>"
-heal-received: "<prefix><#6dd3a0>You were healed by an administrator.</#6dd3a0>"
-ping: "<prefix><#7dd3fc>Your ping is <white><ping>ms</white>.</#7dd3fc>"
-ping-other: "<prefix><#7dd3fc><player>'s ping is <white><ping>ms</white>.</#7dd3fc>"
-pingall-summary: "<prefix><#7b8aa0>Online Player Pings:</#7b8aa0> <white><online></white>"
-list-summary: "<prefix><#7b8aa0>Online Players:</#7b8aa0> <white><online>/<max></white>"
-list-entry-eliminated: "<gray><player></gray>"
-list-entry-lobby-spectator: "<#9db4c0><player></#9db4c0>"
-list-entry-active: "<#6dd3a0><player></#6dd3a0>"
-list-entry-default: "<white><player></white>"
-language-current: "<prefix><#7b8aa0>Language mode:</#7b8aa0> <white><mode></white> <#7b8aa0>| Active:</#7b8aa0> <white><effective></white>\n<prefix><#7b8aa0>Available:</#7b8aa0> <white><available></white>"
-language-set: "<prefix><#6dd3a0>Your language is now set to <white><language></white>.</#6dd3a0>"
-language-set-auto: "<prefix><#6dd3a0>Your language now follows your Minecraft client locale.</#6dd3a0>"
-language-invalid: "<prefix><#f95738>Language <white><language></white> is not available.</#f95738> <#7b8aa0>Available:</#7b8aa0> <white><available></white>"
-language-menu-title: "<#334155><bold>Select Language</bold></#334155>"
-language-menu-filler: "<dark_gray> </dark_gray>"
-language-menu-auto: "<#7dd3fc><bold>Auto Detect</bold></#7dd3fc>"
-language-menu-auto-lore: "<#cbd5e1>Follow your Minecraft client locale.</#cbd5e1>"
-language-menu-language-name: "<#f4d35e><bold><language></bold></#f4d35e>"
-language-menu-select-lore: "<#cbd5e1>Click to use this language.</#cbd5e1>"
-language-menu-code-lore: "<#7b8aa0>Locale:</#7b8aa0> <white><language></white>"
-language-menu-translator-lore: "<#7b8aa0>Translator:</#7b8aa0> <white><translator></white>"
-language-menu-current-lore: "<#7b8aa0>Current:</#7b8aa0> <white><language></white>"
-language-menu-selected-lore: "<#6dd3a0>Currently selected.</#6dd3a0>"
-leaderboard-title: "<#334155><bold>Leaderboard</bold></#334155>"
-leaderboard-filler: "<dark_gray> </dark_gray>"
-leaderboard-empty: "<#f95738><bold>No leaderboard data yet.</bold></#f95738>"
-leaderboard-invalid-stat: "<prefix><#f95738>Unknown leaderboard stat.</#f95738>"
-leaderboard-stat-lore: "<#cbd5e1>Click to view this ranking.</#cbd5e1>"
-leaderboard-stat-selected-lore: "<#6dd3a0>Currently selected.</#6dd3a0>"
-leaderboard-page: "<#f4d35e><bold>Page <page>/<max_page></bold></#f4d35e>"
-leaderboard-prev-page: "<#7dd3fc><bold>Previous Page</bold></#7dd3fc>"
-leaderboard-next-page: "<#7dd3fc><bold>Next Page</bold></#7dd3fc>"
-leaderboard-entry-name: "<#f4d35e><bold>#<rank> <player></bold></#f4d35e>"
-leaderboard-entry-selected-stat: "<#f4d35e><bold><stat>:</bold></#f4d35e> <white><value></white>"
-leaderboard-entry-value: "<#7dd3fc>Value:</#7dd3fc> <white><value></white>"
-leaderboard-entry-kills: "<#7b8aa0>Kills:</#7b8aa0> <white><kills></white>"
-leaderboard-entry-wins: "<#7b8aa0>Wins:</#7b8aa0> <white><wins></white>"
-leaderboard-entry-assists: "<#7b8aa0>Assists:</#7b8aa0> <white><assists></white>"
-leaderboard-entry-deaths: "<#7b8aa0>Deaths:</#7b8aa0> <white><deaths></white>"
-leaderboard-entry-games: "<#7b8aa0>Games:</#7b8aa0> <white><games></white>"
-leaderboard-entry-level: "<#7b8aa0>Level:</#7b8aa0> <white><level></white>"
-leaderboard-entry-experience: "<#7b8aa0>Experience:</#7b8aa0> <white><experience></white>"
-leaderboard-entry-kd: "<#7b8aa0>KD:</#7b8aa0> <white><kd></white>"
-leaderboard-entry-killstreak: "<#7b8aa0>Best Killstreak:</#7b8aa0> <white><killstreak></white>"
-leaderboard-hologram-title: "<#f4d35e><bold>Top <stat></bold></#f4d35e>"
-leaderboard-hologram-line: "<#7dd3fc><rank>.</#7dd3fc> <white><player></white> <#7b8aa0>-</#7b8aa0> <#f4d35e><value></#f4d35e>"
-hologram-usage: "<prefix><#f4d35e>Usage: /hologram set <type></#f4d35e>"
-hologram-invalid-type: "<prefix><#f95738>Unknown hologram type <white><type></white>.</#f95738>"
-hologram-set: "<prefix><#6dd3a0>Updated <white><type></white> hologram location.</#6dd3a0>"
-leaderboard-stat-wins: "<#f4d35e><bold>Wins</bold></#f4d35e>"
-leaderboard-stat-kills: "<#f95738><bold>Kills</bold></#f95738>"
-leaderboard-stat-assists: "<#7dd3fc><bold>Assists</bold></#7dd3fc>"
-leaderboard-stat-deaths: "<#9ca3af><bold>Deaths</bold></#9ca3af>"
-leaderboard-stat-games: "<#a7f3d0><bold>Games</bold></#a7f3d0>"
-leaderboard-stat-level: "<#c4b5fd><bold>Level</bold></#c4b5fd>"
-leaderboard-stat-experience: "<#86efac><bold>Experience</bold></#86efac>"
-leaderboard-stat-kd: "<#fda4af><bold>KD</bold></#fda4af>"
-leaderboard-stat-killstreak: "<#fb7185><bold>Killstreak</bold></#fb7185>"
-kit-menu-title: "<#334155><bold>Kit Selection</bold></#334155>"
-kit-menu-filler: "<dark_gray> </dark_gray>"
-kit-menu-empty: "<#f95738><bold>No Kits Available</bold></#f95738>"
-kit-menu-empty-lore: "<#cbd5e1>Add kits in kits.yml to use this menu.</#cbd5e1>"
-kit-menu-select-lore-admin: "<#cbd5e1>Click to make this the active global kit.</#cbd5e1>"
-kit-menu-select-lore-viewer: "<#cbd5e1>Preview only. Admins choose the active global kit.</#cbd5e1>"
-kit-menu-code-lore: "<#7b8aa0>ID:</#7b8aa0> <white><kit></white>"
-kit-menu-selected-lore: "<#6dd3a0>Currently active.</#6dd3a0>"
-kit-menu-preview-title: "<#f4d35e><bold><kit></bold></#f4d35e>"
-kit-menu-preview-lore-1: "<#cbd5e1>This preview matches your starting inventory.</#cbd5e1>"
-kit-menu-preview-lore-2: "<#7b8aa0>Hotbar is shown on the fifth row.</#7b8aa0>"
-kit-menu-offhand-label: "<#9db4c0><bold>Offhand</bold></#9db4c0>"
-kit-menu-offhand-lore: "<#7b8aa0>Slot preview for shields, totems, and more.</#7b8aa0>"
-kit-default-description:
-  - "<#cbd5e1>Edited in game by an admin.</#cbd5e1>"
-kit-set: "<prefix><#6dd3a0>Selected kit: <white><kit></white></#6dd3a0>"
-kit-set-global: "<prefix><#6dd3a0>Active global kit is now <white><kit></white>.</#6dd3a0>"
-kit-locked: "<prefix><#f95738>Kit selection is only available in the lobby.</#f95738>"
-kit-create-usage: "<prefix><#f4d35e>Usage: /kit create <kit></#f4d35e>"
-kit-create-success: "<prefix><#6dd3a0>Created kit <white><kit></white> and loaded it into your inventory editor.</#6dd3a0>"
-kit-create-failed: "<prefix><#f95738>Could not create that kit. It may already exist.</#f95738>"
-kit-edit-usage: "<prefix><#f4d35e>Usage: /kit edit <kit></#f4d35e>"
-kit-save-usage: "<prefix><#f4d35e>Usage: /kit save [kit]</#f4d35e>"
-kit-edit-loaded: "<prefix><#7dd3fc>Loaded kit <white><kit></white> into your inventory. Use <white>/kit save</white> when you are done.</#7dd3fc>"
-kit-edit-saved: "<prefix><#6dd3a0>Saved your current inventory to kit <white><kit></white>.</#6dd3a0>"
-kit-edit-broadcast: "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>updated kit</#cbd5e1> <white><kit></white><#cbd5e1>.</#cbd5e1>"
-kit-set-global-broadcast: "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>set the active kit to</#cbd5e1> <white><kit></white><#cbd5e1>.</#cbd5e1>"
-kit-edit-failed: "<prefix><#f95738>Could not save that kit to kits.yml.</#f95738>"
-config-menu-title: "<#334155><bold>Game Config</bold></#334155>"
-config-menu-filler: "<dark_gray> </dark_gray>"
-config-menu-no-permission: "<prefix><#f4d35e>You can view this menu, but only admins can edit values.</#f4d35e>"
-config-menu-admin-title: "<#6dd3a0><bold>Admin Edit Mode</bold></#6dd3a0>"
-config-menu-viewer-title: "<#f4d35e><bold>Viewer Mode</bold></#f4d35e>"
-config-menu-admin-lore: "<#cbd5e1>Click options below to update live config values.</#cbd5e1>"
-config-menu-viewer-lore: "<#cbd5e1>You can browse settings, but only admins can edit.</#cbd5e1>"
-config-menu-section-game: "<#f4d35e><bold>Game</bold></#f4d35e>"
-config-menu-section-rules: "<#7dd3fc><bold>Rules</bold></#7dd3fc>"
-config-menu-section-death-chest: "<#fda4af><bold>Death Chest</bold></#fda4af>"
-config-menu-section-integrations: "<#c4b5fd><bold>Integrations</bold></#c4b5fd>"
-config-menu-section-lore: "<#7b8aa0>Section header</#7b8aa0>"
-config-menu-updated: "<prefix><#6dd3a0>Updated <white><option></white> to <white><value></white>.</#6dd3a0>"
-config-menu-page: "<#f4d35e><bold>Page <page>/<max_page></bold></#f4d35e>"
-config-menu-prev: "<#7dd3fc><bold>Previous Page</bold></#7dd3fc>"
-config-menu-next: "<#7dd3fc><bold>Next Page</bold></#7dd3fc>"
-config-menu-entry-name: "<#f4d35e><bold><label></bold></#f4d35e>"
-config-menu-type-lore: "<#7b8aa0>Type:</#7b8aa0> <white><type></white>"
-config-menu-path-lore: "<#6b7280>Path:</#6b7280> <white><path></white>"
-config-menu-double-edit-lore: "<#cbd5e1>Left:-0.5 Right:+0.5 Shift:±5.0 Drop:±0.1</#cbd5e1>"
-config-menu-string-edit-lore: "<#cbd5e1>Click to edit in chat. Type 'exit' to cancel, 'sth' for empty.</#cbd5e1>"
-config-menu-readonly-lore: "<#f4d35e>Read-only in GUI.</#f4d35e>"
-config-menu-readonly: "<prefix><#f4d35e>This setting is read-only in the config GUI.</#f4d35e>"
-config-menu-chat-prompt: "<prefix><#7dd3fc>Editing <white><path></white>.</#7dd3fc> <#7b8aa0>Current:</#7b8aa0> <white><current></white>"
-config-menu-chat-hint: "<prefix><#cbd5e1>Type new value in chat. Type <white>exit</white> to cancel, <white>sth</white> to set empty.</#cbd5e1>"
-config-menu-chat-cancelled: "<prefix><#f4d35e>Config edit cancelled.</#f4d35e>"
-config-menu-group-lore: "<#7b8aa0>Category</#7b8aa0>"
-config-menu-group-game: "<#f4d35e><bold>Game</bold></#f4d35e>"
-config-menu-group-time: "<#f59e0b><bold>Time</bold></#f59e0b>"
-config-menu-group-rules: "<#7dd3fc><bold>Rules</bold></#7dd3fc>"
-config-menu-group-death-chest: "<#fda4af><bold>Death Chest</bold></#fda4af>"
-config-menu-group-border: "<#f59e0b><bold>Border</bold></#f59e0b>"
-config-menu-group-ready-check: "<#a7f3d0><bold>Ready Check</bold></#a7f3d0>"
-config-menu-group-chunky: "<#86efac><bold>Chunky</bold></#86efac>"
-config-menu-group-announce: "<#c4b5fd><bold>Announcements</bold></#c4b5fd>"
-config-menu-group-motd: "<#67e8f9><bold>MOTD</bold></#67e8f9>"
-config-menu-group-lobby: "<#93c5fd><bold>Lobby</bold></#93c5fd>"
-config-menu-group-ores: "<#f97316><bold>Ores</bold></#f97316>"
-config-menu-group-chat: "<#e879f9><bold>Chat</bold></#e879f9>"
-config-menu-group-license: "<#ef4444><bold>License</bold></#ef4444>"
-config-menu-group-other: "<#d1d5db><bold>Other</bold></#d1d5db>"
-config-menu-action-set-lobby: "<#93c5fd><bold>Set Lobby</bold></#93c5fd>"
-config-menu-action-set-lobby-lore-1: "<#cbd5e1>Set lobby to your current location.</#cbd5e1>"
-config-menu-action-set-lobby-lore-2: "<#7b8aa0>Equivalent to /uhc setlobby</#7b8aa0>"
-config-menu-value-lore: "<#7b8aa0>Current:</#7b8aa0> <white><value></white>"
-config-menu-int-edit-lore: "<#cbd5e1>Left:-1 Right:+1 Shift:±10</#cbd5e1>"
-config-menu-bool-edit-lore: "<#cbd5e1>Click to toggle this setting.</#cbd5e1>"
-config-menu-view-lore: "<#f4d35e>View only. Ask an admin to edit.</#f4d35e>"
-config-menu-bool-on: "Enabled"
-config-menu-bool-off: "Disabled"
-config-menu-option-min-players: "<#f4d35e><bold>Min Players</bold></#f4d35e>"
-config-menu-option-countdown: "<#f4d35e><bold>Countdown Seconds</bold></#f4d35e>"
-config-menu-option-disable-natural-regen: "<#f95738><bold>Disable Natural Regen</bold></#f95738>"
-config-menu-option-spectator-on-death: "<#7dd3fc><bold>Spectator On Death</bold></#7dd3fc>"
-config-menu-option-chunky-enabled: "<#86efac><bold>Chunky Integration</bold></#86efac>"
-config-menu-option-global-announcements: "<#c4b5fd><bold>Global Bungee Announce</bold></#c4b5fd>"
-config-menu-option-death-chest-enabled: "<#fda4af><bold>Death Chest Enabled</bold></#fda4af>"
-config-menu-option-death-chest-unlock-seconds: "<#fda4af><bold>Death Chest Unlock Seconds</bold></#fda4af>"
-config-menu-option-death-chest-double: "<#fda4af><bold>Death Chest Double Chest</bold></#fda4af>"
-
-# Help text
-help-title: "<gold>UHC Commands </gold><yellow>(<page>/<max_page>)</yellow>"
-help-suggest-hover: "<gray>Suggest <command></gray>"
-help-open-page-hover: "<gray>Open page <page></gray>"
-help-prev-button: "« Prev"
-help-next-button: "Next »"
-help-desc-pause: "Pause or resume the active match."
-help-desc-resume: "Resume a paused match."
-help-desc-start: "Start the match countdown."
-help-desc-forcestart: "Skip countdown and start scatter."
-help-desc-stop: "Stop the active match."
-help-desc-state: "Show current match state."
-help-desc-setlobby: "Set the lobby spawn to your location."
-help-desc-skipgrace: "End grace and enable PvP."
-help-desc-skipphase: "Skip the current match phase."
-help-desc-reload: "Reload TrialUHC configs."
-help-desc-checkready: "Open a ready-check GUI for all online players."
-help-desc-reset: "Force reset all match state."
-help-desc-gen: "Generate and select a game world."
-help-desc-preload: "Run Chunky pregeneration for the game world."
-help-desc-preload-status: "Show the active Chunky preload progress."
-help-desc-preload-stop: "Cancel the active Chunky preload."
-help-desc-kill: "Eliminate a player or selector."
-help-desc-killalloffline: "Eliminate all disconnected match players."
-help-desc-level: "Show level, XP, and next-level progress."
-help-desc-papi: "Show PlaceholderAPI soft-dependency status."
-help-desc-recipes: "Open the custom recipe viewer."
-help-desc-recipe: "Open the custom recipe viewer."
-help-desc-revive: "Revive an eliminated player."
-help-desc-lobbygame: "Start or manage lobby minigames."
-papi-status-enabled-detail: "MiniMessage PAPI parsing is active. %trialuhc_*% placeholders are registered."
-papi-status-disabled-detail: "PlaceholderAPI is not loaded. Install it in plugins/ to use PAPI placeholders."
-
-# Gamemode shortcuts
-gamemode-players-only: "<prefix><red>Only players can use this without a target.</red>"
-gamemode-no-permission-others: "<prefix><red>You do not have permission to change other players' gamemodes.</red>"
-gamemode-self-set: "<prefix><#6dd3a0>Set your gamemode to <gamemode>.</#6dd3a0>"
-gamemode-other-set: "<prefix><#6dd3a0>Set <player>'s gamemode to <gamemode>.</#6dd3a0>"
-gamemode-target-set: "<prefix><#6dd3a0>Your gamemode was set to <gamemode>.</#6dd3a0>"
-
-# Announcement and confirmation UIs
-announce-header: "<gray><bold>==============================</bold></gray>"
-announce-title: "<#f95738><bold>Announce</bold></#f95738>"
-announce-footer: "<gray><bold>==============================</bold></gray>"
-announce-sent: "<prefix><#6dd3a0>Announcement sent.</#6dd3a0>"
-confirm-title: "<red><bold>Are You Sure?</bold></red>"
-confirm-filler: "<dark_red> </dark_red>"
-confirm-continue: "<#6dd3a0><bold>Continue</bold></#6dd3a0>"
-confirm-continue-lore: "<#cbd5e1>Click to confirm this action.</#cbd5e1>"
-confirm-cancel: "<#f95738><bold>Cancel</bold></#f95738>"
-confirm-cancel-lore: "<#cbd5e1>Click to close this menu.</#cbd5e1>"
-confirm-cancelled: "<prefix><#f4d35e>Action cancelled.</#f4d35e>"
-
-# Ready check UI and flow
-checkready-title: "<#f4d35e><bold>Ready Check</bold></#f4d35e>"
-checkready-filler: "<dark_gray> </dark_gray>"
-checkready-ready: "<#6dd3a0><bold>Ready</bold></#6dd3a0>"
-checkready-ready-lore: "<#cbd5e1>Click if you are ready to play.</#cbd5e1>"
-checkready-not-ready-button: "<#f95738><bold>Not Ready</bold></#f95738>"
-checkready-not-ready-lore: "<#cbd5e1>Click if you are not ready.</#cbd5e1>"
-checkready-started: "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>started a ready check for</#cbd5e1> <white><count></white> <#cbd5e1>player(s) with a</#cbd5e1> <white><seconds>s</white> <#cbd5e1>timeout.</#cbd5e1>"
-checkready-opened: "<prefix><#6dd3a0>Opened the ready check for <count> player(s). Timeout: <seconds>s.</#6dd3a0>"
-checkready-already-active: "<prefix><#f4d35e>A ready check is already active.</#f4d35e>"
-checkready-no-players: "<prefix><#f4d35e>There are no online players to check.</#f4d35e>"
-checkready-marked-ready: "<prefix><#6dd3a0>You marked yourself as ready.</#6dd3a0>"
-checkready-all-ready: "<prefix><#6dd3a0>Everyone is ready.</#6dd3a0>"
-checkready-not-ready: "<prefix><#f95738><player></#f95738> <#faf0ca>is not ready.</#faf0ca>"
-checkready-timeout: "<prefix><#f95738>Ready check timed out.</#f95738> <#faf0ca>Still waiting on:</#faf0ca> <white><players></white>"
-checkready-actionbar: "<#f4d35e>Ready Check</#f4d35e> <#7b8aa0>| Remaining:</#7b8aa0> <white><remaining>/<total></white> <#7b8aa0>| Time Left:</#7b8aa0> <white><seconds>s</white>"
-
-# Profiles, levels, and PlaceholderAPI
-profile-title: "<#334155><bold><player>'s Profile</bold></#334155>"
-profile-filler: "<dark_gray> </dark_gray>"
-profile-head: "<#f4d35e><bold><player></bold></#f4d35e>"
-profile-level: "<#6dd3a0><bold>Level</bold></#6dd3a0>"
-profile-level-lore: "<#cbd5e1>Current level: <white><level></white></#cbd5e1>"
-profile-exp-lore: "<#7b8aa0>Experience: <white><experience></white></#7b8aa0>"
-profile-stats: "<#f95738><bold>Stats</bold></#f95738>"
-profile-kills-lore: "<#7b8aa0>Kills:</#7b8aa0> <white><kills></white>"
-profile-deaths-lore: "<#7b8aa0>Deaths:</#7b8aa0> <white><deaths></white>"
-profile-assists-lore: "<#7b8aa0>Assists:</#7b8aa0> <white><assists></white>"
-profile-kd-lore: "<#7b8aa0>KD Ratio:</#7b8aa0> <white><kd></white>"
-profile-killstreak-lore: "<#7b8aa0>Best Killstreak:</#7b8aa0> <white><killstreak></white>"
-profile-wins-lore: "<#7b8aa0>Wins:</#7b8aa0> <white><wins></white>"
-profile-games-lore: "<#7b8aa0>Games Played:</#7b8aa0> <white><games></white>"
-profile-summary-title: "<prefix><#6dd3a0><player>'s profile</#6dd3a0>"
-profile-summary-level: "<prefix><#7b8aa0>Level:</#7b8aa0> <white><level></white> <#7b8aa0>| Experience:</#7b8aa0> <white><experience></white>"
-profile-summary-stats: "<prefix><#7b8aa0>Kills:</#7b8aa0> <white><kills></white> <#7b8aa0>| Deaths:</#7b8aa0> <white><deaths></white> <#7b8aa0>| Assists:</#7b8aa0> <white><assists></white> <#7b8aa0>| KD:</#7b8aa0> <white><kd></white> <#7b8aa0>| Streak:</#7b8aa0> <white><killstreak></white> <#7b8aa0>| Wins:</#7b8aa0> <white><wins></white> <#7b8aa0>| Games:</#7b8aa0> <white><games></white>"
-level-summary: "<prefix><#7b8aa0><player>'s level:</#7b8aa0> <white><level></white> <#7b8aa0>| XP:</#7b8aa0> <white><experience></white> <#7b8aa0>| Progress:</#7b8aa0> <white><progress>%</white> <#7b8aa0>| To Next:</#7b8aa0> <white><remaining></white>"
-papi-status: "<prefix><#7b8aa0>PlaceholderAPI:</#7b8aa0> <white>installed=<installed></white> <#7b8aa0>| enabled:</#7b8aa0> <white><enabled></white> <#7b8aa0>| version:</#7b8aa0> <white><version></white>\n<prefix><#7b8aa0>Status:</#7b8aa0> <white><expansions></white>"
-
-# Recipe browser and custom recipes
-recipes-title: "<#f4d35e><bold>Custom Recipes</bold></#f4d35e>"
-recipes-detail-title: "<#f4d35e><bold><recipe></bold></#f4d35e>"
-recipes-filler: "<dark_gray> </dark_gray>"
-recipes-empty: "<#f95738><bold>No Custom Recipes</bold></#f95738>"
-recipes-result-label: "<#7b8aa0><bold>Result</bold></#7b8aa0>"
-recipes-back: "<#f95738><bold>Back to Recipes</bold></#f95738>"
-recipes-type: "<#7b8aa0>Type:</#7b8aa0> <white><type></white>"
-recipes-shape: "<#7b8aa0>Shape:</#7b8aa0>"
-recipes-shape-row: "<#9db4c0><row></#9db4c0>"
-recipes-ingredients: "<#7b8aa0>Ingredients:</#7b8aa0>"
-recipes-ingredient-entry: "<#9db4c0>- <white><ingredient></white></#9db4c0>"
-recipes-water-bottle-name: "Water Bottle"
-recipe-compact-golden-apple-name: "<#f4d35e><bold>Compact Golden Apple</bold></#f4d35e>"
-recipe-compact-golden-apple-lore-1: "<#cbd5e1>Crafted with a gold block.</#cbd5e1>"
-recipe-compact-golden-apple-lore-2: "<#7b8aa0>Grants stronger regeneration and absorption.</#7b8aa0>"
+lobby:
+  set: "<prefix><#6dd3a0>Lobby location updated.</#6dd3a0>"
+  pvp:
+    hold:
+      instruction: "<prefix><#f4d35e>Hold the PvP sword for <seconds>s to enable lobby
+        PvP.</#f4d35e>"
+      start: "<prefix><#f4d35e>Keep holding the PvP sword for <seconds>s to enable
+        your lobby PvP.</#f4d35e>"
+      tick: "<prefix><#f4d35e>Lobby PvP enabling in <seconds>s...</#f4d35e>"
+    disable:
+      tick: "<prefix><#f4d35e>Lobby PvP disabling in <seconds>s...</#f4d35e>"
+    enabled:
+      self: "<prefix><#6dd3a0>Your lobby PvP is now enabled.</#6dd3a0>"
+    disabled:
+      self: "<prefix><#f4d35e>Your lobby PvP is now disabled.</#f4d35e>"
+      target: "<prefix><#f4d35e><player> has not enabled lobby PvP.</#f4d35e>"
+    enable:
+      required: "<prefix><#f4d35e>You need to enable your own lobby PvP first.</#f4d35e>"
+  spectator:
+    enabled: "<prefix><#9db4c0>You are now spectating and will not be scattered into
+      the match.</#9db4c0>"
+    disabled: "<prefix><#6dd3a0>You are back in the next match queue.</#6dd3a0>"
+  fly:
+    enabled: "<prefix><#7dd3fc>Lobby flight enabled.</#7dd3fc>"
+    disabled: "<prefix><#f4d35e>Lobby flight disabled.</#f4d35e>"
+    blocked: "<prefix><#f95738>You cannot use lobby flight while your lobby PvP is
+      enabled.</#f95738>"
+  item:
+    toggle:
+      enabled:
+        suffix: "<#6dd3a0><bold>[Enabled]</bold></#6dd3a0>"
+        line: "<#6dd3a0>Status: Enabled</#6dd3a0>"
+      disabled:
+        suffix: "<#f95738><bold>[Disabled]</bold></#f95738>"
+        line: "<#f95738>Status: Disabled</#f95738>"
+    'no':
+      permission:
+        lore: "<#f95738>You cannot use this item.</#f95738>"
+    fly_toggle:
+      name: "<#7dd3fc><bold>Lobby Fly</bold></#7dd3fc>"
+      lore:
+      - "<#cbd5e1>Toggle your lobby flight.</#cbd5e1>"
+      - "<#7b8aa0>Available for ops and players with permission.</#7b8aa0>"
+    hide_players:
+      name: "<#f4d35e><bold>Hide Players</bold></#f4d35e>"
+      lore:
+      - "<#cbd5e1>Toggle lobby player visibility.</#cbd5e1>"
+      - "<#7b8aa0>Hide other players for a cleaner lobby.</#7b8aa0>"
+    recipes:
+      name: "<#f4d35e><bold>UHC Recipes</bold></#f4d35e>"
+      lore:
+      - "<#cbd5e1>Open the custom UHC recipe viewer.</#cbd5e1>"
+      - "<#7b8aa0>See Golden Head and other custom crafts.</#7b8aa0>"
+    pvp_sword:
+      name: "<#f95738><bold>Lobby PvP</bold></#f95738>"
+      lore:
+      - "<#cbd5e1>Hold this sword for 3 seconds.</#cbd5e1>"
+      - "<#7b8aa0>This enables your own lobby PvP.</#7b8aa0>"
+    stats:
+      name: "<#f4d35e><bold>Profile</bold></#f4d35e>"
+      lore:
+      - "<#cbd5e1>Open your player profile.</#cbd5e1>"
+      - "<#7b8aa0>Shows your profile, level, and stats.</#7b8aa0>"
+    language:
+      name: "<#93c5fd><bold>Language</bold></#93c5fd>"
+      lore:
+      - "<#cbd5e1>Open the language selector GUI.</#cbd5e1>"
+      - "<#7b8aa0>Choose your own locale.</#7b8aa0>"
+    kit_selector:
+      name: "<#93c5fd><bold>Kit Selector</bold></#93c5fd>"
+      lore:
+      - "<#cbd5e1>Preview your starting inventory.</#cbd5e1>"
+      - "<#7b8aa0>Select the kit you want before the match.</#7b8aa0>"
+    config:
+      name: "<#6dd3a0><bold>Game Config</bold></#6dd3a0>"
+      lore:
+      - "<#cbd5e1>Open the config viewer.</#cbd5e1>"
+      - "<#7b8aa0>Admins can edit values directly.</#7b8aa0>"
+    leaderboard:
+      name: "<#6dd3a0><bold>Leaderboard</bold></#6dd3a0>"
+      lore:
+      - "<#cbd5e1>Show top players or rankings.</#cbd5e1>"
+      - "<#7b8aa0>Open the leaderboard viewer.</#7b8aa0>"
+    team_selector:
+      name: "<#7dd3fc><bold>Teams</bold></#7dd3fc>"
+      lore:
+      - "<#cbd5e1>Open the team selector.</#cbd5e1>"
+      - "<#7b8aa0>Join or leave a team before the match.</#7b8aa0>"
+    lobby_spectator:
+      name: "<#9db4c0><bold>Spectate Match</bold></#9db4c0>"
+      lore:
+      - "<white>Switch into spectator mode.</white>"
+      - "<#d7e1ea>You will not be counted for match start.</#d7e1ea>"
+  players:
+    hidden: "<prefix><#f4d35e>Other lobby players are now hidden.</#f4d35e>"
+    shown: "<prefix><#6dd3a0>Other lobby players are now visible.</#6dd3a0>"
+heal:
+  self: "<prefix><#6dd3a0>You have been healed.</#6dd3a0>"
+  other: "<prefix><#6dd3a0>You healed <player>.</#6dd3a0>"
+  received: "<prefix><#6dd3a0>You were healed by an administrator.</#6dd3a0>"
+ping:
+  text: "<prefix><#7dd3fc>Your ping is <white><ping>ms</white>.</#7dd3fc>"
+  other: "<prefix><#7dd3fc><player>'s ping is <white><ping>ms</white>.</#7dd3fc>"
+pingall:
+  summary: "<prefix><#7b8aa0>Player Pings</#7b8aa0> <#cbd5e1>(<online> online)</#cbd5e1>  <#7b8aa0>Page <page>/<pages></#7b8aa0>"
+  entry: "<#7b8aa0>  <ping_color><player></#7b8aa0></ping_color><#7b8aa0>:</#7b8aa0> <ping_color><ping>ms</ping_color>"
+  nav:
+    prev: "<#93c5fd>[← Prev]</#93c5fd>"
+    next: "<#93c5fd>[Next →]</#93c5fd>"
+    gap: "<#7b8aa0>  </#7b8aa0>"
+list:
+  summary: "<prefix><#7b8aa0>Online Players:</#7b8aa0> <white><online>/<max></white>"
+  entry:
+    eliminated: "<gray><player></gray>"
+    lobby:
+      spectator: "<#9db4c0><player></#9db4c0>"
+    active: "<#6dd3a0><player></#6dd3a0>"
+    default: "<white><player></white>"
+leaderboard:
+  title: "<#334155><bold>Leaderboard</bold></#334155>"
+  filler: "<dark_gray> </dark_gray>"
+  empty: "<#f95738><bold>No leaderboard data yet.</bold></#f95738>"
+  invalid:
+    stat: "<prefix><#f95738>Unknown leaderboard stat.</#f95738>"
+  stat:
+    lore: "<#cbd5e1>Click to view this ranking.</#cbd5e1>"
+    selected:
+      lore: "<#6dd3a0>Currently selected.</#6dd3a0>"
+    wins: "<#f4d35e><bold>Wins</bold></#f4d35e>"
+    kills: "<#f95738><bold>Kills</bold></#f95738>"
+    assists: "<#7dd3fc><bold>Assists</bold></#7dd3fc>"
+    deaths: "<#9ca3af><bold>Deaths</bold></#9ca3af>"
+    games: "<#a7f3d0><bold>Games</bold></#a7f3d0>"
+    level: "<#c4b5fd><bold>Level</bold></#c4b5fd>"
+    experience: "<#86efac><bold>Experience</bold></#86efac>"
+    kd: "<#fda4af><bold>KD</bold></#fda4af>"
+    killstreak: "<#fb7185><bold>Killstreak</bold></#fb7185>"
+  page: "<#f4d35e><bold>Page <page>/<max_page></bold></#f4d35e>"
+  prev:
+    page: "<#7dd3fc><bold>Previous Page</bold></#7dd3fc>"
+  next:
+    page: "<#7dd3fc><bold>Next Page</bold></#7dd3fc>"
+  entry:
+    name: "<#f4d35e><bold>#<rank> <player></bold></#f4d35e>"
+    selected:
+      stat: "<#f4d35e><bold><stat>:</bold></#f4d35e> <white><value></white>"
+    value: "<#7dd3fc>Value:</#7dd3fc> <white><value></white>"
+    kills: "<#7b8aa0>Kills:</#7b8aa0> <white><kills></white>"
+    wins: "<#7b8aa0>Wins:</#7b8aa0> <white><wins></white>"
+    assists: "<#7b8aa0>Assists:</#7b8aa0> <white><assists></white>"
+    deaths: "<#7b8aa0>Deaths:</#7b8aa0> <white><deaths></white>"
+    games: "<#7b8aa0>Games:</#7b8aa0> <white><games></white>"
+    level: "<#7b8aa0>Level:</#7b8aa0> <white><level></white>"
+    experience: "<#7b8aa0>Experience:</#7b8aa0> <white><experience></white>"
+    kd: "<#7b8aa0>KD:</#7b8aa0> <white><kd></white>"
+    killstreak: "<#7b8aa0>Best Killstreak:</#7b8aa0> <white><killstreak></white>"
+kit:
+  menu:
+    title: "<#334155><bold>Kit Selection</bold></#334155>"
+    filler: "<dark_gray> </dark_gray>"
+    empty:
+      lore: "<#cbd5e1>Add kits in kits.yml to use this menu.</#cbd5e1>"
+    select:
+      lore:
+        admin: "<#cbd5e1>Click to make this the active global kit.</#cbd5e1>"
+        viewer: "<#cbd5e1>Preview only. Admins choose the active global kit.</#cbd5e1>"
+    code:
+      lore: "<#7b8aa0>ID:</#7b8aa0> <white><kit></white>"
+    selected:
+      lore: "<#6dd3a0>Currently active.</#6dd3a0>"
+    preview:
+      title: "<#f4d35e><bold><kit></bold></#f4d35e>"
+      lore:
+        '1': "<#cbd5e1>This preview matches your starting inventory.</#cbd5e1>"
+        '2': "<#7b8aa0>Hotbar is shown on the fifth row.</#7b8aa0>"
+    offhand:
+      label: "<#9db4c0><bold>Offhand</bold></#9db4c0>"
+      lore: "<#7b8aa0>Slot preview for shields, totems, and more.</#7b8aa0>"
+  default:
+    description:
+    - "<#cbd5e1>Edited in game by an admin.</#cbd5e1>"
+  set:
+    global:
+      text: "<prefix><#6dd3a0>Global active kit set to <white><kit></white>.</#6dd3a0>"
+      broadcast: "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>set the active kit to</#cbd5e1>
+        <white><kit></white><#cbd5e1>.</#cbd5e1>"
+  locked: "<prefix><#f95738>Kit selection is only available in the lobby.</#f95738>"
+  create:
+    success: "<prefix><#6dd3a0>Created kit <white><kit></white> and loaded it into
+      your inventory editor.</#6dd3a0>"
+    failed: "<prefix><#f95738>Could not create that kit. It may already exist.</#f95738>"
+  edit:
+    loaded: "<prefix><#7dd3fc>Loaded kit <white><kit></white> into your inventory.
+      Use <white>/kit save</white> when you are done.</#7dd3fc>"
+    saved: "<prefix><#6dd3a0>Saved your current inventory to kit <white><kit></white>.</#6dd3a0>"
+    broadcast: "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>updated kit</#cbd5e1>
+      <white><kit></white><#cbd5e1>.</#cbd5e1>"
+    failed: "<prefix><#f95738>Could not save that kit to kits.yml.</#f95738>"
+config:
+  menu:
+    title: "<#334155><bold>Game Config</bold></#334155>"
+    filler: "<dark_gray> </dark_gray>"
+    'no':
+      permission: "<prefix><#f4d35e>You can view this menu, but only admins can edit
+        values.</#f4d35e>"
+    admin:
+      title: "<#6dd3a0><bold>Admin Edit Mode</bold></#6dd3a0>"
+      lore: "<#cbd5e1>Click options below to update live config values.</#cbd5e1>"
+    viewer:
+      title: "<#f4d35e><bold>Viewer Mode</bold></#f4d35e>"
+      lore: "<#cbd5e1>You can browse settings, but only admins can edit.</#cbd5e1>"
+    section:
+      game: "<#f4d35e><bold>Game</bold></#f4d35e>"
+      rules: "<#7dd3fc><bold>Rules</bold></#7dd3fc>"
+      integrations: "<#c4b5fd><bold>Integrations</bold></#c4b5fd>"
+      lore: "<#7b8aa0>Section header</#7b8aa0>"
+    updated: "<prefix><#6dd3a0>Updated <white><option></white> to <white><value></white>.</#6dd3a0>"
+    page: "<#f4d35e><bold>Page <page>/<max_page></bold></#f4d35e>"
+    prev: "<#7dd3fc><bold>Previous Page</bold></#7dd3fc>"
+    next: "<#7dd3fc><bold>Next Page</bold></#7dd3fc>"
+    entry:
+      name: "<#f4d35e><bold><label></bold></#f4d35e>"
+    type:
+      lore: "<#7b8aa0>Type:</#7b8aa0> <white><type></white>"
+    path:
+      lore: "<#6b7280>Path:</#6b7280> <white><path></white>"
+    readonly: "<prefix><#f4d35e>This setting is read-only in the config GUI.</#f4d35e>"
+    chat:
+      prompt: "<prefix><#7dd3fc>Editing <white><path></white>.</#7dd3fc> <#7b8aa0>Current:</#7b8aa0>
+        <white><current></white>"
+      hint: "<prefix><#cbd5e1>Type new value in chat. Type <white>exit</white> to
+        cancel, <white>sth</white> to set empty.</#cbd5e1>"
+      cancelled: "<prefix><#f4d35e>Config edit cancelled.</#f4d35e>"
+    group:
+      lore: "<#7b8aa0>Category</#7b8aa0>"
+      game: "<#f4d35e><bold>Game</bold></#f4d35e>"
+      time: "<#f59e0b><bold>Time</bold></#f59e0b>"
+      rules: "<#7dd3fc><bold>Rules</bold></#7dd3fc>"
+      border: "<#f59e0b><bold>Border</bold></#f59e0b>"
+      ready:
+        check: "<#a7f3d0><bold>Ready Check</bold></#a7f3d0>"
+      chunky: "<#86efac><bold>Chunky</bold></#86efac>"
+      announce: "<#c4b5fd><bold>Announcements</bold></#c4b5fd>"
+      motd: "<#67e8f9><bold>MOTD</bold></#67e8f9>"
+      lobby: "<#93c5fd><bold>Lobby</bold></#93c5fd>"
+      ores: "<#f97316><bold>Ores</bold></#f97316>"
+      chat: "<#e879f9><bold>Chat</bold></#e879f9>"
+      license: "<#ef4444><bold>License</bold></#ef4444>"
+      other: "<#d1d5db><bold>Other</bold></#d1d5db>"
+    action:
+      set:
+        lobby:
+          lore:
+            '1': "<#6b7280><i>Sets the lobby spawn point to your current location.</i></#6b7280>"
+            '2': "<#93c5fd>▶ Click to set lobby here.</#93c5fd>"
+            '3': "<#7b8aa0>Equivalent to /uhc setlobby</#7b8aa0>"
+    value:
+      lore: "<#7b8aa0>Value</#7b8aa0>  <white><value></white>"
+    status:
+      lore: "<#7b8aa0>Status</#7b8aa0>  <value>"
+      'on': "<#6dd3a0><bold>ENABLED</bold></#6dd3a0>"
+      'off': "<#f95738><bold>DISABLED</bold></#f95738>"
+    int:
+      edit:
+        lore: "<#93c5fd>▶ Left -1  Right +1  Shift ±10</#93c5fd>"
+    double:
+      edit:
+        lore: "<#93c5fd>▶ Left -0.5  Right +0.5  Shift ±5.0  Drop ±0.1</#93c5fd>"
+    bool:
+      edit:
+        lore: "<#93c5fd>▶ Click to toggle.</#93c5fd>"
+      'on': Enabled
+      'off': Disabled
+    anvil:
+      title: "<#334155><bold>Edit Value</bold></#334155>"
+    string:
+      edit:
+        lore: "<#93c5fd>▶ Click to open text editor.</#93c5fd>"
+      cycle:
+        lore: "<#93c5fd>▶ Left / Right to cycle options.</#93c5fd>"
+    view:
+      lore: "<#f4d35e>▶ View only. Ask an admin to edit.</#f4d35e>"
+    label:
+      game:
+        antiburn: Anti Burn
+        no:
+          mobs: No Mobs
+          suspicious:
+            stew: No Suspicious Stew
+          enchanting: No Enchanting
+          brewing: No Brewing
+          grindstone: No Grindstone
+        mob:
+          rate:
+            multiplier: Mob Rate Multiplier
+        apple:
+          rate: Apple Rate
+        mobs:
+          attack: Mobs Attack
+        allow:
+          potions: Allow Potions
+        difficulty: Difficulty
+        min:
+          players: Min Players
+        countdown:
+          seconds: Countdown Seconds
+        grace:
+          period:
+            seconds: Grace Period Seconds
+        nametag:
+          hide:
+            seconds: Nametag Hide Seconds
+        final:
+          heal:
+            seconds: Final Heal Seconds
+          duel:
+            seconds: Final Duel Seconds
+        scatter:
+          radius: Scatter Radius
+          last:
+            countdown: Scatter Last Countdown
+        max:
+          duration:
+            seconds: Max Duration Seconds
+        sudden:
+          death:
+            seconds: Sudden Death Seconds
+        ender:
+          pearl:
+            damage: Ender Pearl Damage
+        shears:
+          enabled: Shears Drop Golden Apple
+          rate: Shears Golden Apple Rate
+        enchanted:
+          golden:
+            apples: Enchanted Golden Apples
+        golden:
+          heads: Golden Heads
+        player:
+          glowing: Player Glowing
+      border:
+        initial:
+          size: Initial Border Size
+        final:
+          size: Final Border Size
+        shrink:
+          start:
+            seconds: Border Shrink Start
+          duration:
+            seconds: Border Shrink Duration
+        force:
+          tp:
+            inside: Border Force TP Inside
+            buffer: Border Force TP Buffer
+        first:
+          shrink:
+            size: First Shrink Size
+      rules:
+        spectator:
+          on:
+            death: Spectator On Death
+        disable:
+          natural:
+            regen: Disable Natural Regen
+        kick:
+          on:
+            death: Kick On Death
+        drop:
+          head:
+            on:
+              kill: Drop Head On Kill
+      teams:
+        enabled: Teams Enabled
+        max:
+          size: Team Max Size
+        friendly:
+          fire: Friendly Fire
+        teammate:
+          glow: Teammate Glow
+        allow:
+          lobby:
+            switch: Lobby Team Switching
+        auto:
+          balance:
+            on:
+              start: Auto Balance On Start
+        show:
+          teammates:
+            in:
+              lobby: Show Teammates In Lobby
+              game: Show Teammates In Game
+        voice:
+          chat:
+            enabled: Team Voice Chat
+            global:
+              lobby: Global Lobby Voice
+            team:
+              groups:
+                in:
+                  game: In-Game Team Voice
+    desc:
+      game:
+        antiburn: Prevents players from taking damage from fire and lava.
+        no:
+          mobs: Disables all hostile mob spawning during the match.
+          suspicious:
+            stew: Removes suspicious stew from gameplay.
+          enchanting: Prevents players from using enchanting tables.
+          brewing: Prevents players from brewing potions.
+          grindstone: Prevents players from using grindstones.
+        mob:
+          rate:
+            multiplier: Multiplier applied to natural mob spawn rates. 1.0 = normal.
+        apple:
+          rate: Multiplier for golden apple drops from leaf decay. 1.0 = normal.
+        mobs:
+          attack: Whether hostile mobs will target and attack players.
+        allow:
+          potions: Whether players are allowed to use potions.
+        difficulty: World difficulty. Affects mob damage and hunger drain.
+        min:
+          players: Minimum number of players required to start a match.
+        countdown:
+          seconds: Duration of the pre-scatter countdown.
+        grace:
+          period:
+            seconds: PvP is disabled for this many seconds after scatter. Set to 0 to skip.
+        nametag:
+          hide:
+            seconds: Player nametags are hidden for this many seconds at match start. Set to 0 to always show.
+        final:
+          heal:
+            seconds: Players receive a full heal this many seconds after the match starts. Set to 0 to disable.
+          duel:
+            seconds: Duration of the final duel when only 2 players remain.
+        scatter:
+          radius: Maximum radius in blocks that players are scattered within.
+          last:
+            countdown: Shows a title countdown during the last N seconds of the scatter sequence.
+        max:
+          duration:
+            seconds: Maximum match duration before sudden death is triggered. Set to 0 for no limit.
+        sudden:
+          death:
+            seconds: Duration of the sudden death phase. Set to 0 to skip sudden death and end immediately.
+        ender:
+          pearl:
+            damage: Whether ender pearl throws deal fall damage on landing.
+        shears:
+          enabled: Whether shearing a sheep can drop a golden apple.
+          rate: 1-in-N chance for shears to drop a golden apple when used on a sheep.
+        enchanted:
+          golden:
+            apples: Whether enchanted golden apples can be found and used.
+        golden:
+          heads: Enables craftable golden heads using a player head and gold ingots.
+        player:
+          glowing: All players glow and are visible through walls.
+      border:
+        initial:
+          size: Starting world border diameter in blocks.
+        final:
+          size: Final world border diameter after fully shrunk.
+        shrink:
+          start:
+            seconds: Seconds after match start before the border begins shrinking.
+          duration:
+            seconds: Total time in seconds for the border to shrink to its final size.
+        force:
+          tp:
+            inside: Automatically teleports players who are outside the border back in.
+            buffer: Distance from the border edge when force-teleporting players inside.
+        first:
+          shrink:
+            size: Immediately shrinks the border to this size at match start. Set to 0 to disable.
+      rules:
+        spectator:
+          on:
+            death: Eliminated players become spectators instead of being disconnected.
+        disable:
+          natural:
+            regen: Prevents health regeneration through saturation. Players must use golden apples to heal.
+        kick:
+          on:
+            death: Kicks players from the server the moment they are eliminated.
+        drop:
+          head:
+            on:
+              kill: Drops the killed player's head as an item that can be used to craft golden heads.
+      teams:
+        enabled: Enables team mode. Players are grouped into teams and win together.
+        max:
+          size: Maximum number of players allowed per team.
+        friendly:
+          fire: Whether teammates can deal damage to each other.
+        teammate:
+          glow: Highlights teammates with a glowing outline visible through walls.
+        allow:
+          lobby:
+            switch: Allows players to freely switch teams in the lobby.
+        auto:
+          balance:
+            on:
+              start: Automatically moves players to balance team sizes when the match starts.
+        show:
+          teammates:
+            in:
+              lobby: Makes all team members visible to each other in the lobby.
+              game: Makes all team members visible to each other during the match.
+        voice:
+          chat:
+            enabled: Enables Simple Voice Chat integration for team-based voice channels.
+            global:
+              lobby: Creates a shared global voice channel for all players in the lobby.
+            team:
+              groups:
+                in:
+                  game: Creates separate voice channels per team during the match.
+    option:
+      min:
+        players: "<#f4d35e><bold>Min Players</bold></#f4d35e>"
+      countdown: "<#f4d35e><bold>Countdown Seconds</bold></#f4d35e>"
+      disable:
+        natural:
+          regen: "<#f95738><bold>Disable Natural Regen</bold></#f95738>"
+      spectator:
+        'on':
+          death: "<#7dd3fc><bold>Spectator On Death</bold></#7dd3fc>"
+      chunky:
+        enabled: "<#86efac><bold>Chunky Integration</bold></#86efac>"
+      global:
+        announcements: "<#c4b5fd><bold>Global Bungee Announce</bold></#c4b5fd>"
+help:
+  title: "<gold>UHC Commands </gold><yellow>(<page>/<max_page>)</yellow>"
+  suggest:
+    hover: "<gray>Suggest <command></gray>"
+  open:
+    page:
+      hover: "<gray>Open page <page></gray>"
+  prev:
+    button: "« Prev"
+  next:
+    button: Next »
+  desc:
+    pause: Pause or resume the active match.
+    resume: Resume a paused match.
+    start: Start the match countdown.
+    forcestart: Skip countdown and start scatter.
+    stop: Stop the active match.
+    state: Show current match state.
+    setlobby: Set the lobby spawn to your location.
+    skipgrace: End grace and enable PvP.
+    skipphase: Skip the current match phase.
+    reload: Reload TrialUHC configs.
+    checkready: Open a ready-check GUI for all online players.
+    reset: Force reset all match state.
+    gen: Generate and select a game world.
+    preload:
+      status: Show the active Chunky preload progress.
+      stop: Cancel the active Chunky preload.
+    kill: Eliminate a player or selector.
+    killalloffline: Eliminate all disconnected match players.
+    level: Show level, XP, and next-level progress.
+    papi: Show PlaceholderAPI soft-dependency status.
+    recipes: Open the custom recipe viewer.
+    recipe: Open the custom recipe viewer.
+    revive: Revive an eliminated player.
+    lobbygame: Start or manage lobby minigames.
+papi:
+  status: |-
+    <prefix><#7b8aa0>PlaceholderAPI:</#7b8aa0> <white>installed=<installed></white> <#7b8aa0>| enabled:</#7b8aa0> <white><enabled></white> <#7b8aa0>| version:</#7b8aa0> <white><version></white>
+    <prefix><#7b8aa0>Status:</#7b8aa0> <white><expansions></white>
+gamemode:
+  players:
+    only: "<prefix><red>Only players can use this without a target.</red>"
+  'no':
+    permission:
+      others: "<prefix><red>You do not have permission to change other players' gamemodes.</red>"
+  self:
+    set: "<prefix><#6dd3a0>Set your gamemode to <gamemode>.</#6dd3a0>"
+  other:
+    set: "<prefix><#6dd3a0>Set <player>'s gamemode to <gamemode>.</#6dd3a0>"
+  target:
+    set: "<prefix><#6dd3a0>Your gamemode was set to <gamemode>.</#6dd3a0>"
+announce:
+  header: "<gray><bold>==============================</bold></gray>"
+  title: "<#f95738><bold>Announce</bold></#f95738>"
+  footer: "<gray><bold>==============================</bold></gray>"
+  sent: "<prefix><#6dd3a0>Announcement sent.</#6dd3a0>"
+confirm:
+  title: "<red><bold>Are You Sure?</bold></red>"
+  filler: "<dark_red> </dark_red>"
+  continue:
+    text: "<#6dd3a0><bold>Confirm</bold></#6dd3a0>"
+    lore: "<#cbd5e1>Click to confirm this action.</#cbd5e1>"
+  cancel:
+    text: "<#f95738><bold>Cancel</bold></#f95738>"
+    lore: "<#cbd5e1>Click to close this menu.</#cbd5e1>"
+  cancelled: "<prefix><#f4d35e>Action cancelled.</#f4d35e>"
+checkready:
+  title: "<#f4d35e><bold>Ready Check</bold></#f4d35e>"
+  filler: "<dark_gray> </dark_gray>"
+  ready:
+    text: "<#6dd3a0><bold>Ready</bold></#6dd3a0>"
+    lore: "<#cbd5e1>Click if you are ready to play.</#cbd5e1>"
+  not:
+    ready:
+      text: "<prefix><#f95738><player></#f95738> <#faf0ca>is not ready.</#faf0ca>"
+      button: "<#f95738><bold>Not Ready</bold></#f95738>"
+      lore: "<#cbd5e1>Click if you are not ready to play.</#cbd5e1>"
+  started: "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>started a ready check for</#cbd5e1>
+    <white><count></white> <#cbd5e1>player(s) with a</#cbd5e1> <white><seconds>s</white>
+    <#cbd5e1>timeout.</#cbd5e1>"
+  opened: "<prefix><#6dd3a0>Opened the ready check for <count> player(s). Timeout:
+    <seconds>s.</#6dd3a0>"
+  already:
+    active: "<prefix><#f4d35e>A ready check is already active.</#f4d35e>"
+  'no':
+    players: "<prefix><#f4d35e>There are no online players to check.</#f4d35e>"
+  marked:
+    ready: "<prefix><#6dd3a0>You marked yourself as ready.</#6dd3a0>"
+  all:
+    ready: "<prefix><#6dd3a0>Everyone is ready.</#6dd3a0>"
+  timeout: "<prefix><#f95738>Ready check timed out.</#f95738> <#faf0ca>Still waiting
+    on:</#faf0ca> <white><players></white>"
+  actionbar: "<#f4d35e>Ready Check</#f4d35e> <#7b8aa0>| Remaining:</#7b8aa0> <white><remaining>/<total></white>
+    <#7b8aa0>| Time Left:</#7b8aa0> <white><seconds>s</white>"
+profile:
+  title: "<#334155><bold><player>'s Profile</bold></#334155>"
+  filler: "<dark_gray> </dark_gray>"
+  head: "<#f4d35e><bold><player></bold></#f4d35e>"
+  level:
+    text: "<#a3e635><bold>Level</bold></#a3e635>"
+    lore: "<#cbd5e1>Current level: <white><level></white></#cbd5e1>"
+  exp:
+    lore: "<#7b8aa0>Experience: <white><experience></white></#7b8aa0>"
+  stats: "<#f95738><bold>Stats</bold></#f95738>"
+  kills:
+    lore: "<#7b8aa0>Kills:</#7b8aa0> <white><kills></white>"
+  deaths:
+    lore: "<#7b8aa0>Deaths:</#7b8aa0> <white><deaths></white>"
+  assists:
+    lore: "<#7b8aa0>Assists:</#7b8aa0> <white><assists></white>"
+  kd:
+    lore: "<#7b8aa0>KD Ratio:</#7b8aa0> <white><kd></white>"
+  killstreak:
+    lore: "<#7b8aa0>Best Killstreak:</#7b8aa0> <white><killstreak></white>"
+  wins:
+    lore: "<#7b8aa0>Wins:</#7b8aa0> <white><wins></white>"
+  games:
+    lore: "<#7b8aa0>Games Played:</#7b8aa0> <white><games></white>"
+  summary:
+    title: "<prefix><#6dd3a0><player>'s profile</#6dd3a0>"
+    level: "<prefix><#7b8aa0>Level:</#7b8aa0> <white><level></white> <#7b8aa0>| Experience:</#7b8aa0>
+      <white><experience></white>"
+    stats: "<prefix><#7b8aa0>Kills:</#7b8aa0> <white><kills></white> <#7b8aa0>| Deaths:</#7b8aa0>
+      <white><deaths></white> <#7b8aa0>| Assists:</#7b8aa0> <white><assists></white>
+      <#7b8aa0>| KD:</#7b8aa0> <white><kd></white> <#7b8aa0>| Streak:</#7b8aa0> <white><killstreak></white>
+      <#7b8aa0>| Wins:</#7b8aa0> <white><wins></white> <#7b8aa0>| Games:</#7b8aa0>
+      <white><games></white>"
+level:
+  summary: "<prefix><#7b8aa0><player>'s level:</#7b8aa0> <white><level></white> <#7b8aa0>|
+    XP:</#7b8aa0> <white><experience></white> <#7b8aa0>| Progress:</#7b8aa0> <white><progress>%</white>
+    <#7b8aa0>| To Next:</#7b8aa0> <white><remaining></white>"
+recipes:
+  title: "<#334155><bold>Custom Recipes</bold></#334155>"
+  detail:
+    title: "<#334155><bold><recipe></bold></#334155>"
+  filler: "<dark_gray> </dark_gray>"
+  empty: "<#f95738><bold>No Custom Recipes</bold></#f95738>"
+  result:
+    label: "<#7b8aa0><bold>Result</bold></#7b8aa0>"
+  back: "<#f95738><bold>Back to Recipes</bold></#f95738>"
+  type: "<#7b8aa0>Type:</#7b8aa0> <white><type></white>"
+  shape:
+    text: "<#7b8aa0>Shape:</#7b8aa0>"
+    row: "<#9db4c0><row></#9db4c0>"
+  ingredients: "<#7b8aa0>Ingredients:</#7b8aa0>"
+  ingredient:
+    entry: "<#9db4c0>- <white><ingredient></white></#9db4c0>"
+  water:
+    bottle:
+      name: Water Bottle
+recipe:
+  compact:
+    golden:
+      apple:
+        name: "<#f4d35e><bold>Compact Golden Apple</bold></#f4d35e>"
+        lore:
+          '1': "<#cbd5e1>Crafted with a gold block.</#cbd5e1>"
+          '2': "<#7b8aa0>Grants stronger regeneration and absorption.</#7b8aa0>"
+  golden:
+    head:
+      name: "<#f4d35e><bold>Golden Head</bold></#f4d35e>"
+      lore:
+        '1': "<#cbd5e1>Right-click to consume.</#cbd5e1>"
+        '2': "<#7b8aa0>Grants regeneration and extra absorption.</#7b8aa0>"
+join:
+  message: "<#7b8aa0>[</#7b8aa0><#6dd3a0>+</#6dd3a0><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e>
+    <#cbd5e1>joined the server.</#cbd5e1> <#6b7280>(<online> online)</#6b7280>"
+  locked: "<prefix><#f4d35e>A match is already running. You are now a spectator.</#f4d35e>"
+quit:
+  message: "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e>
+    <#cbd5e1>left the server.</#cbd5e1> <#6b7280>(<online> online)</#6b7280>"
+world:
+  generated:
+    land: "<prefix><#6dd3a0>Generated and selected UHC world <world> with land center
+      after <white><attempts></white> attempt(s).</#6dd3a0>"
+  gen:
+    option:
+      unknown: "<prefix><red>Unknown world generation option: <option>.</red>"
+      invalid: "<prefix><red>Invalid value <value> for option <option>.</red>"
+  generator:
+    invalid: "<prefix><red>That world generator or biome provider could not be resolved.</red>"
+  loaded: "<prefix><#6dd3a0>Loaded world <world>.</#6dd3a0>"
+  unloaded: "<prefix><#f4d35e>Unloaded world <world>.</#f4d35e>"
+  selected: "<prefix><#6dd3a0>Selected UHC world <world>.</#6dd3a0>"
+  deleted: "<prefix><#6dd3a0>Deleted world <world>.</#6dd3a0>"
+  cleaned: "<prefix><#6dd3a0>Deleted <count> generated UHC world(s).</#6dd3a0>"
+  clean:
+    empty: "<prefix><#f4d35e>No generated UHC worlds were found to delete.</#f4d35e>"
+  preload:
+    started: "<prefix><#7dd3fc>Started Chunky preload for <world> with a <shape> radius
+      of <radius> blocks.</#7dd3fc>"
+    complete: "<prefix><#6dd3a0>Chunky preload for <world> is complete.</#6dd3a0>"
+    active: "<prefix><#f4d35e>A Chunky preload is already being tracked for <world>.</#f4d35e>"
+    stopped: "<prefix><#f4d35e>Stopped the Chunky preload for <world>.</#f4d35e>"
+    status: "<prefix><#7dd3fc>Chunky preload</#7dd3fc> <#7b8aa0>| World:</#7b8aa0>
+      <white><world></white> <#7b8aa0>| Shape:</#7b8aa0> <white><shape></white> <#7b8aa0>|
+      Radius:</#7b8aa0> <white><radius></white> <#7b8aa0>| Progress:</#7b8aa0> <white><percent>%</white>
+      <#7b8aa0>(<generated>/<total>)</#7b8aa0>"
+    bossbar: "<#7dd3fc>Preloading <world></#7dd3fc> <white><percent>%</white> <#9db4c0>(<generated>/<total>)</#9db4c0>"
+  current: "<prefix><#7b8aa0>Current UHC world:</#7b8aa0> <white><world></white>"
+  list: "<prefix><#7b8aa0>Normal worlds (<count>):</#7b8aa0> <white><worlds></white>"
+  teleported: "<prefix><#6dd3a0>Teleported to world <world>.</#6dd3a0>"
+border:
+  current: "<prefix><#7b8aa0>World:</#7b8aa0> <white><world></white> <#7b8aa0>| Size:</#7b8aa0>
+    <white><size></white> <#7b8aa0>| Center:</#7b8aa0> <white><center_x>, <center_z></white>"
+  set: "<prefix><#6dd3a0>Border size set to <size>.</#6dd3a0>"
+  centered: "<prefix><#6dd3a0>Border center set to <center_x>, <center_z>.</#6dd3a0>"
+  shrink:
+    started: "<prefix><#6dd3a0>Border shrinking to <size> over <seconds>s.</#6dd3a0>"
+  reset: "<prefix><#6dd3a0>Border reset to configured size <size>.</#6dd3a0>"
+  shrinking: "<prefix><#ee964b>Border stage <stage>/<total> is now shrinking to <size>.</#ee964b>"
+center:
+  waypoint:
+    name: "<gradient:#f4d35e:#ee964b><bold>Center</bold></gradient>"
+death:
+  message:
+    player: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>was killed by</white>
+      <#f95738><killer></#f95738>"
+    fall: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>fell to their death.</white>"
+    void: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>fell into the void.</white>"
+    lava: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>tried to swim in
+      lava.</white>"
+    fire: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>went up in flames.</white>"
+    generic: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>died.</white>"
+portals:
+  disabled: "<prefix><#f95738>Nether and End travel are disabled on this server.</#f95738>"
+potions:
+  disabled: "<prefix><#f95738>Potions are disabled in this match.</#f95738>"
+suspicious:
+  stew:
+    disabled: "<prefix><#f95738>Suspicious stew is disabled in this match.</#f95738>"
+enchanted-golden-apple-disabled: "<prefix><#f95738>Enchanted golden apples are disabled in this match.</#f95738>"
+golden-head-name: "<#f4d35e><bold>Golden Head</bold></#f4d35e>"
 recipe-golden-head-name: "<#f4d35e><bold>Golden Head</bold></#f4d35e>"
 recipe-golden-head-lore-1: "<#cbd5e1>Right-click to consume.</#cbd5e1>"
 recipe-golden-head-lore-2: "<#7b8aa0>Grants regeneration and extra absorption.</#7b8aa0>"
-
-# Join and quit formatting
-join-message: "<#7b8aa0>[</#7b8aa0><#6dd3a0>+</#6dd3a0><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>joined the server.</#cbd5e1> <#6b7280>(<online> online)</#6b7280>"
-quit-message: "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>left the server.</#cbd5e1> <#6b7280>(<online> online)</#6b7280>"
-
-# World and border management
-world-generated: "<prefix><#6dd3a0>Generated and selected UHC world <world>.</#6dd3a0>"
-world-generated-land: "<prefix><#6dd3a0>Generated and selected UHC world <world> with land center after <white><attempts></white> attempt(s).</#6dd3a0>"
-world-gen-usage: "<prefix><#f4d35e>Usage: /uhc gen [world] [terrain=normal|flat|amplified|large_biomes|void] [biome=PLAINS] [generator=Plugin:id] [biome-provider=Plugin:id] [generator-settings=data] [seed=123] [structures=true|false] [hardcore=true|false]</#f4d35e>"
-world-gen-option-unknown: "<prefix><red>Unknown world generation option: <option>.</red>"
-world-gen-option-invalid: "<prefix><red>Invalid value <value> for option <option>.</red>"
-world-generator-invalid: "<prefix><red>That world generator or biome provider could not be resolved.</red>"
-world-loaded: "<prefix><#6dd3a0>Loaded world <world>.</#6dd3a0>"
-world-unloaded: "<prefix><#f4d35e>Unloaded world <world>.</#f4d35e>"
-world-selected: "<prefix><#6dd3a0>Selected UHC world <world>.</#6dd3a0>"
-world-deleted: "<prefix><#6dd3a0>Deleted world <world>.</#6dd3a0>"
-world-cleaned: "<prefix><#6dd3a0>Deleted <count> generated UHC world(s).</#6dd3a0>"
-world-clean-empty: "<prefix><#f4d35e>No generated UHC worlds were found to delete.</#f4d35e>"
-world-preload-started: "<prefix><#7dd3fc>Started Chunky preload for <world> with a <shape> radius of <radius> blocks.</#7dd3fc>"
-world-preload-complete: "<prefix><#6dd3a0>Chunky preload for <world> is complete.</#6dd3a0>"
-world-preload-active: "<prefix><#f4d35e>A Chunky preload is already being tracked for <world>.</#f4d35e>"
-world-preload-stopped: "<prefix><#f4d35e>Stopped the Chunky preload for <world>.</#f4d35e>"
-world-preload-status: "<prefix><#7dd3fc>Chunky preload</#7dd3fc> <#7b8aa0>| World:</#7b8aa0> <white><world></white> <#7b8aa0>| Shape:</#7b8aa0> <white><shape></white> <#7b8aa0>| Radius:</#7b8aa0> <white><radius></white> <#7b8aa0>| Progress:</#7b8aa0> <white><percent>%</white> <#7b8aa0>(<generated>/<total>)</#7b8aa0>"
-world-preload-bossbar: "<#7dd3fc>Preloading <world></#7dd3fc> <white><percent>%</white> <#9db4c0>(<generated>/<total>)</#9db4c0>"
-world-current: "<prefix><#7b8aa0>Current UHC world:</#7b8aa0> <white><world></white>"
-world-list: "<prefix><#7b8aa0>Normal worlds (<count>):</#7b8aa0> <white><worlds></white>"
-world-teleported: "<prefix><#6dd3a0>Teleported to world <world>.</#6dd3a0>"
-border-current: "<prefix><#7b8aa0>World:</#7b8aa0> <white><world></white> <#7b8aa0>| Size:</#7b8aa0> <white><size></white> <#7b8aa0>| Center:</#7b8aa0> <white><center_x>, <center_z></white>"
-border-set: "<prefix><#6dd3a0>Border size set to <size>.</#6dd3a0>"
-border-centered: "<prefix><#6dd3a0>Border center set to <center_x>, <center_z>.</#6dd3a0>"
-border-shrink-started: "<prefix><#6dd3a0>Border shrinking to <size> over <seconds>s.</#6dd3a0>"
-border-reset: "<prefix><#6dd3a0>Border reset to configured size <size>.</#6dd3a0>"
-center-waypoint-name: "<gradient:#f4d35e:#ee964b><bold>Center</bold></gradient>"
-
-# Death chests and death messages
-death-chest-created: "<prefix><#6dd3a0>Your death chest has been created.</#6dd3a0>"
-death-chest-name: "<#f95738><player>'s Death Chest</#f95738>"
-death-chest-locked: "<prefix><#f95738>This death chest is still locked.</#f95738>"
-death-chest-hologram-owner: "<#f95738><bold><player>'s Death Chest</bold></#f95738>"
-death-chest-hologram-unlock: "<#faf0ca>Unlocks in <white><time></white></#faf0ca>"
-death-chest-hologram-unlocked: "<#6dd3a0>Unlocked</#6dd3a0>"
-death-message-player: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>was killed by</white> <#f95738><killer></#f95738>"
-death-message-fall: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>fell to their death.</white>"
-death-message-void: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>fell into the void.</white>"
-death-message-lava: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>tried to swim in lava.</white>"
-death-message-fire: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>went up in flames.</white>"
-death-message-generic: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>died.</white>"
-portals-disabled: "<prefix><#f95738>Nether and End travel are disabled on this server.</#f95738>"
-potions-disabled: "<prefix><#f95738>Potions are disabled in this match.</#f95738>"
-suspicious-stew-disabled: "<prefix><#f95738>Suspicious stew is disabled in this match.</#f95738>"
-enchanting-disabled: "<prefix><#f95738>Enchanting is disabled in this match.</#f95738>"
-brewing-disabled: "<prefix><#f95738>Brewing is disabled in this match.</#f95738>"
-
-# Lobby systems and items
-lobby-pvp-hold-instruction: "<prefix><#f4d35e>Hold the PvP sword for <seconds>s to enable lobby PvP.</#f4d35e>"
-lobby-pvp-hold-start: "<prefix><#f4d35e>Keep holding the PvP sword for <seconds>s to enable your lobby PvP.</#f4d35e>"
-lobby-pvp-hold-tick: "<prefix><#f4d35e>Lobby PvP enabling in <seconds>s...</#f4d35e>"
-lobby-pvp-disable-tick: "<prefix><#f4d35e>Lobby PvP disabling in <seconds>s...</#f4d35e>"
-lobby-pvp-enabled-self: "<prefix><#6dd3a0>Your lobby PvP is now enabled.</#6dd3a0>"
-lobby-pvp-disabled-self: "<prefix><#f4d35e>Your lobby PvP is now disabled.</#f4d35e>"
-lobby-pvp-enable-required: "<prefix><#f4d35e>You need to enable your own lobby PvP first.</#f4d35e>"
-lobby-pvp-disabled-target: "<prefix><#f4d35e><player> has not enabled lobby PvP.</#f4d35e>"
-lobby-spectator-enabled: "<prefix><#9db4c0>You are now spectating and will not be scattered into the match.</#9db4c0>"
-lobbygame-only-waiting: "<prefix><#f95738>Lobby minigames can only run while the server is in the waiting lobby.</#f95738>"
-lobbygame-already-running: "<prefix><#f95738>A lobby minigame is already running.</#f95738>"
-lobbygame-none-running: "<prefix><#f4d35e>There is no active lobby minigame.</#f4d35e>"
-lobbygame-no-words: "<prefix><#f95738>No unscramble words are configured.</#f95738>"
-lobbygame-word-invalid: "<prefix><#f95738>That word is invalid. Use letters or numbers only.</#f95738>"
-lobbygame-word-exists: "<prefix><#f95738><word> is already in the unscramble list.</#f95738>"
-lobbygame-word-missing: "<prefix><#f95738><word> is not in the unscramble list.</#f95738>"
-lobbygame-word-added: "<prefix><#6dd3a0>Added <word> to the unscramble list.</#6dd3a0>"
-lobbygame-word-removed: "<prefix><#f95738>Removed <word> from the unscramble list.</#f95738>"
-lobbygame-word-list: "<prefix><#faf0ca>Unscramble words:</#faf0ca> <white><words></white>"
-lobbygame-word-list-empty: "<prefix><#f4d35e>No unscramble words are configured yet.</#f4d35e>"
-lobbygame-start-command-success: "<prefix><#6dd3a0>Lobby minigame started.</#6dd3a0>"
-lobbygame-stopped: "<prefix><#f95738><sender></#f95738> <#cbd5e1>stopped the lobby minigame.</#cbd5e1>"
-lobbygame-stopped-command: "<prefix><#6dd3a0>Lobby minigame stopped.</#6dd3a0>"
-lobbygame-started-math: "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>started a math round:</#cbd5e1> <white><expression></white>"
-lobbygame-started-unscramble: "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>started an unscramble round:</#cbd5e1> <white><scrambled></white>"
-lobbygame-title: "<#f4d35e><bold>Lobby Minigame</bold></#f4d35e>"
-lobbygame-title-math-subtitle: "<white>Solve: <expression></white>"
-lobbygame-title-unscramble-subtitle: "<white>Unscramble: <scrambled></white>"
-lobbygame-winner: "<prefix><#6dd3a0><player></#6dd3a0> <#faf0ca>answered first in</#faf0ca> <white><time></white><#faf0ca>.</#faf0ca>"
-lobbygame-winner-title: "<#6dd3a0><bold><player></bold></#6dd3a0>"
-lobbygame-winner-subtitle: "<white>won in <time></white>"
-lobbygame-timeout: "<prefix><#f95738>No one answered in time.</#f95738> <#cbd5e1>Answer:</#cbd5e1> <white><answer></white>"
-lobby-spectator-disabled: "<prefix><#6dd3a0>You are back in the next match queue.</#6dd3a0>"
-lobby-fly-enabled: "<prefix><#7dd3fc>Lobby flight enabled.</#7dd3fc>"
-lobby-fly-disabled: "<prefix><#f4d35e>Lobby flight disabled.</#f4d35e>"
-lobby-fly-blocked: "<prefix><#f95738>You cannot use lobby flight while your lobby PvP is enabled.</#f95738>"
-lobby-item-toggle-enabled-suffix: "<#6dd3a0><bold>[Enabled]</bold></#6dd3a0>"
-lobby-item-toggle-disabled-suffix: "<#f95738><bold>[Disabled]</bold></#f95738>"
-lobby-item-toggle-enabled-line: "<#6dd3a0>Status: Enabled</#6dd3a0>"
-lobby-item-toggle-disabled-line: "<#f95738>Status: Disabled</#f95738>"
-lobby-item-no-permission-lore: "<#f95738>You cannot use this item.</#f95738>"
-lobby-players-hidden: "<prefix><#f4d35e>Other lobby players are now hidden.</#f4d35e>"
-lobby-players-shown: "<prefix><#6dd3a0>Other lobby players are now visible.</#6dd3a0>"
-lobby-item:
-  fly_toggle:
-    name: "<#7dd3fc><bold>Lobby Fly</bold></#7dd3fc>"
-    lore:
-      - "<#cbd5e1>Toggle your lobby flight.</#cbd5e1>"
-      - "<#7b8aa0>Available for ops and players with permission.</#7b8aa0>"
-  hide_players:
-    name: "<#f4d35e><bold>Hide Players</bold></#f4d35e>"
-    lore:
-      - "<#cbd5e1>Toggle lobby player visibility.</#cbd5e1>"
-      - "<#7b8aa0>Hide other players for a cleaner lobby.</#7b8aa0>"
-  recipes:
-    name: "<#f4d35e><bold>UHC Recipes</bold></#f4d35e>"
-    lore:
-      - "<#cbd5e1>Open the custom UHC recipe viewer.</#cbd5e1>"
-      - "<#7b8aa0>See Golden Head and other custom crafts.</#7b8aa0>"
-  pvp_sword:
-    name: "<#f95738><bold>Lobby PvP</bold></#f95738>"
-    lore:
-      - "<#cbd5e1>Hold this sword for 3 seconds.</#cbd5e1>"
-      - "<#7b8aa0>This enables your own lobby PvP.</#7b8aa0>"
-  stats:
-    name: "<#f4d35e><bold>Profile</bold></#f4d35e>"
-    lore:
-      - "<#cbd5e1>Open your player profile.</#cbd5e1>"
-      - "<#7b8aa0>Shows your profile, level, and stats.</#7b8aa0>"
-  language:
-    name: "<#93c5fd><bold>Language</bold></#93c5fd>"
-    lore:
-      - "<#cbd5e1>Open the language selector GUI.</#cbd5e1>"
-      - "<#7b8aa0>Choose your own locale.</#7b8aa0>"
-  kit_selector:
-    name: "<#93c5fd><bold>Kit Selector</bold></#93c5fd>"
-    lore:
-      - "<#cbd5e1>Preview your starting inventory.</#cbd5e1>"
-      - "<#7b8aa0>Select the kit you want before the match.</#7b8aa0>"
-  config:
-    name: "<#6dd3a0><bold>Game Config</bold></#6dd3a0>"
-    lore:
-      - "<#cbd5e1>Open the config viewer.</#cbd5e1>"
-      - "<#7b8aa0>Admins can edit values directly.</#7b8aa0>"
-  leaderboard:
-    name: "<#6dd3a0><bold>Leaderboard</bold></#6dd3a0>"
-    lore:
-      - "<#cbd5e1>Show top players or rankings.</#cbd5e1>"
-      - "<#7b8aa0>Open the leaderboard viewer.</#7b8aa0>"
-  team_selector:
-    name: "<#7dd3fc><bold>Teams</bold></#7dd3fc>"
-    lore:
-      - "<#cbd5e1>Open the team selector.</#cbd5e1>"
-      - "<#7b8aa0>Join or leave a team before the match.</#7b8aa0>"
-  lobby_spectator:
-    name: "<#9db4c0><bold>Spectate Match</bold></#9db4c0>"
-    lore:
-      - "<white>Switch into spectator mode.</white>"
-      - "<#d7e1ea>You will not be counted for match start.</#d7e1ea>"
-
-# Match flow, admin controls, and reconnect handling
-match-starting: "<prefix><#f4d35e>Match starting in <seconds>s.</#f4d35e>"
-match-force-started: "<prefix><#f95738>Force started the match and skipped countdown.</#f95738>"
+enchanting:
+  disabled: "<prefix><#f95738>Enchanting is disabled in this match.</#f95738>"
+brewing:
+  disabled: "<prefix><#f95738>Brewing is disabled in this match.</#f95738>"
+grindstone:
+  disabled: "<prefix><#f95738>The grindstone is disabled in this match.</#f95738>"
+lobbygame:
+  only:
+    waiting: "<prefix><#f95738>Lobby minigames can only run while the server is in
+      the waiting lobby.</#f95738>"
+  already:
+    running: "<prefix><#f95738>A lobby minigame is already running.</#f95738>"
+  none:
+    running: "<prefix><#f4d35e>There is no active lobby minigame.</#f4d35e>"
+  'no':
+    words: "<prefix><#f95738>No unscramble words are configured.</#f95738>"
+  word:
+    invalid: "<prefix><#f95738>That word is invalid. Use letters or numbers only.</#f95738>"
+    exists: "<prefix><#f95738><word> is already in the unscramble list.</#f95738>"
+    missing: "<prefix><#f95738><word> is not in the unscramble list.</#f95738>"
+    added: "<prefix><#6dd3a0>Added <word> to the unscramble list.</#6dd3a0>"
+    removed: "<prefix><#f95738>Removed <word> from the unscramble list.</#f95738>"
+    list:
+      empty: "<prefix><#f4d35e>No unscramble words are configured yet.</#f4d35e>"
+  start:
+    command:
+      success: "<prefix><#6dd3a0>Lobby minigame started.</#6dd3a0>"
+  stopped:
+    command: "<prefix><#6dd3a0>Lobby minigame stopped.</#6dd3a0>"
+  started:
+    math: "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>started a math round:</#cbd5e1>
+      <white><expression></white>"
+    unscramble: "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>started an unscramble
+      round:</#cbd5e1> <white><scrambled></white>"
+  title:
+    text: "<#f4d35e><bold>Lobby Minigame</bold></#f4d35e>"
+    math:
+      subtitle: "<white>Solve: <expression></white>"
+    unscramble:
+      subtitle: "<white>Unscramble: <scrambled></white>"
+  winner:
+    text: "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>won in</#cbd5e1> <white><time></white> <#7b8aa0>— Answer:</#7b8aa0> <white><answer></white>"
+    title: "<#6dd3a0><bold><player></bold></#6dd3a0>"
+    subtitle: "<white>won in <time></white>"
+  timeout: "<prefix><#f95738>No one answered in time.</#f95738> <#cbd5e1>Answer:</#cbd5e1>
+    <white><answer></white>"
+match:
+  starting: "<prefix><#f4d35e>Match starting in <seconds>s.</#f4d35e>"
+  force:
+    started: "<prefix><#f95738>Force started the match and skipped countdown.</#f95738>"
+  started: "<prefix><#6dd3a0>UHC is now live.</#6dd3a0>"
+  exp:
+    earned: "<prefix><#f4d35e>You gained <white><experience></white> experience this
+      match.</#f4d35e>"
+  rejoined: "<prefix><#6dd3a0>You rejoined the active match.</#6dd3a0> <#7dd3fc>Reconnect
+    time left:</#7dd3fc> <white><time></white>"
+  disconnected: "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e>
+    <#cbd5e1>left the match and must relog within</#cbd5e1> <white><minutes> min</white>
+    <#6b7280>(<time> left)</#6b7280>"
+  draw: "<prefix><#f95738>The match ended with no winner.</#f95738>"
+  summary:
+    header: "<#334155><st>                                        </st></#334155>"
+    title: "<#faf0ca><bold>             Summary             </bold></#faf0ca>"
+    winner: "<#7b8aa0>  Winner   </#7b8aa0><#f4d35e><bold><winner></bold></#f4d35e>"
+    duration: "<#7b8aa0>  Duration </#7b8aa0><white><duration></white>"
+    players: "<#7b8aa0>  Players  </#7b8aa0><white><players></white>"
+    divider: "<#1e293b><st>                                        </st></#1e293b>"
+    kills:
+      header: "<#93c5fd>  Kill Leaderboard</#93c5fd>"
+      entry: "<#7b8aa0>  <rank>.</#7b8aa0> <white><player></white><#7b8aa0> — </#7b8aa0><#f4d35e><kills> kill<plural></#f4d35e>"
+      none: "<#7b8aa0>  No kills recorded.</#7b8aa0>"
+    footer: "<#334155><st>                                        </st></#334155>"
+  ending:
+    text: "<prefix><#9db4c0>Match is ending. Returning to lobby in <white><seconds>s</white>.</#9db4c0>"
+    actionbar: "<#faf0ca>Returning to lobby in <seconds>s</#faf0ca>"
+  stopped: "<prefix><#f95738>The match was stopped.</#f95738>"
+  reset: "<prefix><#6dd3a0>All match state and player data have been force reset.</#6dd3a0>"
 countdown: "<prefix><#ee964b>Starting in <seconds>s.</#ee964b>"
-title-match-starting: "<#f4d35e><bold>Match Starting</bold></#f4d35e>"
-subtitle-match-starting: "<white><seconds>s until the countdown begins.</white>"
-title-countdown: "<#ee964b><bold><seconds></bold></#ee964b>"
-subtitle-countdown: "<white>Until match start</white>"
-pause-enabled: "<prefix><#f4d35e>The match is now paused.</#f4d35e>"
-pause-disabled: "<prefix><#6dd3a0>The match has resumed.</#6dd3a0>"
-pause-already: "<prefix><#f4d35e>The match is already paused.</#f4d35e>"
-pause-invalid: "<prefix><#f95738>You can only pause during countdown, grace, running, sudden death, or return-to-lobby.</#f95738>"
-resume-invalid: "<prefix><#f95738>The match is not currently paused.</#f95738>"
-pause-blocked: "<prefix><#f95738>The match is paused. You cannot do that right now.</#f95738>"
-freeze-enabled: "<prefix><#7dd3fc><player> has been frozen.</#7dd3fc>"
-freeze-disabled: "<prefix><#6dd3a0><player> has been unfrozen.</#6dd3a0>"
-freeze-already: "<prefix><#f4d35e><player> is already frozen.</#f4d35e>"
-unfreeze-already: "<prefix><#f4d35e><player> is not frozen.</#f4d35e>"
-freeze-notify: "<prefix><#f95738>You have been frozen by an administrator.</#f95738>"
-unfreeze-notify: "<prefix><#6dd3a0>You have been unfrozen.</#6dd3a0>"
-freeze-blocked: "<prefix><#f95738>You are frozen and cannot do that.</#f95738>"
-scatter-sequence-start: "<prefix><#faf0ca>Scatter sequence started. Players will be teleported one by one.</#faf0ca>"
-scatter-bossbar: "<#f4d35e>Scattering players <white><current>/<total></white> <#7b8aa0>(<percent>%)</#7b8aa0>"
-scatter-settle-wait: "<prefix><#9db4c0>Waiting <seconds>s for the map to settle.</#9db4c0>"
+title:
+  match:
+    starting: "<#f4d35e><bold>Match Starting</bold></#f4d35e>"
+    started: "<#6dd3a0><bold>UHC Live</bold></#6dd3a0>"
+    draw: "<#f95738><bold>No Winner</bold></#f95738>"
+    ending: "<#9db4c0><bold>Match Ending</bold></#9db4c0>"
+  countdown: "<#ee964b><bold><seconds></bold></#ee964b>"
+  scatter:
+    sequence:
+      start: "<#faf0ca><bold>Scatter Starting</bold></#faf0ca>"
+    settle:
+      wait: "<#9db4c0><bold>Map Settling</bold></#9db4c0>"
+  scattered: "<#6dd3a0><bold>Scattered</bold></#6dd3a0>"
+  grace:
+    start: "<#faf0ca><bold>Grace Period</bold></#faf0ca>"
+    end: "<#f95738><bold>PvP Enabled</bold></#f95738>"
+  final:
+    duel:
+      start: "<#f4d35e><bold>Final Duel</bold></#f4d35e>"
+    heal: "<#6dd3a0><bold>Final Heal</bold></#6dd3a0>"
+  sudden:
+    death:
+      start: "<#f95738><bold>Sudden Death</bold></#f95738>"
+      finish: "<#f4d35e><bold>Sudden Death Winner</bold></#f4d35e>"
+  revived:
+    self: "<#6dd3a0><bold>Revived</bold></#6dd3a0>"
+  winner: "<#f4d35e><bold>Winner</bold></#f4d35e>"
+  border:
+    shrinking: "<#ee964b><bold>Border Shrinking</bold></#ee964b>"
+  eliminated:
+    announcement: "<#f95738><bold>Player Eliminated</bold></#f95738>"
+subtitle:
+  match:
+    starting: "<white><seconds>s until the countdown begins.</white>"
+    started: "<white>The match has started.</white>"
+    draw: "<white>All players were eliminated.</white>"
+    ending: "<white>Returning to lobby in <seconds>s.</white>"
+  countdown: "<white>Until match start</white>"
+  scatter:
+    sequence:
+      start: "<white>Players are being teleported.</white>"
+    settle:
+      wait: "<white>Waiting <seconds>s before live start.</white>"
+  scattered: "<white>Your match position is set.</white>"
+  grace:
+    start: "<white><seconds>s of PvP protection.</white>"
+    end: "<white>Grace period has ended.</white>"
+  final:
+    duel:
+      start: "<white>Match ends in <seconds>s.</white>"
+    heal: "<white>Health and hunger restored.</white>"
+  sudden:
+    death:
+      start: "<white>Match ends in <seconds>s.</white>"
+      finish: "<white><player> wins the match.</white>"
+  revived:
+    self: "<white>You are back in the match.</white>"
+  winner: "<white><player> has won the match.</white>"
+  border:
+    shrinking: "<white>Stage <stage>/<total> to <size>.</white>"
+  eliminated:
+    announcement: "<white><player> has been eliminated.</white>"
+pause:
+  enabled: "<prefix><#f4d35e>The match is now paused.</#f4d35e>"
+  disabled: "<prefix><#6dd3a0>The match has resumed.</#6dd3a0>"
+  already: "<prefix><#f4d35e>The match is already paused.</#f4d35e>"
+  invalid: "<prefix><#f95738>You can only pause during countdown, grace, running,
+    sudden death, or return-to-lobby.</#f95738>"
+  blocked: "<prefix><#f95738>The match is paused. You cannot do that right now.</#f95738>"
+resume:
+  invalid: "<prefix><#f95738>The match is not currently paused.</#f95738>"
+freeze:
+  enabled: "<prefix><#7dd3fc><player> has been frozen.</#7dd3fc>"
+  disabled: "<prefix><#6dd3a0><player> has been unfrozen.</#6dd3a0>"
+  already: "<prefix><#f4d35e><player> is already frozen.</#f4d35e>"
+  notify: "<prefix><#f95738>You have been frozen by an administrator.</#f95738>"
+  blocked: "<prefix><#f95738>You are frozen and cannot do that.</#f95738>"
+unfreeze:
+  already: "<prefix><#f4d35e><player> is not frozen.</#f4d35e>"
+  notify: "<prefix><#6dd3a0>You have been unfrozen.</#6dd3a0>"
+scatter:
+  sequence:
+    start: "<prefix><#faf0ca>Scatter sequence started. Players will be teleported
+      one by one.</#faf0ca>"
+  bossbar: "<#f4d35e>Scattering players <white><current>/<total></white> <#7b8aa0>(<percent>%)</#7b8aa0>"
+  settle:
+    wait: "<prefix><#9db4c0>Waiting <seconds>s for the map to settle.</#9db4c0>"
+  countdown:
+    bossbar: "<#22c55e>Game starts in <white><seconds></white>"
+    title: "<#22c55e><bold><seconds></bold></#22c55e>"
 scattered: "<prefix><#6dd3a0>You have been scattered.</#6dd3a0>"
-title-scatter-sequence-start: "<#faf0ca><bold>Scatter Starting</bold></#faf0ca>"
-subtitle-scatter-sequence-start: "<white>Players are being teleported.</white>"
-title-scatter-settle-wait: "<#9db4c0><bold>Map Settling</bold></#9db4c0>"
-subtitle-scatter-settle-wait: "<white>Waiting <seconds>s before live start.</white>"
-title-scattered: "<#6dd3a0><bold>Scattered</bold></#6dd3a0>"
-subtitle-scattered: "<white>Your match position is set.</white>"
-match-started: "<prefix><#6dd3a0>UHC is now live.</#6dd3a0>"
-grace-start: "<prefix><#faf0ca>Grace period started for <seconds>s.</#faf0ca>"
-grace-end: "<prefix><#f95738>Grace period ended. PvP is enabled.</#f95738>"
-title-match-started: "<#6dd3a0><bold>UHC Live</bold></#6dd3a0>"
-subtitle-match-started: "<white>The match has started.</white>"
-title-grace-start: "<#faf0ca><bold>Grace Period</bold></#faf0ca>"
-subtitle-grace-start: "<white><seconds>s of PvP protection.</white>"
-title-grace-end: "<#f95738><bold>PvP Enabled</bold></#f95738>"
-subtitle-grace-end: "<white>Grace period has ended.</white>"
-grace-skipped: "<prefix><#f95738>Grace period was skipped. PvP is now enabled.</#f95738>"
-skipphase-invalid: "<prefix><#f95738>There is no skippable phase right now.</#f95738>"
-skipphase-skipped: "<prefix><#f4d35e>Skipped phase <white><phase></white> and moved to <white><next></white>.</#f4d35e>"
-grace-blocked: "<prefix><#f95738>PvP is disabled during grace period.</#f95738>"
-final-heal: "<prefix><#86efac>Final heal has been given to all alive players.</#86efac>"
-final-duel-start: "<prefix><#f4d35e>Final duel started. Match ends in <seconds>s if nobody wins first.</#f4d35e>"
-sudden-death-start: "<prefix><#f95738>Sudden death started. Match ends in <seconds>s.</#f95738>"
-sudden-death-finish: "<prefix><#f4d35e><player></#f4d35e> <#f95738>wins by sudden death.</#f95738>"
-title-final-duel-start: "<#f4d35e><bold>Final Duel</bold></#f4d35e>"
-subtitle-final-duel-start: "<white>Match ends in <seconds>s.</white>"
-title-sudden-death-start: "<#f95738><bold>Sudden Death</bold></#f95738>"
-subtitle-sudden-death-start: "<white>Match ends in <seconds>s.</white>"
-title-sudden-death-finish: "<#f4d35e><bold>Sudden Death Winner</bold></#f4d35e>"
-subtitle-sudden-death-finish: "<white><player> wins the match.</white>"
-match-exp-earned: "<prefix><#f4d35e>You gained <white><experience></white> experience this match.</#f4d35e>"
-eliminated: "<prefix><#f95738>You have been eliminated.</#f95738>"
-eliminated-announcement: "<prefix><#f95738><player></#f95738> <#faf0ca>has been eliminated.</#faf0ca>"
-kick-on-death-message: "<#f95738><bold>You died.</bold></#f95738>\n<#faf0ca>This server is configured to kick players on death.</#faf0ca>"
-elimination-forced: "<prefix><#6dd3a0>Eliminated <count> player(s).</#6dd3a0>"
-killalloffline-none: "<prefix><#f4d35e>No disconnected active players were found.</#f4d35e>"
-killalloffline-done: "<prefix><#6dd3a0>Eliminated <count> disconnected player(s).</#6dd3a0>"
-revived-self: "<prefix><#6dd3a0>You have been revived.</#6dd3a0>"
-revived-announcement: "<prefix><#6dd3a0><player></#6dd3a0> <#faf0ca>has been revived.</#faf0ca>"
-revive-invalid: "<prefix><#f95738><player> is not eliminated.</#f95738>"
-title-revived-self: "<#6dd3a0><bold>Revived</bold></#6dd3a0>"
-subtitle-revived-self: "<white>You are back in the match.</white>"
-match-rejoined: "<prefix><#6dd3a0>You rejoined the active match.</#6dd3a0> <#7dd3fc>Reconnect time left:</#7dd3fc> <white><time></white>"
-match-disconnected: "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>left the match and must relog within</#cbd5e1> <white><minutes> min</white> <#6b7280>(<time> left)</#6b7280>"
-
-# Spectator system
-spectator-teleporter-title: "<#334155><bold>Player List</bold></#334155>"
-spectator-menu-title: "<#6dd3a0><bold>Spectator Tools</bold></#6dd3a0>"
-spectator-teleporter-prev: "<#f4d35e><bold>Previous Page</bold></#f4d35e>"
-spectator-teleporter-page: "<#9db4c0><bold>Page <page>/<max_page></bold></#9db4c0>"
-spectator-teleporter-next: "<#f4d35e><bold>Next Page</bold></#f4d35e>"
-spectator-inspector-title: "<#334155><bold>Inspect Player</bold></#334155>"
-spectator-inspect-view-title: "<#334155><bold><player>'s Inventory</bold></#334155>"
-spectator-target-head-name: "<#6dd3a0><bold><player></bold></#6dd3a0>"
-spectator-target-head-teleport-lore: "<#cbd5e1>Click to teleport.</#cbd5e1>"
-spectator-target-head-inspect-lore: "<#cbd5e1>Click to inspect inventory.</#cbd5e1>"
-spectator-target-head-coords: "<#7b8aa0>X:</#7b8aa0> <white><x></white> <#7b8aa0>Y:</#7b8aa0> <white><y></white> <#7b8aa0>Z:</#7b8aa0> <white><z></white>"
-spectator-speed-title: "<#334155><bold>Speed Control</bold></#334155>"
-spectator-speed-filler: "<dark_gray> </dark_gray>"
-spectator-speed-walk-slow: "<white><bold>Walk 0.10</bold></white>"
-spectator-speed-walk-normal: "<white><bold>Walk 0.20</bold></white>"
-spectator-speed-walk-fast: "<white><bold>Walk 0.30</bold></white>"
-spectator-speed-fly-slow: "<white><bold>Fly 0.05</bold></white>"
-spectator-speed-fly-normal: "<white><bold>Fly 0.10</bold></white>"
-spectator-speed-fly-fast: "<white><bold>Fly 0.20</bold></white>"
-spectator-speed-updated: "<prefix><#a7f3d0>Your <type> speed is now <value>.</#a7f3d0>"
-spectator-night-vision-enabled: "<prefix><#c4b5fd>Spectator night vision enabled.</#c4b5fd>"
-spectator-night-vision-disabled: "<prefix><#f4d35e>Spectator night vision disabled.</#f4d35e>"
-spectator-teleported: "<prefix><#6dd3a0>Teleported to <player>.</#6dd3a0>"
-spectator-teleported-center: "<prefix><#7dd3fc>Teleported to border center.</#7dd3fc>"
-spectator-target-offline: "<prefix><#f95738>Could not find <player> anymore.</#f95738>"
-spectator-no-targets: "<prefix><#f4d35e>No valid spectator targets are available right now.</#f4d35e>"
-spectator-match-not-started: "<prefix><#f4d35e>The match has not started yet, so you cannot enter the UHC world.</#f4d35e>"
-
-# Match result summary
-pm-sent: "<prefix><#6dd3a0>Message sent to <player>.</#6dd3a0>"
+advancement-message: "<prefix><#f4d35e><player></#f4d35e> <#faf0ca>has made the advancement</#faf0ca> <#86efac>[<advancement>]</#86efac>"
+arrow-health: "<red>❤ <player></red> <gray>—</gray> <white><health>/<max_health></white>"
+grace:
+  start: "<prefix><#faf0ca>Grace period started for <seconds>s.</#faf0ca>"
+  end: "<prefix><#f95738>Grace period ended. PvP is enabled.</#f95738>"
+  skipped: "<prefix><#f95738>Grace period was skipped. PvP is now enabled.</#f95738>"
+  blocked: "<prefix><#f95738>PvP is disabled during grace period.</#f95738>"
+skipphase:
+  invalid: "<prefix><#f95738>There is no skippable phase right now.</#f95738>"
+  skipped: "<prefix><#f4d35e>Skipped phase <white><phase></white> and moved to <white><next></white>.</#f4d35e>"
+final:
+  heal: "<prefix><#86efac>Final heal has been given to all alive players.</#86efac>"
+  duel:
+    start: "<prefix><#f4d35e>Final duel started. Match ends in <seconds>s if nobody
+      wins first.</#f4d35e>"
+sudden:
+  death:
+    start: "<prefix><#f95738>Sudden death started. Match ends in <seconds>s.</#f95738>"
+    finish: "<prefix><#f4d35e><player></#f4d35e> <#f95738>wins by sudden death.</#f95738>"
+eliminated:
+  announcement: "<prefix><#f95738><player></#f95738> <#faf0ca>has been eliminated.</#faf0ca>"
+kick:
+  'on':
+    death:
+      message: |-
+        <#f95738><bold>You died.</bold></#f95738>
+        <#faf0ca>This server is configured to kick players on death.</#faf0ca>
+elimination:
+  forced: "<prefix><#6dd3a0>Eliminated <count> player(s).</#6dd3a0>"
+killalloffline:
+  none: "<prefix><#f4d35e>No disconnected active players were found.</#f4d35e>"
+  done: "<prefix><#6dd3a0>Eliminated <count> disconnected player(s).</#6dd3a0>"
+revived:
+  self: "<prefix><#6dd3a0>You have been revived.</#6dd3a0>"
+  announcement: "<prefix><#6dd3a0><player></#6dd3a0> <#faf0ca>has been revived.</#faf0ca>"
+revive:
+  invalid: "<prefix><#f95738><player> is not eliminated.</#f95738>"
+spectator:
+  teleporter:
+    title: "<#334155><bold>Player List</bold></#334155>"
+    prev: "<#f4d35e><bold>Previous Page</bold></#f4d35e>"
+    page: "<#9db4c0><bold>Page <page>/<max_page></bold></#9db4c0>"
+    next: "<#f4d35e><bold>Next Page</bold></#f4d35e>"
+  menu:
+    title: "<#6dd3a0><bold>Spectator Tools</bold></#6dd3a0>"
+  inspector:
+    title: "<#334155><bold>Inspect Player</bold></#334155>"
+  inspect:
+    view:
+      title: "<#334155><bold><player>'s Inventory</bold></#334155>"
+  target:
+    head:
+      name: "<#6dd3a0><bold><player></bold></#6dd3a0>"
+      teleport:
+        lore: "<#cbd5e1>Click to teleport.</#cbd5e1>"
+      inspect:
+        lore: "<#cbd5e1>Click to inspect inventory.</#cbd5e1>"
+      coords: "<#7b8aa0>X:</#7b8aa0> <white><x></white> <#7b8aa0>Y:</#7b8aa0> <white><y></white>
+        <#7b8aa0>Z:</#7b8aa0> <white><z></white>"
+    offline: "<prefix><#f95738>Could not find <player> anymore.</#f95738>"
+  speed:
+    title: "<#334155><bold>Speed Control</bold></#334155>"
+    filler: "<dark_gray> </dark_gray>"
+    walk:
+      slow: "<white><bold>Walk 0.10</bold></white>"
+      normal: "<white><bold>Walk 0.20</bold></white>"
+      fast: "<white><bold>Walk 0.30</bold></white>"
+    fly:
+      slow: "<white><bold>Fly 0.05</bold></white>"
+      normal: "<white><bold>Fly 0.10</bold></white>"
+      fast: "<white><bold>Fly 0.20</bold></white>"
+    updated: "<prefix><#a7f3d0>Your <type> speed is now <value>.</#a7f3d0>"
+  night:
+    vision:
+      enabled: "<prefix><#c4b5fd>Spectator night vision enabled.</#c4b5fd>"
+      disabled: "<prefix><#f4d35e>Spectator night vision disabled.</#f4d35e>"
+  teleported:
+    text: "<prefix><#7dd3fc>Teleported to <player>.</#7dd3fc>"
+    center: "<prefix><#7dd3fc>Teleported to border center.</#7dd3fc>"
+  'no':
+    targets: "<prefix><#f4d35e>No valid spectator targets are available right now.</#f4d35e>"
+  match:
+    not:
+      started: "<prefix><#f4d35e>The match has not started yet, so you cannot enter
+        the UHC world.</#f4d35e>"
+pm:
+  sent: "<prefix><#6dd3a0>Message sent to <player>.</#6dd3a0>"
 winner: "<prefix><#f4d35e><player></#f4d35e> <#6dd3a0>has won the match.</#6dd3a0>"
-match-draw: "<prefix><#f95738>The match ended with no winner.</#f95738>"
-title-winner: "<#f4d35e><bold>Winner</bold></#f4d35e>"
-subtitle-winner: "<white><player> has won the match.</white>"
-title-match-draw: "<#f95738><bold>No Winner</bold></#f95738>"
-subtitle-match-draw: "<white>All players were eliminated.</white>"
-title-match-ending: "<#9db4c0><bold>Match Ending</bold></#9db4c0>"
-subtitle-match-ending: "<white>Returning to lobby in <seconds>s.</white>"
-match-summary-header: "<gray><bold>==============================</bold></gray>\n "
-match-summary-overview: "<#faf0ca>Summary</#faf0ca> <#7b8aa0>| Winner:</#7b8aa0> <white><winner></white> <#7b8aa0>| Duration:</#7b8aa0> <white><duration></white> <#7b8aa0>| Players:</#7b8aa0> <white><players></white>"
-match-summary-top-killer: "<#faf0ca>Summary</#faf0ca> <#7b8aa0>| Top Killer:</#7b8aa0> <white><player></white> <#7b8aa0>| Kills:</#7b8aa0> <white><kills></white>"
-match-summary-footer: " \n<gray><bold>==============================</bold></gray>"
-match-ending: "<prefix><#faf0ca>Returning everyone to the lobby in <seconds>s.</#faf0ca>"
-match-ending-actionbar: "<#faf0ca>Returning to lobby in <seconds>s</#faf0ca>"
-
-# Scoreboard labels and chat controls
-border-shrinking: "<prefix><#ee964b>Border stage <stage>/<total> is now shrinking to <size>.</#ee964b>"
-title-border-shrinking: "<#ee964b><bold>Border Shrinking</bold></#ee964b>"
-subtitle-border-shrinking: "<white>Stage <stage>/<total> to <size>.</white>"
-title-final-heal: "<#6dd3a0><bold>Final Heal</bold></#6dd3a0>"
-subtitle-final-heal: "<white>Health and hunger restored.</white>"
-title-eliminated: "<#f95738><bold>Eliminated</bold></#f95738>"
-subtitle-eliminated: "<white>You are out of the match.</white>"
-title-eliminated-announcement: "<#f95738><bold>Player Eliminated</bold></#f95738>"
-subtitle-eliminated-announcement: "<white><player> has been eliminated.</white>"
-scoreboard-event-none: "None"
-scoreboard-event-live: "LIVE"
-scoreboard-event-match-start: "Match Start"
-scoreboard-event-scattering: "Scattering"
-scoreboard-event-pvp: "PvP"
-scoreboard-event-final-heal: "Final Heal"
-scoreboard-event-final-duel: "Final Duel"
-scoreboard-event-border-stage: "Border <stage>/<total>"
-scoreboard-event-sudden-death: "Sudden Death"
-scoreboard-event-match-end: "Match End"
-scoreboard-event-lobby-return: "Lobby Return"
-scoreboard-status-off: "OFF"
-scoreboard-status-done: "DONE"
-scoreboard:
-  title: "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>TrialUHC</bold></gradient> <#fda4af>◆</#fda4af>"
-  footer:
-    lines:
-      - "<#a7f3d0>play.example.net</#a7f3d0>"
-  default:
-    lines:
-      - "<#7dd3fc>✦</#7dd3fc> <white>Trial Server</white>"
-      - ""
-      - "<#7dd3fc>⌚</#7dd3fc> <white>Phase:</white> <white><phase></white>"
-      - "<#a7f3d0>⌂</#a7f3d0> <white>World:</white> <white><world></white>"
-      - "<#fda4af>☻</#fda4af> <white>Online:</white> <white><online></white>"
-  waiting:
-    lines:
-      - "<#c4b5fd>✦</#c4b5fd> <white>Waiting Lobby</white>"
-      - ""
-      - "<#fda4af>☻</#fda4af> <white>Players:</white> <white><online></white>"
-      - "<#f4d35e>⚑</#f4d35e> <white>Need:</white> <white><players_to_start></white>"
-      - "<#a7f3d0>⌂</#a7f3d0> <white>World:</white> <white><world></white>"
-  countdown:
-    lines:
-      - "<#f4d35e>⌛</#f4d35e> <white>Match Starting</white>"
-      - ""
-      - "<#f4d35e>⌚</#f4d35e> <white>Starts In:</white> <white><timer></white>"
-      - "<#fda4af>☻</#fda4af> <white>Players:</white> <white><online></white>"
-      - "<#a7f3d0>⌂</#a7f3d0> <white>World:</white> <white><world></white>"
-  grace:
-    lines:
-      - "<#93c5fd>✚</#93c5fd> <white>Grace Period</white>"
-      - ""
-      - "<#f4d35e>⌚</#f4d35e> <white>Time Left:</white> <white><timer></white>"
-      - "<#fda4af>♥</#fda4af> <white>Alive:</white> <white><alive></white>"
-      - "<#7dd3fc>◫</#7dd3fc> <white>Border:</white> <white><border></white>"
-      - "<#86efac>✦</#86efac> <white>Next:</white> <white><next_event></white>"
-      - "<#93c5fd>⌚</#93c5fd> <white>In:</white> <white><next_event_timer></white>"
-  running:
-    lines:
-      - "<#ff8a80>✦</#ff8a80> <white>UHC Live</white>"
-      - ""
-      - "<#fda4af>♥</#fda4af> <white>Alive:</white> <white><alive></white>"
-      - "<#ff8a80>☠</#ff8a80> <white>Dead:</white> <white><dead></white>"
-      - "<#c4b5fd>☁</#c4b5fd> <white>Specs:</white> <white><spectators></white>"
-      - "<#7dd3fc>◫</#7dd3fc> <white>Border:</white> <white><border></white>"
-      - "<#86efac>✦</#86efac> <white>Next:</white> <white><next_event></white>"
-      - "<#93c5fd>⌚</#93c5fd> <white>In:</white> <white><next_event_timer></white>"
-      - "<#f4d35e>⌚</#f4d35e> <white>Time:</white> <white><elapsed></white>"
-
-tab:
-  player-format: "<white>•</white> <#fff3b0><player></#fff3b0>"
-  spectator-format: "<gray>• <player></gray>"
-  disconnected-line: "<white>Disconnected:</white> <#fda4af><players></#fda4af>"
-  default:
-    header: "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>TrialUHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>by <#ff8a80>HippoDev03</#ff8a80></white>\n"
-    footer: "\n<white>Version:</white> <#fff3b0><version></#fff3b0>"
-  waiting:
-    header: "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>TrialUHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>Ready up for the next match</white>\n"
-    footer: "\n<white>Need to start:</white> <#ff8a80><players_to_start></#ff8a80>"
-  countdown:
-    header: "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>TrialUHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>Starting in <timer></white>\n"
-    footer: "\n<white>World:</white> <#fff3b0><world></#fff3b0>"
-  grace:
-    header: "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>TrialUHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>Grace: <timer></white>\n"
-    footer: "\n<white>Alive:</white> <#fff3b0><alive></#fff3b0> <white>| Border:</white> <#ffd166><border></#ffd166>"
-  running:
-    header: "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>TrialUHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>Match Live</white>\n"
-    footer: "\n<white>Alive:</white> <#fff3b0><alive></#fff3b0> <white>| Spectators:</white> <#fff3b0><spectators></#fff3b0>"
-match-stopped: "<prefix><#f95738>The match was stopped.</#f95738>"
-match-reset: "<prefix><#6dd3a0>All match state and player data have been force reset.</#6dd3a0>"
-chat-muted: "<prefix><#f95738>Public chat has been muted.</#f95738>"
-chat-unmuted: "<prefix><#6dd3a0>Public chat has been unmuted.</#6dd3a0>"
-chat-mute-already: "<prefix><#f4d35e>Public chat is already muted.</#f4d35e>"
-chat-unmute-already: "<prefix><#f4d35e>Public chat is already unmuted.</#f4d35e>"
-chat-cleared: "<prefix><#7dd3fc>Chat was cleared by <white><player></white>.</#7dd3fc>"
-drops-cleared: "<prefix><#7dd3fc><white><player></white> cleared <white><count></white> dropped items.</#7dd3fc>"
-chat-message-cleared: "<prefix><#fda4af>Message from <white><player></white> was cleared by <white><staff></white>.</#fda4af>"
-chat-clear-button: "<red><bold>[x]</bold></red>"
-chat-clear-button-hover: "<#fda4af>Clear <white><player></white>'s message.</#fda4af>"
-chat-muted-blocked: "<prefix><#f95738>Public chat is currently muted.</#f95738>"
-staffchat-enabled: "<prefix><#6dd3a0>Staff chat mode enabled.</#6dd3a0>"
-staffchat-disabled: "<prefix><#f95738>Staff chat mode disabled.</#f95738>"
-
-# Alerts and reports
-alerts-title: "<#f4d35e><bold>Alert Options</bold></#f4d35e>"
-alerts-filler: "<dark_gray> </dark_gray>"
-alerts-report: "<#f95738><bold>Report Alerts</bold></#f95738>"
-alerts-item-pvp: "<#ee964b><bold>Item PvP Alerts</bold></#ee964b>"
-alerts-pvp: "<#7dd3fc><bold>PvP Alerts</bold></#7dd3fc>"
-alerts-mining: "<#86efac><bold>Mining Alerts</bold></#86efac>"
-alerts-status-on: "<#6dd3a0>Status: Enabled</#6dd3a0>"
-alerts-status-off: "<#f95738>Status: Disabled</#f95738>"
-alerts-click-toggle: "<#cbd5e1>Click to toggle this alert type.</#cbd5e1>"
-alerts-category-enabled: "<prefix><#6dd3a0><category> alerts enabled.</#6dd3a0>"
-alerts-category-disabled: "<prefix><#f95738><category> alerts disabled.</#f95738>"
-report-usage: "<prefix><#f4d35e>Usage: /report <player> <reason></#f4d35e>"
-report-submitted: "<prefix><#6dd3a0>Your report against <target> has been submitted.</#6dd3a0>"
-report-alert: "<prefix><#f95738>Report</#f95738> <#7b8aa0>| Reporter:</#7b8aa0> <white><reporter></white> <#7b8aa0>| Target:</#7b8aa0> <white><target></white> <#7b8aa0>| World:</#7b8aa0> <white><world></white> <#7b8aa0>| Reason:</#7b8aa0> <white><reason></white>"
-alert-pvp: "<prefix><#7dd3fc>PvP</#7dd3fc> <#7b8aa0>| Attacker:</#7b8aa0> <white><attacker></white> <#7b8aa0>| Victim:</#7b8aa0> <white><victim></white> <#7b8aa0>| World:</#7b8aa0> <white><world></white>"
-alert-item-pvp: "<prefix><#ee964b>Item PvP</#ee964b> <#7b8aa0>| Attacker:</#7b8aa0> <white><attacker></white> <#7b8aa0>| Victim:</#7b8aa0> <white><victim></white> <#7b8aa0>| Item:</#7b8aa0> <white><item></white>"
-alert-mining: "<prefix><#86efac>Mining</#86efac> <#7b8aa0>| Player:</#7b8aa0> <white><player></white> <#7b8aa0>| Ore:</#7b8aa0> <white><ore></white> <#7b8aa0>| Pos:</#7b8aa0> <white><x>, <y>, <z></white> <#7b8aa0>| World:</#7b8aa0> <white><world></white>"
-join-locked: "<prefix><#f4d35e>A match is already running. You are now a spectator.</#f4d35e>"
-state: "<prefix><#7b8aa0>Phase:</#7b8aa0> <white><phase></white> <#7b8aa0>| Alive:</#7b8aa0> <white><alive></white> <#7b8aa0>| Dead:</#7b8aa0> <white><dead></white>"
-
-# Shared errors
+chat:
+  muted:
+    blocked: "<prefix><#f95738>Public chat is currently muted.</#f95738>"
+  unmuted: "<prefix><#6dd3a0>Public chat has been unmuted.</#6dd3a0>"
+  mute:
+    already: "<prefix><#f4d35e>Public chat is already muted.</#f4d35e>"
+  unmute:
+    already: "<prefix><#f4d35e>Public chat is already unmuted.</#f4d35e>"
+  cleared: "<prefix><#7dd3fc>Chat was cleared by <white><player></white>.</#7dd3fc>"
+  message:
+    cleared: "<prefix><#fda4af>Message from <white><player></white> was cleared by
+      <white><staff></white>.</#fda4af>"
+  clear:
+    button:
+      hover: "<#fda4af>Clear <white><player></white>'s message.</#fda4af>"
+drops:
+  cleared: "<prefix><#7dd3fc><white><player></white> cleared <white><count></white>
+    dropped items.</#7dd3fc>"
+staffchat:
+  enabled: "<prefix><#6dd3a0>Staff chat mode enabled.</#6dd3a0>"
+  disabled: "<prefix><#f95738>Staff chat mode disabled.</#f95738>"
+alerts:
+  title: "<#f4d35e><bold>Alert Options</bold></#f4d35e>"
+  filler: "<dark_gray> </dark_gray>"
+  report: "<#f95738><bold>Report Alerts</bold></#f95738>"
+  item:
+    pvp: "<#ee964b><bold>Item PvP Alerts</bold></#ee964b>"
+  pvp: "<#7dd3fc><bold>PvP Alerts</bold></#7dd3fc>"
+  mining: "<#86efac><bold>Mining Alerts</bold></#86efac>"
+  status:
+    'on': "<#6dd3a0>Status: Enabled</#6dd3a0>"
+    'off': "<#f95738>Status: Disabled</#f95738>"
+  click:
+    toggle: "<#cbd5e1>Click to toggle this alert type.</#cbd5e1>"
+  category:
+    enabled: "<prefix><#6dd3a0><category> alerts enabled.</#6dd3a0>"
+    disabled: "<prefix><#f95738><category> alerts disabled.</#f95738>"
+report:
+  submitted: "<prefix><#6dd3a0>Your report against <target> has been submitted.</#6dd3a0>"
+  alert: "<prefix><#f95738>Report</#f95738> <#7b8aa0>| Reporter:</#7b8aa0> <white><reporter></white>
+    <#7b8aa0>| Target:</#7b8aa0> <white><target></white> <#7b8aa0>| World:</#7b8aa0>
+    <white><world></white> <#7b8aa0>| Reason:</#7b8aa0> <white><reason></white>"
+alert:
+  pvp: "<prefix><#7dd3fc>PvP</#7dd3fc> <#7b8aa0>| Attacker:</#7b8aa0> <white><attacker></white>
+    <#7b8aa0>| Victim:</#7b8aa0> <white><victim></white> <#7b8aa0>| World:</#7b8aa0>
+    <white><world></white>"
+  item:
+    pvp: "<prefix><#ee964b>Item PvP</#ee964b> <#7b8aa0>| Attacker:</#7b8aa0> <white><attacker></white>
+      <#7b8aa0>| Victim:</#7b8aa0> <white><victim></white> <#7b8aa0>| Item:</#7b8aa0>
+      <white><item></white>"
+  mining: "<prefix><#86efac>Mining</#86efac> <#7b8aa0>| Player:</#7b8aa0> <white><player></white>
+    <#7b8aa0>| Ore:</#7b8aa0> <white><ore></white> <#7b8aa0>| Pos:</#7b8aa0> <white><x>,
+    <y>, <z></white> <#7b8aa0>| World:</#7b8aa0> <white><world></white>"
+state: "<prefix><#7b8aa0>Phase:</#7b8aa0> <white><phase></white> <#7b8aa0>| Alive:</#7b8aa0>
+  <white><alive></white> <#7b8aa0>| Dead:</#7b8aa0> <white><dead></white>"
 errors:
-  no-permission: "<prefix><red>You do not have permission to do that.</red>"
-  players-only: "<prefix><red>Only players can use this command.</red>"
-  already-running: "<prefix><red>A match is already running.</red>"
-  not-running: "<prefix><red>No active match to stop.</red>"
-  world-missing: "<prefix><red>Configured game world <world> is not loaded.</red>"
-  world-not-loaded: "<prefix><red>World <world> is not currently loaded.</red>"
-  invalid-world-name: "<prefix><red>World names may only use letters, numbers, underscores, and dashes.</red>"
-  invalid-border-size: "<prefix><red>Border size must be a positive number.</red>"
-  invalid-border-center: "<prefix><red>Border center must be valid X and Z numbers.</red>"
-  invalid-duration: "<prefix><red>Duration must be a positive whole number of seconds.</red>"
-  no-grace-period: "<prefix><red>There is no active grace period to skip.</red>"
-  no-elimination-targets: "<prefix><red>No active match players matched that target.</red>"
-  command-disabled: "<prefix><red>Default server commands are disabled for players.</red>"
-  chunky-unavailable: "<prefix><red>Chunky is not installed or disabled. Install the Chunky plugin to use world preloading.</red>"
-  chunky-disabled: "<prefix><red>Chunky integration is disabled in config.</red>"
-  chunky-no-active-task: "<prefix><red>No Chunky preload is currently being tracked.</red>"
-  world-create-failed: "<prefix><red>Failed to create world <world>.</red>"
-  world-center-not-land: "<prefix><red>World <world> did not have land at center.</red>"
-  world-not-overworld: "<prefix><red>World <world> is not a normal overworld.</red>"
-  world-protected: "<prefix><red>World <world> is protected and cannot be deleted or regenerated.</red>"
-  world-unload-failed: "<prefix><red>Failed to unload world <world>.</red>"
-  world-delete-failed: "<prefix><red>Failed to delete world <world>.</red>"
-  not-enough-players: "<prefix><red>Need <required> players to start. Currently online: <current>.</red>"
-  not-enough-teams: "<prefix><red>Need at least 2 teams to start when team mode is enabled.</red>"
-  player-not-found: "<prefix><red>Player <player> is not online.</red>"
-  use-pm-command: "<prefix><#f4d35e>Use <white>/pm</white> for direct messages.</#f4d35e>"
-  pm-self: "<prefix><red>You cannot message yourself.</red>"
-  no-reply-target: "<prefix><red>You have nobody to reply to.</red>"
-  report-self: "<prefix><red>You cannot report yourself.</red>"
-
-settings-enabled: "<#6dd3a0>Enabled</#6dd3a0>"
-settings-disabled: "<#f95738>Disabled</#f95738>"
+  'no':
+    permission: "<prefix><red>You do not have permission to do that.</red>"
+    grace:
+      period: "<prefix><red>There is no active grace period to skip.</red>"
+    elimination:
+      targets: "<prefix><red>No active match players matched that target.</red>"
+    reply:
+      target: "<prefix><red>You have nobody to reply to.</red>"
+  players:
+    only: "<prefix><red>Only players can use this command.</red>"
+  already:
+    running: "<prefix><red>A match is already running.</red>"
+  not:
+    running: "<prefix><red>No active match to stop.</red>"
+    enough:
+      players: "<prefix><red>Need <required> players to start. Currently online: <current>.</red>"
+      teams: "<prefix><red>Need at least 2 teams to start when team mode is enabled.</red>"
+  world:
+    missing: "<prefix><red>Configured game world <world> is not loaded.</red>"
+    not:
+      loaded: "<prefix><red>World <world> is not currently loaded.</red>"
+      overworld: "<prefix><red>World <world> is not a normal overworld.</red>"
+    create:
+      failed: "<prefix><red>Failed to create world <world>.</red>"
+    center:
+      not:
+        land: "<prefix><red>World <world> did not have land at center.</red>"
+    protected: "<prefix><red>World <world> is protected and cannot be deleted or regenerated.</red>"
+    unload:
+      failed: "<prefix><red>Failed to unload world <world>.</red>"
+    delete:
+      failed: "<prefix><red>Failed to delete world <world>.</red>"
+  invalid:
+    world:
+      name: "<prefix><red>World names may only use letters, numbers, underscores,
+        and dashes.</red>"
+    border:
+      size: "<prefix><red>Border size must be a positive number.</red>"
+      center: "<prefix><red>Border center must be valid X and Z numbers.</red>"
+    duration: "<prefix><red>Duration must be a positive whole number of seconds.</red>"
+  command:
+    disabled: "<prefix><red>Default server commands are disabled for players.</red>"
+  chunky:
+    unavailable: "<prefix><red>Chunky is not installed or disabled. Install the Chunky
+      plugin to use world preloading.</red>"
+    disabled: "<prefix><red>Chunky integration is disabled in config.</red>"
+    'no':
+      active:
+        task: "<prefix><red>No Chunky preload is currently being tracked.</red>"
+  player:
+    not:
+      found: "<prefix><red>Player <player> is not online.</red>"
+  use:
+    pm:
+      command: "<prefix><#f4d35e>Use <white>/pm</white> for direct messages.</#f4d35e>"
+  pm:
+    self: "<prefix><red>You cannot message yourself.</red>"
+  report:
+    self: "<prefix><red>You cannot report yourself.</red>"
+settings:
+  enabled: "<#6dd3a0>Enabled</#6dd3a0>"
+  disabled: "<#f95738>Disabled</#f95738>"
 team:
   winner: "<prefix><#6dd3a0><team> won the match!</#6dd3a0>"
-  title-winner: "<#6dd3a0><bold><team></bold></#6dd3a0>"
-  subtitle-winner: "<white>won the match</white>"
+  title:
+    winner: "<#6dd3a0><bold><team></bold></#6dd3a0>"
+  subtitle:
+    winner: "<white>won the match</white>"
   disabled: "<prefix><#f95738>Teams are disabled in config.</#f95738>"
-  no-team: "<prefix><#f4d35e>You are not in a team.</#f4d35e>"
+  'no':
+    team: "<prefix><#f4d35e>You are not in a team.</#f4d35e>"
   already: "<prefix><#f4d35e>You are already in <white><team></white>.</#f4d35e>"
   full: "<prefix><#f95738><team> is already full.</#f95738>"
-  joined: "<prefix><#6dd3a0>You joined <white><team></white>.</#6dd3a0>"
-  joined-hint: "<#7b8aa0>Use <white>/tm</white> to toggle team chat and <white>/tc</white> to send your coordinates.</#7b8aa0>"
-  coords-message: "<#7dd3fc>Coords</#7dd3fc> <gray>(<world>)</gray> <white><x></white><gray>,</gray> <white><y></white><gray>,</gray> <white><z></white>"
-  coords-sent: "<prefix><#6dd3a0>Sent your coordinates to your team.</#6dd3a0>"
+  joined:
+    text: "<prefix><#6dd3a0>You joined <white><team></white>.</#6dd3a0>"
+    hint: "<#7b8aa0>Use <white>/tm</white> to toggle team chat and <white>/tc</white>
+      to send your coordinates.</#7b8aa0>"
+  coords:
+    message: "<#7dd3fc>Coords</#7dd3fc> <gray>(<world>)</gray> <white><x></white><gray>,</gray>
+      <white><y></white><gray>,</gray> <white><z></white>"
+    sent: "<prefix><#6dd3a0>Sent your coordinates to your team.</#6dd3a0>"
   left: "<prefix><#f4d35e>You left <white><team></white>.</#f4d35e>"
-  join-locked: "<prefix><#f95738>Lobby team switching is currently locked.</#f95738>"
-  friendly-fire-blocked: "<prefix><#f95738>Friendly fire is disabled.</#f95738>"
-  chat-enabled: "<prefix><#6dd3a0>Team chat enabled.</#6dd3a0>"
-  chat-disabled: "<prefix><#f95738>Team chat disabled.</#f95738>"
-  usage: "<prefix><#f4d35e>Usage: /team <open|list|join|leave|chat|create|public|private|transfer|kick|disband|delete|set|shuffle|clear|rename|color></#f4d35e>"
-  join-usage: "<prefix><#f4d35e>Usage: /team join <team></#f4d35e>"
-  create-usage: "<prefix><#f4d35e>Usage: /team create <id> [display name]</#f4d35e>"
-  delete-usage: "<prefix><#f4d35e>Usage: /team delete <team></#f4d35e>"
-  set-usage: "<prefix><#f4d35e>Usage: /team set <player> <team|none></#f4d35e>"
-  rename-usage: "<prefix><#f4d35e>Usage: /team rename <team> <display name></#f4d35e>"
-  color-usage: "<prefix><#f4d35e>Usage: /team color <team> <color></#f4d35e>"
-  size-usage: "<prefix><#f4d35e>Usage: /team size <amount></#f4d35e>"
-  transfer-usage: "<prefix><#f4d35e>Usage: /team transfer <player></#f4d35e>"
-  kick-usage: "<prefix><#f4d35e>Usage: /team kick <player></#f4d35e>"
-  list-disabled: "<prefix><#f95738>Teams are disabled.</#f95738>"
-  list-empty: "<prefix><#f4d35e>No teams have been created yet.</#f4d35e>"
-  list-line: "<team_prefix><team><gray>:</gray> <white><players></white>"
-  list-none: "none"
-  visibility-public: "Public"
-  visibility-private: "Private"
-  private: "<prefix><#f95738><team> is private. Ask the team leader to invite or move you.</#f95738>"
-  not-leader: "<prefix><#f95738>Only the team leader can do that.</#f95738>"
-  set-public: "<prefix><#6dd3a0><team> is now public.</#6dd3a0>"
-  set-private: "<prefix><#f4d35e><team> is now private.</#f4d35e>"
-  transfer-not-member: "<prefix><#f95738><player> is not in your team.</#f95738>"
-  leader-transferred: "<prefix><#6dd3a0><player> is now the leader of <team>.</#6dd3a0>"
+  join:
+    locked: "<prefix><#f95738>Lobby team switching is currently locked.</#f95738>"
+  friendly:
+    fire:
+      blocked: "<prefix><#f95738>Friendly fire is disabled.</#f95738>"
+  chat:
+    enabled: "<prefix><#6dd3a0>Team chat enabled.</#6dd3a0>"
+    disabled: "<prefix><#f95738>Team chat disabled.</#f95738>"
+  usage:
+    root: "<prefix><#f4d35e>Usage: /team <open|list|join|leave|chat|create|public|private|transfer|kick|disband|delete|set|shuffle|clear|rename|color></#f4d35e>"
+    join: "<prefix><#f4d35e>Usage: /team join <team></#f4d35e>"
+    create: "<prefix><#f4d35e>Usage: /team create <id> [display name]</#f4d35e>"
+    delete: "<prefix><#f4d35e>Usage: /team delete <team></#f4d35e>"
+    set: "<prefix><#f4d35e>Usage: /team set <player> <team|none></#f4d35e>"
+    rename: "<prefix><#f4d35e>Usage: /team rename <team> <display name></#f4d35e>"
+    color: "<prefix><#f4d35e>Usage: /team color <team> <color></#f4d35e>"
+    size: "<prefix><#f4d35e>Usage: /team size <amount></#f4d35e>"
+    transfer: "<prefix><#f4d35e>Usage: /team transfer <player></#f4d35e>"
+    kick: "<prefix><#f4d35e>Usage: /team kick <player></#f4d35e>"
+  list:
+    disabled: "<prefix><#f95738>Teams are disabled.</#f95738>"
+    empty: "<prefix><#f4d35e>No teams have been created yet.</#f4d35e>"
+    line: "<team_prefix><team><gray>:</gray> <white><players></white>"
+    none: none
+  visibility:
+    public: Public
+    private: Private
+  private: "<prefix><#f95738><team> is private. Ask the team leader to invite or move
+    you.</#f95738>"
+  not:
+    leader: "<prefix><#f95738>Only the team leader can do that.</#f95738>"
+  set:
+    public: "<prefix><#6dd3a0><team> is now public.</#6dd3a0>"
+    private: "<prefix><#f4d35e><team> is now private.</#f4d35e>"
+  transfer:
+    not:
+      member: "<prefix><#f95738><player> is not in your team.</#f95738>"
+  leader:
+    transferred: "<prefix><#6dd3a0><player> is now the leader of <team>.</#6dd3a0>"
   kicked: "<prefix><#f4d35e>Removed <white><player></white> from <team>.</#f4d35e>"
-  kick-self: "<prefix><#f95738>You cannot kick yourself.</#f95738>"
+  kick:
+    self: "<prefix><#f95738>You cannot kick yourself.</#f95738>"
   disbanded: "<prefix><#f95738>Disbanded team <white><team></white>.</#f95738>"
-  admin-invalid-id: "<prefix><#f95738>Team IDs may only use lowercase letters, numbers, and underscores.</#f95738>"
-  admin-invalid-color: "<prefix><#f95738>That is not a valid team color.</#f95738>"
-  admin-already-exists: "<prefix><#f95738>Team <white><team></white> already exists.</#f95738>"
-  admin-missing: "<prefix><#f95738>Team <white><team></white> does not exist.</#f95738>"
-  admin-created: "<prefix><#6dd3a0>Created team <white><team></white>.</#6dd3a0>"
-  admin-deleted: "<prefix><#f95738>Deleted team <white><team></white>.</#f95738>"
-  admin-renamed: "<prefix><#6dd3a0>Renamed <white><team></white> to <white><name></white>.</#6dd3a0>"
-  admin-recolored: "<prefix><#6dd3a0>Updated <white><team></white> color to <white><color></white>.</#6dd3a0>"
-  admin-cleared: "<prefix><#f4d35e>Cleared all team memberships.</#f4d35e>"
-  admin-shuffle-empty: "<prefix><#f95738>No players were available to shuffle into teams.</#f95738>"
-  admin-shuffled: "<prefix><#6dd3a0>Balanced <white><count></white> players into teams.</#6dd3a0>"
-  admin-enabled: "<prefix><#6dd3a0>Teams are now enabled.</#6dd3a0>"
-  admin-disabled: "<prefix><#f95738>Teams are now disabled.</#f95738>"
-  admin-size-set: "<prefix><#6dd3a0>Team max size is now <white><size></white>.</#6dd3a0>"
+  admin:
+    invalid:
+      id: "<prefix><#f95738>Team IDs may only use lowercase letters, numbers, and
+        underscores.</#f95738>"
+      color: "<prefix><#f95738>That is not a valid team color.</#f95738>"
+    already:
+      exists: "<prefix><#f95738>Team <white><team></white> already exists.</#f95738>"
+    missing: "<prefix><#f95738>Team <white><team></white> does not exist.</#f95738>"
+    created: "<prefix><#6dd3a0>Created team <white><team></white>.</#6dd3a0>"
+    deleted:
+      text: "<prefix><#f95738>Deleted team <white><team></white>.</#f95738>"
+      all: "<prefix><#f95738>Deleted <white><count></white> team(s).</#f95738>"
+    renamed: "<prefix><#6dd3a0>Renamed <white><team></white> to <white><name></white>.</#6dd3a0>"
+    recolored: "<prefix><#6dd3a0>Updated <white><team></white> color to <white><color></white>.</#6dd3a0>"
+    cleared: "<prefix><#f4d35e>Cleared all team memberships.</#f4d35e>"
+    shuffle:
+      text: "<#ffd166><bold>Shuffle Players</bold></#ffd166>"
+      lore: "<#cbd5e1>Randomly balance all online players into teams.</#cbd5e1>"
+      empty: "<prefix><#f95738>No players were available to shuffle into teams.</#f95738>"
+    shuffled: "<prefix><#6dd3a0>Balanced <white><count></white> players into teams.</#6dd3a0>"
+    enabled: "<prefix><#6dd3a0>Teams are now enabled.</#6dd3a0>"
+    disabled: "<prefix><#f95738>Teams are now disabled.</#f95738>"
+    size:
+      set: "<prefix><#6dd3a0>Team max size is now <white><size></white>.</#6dd3a0>"
+    title: "<#334155><bold>Team Admin</bold></#334155>"
+    create:
+      text: "<#6dd3a0><bold>Create Team</bold></#6dd3a0>"
+      lore: "<#cbd5e1>Click to open the team creation dialog.</#cbd5e1>"
+    clear:
+      text: "<#f4d35e><bold>Clear Memberships</bold></#f4d35e>"
+      lore: "<#cbd5e1>Remove all players from their teams (keeps team definitions).</#cbd5e1>"
+    delete:
+      all:
+        text: "<#f95738><bold>Delete All Teams</bold></#f95738>"
+        lore: "<#cbd5e1>Delete all team definitions and memberships.</#cbd5e1>"
+    enable:
+      text: "<#6dd3a0><bold>Enable Teams</bold></#6dd3a0>"
+    disable:
+      text: "<#f95738><bold>Disable Teams</bold></#f95738>"
+    toggle:
+      lore: "<#cbd5e1>Teams are currently: <state></#cbd5e1>"
   menu:
     title: "<#334155><bold>Team Select</bold></#334155>"
     filler: "<dark_gray> </dark_gray>"
-    info: "<#f4d35e><bold>Team Settings</bold></#f4d35e>"
-    info-lore-size: "<#cbd5e1>Max size: <white><size></white></#cbd5e1>"
-    info-lore-friendly-fire: "<#cbd5e1>Friendly fire: <state></#cbd5e1>"
-    info-lore-current: "<#cbd5e1>Current team: <white><team></white></#cbd5e1>"
-    info-lore-current-none: "<#cbd5e1>Current team: <white>None</white></#cbd5e1>"
-    info-lore-visibility: "<#cbd5e1>Visibility: <white><visibility></white></#cbd5e1>"
-    info-lore-visibility-none: "<#cbd5e1>Visibility: <white>None</white></#cbd5e1>"
-    info-lore-leader: "<#cbd5e1>Leader: <white><leader></white></#cbd5e1>"
-    info-lore-leader-none: "<#cbd5e1>Leader: <white>None</white></#cbd5e1>"
-    team-size: "<#cbd5e1>Members: <white><size></white></#cbd5e1>"
-    team-members: "<#cbd5e1><members></#cbd5e1>"
-    team-leader: "<#cbd5e1>Leader: <white><leader></white></#cbd5e1>"
-    team-visibility: "<#cbd5e1>Visibility: <white><visibility></white></#cbd5e1>"
-    no-team: "<#f95738><bold>No Team</bold></#f95738>"
-    manage: "<#7dd3fc><bold>Manage Team</bold></#7dd3fc>"
-    manage-lore: "<#cbd5e1>Open leader controls.</#cbd5e1>"
-    manage-unavailable: "<#6b7280><bold>Leader Only</bold></#6b7280>"
-    click-join: "<#7dd3fc>Click to join this team.</#7dd3fc>"
+    info:
+      text: "<#f4d35e><bold>Team Info</bold></#f4d35e>"
+      lore:
+        size: "<#cbd5e1>Max size: <white><size></white></#cbd5e1>"
+        friendly:
+          fire: "<#cbd5e1>Friendly fire: <state></#cbd5e1>"
+        current:
+          text: "<#cbd5e1>Current team: <white><team></white></#cbd5e1>"
+          none: "<#cbd5e1>Current team: <white>None</white></#cbd5e1>"
+        visibility:
+          text: "<#cbd5e1>Visibility: <white><visibility></white></#cbd5e1>"
+          none: "<#cbd5e1>Visibility: <white>None</white></#cbd5e1>"
+        leader:
+          text: "<#cbd5e1>Leader: <white><leader></white></#cbd5e1>"
+          none: "<#cbd5e1>Leader: <white>None</white></#cbd5e1>"
+    team:
+      size: "<#cbd5e1>Members: <white><size></white></#cbd5e1>"
+      members: "<#cbd5e1><members></#cbd5e1>"
+      leader: "<#cbd5e1>Leader: <white><leader></white></#cbd5e1>"
+      visibility: "<#cbd5e1>Visibility: <white><visibility></white></#cbd5e1>"
+    create:
+      text: "<#6dd3a0><bold>Create Team</bold></#6dd3a0>"
+      lore: "<#cbd5e1>Click to create your own team.</#cbd5e1>"
+    'no':
+      team: "<#f95738><bold>No Team</bold></#f95738>"
+    manage:
+      text: "<#f4d35e><bold>Manage Team</bold></#f4d35e>"
+      lore: "<#cbd5e1>Open leader controls.</#cbd5e1>"
+      unavailable: "<#6b7280><bold>Leader Only</bold></#6b7280>"
+    click:
+      join: "<#7dd3fc>Click to join this team.</#7dd3fc>"
     selected: "<#6dd3a0>Currently selected.</#6dd3a0>"
-    leave: "<#f95738><bold>Leave Team</bold></#f95738>"
-    leave-lore: "<#cbd5e1>Click to leave your current team.</#cbd5e1>"
-    disband: "<#f95738><bold>Disband Team</bold></#f95738>"
-    disband-lore: "<#cbd5e1>Remove this team and unassign all members.</#cbd5e1>"
+    leave:
+      text: "<#f95738><bold>Leave Team</bold></#f95738>"
+      lore: "<#cbd5e1>Click to leave your current team.</#cbd5e1>"
+    disband:
+      text: "<#f95738><bold>Disband Team</bold></#f95738>"
+      lore: "<#cbd5e1>Remove this team and unassign all members.</#cbd5e1>"
+    invite:
+      text: "<#7dd3fc><bold>Invite Player</bold></#7dd3fc>"
+      lore: "<#cbd5e1>Click to invite players to your team.</#cbd5e1>"
+    admin:
+      text: "<#ffd166><bold>Admin Panel</bold></#ffd166>"
+      lore: "<#cbd5e1>Open team administration controls.</#cbd5e1>"
   manage:
     title: "<#334155><bold>Manage <team></bold></#334155>"
     back: "<#7dd3fc><bold>Back</bold></#7dd3fc>"
-    set-public: "<#6dd3a0><bold>Set Public</bold></#6dd3a0>"
-    set-private: "<#f4d35e><bold>Set Private</bold></#f4d35e>"
-    visibility-lore: "<#cbd5e1>Current: <white><visibility></white></#cbd5e1>"
-    member: "<#cbd5e1>Member</#cbd5e1>"
-    member-leader: "<#f4d35e>Leader</#f4d35e>"
-    member-kick: "<#f95738>Click to kick this member.</#f95738>"
-list-entry-team: "<team_prefix><player>"
+    set:
+      public: "<#6dd3a0><bold>Set Public</bold></#6dd3a0>"
+      private: "<#f4d35e><bold>Set Private</bold></#f4d35e>"
+    visibility:
+      lore: "<#cbd5e1>Current: <white><visibility></white></#cbd5e1>"
+    member:
+      text: "<white><name></white>"
+      leader: "<#f4d35e>Leader</#f4d35e>"
+      kick: "<#f95738>Click to kick this member.</#f95738>"
+      transfer: "<#ffd166>Admin: Click leader to transfer leadership.</#ffd166>"
+    rename:
+      text: "<#ffd166><bold>Rename Team</bold></#ffd166>"
+      lore: "<#cbd5e1>Click to open the rename dialog.</#cbd5e1>"
+    color:
+      text: "<#ffd166><bold>Change Color</bold></#ffd166>"
+      lore: "<#cbd5e1>Click to open the color picker.</#cbd5e1>"
+  color:
+    title: "<#334155><bold>Team Color — <team></bold></#334155>"
+    selected: "<#6dd3a0>Currently selected.</#6dd3a0>"
+    click: "<#7dd3fc>Click to apply this color.</#7dd3fc>"
+  create-dialog:
+    title: "<#f4d35e><bold>Create Team</bold></#f4d35e>"
+    body: "<#9db4c0>Enter a display name for your new team.</#9db4c0>"
+    input-label: "<#cbd5e1>Team Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Create</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  rename-dialog:
+    title: "<#f4d35e><bold>Rename Team</bold></#f4d35e>"
+    body: "<#9db4c0>Enter a new display name for this team.</#9db4c0>"
+    input-label: "<#cbd5e1>New Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Rename</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  invite:
+    title: "<#334155><bold>Invite — <team></bold></#334155>"
+    sent: "<prefix><#6dd3a0>Invited <white><player></white> to <white><team></white>.</#6dd3a0>"
+    received: "<prefix><#f4d35e><leader></leader> invited you to join <white><team></white>.</#f4d35e>"
+    accepted: "<prefix><#6dd3a0>You accepted the invitation and joined <white><team></white>.</#6dd3a0>"
+    declined: "<prefix><#f95738>You declined the invitation to <white><team></white>.</#f95738>"
+    already-invited: "<prefix><#f95738><player> is already invited to your team.</#f95738>"
+    already-invited-lore: "<#f4d35e>Already invited</#f4d35e>"
+    not-pending: "<prefix><#f95738>You don't have a pending invitation for that team.</#f95738>"
+    expired: "<prefix><#f95738>That invitation has expired.</#f95738>"
+    target-has-team: "<prefix><#f95738><player> is already in a team.</#f95738>"
+    click-invite: "<#7dd3fc>Click to invite this player.</#7dd3fc>"
+goldenhead:
+  given: "<prefix><#6dd3a0>Gave a Golden Head to <white><player></white>.</#6dd3a0>"
+  received: "<prefix><#6dd3a0>You received a Golden Head.</#6dd3a0>"
+practice:
+  enabled: "<prefix><#6dd3a0>Practice mode has been enabled.</#6dd3a0>"
+  disabled: "<prefix><#f95738>Practice mode has been disabled.</#f95738>"
+  joined: "<prefix><#6dd3a0>You have joined practice mode.</#6dd3a0>"
+  left: "<prefix><#7b8aa0>You have left practice mode.</#7b8aa0>"
+  kit-saved: "<prefix><#6dd3a0>Practice kit saved.</#6dd3a0>"
+  not-enabled: "<prefix><#f95738>Practice mode is not currently enabled.</#f95738>"
+  full: "<prefix><#f95738>The practice arena is full.</#f95738>"
+  leave-hint: "<#7b8aa0>Use <white>/practice</white> again to leave the arena.</#7b8aa0>"
+  game-started: "<prefix><#f95738>Practice mode has been closed because a match started.</#f95738>"
+  world-regenerating: "<prefix><#f95738>The practice world is being regenerated.</#f95738>"
+  regen-started: "<prefix><#ee964b>Practice world regeneration started...</#ee964b>"
+  regen-done: "<prefix><#6dd3a0>Practice world regeneration complete.</#6dd3a0>"
+scenarios:
+  auto-disabled: "<prefix><#ee964b>Auto-disabled conflicting scenarios: <white><scenarios></white></#ee964b>"
+  start-header: "<prefix><bold><#f4d35e>Active Scenarios</bold>"
+  start-entry: "  <gray>▸</gray> <white><name></white>"
+  start-none: "<prefix><gray>No scenarios are active for this match.</gray>"
+  gui:
+    title: "<dark_gray><bold>Scenarios</bold>"
+    status-enabled: "<#6dd3a0>✔ Enabled"
+    status-disabled: "<#f95738>✘ Disabled"
+    hint-toggle: "<yellow>Click to toggle"
+    hint-view: "<#7b8aa0>View only"
+    conflicts: "<#f4a261>Conflicts: <conflicts>"
+    prev: "<#7dd3fc>◀ Previous Page"
+    next: "<#7dd3fc>Next Page ▶"
+    page-indicator: "<bold><#f4d35e>Page <current> / <total>"
+    category:
+      world: "World"
+      meta: "Meta"
+      loot_death: "Loot / Death"
+      ore_modifiers: "Ore Modifiers"
+      resource_restrictions: "Resource Restrictions"
+      enchanting: "Enchanting"
+      tools_weapons: "Tools / Weapons"
+      exp: "EXP"
+      drops: "Drop Modifiers"
+      player_effects: "Player Effects"
+      combat: "Combat"
+      inventory: "Inventory / Storage"
+      game_mode: "Game Mode"
+    world:
+      nether:
+        name: "<bold><#f4d35e>Nether"
+        desc: "<gray>Allow players to enter the Nether during the match."
+      end:
+        name: "<bold><#f4d35e>End"
+        desc: "<gray>Allow players to enter the End during the match."
