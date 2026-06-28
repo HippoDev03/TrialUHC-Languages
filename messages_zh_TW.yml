@@ -772,6 +772,7 @@ title-winner-team: "<#6dd3a0><bold><team></bold></#6dd3a0>"
 subtitle-winner-team: "<white>贏得了比賽</white>"
 scenarios:
   auto-disabled: "<prefix><#ee964b>已自動停用衝突情境：<white><scenarios></white></#ee964b>"
+  start-title: "<dark_gray><bold>情境</bold>"
   start-header: "<prefix><bold><#f4d35e>啟用情境</bold>"
   start-entry: "  <gray>▸</gray> <white><name></white>"
   start-none: "<prefix><gray>本場比賽沒有啟用任何情境。</gray>"
