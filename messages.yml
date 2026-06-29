@@ -345,12 +345,38 @@ config:
       license: "<#ef4444><bold>License</bold></#ef4444>"
       other: "<#d1d5db><bold>Other</bold></#d1d5db>"
     action:
+      'no':
+        permission:
+          lore: "<#f95738>You do not have permission to use this action.</#f95738>"
       set:
         lobby:
+          text: "<#93c5fd><bold>Set Lobby</bold></#93c5fd>"
           lore:
             '1': "<#6b7280><i>Sets the lobby spawn point to your current location.</i></#6b7280>"
             '2': "<#93c5fd>▶ Click to set lobby here.</#93c5fd>"
             '3': "<#7b8aa0>Equivalent to /uhc setlobby</#7b8aa0>"
+      start:
+        button:
+          text: "<#22c55e><bold>Start Game</bold></#22c55e>"
+          lore: "<#cbd5e1>Click to start the UHC game.</#cbd5e1>"
+          active:
+            text: "<#ef4444><bold>Game In Progress</bold></#ef4444>"
+            lore: "<#7b8aa0>A game is already running.</#7b8aa0>"
+      stop:
+        button:
+          text: "<#f95738><bold>Stop Match</bold></#f95738>"
+          lore: "<#cbd5e1>Click to stop the current match and return players to the lobby.</#cbd5e1>"
+          confirm:
+            lore: "<#f4d35e>Confirmation required.</#f4d35e>"
+          idle:
+            text: "<#7b8aa0><bold>Stop Match</bold></#7b8aa0>"
+            lore: "<#7b8aa0>No active match to stop.</#7b8aa0>"
+      reset:
+        button:
+          text: "<#f4d35e><bold>Reset Match</bold></#f4d35e>"
+          lore: "<#cbd5e1>Force a full match reset and send everyone back to the lobby state.</#cbd5e1>"
+          confirm:
+            lore: "<#f4d35e>Confirmation required.</#f4d35e>"
     value:
       lore: "<#7b8aa0>Value</#7b8aa0>  <white><value></white>"
     status:
@@ -828,8 +854,8 @@ world:
       <#7b8aa0>(<generated>/<total>)</#7b8aa0>"
     bossbar: "<#7dd3fc>Preloading <world></#7dd3fc> <white><percent>%</white> <#9db4c0>(<generated>/<total>)</#9db4c0>"
   dimension:
-    enabled: "<prefix><#6dd3a0>The <world> dimension has been <bold>enabled</bold>.</#6dd3a0>"
-    disabled: "<prefix><#f4d35e>The <world> dimension has been <bold>disabled</bold>.</#f4d35e>"
+    enabled: "<prefix><#6dd3a0>The <bold><dimension></bold> dimension has been <bold>ENABLED</bold>.</#6dd3a0>"
+    disabled: "<prefix><#f4d35e>The <bold><dimension></bold> dimension has been <bold>DISABLED</bold>.</#f4d35e>"
   current: "<prefix><#7b8aa0>Current UHC world:</#7b8aa0> <white><world></white>"
   list: "<prefix><#7b8aa0>Normal worlds (<count>):</#7b8aa0> <white><worlds></white>"
   teleported: "<prefix><#6dd3a0>Teleported to world <world>.</#6dd3a0>"
@@ -1056,6 +1082,7 @@ sudden:
     start: "<prefix><#f95738>Sudden death started. Match ends in <seconds>s.</#f95738>"
     finish: "<prefix><#f4d35e><player></#f4d35e> <#f95738>wins by sudden death.</#f95738>"
 eliminated:
+  text: "<prefix><#f95738>You have been eliminated.</#f95738>"
   announcement: "<prefix><#f95738><player></#f95738> <#faf0ca>has been eliminated.</#faf0ca>"
 kick:
   'on':
@@ -1346,9 +1373,24 @@ team:
       text: "<#f95738><bold>Disable Teams</bold></#f95738>"
     toggle:
       lore: "<#cbd5e1>Teams are currently: <state></#cbd5e1>"
+    set-team:
+      text: "<#6dd3a0><bold>Set Player Team</bold></#6dd3a0>"
+      lore: "<#cbd5e1>Click to assign any player to a team.</#cbd5e1>"
+    rename-team:
+      text: "<#f4d35e><bold>Rename Team</bold></#f4d35e>"
+      lore: "<#cbd5e1>Click to rename any team.</#cbd5e1>"
+    recolor-team:
+      text: "<#cbd5e1><bold>Recolor Team</bold></#cbd5e1>"
+      lore: "<#cbd5e1>Click to change any team's color.</#cbd5e1>"
+    delete-team:
+      text: "<#f95738><bold>Delete Team</bold></#f95738>"
+      lore: "<#cbd5e1>Click to delete any team.</#cbd5e1>"
   menu:
     title: "<#334155><bold>Team Select</bold></#334155>"
     filler: "<dark_gray> </dark_gray>"
+    join-by-name:
+      text: "<#7dd3fc><bold>Join Team By Name</bold></#7dd3fc>"
+      lore: "<white>Click to join a team by typing its ID or display name.</white>"
     info:
       text: "<#f4d35e><bold>Team Info</bold></#f4d35e>"
       lore:
@@ -1412,6 +1454,15 @@ team:
     color:
       text: "<#ffd166><bold>Change Color</bold></#ffd166>"
       lore: "<#cbd5e1>Click to open the color picker.</#cbd5e1>"
+    invite-by-name:
+      text: "<#6dd3a0><bold>Invite Player By Name</bold></#6dd3a0>"
+      lore: "<white>Click to invite a player by entering their name.</white>"
+    transfer-leader:
+      text: "<#f4d35e><bold>Transfer Leadership</bold></#f4d35e>"
+      lore: "<white>Click to transfer team leadership to another member by name.</white>"
+    kick-by-name:
+      text: "<#f95738><bold>Kick Member By Name</bold></#f95738>"
+      lore: "<white>Click to kick a member by entering their name.</white>"
   color:
     title: "<#334155><bold>Team Color — <team></bold></#334155>"
     selected: "<#6dd3a0>Currently selected.</#6dd3a0>"
@@ -1428,6 +1479,57 @@ team:
     input-label: "<#cbd5e1>New Name</#cbd5e1>"
     confirm: "<#6dd3a0><bold>Rename</bold></#6dd3a0>"
     cancel: "<#f95738>Cancel</#f95738>"
+  join-dialog:
+    title: "<#f4d35e><bold>Join Team</bold></#f4d35e>"
+    body: "<#9db4c0>Enter the ID or display name of the team you want to join.</#9db4c0>"
+    input-label: "<#cbd5e1>Team ID/Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Join</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  invite-dialog:
+    title: "<#f4d35e><bold>Invite Player</bold></#f4d35e>"
+    body: "<#9db4c0>Enter the username of the player you want to invite.</#9db4c0>"
+    input-label: "<#cbd5e1>Player Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Invite</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  transfer-dialog:
+    title: "<#f4d35e><bold>Transfer Leadership</bold></#f4d35e>"
+    body: "<#9db4c0>Enter the username of the team member to transfer ownership to.</#9db4c0>"
+    input-label: "<#cbd5e1>Member Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Transfer</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  kick-dialog:
+    title: "<#f95738><bold>Kick Member</bold></#f95738>"
+    body: "<#9db4c0>Enter the username of the team member you want to kick.</#9db4c0>"
+    input-label: "<#cbd5e1>Member Name</#cbd5e1>"
+    confirm: "<#f95738><bold>Kick</bold></#f95738>"
+    cancel: "<#cbd5e1>Cancel</#cbd5e1>"
+  admin-set-dialog:
+    title: "<#f4d35e><bold>Set Player Team</bold></#f4d35e>"
+    body: "<#9db4c0>Assign a player to a team directly.</#9db4c0>"
+    player-label: "<#cbd5e1>Player Name</#cbd5e1>"
+    team-label: "<#cbd5e1>Team ID/Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Assign</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  admin-rename-dialog:
+    title: "<#f4d35e><bold>Admin Team Rename</bold></#f4d35e>"
+    body: "<#9db4c0>Enter Team ID and new display name.</#9db4c0>"
+    team-label: "<#cbd5e1>Team ID</#cbd5e1>"
+    name-label: "<#cbd5e1>New Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Rename</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  admin-recolor-dialog:
+    title: "<#f4d35e><bold>Admin Team Recolor</bold></#f4d35e>"
+    body: "<#9db4c0>Enter Team ID and valid color name (e.g. RED, BLUE).</#9db4c0>"
+    team-label: "<#cbd5e1>Team ID</#cbd5e1>"
+    color-label: "<#cbd5e1>Color Name</#cbd5e1>"
+    confirm: "<#6dd3a0><bold>Recolor</bold></#6dd3a0>"
+    cancel: "<#f95738>Cancel</#f95738>"
+  admin-delete-dialog:
+    title: "<#f95738><bold>Delete Team</bold></#f95738>"
+    body: "<#9db4c0>Enter the ID of the team you want to delete.</#9db4c0>"
+    team-label: "<#cbd5e1>Team ID</#cbd5e1>"
+    confirm: "<#f95738><bold>Delete</bold></#f95738>"
+    cancel: "<#cbd5e1>Cancel</#cbd5e1>"
   invite:
     title: "<#334155><bold>Invite — <team></bold></#334155>"
     sent: "<prefix><#6dd3a0>Invited <white><player></white> to <white><team></white>.</#6dd3a0>"
@@ -1460,8 +1562,8 @@ scenarios:
   enchanting-disabled: "<prefix><#f95738>Enchanting is disabled in this match."
   grindstone-disabled: "<prefix><#f95738>Grindstones are disabled in this match."
   enchanting-table-blocked: "<prefix><#f95738>You cannot craft enchanting tables in this match."
-  hastey-grindstone-blocked: "<prefix><#f95738>You cannot remove Efficiency enchantments from tools in this match."
-  web-limit-reached: "<prefix><#f95738>You have placed the maximum number of cobwebs for this match."
+  hastey-grindstone-blocked: "<prefix><#f95738>You cannot use a grindstone on Hastey tools in this match."
+  web-limit-reached: "<prefix><#f95738>You can only hold the maximum number of cobwebs for this match."
   dnd-combat-locked: "<prefix><#f95738>You are already in combat with another player."
   backpack:
     title: "<dark_gray><bold>Team Backpack</bold>"
@@ -1474,6 +1576,8 @@ scenarios:
   extra-inventory-disabled: "<prefix><#f95738>The Extra Inventory scenario is not active."
   nineslot-restricted: "<prefix><#f95738>You can only use your hotbar (9 slots) in this match."
   benchblitz-blocked: "<prefix><#f95738>You cannot obtain additional crafting tables in this match."
+  safe-loot-blocked: "<prefix><#f95738>Only the killer can access this chest."
+  no-clean-protected: "<prefix><#6dd3a0>You are invulnerable to player attacks for <white><seconds></white> seconds."
   auto-disabled: "<prefix><#ee964b>Auto-disabled conflicting scenarios: <white><scenarios></white></#ee964b>"
   start-title: "<#f4d35e><bold>Scenarios</bold>"
   start-subtitle: "<gray>Good luck out there.</gray>"
@@ -1534,7 +1638,7 @@ scenarios:
       time-bomb-seconds: "<bold><#f4d35e>Seconds Until Explosion"
       coronavirus-interval-minutes: "<bold><#f4d35e>Interval (minutes)"
       raining-tnt-interval-minutes: "<bold><#f4d35e>Interval (minutes)"
-      web-limit-count: "<bold><#f4d35e>Max Cobwebs Per Player"
+      web-limit-count: "<bold><#f4d35e>Max Cobwebs In Inventory"
       lucky-leaves-chance: "<bold><#f4d35e>Golden Apple Chance (%)"
 scenario:
   broadcaster:
