@@ -1084,6 +1084,8 @@ sudden:
 eliminated:
   text: "<prefix><#f95738>You have been eliminated.</#f95738>"
   announcement: "<prefix><#f95738><player></#f95738> <#faf0ca>has been eliminated.</#faf0ca>"
+mannequin:
+  name: "<#fca5a5>Disconnected</#fca5a5> <dark_gray>-</dark_gray> <white><player></white>"
 kick:
   'on':
     death:

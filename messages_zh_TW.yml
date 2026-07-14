@@ -475,6 +475,8 @@ subtitle-sudden-death-finish: "<white><player> 贏得了比賽。</white>"
 match-exp-earned: "<prefix><#f4d35e>你在本場比賽獲得了 <white><experience></white> 經驗。</#f4d35e>"
 eliminated: "<prefix><#f95738>你已被淘汰。</#f95738>"
 eliminated-announcement: "<prefix><#f95738><player></#f95738> <#faf0ca>已被淘汰。</#faf0ca>"
+mannequin:
+  name: "<#fca5a5>已離線</#fca5a5> <dark_gray>-</dark_gray> <white><player></white>"
 kick-on-death-message: "<#f95738><bold>你已死亡。</bold></#f95738>\n<#faf0ca>此伺服器設定為死亡後踢出玩家。</#faf0ca>"
 elimination-forced: "<prefix><#6dd3a0>已淘汰 <count> 名玩家。</#6dd3a0>"
 revived-self: "<prefix><#6dd3a0>你已被復活。</#6dd3a0>"
