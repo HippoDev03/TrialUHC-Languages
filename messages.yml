@@ -41,7 +41,7 @@ info:
     hover: "<#faf0ca>Click to open GitHub</#faf0ca>"
 usage:
   uhc:
-    root: "<prefix><#f4d35e>Usage: /uhc <pause|resume|start|forcestart|stop|state|setlobby|skipGracePeriod|skipphase|reload|checkready|reset|gen
+    root: "<prefix><#f4d35e>Usage: /uhc <pause|resume|start|forcestart|stop|state|setlobby|skipGracePeriod|skipphase|rescatter|reload|checkready|reset|gen
       [world] [terrain=normal|flat|amplified|large_biomes|void] [biome=PLAINS] [generator=Plugin:gen]
       [hardcore=false] [seed=123]|preloadworld [radius]|kill <player|selector>|level
       [player]|papi|recipes|revive <player>></#f4d35e>"
@@ -674,6 +674,7 @@ help:
     setlobby: Set the lobby spawn to your location.
     skipgrace: End grace and enable PvP.
     skipphase: Skip the current match phase.
+    rescatter: Re-scatter active participants (scatter or grace period only).
     reload: Reload TrialUHC configs.
     checkready: Open a ready-check GUI for all online players.
     reset: Force reset all match state.
@@ -871,16 +872,6 @@ border:
 center:
   waypoint:
     name: "<gradient:#f4d35e:#ee964b><bold>Center</bold></gradient>"
-death:
-  message:
-    player: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>was killed by</white>
-      <#f95738><killer></#f95738>"
-    fall: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>fell to their death.</white>"
-    void: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>fell into the void.</white>"
-    lava: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>tried to swim in
-      lava.</white>"
-    fire: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>went up in flames.</white>"
-    generic: "<#f95738>☠</#f95738> <#f4d35e><player></#f4d35e> <white>died.</white>"
 portals:
   disabled: "<prefix><#f95738>Nether and End travel are disabled on this server.</#f95738>"
 potions:
@@ -1072,6 +1063,7 @@ grace:
 skipphase:
   invalid: "<prefix><#f95738>There is no skippable phase right now.</#f95738>"
   skipped: "<prefix><#f4d35e>Skipped phase <white><phase></white> and moved to <white><next></white>.</#f4d35e>"
+rescatter-started: "<prefix><#f4d35e>Participants are being rescattered.</#f4d35e>"
 final:
   heal: "<prefix><#86efac>Final heal has been given to all alive players.</#86efac>"
   duel:
@@ -1217,6 +1209,8 @@ errors:
       targets: "<prefix><red>No active match players matched that target.</red>"
     reply:
       target: "<prefix><red>You have nobody to reply to.</red>"
+    active:
+      participants: "<prefix><red>There are no active participants to rescatter.</red>"
   players:
     only: "<prefix><red>Only players can use this command.</red>"
   already:
@@ -1241,6 +1235,9 @@ errors:
       failed: "<prefix><red>Failed to unload world <world>.</red>"
     delete:
       failed: "<prefix><red>Failed to delete world <world>.</red>"
+  rescatter:
+    invalid:
+      phase: "<prefix><red>You can only rescatter during the scatter or grace period phase.</red>"
   invalid:
     world:
       name: "<prefix><red>World names may only use letters, numbers, underscores,
