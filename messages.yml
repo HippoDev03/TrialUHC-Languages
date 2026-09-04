@@ -1055,6 +1055,88 @@ scatter:
 scattered: "<prefix><#6dd3a0>You have been scattered.</#6dd3a0>"
 advancement-message: "<prefix><#f4d35e><player></#f4d35e> <#faf0ca>has made the advancement</#faf0ca> <#86efac>[<advancement>]</#86efac>"
 arrow-health: "<red>❤ <player></red> <gray>—</gray> <white><health>/<max_health></white>"
+achievement:
+  root:
+    title: TrialUHC
+    description: Progress through TrialUHC achievements.
+  first_game:
+    title: First Game
+    description: Play your first UHC match.
+  regular:
+    title: Regular
+    description: Play 5 UHC matches.
+  veteran:
+    title: Veteran
+    description: Play 10 UHC matches.
+  marathon:
+    title: Marathon
+    description: Play 25 UHC matches.
+  first_blood:
+    title: First Blood
+    description: Get your first kill.
+  hat_trick:
+    title: Hat Trick
+    description: Reach 3 total kills.
+  hunter:
+    title: Hunter
+    description: Reach 10 total kills.
+  slayer:
+    title: Slayer
+    description: Reach 25 total kills.
+  on_fire:
+    title: On Fire
+    description: Reach a 5 killstreak.
+  helper:
+    title: Helper
+    description: Get your first assist.
+  team_player:
+    title: Team Player
+    description: Reach 5 total assists.
+  support_master:
+    title: Support Master
+    description: Reach 15 total assists.
+  champion:
+    title: Champion
+    description: Win your first UHC match.
+  contender:
+    title: Contender
+    description: Win 3 UHC matches.
+  legend:
+    title: Legend
+    description: Win 5 UHC matches.
+  unlucky:
+    title: Unlucky
+    description: Die once in a UHC match.
+  novice:
+    title: Novice
+    description: Reach level 1.
+  learner:
+    title: Learner
+    description: Reach level 3.
+  apprentice:
+    title: Apprentice
+    description: Reach level 5.
+  seasoned:
+    title: Seasoned
+    description: Reach level 10.
+  adept:
+    title: Adept
+    description: Reach level 15.
+  expert:
+    title: Expert
+    description: Reach level 18.
+  prestige:
+    title: Prestige
+    description: Reach level 20.
+  elite:
+    title: Elite
+    description: Reach level 25.
+  master:
+    title: Master
+    description: Reach level 30.
+  ascendant:
+    title: Ascendant
+    description: Reach level 40.
 grace:
   start: "<prefix><#faf0ca>Grace period started for <seconds>s.</#faf0ca>"
   end: "<prefix><#f95738>Grace period ended. PvP is enabled.</#f95738>"
@@ -1557,6 +1639,7 @@ practice:
   world-regenerating: "<prefix><#f95738>The practice world is being regenerated.</#f95738>"
   regen-started: "<prefix><#ee964b>Practice world regeneration started...</#ee964b>"
   regen-done: "<prefix><#6dd3a0>Practice world regeneration complete.</#6dd3a0>"
+  regen-failed: "<prefix><red>Practice world regeneration failed: could not unload the old world.</red>"
 scenarios:
   enchanting-disabled: "<prefix><#f95738>Enchanting is disabled in this match."
   grindstone-disabled: "<prefix><#f95738>Grindstones are disabled in this match."

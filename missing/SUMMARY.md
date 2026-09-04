@@ -1,5 +1,5 @@
 # Missing Translation Report
 
-- `messages_zh_TW.yml`: 621 missing
+- `messages_zh_TW.yml`: 897 missing
 
-Total missing keys: `621`
+Total missing keys: `897`

@@ -413,6 +413,11 @@ lobby-item:
     lore:
       - "<white>切換為觀戰模式。</white>"
       - "<#d7e1ea>你將不會被計入開場人數。</#d7e1ea>"
+  scenarios:
+    name: "<#f4d35e><bold>情境</bold></#f4d35e>"
+    lore:
+      - "<#cbd5e1>查看並切換比賽情境。</#cbd5e1>"
+      - "<#7b8aa0>管理員可以啟用或停用情境。</#7b8aa0>"
 # Match flow, admin controls, and reconnect handling
 match-starting: "<prefix><#f4d35e>比賽將在 <seconds> 秒後開始。</#f4d35e>"
 match-force-started: "<prefix><#f95738>已強制開始比賽並跳過倒數。</#f95738>"
@@ -436,7 +441,92 @@ unfreeze-notify: "<prefix><#6dd3a0>你已解除凍結。</#6dd3a0>"
 freeze-blocked: "<prefix><#f95738>你已被凍結，無法執行此操作。</#f95738>"
 scatter-sequence-start: "<prefix><#faf0ca>分散傳送已開始，玩家將依序傳送。</#faf0ca>"
 scatter-settle-wait: "<prefix><#9db4c0>等待地圖穩定中（<seconds> 秒）。</#9db4c0>"
+scatter-bossbar: "<#f4d35e>正在分散玩家 <white><current>/<total></white> <#7b8aa0>(<percent>%)</#7b8aa0>"
+scatter-countdown-bossbar: "<#22c55e>比賽將在 <white><seconds></white> 後開始"
+scatter-countdown-title: "<#22c55e><bold><seconds></bold></#22c55e>"
 scattered: "<prefix><#6dd3a0>你已被隨機分散傳送。</#6dd3a0>"
+achievement:
+  root:
+    title: 試煉UHC
+    description: 完成試煉UHC的成就。
+  first_game:
+    title: 初次登場
+    description: 完成你的第一場 UHC 比賽。
+  regular:
+    title: 常客
+    description: 完成 5 場 UHC 比賽。
+  veteran:
+    title: 老手
+    description: 完成 10 場 UHC 比賽。
+  marathon:
+    title: 馬拉松
+    description: 完成 25 場 UHC 比賽。
+  first_blood:
+    title: 第一滴血
+    description: 獲得你的第一次擊殺。
+  hat_trick:
+    title: 帽子戲法
+    description: 累計 3 次擊殺。
+  hunter:
+    title: 獵人
+    description: 累計 10 次擊殺。
+  slayer:
+    title: 屠殺者
+    description: 累計 25 次擊殺。
+  on_fire:
+    title: 勢不可擋
+    description: 達成 5 連殺。
+  helper:
+    title: 幫手
+    description: 獲得你的第一次助攻。
+  team_player:
+    title: 團隊玩家
+    description: 累計 5 次助攻。
+  support_master:
+    title: 輔助大師
+    description: 累計 15 次助攻。
+  champion:
+    title: 冠軍
+    description: 贏得你的第一場 UHC 比賽。
+  contender:
+    title: 競爭者
+    description: 贏得 3 場 UHC 比賽。
+  legend:
+    title: 傳奇
+    description: 贏得 5 場 UHC 比賽。
+  unlucky:
+    title: 不走運
+    description: 在一場 UHC 比賽中死亡一次。
+  novice:
+    title: 新手
+    description: 達到等級 1。
+  learner:
+    title: 學習者
+    description: 達到等級 3。
+  apprentice:
+    title: 學徒
+    description: 達到等級 5。
+  seasoned:
+    title: 老練
+    description: 達到等級 10。
+  adept:
+    title: 熟練者
+    description: 達到等級 15。
+  expert:
+    title: 專家
+    description: 達到等級 18。
+  prestige:
+    title: 威望
+    description: 達到等級 20。
+  elite:
+    title: 精英
+    description: 達到等級 25。
+  master:
+    title: 大師
+    description: 達到等級 30。
+  ascendant:
+    title: 超凡
+    description: 達到等級 40。
 title-scatter-sequence-start: "<#faf0ca><bold>開始分散傳送</bold></#faf0ca>"
 subtitle-scatter-sequence-start: "<white>玩家正在依序傳送。</white>"
 title-scatter-settle-wait: "<#9db4c0><bold>地圖穩定中</bold></#9db4c0>"
@@ -475,6 +565,8 @@ kick-on-death-message: "<#f95738><bold>你已死亡。</bold></#f95738>\n<#faf0c
 elimination-forced: "<prefix><#6dd3a0>已淘汰 <count> 名玩家。</#6dd3a0>"
 revived-self: "<prefix><#6dd3a0>你已被復活。</#6dd3a0>"
 revived-announcement: "<prefix><#6dd3a0><player></#6dd3a0> <#faf0ca>已被復活。</#faf0ca>"
+killalloffline-none: "<prefix><#f4d35e>找不到任何已離線的參賽者。</#f4d35e>"
+killalloffline-done: "<prefix><#6dd3a0>已淘汰 <count> 名離線玩家。</#6dd3a0>"
 revive-invalid: "<prefix><#f95738><player> 並未被淘汰。</#f95738>"
 title-revived-self: "<#6dd3a0><bold>已復活</bold></#6dd3a0>"
 subtitle-revived-self: "<white>你已重新回到比賽。</white>"
@@ -541,10 +633,16 @@ title-match-draw: "<#f95738><bold>沒有勝者</bold></#f95738>"
 subtitle-match-draw: "<white>所有玩家都被淘汰了。</white>"
 title-match-ending: "<#9db4c0><bold>比賽即將結束</bold></#9db4c0>"
 subtitle-match-ending: "<white><seconds> 秒後返回大廳。</white>"
-match-summary-header: "<gray><bold>==============================</bold></gray>\n "
-match-summary-overview: "<#faf0ca>總結</#faf0ca> <#7b8aa0>| 勝者:</#7b8aa0> <white><winner></white> <#7b8aa0>| 時長:</#7b8aa0> <white><duration></white> <#7b8aa0>| 玩家數:</#7b8aa0> <white><players></white>"
-match-summary-top-killer: "<#faf0ca>總結</#faf0ca> <#7b8aa0>| 最高擊殺:</#7b8aa0> <white><player></white> <#7b8aa0>| 擊殺數:</#7b8aa0> <white><kills></white>"
-match-summary-footer: " \n<gray><bold>==============================</bold></gray>"
+match-summary-header: "<#334155><st>                                        </st></#334155>"
+match-summary-title: "<#faf0ca><bold>              結算              </bold></#faf0ca>"
+match-summary-winner: "<#7b8aa0>  勝利者   </#7b8aa0><#f4d35e><bold><winner></bold></#f4d35e>"
+match-summary-duration: "<#7b8aa0>  持續時間 </#7b8aa0><white><duration></white>"
+match-summary-players: "<#7b8aa0>  玩家人數 </#7b8aa0><white><players></white>"
+match-summary-divider: "<#1e293b><st>                                        </st></#1e293b>"
+match-summary-kills-header: "<#93c5fd>  擊殺排行榜</#93c5fd>"
+match-summary-kills-entry: "<#7b8aa0>  <rank>.</#7b8aa0> <white><player></white><#7b8aa0> — </#7b8aa0><#f4d35e><kills> 擊殺</#f4d35e>"
+match-summary-kills-none: "<#7b8aa0>  尚無擊殺紀錄。</#7b8aa0>"
+match-summary-footer: "<#334155><st>                                        </st></#334155>"
 match-ending: "<prefix><#faf0ca>將在 <seconds> 秒後把所有人傳送回大廳。</#faf0ca>"
 match-ending-actionbar: "<#faf0ca><seconds> 秒後返回大廳</#faf0ca>"
 # Scoreboard labels and chat controls
