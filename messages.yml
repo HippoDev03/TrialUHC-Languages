@@ -28,16 +28,98 @@ language:
       lore: "<#7b8aa0>Current:</#7b8aa0> <white><language></white>"
     selected:
       lore: "<#6dd3a0>Currently selected.</#6dd3a0>"
-prefix: "<#7b8aa0>[</#7b8aa0><gradient:#f4d35e:#ee964b>TrialUHC</gradient><#7b8aa0>]</#7b8aa0> "
+prefix: "<gradient:#f4d35e:#ee964b><bold>TrialUHC</bold></gradient> <gray>»</gray> "
+discord-link: "<prefix><white><click:open_url:'<link>'><underlined><link></underlined></click></white>"
+nightvision-enabled: "<prefix><#6dd3a0>Night vision enabled.</#6dd3a0>"
+nightvision-disabled: "<prefix><#f95738>Night vision disabled.</#f95738>"
+usage-setmaxplayers: "<prefix><#f4d35e>Usage: /setmaxplayers <amount></#f4d35e>"
+usage-database-import: "<prefix><#f4d35e>Usage: /uhc database import <yaml|postgresql|mariadb></#f4d35e>"
+database-import-started: "<prefix><#7dd3fc>Importing profiles from <white><type></white>... this runs in the background.</#7dd3fc>"
+database-import-success: "<prefix><#6dd3a0>Imported <white><count></white> profile(s) from <white><type></white> into the active storage backend.</#6dd3a0>"
+database-import-failed: "<prefix><red>Failed to import from <white><type></white>: <white><error></white></red>"
+max-players-set: "<prefix><#6dd3a0>Max players set to <white><amount></white>.</#6dd3a0>"
+baby-animals-disabled: "<prefix><#f95738>Animal breeding is disabled in this match."
+config-preset-usage: "<prefix><#f4d35e>Usage: /preset <save|load|delete|list> [name]</#f4d35e>"
+config-preset-invalid-name: "<prefix><#f95738>Preset names may only contain letters, numbers, underscores, and hyphens.</#f95738>"
+config-preset-saved: "<prefix><#6dd3a0>Saved the current config as preset <white><name></white>.</#6dd3a0>"
+config-preset-save-failed: "<prefix><#f95738>Failed to save preset <white><name></white>.</#f95738>"
+config-preset-loaded: "<prefix><#6dd3a0>Applied preset <white><name></white>.</#6dd3a0>"
+config-preset-load-failed: "<prefix><#f95738>Failed to apply preset <white><name></white>.</#f95738>"
+config-preset-not-found: "<prefix><#f95738>No preset named <white><name></white> was found.</#f95738>"
+config-preset-deleted: "<prefix><#6dd3a0>Deleted preset <white><name></white>.</#6dd3a0>"
+config-preset-list: "<prefix><#7b8aa0>Saved presets:</#7b8aa0> <white><names></white>"
+config-preset-list-empty: "<prefix><#7b8aa0>There are no saved presets yet.</#7b8aa0>"
+config-menu-start-button: "<#22c55e><bold>Start Game</bold></#22c55e>"
+config-menu-start-button-active: "<#ef4444><bold>Game In Progress</bold></#ef4444>"
+config-menu-start-button-lore: "<#cbd5e1>Click to start the UHC game.</#cbd5e1>"
+config-menu-start-button-active-lore: "<#7b8aa0>A game is already running.</#7b8aa0>"
+config-menu-stop-button: "<#f95738><bold>Stop Match</bold></#f95738>"
+config-menu-stop-button-idle: "<#7b8aa0><bold>Stop Match</bold></#7b8aa0>"
+config-menu-stop-button-lore: "<#cbd5e1>Click to stop the current match and return players to the lobby.</#cbd5e1>"
+config-menu-stop-button-confirm-lore: "<#f4d35e>Confirmation required.</#f4d35e>"
+config-menu-stop-button-idle-lore: "<#7b8aa0>No active match to stop.</#7b8aa0>"
+config-menu-reset-button: "<#f4d35e><bold>Reset Match</bold></#f4d35e>"
+config-menu-reset-button-lore: "<#cbd5e1>Force a full match reset and send everyone back to the lobby state.</#cbd5e1>"
+config-menu-reset-button-confirm-lore: "<#f4d35e>Confirmation required.</#f4d35e>"
+help-desc-pause: "Pause or resume the current match."
+help-desc-resume: "Resume a paused match."
+help-desc-start: "Start the match countdown."
+help-desc-forcestart: "Skip the countdown and start scattering immediately."
+help-desc-stop: "Stop the current match."
+help-desc-state: "Show the current match state."
+help-desc-setlobby: "Set the lobby spawn point to your location."
+help-desc-skipgrace: "End the grace period and enable PvP."
+help-desc-skipphase: "Skip the current match phase."
+help-desc-rescatter: "Re-scatter all active players."
+help-desc-reload: "Reload the TrialUHC config."
+help-desc-checkready: "Open the ready-check GUI for all online players."
+help-desc-reset: "Force a full match state reset."
+help-desc-gen: "Generate and select a match world."
+help-desc-preload: "Run a Chunky pregeneration for the match world."
+help-desc-preload-status: "Show current Chunky pregeneration progress."
+help-desc-preload-stop: "Cancel the current Chunky pregeneration."
+help-desc-kill: "Eliminate a player or selector target."
+help-desc-killalloffline: "Eliminate all disconnected players."
+help-desc-level: "Show level, experience, and level progress."
+help-desc-papi: "Show PlaceholderAPI soft-dependency status."
+help-desc-recipes: "Open the custom recipe viewer."
+help-desc-recipe: "Open the custom recipe viewer."
+help-desc-revive: "Revive an eliminated player."
+help-desc-lobbygame: "Start or manage a lobby minigame."
+help-desc-discord: "Get the server's Discord invite link."
+help-desc-config: "Open the game config GUI."
+help-desc-preset: "Save, load, or manage config presets."
+help-desc-rules: "View the server rules."
+help-desc-nightvision: "Toggle night vision on yourself."
+help-desc-setmaxplayers: "Change the server's max player count (persists across restarts)."
+help-desc-database-import: "Import player profile data from another storage backend (see database.yml)."
+alerts-title: "<black><bold>Alert Settings</bold></black>"
+alerts-filler: "<dark_gray> </dark_gray>"
+alerts-report: "<#f95738><bold>Report Alerts</bold></#f95738>"
+alerts-item-pvp: "<#ee964b><bold>Item PvP Alerts</bold></#ee964b>"
+alerts-pvp: "<#7dd3fc><bold>PvP Alerts</bold></#7dd3fc>"
+alerts-mining: "<#86efac><bold>Mining Alerts</bold></#86efac>"
+alerts-vulcan: "<#a78bfa><bold>Vulcan Alerts</bold></#a78bfa>"
+alerts-status-on: "<#6dd3a0>Status: Enabled</#6dd3a0>"
+alerts-status-off: "<#f95738>Status: Disabled</#f95738>"
+alerts-click-toggle: "<#cbd5e1>Click to toggle this alert type.</#cbd5e1>"
+alerts-category-enabled: "<prefix><#6dd3a0><category> alerts enabled.</#6dd3a0>"
+alerts-category-disabled: "<prefix><#f95738><category> alerts disabled.</#f95738>"
+rules:
+  dialog-title: "<gradient:#f4d35e:#ee964b><bold>Server Rules</bold></gradient>"
+  dialog-body: "<#cbd5e1>Please read and accept the rules below before playing.</#cbd5e1>"
+  agree-button: "<#6dd3a0><bold>I Agree</bold></#6dd3a0>"
+  confirmed: "<prefix><#6dd3a0>Thanks for confirming - enjoy the game!</#6dd3a0>"
+  already-confirmed: "<prefix><#7b8aa0>You have already confirmed the rules.</#7b8aa0>"
 quick-actions:
   menu:
     title: "<bold>TrialUHC Menu</bold>"
     label: "<#f4d35e><bold>TrialUHC Menu</bold></#f4d35e>"
 info:
   title: "<gradient:#f4d35e:#ee964b><bold>TrialUHC</bold></gradient>"
-  version: "<prefix><#7b8aa0>Version:</#7b8aa0> <white><version></white>"
+  version: "<#7b8aa0>Version:</#7b8aa0> <white><version></white>"
   author:
-    text: "<prefix><#7b8aa0>Developed by:</#7b8aa0> <#f4d35e>HippoDev03</#f4d35e>"
+    text: "<#7b8aa0>Developed by:</#7b8aa0> <#f4d35e>HippoDev03</#f4d35e>"
     hover: "<#faf0ca>Click to open GitHub</#faf0ca>"
 usage:
   uhc:
@@ -52,7 +134,7 @@ usage:
       <add|remove|list> [word]></#f4d35e>"
     pm: "<prefix><#f4d35e>Usage: /pm <player> <message></#f4d35e>"
     reply: "<prefix><#f4d35e>Usage: /reply <message></#f4d35e>"
-    profile: "<prefix><#f4d35e>Usage: /profile [player]</#f4d35e>"
+    profile: "<prefix><#f4d35e>Usage: /profile [player | list [page]]</#f4d35e>"
     world:
       root: "<prefix><#f4d35e>Usage: /world <list|current|gen [world]|load <world>|unload
         <world>|preload [world] [radius]|select <world>|tp [world]|regen [world]|delete
@@ -553,7 +635,7 @@ config:
             seconds: Player nametags are hidden for this many seconds at match start. Set to 0 to always show.
         final:
           heal:
-            seconds: Players receive a full heal this many seconds after the match starts. Set to 0 to disable.
+            seconds: Players receive a full heal this many seconds before the match ends (max-duration-seconds). Set to 0 to disable.
           duel:
             seconds: Duration of the final duel when only 2 players remain.
         scatter:
@@ -773,6 +855,12 @@ profile:
     lore: "<#7b8aa0>Wins:</#7b8aa0> <white><wins></white>"
   games:
     lore: "<#7b8aa0>Games Played:</#7b8aa0> <white><games></white>"
+  list:
+    title: "<prefix><#6dd3a0><bold>Known Players</bold></#6dd3a0> <#7b8aa0>(<count> total)</#7b8aa0> <#334155>|</#334155> <#7b8aa0>Page <white><page></white>/<white><pages></white></#7b8aa0>"
+    entry: "<#334155><index>.</#334155> <white><player></white> <#334155>|</#334155> <#f4d35e><wins>W</#f4d35e> <#fca5a5><kills>K</#fca5a5> <#7b8aa0><deaths>D</#7b8aa0> <#a3e635>Lv<level></#a3e635> <#7b8aa0>(<games> games)</#7b8aa0>"
+    entry-hover: "<#cbd5e1>Click to open <white><player></white>'s profile.</#cbd5e1>"
+    next: "<#7b8aa0>» Click for page <white><next></white></#7b8aa0>"
+    empty: "<prefix><#f4d35e>No player profiles have been recorded yet.</#f4d35e>"
   summary:
     title: "<prefix><#6dd3a0><player>'s profile</#6dd3a0>"
     level: "<prefix><#7b8aa0>Level:</#7b8aa0> <white><level></white> <#7b8aa0>| Experience:</#7b8aa0>
@@ -959,16 +1047,24 @@ match:
   ending:
     text: "<prefix><#9db4c0>Match is ending. Returning to lobby in <white><seconds>s</white>.</#9db4c0>"
     actionbar: "<#faf0ca>Returning to lobby in <seconds>s</#faf0ca>"
+  countdown:
+    actionbar: "<#ee964b>Match starting in <white><seconds>s</white></#ee964b>"
   stopped: "<prefix><#f95738>The match was stopped.</#f95738>"
   reset: "<prefix><#6dd3a0>All match state and player data have been force reset.</#6dd3a0>"
 countdown: "<prefix><#ee964b>Starting in <seconds>s.</#ee964b>"
 title:
+  opening: "<gradient:#f4d35e:#ee964b><bold>TrialUHC</bold></gradient>"
   match:
     starting: "<#f4d35e><bold>Match Starting</bold></#f4d35e>"
     started: "<#6dd3a0><bold>UHC Live</bold></#6dd3a0>"
     draw: "<#f95738><bold>No Winner</bold></#f95738>"
     ending: "<#9db4c0><bold>Match Ending</bold></#9db4c0>"
   countdown: "<#ee964b><bold><seconds></bold></#ee964b>"
+  launch:
+    far: "<gradient:#faf0ca:#f4d35e><bold><seconds></bold></gradient>"
+    near: "<gradient:#f4d35e:#ee964b><bold><seconds></bold></gradient>"
+    final: "<gradient:#ee964b:#f95738><bold>❰ <seconds> ❱</bold></gradient>"
+    go: "<gradient:#f95738:#f4d35e:#6dd3a0><bold>⚔ FIGHT ⚔</bold></gradient>"
   scatter:
     sequence:
       start: "<#faf0ca><bold>Scatter Starting</bold></#faf0ca>"
@@ -994,12 +1090,21 @@ title:
   eliminated:
     announcement: "<#f95738><bold>Player Eliminated</bold></#f95738>"
 subtitle:
+  opening:
+    starting: "<white>Starting Soon</white>"
+    credits: "<#7b8aa0>By: <white>Routine Network Information Studio (RNIS)</white></#7b8aa0>"
+    version: "<#7b8aa0>Version <white><version></white></#7b8aa0>"
   match:
     starting: "<white><seconds>s until the countdown begins.</white>"
     started: "<white>The match has started.</white>"
     draw: "<white>All players were eliminated.</white>"
     ending: "<white>Returning to lobby in <seconds>s.</white>"
   countdown: "<white>Until match start</white>"
+  launch:
+    far: "<#7b8aa0>Match begins soon</#7b8aa0>"
+    near: "<#faf0ca>Get ready</#faf0ca>"
+    final: "<#f95738>Prepare for battle</#f95738>"
+    go: "<white>Scatter incoming — fight for the win!</white>"
   scatter:
     sequence:
       start: "<white>Players are being teleported.</white>"
@@ -1053,7 +1158,7 @@ scatter:
     bossbar: "<#22c55e>Game starts in <white><seconds></white>"
     title: "<#22c55e><bold><seconds></bold></#22c55e>"
 scattered: "<prefix><#6dd3a0>You have been scattered.</#6dd3a0>"
-advancement-message: "<prefix><#f4d35e><player></#f4d35e> <#faf0ca>has made the advancement</#faf0ca> <#86efac>[<advancement>]</#86efac>"
+advancement-message: "<prefix><#f4d35e><player></#f4d35e> <#faf0ca>has made the advancement</#faf0ca> <#86efac>[</#86efac><advancement><#86efac>]</#86efac>"
 arrow-health: "<red>❤ <player></red> <gray>—</gray> <white><health>/<max_health></white>"
 achievement:
   root:
@@ -1137,6 +1242,30 @@ achievement:
   ascendant:
     title: Ascendant
     description: Reach level 40.
+  void_walker:
+    title: Into the Void
+    description: Fall into the void.
+  hot_feet:
+    title: Hot Feet
+    description: Die in lava.
+  crispy:
+    title: Extra Crispy
+    description: Burn to death.
+  sniper:
+    title: Sniper
+    description: Land a bow kill from 30 blocks or more.
+  pacifist:
+    title: Pacifist
+    description: Win a match without a single kill.
+  speedrunner:
+    title: Speedrunner
+    description: Win a match in under 5 minutes.
+  close_call:
+    title: Close Call
+    description: Win a match with 2 hearts or less remaining.
+  totem_saved:
+    title: Cheating Death
+    description: Survive a killing blow with a Totem of Undying.
 grace:
   start: "<prefix><#faf0ca>Grace period started for <seconds>s.</#faf0ca>"
   end: "<prefix><#f95738>Grace period ended. PvP is enabled.</#f95738>"
@@ -1160,6 +1289,7 @@ eliminated:
   announcement: "<prefix><#f95738><player></#f95738> <#faf0ca>has been eliminated.</#faf0ca>"
 mannequin:
   name: "<#fca5a5>Disconnected</#fca5a5> <dark_gray>-</dark_gray> <white><player></white>"
+  tab: "<gray><strikethrough><player></strikethrough></gray> <#fca5a5>(Disconnected)</#fca5a5>"
 kick:
   'on':
     death:
@@ -1196,6 +1326,7 @@ spectator:
         lore: "<#cbd5e1>Click to teleport.</#cbd5e1>"
       inspect:
         lore: "<#cbd5e1>Click to inspect inventory.</#cbd5e1>"
+      health: "<#fca5a5>❤ <white><health></white></#fca5a5>   <#7b8aa0>Ping</#7b8aa0> <white><ping>ms</white>"
       coords: "<#7b8aa0>X:</#7b8aa0> <white><x></white> <#7b8aa0>Y:</#7b8aa0> <white><y></white>
         <#7b8aa0>Z:</#7b8aa0> <white><z></white>"
     offline: "<prefix><#f95738>Could not find <player> anymore.</#f95738>"
@@ -1283,6 +1414,8 @@ alert:
 state: "<prefix><#7b8aa0>Phase:</#7b8aa0> <white><phase></white> <#7b8aa0>| Alive:</#7b8aa0>
   <white><alive></white> <#7b8aa0>| Dead:</#7b8aa0> <white><dead></white>"
 errors:
+  discord-not-configured: "<prefix><red>No Discord invite link has been configured.</red>"
+  invalid-max-players: "<prefix><red>Max players must be a positive number.</red>"
   'no':
     permission: "<prefix><red>You do not have permission to do that.</red>"
     grace:
@@ -1466,6 +1599,23 @@ team:
     delete-team:
       text: "<#f95738><bold>Delete Team</bold></#f95738>"
       lore: "<#cbd5e1>Click to delete any team.</#cbd5e1>"
+    picker:
+      select-player:
+        title: "<#475569><bold>Admin: Select Player</bold></#475569>"
+        lore: "<#7dd3fc>Click to select this player.</#7dd3fc>"
+      set-team-title: "<#475569><bold>Set Team: <player></bold></#475569>"
+      back-to-players: "<red>Back to Players</red>"
+      remove-from-team:
+        text: "<#f87171><bold>Remove from Team</bold></#f87171>"
+        lore: "<gray>Click to remove player from their current team.</gray>"
+      assign-team-lore: "<#7dd3fc>Click to assign player to this team.</#7dd3fc>"
+      removed-from-team: "<green>Removed <player> from their team.</green>"
+      recolor-team:
+        title: "<#475569><bold>Admin: Recolor Team</bold></#475569>"
+        lore: "<#7dd3fc>Click to select this team for recoloring.</#7dd3fc>"
+      delete-team:
+        title: "<#e11d48><bold>Admin: Delete Team</bold></#e11d48>"
+        lore: "<#f43f5e>Click to permanently delete this team.</#f43f5e>"
   menu:
     title: "<#334155><bold>Team Select</bold></#334155>"
     filler: "<dark_gray> </dark_gray>"
@@ -1623,6 +1773,13 @@ team:
     expired: "<prefix><#f95738>That invitation has expired.</#f95738>"
     target-has-team: "<prefix><#f95738><player> is already in a team.</#f95738>"
     click-invite: "<#7dd3fc>Click to invite this player.</#7dd3fc>"
+  pagination:
+    prev:
+      text: "<#7dd3fc><bold>« Previous Page</bold></#7dd3fc>"
+      lore: "<gray>Page <page></gray>"
+    next:
+      text: "<#7dd3fc><bold>Next Page »</bold></#7dd3fc>"
+      lore: "<gray>Page <page></gray>"
 goldenhead:
   given: "<prefix><#6dd3a0>Gave a Golden Head to <white><player></white>.</#6dd3a0>"
   received: "<prefix><#6dd3a0>You received a Golden Head.</#6dd3a0>"

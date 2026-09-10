@@ -4,15 +4,31 @@ language:
   code: "zh_tw"
   translator: "試煉UHC 團隊"
 # Core branding
-prefix: "<#7b8aa0>[</#7b8aa0><gradient:#f4d35e:#ee964b>試煉UHC</gradient><#7b8aa0>]</#7b8aa0> "
+prefix: "<gradient:#f4d35e:#ee964b><bold>試煉UHC</bold></gradient> <gray>»</gray> "
+advancement-message: "<prefix><#f4d35e><player></#f4d35e> <#faf0ca>達成了成就</#faf0ca> <#86efac>[</#86efac><advancement><#86efac>]</#86efac>"
+discord-link: "<prefix><white><click:open_url:'<link>'><underlined><link></underlined></click></white>"
+nightvision-enabled: "<prefix><#6dd3a0>已啟用夜視。</#6dd3a0>"
+nightvision-disabled: "<prefix><#f95738>已停用夜視。</#f95738>"
+usage-setmaxplayers: "<prefix><#f4d35e>用法: /setmaxplayers <數量></#f4d35e>"
+usage-database-import: "<prefix><#f4d35e>用法: /uhc database import <yaml|postgresql|mariadb></#f4d35e>"
+database-import-started: "<prefix><#7dd3fc>正在從 <white><type></white> 匯入玩家資料...此程序將在背景執行。</#7dd3fc>"
+database-import-success: "<prefix><#6dd3a0>已從 <white><type></white> 匯入 <white><count></white> 筆玩家資料到目前使用中的資料儲存後端。</#6dd3a0>"
+database-import-failed: "<prefix><red>從 <white><type></white> 匯入失敗: <white><error></white></red>"
+max-players-set: "<prefix><#6dd3a0>已將最大玩家數設為 <white><amount></white>。</#6dd3a0>"
+rules:
+  dialog-title: "<gradient:#f4d35e:#ee964b><bold>伺服器規則</bold></gradient>"
+  dialog-body: "<#cbd5e1>請在遊玩前詳細閱讀並同意以下規則。</#cbd5e1>"
+  agree-button: "<#6dd3a0><bold>我同意</bold></#6dd3a0>"
+  confirmed: "<prefix><#6dd3a0>感謝你的確認，祝遊戲愉快！</#6dd3a0>"
+  already-confirmed: "<prefix><#7b8aa0>你已經確認過規則了。</#7b8aa0>"
 quick-actions:
   menu:
     title: "<bold>試煉UHC 選單</bold>"
     label: "<#f4d35e><bold>試煉UHC 選單</bold></#f4d35e>"
 info:
   title: "<gradient:#f4d35e:#ee964b><bold>試煉UHC</bold></gradient>"
-  version: "<prefix><#7b8aa0>版本:</#7b8aa0> <white><version></white>"
-  author: "<prefix><#7b8aa0>作者:</#7b8aa0> <#f95738><u>HippoDev03</u></#f95738>"
+  version: "<#7b8aa0>版本:</#7b8aa0> <white><version></white>"
+  author: "<#7b8aa0>作者:</#7b8aa0> <#f95738><u>HippoDev03</u></#f95738>"
   author-hover: "<#faf0ca>開啟 GitHub</#faf0ca>"
 # Command usage
 usage:
@@ -24,7 +40,7 @@ usage:
     lobbygame: "<prefix><#f4d35e>使用方法: /uhc lobbygame <start <math|unscramble [word]>|stop|word <add|remove|list> [word]></#f4d35e>"
     pm: "<prefix><#f4d35e>使用方法: /pm <player> <message></#f4d35e>"
     reply: "<prefix><#f4d35e>使用方法: /reply <message></#f4d35e>"
-    profile: "<prefix><#f4d35e>使用方法: /profile [player]</#f4d35e>"
+    profile: "<prefix><#f4d35e>使用方法: /profile [玩家 | list [頁數]]</#f4d35e>"
     world:
       root: "<prefix><#f4d35e>使用方法: /world <list|current|gen [world]|load <world>|unload <world>|preload [world] [radius]|select <world>|tp [world]|regen [world]|delete <world>|clean></#f4d35e>"
       load: "<prefix><#f4d35e>使用方法: /world load <world></#f4d35e>"
@@ -64,6 +80,9 @@ heal-received: "<prefix><#6dd3a0>你被管理員治療了。</#6dd3a0>"
 ping: "<prefix><#7dd3fc>你的延遲是 <white><ping>ms</white>。</#7dd3fc>"
 ping-other: "<prefix><#7dd3fc><player> 的延遲是 <white><ping>ms</white>。</#7dd3fc>"
 pingall-summary: "<prefix><#7b8aa0>線上玩家延遲:</#7b8aa0> <white><online></white>"
+pingall-nav-gap: "<#7b8aa0>  </#7b8aa0>"
+pingall-nav-next: "<#93c5fd>[下一頁 →]</#93c5fd>"
+pingall-nav-prev: "<#93c5fd>[← 上一頁]</#93c5fd>"
 list-summary: "<prefix><#7b8aa0>線上玩家:</#7b8aa0> <white><online>/<max></white>"
 list-entry-eliminated: "<gray><player></gray>"
 list-entry-lobby-spectator: "<#9db4c0><player></#9db4c0>"
@@ -104,7 +123,7 @@ leaderboard-entry-level: "<#7b8aa0>等級：</#7b8aa0> <white><level></white>"
 leaderboard-entry-experience: "<#7b8aa0>經驗：</#7b8aa0> <white><experience></white>"
 leaderboard-entry-kd: "<#7b8aa0>KD：</#7b8aa0> <white><kd></white>"
 leaderboard-entry-killstreak: "<#7b8aa0>最高連殺：</#7b8aa0> <white><killstreak></white>"
-leaderboard-hologram-title: "<#f4d35e><bold>Top <stat></bold></#f4d35e>"
+leaderboard-hologram-title: "<#f4d35e><bold>排名前段 <stat></bold></#f4d35e>"
 leaderboard-hologram-line: "<#7dd3fc><rank>.</#7dd3fc> <white><player></white> <#7b8aa0>-</#7b8aa0> <#f4d35e><value></#f4d35e>"
 hologram-usage: "<prefix><#f4d35e>使用方法：/hologram set <type></#f4d35e>"
 hologram-invalid-type: "<prefix><#f95738>未知的全像投影類型 <white><type></white>。</#f95738>"
@@ -144,6 +163,7 @@ kit-edit-broadcast: "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>已更新套裝
 kit-set-global-broadcast: "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>已將目前啟用套裝設為</#cbd5e1> <white><kit></white><#cbd5e1>。</#cbd5e1>"
 kit-edit-failed: "<prefix><#f95738>無法將該套裝儲存到 kits.yml。</#f95738>"
 config-menu-title: "<#334155><bold>遊戲設定</bold></#334155>"
+config-menu-status-lore: "<#7b8aa0>狀態</#7b8aa0>  <value>"
 config-menu-filler: "<dark_gray> </dark_gray>"
 config-menu-no-permission: "<prefix><#f4d35e>你可以查看此選單，但只有管理員可以編輯數值。</#f4d35e>"
 config-menu-admin-title: "<#6dd3a0><bold>管理員編輯模式</bold></#6dd3a0>"
@@ -191,6 +211,28 @@ config-menu-bool-edit-lore: "<#cbd5e1>點擊切換此設定。</#cbd5e1>"
 config-menu-view-lore: "<#f4d35e>僅可查看。請聯繫管理員修改。</#f4d35e>"
 config-menu-bool-on: "啟用"
 config-menu-bool-off: "停用"
+config-preset-usage: "<prefix><#f4d35e>用法: /preset <save|load|delete|list> [名稱]</#f4d35e>"
+config-preset-invalid-name: "<prefix><#f95738>預設名稱僅能包含英文字母、數字、底線與連字號。</#f95738>"
+config-preset-saved: "<prefix><#6dd3a0>已將目前設定儲存為預設 <white><name></white>。</#6dd3a0>"
+config-preset-save-failed: "<prefix><#f95738>無法儲存預設 <white><name></white>。</#f95738>"
+config-preset-loaded: "<prefix><#6dd3a0>已套用預設 <white><name></white>。</#6dd3a0>"
+config-preset-load-failed: "<prefix><#f95738>無法套用預設 <white><name></white>。</#f95738>"
+config-preset-not-found: "<prefix><#f95738>找不到預設 <white><name></white>。</#f95738>"
+config-preset-deleted: "<prefix><#6dd3a0>已刪除預設 <white><name></white>。</#6dd3a0>"
+config-preset-list: "<prefix><#7b8aa0>已儲存的預設:</#7b8aa0> <white><names></white>"
+config-preset-list-empty: "<prefix><#7b8aa0>目前沒有已儲存的預設。</#7b8aa0>"
+config-menu-start-button: "<#22c55e><bold>開始遊戲</bold></#22c55e>"
+config-menu-start-button-active: "<#ef4444><bold>遊戲進行中</bold></#ef4444>"
+config-menu-start-button-lore: "<#cbd5e1>點擊以開始 UHC 遊戲。</#cbd5e1>"
+config-menu-start-button-active-lore: "<#7b8aa0>目前已有比賽正在進行。</#7b8aa0>"
+config-menu-stop-button: "<#f95738><bold>停止比賽</bold></#f95738>"
+config-menu-stop-button-idle: "<#7b8aa0><bold>停止比賽</bold></#7b8aa0>"
+config-menu-stop-button-lore: "<#cbd5e1>點擊以停止目前的比賽並將玩家送回大廳。</#cbd5e1>"
+config-menu-stop-button-confirm-lore: "<#f4d35e>需要再次確認。</#f4d35e>"
+config-menu-stop-button-idle-lore: "<#7b8aa0>目前沒有進行中的比賽可以停止。</#7b8aa0>"
+config-menu-reset-button: "<#f4d35e><bold>重置比賽</bold></#f4d35e>"
+config-menu-reset-button-lore: "<#cbd5e1>強制完全重置比賽，並將所有玩家送回大廳狀態。</#cbd5e1>"
+config-menu-reset-button-confirm-lore: "<#f4d35e>需要再次確認。</#f4d35e>"
 config-menu-option-min-players: "<#f4d35e><bold>最少玩家數</bold></#f4d35e>"
 config-menu-option-countdown: "<#f4d35e><bold>倒數秒數</bold></#f4d35e>"
 config-menu-option-disable-natural-regen: "<#f95738><bold>停用自然回血</bold></#f95738>"
@@ -226,6 +268,15 @@ help-desc-recipes: "開啟自訂配方檢視器。"
 help-desc-recipe: "開啟自訂配方檢視器。"
 help-desc-revive: "復活已淘汰玩家。"
 help-desc-lobbygame: "開始或管理大廳小遊戲。"
+help-desc-rescatter: "重新分散所有存活玩家。"
+help-desc-killalloffline: "淘汰所有已離線的玩家。"
+help-desc-discord: "取得伺服器的 Discord 邀請連結。"
+help-desc-config: "開啟遊戲設定 GUI。"
+help-desc-preset: "儲存、載入或管理設定預設。"
+help-desc-rules: "查看伺服器規則。"
+help-desc-nightvision: "切換自己的夜視效果。"
+help-desc-setmaxplayers: "變更伺服器最大玩家數(重啟後仍會保留)。"
+help-desc-database-import: "從其他資料儲存後端匯入玩家資料(詳見 database.yml)。"
 papi-status-enabled-detail: "MiniMessage 的 PAPI 解析已啟用，%試煉UHC_*% 佔位符已註冊。"
 papi-status-disabled-detail: "未載入 PlaceholderAPI。若要使用 PAPI 佔位符，請安裝至 plugins/。"
 # Gamemode shortcuts
@@ -277,11 +328,16 @@ profile-kd-lore: "<#7b8aa0>KD 比率:</#7b8aa0> <white><kd></white>"
 profile-killstreak-lore: "<#7b8aa0>最高連殺:</#7b8aa0> <white><killstreak></white>"
 profile-wins-lore: "<#7b8aa0>勝場:</#7b8aa0> <white><wins></white>"
 profile-games-lore: "<#7b8aa0>遊玩場次:</#7b8aa0> <white><games></white>"
+profile-list-title: "<prefix><#6dd3a0><bold>已知玩家</bold></#6dd3a0> <#7b8aa0>(共 <count> 位)</#7b8aa0> <#334155>|</#334155> <#7b8aa0>第 <white><page></white>/<white><pages></white> 頁</#7b8aa0>"
+profile-list-entry: "<#334155><index>.</#334155> <white><player></white> <#334155>|</#334155> <#f4d35e><wins>勝</#f4d35e> <#fca5a5><kills>殺</#fca5a5> <#7b8aa0><deaths>亡</#7b8aa0> <#a3e635>Lv<level></#a3e635> <#7b8aa0>(<games> 場)</#7b8aa0>"
+profile-list-entry-hover: "<#cbd5e1>點擊開啟 <white><player></white> 的資料。</#cbd5e1>"
+profile-list-next: "<#7b8aa0>» 點擊查看第 <white><next></white> 頁</#7b8aa0>"
+profile-list-empty: "<prefix><#f4d35e>目前沒有任何玩家資料記錄。</#f4d35e>"
 profile-summary-title: "<prefix><#6dd3a0><player> 的資料</#6dd3a0>"
 profile-summary-level: "<prefix><#7b8aa0>等級:</#7b8aa0> <white><level></white> <#7b8aa0>| 經驗值:</#7b8aa0> <white><experience></white>"
 profile-summary-stats: "<prefix><#7b8aa0>擊殺:</#7b8aa0> <white><kills></white> <#7b8aa0>| 死亡:</#7b8aa0> <white><deaths></white> <#7b8aa0>| 助攻:</#7b8aa0> <white><assists></white> <#7b8aa0>| KD:</#7b8aa0> <white><kd></white> <#7b8aa0>| 連殺:</#7b8aa0> <white><killstreak></white> <#7b8aa0>| 勝場:</#7b8aa0> <white><wins></white> <#7b8aa0>| 場次:</#7b8aa0> <white><games></white>"
 level-summary: "<prefix><#7b8aa0><player> 的等級:</#7b8aa0> <white><level></white> <#7b8aa0>| XP:</#7b8aa0> <white><experience></white> <#7b8aa0>| 進度:</#7b8aa0> <white><progress>%</white> <#7b8aa0>| 距離下級:</#7b8aa0> <white><remaining></white>"
-papi-status: "<prefix><#7b8aa0>PlaceholderAPI:</#7b8aa0> <white>installed=<installed></white> <#7b8aa0>| enabled:</#7b8aa0> <white><enabled></white> <#7b8aa0>| version:</#7b8aa0> <white><version></white>\n<prefix><#7b8aa0>Status:</#7b8aa0> <white><expansions></white>"
+papi-status: "<prefix><#7b8aa0>PlaceholderAPI：</#7b8aa0> <white>已安裝=<installed></white> <#7b8aa0>| 已啟用:</#7b8aa0> <white><enabled></white> <#7b8aa0>| 版本:</#7b8aa0> <white><version></white>\n<prefix><#7b8aa0>狀態:</#7b8aa0> <white><expansions></white>"
 # Recipe browser and custom recipes
 recipes-title: "<#f4d35e><bold>自定義配方</bold></#f4d35e>"
 recipes-detail-title: "<#f4d35e><bold><recipe></bold></#f4d35e>"
@@ -336,6 +392,9 @@ potions-disabled: "<prefix><#f95738>此場比賽已停用藥水。</#f95738>"
 suspicious-stew-disabled: "<prefix><#f95738>此場比賽已停用可疑的燉湯。</#f95738>"
 enchanting-disabled: "<prefix><#f95738>此場比賽已停用附魔。</#f95738>"
 brewing-disabled: "<prefix><#f95738>此場比賽已停用釀造。</#f95738>"
+enchanted-golden-apple-disabled: "<prefix><#f95738>此場比賽已停用附魔金蘋果。</#f95738>"
+grindstone-disabled: "<prefix><#f95738>此場比賽已停用磨石機。</#f95738>"
+baby-animals-disabled: "<prefix><#f95738>此場比賽已停用動物繁殖。</#f95738>"
 # Lobby systems and items
 lobby-pvp-hold-instruction: "<prefix><#f4d35e>按住 PvP 劍 <seconds> 秒以啟用大廳 PvP。</#f4d35e>"
 lobby-pvp-hold-start: "<prefix><#f4d35e>持續按住 PvP 劍 <seconds> 秒以啟用你的大廳 PvP。</#f4d35e>"
@@ -378,6 +437,7 @@ lobby-item:
     lore:
       - "<#cbd5e1>拿著此劍 3 秒。</#cbd5e1>"
       - "<#7b8aa0>這會啟用你自己的大廳 PvP。</#7b8aa0>"
+      - "<#93c5fd>右鍵點擊以進入練習競技場。</#93c5fd>"
   stats:
     name: "<#f4d35e><bold>個人資料</bold></#f4d35e>"
     lore:
@@ -422,10 +482,22 @@ lobby-item:
 match-starting: "<prefix><#f4d35e>比賽將在 <seconds> 秒後開始。</#f4d35e>"
 match-force-started: "<prefix><#f95738>已強制開始比賽並跳過倒數。</#f95738>"
 countdown: "<prefix><#ee964b><seconds> 秒後開始。</#ee964b>"
+title-opening: "<gradient:#f4d35e:#ee964b><bold>試煉UHC</bold></gradient>"
+subtitle-opening-starting: "<white>即將開始</white>"
+subtitle-opening-credits: "<#7b8aa0>作者: <white>平常網路資訊工作室 (RNIS)</white></#7b8aa0>"
+subtitle-opening-version: "<#7b8aa0>版本 <white><version></white></#7b8aa0>"
 title-match-starting: "<#f4d35e><bold>比賽即將開始</bold></#f4d35e>"
 subtitle-match-starting: "<white><seconds> 秒後開始倒數。</white>"
 title-countdown: "<#ee964b><bold><seconds></bold></#ee964b>"
 subtitle-countdown: "<white>距離比賽開始</white>"
+title-launch-far: "<gradient:#faf0ca:#f4d35e><bold><seconds></bold></gradient>"
+title-launch-near: "<gradient:#f4d35e:#ee964b><bold><seconds></bold></gradient>"
+title-launch-final: "<gradient:#ee964b:#f95738><bold>❰ <seconds> ❱</bold></gradient>"
+title-launch-go: "<gradient:#f95738:#f4d35e:#6dd3a0><bold>⚔ 開戰 ⚔</bold></gradient>"
+subtitle-launch-far: "<#7b8aa0>比賽即將開始</#7b8aa0>"
+subtitle-launch-near: "<#faf0ca>準備就緒</#faf0ca>"
+subtitle-launch-final: "<#f95738>準備戰鬥</#f95738>"
+subtitle-launch-go: "<white>即將分散傳送 — 為勝利而戰！</white>"
 pause-enabled: "<prefix><#f4d35e>比賽已暫停。</#f4d35e>"
 pause-disabled: "<prefix><#6dd3a0>比賽已恢復。</#6dd3a0>"
 pause-already: "<prefix><#f4d35e>比賽已經是暫停狀態。</#f4d35e>"
@@ -442,6 +514,7 @@ freeze-blocked: "<prefix><#f95738>你已被凍結，無法執行此操作。</#f
 scatter-sequence-start: "<prefix><#faf0ca>分散傳送已開始，玩家將依序傳送。</#faf0ca>"
 scatter-settle-wait: "<prefix><#9db4c0>等待地圖穩定中（<seconds> 秒）。</#9db4c0>"
 scatter-bossbar: "<#f4d35e>正在分散玩家 <white><current>/<total></white> <#7b8aa0>(<percent>%)</#7b8aa0>"
+rescatter-started: "<prefix><#f4d35e>正在為參賽者重新分散傳送。</#f4d35e>"
 scatter-countdown-bossbar: "<#22c55e>比賽將在 <white><seconds></white> 後開始"
 scatter-countdown-title: "<#22c55e><bold><seconds></bold></#22c55e>"
 scattered: "<prefix><#6dd3a0>你已被隨機分散傳送。</#6dd3a0>"
@@ -527,6 +600,30 @@ achievement:
   ascendant:
     title: 超凡
     description: 達到等級 40。
+  void_walker:
+    title: 墜入虛空
+    description: 掉入虛空而死亡。
+  hot_feet:
+    title: 岩漿熱舞
+    description: 被岩漿燒死。
+  crispy:
+    title: 烤焦了
+    description: 被燒死。
+  sniper:
+    title: 神射手
+    description: 在 30 格以外用弓箭擊殺敵人。
+  pacifist:
+    title: 和平主義者
+    description: 在沒有任何擊殺的情況下贏得比賽。
+  speedrunner:
+    title: 閃電獲勝
+    description: 在 5 分鐘內贏得比賽。
+  close_call:
+    title: 千鈞一髮
+    description: 以剩餘 2 顆心以下的血量贏得比賽。
+  totem_saved:
+    title: 死裡逃生
+    description: 使用不死圖騰在死亡邊緣重生。
 title-scatter-sequence-start: "<#faf0ca><bold>開始分散傳送</bold></#faf0ca>"
 subtitle-scatter-sequence-start: "<white>玩家正在依序傳送。</white>"
 title-scatter-settle-wait: "<#9db4c0><bold>地圖穩定中</bold></#9db4c0>"
@@ -561,6 +658,7 @@ eliminated: "<prefix><#f95738>你已被淘汰。</#f95738>"
 eliminated-announcement: "<prefix><#f95738><player></#f95738> <#faf0ca>已被淘汰。</#faf0ca>"
 mannequin:
   name: "<#fca5a5>已離線</#fca5a5> <dark_gray>-</dark_gray> <white><player></white>"
+  tab: "<gray><strikethrough><player></strikethrough></gray> <#fca5a5>(已離線)</#fca5a5>"
 kick-on-death-message: "<#f95738><bold>你已死亡。</bold></#f95738>\n<#faf0ca>此伺服器設定為死亡後踢出玩家。</#faf0ca>"
 elimination-forced: "<prefix><#6dd3a0>已淘汰 <count> 名玩家。</#6dd3a0>"
 revived-self: "<prefix><#6dd3a0>你已被復活。</#6dd3a0>"
@@ -583,6 +681,7 @@ spectator-inspect-view-title: "<#334155><bold><player> 的背包</bold></#334155
 spectator-target-head-name: "<#6dd3a0><bold><player></bold></#6dd3a0>"
 spectator-target-head-teleport-lore: "<#cbd5e1>點擊傳送。</#cbd5e1>"
 spectator-target-head-inspect-lore: "<#cbd5e1>點擊查看背包。</#cbd5e1>"
+spectator-target-head-health: "<#fca5a5>❤ <white><health></white></#fca5a5>   <#7b8aa0>延遲</#7b8aa0> <white><ping>ms</white>"
 spectator-target-head-coords: "<#7b8aa0>X:</#7b8aa0> <white><x></white> <#7b8aa0>Y:</#7b8aa0> <white><y></white> <#7b8aa0>Z:</#7b8aa0> <white><z></white>"
 spectator-speed-title: "<#334155><bold>速度控制</bold></#334155>"
 spectator-speed-filler: "<dark_gray> </dark_gray>"
@@ -600,6 +699,43 @@ spectator-teleported-center: "<prefix><#7dd3fc>已傳送至邊界中心。</#7dd
 spectator-target-offline: "<prefix><#f95738>找不到玩家 <player>。</#f95738>"
 spectator-no-targets: "<prefix><#f4d35e>目前沒有可觀戰的目標。</#f4d35e>"
 spectator-match-not-started: "<prefix><#f4d35e>比賽尚未開始，無法進入 UHC 世界。</#f4d35e>"
+spectator-item:
+  teleporter:
+    name: "<#6dd3a0><bold>玩家列表</bold></#6dd3a0>"
+    lore:
+      - "<#cbd5e1>開啟玩家列表。</#cbd5e1>"
+      - "<#7b8aa0>點擊玩家以傳送過去。</#7b8aa0>"
+  random_player:
+    name: "<#f4d35e><bold>隨機玩家</bold></#f4d35e>"
+    lore:
+      - "<white>傳送到隨機一名存活玩家。</white>"
+      - "<#d7e1ea>快速在地圖上旁觀移動。</#d7e1ea>"
+  center:
+    name: "<#7dd3fc><bold>前往 0,0</bold></#7dd3fc>"
+    lore:
+      - "<white>直接傳送到世界中心。</white>"
+      - "<#d7e1ea>適合觀看戰鬥與最終對決。</#d7e1ea>"
+  inspect:
+    name: "<#fda4af><bold>查看物品欄</bold></#fda4af>"
+    lore:
+      - "<white>開啟存活玩家列表。</white>"
+      - "<#d7e1ea>點擊以查看該玩家的物品欄。</#d7e1ea>"
+  night_vision:
+    name: "<#c4b5fd><bold>夜視</bold></#c4b5fd>"
+    lore:
+      - "<white>切換旁觀者夜視效果。</white>"
+      - "<#d7e1ea>適合觀察洞穴與黑暗中的戰鬥。</#d7e1ea>"
+  speed:
+    name: "<#a7f3d0><bold>速度控制</bold></#a7f3d0>"
+    lore:
+      - "<white>調整你的飛行與行走速度。</white>"
+      - "<#d7e1ea>開啟速度控制選單。</#d7e1ea>"
+  info:
+    name: "<#9db4c0><bold>旁觀模式</bold></#9db4c0>"
+    lore:
+      - "<#cbd5e1>你目前處於自訂旁觀模式。</#cbd5e1>"
+      - "<#7b8aa0>使用你的工具移動與查看玩家。</#7b8aa0>"
+    action-message: "<prefix><#9db4c0>使用你的觀戰工具來傳送、查看玩家或調整速度。</#9db4c0>"
 # Match result summary
 pm-sent: "<prefix><#6dd3a0>已傳送訊息給 <player>。</#6dd3a0>"
 winner: "<prefix><#f4d35e><player></#f4d35e> <#6dd3a0>贏得了本場比賽。</#6dd3a0>"
@@ -645,6 +781,7 @@ match-summary-kills-none: "<#7b8aa0>  尚無擊殺紀錄。</#7b8aa0>"
 match-summary-footer: "<#334155><st>                                        </st></#334155>"
 match-ending: "<prefix><#faf0ca>將在 <seconds> 秒後把所有人傳送回大廳。</#faf0ca>"
 match-ending-actionbar: "<#faf0ca><seconds> 秒後返回大廳</#faf0ca>"
+match-countdown-actionbar: "<#ee964b>遊戲將於 <white><seconds> 秒</white>後開始</#ee964b>"
 # Scoreboard labels and chat controls
 border-shrinking: "<prefix><#ee964b>邊界階段 <stage>/<total> 正在縮小至 <size>。</#ee964b>"
 title-border-shrinking: "<#ee964b><bold>邊界縮小</bold></#ee964b>"
@@ -749,12 +886,13 @@ chat-muted-blocked: "<prefix><#f95738>公共聊天目前已被禁言。</#f95738
 staffchat-enabled: "<prefix><#6dd3a0>管理員聊天模式已啟用。</#6dd3a0>"
 staffchat-disabled: "<prefix><#f95738>管理員聊天模式已停用。</#f95738>"
 # Alerts and reports
-alerts-title: "<#f4d35e><bold>警示設定</bold></#f4d35e>"
+alerts-title: "<black><bold>警示設定</bold></black>"
 alerts-filler: "<dark_gray> </dark_gray>"
 alerts-report: "<#f95738><bold>檢舉警示</bold></#f95738>"
 alerts-item-pvp: "<#ee964b><bold>物品 PvP 警示</bold></#ee964b>"
 alerts-pvp: "<#7dd3fc><bold>PvP 警示</bold></#7dd3fc>"
 alerts-mining: "<#86efac><bold>挖礦警示</bold></#86efac>"
+alerts-vulcan: "<#a78bfa><bold>Vulcan 警示</bold></#a78bfa>"
 alerts-status-on: "<#6dd3a0>狀態:已啟用</#6dd3a0>"
 alerts-status-off: "<#f95738>狀態:已停用</#f95738>"
 alerts-click-toggle: "<#cbd5e1>點擊以切換此警示類型。</#cbd5e1>"
@@ -769,120 +907,109 @@ join-locked: "<prefix><#f4d35e>比賽已在進行中，你將以觀戰者身份�
 state: "<prefix><#7b8aa0>階段:</#7b8aa0> <white><phase></white> <#7b8aa0>| 存活:</#7b8aa0> <white><alive></white> <#7b8aa0>| 死亡:</#7b8aa0> <white><dead></white>"
 # Shared errors
 errors:
-  no-permission: "<prefix><red>You do not have permission to do that.</red>"
-  players-only: "<prefix><red>Only players can use this command.</red>"
-  already-running: "<prefix><red>A match is already running.</red>"
-  not-running: "<prefix><red>No active match to stop.</red>"
-  world-missing: "<prefix><red>Configured game world <world> is not loaded.</red>"
-  world-not-loaded: "<prefix><red>World <world> is not currently loaded.</red>"
-  invalid-world-name: "<prefix><red>World names may only use letters, numbers, underscores, and dashes.</red>"
-  invalid-border-size: "<prefix><red>Border size must be a positive number.</red>"
-  invalid-border-center: "<prefix><red>Border center must be valid X and Z numbers.</red>"
-  invalid-duration: "<prefix><red>Duration must be a positive whole number of seconds.</red>"
-  no-grace-period: "<prefix><red>There is no active grace period to skip.</red>"
-  no-elimination-targets: "<prefix><red>No active match players matched that target.</red>"
-  command-disabled: "<prefix><red>Default server commands are disabled for players.</red>"
-  chunky-unavailable: "<prefix><red>Chunky is not installed or disabled. Install the Chunky plugin to use world preloading.</red>"
-  chunky-disabled: "<prefix><red>Chunky integration is disabled in config.</red>"
-  chunky-no-active-task: "<prefix><red>No Chunky preload is currently being tracked.</red>"
-  world-create-failed: "<prefix><red>Failed to create world <world>.</red>"
+  discord-not-configured: "<prefix><red>尚未設定 Discord 邀請連結。</red>"
+  invalid-max-players: "<prefix><red>最大玩家數必須是正整數。</red>"
+  no-permission: "<prefix><red>你沒有權限執行此操作。</red>"
+  players-only: "<prefix><red>只有玩家可以使用此指令。</red>"
+  already-running: "<prefix><red>目前已有比賽正在進行。</red>"
+  not-running: "<prefix><red>目前沒有進行中的比賽可以停止。</red>"
+  world-missing: "<prefix><red>設定的遊戲世界 <world> 尚未載入。</red>"
+  world-not-loaded: "<prefix><red>世界 <world> 目前尚未載入。</red>"
+  invalid-world-name: "<prefix><red>世界名稱只能使用字母、數字、底線與連字號。</red>"
+  invalid-border-size: "<prefix><red>邊界大小必須是正數。</red>"
+  invalid-border-center: "<prefix><red>邊界中心必須是有效的 X 和 Z 座標數值。</red>"
+  invalid-duration: "<prefix><red>持續時間必須是正整數秒數。</red>"
+  no-grace-period: "<prefix><red>目前沒有進行中的保護期可以跳過。</red>"
+  no-elimination-targets: "<prefix><red>沒有符合條件的比賽玩家可以淘汰。</red>"
+  command-disabled: "<prefix><red>玩家的預設伺服器指令已被停用。</red>"
+  chunky-unavailable: "<prefix><red>尚未安裝或已停用 Chunky。請安裝 Chunky 外掛以使用世界預載功能。</red>"
+  chunky-disabled: "<prefix><red>Chunky 整合功能已在設定中停用。</red>"
+  chunky-no-active-task: "<prefix><red>目前沒有正在追蹤的 Chunky 預載任務。</red>"
+  world-create-failed: "<prefix><red>建立世界 <world> 失敗。</red>"
   world-center-not-land: "<prefix><red>世界 <world> 的中心不是陸地。</red>"
-  world-not-overworld: "<prefix><red>World <world> is not a normal overworld.</red>"
-  world-protected: "<prefix><red>World <world> is protected and cannot be deleted or regenerated.</red>"
-  world-unload-failed: "<prefix><red>Failed to unload world <world>.</red>"
-  world-delete-failed: "<prefix><red>Failed to delete world <world>.</red>"
-  not-enough-players: "<prefix><red>Need <required> players to start. Currently online: <current>.</red>"
+  world-not-overworld: "<prefix><red>世界 <world> 不是一般的主世界。</red>"
+  world-protected: "<prefix><red>世界 <world> 受到保護，無法刪除或重新生成。</red>"
+  world-unload-failed: "<prefix><red>卸載世界 <world> 失敗。</red>"
+  world-delete-failed: "<prefix><red>刪除世界 <world> 失敗。</red>"
+  not-enough-players: "<prefix><red>需要 <required> 位玩家才能開始。目前在線: <current>。</red>"
   not-enough-teams: "<prefix><red>啟用隊伍模式時，至少需要 2 個隊伍才能開始。</red>"
-  player-not-found: "<prefix><red>Player <player> is not online.</red>"
-  use-pm-command: "<prefix><#f4d35e>Use <white>/pm</white> for direct messages.</#f4d35e>"
-  pm-self: "<prefix><red>You cannot message yourself.</red>"
-  no-reply-target: "<prefix><red>You have nobody to reply to.</red>"
-  report-self: "<prefix><red>You cannot report yourself.</red>"
+  player-not-found: "<prefix><red>玩家 <player> 目前不在線上。</red>"
+  use-pm-command: "<prefix><#f4d35e>請使用 <white>/pm</white> 傳送私訊。</#f4d35e>"
+  pm-self: "<prefix><red>你不能傳送訊息給自己。</red>"
+  no-reply-target: "<prefix><red>你目前沒有可以回覆的對象。</red>"
+  report-self: "<prefix><red>你不能檢舉自己。</red>"
+  no-active-participants: "<prefix><red>目前沒有可重新分散傳送的參賽者。</red>"
+  rescatter-invalid-phase: "<prefix><red>只能在分散傳送或保護期階段執行重新分散傳送。</red>"
 
 settings-enabled: "<#6dd3a0>已啟用</#6dd3a0>"
 settings-disabled: "<#f95738>已停用</#f95738>"
-winner-team: "<prefix><#6dd3a0><team> 贏得了比賽！</#6dd3a0>"
-team-disabled: "<prefix><#f95738>隊伍功能目前在設定中已停用。</#f95738>"
-team-no-team: "<prefix><#f4d35e>你目前沒有加入任何隊伍。</#f4d35e>"
-team-already: "<prefix><#f4d35e>你已經在 <white><team></white> 了。</#f4d35e>"
-team-full: "<prefix><#f95738><team> 已經滿員。</#f95738>"
-team-joined: "<prefix><#6dd3a0>你已加入 <white><team></white>。</#6dd3a0>"
-team-joined-hint: "<#7b8aa0>可使用 <white>/tm</white> 切換隊伍聊天，並使用 <white>/tc</white> 傳送座標給隊友。</#7b8aa0>"
-team-coords-message: "<#7dd3fc>座標</#7dd3fc> <gray>(<world>)</gray> <white><x></white><gray>,</gray> <white><y></white><gray>,</gray> <white><z></white>"
-team-coords-sent: "<prefix><#6dd3a0>已將你的座標傳送給隊友。</#6dd3a0>"
-team-left: "<prefix><#f4d35e>你已離開 <white><team></white>。</#f4d35e>"
-team-join-locked: "<prefix><#f95738>目前無法在大廳切換隊伍。</#f95738>"
-team-friendly-fire-blocked: "<prefix><#f95738>隊友傷害已停用。</#f95738>"
-team-chat-enabled: "<prefix><#6dd3a0>隊伍聊天已啟用。</#6dd3a0>"
-team-chat-disabled: "<prefix><#f95738>隊伍聊天已停用。</#f95738>"
-team-list-disabled: "<prefix><#f95738>隊伍功能已停用。</#f95738>"
-team-list-empty: "<prefix><#f4d35e>目前還沒有建立任何隊伍。</#f4d35e>"
-team-list-line: "<team_prefix><team><gray>:</gray> <white><players></white>"
-team-list-none: "無"
-team-visibility-public: "公開"
-team-visibility-private: "私人"
-team-private: "<prefix><#f95738><team> 是私人隊伍，請讓隊長邀請或手動移動你。</#f95738>"
-team-not-leader: "<prefix><#f95738>只有隊長可以這樣做。</#f95738>"
-team-set-public: "<prefix><#6dd3a0><team> 現在是公開隊伍。</#6dd3a0>"
-team-set-private: "<prefix><#f4d35e><team> 現在是私人隊伍。</#f4d35e>"
-team-transfer-not-member: "<prefix><#f95738><player> 不在你的隊伍中。</#f95738>"
-team-leader-transferred: "<prefix><#6dd3a0><player> 現在是 <team> 的隊長。</#6dd3a0>"
-team-admin-invalid-id: "<prefix><#f95738>隊伍 ID 只能使用小寫字母、數字與底線。</#f95738>"
-team-admin-invalid-color: "<prefix><#f95738>這不是有效的隊伍顏色。</#f95738>"
-team-admin-already-exists: "<prefix><#f95738>隊伍 <white><team></white> 已存在。</#f95738>"
-team-admin-missing: "<prefix><#f95738>找不到隊伍 <white><team></white>。</#f95738>"
-team-admin-created: "<prefix><#6dd3a0>已建立隊伍 <white><team></white>。</#6dd3a0>"
-team-admin-deleted: "<prefix><#f95738>已刪除隊伍 <white><team></white>。</#f95738>"
-team-admin-renamed: "<prefix><#6dd3a0>已將 <white><team></white> 重新命名為 <white><name></white>。</#6dd3a0>"
-team-admin-recolored: "<prefix><#6dd3a0>已將 <white><team></white> 顏色改為 <white><color></white>。</#6dd3a0>"
-team-admin-cleared: "<prefix><#f4d35e>已清除所有隊伍成員。</#f4d35e>"
-team-admin-shuffle-empty: "<prefix><#f95738>沒有可用玩家可分配到隊伍。</#f95738>"
-team-admin-shuffled: "<prefix><#6dd3a0>已將 <white><count></white> 位玩家平均分配到隊伍。</#6dd3a0>"
-team-admin-enabled: "<prefix><#6dd3a0>隊伍功能已啟用。</#6dd3a0>"
-team-admin-disabled: "<prefix><#f95738>隊伍功能已停用。</#f95738>"
-team-admin-size-set: "<prefix><#6dd3a0>隊伍人數上限已設為 <white><size></white>。</#6dd3a0>"
-team-menu-title: "<#334155><bold>隊伍選單</bold></#334155>"
-team-menu-filler: "<dark_gray> </dark_gray>"
-team-menu-info: "<#f4d35e><bold>隊伍設定</bold></#f4d35e>"
-team-menu-info-lore-size: "<#cbd5e1>上限人數: <white><size></white></#cbd5e1>"
-team-menu-info-lore-friendly-fire: "<#cbd5e1>隊友傷害: <state></#cbd5e1>"
-team-menu-info-lore-current: "<#cbd5e1>目前隊伍: <white><team></white></#cbd5e1>"
-team-menu-info-lore-current-none: "<#cbd5e1>目前隊伍: <white>無</white></#cbd5e1>"
-team-menu-info-lore-visibility: "<#cbd5e1>類型: <white><visibility></white></#cbd5e1>"
-team-menu-info-lore-visibility-none: "<#cbd5e1>類型: <white>無</white></#cbd5e1>"
-team-menu-info-lore-leader: "<#cbd5e1>隊長: <white><leader></white></#cbd5e1>"
-team-menu-info-lore-leader-none: "<#cbd5e1>隊長: <white>無</white></#cbd5e1>"
-team-menu-team-size: "<#cbd5e1>成員數: <white><size></white></#cbd5e1>"
-team-menu-team-members: "<#cbd5e1><members></#cbd5e1>"
-team-menu-team-leader: "<#cbd5e1>隊長: <white><leader></white></#cbd5e1>"
-team-menu-team-visibility: "<#cbd5e1>類型: <white><visibility></white></#cbd5e1>"
-team-menu-no-team: "<#f95738><bold>尚未加入隊伍</bold></#f95738>"
-team-menu-click-join: "<#7dd3fc>點擊加入此隊伍。</#7dd3fc>"
-team-menu-selected: "<#6dd3a0>目前已選擇。</#6dd3a0>"
-team-menu-leave: "<#f95738><bold>離開隊伍</bold></#f95738>"
-team-menu-leave-lore: "<#cbd5e1>點擊離開目前的隊伍。</#cbd5e1>"
 list-entry-team: "<team_prefix><player>"
-title-winner-team: "<#6dd3a0><bold><team></bold></#6dd3a0>"
-subtitle-winner-team: "<white>贏得了比賽</white>"
 scenarios:
   auto-disabled: "<prefix><#ee964b>已自動停用衝突情境：<white><scenarios></white></#ee964b>"
   start-title: "<dark_gray><bold>情境</bold>"
   start-header: "<prefix><bold><#f4d35e>啟用情境</bold>"
   start-entry: "  <gray>▸</gray> <white><name></white>"
   start-none: "<prefix><gray>本場比賽沒有啟用任何情境。</gray>"
+  start-subtitle: "<gray>祝你好運。</gray>"
+  start-divider: "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  start-footer: "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  enchanting-disabled: "<prefix><#f95738>本場比賽已停用附魔。"
+  grindstone-disabled: "<prefix><#f95738>本場比賽已停用磨石機。"
+  enchanting-table-blocked: "<prefix><#f95738>本場比賽無法製作附魔台。"
+  hastey-grindstone-blocked: "<prefix><#f95738>本場比賽無法在 Hastey 工具上使用磨石機。"
+  web-limit-reached: "<prefix><#f95738>本場比賽你的蜘蛛網數量已達上限。"
+  dnd-combat-locked: "<prefix><#f95738>你目前正與其他玩家戰鬥中。"
+  backpack:
+    title: "<dark_gray><bold>隊伍背包</bold>"
+  extra-inventory:
+    title: "<dark_gray><bold>額外欄位</bold>"
+  backpack-not-active: "<prefix><#f95738>你只能在比賽進行中使用隊伍背包。"
+  backpack-disabled: "<prefix><#f95738>「隊伍背包」情境目前未啟用。"
+  backpack-no-team: "<prefix><#f95738>你必須加入隊伍才能使用隊伍背包。"
+  extra-inventory-not-active: "<prefix><#f95738>你只能在比賽進行中使用額外欄位。"
+  extra-inventory-disabled: "<prefix><#f95738>「額外欄位」情境目前未啟用。"
+  nineslot-restricted: "<prefix><#f95738>本場比賽你只能使用快捷欄（9 格）。"
+  benchblitz-blocked: "<prefix><#f95738>本場比賽無法取得額外工作台。"
+  safe-loot-blocked: "<prefix><#f95738>只有擊殺者可以開啟此箱子。"
+  no-clean-protected: "<prefix><#6dd3a0>你在接下來的 <white><seconds></white> 秒內免疫玩家攻擊。"
   gui:
-    title: "<dark_gray><bold>情境</bold> <#334155>— <white><category>"
+    title: "<dark_gray><bold>情境</bold>"
     status-enabled: "<#6dd3a0>✔ 已啟用"
     status-disabled: "<#f95738>✘ 已停用"
+    status-lore: "<#7b8aa0>狀態  <value>"
     hint-toggle: "<yellow>點擊以切換"
     hint-view: "<#7b8aa0>僅供查看"
+    hint-settings: "<#a78bfa>▶ 右鍵點擊以編輯設定。"
     conflicts: "<#f4a261>衝突：<conflicts>"
+    category-lore: "<#7b8aa0>分類"
     prev: "<#7dd3fc>◀ 上一頁"
     next: "<#7dd3fc>下一頁 ▶"
     page-indicator: "<bold><#f4d35e>第 <current> / <total> 頁"
+    modifier-title: "<dark_gray><bold><scenario> 設定</bold>"
+    modifier-anvil-title: "<dark_gray><bold>設定數值</bold>"
+    modifier-dialog-title: "<dark_gray><bold><label></bold>"
+    modifier-dialog-input-label: "<#7b8aa0>新數值"
+    modifier-dialog-submit: "<#6dd3a0><bold>確認</bold>"
+    modifier-dialog-cancel: "<#f95738>取消"
+    modifier-back: "<#7dd3fc><bold>返回情境列表</bold>"
+    modifier-hint: "<#93c5fd>▶ 點擊以編輯。"
+    modifier-value: "<#7b8aa0>數值  <white><value></white>"
+    modifier-summary: "<#7b8aa0><label>：</#7b8aa0> <white><value></white>"
+    modifier:
+      limitations-diamonds: "<bold><#f4d35e>鑽石數量上限"
+      limitations-gold: "<bold><#f4d35e>金錠數量上限"
+      limitations-iron: "<bold><#f4d35e>鐵錠數量上限"
+      broadcaster-chance: "<bold><#f4d35e>廣播機率 (%)"
+      sky-high-limit: "<bold><#f4d35e>Y 座標高度限制"
+      no-clean-seconds: "<bold><#f4d35e>無敵秒數"
+      time-bomb-seconds: "<bold><#f4d35e>爆炸倒數秒數"
+      coronavirus-interval-minutes: "<bold><#f4d35e>間隔時間（分鐘）"
+      raining-tnt-interval-minutes: "<bold><#f4d35e>間隔時間（分鐘）"
+      web-limit-count: "<bold><#f4d35e>背包蜘蛛網數量上限"
+      lucky-leaves-chance: "<bold><#f4d35e>金蘋果機率 (%)"
     category:
       world: "世界設定"
-      meta: "Meta"
+      meta: "其他"
       loot_death: "戰利品 / 死亡"
       ore_modifiers: "礦石倍率"
       resource_restrictions: "資源限制"
@@ -901,3 +1028,312 @@ scenarios:
       end:
         name: "<bold><#f4d35e>終界"
         desc: "<gray>允許玩家在比賽中進入終界。"
+
+team:
+  winner: <prefix><#6dd3a0><team> 贏得了本場比賽！</#6dd3a0>
+  title:
+    winner: <#6dd3a0><bold><team></bold></#6dd3a0>
+  subtitle:
+    winner: <white>贏得了比賽</white>
+  disabled: <prefix><#f95738>隊伍功能目前在設定中已停用。</#f95738>
+  'no':
+    team: <prefix><#f4d35e>你目前沒有加入任何隊伍。</#f4d35e>
+  already: <prefix><#f4d35e>你已經在 <white><team></white> 了。</#f4d35e>
+  full: <prefix><#f95738><team> 已經滿員。</#f95738>
+  joined:
+    text: <prefix><#6dd3a0>你已加入 <white><team></white>。</#6dd3a0>
+    hint: <#7b8aa0>可使用 <white>/tm</white> 切換隊伍聊天，並使用 <white>/tc</white> 傳送座標給隊友。</#7b8aa0>
+  coords:
+    message: <#7dd3fc>座標</#7dd3fc> <gray>(<world>)</gray> <white><x></white><gray>,</gray> <white><y></white><gray>,</gray> <white><z></white>
+    sent: <prefix><#6dd3a0>已將你的座標傳送給隊友。</#6dd3a0>
+  left: <prefix><#f4d35e>你已離開 <white><team></white>。</#f4d35e>
+  join:
+    locked: <prefix><#f95738>目前無法在大廳切換隊伍。</#f95738>
+  friendly:
+    fire:
+      blocked: <prefix><#f95738>隊友傷害已停用。</#f95738>
+  chat:
+    enabled: <prefix><#6dd3a0>隊伍聊天已啟用。</#6dd3a0>
+    disabled: <prefix><#f95738>隊伍聊天已停用。</#f95738>
+  usage:
+    root: <prefix><#f4d35e>用法：/team <open|list|join|leave|chat|create|public|private|transfer|kick|disband|delete|set|shuffle|clear|rename|color></#f4d35e>
+    join: <prefix><#f4d35e>用法：/team join <team></#f4d35e>
+    create: <prefix><#f4d35e>用法：/team create <id> [顯示名稱]</#f4d35e>
+    delete: <prefix><#f4d35e>用法：/team delete <team></#f4d35e>
+    set: <prefix><#f4d35e>用法：/team set <player> <team|none></#f4d35e>
+    rename: <prefix><#f4d35e>用法：/team rename <team> <顯示名稱></#f4d35e>
+    color: <prefix><#f4d35e>用法：/team color <team> <color></#f4d35e>
+    size: <prefix><#f4d35e>用法：/team size <amount></#f4d35e>
+    transfer: <prefix><#f4d35e>用法：/team transfer <player></#f4d35e>
+    kick: <prefix><#f4d35e>用法：/team kick <player></#f4d35e>
+  list:
+    disabled: <prefix><#f95738>隊伍功能已停用。</#f95738>
+    empty: <prefix><#f4d35e>目前還沒有建立任何隊伍。</#f4d35e>
+    line: <team_prefix><team><gray>:</gray> <white><players></white>
+    none: 無
+  visibility:
+    public: 公開
+    private: 私人
+  private: <prefix><#f95738><team> 是私人隊伍，請讓隊長邀請或手動移動你。</#f95738>
+  not:
+    leader: <prefix><#f95738>只有隊長可以這樣做。</#f95738>
+  set:
+    public: <prefix><#6dd3a0><team> 現在是公開隊伍。</#6dd3a0>
+    private: <prefix><#f4d35e><team> 現在是私人隊伍。</#f4d35e>
+  transfer:
+    not:
+      member: <prefix><#f95738><player> 不在你的隊伍中。</#f95738>
+  leader:
+    transferred: <prefix><#6dd3a0><player> 現在是 <team> 的隊長。</#6dd3a0>
+  kicked: <prefix><#f4d35e>已將 <white><player></white> 移出 <team>。</#f4d35e>
+  kick:
+    self: <prefix><#f95738>你不能踢出自己。</#f95738>
+  disbanded: <prefix><#f95738>已解散隊伍 <white><team></white>。</#f95738>
+  admin:
+    invalid:
+      id: <prefix><#f95738>隊伍 ID 只能使用小寫字母、數字與底線。</#f95738>
+      color: <prefix><#f95738>這不是有效的隊伍顏色。</#f95738>
+    already:
+      exists: <prefix><#f95738>隊伍 <white><team></white> 已存在。</#f95738>
+    missing: <prefix><#f95738>找不到隊伍 <white><team></white>。</#f95738>
+    created: <prefix><#6dd3a0>已建立隊伍 <white><team></white>。</#6dd3a0>
+    deleted:
+      text: <prefix><#f95738>已刪除隊伍 <white><team></white>。</#f95738>
+      all: <prefix><#f95738>已刪除 <white><count></white> 個隊伍。</#f95738>
+    renamed: <prefix><#6dd3a0>已將 <white><team></white> 重新命名為 <white><name></white>。</#6dd3a0>
+    recolored: <prefix><#6dd3a0>已將 <white><team></white> 顏色改為 <white><color></white>。</#6dd3a0>
+    cleared: <prefix><#f4d35e>已清除所有隊伍成員。</#f4d35e>
+    shuffle:
+      text: <#ffd166><bold>隨機分配玩家</bold></#ffd166>
+      lore: <#cbd5e1>將所有在線玩家隨機平均分配到各隊伍。</#cbd5e1>
+      empty: <prefix><#f95738>沒有可用玩家可分配到隊伍。</#f95738>
+    shuffled: <prefix><#6dd3a0>已將 <white><count></white> 位玩家平均分配到隊伍。</#6dd3a0>
+    enabled: <prefix><#6dd3a0>隊伍功能已啟用。</#6dd3a0>
+    disabled: <prefix><#f95738>隊伍功能已停用。</#f95738>
+    size:
+      set: <prefix><#6dd3a0>隊伍人數上限已設為 <white><size></white>。</#6dd3a0>
+    title: <#334155><bold>隊伍管理</bold></#334155>
+    create:
+      text: <#6dd3a0><bold>建立隊伍</bold></#6dd3a0>
+      lore: <#cbd5e1>點擊開啟建立隊伍對話框。</#cbd5e1>
+    clear:
+      text: <#f4d35e><bold>清除成員</bold></#f4d35e>
+      lore: <#cbd5e1>將所有玩家移出隊伍（保留隊伍設定）。</#cbd5e1>
+    delete:
+      all:
+        text: <#f95738><bold>刪除所有隊伍</bold></#f95738>
+        lore: <#cbd5e1>刪除所有隊伍設定與成員資料。</#cbd5e1>
+    enable:
+      text: <#6dd3a0><bold>啟用隊伍</bold></#6dd3a0>
+    disable:
+      text: <#f95738><bold>停用隊伍</bold></#f95738>
+    toggle:
+      lore: <#cbd5e1>隊伍功能目前：<state></#cbd5e1>
+    set-team:
+      text: <#6dd3a0><bold>指定玩家隊伍</bold></#6dd3a0>
+      lore: <#cbd5e1>點擊將任一玩家指定到指定隊伍。</#cbd5e1>
+    rename-team:
+      text: <#f4d35e><bold>重新命名隊伍</bold></#f4d35e>
+      lore: <#cbd5e1>點擊重新命名任一隊伍。</#cbd5e1>
+    recolor-team:
+      text: <#cbd5e1><bold>更改隊伍顏色</bold></#cbd5e1>
+      lore: <#cbd5e1>點擊更改任一隊伍的顏色。</#cbd5e1>
+    delete-team:
+      text: <#f95738><bold>刪除隊伍</bold></#f95738>
+      lore: <#cbd5e1>點擊刪除任一隊伍。</#cbd5e1>
+    picker:
+      select-player:
+        title: "<#475569><bold>管理員: 選擇玩家</bold></#475569>"
+        lore: <#7dd3fc>點擊以選擇此玩家。</#7dd3fc>
+      set-team-title: "<#475569><bold>設定隊伍: <player></bold></#475569>"
+      back-to-players: <red>返回玩家列表</red>
+      remove-from-team:
+        text: <#f87171><bold>移出隊伍</bold></#f87171>
+        lore: <gray>點擊將此玩家移出目前的隊伍。</gray>
+      assign-team-lore: <#7dd3fc>點擊將玩家指派到此隊伍。</#7dd3fc>
+      removed-from-team: <green>已將 <player> 移出其隊伍。</green>
+      recolor-team:
+        title: "<#475569><bold>管理員: 更改隊伍顏色</bold></#475569>"
+        lore: <#7dd3fc>點擊以選擇要更改顏色的隊伍。</#7dd3fc>
+      delete-team:
+        title: "<#e11d48><bold>管理員: 刪除隊伍</bold></#e11d48>"
+        lore: <#f43f5e>點擊以永久刪除此隊伍。</#f43f5e>
+  menu:
+    title: <#334155><bold>隊伍選單</bold></#334155>
+    filler: <dark_gray> </dark_gray>
+    join-by-name:
+      text: <#7dd3fc><bold>依名稱加入隊伍</bold></#7dd3fc>
+      lore: <white>點擊輸入隊伍 ID 或顯示名稱以加入。</white>
+    info:
+      text: <#f4d35e><bold>隊伍資訊</bold></#f4d35e>
+      lore:
+        size: '<#cbd5e1>上限人數: <white><size></white></#cbd5e1>'
+        friendly:
+          fire: '<#cbd5e1>隊友傷害: <state></#cbd5e1>'
+        current:
+          text: '<#cbd5e1>目前隊伍: <white><team></white></#cbd5e1>'
+          none: '<#cbd5e1>目前隊伍: <white>無</white></#cbd5e1>'
+        visibility:
+          text: '<#cbd5e1>類型: <white><visibility></white></#cbd5e1>'
+          none: '<#cbd5e1>類型: <white>無</white></#cbd5e1>'
+        leader:
+          text: '<#cbd5e1>隊長: <white><leader></white></#cbd5e1>'
+          none: '<#cbd5e1>隊長: <white>無</white></#cbd5e1>'
+    team:
+      size: '<#cbd5e1>成員數: <white><size></white></#cbd5e1>'
+      members: <#cbd5e1><members></#cbd5e1>
+      leader: '<#cbd5e1>隊長: <white><leader></white></#cbd5e1>'
+      visibility: '<#cbd5e1>類型: <white><visibility></white></#cbd5e1>'
+    create:
+      text: <#6dd3a0><bold>建立隊伍</bold></#6dd3a0>
+      lore: <#cbd5e1>點擊建立你自己的隊伍。</#cbd5e1>
+    'no':
+      team: <#f95738><bold>尚未加入隊伍</bold></#f95738>
+    manage:
+      text: <#f4d35e><bold>管理隊伍</bold></#f4d35e>
+      lore: <#cbd5e1>開啟隊長控制面板。</#cbd5e1>
+      unavailable: <#6b7280><bold>僅限隊長</bold></#6b7280>
+    click:
+      join: <#7dd3fc>點擊加入此隊伍。</#7dd3fc>
+    selected: <#6dd3a0>目前已選擇。</#6dd3a0>
+    leave:
+      text: <#f95738><bold>離開隊伍</bold></#f95738>
+      lore: <#cbd5e1>點擊離開目前的隊伍。</#cbd5e1>
+    disband:
+      text: <#f95738><bold>解散隊伍</bold></#f95738>
+      lore: <#cbd5e1>移除此隊伍並解除所有成員的隊伍關係。</#cbd5e1>
+    invite:
+      text: <#7dd3fc><bold>邀請玩家</bold></#7dd3fc>
+      lore: <#cbd5e1>點擊邀請玩家加入你的隊伍。</#cbd5e1>
+    admin:
+      text: <#ffd166><bold>管理面板</bold></#ffd166>
+      lore: <#cbd5e1>開啟隊伍管理控制項。</#cbd5e1>
+  manage:
+    title: <#334155><bold>管理 <team></bold></#334155>
+    back: <#7dd3fc><bold>返回</bold></#7dd3fc>
+    set:
+      public: <#6dd3a0><bold>設為公開</bold></#6dd3a0>
+      private: <#f4d35e><bold>設為私人</bold></#f4d35e>
+    visibility:
+      lore: '<#cbd5e1>目前: <white><visibility></white></#cbd5e1>'
+    member:
+      text: <white><name></white>
+      leader: <#f4d35e>隊長</#f4d35e>
+      kick: <#f95738>點擊踢出此成員。</#f95738>
+      transfer: <#ffd166>管理員：點擊隊長以轉移隊長身分。</#ffd166>
+    rename:
+      text: <#ffd166><bold>重新命名隊伍</bold></#ffd166>
+      lore: <#cbd5e1>點擊開啟重新命名對話框。</#cbd5e1>
+    color:
+      text: <#ffd166><bold>更改顏色</bold></#ffd166>
+      lore: <#cbd5e1>點擊開啟顏色選擇器。</#cbd5e1>
+    invite-by-name:
+      text: <#6dd3a0><bold>依名稱邀請玩家</bold></#6dd3a0>
+      lore: <white>點擊輸入玩家名稱以邀請。</white>
+    transfer-leader:
+      text: <#f4d35e><bold>轉移隊長身分</bold></#f4d35e>
+      lore: <white>點擊輸入成員名稱以轉移隊長身分。</white>
+    kick-by-name:
+      text: <#f95738><bold>依名稱踢出成員</bold></#f95738>
+      lore: <white>點擊輸入成員名稱以踢出。</white>
+  color:
+    title: <#334155><bold>隊伍顏色 — <team></bold></#334155>
+    selected: <#6dd3a0>目前已選擇。</#6dd3a0>
+    click: <#7dd3fc>點擊套用此顏色。</#7dd3fc>
+  create-dialog:
+    title: <#f4d35e><bold>建立隊伍</bold></#f4d35e>
+    body: <#9db4c0>請輸入你新隊伍的顯示名稱。</#9db4c0>
+    input-label: <#cbd5e1>隊伍名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>建立</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  rename-dialog:
+    title: <#f4d35e><bold>重新命名隊伍</bold></#f4d35e>
+    body: <#9db4c0>請輸入此隊伍的新顯示名稱。</#9db4c0>
+    input-label: <#cbd5e1>新名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>重新命名</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  join-dialog:
+    title: <#f4d35e><bold>加入隊伍</bold></#f4d35e>
+    body: <#9db4c0>請輸入你想加入的隊伍 ID 或顯示名稱。</#9db4c0>
+    input-label: <#cbd5e1>隊伍 ID/名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>加入</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  invite-dialog:
+    title: <#f4d35e><bold>邀請玩家</bold></#f4d35e>
+    body: <#9db4c0>請輸入你想邀請的玩家名稱。</#9db4c0>
+    input-label: <#cbd5e1>玩家名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>邀請</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  transfer-dialog:
+    title: <#f4d35e><bold>轉移隊長身分</bold></#f4d35e>
+    body: <#9db4c0>請輸入你要轉移隊長身分的成員名稱。</#9db4c0>
+    input-label: <#cbd5e1>成員名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>轉移</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  kick-dialog:
+    title: <#f95738><bold>踢出成員</bold></#f95738>
+    body: <#9db4c0>請輸入你想踢出的成員名稱。</#9db4c0>
+    input-label: <#cbd5e1>成員名稱</#cbd5e1>
+    confirm: <#f95738><bold>踢出</bold></#f95738>
+    cancel: <#cbd5e1>取消</#cbd5e1>
+  admin-set-dialog:
+    title: <#f4d35e><bold>指定玩家隊伍</bold></#f4d35e>
+    body: <#9db4c0>直接將玩家指定到指定隊伍。</#9db4c0>
+    player-label: <#cbd5e1>玩家名稱</#cbd5e1>
+    team-label: <#cbd5e1>隊伍 ID/名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>指定</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  admin-rename-dialog:
+    title: <#f4d35e><bold>管理員重新命名隊伍</bold></#f4d35e>
+    body: <#9db4c0>請輸入隊伍 ID 與新的顯示名稱。</#9db4c0>
+    team-label: <#cbd5e1>隊伍 ID</#cbd5e1>
+    name-label: <#cbd5e1>新名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>重新命名</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  admin-recolor-dialog:
+    title: <#f4d35e><bold>管理員更改隊伍顏色</bold></#f4d35e>
+    body: <#9db4c0>請輸入隊伍 ID 與有效的顏色名稱（例如 RED、BLUE）。</#9db4c0>
+    team-label: <#cbd5e1>隊伍 ID</#cbd5e1>
+    color-label: <#cbd5e1>顏色名稱</#cbd5e1>
+    confirm: <#6dd3a0><bold>更改顏色</bold></#6dd3a0>
+    cancel: <#f95738>取消</#f95738>
+  admin-delete-dialog:
+    title: <#f95738><bold>刪除隊伍</bold></#f95738>
+    body: <#9db4c0>請輸入你想刪除的隊伍 ID。</#9db4c0>
+    team-label: <#cbd5e1>隊伍 ID</#cbd5e1>
+    confirm: <#f95738><bold>刪除</bold></#f95738>
+    cancel: <#cbd5e1>取消</#cbd5e1>
+  invite:
+    title: <#334155><bold>邀請 — <team></bold></#334155>
+    sent: <prefix><#6dd3a0>已邀請 <white><player></white> 加入 <white><team></white>。</#6dd3a0>
+    received: <prefix><#f4d35e><leader></leader> 邀請你加入 <white><team></white>。</#f4d35e>
+    accepted: <prefix><#6dd3a0>你已接受邀請並加入 <white><team></white>。</#6dd3a0>
+    declined: <prefix><#f95738>你已拒絕加入 <white><team></white> 的邀請。</#f95738>
+    already-invited: <prefix><#f95738><player> 已被邀請加入你的隊伍。</#f95738>
+    already-invited-lore: <#f4d35e>已邀請</#f4d35e>
+    not-pending: <prefix><#f95738>你目前沒有該隊伍的待處理邀請。</#f95738>
+    expired: <prefix><#f95738>該邀請已過期。</#f95738>
+    target-has-team: <prefix><#f95738><player> 已經加入其他隊伍。</#f95738>
+    click-invite: <#7dd3fc>點擊邀請此玩家。</#7dd3fc>
+  pagination:
+    prev:
+      text: <#7dd3fc><bold>« 上一頁</bold></#7dd3fc>
+      lore: <gray>第 <page> 頁</gray>
+    next:
+      text: <#7dd3fc><bold>下一頁 »</bold></#7dd3fc>
+      lore: <gray>第 <page> 頁</gray>
+
+practice:
+  enabled: <prefix><#6dd3a0>練習模式已啟用。</#6dd3a0>
+  disabled: <prefix><#f95738>練習模式已停用。</#f95738>
+  joined: <prefix><#6dd3a0>你已加入練習模式。</#6dd3a0>
+  left: <prefix><#7b8aa0>你已離開練習模式。</#7b8aa0>
+  kit-saved: <prefix><#6dd3a0>練習套裝已儲存。</#6dd3a0>
+  not-enabled: <prefix><#f95738>練習模式目前未啟用。</#f95738>
+  full: <prefix><#f95738>練習競技場已滿。</#f95738>
+  leave-hint: <#7b8aa0>再次使用 <white>/practice</white> 以離開競技場。</#7b8aa0>
+  game-started: <prefix><#f95738>比賽已開始，練習模式已關閉。</#f95738>
+  world-regenerating: <prefix><#f95738>練習世界正在重新生成。</#f95738>
+  regen-started: <prefix><#ee964b>練習世界重新生成已開始...</#ee964b>
+  regen-done: <prefix><#6dd3a0>練習世界重新生成完成。</#6dd3a0>
+  regen-failed: <prefix><red>練習世界重新生成失敗：無法卸載舊世界。</red>
