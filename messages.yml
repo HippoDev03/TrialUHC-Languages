@@ -93,6 +93,8 @@ help-desc-rules: "View the server rules."
 help-desc-nightvision: "Toggle night vision on yourself."
 help-desc-setmaxplayers: "Change the server's max player count (persists across restarts)."
 help-desc-database-import: "Import player profile data from another storage backend (see database.yml)."
+help-desc-database-cleardata: "Reset one player's stats (kills, wins, level...). Language and kit are kept."
+help-desc-database-clearall: "Reset every player's stats. Needs 'confirm'."
 alerts-title: "<black><bold>Alert Settings</bold></black>"
 alerts-filler: "<dark_gray> </dark_gray>"
 alerts-report: "<#f95738><bold>Report Alerts</bold></#f95738>"
@@ -415,6 +417,7 @@ config:
       game: "<#f4d35e><bold>Game</bold></#f4d35e>"
       time: "<#f59e0b><bold>Time</bold></#f59e0b>"
       rules: "<#7dd3fc><bold>Rules</bold></#7dd3fc>"
+      meetup: "<#fb7185><bold>Meetup</bold></#fb7185>"
       border: "<#f59e0b><bold>Border</bold></#f59e0b>"
       ready:
         check: "<#a7f3d0><bold>Ready Check</bold></#a7f3d0>"
@@ -424,7 +427,6 @@ config:
       lobby: "<#93c5fd><bold>Lobby</bold></#93c5fd>"
       ores: "<#f97316><bold>Ores</bold></#f97316>"
       chat: "<#e879f9><bold>Chat</bold></#e879f9>"
-      license: "<#ef4444><bold>License</bold></#ef4444>"
       other: "<#d1d5db><bold>Other</bold></#d1d5db>"
     action:
       'no':
@@ -564,6 +566,8 @@ config:
         spectator:
           on:
             death: Spectator On Death
+          chat:
+            isolated: Spectator Chat Isolation
         disable:
           natural:
             regen: Disable Natural Regen
@@ -607,7 +611,7 @@ config:
                   game: In-Game Team Voice
     desc:
       game:
-        antiburn: Prevents players from taking damage from fire and lava.
+        antiburn: Prevents fire and burning damage once the match has started (lava still hurts).
         no:
           mobs: Disables all hostile mob spawning during the match.
           suspicious:
@@ -655,7 +659,7 @@ config:
             damage: Whether ender pearl throws deal fall damage on landing.
         shears:
           enabled: Whether shearing a sheep can drop a golden apple.
-          rate: 1-in-N chance for shears to drop a golden apple when used on a sheep.
+          rate: Percent chance (0-100) that right-clicking leaves with shears drops a golden apple.
         enchanted:
           golden:
             apples: Whether enchanted golden apples can be found and used.
@@ -684,6 +688,8 @@ config:
         spectator:
           on:
             death: Eliminated players become spectators instead of being disconnected.
+          chat:
+            isolated: During a match, spectator chat only reaches other spectators and staff, so eliminated players can't call out positions.
         disable:
           natural:
             regen: Prevents health regeneration through saturation. Players must use golden apples to heal.
@@ -983,6 +989,141 @@ brewing:
   disabled: "<prefix><#f95738>Brewing is disabled in this match.</#f95738>"
 grindstone:
   disabled: "<prefix><#f95738>The grindstone is disabled in this match.</#f95738>"
+staff-mode:
+  enabled: "<prefix><#6dd3a0>Staff mode enabled. You are vanished.</#6dd3a0>"
+  disabled: "<prefix><#f4d35e>Staff mode disabled.</#f4d35e>"
+  not-while-playing: "<prefix><#f95738>You can't use staff mode while you're playing in the match.</#f95738>"
+  not-in-practice: "<prefix><#f95738>Leave the practice arena before entering staff mode.</#f95738>"
+  ended-joined-match: "<prefix><#f4d35e>Staff mode ended because you are now playing in the match.</#f4d35e>"
+  vanish-on: "<prefix><#6dd3a0>You are now vanished.</#6dd3a0>"
+  vanish-off: "<prefix><#f4d35e>You are now visible to players.</#f4d35e>"
+  no-players: "<prefix><#f95738>There is nobody to teleport to.</#f95738>"
+  teleported: "<prefix><#6dd3a0>Teleported to <player>.</#6dd3a0>"
+  player-offline: "<prefix><#f95738><player> is no longer online.</#f95738>"
+  actionbar: "<#93c5fd><bold>STAFF MODE</bold></#93c5fd> <#7b8aa0>·</#7b8aa0> <state>"
+  actionbar-vanished: "<#6dd3a0>Vanished</#6dd3a0>"
+  actionbar-visible: "<#f95738>Visible</#f95738>"
+  item:
+    menu:
+      name: "<#93c5fd><bold>Players</bold></#93c5fd>"
+      lore: "<#7b8aa0>Right-click to open the player menu.</#7b8aa0>"
+    random:
+      name: "<#c4b5fd><bold>Random Teleport</bold></#c4b5fd>"
+      lore: "<#7b8aa0>Right-click to teleport to a random player.</#7b8aa0>"
+    inspect:
+      name: "<#f4d35e><bold>Inspect Inventory</bold></#f4d35e>"
+      lore: "<#7b8aa0>Right-click a player to open their inventory.</#7b8aa0>"
+    freeze:
+      name: "<#7dd3fc><bold>Freeze</bold></#7dd3fc>"
+      lore: "<#7b8aa0>Right-click a player to freeze or unfreeze them.</#7b8aa0>"
+    vanish-on:
+      name: "<#6dd3a0><bold>Vanish: On</bold></#6dd3a0>"
+      lore: "<#7b8aa0>Right-click to become visible.</#7b8aa0>"
+    vanish-off:
+      name: "<#f95738><bold>Vanish: Off</bold></#f95738>"
+      lore: "<#7b8aa0>Right-click to vanish.</#7b8aa0>"
+    exit:
+      name: "<#f95738><bold>Exit Staff Mode</bold></#f95738>"
+      lore: "<#7b8aa0>Right-click to leave staff mode.</#7b8aa0>"
+  menu:
+    title: "<#93c5fd><bold>Staff · Players</bold></#93c5fd> <#7b8aa0>(<page>/<pages>)</#7b8aa0>"
+    previous: "<#f4d35e>Previous Page</#f4d35e>"
+    next: "<#f4d35e>Next Page</#f4d35e>"
+    head-name: "<#faf0ca><bold><player></bold></#faf0ca>"
+    lore-state: "<#7b8aa0>State:</#7b8aa0> <state>"
+    lore-health: "<#7b8aa0>Health:</#7b8aa0> <#f95738><health> ❤</#f95738>"
+    lore-world: "<#7b8aa0>World:</#7b8aa0> <white><world></white>"
+    lore-frozen: "<#7dd3fc><bold>FROZEN</bold></#7dd3fc>"
+    lore-actions: "<#7b8aa0>Left: teleport · Right: inventory · Shift: freeze</#7b8aa0>"
+    state:
+      alive: "<#6dd3a0>Alive</#6dd3a0>"
+      spectator: "<#7b8aa0>Spectator</#7b8aa0>"
+      lobby: "<#93c5fd>Lobby</#93c5fd>"
+      staff: "<#c4b5fd>Staff</#c4b5fd>"
+nether-close:
+  warning: "<prefix><#f97316>The nether closes in <white><time></white>. Get out before then!</#f97316>"
+  closed: "<prefix><#f95738><bold>The nether is now closed.</bold></#f95738> <#cbd5e1>Anyone still inside has been moved to the overworld.</#cbd5e1>"
+  moved: "<prefix><#f4d35e>The nether closed - you were moved to the overworld.</#f4d35e>"
+  portal-blocked: "<prefix><#f95738>The nether is closed for the rest of this match.</#f95738>"
+meetup:
+  start: "<prefix><#fb7185><bold>MEETUP!</bold></#fb7185> <#cbd5e1>All <white><players></white> players were brought to the centre. Border: <white><size>×<size></white>.</#cbd5e1>"
+match-stats:
+  header: "<#7b8aa0>  ─</#7b8aa0> <#f4d35e><bold><category></bold></#f4d35e>"
+  entry: "<#7b8aa0>    #<rank></#7b8aa0> <white><player></white> <#7b8aa0>·</#7b8aa0> <#faf0ca><value></#faf0ca>"
+  hearts: "<value> ❤"
+  category:
+    damage-dealt: "Damage Dealt"
+    damage-taken: "Damage Taken"
+    diamonds: "Diamonds Mined"
+    gold: "Gold Mined"
+    golden-apples: "Golden Apples Eaten"
+docs:
+  title: "<gold>TrialUHC Guide</gold>"
+  'yes': "<dark_green>Yes</dark_green>"
+  'no': "<dark_red>No</dark_red>"
+  'off': "<dark_gray>Off</dark_gray>"
+  solo: "Solo"
+  teams-of: "Teams of <size>"
+  nether-closes: "<dark_green>Yes</dark_green>, closes at <time>"
+  no-scenarios: "<dark_gray>None - vanilla UHC.</dark_gray>"
+  scenario-entry: "<dark_aqua>•</dark_aqua> <name>"
+  ending:
+    meetup: "a <dark_red>meetup</dark_red> at the centre"
+    sudden-death: "<dark_red>sudden death</dark_red>"
+  page:
+    contents: "<gold><bold>TrialUHC</bold></gold><newline><dark_gray>Ultra Hardcore guide</dark_gray><newline><newline><black>No natural regen - heal with golden apples and golden heads. Last player (or team) alive wins.</black><newline><newline><click:change_page:'2'><dark_blue>» How a match works</dark_blue></click><newline><click:change_page:'3'><dark_blue>» Rules</dark_blue></click><newline><click:change_page:'4'><dark_blue>» Scenarios</dark_blue></click><newline><click:change_page:'5'><dark_blue>» Commands</dark_blue></click><newline><click:change_page:'6'><dark_blue>» Online docs</dark_blue></click>"
+    contents-staff: "<gold><bold>TrialUHC</bold></gold><newline><dark_gray>Ultra Hardcore guide</dark_gray><newline><newline><black>No natural regen - heal with golden apples and golden heads. Last player (or team) alive wins.</black><newline><newline><click:change_page:'2'><dark_blue>» How a match works</dark_blue></click><newline><click:change_page:'3'><dark_blue>» Rules</dark_blue></click><newline><click:change_page:'4'><dark_blue>» Scenarios</dark_blue></click><newline><click:change_page:'5'><dark_blue>» Commands</dark_blue></click><newline><click:change_page:'6'><dark_blue>» Staff tools</dark_blue></click><newline><click:change_page:'7'><dark_blue>» Online docs</dark_blue></click>"
+    match: "<gold><bold>How a match works</bold></gold><newline><newline><black>1. Everyone is scattered.<newline>2. PvP is off for <dark_red><grace></dark_red>.<newline>3. The <border_initial> border shrinks after <border_start>, down to <border_final> over <border_duration>.<newline>4. Final heal: <final_heal> before the end.<newline>5. After <duration> the match ends with <ending>.</black>"
+    rules: "<gold><bold>Rules</bold></gold><newline><newline><black>Mode: <teams><newline>Natural regen: <regen><newline>Golden heads: <golden_heads><newline>Notch apples: <notch_apples><newline>Potions: <potions><newline>Nether: <nether><newline>The End: <end><newline>Reconnect time: <reconnect></black>"
+    scenarios: "<gold><bold>Scenarios</bold></gold><newline><newline><black><scenarios></black>"
+    commands: "<gold><bold>Commands</bold></gold><newline><newline><dark_blue>/team</dark_blue> <black>teams</black><newline><dark_blue>/kit</dark_blue> <black>pick a kit</black><newline><dark_blue>/scenarios</dark_blue> <black>scenarios</black><newline><dark_blue>/profile</dark_blue> <black>your stats</black><newline><dark_blue>/lb</dark_blue> <black>leaderboard</black><newline><dark_blue>/pm</dark_blue> <black>private message</black><newline><dark_blue>/report</dark_blue> <black>report a player</black><newline><dark_blue>/lang</dark_blue> <black>language</black><newline><dark_blue>/menu</dark_blue> <black>quick menu</black>"
+    staff: "<gold><bold>Staff tools</bold></gold><newline><newline><dark_blue>/staff</dark_blue> <black>staff mode</black><newline><dark_blue>/freeze</dark_blue> <black>freeze player</black><newline><dark_blue>/invsee</dark_blue> <black>see inventory</black><newline><dark_blue>/alerts</dark_blue> <black>staff alerts</black><newline><dark_blue>/staffchat</dark_blue> <black>staff chat</black><newline><dark_blue>/uhc start</dark_blue> <black>start</black><newline><dark_blue>/uhc pause</dark_blue> <black>pause</black><newline><dark_blue>/uhc revive</dark_blue> <black>revive</black><newline><dark_blue>/config</dark_blue> <black>settings</black>"
+    online: "<gold><bold>Online docs</bold></gold><newline><newline><black>The full documentation, with every setting and scenario explained:</black><newline><newline><click:open_url:'<url>'><dark_blue><u>Open the docs</u></dark_blue></click>"
+tab-layout:
+  your-team: "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>(you · <alive>/<count>)</#7b8aa0>"
+  team: "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>(<alive>/<count>)</#7b8aa0>"
+  players: "<#f4d35e><bold>▌ Players</bold></#f4d35e> <#7b8aa0>(<count>)</#7b8aa0>"
+  spectators: "<#9ca3af><bold>▌ Spectators</bold></#9ca3af> <#7b8aa0>(<count>)</#7b8aa0>"
+  player: "<<color>><name></<color>>"
+  player-dead: "<#6b7280><st><name></st></#6b7280>"
+  player-offline: "<#6b7280><name> <i>(DC)</i></#6b7280>"
+  spectator: "<#9ca3af><name></#9ca3af>"
+  staff: "<#c4b5fd><name></#c4b5fd> <#7b8aa0>[Staff]</#7b8aa0>"
+  health: " <#f95738><value></#f95738>"
+  kills: " <#cbd5e1>⚔<kills></#cbd5e1>"
+  more: "<#7b8aa0>+<count> more…</#7b8aa0>"
+  stats:
+    line: "<#7b8aa0><label></#7b8aa0> <white><value></white>"
+    title-match: "<#f4d35e><bold>▌ Your Stats</bold></#f4d35e>"
+    title-game: "<#7dd3fc><bold>▌ Match</bold></#7dd3fc>"
+    title-lobby: "<#f4d35e><bold>▌ Your Profile</bold></#f4d35e>"
+    title-lobby-info: "<#7dd3fc><bold>▌ Lobby</bold></#7dd3fc>"
+    kills: "Kills"
+    damage-dealt: "Damage"
+    damage-taken: "Taken"
+    diamonds: "Diamonds"
+    gold: "Gold"
+    golden-apples: "Gapples"
+    alive: "Alive"
+    teams: "Teams"
+    time: "Time"
+    border: "Border"
+    next: "Next"
+    level: "Level"
+    wins: "Wins"
+    deaths: "Deaths"
+    kd: "K/D"
+    games: "Games"
+    online: "Online"
+    needed: "Needed"
+    ping: "Ping"
+database:
+  clear:
+    usage: "<prefix><#f4d35e>Usage: /uhc database cleardata <player></#f4d35e>"
+    not-found: "<prefix><#f95738>No stored profile for <white><player></white>.</#f95738>"
+    done: "<prefix><#6dd3a0>Reset all stats for <white><player></white>.</#6dd3a0> <#7b8aa0>(language, kit and rules are kept)</#7b8aa0>"
+    all-confirm: "<prefix><#f95738>This resets the stats of <bold>every</bold> player and can't be undone.</#f95738> <#cbd5e1>Run</#cbd5e1> <click:suggest_command:'/uhc database clearall confirm'><white><u>/uhc database clearall confirm</u></white></click> <#cbd5e1>to go ahead.</#cbd5e1>"
+    all-done: "<prefix><#6dd3a0>Reset the stats of <white><count></white> players.</#6dd3a0>"
 lobbygame:
   only:
     waiting: "<prefix><#f95738>Lobby minigames can only run while the server is in
