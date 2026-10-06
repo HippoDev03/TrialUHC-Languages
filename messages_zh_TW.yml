@@ -276,6 +276,8 @@ help-desc-rules: "查看伺服器規則。"
 help-desc-nightvision: "切換自己的夜視效果。"
 help-desc-setmaxplayers: "變更伺服器最大玩家數(重啟後仍會保留)。"
 help-desc-database-import: "從其他資料儲存後端匯入玩家資料(詳見 database.yml)。"
+help-desc-database-cleardata: "永久刪除一名玩家的所有儲存資料(數據、等級、語言、套裝)。"
+help-desc-database-clearall: "永久刪除所有玩家的儲存資料。需要加上 'confirm'。"
 papi-status-enabled-detail: "MiniMessage 的 PAPI 解析已啟用，%試煉UHC_*% 佔位符已註冊。"
 papi-status-disabled-detail: "未載入 PlaceholderAPI。若要使用 PAPI 佔位符，請安裝至 plugins/。"
 # Gamemode shortcuts
@@ -1374,3 +1376,22 @@ tab-layout:
     online: "在線"
     needed: "還需"
     ping: "延遲"
+profile-dialog:
+  title: "<#f4d35e><bold><player></bold></#f4d35e><#7b8aa0> 的個人資料</#7b8aa0>"
+  level: "<#c4b5fd><bold>等級 <level></bold></#c4b5fd>  <bar>  <#7b8aa0><experience>/<needed> 經驗</#7b8aa0>"
+  combat: "<#f95738>⚔ 擊殺</#f95738> <white><kills></white>   <#9ca3af>☠ 死亡</#9ca3af> <white><deaths></white>   <#7dd3fc>✚ 助攻</#7dd3fc> <white><assists></white>   <#fda4af>K/D</#fda4af> <white><kd></white>"
+  games: "<#f4d35e>★ 勝場</#f4d35e> <white><wins></white>   <#a7f3d0>場數</#a7f3d0> <white><games></white>   <#86efac>勝率</#86efac> <white><winrate></white>"
+  streak: "<#fb7185>🔥 最高連殺</#fb7185> <white><best></white>   <#7b8aa0>目前</#7b8aa0> <white><current></white>"
+  rank: "<#7b8aa0>排行榜：</#7b8aa0> <#f4d35e>勝場 <wins_rank></#f4d35e>  <#f95738>擊殺 <kills_rank></#f95738>  <#c4b5fd>等級 <level_rank></#c4b5fd>"
+  button:
+    leaderboard: "<#fbbf24>🏆 排行榜</#fbbf24>"
+    kits: "<#fb923c>🎒 套裝</#fb923c>"
+    language: "<#7dd3fc>🌐 語言</#7dd3fc>"
+    players: "<#cbd5e1>👥 所有玩家</#cbd5e1>"
+database:
+  clear:
+    usage: "<prefix><#f4d35e>用法：/uhc database cleardata <玩家></#f4d35e>"
+    not-found: "<prefix><#f95738>找不到 <white><player></white> 的儲存資料。</#f95738>"
+    done: "<prefix><#6dd3a0>已刪除 <white><player></white> 的所有儲存資料。</#6dd3a0>"
+    all-confirm: "<prefix><#f95738>這會永久刪除<bold>所有</bold>玩家的儲存資料，且無法復原。</#f95738> <#cbd5e1>輸入</#cbd5e1> <click:suggest_command:'/uhc database clearall confirm'><white><u>/uhc database clearall confirm</u></white></click> <#cbd5e1>以確認。</#cbd5e1>"
+    all-done: "<prefix><#6dd3a0>已刪除 <white><count></white> 名玩家的儲存資料。</#6dd3a0>"

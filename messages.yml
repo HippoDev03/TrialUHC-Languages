@@ -93,8 +93,8 @@ help-desc-rules: "View the server rules."
 help-desc-nightvision: "Toggle night vision on yourself."
 help-desc-setmaxplayers: "Change the server's max player count (persists across restarts)."
 help-desc-database-import: "Import player profile data from another storage backend (see database.yml)."
-help-desc-database-cleardata: "Reset one player's stats (kills, wins, level...). Language and kit are kept."
-help-desc-database-clearall: "Reset every player's stats. Needs 'confirm'."
+help-desc-database-cleardata: "Permanently delete one player's stored data (stats, level, language, kit)."
+help-desc-database-clearall: "Permanently delete every player's stored data. Needs 'confirm'."
 alerts-title: "<black><bold>Alert Settings</bold></black>"
 alerts-filler: "<dark_gray> </dark_gray>"
 alerts-report: "<#f95738><bold>Report Alerts</bold></#f95738>"
@@ -1121,9 +1121,21 @@ database:
   clear:
     usage: "<prefix><#f4d35e>Usage: /uhc database cleardata <player></#f4d35e>"
     not-found: "<prefix><#f95738>No stored profile for <white><player></white>.</#f95738>"
-    done: "<prefix><#6dd3a0>Reset all stats for <white><player></white>.</#6dd3a0> <#7b8aa0>(language, kit and rules are kept)</#7b8aa0>"
-    all-confirm: "<prefix><#f95738>This resets the stats of <bold>every</bold> player and can't be undone.</#f95738> <#cbd5e1>Run</#cbd5e1> <click:suggest_command:'/uhc database clearall confirm'><white><u>/uhc database clearall confirm</u></white></click> <#cbd5e1>to go ahead.</#cbd5e1>"
-    all-done: "<prefix><#6dd3a0>Reset the stats of <white><count></white> players.</#6dd3a0>"
+    done: "<prefix><#6dd3a0>Deleted all stored data for <white><player></white>.</#6dd3a0>"
+    all-confirm: "<prefix><#f95738>This permanently deletes the stored data of <bold>every</bold> player and can't be undone.</#f95738> <#cbd5e1>Run</#cbd5e1> <click:suggest_command:'/uhc database clearall confirm'><white><u>/uhc database clearall confirm</u></white></click> <#cbd5e1>to go ahead.</#cbd5e1>"
+    all-done: "<prefix><#6dd3a0>Deleted the stored data of <white><count></white> players.</#6dd3a0>"
+profile-dialog:
+  title: "<#f4d35e><bold><player></bold></#f4d35e><#7b8aa0>'s Profile</#7b8aa0>"
+  level: "<#c4b5fd><bold>Level <level></bold></#c4b5fd>  <bar>  <#7b8aa0><experience>/<needed> XP</#7b8aa0>"
+  combat: "<#f95738>⚔ Kills</#f95738> <white><kills></white>   <#9ca3af>☠ Deaths</#9ca3af> <white><deaths></white>   <#7dd3fc>✚ Assists</#7dd3fc> <white><assists></white>   <#fda4af>K/D</#fda4af> <white><kd></white>"
+  games: "<#f4d35e>★ Wins</#f4d35e> <white><wins></white>   <#a7f3d0>Games</#a7f3d0> <white><games></white>   <#86efac>Win rate</#86efac> <white><winrate></white>"
+  streak: "<#fb7185>🔥 Best killstreak</#fb7185> <white><best></white>   <#7b8aa0>Current</#7b8aa0> <white><current></white>"
+  rank: "<#7b8aa0>Leaderboard:</#7b8aa0> <#f4d35e>Wins <wins_rank></#f4d35e>  <#f95738>Kills <kills_rank></#f95738>  <#c4b5fd>Level <level_rank></#c4b5fd>"
+  button:
+    leaderboard: "<#fbbf24>🏆 Leaderboard</#fbbf24>"
+    kits: "<#fb923c>🎒 Kits</#fb923c>"
+    language: "<#7dd3fc>🌐 Language</#7dd3fc>"
+    players: "<#cbd5e1>👥 All Players</#cbd5e1>"
 lobbygame:
   only:
     waiting: "<prefix><#f95738>Lobby minigames can only run while the server is in
