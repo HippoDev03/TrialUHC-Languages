@@ -582,6 +582,8 @@ config:
           fire: Friendly Fire
         teammate:
           glow: Teammate Glow
+          locator:
+            bar: Teammate Locator Bar
         allow:
           lobby:
             switch: Lobby Team Switching
@@ -700,6 +702,8 @@ config:
           fire: Whether teammates can deal damage to each other.
         teammate:
           glow: Highlights teammates with a glowing outline visible through walls.
+          locator:
+            bar: Shows your teammates on your locator bar in your team colour. Enemies never see you.
         allow:
           lobby:
             switch: Allows players to freely switch teams in the lobby.
@@ -714,7 +718,7 @@ config:
               game: Makes all team members visible to each other during the match.
         voice:
           chat:
-            enabled: Enables Simple Voice Chat integration for team-based voice channels.
+            enabled: Enables SocketSVC integration for team-based voice channels.
             global:
               lobby: Creates a shared global voice channel for all players in the lobby.
             team:
@@ -916,6 +920,7 @@ quit:
     <#cbd5e1>left the server.</#cbd5e1> <#6b7280>(<online> online)</#6b7280>"
 world:
   generated:
+    text: "<prefix><#6dd3a0>Generated and selected UHC world <world>.</#6dd3a0>"
     land: "<prefix><#6dd3a0>Generated and selected UHC world <world> with land center
       after <white><attempts></white> attempt(s).</#6dd3a0>"
   gen:
@@ -995,11 +1000,13 @@ lobbygame:
     added: "<prefix><#6dd3a0>Added <word> to the unscramble list.</#6dd3a0>"
     removed: "<prefix><#f95738>Removed <word> from the unscramble list.</#f95738>"
     list:
+      text: "<prefix><#faf0ca>Unscramble words:</#faf0ca> <white><words></white>"
       empty: "<prefix><#f4d35e>No unscramble words are configured yet.</#f4d35e>"
   start:
     command:
       success: "<prefix><#6dd3a0>Lobby minigame started.</#6dd3a0>"
   stopped:
+    text: "<prefix><#f95738><sender></#f95738> <#cbd5e1>stopped the lobby minigame.</#cbd5e1>"
     command: "<prefix><#6dd3a0>Lobby minigame stopped.</#6dd3a0>"
   started:
     math: "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>started a math round:</#cbd5e1>
