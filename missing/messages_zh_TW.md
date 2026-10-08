@@ -1,7 +1,7 @@
 # Missing keys for `messages_zh_TW.yml`
 
 - Locale: `zh_TW`
-- Missing keys: `662`
+- Missing keys: `656`
 
 ## Missing
 
@@ -23,7 +23,6 @@
 - `announce.header`
 - `announce.sent`
 - `announce.title`
-- `arrow-health`
 - `border.centered`
 - `border.current`
 - `border.reset`
@@ -37,6 +36,7 @@
 - `chat.message.cleared`
 - `chat.mute.already`
 - `chat.muted.blocked`
+- `chat.muted.text`
 - `chat.unmute.already`
 - `chat.unmuted`
 - `checkready.actionbar`
@@ -94,11 +94,6 @@
 - `config.menu.desc.game.difficulty`
 - `config.menu.desc.game.enchanted.golden.apples`
 - `config.menu.desc.game.ender.pearl.damage`
-- `config.menu.desc.game.false.brewing`
-- `config.menu.desc.game.false.enchanting`
-- `config.menu.desc.game.false.grindstone`
-- `config.menu.desc.game.false.mobs`
-- `config.menu.desc.game.false.suspicious.stew`
 - `config.menu.desc.game.final.duel.seconds`
 - `config.menu.desc.game.final.heal.seconds`
 - `config.menu.desc.game.golden.heads`
@@ -108,6 +103,11 @@
 - `config.menu.desc.game.mob.rate.multiplier`
 - `config.menu.desc.game.mobs.attack`
 - `config.menu.desc.game.nametag.hide.seconds`
+- `config.menu.desc.game.no.brewing`
+- `config.menu.desc.game.no.enchanting`
+- `config.menu.desc.game.no.grindstone`
+- `config.menu.desc.game.no.mobs`
+- `config.menu.desc.game.no.suspicious.stew`
 - `config.menu.desc.game.player.glowing`
 - `config.menu.desc.game.scatter.last.countdown`
 - `config.menu.desc.game.scatter.radius`
@@ -115,17 +115,19 @@
 - `config.menu.desc.game.shears.rate`
 - `config.menu.desc.game.sudden.death.seconds`
 - `config.menu.desc.rules.disable.natural.regen`
-- `config.menu.desc.rules.drop.head.true.kill`
-- `config.menu.desc.rules.kick.true.death`
-- `config.menu.desc.rules.spectator.true.death`
+- `config.menu.desc.rules.drop.head.on.kill`
+- `config.menu.desc.rules.kick.on.death`
+- `config.menu.desc.rules.spectator.chat.isolated`
+- `config.menu.desc.rules.spectator.on.death`
 - `config.menu.desc.teams.allow.lobby.switch`
-- `config.menu.desc.teams.auto.balance.true.start`
+- `config.menu.desc.teams.auto.balance.on.start`
 - `config.menu.desc.teams.enabled`
 - `config.menu.desc.teams.friendly.fire`
 - `config.menu.desc.teams.max.size`
 - `config.menu.desc.teams.show.teammates.in.game`
 - `config.menu.desc.teams.show.teammates.in.lobby`
 - `config.menu.desc.teams.teammate.glow`
+- `config.menu.desc.teams.teammate.locator.bar`
 - `config.menu.desc.teams.voice.chat.enabled`
 - `config.menu.desc.teams.voice.chat.global.lobby`
 - `config.menu.desc.teams.voice.chat.team.groups.in.game`
@@ -137,9 +139,9 @@
 - `config.menu.group.chat`
 - `config.menu.group.chunky`
 - `config.menu.group.game`
-- `config.menu.group.license`
 - `config.menu.group.lobby`
 - `config.menu.group.lore`
+- `config.menu.group.meetup`
 - `config.menu.group.motd`
 - `config.menu.group.ores`
 - `config.menu.group.other`
@@ -161,11 +163,6 @@
 - `config.menu.label.game.difficulty`
 - `config.menu.label.game.enchanted.golden.apples`
 - `config.menu.label.game.ender.pearl.damage`
-- `config.menu.label.game.false.brewing`
-- `config.menu.label.game.false.enchanting`
-- `config.menu.label.game.false.grindstone`
-- `config.menu.label.game.false.mobs`
-- `config.menu.label.game.false.suspicious.stew`
 - `config.menu.label.game.final.duel.seconds`
 - `config.menu.label.game.final.heal.seconds`
 - `config.menu.label.game.golden.heads`
@@ -175,6 +172,11 @@
 - `config.menu.label.game.mob.rate.multiplier`
 - `config.menu.label.game.mobs.attack`
 - `config.menu.label.game.nametag.hide.seconds`
+- `config.menu.label.game.no.brewing`
+- `config.menu.label.game.no.enchanting`
+- `config.menu.label.game.no.grindstone`
+- `config.menu.label.game.no.mobs`
+- `config.menu.label.game.no.suspicious.stew`
 - `config.menu.label.game.player.glowing`
 - `config.menu.label.game.scatter.last.countdown`
 - `config.menu.label.game.scatter.radius`
@@ -182,17 +184,19 @@
 - `config.menu.label.game.shears.rate`
 - `config.menu.label.game.sudden.death.seconds`
 - `config.menu.label.rules.disable.natural.regen`
-- `config.menu.label.rules.drop.head.true.kill`
-- `config.menu.label.rules.kick.true.death`
-- `config.menu.label.rules.spectator.true.death`
+- `config.menu.label.rules.drop.head.on.kill`
+- `config.menu.label.rules.kick.on.death`
+- `config.menu.label.rules.spectator.chat.isolated`
+- `config.menu.label.rules.spectator.on.death`
 - `config.menu.label.teams.allow.lobby.switch`
-- `config.menu.label.teams.auto.balance.true.start`
+- `config.menu.label.teams.auto.balance.on.start`
 - `config.menu.label.teams.enabled`
 - `config.menu.label.teams.friendly.fire`
 - `config.menu.label.teams.max.size`
 - `config.menu.label.teams.show.teammates.in.game`
 - `config.menu.label.teams.show.teammates.in.lobby`
 - `config.menu.label.teams.teammate.glow`
+- `config.menu.label.teams.teammate.locator.bar`
 - `config.menu.label.teams.voice.chat.enabled`
 - `config.menu.label.teams.voice.chat.global.lobby`
 - `config.menu.label.teams.voice.chat.team.groups.in.game`
@@ -279,9 +283,6 @@
 - `gamemode.players.only`
 - `gamemode.self.set`
 - `gamemode.target.set`
-- `golden-head-name`
-- `goldenhead.given`
-- `goldenhead.received`
 - `grace.blocked`
 - `grace.end`
 - `grace.skipped`
@@ -336,6 +337,7 @@
 - `kit.locked`
 - `kit.menu.code.lore`
 - `kit.menu.empty.lore`
+- `kit.menu.empty.text`
 - `kit.menu.filler`
 - `kit.menu.offhand.label`
 - `kit.menu.offhand.lore`
@@ -351,6 +353,7 @@
 - `language.current`
 - `language.invalid`
 - `language.menu.auto.lore`
+- `language.menu.auto.text`
 - `language.menu.code.lore`
 - `language.menu.current.lore`
 - `language.menu.filler`
@@ -374,7 +377,6 @@
 - `leaderboard.entry.selected.stat`
 - `leaderboard.entry.value`
 - `leaderboard.entry.wins`
-- `leaderboard.filler`
 - `leaderboard.invalid.stat`
 - `leaderboard.next.page`
 - `leaderboard.page`
@@ -387,8 +389,7 @@
 - `leaderboard.stat.kills`
 - `leaderboard.stat.killstreak`
 - `leaderboard.stat.level`
-- `leaderboard.stat.lore`
-- `leaderboard.stat.selected.lore`
+- `leaderboard.stat.lobby`
 - `leaderboard.stat.wins`
 - `leaderboard.title`
 - `level.summary`
@@ -448,6 +449,7 @@
 - `lobbygame.started.math`
 - `lobbygame.started.unscramble`
 - `lobbygame.stopped.command`
+- `lobbygame.stopped.text`
 - `lobbygame.timeout`
 - `lobbygame.title.math.subtitle`
 - `lobbygame.title.text`
@@ -459,6 +461,7 @@
 - `lobbygame.word.exists`
 - `lobbygame.word.invalid`
 - `lobbygame.word.list.empty`
+- `lobbygame.word.list.text`
 - `lobbygame.word.missing`
 - `lobbygame.word.removed`
 - `match.countdown.actionbar`
@@ -511,8 +514,8 @@
 - `profile.level.lore`
 - `profile.level.text`
 - `profile.list.empty`
-- `profile.list.entry`
-- `profile.list.entry-hover`
+- `profile.list.entry.hover`
+- `profile.list.entry.text`
 - `profile.list.next`
 - `profile.list.title`
 - `profile.stats`
@@ -551,9 +554,6 @@
 - `scatter.countdown.title`
 - `scatter.sequence.start`
 - `scatter.settle.wait`
-- `scenario.broadcaster.found`
-- `scenario.coronavirus.affected`
-- `scenario.raining-tnt.targeted`
 - `settings.disabled`
 - `settings.enabled`
 - `skipphase.invalid`
@@ -591,6 +591,7 @@
 - `subtitle.border.shrinking`
 - `subtitle.countdown`
 - `subtitle.eliminated.announcement`
+- `subtitle.eliminated.text`
 - `subtitle.final.duel.start`
 - `subtitle.final.heal`
 - `subtitle.grace.end`
@@ -598,7 +599,6 @@
 - `subtitle.launch.far`
 - `subtitle.launch.final`
 - `subtitle.launch.go`
-- `subtitle.launch.near`
 - `subtitle.match.draw`
 - `subtitle.match.ending`
 - `subtitle.match.started`
@@ -619,6 +619,7 @@
 - `title.border.shrinking`
 - `title.countdown`
 - `title.eliminated.announcement`
+- `title.eliminated.text`
 - `title.final.duel.start`
 - `title.final.heal`
 - `title.grace.end`
@@ -626,7 +627,6 @@
 - `title.launch.far`
 - `title.launch.final`
 - `title.launch.go`
-- `title.launch.near`
 - `title.match.draw`
 - `title.match.ending`
 - `title.match.started`
@@ -641,20 +641,14 @@
 - `title.winner`
 - `unfreeze.already`
 - `unfreeze.notify`
-- `usage.team.color-own`
-- `usage.team.invite`
-- `usage.team.rename-own`
-- `usage.teamadmin.root`
-- `usage.uhc.invsee`
 - `world.clean.empty`
 - `world.cleaned`
 - `world.current`
 - `world.deleted`
-- `world.dimension.disabled`
-- `world.dimension.enabled`
 - `world.gen.option.invalid`
 - `world.gen.option.unknown`
 - `world.generated.land`
+- `world.generated.text`
 - `world.generator.invalid`
 - `world.list`
 - `world.loaded`
