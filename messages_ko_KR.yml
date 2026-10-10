@@ -1,0 +1,3313 @@
+# Korean (한국어). Translated by AI (Claude); placeholders and tags match messages.yml.
+"language":
+  "name": "한국어"
+  "code": "ko_kr"
+  "translator": "AI（Claude）"
+  "current": "<#7b8aa0>언어 모드:</#7b8aa0> <white><mode></white> <#7b8aa0>| 사용 중:</#7b8aa0> <white><effective></white>\n<#7b8aa0>사용 가능:</#7b8aa0> <white><available></white>"
+  "set":
+    "text": "<#6dd3a0>언어가 <white><language></white>(으)로 설정되었습니다.</#6dd3a0>"
+    "auto": "<#6dd3a0>이제 마인크래프트 클라이언트 언어를 따릅니다.</#6dd3a0>"
+  "invalid": "<#f95738><white><language></white> 언어는 사용할 수 없습니다.</#f95738> <#7b8aa0>사용 가능:</#7b8aa0> <white><available></white>"
+  "menu":
+    "title": "<#334155><bold>언어 선택</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "auto":
+      "text": "<#7dd3fc><bold>자동 감지</bold></#7dd3fc>"
+      "lore": "<#cbd5e1>마인크래프트 클라이언트 언어를 따릅니다.</#cbd5e1>"
+    "language":
+      "name": "<#f4d35e><bold><language></bold></#f4d35e>"
+    "select":
+      "lore": "<#cbd5e1>클릭하여 이 언어를 사용합니다.</#cbd5e1>"
+    "code":
+      "lore": "<#7b8aa0>로캘:</#7b8aa0> <white><language></white>"
+    "translator":
+      "lore": "<#7b8aa0>번역:</#7b8aa0> <white><translator></white>"
+    "current":
+      "lore": "<#7b8aa0>현재:</#7b8aa0> <white><language></white>"
+    "selected":
+      "lore": "<#6dd3a0>현재 선택됨.</#6dd3a0>"
+"prefix": "<gradient:#f4d35e:#ee964b><bold>시련UHC</bold></gradient> <gray>»</gray> "
+"discord-link": "<white><click:open_url:'<link>'><underlined><link></underlined></click></white>"
+"nightvision-enabled": "<#6dd3a0>야간 투시를 켰습니다.</#6dd3a0>"
+"nightvision-disabled": "<#f95738>야간 투시를 껐습니다.</#f95738>"
+"scoreboard-shown": "<#6dd3a0>스코어보드를 표시합니다.</#6dd3a0>"
+"scoreboard-hidden": "<#f95738>스코어보드를 숨겼습니다.</#f95738> <#7b8aa0><white>/sb</white>로 다시 표시할 수 있습니다.</#7b8aa0>"
+"settings-unknown": "<#f95738>알 수 없는 설정: <white><setting></white>.</#f95738>"
+"pm-disabled": "<#f95738><player> 님은 개인 메시지를 받지 않습니다.</#f95738>"
+"usage-settings": "<#f4d35e><bold>/settings</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/settings</#93c5fd> <#7b8aa0>- 개인 설정 열기</#7b8aa0><newline> <#93c5fd>/settings toggle <setting></#93c5fd> <#7b8aa0>- 설정 하나 전환</#7b8aa0>"
+"usage-scoreboard": "<#f4d35e><bold>/sb</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/sb [on|off]</#93c5fd> <#7b8aa0>- 스코어보드 표시/숨기기</#7b8aa0>"
+"usage-setmaxplayers": "<#f4d35e><bold>/admin setmaxplayers</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin setmaxplayers <amount></#93c5fd> <#7b8aa0>- 서버 최대 인원 변경</#7b8aa0>"
+"usage-database-import": "<#f4d35e><bold>/admin database</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin database import <yaml|postgresql|mariadb></#93c5fd> <#7b8aa0>- 다른 저장소에서 프로필 복사</#7b8aa0>"
+"database-import-started": "<#7dd3fc><white><type></white>에서 프로필을 가져오는 중... 백그라운드에서 진행됩니다.</#7dd3fc>"
+"database-import-success": "<#6dd3a0><white><type></white>에서 프로필 <white><count></white>개를 현재 저장소로 가져왔습니다.</#6dd3a0>"
+"database-import-failed": "<red><white><type></white>에서 가져오지 못했습니다: <white><error></white></red>"
+"max-players-set": "<#6dd3a0>최대 인원을 <white><amount></white>명으로 설정했습니다.</#6dd3a0>"
+"baby-animals-disabled": "<#f95738>이번 경기에서는 동물 번식이 비활성화되어 있습니다."
+"config-preset-usage": "<#f4d35e><bold>/admin preset</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin preset</#93c5fd> <#7b8aa0>- 프리셋 메뉴 열기</#7b8aa0><newline> <#93c5fd>/admin preset save <name></#93c5fd> <#7b8aa0>- 현재 설정 저장</#7b8aa0><newline> <#93c5fd>/admin preset load <name></#93c5fd> <#7b8aa0>- 프리셋 적용</#7b8aa0><newline> <#93c5fd>/admin preset delete <name></#93c5fd> <#7b8aa0>- 프리셋 삭제</#7b8aa0><newline> <#93c5fd>/admin preset list</#93c5fd> <#7b8aa0>- 저장된 프리셋 목록</#7b8aa0>"
+"config-preset-invalid-name": "<#f95738>프리셋 이름에는 영문자, 숫자, 밑줄, 하이픈만 쓸 수 있습니다.</#f95738>"
+"config-preset-saved": "<#6dd3a0>현재 설정을 프리셋 <white><name></white>(으)로 저장했습니다.</#6dd3a0>"
+"config-preset-save-failed": "<#f95738>프리셋 <white><name></white>을(를) 저장하지 못했습니다.</#f95738>"
+"config-preset-match-running": "<#f95738>프리셋은 경기 중이 아닌 로비에서만 적용할 수 있습니다.</#f95738>"
+"config-preset-loaded": "<#6dd3a0>프리셋 <white><name></white>을(를) 적용했습니다.</#6dd3a0>"
+"config-preset-load-failed": "<#f95738>프리셋 <white><name></white>을(를) 적용하지 못했습니다.</#f95738>"
+"config-preset-not-found": "<#f95738><white><name></white>(이)라는 프리셋을 찾을 수 없습니다.</#f95738>"
+"config-preset-deleted": "<#6dd3a0>프리셋 <white><name></white>을(를) 삭제했습니다.</#6dd3a0>"
+"config-preset-list": "<#7b8aa0>저장된 프리셋:</#7b8aa0> <white><names></white>"
+"config-preset-list-empty": "<#7b8aa0>아직 저장된 프리셋이 없습니다.</#7b8aa0>"
+"config-preset-dialog-title": "설정 프리셋"
+"config-preset-dialog-body": "<gray>아래에 이름을 입력해 현재 설정을 저장하거나, 저장된 프리셋을 클릭해 불러오세요.</gray>"
+"config-preset-dialog-input": "프리셋 이름"
+"config-preset-dialog-save": "<green>입력한 이름으로 저장</green>"
+"config-preset-dialog-delete": "<red>입력한 이름 삭제</red>"
+"config-preset-dialog-preset": "<aqua><name></aqua>"
+"config-preset-dialog-load-hint": "<gray>클릭하여 이 프리셋을 불러옵니다.</gray><newline><dark_gray>/admin preset load <id></dark_gray>"
+"config-menu-action-set-lobby": "<#93c5fd><bold>로비 설정</bold></#93c5fd>"
+"config-menu-action-set-lobby-lore-1": "<#cbd5e1>로비 스폰 지점을 현재 위치로 설정합니다.</#cbd5e1>"
+"config-menu-action-set-lobby-lore-2": "<#93c5fd>▶ 클릭하여 여기를 로비로 설정</#93c5fd>"
+"config-menu-action-set-lobby-lore-3": "<#7b8aa0>/admin setlobby 와 같습니다</#7b8aa0>"
+"config-menu-start-button": "<#22c55e><bold>게임 시작</bold></#22c55e>"
+"config-menu-start-button-active": "<#ef4444><bold>게임 진행 중</bold></#ef4444>"
+"config-menu-start-button-lore": "<#cbd5e1>클릭하여 UHC 게임을 시작합니다.</#cbd5e1>"
+"config-menu-start-button-active-lore": "<#7b8aa0>이미 게임이 진행 중입니다.</#7b8aa0>"
+"config-menu-stop-button": "<#f95738><bold>경기 중지</bold></#f95738>"
+"config-menu-stop-button-idle": "<#7b8aa0><bold>경기 중지</bold></#7b8aa0>"
+"config-menu-stop-button-lore": "<#cbd5e1>클릭하여 현재 경기를 중지하고 플레이어를 로비로 돌려보냅니다.</#cbd5e1>"
+"config-menu-stop-button-confirm-lore": "<#f4d35e>확인이 필요합니다.</#f4d35e>"
+"config-menu-stop-button-idle-lore": "<#7b8aa0>중지할 경기가 없습니다.</#7b8aa0>"
+"config-menu-reset-button": "<#f4d35e><bold>경기 초기화</bold></#f4d35e>"
+"config-menu-reset-button-lore": "<#cbd5e1>경기를 완전히 초기화하고 모두를 로비 상태로 돌려보냅니다.</#cbd5e1>"
+"config-menu-reset-button-confirm-lore": "<#f4d35e>확인이 필요합니다.</#f4d35e>"
+"help-desc-kill": "플레이어를 탈락시킵니다."
+"help-desc-level": "레벨, 경험치, 진행도."
+"experience-updated": "<#6dd3a0><white><player></white> 님의 경험치를 <white><experience></white> XP(레벨 <white><level></white>)로 설정했습니다.</#6dd3a0>"
+"experience-updated-many": "<#6dd3a0>플레이어 <white><count></white>명의 경험치를 변경했습니다:</#6dd3a0> <#cbd5e1><players></#cbd5e1>"
+"experience-invalid-amount": "<#f95738><white><amount></white>은(는) 올바른 수치가 아닙니다. 0 이상의 정수를 입력하세요.</#f95738>"
+"help-desc-recipe": "커스텀 조합법."
+"help-desc-revive": "탈락한 플레이어를 부활시킵니다."
+"help-desc-discord": "서버 디스코드 초대 링크를 받습니다."
+"help-desc-config": "게임 설정 보기 (관리자는 변경 가능)."
+"config-menu-desc-ui-tab-health-mode": "탭 목록 이름 뒤에 체력을 표시합니다 (0-20). HEARTS = 20.0❤, NUMBER = 20, NONE = 숨김. (바닐라 탭에서는 HEARTS가 하트 아이콘으로 표시됩니다.)"
+"ipvp-blocked": "<#f95738>보호 시간에는 다른 플레이어 근처에서 <white><item></white>을(를) 사용할 수 없습니다.</#f95738>"
+"alert-ipvp": "<#f95738>iPvP 차단</#f95738> <#7b8aa0>| 플레이어:</#7b8aa0> <white><attacker></white> <#7b8aa0>| 근처:</#7b8aa0> <white><victim></white> <#7b8aa0>| 아이템:</#7b8aa0> <white><item></white>"
+"help-desc-spawn": "로비 스폰으로 돌아가 로비 아이템을 다시 받습니다."
+"spawn":
+  "teleported": "<#6dd3a0>스폰으로 돌아왔습니다 - 로비 아이템이 복구되었습니다.</#6dd3a0>"
+  "in-game": "<#f95738>경기 중에는 /spawn을 사용할 수 없습니다.</#f95738>"
+  "staff-mode": "<#f95738>먼저 스태프 모드를 나가세요 (/staff).</#f95738>"
+  "frozen": "<#f95738>얼어 있는 동안에는 /spawn을 사용할 수 없습니다.</#f95738>"
+  "no-lobby": "<#f95738>로비 스폰이 아직 설정되지 않았습니다.</#f95738>"
+"list-entry-eliminated": "<head> <gray><player></gray>"
+"list-entry-lobby-spectator": "<head> <#9db4c0><player></#9db4c0>"
+"list-entry-active": "<head> <#6dd3a0><player></#6dd3a0>"
+"list-entry-default": "<head> <white><player></white>"
+"list-entry-team": "<head> <team_prefix><player>"
+"help-desc-rules": "서버 규칙 보기."
+"help-desc-nightvision": "야간 투시 켜기/끄기."
+"help-desc-settings": "개인 설정."
+"help-desc-scoreboard": "스코어보드 표시/숨기기."
+"alerts-title": "<black><bold>알림 설정</bold></black>"
+"alerts-filler": "<dark_gray> </dark_gray>"
+"alerts-report": "<#f95738><bold>신고 알림</bold></#f95738>"
+"alerts-item-pvp": "<#ee964b><bold>아이템 PvP 알림</bold></#ee964b>"
+"alerts-pvp": "<#7dd3fc><bold>PvP 알림</bold></#7dd3fc>"
+"alerts-mining": "<#86efac><bold>채광 알림</bold></#86efac>"
+"alerts-vulcan": "<#a78bfa><bold>Vulcan 알림</bold></#a78bfa>"
+"alerts-status-on": "<#6dd3a0>상태: 켜짐</#6dd3a0>"
+"alerts-status-off": "<#f95738>상태: 꺼짐</#f95738>"
+"alerts-click-toggle": "<#cbd5e1>클릭하여 이 알림을 켜거나 끕니다.</#cbd5e1>"
+"alerts-category-enabled": "<#6dd3a0><category> 알림을 켰습니다.</#6dd3a0>"
+"alerts-category-disabled": "<#f95738><category> 알림을 껐습니다.</#f95738>"
+"rules":
+  "dialog-title": "<gradient:#f4d35e:#ee964b><bold>서버 규칙</bold></gradient>"
+  "dialog-body": "<#cbd5e1>플레이하기 전에 아래 규칙을 읽고 동의해 주세요.</#cbd5e1>"
+  "agree-button": "<#6dd3a0><bold>동의합니다</bold></#6dd3a0>"
+  "confirmed": "<#6dd3a0>확인해 주셔서 감사합니다 - 즐거운 게임 되세요!</#6dd3a0>"
+  "already-confirmed": "<#7b8aa0>이미 규칙을 확인했습니다.</#7b8aa0>"
+"quick-actions":
+  "menu":
+    "title": "<bold>시련UHC 메뉴</bold>"
+    "label": "<#f4d35e><bold>시련UHC 메뉴</bold></#f4d35e>"
+"info":
+  "title": "<gradient:#f4d35e:#ee964b><bold>시련UHC</bold></gradient>"
+  "version": "<#7b8aa0>버전:</#7b8aa0> <white><version></white>"
+  "author":
+    "text": "<#7b8aa0>개발:</#7b8aa0> <#f4d35e>平常網路資訊工作室</#f4d35e>"
+    "hover": "<#faf0ca>클릭하여 GitHub 열기</#faf0ca>"
+"usage":
+  "uhc":
+    "root": "<#f4d35e><bold>/uhc</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/uhc help [페이지]</#93c5fd> <#7b8aa0>- 사용할 수 있는 모든 명령어</#7b8aa0><newline> <#93c5fd>/uhc level [플레이어]</#93c5fd> <#7b8aa0>- 레벨과 경험치</#7b8aa0><newline> <#93c5fd>/uhc recipes</#93c5fd> <#7b8aa0>- 커스텀 조합법</#7b8aa0><newline> <#93c5fd>/uhc docs</#93c5fd> <#7b8aa0>- 게임 내 가이드</#7b8aa0><newline> <#64748b>관리 도구: /admin · 스태프 도구: /staff help</#64748b>"
+    "kill": "<#f4d35e><bold>/kill</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kill <player|selector></#93c5fd> <#7b8aa0>- 플레이어 탈락 (* = 생존자 전원)</#7b8aa0>"
+    "level": "<#f4d35e><bold>/uhc level</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/uhc level [플레이어]</#93c5fd> <#7b8aa0>- 레벨, 경험치, 진행도 보기</#7b8aa0>"
+    "experience": "<#f4d35e><bold>/admin experience</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin experience <player|pattern> set <amount></#93c5fd> <#7b8aa0>- 총 XP 설정</#7b8aa0><newline> <#93c5fd>/admin experience <player|pattern> add|remove <amount></#93c5fd> <#7b8aa0>- XP 증감</#7b8aa0><newline> <#93c5fd>/admin experience <player|pattern> setlevel <level></#93c5fd> <#7b8aa0>- 레벨 설정</#7b8aa0><newline> <#64748b>100 XP = 1레벨 · *는 모든 문자와 일치, 예: HippoDev_*</#64748b>"
+    "revive": "<#f4d35e><bold>/revive</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/revive <player></#93c5fd> <#7b8aa0>- 탈락한 플레이어 부활</#7b8aa0>"
+    "lobbygame": "<#f4d35e><bold>/admin lobbygame</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin lobbygame start <game></#93c5fd> <#7b8aa0>- math, unscramble, type, trivia, number, reaction, treasure, potato</#7b8aa0><newline> <#93c5fd>/admin lobbygame stop</#93c5fd> <#7b8aa0>- 진행 중인 게임 중지</#7b8aa0><newline> <#93c5fd>/admin lobbygame word <add|remove|list> [단어]</#93c5fd> <#7b8aa0>- 단어 맞추기 목록 편집</#7b8aa0><newline> <#93c5fd>/admin lobbygame parkour <setstart|addcheckpoint|removecheckpoint|setfinish|clear|resettimes|top></#93c5fd> <#7b8aa0>- 파쿠르 설정</#7b8aa0>"
+    "pm": "<#f4d35e><bold>/msg</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/msg <player> <message></#93c5fd> <#7b8aa0>- 개인 메시지 보내기</#7b8aa0>"
+    "reply": "<#f4d35e><bold>/r</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/r <message></#93c5fd> <#7b8aa0>- 마지막 개인 메시지에 답장</#7b8aa0>"
+    "profile": "<#f4d35e><bold>/profile</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/profile [플레이어]</#93c5fd> <#7b8aa0>- 프로필 보기</#7b8aa0><newline> <#93c5fd>/profile list [페이지]</#93c5fd> <#7b8aa0>- 저장된 프로필 목록</#7b8aa0>"
+    "world":
+      "root": "<#f4d35e><bold>/world</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/world list | current</#93c5fd> <#7b8aa0>- 월드 목록 / 게임 월드 보기</#7b8aa0><newline> <#93c5fd>/world gen [월드]</#93c5fd> <#7b8aa0>- 게임 월드 생성</#7b8aa0><newline> <#93c5fd>/world load|unload <world></#93c5fd> <#7b8aa0>- 월드 불러오기/내리기</#7b8aa0><newline> <#93c5fd>/world select <world></#93c5fd> <#7b8aa0>- 경기에 사용할 월드 선택</#7b8aa0><newline> <#93c5fd>/world tp [월드]</#93c5fd> <#7b8aa0>- 월드로 이동</#7b8aa0><newline> <#93c5fd>/world preload [월드] [반경]</#93c5fd> <#7b8aa0>- Chunky로 미리 생성</#7b8aa0><newline> <#93c5fd>/world regen [월드] | delete <world></#93c5fd> <#7b8aa0>- 월드 재생성 / 삭제</#7b8aa0><newline> <#93c5fd>/world clean</#93c5fd> <#7b8aa0>- 생성된 uhc_ 월드 모두 삭제</#7b8aa0>"
+      "load": "<#f4d35e><bold>/world load</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/world load <world></#93c5fd> <#7b8aa0>- 월드 폴더 불러오기</#7b8aa0>"
+      "unload": "<#f4d35e><bold>/world unload</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/world unload <world></#93c5fd> <#7b8aa0>- 월드 내리기</#7b8aa0>"
+      "tp": "<#f4d35e><bold>/world tp</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/world tp [월드]</#93c5fd> <#7b8aa0>- 월드로 이동 (기본: 게임 월드)</#7b8aa0>"
+      "preload": "<#f4d35e><bold>/world preload</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/world preload [월드] [반경]</#93c5fd> <#7b8aa0>- Chunky로 미리 생성</#7b8aa0>"
+    "border": "<#f4d35e><bold>/admin border</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin border info</#93c5fd> <#7b8aa0>- 현재 크기와 중심</#7b8aa0><newline> <#93c5fd>/admin border set <size></#93c5fd> <#7b8aa0>- 크기 즉시 설정</#7b8aa0><newline> <#93c5fd>/admin border center <x> <z></#93c5fd> <#7b8aa0>- 중심 이동</#7b8aa0><newline> <#93c5fd>/admin border shrink <size> <seconds></#93c5fd> <#7b8aa0>- 시간에 걸쳐 축소</#7b8aa0><newline> <#93c5fd>/admin border reset</#93c5fd> <#7b8aa0>- 설정된 크기로 복귀</#7b8aa0>"
+    "announce": "<#f4d35e><bold>/staff announce</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/staff announce <message></#93c5fd> <#7b8aa0>- 모두에게 크게 공지</#7b8aa0><newline> <#64748b>| = 줄바꿈 · [en] … [zh_tw] … 플레이어마다 자기 언어로 표시</#64748b>"
+    "heal": "<#f4d35e><bold>/heal</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/heal [플레이어]</#93c5fd> <#7b8aa0>- 체력과 허기 회복 (* = 전원)</#7b8aa0>"
+    "invsee": "<#f4d35e><bold>/staff invsee</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/staff invsee <player></#93c5fd> <#7b8aa0>- 플레이어 인벤토리 열기</#7b8aa0>"
+    "freeze": "<#f4d35e><bold>/staff freeze</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/staff freeze <player></#93c5fd> <#7b8aa0>- 플레이어 움직임 정지 (* = 전원)</#7b8aa0>"
+    "unfreeze": "<#f4d35e><bold>/staff unfreeze</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/staff unfreeze <player></#93c5fd> <#7b8aa0>- 얼린 플레이어 다시 움직이게 하기</#7b8aa0>"
+    "preloadworld": "<#f4d35e><bold>/admin preloadworld</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin preloadworld [반경]</#93c5fd> <#7b8aa0>- 게임 월드 미리 생성</#7b8aa0><newline> <#93c5fd>/admin preloadworld status | stop</#93c5fd> <#7b8aa0>- 진행도 / 미리 생성 중지</#7b8aa0>"
+    "language": "<#f4d35e><bold>/language</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/language</#93c5fd> <#7b8aa0>- 언어 메뉴 열기</#7b8aa0><newline> <#93c5fd>/language <locale|auto></#93c5fd> <#7b8aa0>- 언어 선택 또는 게임 언어 따르기</#7b8aa0>"
+    "gen": "<#f4d35e><bold>/admin gen</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin gen</#93c5fd> <#7b8aa0>- 새 월드 생성 및 미리보기</#7b8aa0><newline> <#93c5fd>/admin gen <world></#93c5fd> <#7b8aa0>- 이 이름으로 바로 월드 생성</#7b8aa0><newline> <#93c5fd>terrain=normal|flat|amplified|large_biomes|void</#93c5fd> <#7b8aa0>- 지형 종류</#7b8aa0><newline> <#93c5fd>biome=<biome> · seed=<number></#93c5fd> <#7b8aa0>- 단일 생물 군계 / 고정 시드</#7b8aa0><newline> <#93c5fd>structures=true|false · hardcore=true|false</#93c5fd> <#7b8aa0>- 구조물 / 하드코어</#7b8aa0><newline> <#93c5fd>pack=uhc · generator=Plugin:id · biome-provider=Plugin:id · generator-settings=<data></#93c5fd> <#7b8aa0>- 데이터팩 / 커스텀 생성기</#7b8aa0>"
+    "report": "<#f4d35e><bold>/report</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/report <player> <reason></#93c5fd> <#7b8aa0>- 플레이어를 스태프에게 신고</#7b8aa0>"
+    "kit":
+      "create": "<#f4d35e><bold>/kit create</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kit create <kit></#93c5fd> <#7b8aa0>- 인벤토리로 키트 만들기</#7b8aa0>"
+      "edit": "<#f4d35e><bold>/kit edit</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kit edit <kit></#93c5fd> <#7b8aa0>- 키트를 인벤토리로 불러와 편집</#7b8aa0>"
+      "save": "<#f4d35e><bold>/kit save</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kit save [키트]</#93c5fd> <#7b8aa0>- 편집 중인 키트 저장</#7b8aa0>"
+    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin reboot <time></#93c5fd> <#7b8aa0>- 카운트다운 후 재시작: 30s, 5m, 1h, 1m30s (숫자만 = 분)</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 재시작 취소</#7b8aa0>"
+    "namehistory": "<#f4d35e><bold>/admin namehistory</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin namehistory <name></#93c5fd> <#7b8aa0>- 플레이어가 접속했던 모든 이름 (현재 이름 또는 예전 이름으로 검색)</#7b8aa0>"
+  "team":
+    "root": "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- 팀 메뉴 열기</#7b8aa0><newline> <#93c5fd>/team list | join <team> | leave</#93c5fd> <#7b8aa0>- 팀 둘러보기, 참가, 나가기</#7b8aa0><newline> <#93c5fd>/team create [이름]</#93c5fd> <#7b8aa0>- 내 팀 만들기</#7b8aa0><newline> <#93c5fd>/team invite <player></#93c5fd> <#7b8aa0>- 초대하기 (리더)</#7b8aa0><newline> <#93c5fd>/team rename <display name> | color <color></#93c5fd> <#7b8aa0>- 팀 이름/색 바꾸기 (리더)</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- 참가 허용 범위 (리더)</#7b8aa0><newline> <#93c5fd>/team transfer <player> | kick <player> | disband</#93c5fd> <#7b8aa0>- 팀 관리 (리더)</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- 팀 채팅 전환 (또는 /tm)</#7b8aa0>"
+    "join": "<#f4d35e><bold>/team join</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team join <team></#93c5fd> <#7b8aa0>- 공개 팀에 참가</#7b8aa0>"
+    "create": "<#f4d35e><bold>/team create</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team create [이름]</#93c5fd> <#7b8aa0>- 팀 만들기 (이름은 선택)</#7b8aa0>"
+    "delete": "<#f4d35e><bold>/admin team delete</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team delete <team></#93c5fd> <#7b8aa0>- 팀 삭제</#7b8aa0>"
+    "set": "<#f4d35e><bold>/admin team set</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team set <player> <team></#93c5fd> <#7b8aa0>- 플레이어를 팀에 배정</#7b8aa0>"
+    "rename": "<#f4d35e><bold>/admin team rename</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team rename <team> <display name></#93c5fd> <#7b8aa0>- 팀 이름 변경</#7b8aa0>"
+    "rename-own": "<#f4d35e><bold>/team rename</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team rename <display name></#93c5fd> <#7b8aa0>- 내 팀 이름 변경 (리더)</#7b8aa0>"
+    "color": "<#f4d35e><bold>/admin team color</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team color <team> <color></#93c5fd> <#7b8aa0>- 팀 색 변경</#7b8aa0>"
+    "color-own": "<#f4d35e><bold>/team color</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team color <color></#93c5fd> <#7b8aa0>- 내 팀 색 변경 (리더)</#7b8aa0>"
+    "size": "<#f4d35e><bold>/admin team size</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team size <size></#93c5fd> <#7b8aa0>- 팀당 인원</#7b8aa0>"
+    "transfer": "<#f4d35e><bold>/team transfer</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team transfer <player></#93c5fd> <#7b8aa0>- 다른 사람을 리더로 지정</#7b8aa0>"
+    "kick": "<#f4d35e><bold>/team kick</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team kick <player></#93c5fd> <#7b8aa0>- 팀에서 플레이어 내보내기</#7b8aa0>"
+    "invite": "<#f4d35e><bold>/team invite</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team invite <player></#93c5fd> <#7b8aa0>- 플레이어를 팀에 초대</#7b8aa0>"
+  "teamadmin":
+    "root": "<#f4d35e><bold>/admin team</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team</#93c5fd> <#7b8aa0>- 팀 관리 패널 열기</#7b8aa0><newline> <#93c5fd>/admin team enable | disable | size <size></#93c5fd> <#7b8aa0>- 팀 모드 켜기/끄기, 팀당 인원</#7b8aa0><newline> <#93c5fd>/admin team create | delete <team></#93c5fd> <#7b8aa0>- 팀 추가/삭제</#7b8aa0><newline> <#93c5fd>/admin team set <player> <team> | kick <player></#93c5fd> <#7b8aa0>- 플레이어 이동</#7b8aa0><newline> <#93c5fd>/admin team rename <team> <display name> | color <team> <color></#93c5fd> <#7b8aa0>- 팀 이름과 색</#7b8aa0><newline> <#93c5fd>/admin team shuffle | clear | disband <team></#93c5fd> <#7b8aa0>- 섞기 / 모든 팀 비우기 / 팀 해체</#7b8aa0>"
+"reloaded": "<#6dd3a0>설정을 다시 불러왔습니다.</#6dd3a0>"
+"lobby":
+  "set": "<#6dd3a0>로비 위치를 갱신했습니다.</#6dd3a0>"
+  "pvp":
+    "hold":
+      "instruction": "<#f4d35e>PvP 검을 <seconds>초 동안 들고 있으면 로비 PvP가 켜집니다.</#f4d35e>"
+      "start": "<#f4d35e>로비 PvP를 켜려면 PvP 검을 <seconds>초 동안 계속 들고 있으세요.</#f4d35e>"
+      "tick": "<#f4d35e><seconds>초 후 로비 PvP가 켜집니다...</#f4d35e>"
+    "disable":
+      "tick": "<#f4d35e><seconds>초 후 로비 PvP가 꺼집니다...</#f4d35e>"
+    "enabled":
+      "self": "<#6dd3a0>로비 PvP가 켜졌습니다.</#6dd3a0>"
+    "disabled":
+      "self": "<#f4d35e>로비 PvP가 꺼졌습니다.</#f4d35e>"
+      "target": "<#f4d35e><player> 님은 로비 PvP를 켜지 않았습니다.</#f4d35e>"
+    "enable":
+      "required": "<#f4d35e>먼저 자신의 로비 PvP를 켜야 합니다.</#f4d35e>"
+  "spectator":
+    "enabled": "<#9db4c0>관전 모드입니다. 경기에 배치되지 않습니다.</#9db4c0>"
+    "disabled": "<#6dd3a0>다음 경기 대기열로 돌아왔습니다.</#6dd3a0>"
+  "fly":
+    "enabled": "<#7dd3fc>로비 비행을 켰습니다.</#7dd3fc>"
+    "disabled": "<#f4d35e>로비 비행을 껐습니다.</#f4d35e>"
+    "blocked": "<#f95738>로비 PvP가 켜져 있는 동안에는 로비 비행을 사용할 수 없습니다.</#f95738>"
+  "item":
+    "toggle":
+      "enabled":
+        "suffix": "<#6dd3a0><bold>[켜짐]</bold></#6dd3a0>"
+        "line": "<#6dd3a0>상태: 켜짐</#6dd3a0>"
+      "disabled":
+        "suffix": "<#f95738><bold>[꺼짐]</bold></#f95738>"
+        "line": "<#f95738>상태: 꺼짐</#f95738>"
+    "no":
+      "permission":
+        "lore": "<#f95738>이 아이템을 사용할 수 없습니다.</#f95738>"
+    "fly_toggle":
+      "name": "<#7dd3fc><bold>로비 비행</bold></#7dd3fc>"
+      "lore":
+        - "<#cbd5e1>로비 비행을 켜거나 끕니다.</#cbd5e1>"
+        - "<#7b8aa0>OP와 권한이 있는 플레이어만 사용할 수 있습니다.</#7b8aa0>"
+    "hide_players":
+      "name": "<#f4d35e><bold>플레이어 숨기기</bold></#f4d35e>"
+      "lore":
+        - "<#cbd5e1>로비 플레이어 표시를 전환합니다.</#cbd5e1>"
+        - "<#7b8aa0>다른 플레이어를 숨겨 로비를 깔끔하게.</#7b8aa0>"
+    "recipes":
+      "name": "<#f4d35e><bold>UHC 조합법</bold></#f4d35e>"
+      "lore":
+        - "<#cbd5e1>UHC 커스텀 조합법을 봅니다.</#cbd5e1>"
+        - "<#7b8aa0>황금 머리 등 커스텀 조합을 확인하세요.</#7b8aa0>"
+    "pvp_sword":
+      "name": "<#f95738><bold>로비 PvP</bold></#f95738>"
+      "lore":
+        - "<#cbd5e1>이 검을 3초 동안 들고 있으세요.</#cbd5e1>"
+        - "<#7b8aa0>자신의 로비 PvP가 켜집니다.</#7b8aa0>"
+    "stats":
+      "name": "<#f4d35e><bold>프로필</bold></#f4d35e>"
+      "lore":
+        - "<#cbd5e1>플레이어 프로필을 엽니다.</#cbd5e1>"
+        - "<#7b8aa0>프로필, 레벨, 통계를 보여줍니다.</#7b8aa0>"
+    "language":
+      "name": "<#93c5fd><bold>언어</bold></#93c5fd>"
+      "lore":
+        - "<#cbd5e1>언어 선택 화면을 엽니다.</#cbd5e1>"
+        - "<#7b8aa0>원하는 언어를 고르세요.</#7b8aa0>"
+    "kit_selector":
+      "name": "<#93c5fd><bold>키트 선택</bold></#93c5fd>"
+      "lore":
+        - "<#cbd5e1>시작 인벤토리를 미리 봅니다.</#cbd5e1>"
+        - "<#7b8aa0>경기 전에 원하는 키트를 고르세요.</#7b8aa0>"
+    "config":
+      "name": "<#6dd3a0><bold>게임 설정</bold></#6dd3a0>"
+      "lore":
+        - "<#cbd5e1>설정 보기를 엽니다.</#cbd5e1>"
+        - "<#7b8aa0>관리자는 값을 바로 수정할 수 있습니다.</#7b8aa0>"
+    "leaderboard":
+      "name": "<#6dd3a0><bold>순위표</bold></#6dd3a0>"
+      "lore":
+        - "<#cbd5e1>상위 플레이어와 순위를 봅니다.</#cbd5e1>"
+        - "<#7b8aa0>순위표를 엽니다.</#7b8aa0>"
+    "team_selector":
+      "name": "<#7dd3fc><bold>팀</bold></#7dd3fc>"
+      "lore":
+        - "<#cbd5e1>팀 선택을 엽니다.</#cbd5e1>"
+        - "<#7b8aa0>경기 전에 팀에 참가하거나 나가세요.</#7b8aa0>"
+    "lobby_spectator":
+      "name": "<#9db4c0><bold>경기 관전</bold></#9db4c0>"
+      "lore":
+        - "<white>관전 모드로 전환합니다.</white>"
+        - "<#d7e1ea>경기 시작 인원에 포함되지 않습니다.</#d7e1ea>"
+  "players":
+    "hidden": "<#f4d35e>다른 로비 플레이어를 숨겼습니다.</#f4d35e>"
+    "shown": "<#6dd3a0>다른 로비 플레이어가 다시 보입니다.</#6dd3a0>"
+"heal":
+  "self": "<#6dd3a0>회복되었습니다.</#6dd3a0>"
+  "other": "<#6dd3a0><player> 님을 회복시켰습니다.</#6dd3a0>"
+  "received": "<#6dd3a0>관리자가 당신을 회복시켰습니다.</#6dd3a0>"
+"ping":
+  "text": "<#7dd3fc>당신의 핑은 <white><ping>ms</white>입니다.</#7dd3fc>"
+  "other": "<#7dd3fc><player> 님의 핑은 <white><ping>ms</white>입니다.</#7dd3fc>"
+"pingall":
+  "summary": "<#7b8aa0>플레이어 핑</#7b8aa0> <#cbd5e1>(<online>명 접속)</#cbd5e1>  <#7b8aa0>페이지 <page>/<pages></#7b8aa0>"
+  "entry": "<#7b8aa0>  <ping_color><player></#7b8aa0></ping_color><#7b8aa0>:</#7b8aa0> <ping_color><ping>ms</ping_color>"
+  "nav":
+    "prev": "<#93c5fd>[← 이전]</#93c5fd>"
+    "next": "<#93c5fd>[다음 →]</#93c5fd>"
+    "gap": "<#7b8aa0>  </#7b8aa0>"
+"list":
+  "summary": "<#7b8aa0>접속 중인 플레이어:</#7b8aa0> <white><online>/<max></white>"
+  "entry":
+    "eliminated": "<rank><gray><player></gray>"
+    "lobby":
+      "spectator": "<rank><#9db4c0><player></#9db4c0>"
+    "active": "<rank><#6dd3a0><player></#6dd3a0>"
+    "default": "<rank><white><player></white>"
+"leaderboard":
+  "title": "<#334155><bold>순위표</bold></#334155>"
+  "empty": "<#f95738><bold>아직 순위 데이터가 없습니다.</bold></#f95738>"
+  "invalid":
+    "stat": "<#f95738>알 수 없는 순위 항목입니다.</#f95738>"
+  "stat":
+    "wins": "<#f4d35e><bold>승리</bold></#f4d35e>"
+    "kills": "<#f95738><bold>처치</bold></#f95738>"
+    "assists": "<#7dd3fc><bold>어시스트</bold></#7dd3fc>"
+    "deaths": "<#9ca3af><bold>사망</bold></#9ca3af>"
+    "games": "<#a7f3d0><bold>경기 수</bold></#a7f3d0>"
+    "level": "<#c4b5fd><bold>레벨</bold></#c4b5fd>"
+    "experience": "<#86efac><bold>경험치</bold></#86efac>"
+    "kd": "<#fda4af><bold>KD</bold></#fda4af>"
+    "killstreak": "<#fb7185><bold>연속 처치</bold></#fb7185>"
+    "diamonds": "<#7dd3fc><bold>다이아몬드</bold></#7dd3fc>"
+    "gold": "<#f4d35e><bold>금</bold></#f4d35e>"
+    "apples": "<#facc15><bold>황금 사과</bold></#facc15>"
+    "lobby": "<#facc15><bold>로비 게임</bold></#facc15>"
+  "page": "<#f4d35e><bold>페이지 <page>/<max_page></bold></#f4d35e>"
+  "prev":
+    "page": "<#7dd3fc><bold>이전 페이지</bold></#7dd3fc>"
+  "next":
+    "page": "<#7dd3fc><bold>다음 페이지</bold></#7dd3fc>"
+  "entry":
+    "name": "<#f4d35e><bold>#<rank> <player></bold></#f4d35e>"
+    "selected":
+      "stat": "<#f4d35e><bold><stat>:</bold></#f4d35e> <white><value></white>"
+    "value": "<#7dd3fc>값:</#7dd3fc> <white><value></white>"
+    "kills": "<#7b8aa0>처치:</#7b8aa0> <white><kills></white>"
+    "wins": "<#7b8aa0>승리:</#7b8aa0> <white><wins></white>"
+    "assists": "<#7b8aa0>어시스트:</#7b8aa0> <white><assists></white>"
+    "deaths": "<#7b8aa0>사망:</#7b8aa0> <white><deaths></white>"
+    "games": "<#7b8aa0>경기 수:</#7b8aa0> <white><games></white>"
+    "level": "<#7b8aa0>레벨:</#7b8aa0> <white><level></white>"
+    "experience": "<#7b8aa0>경험치:</#7b8aa0> <white><experience></white>"
+    "kd": "<#7b8aa0>KD:</#7b8aa0> <white><kd></white>"
+    "killstreak": "<#7b8aa0>최고 연속 처치:</#7b8aa0> <white><killstreak></white>"
+"kit":
+  "menu":
+    "title": "<#334155><bold>키트 선택</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "empty":
+      "text": "<#f95738><bold>사용 가능한 키트 없음</bold></#f95738>"
+      "lore": "<#cbd5e1>kits.yml에 키트를 추가하면 이 메뉴를 쓸 수 있습니다.</#cbd5e1>"
+    "select":
+      "lore":
+        "admin": "<#cbd5e1>클릭하여 전체 적용 키트로 설정합니다.</#cbd5e1>"
+        "viewer": "<#cbd5e1>미리보기 전용입니다. 적용 키트는 관리자가 정합니다.</#cbd5e1>"
+    "code":
+      "lore": "<#7b8aa0>ID:</#7b8aa0> <white><kit></white>"
+    "selected":
+      "lore": "<#6dd3a0>현재 적용 중.</#6dd3a0>"
+    "preview":
+      "title": "<#f4d35e><bold><kit></bold></#f4d35e>"
+      "lore":
+        "1": "<#cbd5e1>이 미리보기는 시작 인벤토리와 같습니다.</#cbd5e1>"
+        "2": "<#7b8aa0>핫바는 다섯 번째 줄에 표시됩니다.</#7b8aa0>"
+    "offhand":
+      "label": "<#9db4c0><bold>보조 손</bold></#9db4c0>"
+      "lore": "<#7b8aa0>방패, 토템 등의 슬롯 미리보기.</#7b8aa0>"
+  "default":
+    "description":
+      - "<#cbd5e1>관리자가 게임 안에서 편집한 키트입니다.</#cbd5e1>"
+  "set":
+    "global":
+      "text": "<#6dd3a0>전체 적용 키트를 <white><kit></white>(으)로 설정했습니다.</#6dd3a0>"
+      "broadcast": "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>님이 적용 키트를</#cbd5e1> <white><kit></white><#cbd5e1>(으)로 설정했습니다.</#cbd5e1>"
+  "locked": "<#f95738>키트 선택은 로비에서만 할 수 있습니다.</#f95738>"
+  "create":
+    "success": "<#6dd3a0>키트 <white><kit></white>을(를) 만들고 인벤토리 편집기로 불러왔습니다.</#6dd3a0>"
+    "failed": "<#f95738>키트를 만들 수 없습니다. 이미 있을 수 있습니다.</#f95738>"
+  "edit":
+    "loaded": "<#7dd3fc>키트 <white><kit></white>을(를) 인벤토리로 불러왔습니다. 다 되면 <white>/kit save</white>를 사용하세요.</#7dd3fc>"
+    "saved": "<#6dd3a0>현재 인벤토리를 키트 <white><kit></white>에 저장했습니다.</#6dd3a0>"
+    "broadcast": "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>님이 키트를 수정했습니다:</#cbd5e1> <white><kit></white><#cbd5e1>.</#cbd5e1>"
+    "failed": "<#f95738>키트를 kits.yml에 저장하지 못했습니다.</#f95738>"
+"config":
+  "menu":
+    "title": "<#334155><bold>게임 설정</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "no":
+      "permission": "<#f4d35e>이 메뉴는 볼 수만 있습니다. 값은 관리자만 수정할 수 있습니다.</#f4d35e>"
+    "admin":
+      "title": "<#6dd3a0><bold>관리자 편집 모드</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>아래 옵션을 클릭하면 설정이 즉시 바뀝니다.</#cbd5e1>"
+    "viewer":
+      "title": "<#f4d35e><bold>보기 모드</bold></#f4d35e>"
+      "lore": "<#cbd5e1>설정을 볼 수 있지만 수정은 관리자만 가능합니다.</#cbd5e1>"
+    "section":
+      "game": "<#f4d35e><bold>게임</bold></#f4d35e>"
+      "rules": "<#7dd3fc><bold>규칙</bold></#7dd3fc>"
+      "integrations": "<#c4b5fd><bold>연동</bold></#c4b5fd>"
+      "lore": "<#7b8aa0>구역 제목</#7b8aa0>"
+    "updated": "<#6dd3a0><white><option></white>을(를) <white><value></white>(으)로 변경했습니다.</#6dd3a0>"
+    "page": "<#f4d35e><bold>페이지 <page>/<max_page></bold></#f4d35e>"
+    "prev": "<#7dd3fc><bold>이전 페이지</bold></#7dd3fc>"
+    "next": "<#7dd3fc><bold>다음 페이지</bold></#7dd3fc>"
+    "entry":
+      "name": "<#f4d35e><bold><label></bold></#f4d35e>"
+    "type":
+      "lore": "<#7b8aa0>종류:</#7b8aa0> <white><type></white>"
+    "path":
+      "lore": "<#6b7280>경로:</#6b7280> <white><path></white>"
+    "readonly": "<#f4d35e>이 설정은 설정 화면에서 읽기 전용입니다.</#f4d35e>"
+    "chat":
+      "prompt": "<#7dd3fc><white><path></white> 편집 중.</#7dd3fc> <#7b8aa0>현재:</#7b8aa0> <white><current></white>"
+      "hint": "<#cbd5e1>채팅에 새 값을 입력하세요. 취소는 <white>exit</white>, 빈 값은 <white>sth</white>.</#cbd5e1>"
+      "cancelled": "<#f4d35e>설정 편집을 취소했습니다.</#f4d35e>"
+    "group":
+      "lore": "<#7b8aa0>분류</#7b8aa0>"
+      "game": "<#f4d35e><bold>게임</bold></#f4d35e>"
+      "time": "<#f59e0b><bold>시간</bold></#f59e0b>"
+      "rules": "<#7dd3fc><bold>규칙</bold></#7dd3fc>"
+      "meetup": "<#fb7185><bold>밋업</bold></#fb7185>"
+      "border": "<#f59e0b><bold>경계</bold></#f59e0b>"
+      "ready":
+        "check": "<#a7f3d0><bold>준비 확인</bold></#a7f3d0>"
+      "chunky": "<#86efac><bold>Chunky</bold></#86efac>"
+      "announce": "<#c4b5fd><bold>공지</bold></#c4b5fd>"
+      "motd": "<#67e8f9><bold>MOTD</bold></#67e8f9>"
+      "lobby": "<#93c5fd><bold>로비</bold></#93c5fd>"
+      "teams": "<#38bdf8><bold>팀</bold></#38bdf8>"
+      "ui": "<#cbd5e1><bold>표시</bold></#cbd5e1>"
+      "ores": "<#f97316><bold>광석</bold></#f97316>"
+      "chat": "<#e879f9><bold>채팅</bold></#e879f9>"
+      "other": "<#d1d5db><bold>기타</bold></#d1d5db>"
+    "action":
+      "no":
+        "permission":
+          "lore": "<#f95738>이 작업을 사용할 권한이 없습니다.</#f95738>"
+      "set":
+        "lobby":
+          "text": "<#93c5fd><bold>로비 설정</bold></#93c5fd>"
+          "lore":
+            "1": "<#6b7280><i>로비 스폰 지점을 현재 위치로 설정합니다.</i></#6b7280>"
+            "2": "<#93c5fd>▶ 클릭하여 여기를 로비로 설정</#93c5fd>"
+            "3": "<#7b8aa0>/admin setlobby 와 같습니다</#7b8aa0>"
+      "start":
+        "button":
+          "text": "<#22c55e><bold>게임 시작</bold></#22c55e>"
+          "lore": "<#cbd5e1>클릭하여 UHC 게임을 시작합니다.</#cbd5e1>"
+          "active":
+            "text": "<#ef4444><bold>게임 진행 중</bold></#ef4444>"
+            "lore": "<#7b8aa0>이미 게임이 진행 중입니다.</#7b8aa0>"
+      "stop":
+        "button":
+          "text": "<#f95738><bold>경기 중지</bold></#f95738>"
+          "lore": "<#cbd5e1>클릭하여 현재 경기를 중지하고 플레이어를 로비로 돌려보냅니다.</#cbd5e1>"
+          "confirm":
+            "lore": "<#f4d35e>확인이 필요합니다.</#f4d35e>"
+          "idle":
+            "text": "<#7b8aa0><bold>경기 중지</bold></#7b8aa0>"
+            "lore": "<#7b8aa0>중지할 경기가 없습니다.</#7b8aa0>"
+      "reset":
+        "button":
+          "text": "<#f4d35e><bold>경기 초기화</bold></#f4d35e>"
+          "lore": "<#cbd5e1>경기를 완전히 초기화하고 모두를 로비 상태로 돌려보냅니다.</#cbd5e1>"
+          "confirm":
+            "lore": "<#f4d35e>확인이 필요합니다.</#f4d35e>"
+    "value":
+      "lore": "<#7b8aa0>값</#7b8aa0>  <white><value></white>"
+    "status":
+      "lore": "<#7b8aa0>상태</#7b8aa0>  <value>"
+      "on": "<#6dd3a0><bold>켜짐</bold></#6dd3a0>"
+      "off": "<#f95738><bold>꺼짐</bold></#f95738>"
+    "int":
+      "edit":
+        "lore": "<#93c5fd>▶ 좌클릭 -1  우클릭 +1  Shift ±10</#93c5fd>"
+    "double":
+      "edit":
+        "lore": "<#93c5fd>▶ 좌클릭 -0.5  우클릭 +0.5  Shift ±5.0  버리기 ±0.1</#93c5fd>"
+    "bool":
+      "edit":
+        "lore": "<#93c5fd>▶ 클릭하여 전환.</#93c5fd>"
+      "on": "켜짐"
+      "off": "꺼짐"
+    "anvil":
+      "title": "<#334155><bold>값 편집</bold></#334155>"
+    "string":
+      "edit":
+        "lore": "<#93c5fd>▶ 클릭하여 텍스트 편집기 열기.</#93c5fd>"
+      "cycle":
+        "lore": "<#93c5fd>▶ 좌/우클릭으로 옵션 순환.</#93c5fd>"
+    "view":
+      "lore": "<#f4d35e>▶ 보기 전용. 수정은 관리자에게 요청하세요.</#f4d35e>"
+    "label":
+      "game":
+        "antiburn": "화상 방지"
+        "no":
+          "mobs": "몹 없음"
+          "suspicious":
+            "stew": "수상한 스튜 금지"
+          "enchanting": "마법 부여 금지"
+          "brewing": "양조 금지"
+          "grindstone": "숫돌 금지"
+        "mob":
+          "rate":
+            "multiplier": "몹 생성 배율"
+        "apple":
+          "rate": "사과 드롭률"
+        "mobs":
+          "attack": "몹 공격"
+        "allow":
+          "potions": "물약 허용"
+        "difficulty": "난이도"
+        "min":
+          "players": "최소 인원"
+        "countdown":
+          "seconds": "카운트다운 (초)"
+        "grace":
+          "period":
+            "seconds": "보호 시간 (초)"
+        "nametag":
+          "hide":
+            "seconds": "이름표 숨김 (초)"
+        "final":
+          "heal":
+            "seconds": "최종 회복 (초)"
+          "duel":
+            "seconds": "최종 결투 (초)"
+        "scatter":
+          "radius": "배치 반경"
+          "last":
+            "countdown": "배치 마지막 카운트다운"
+        "max":
+          "duration":
+            "seconds": "최대 경기 시간 (초)"
+        "ender":
+          "pearl":
+            "damage": "엔더 진주 피해"
+        "shears":
+          "enabled": "가위로 황금 사과 드롭"
+          "rate": "가위 황금 사과 확률"
+        "enchanted":
+          "golden":
+            "apples": "마법이 부여된 황금 사과"
+        "golden":
+          "heads": "황금 머리"
+        "player":
+          "glowing": "플레이어 발광"
+      "border":
+        "initial":
+          "size": "시작 경계 크기"
+        "final":
+          "size": "최종 경계 크기"
+        "shrink":
+          "start":
+            "seconds": "경계 축소 시작"
+          "duration":
+            "seconds": "경계 축소 시간"
+        "force":
+          "tp":
+            "inside": "경계 안으로 강제 이동"
+            "buffer": "강제 이동 여유 거리"
+        "first":
+          "shrink":
+            "size": "첫 축소 크기"
+      "rules":
+        "spectator":
+          "on":
+            "death": "사망 시 관전"
+          "chat":
+            "isolated": "관전자 채팅 분리"
+        "disable":
+          "natural":
+            "regen": "자연 회복 끄기"
+        "kick":
+          "on":
+            "death": "사망 시 추방"
+        "drop":
+          "head":
+            "on":
+              "kill": "처치 시 머리 드롭"
+      "teams":
+        "enabled": "팀 사용"
+        "max":
+          "size": "팀 최대 인원"
+        "friendly":
+          "fire": "아군 공격"
+        "teammate":
+          "glow": "팀원 발광"
+          "locator":
+            "bar": "팀원 위치 표시줄"
+        "allow":
+          "lobby":
+            "switch": "로비에서 팀 변경"
+        "auto":
+          "balance":
+            "on":
+              "start": "시작 시 자동 균형"
+        "show":
+          "teammates":
+            "in":
+              "lobby": "로비에서 팀원 표시"
+              "game": "경기 중 팀원 표시"
+        "voice":
+          "chat":
+            "enabled": "팀 음성 채팅"
+            "global":
+              "lobby": "로비 전체 음성"
+            "team":
+              "groups":
+                "in":
+                  "game": "경기 중 팀 음성"
+    "desc":
+      "game":
+        "antiburn": "경기가 시작되면 불과 화상 피해를 막습니다 (용암은 여전히 피해를 줍니다)."
+        "no":
+          "mobs": "경기 중 모든 적대적 몹 생성을 막습니다."
+          "suspicious":
+            "stew": "수상한 스튜를 게임에서 제거합니다."
+          "enchanting": "마법 부여대를 사용할 수 없게 합니다."
+          "brewing": "물약 양조를 할 수 없게 합니다."
+          "grindstone": "숫돌을 사용할 수 없게 합니다."
+        "mob":
+          "rate":
+            "multiplier": "자연 몹 생성률에 곱하는 배율입니다. 1.0 = 기본."
+        "apple":
+          "rate": "나뭇잎이 사라질 때 황금 사과가 떨어지는 배율입니다. 1.0 = 기본."
+        "mobs":
+          "attack": "적대적 몹이 플레이어를 노리고 공격할지 여부."
+        "allow":
+          "potions": "플레이어가 물약을 사용할 수 있는지 여부."
+        "difficulty": "월드 난이도. 몹 피해와 허기 감소에 영향을 줍니다."
+        "min":
+          "players": "경기를 시작하는 데 필요한 최소 인원."
+        "countdown":
+          "seconds": "배치 전 카운트다운 시간."
+        "grace":
+          "period":
+            "seconds": "배치 후 이 시간(초) 동안 PvP가 꺼집니다. 0이면 건너뜁니다."
+        "nametag":
+          "hide":
+            "seconds": "경기 시작 후 이 시간(초) 동안 이름표가 숨겨집니다. 0이면 항상 표시."
+        "final":
+          "heal":
+            "seconds": "경기 시작 후 이 시간(초)이 지나면 모두 완전히 회복됩니다 (예: 600 = 10분). 0이면 끕니다."
+          "duel":
+            "seconds": "2명만 남았을 때 최종 결투 시간."
+        "scatter":
+          "radius": "플레이어를 흩어 배치하는 최대 반경 (블록)."
+          "last":
+            "countdown": "배치 마지막 N초 동안 화면에 카운트다운을 표시합니다."
+        "max":
+          "duration":
+            "seconds": "서든 데스가 시작되기 전 최대 경기 시간. 0이면 제한 없음."
+        "ender":
+          "pearl":
+            "damage": "엔더 진주로 착지할 때 낙하 피해를 받을지 여부."
+        "shears":
+          "enabled": "양털을 깎을 때 황금 사과가 떨어질 수 있는지 여부."
+          "rate": "가위로 나뭇잎을 우클릭할 때 황금 사과가 떨어질 확률 (0-100%)."
+        "enchanted":
+          "golden":
+            "apples": "마법이 부여된 황금 사과를 찾고 사용할 수 있는지 여부."
+        "golden":
+          "heads": "플레이어 머리와 금 주괴로 황금 머리를 조합할 수 있게 합니다."
+        "player":
+          "glowing": "모든 플레이어가 발광하여 벽 너머로 보입니다."
+      "border":
+        "initial":
+          "size": "시작 월드 경계 지름 (블록)."
+        "final":
+          "size": "완전히 축소된 후의 최종 경계 지름."
+        "shrink":
+          "start":
+            "seconds": "경기 시작 후 경계가 줄어들기 시작하기까지의 시간(초)."
+          "duration":
+            "seconds": "경계가 최종 크기까지 줄어드는 데 걸리는 총 시간(초)."
+        "force":
+          "tp":
+            "inside": "경계 밖에 있는 플레이어를 자동으로 안으로 이동시킵니다."
+            "buffer": "강제 이동 시 경계 가장자리로부터 떨어진 거리."
+        "first":
+          "shrink":
+            "size": "경기 시작 시 경계를 바로 이 크기로 줄입니다. 0이면 끕니다."
+      "rules":
+        "spectator":
+          "on":
+            "death": "탈락한 플레이어가 접속 종료 대신 관전자가 됩니다."
+          "chat":
+            "isolated": "경기 중 관전자 채팅은 다른 관전자와 스태프에게만 보여, 탈락자가 위치를 알려줄 수 없습니다."
+        "disable":
+          "natural":
+            "regen": "포화도로 인한 체력 회복을 막습니다. 황금 사과로만 회복할 수 있습니다."
+        "kick":
+          "on":
+            "death": "탈락하는 즉시 서버에서 추방합니다."
+        "drop":
+          "head":
+            "on":
+              "kill": "처치된 플레이어의 머리를 떨어뜨려 황금 머리 조합에 쓸 수 있게 합니다."
+      "teams":
+        "enabled": "팀 모드를 켭니다. 플레이어가 팀으로 묶여 함께 승리합니다."
+        "max":
+          "size": "팀당 최대 인원."
+        "friendly":
+          "fire": "팀원끼리 피해를 줄 수 있는지 여부."
+        "teammate":
+          "glow": "팀원을 벽 너머로 보이는 발광 윤곽선으로 강조합니다."
+          "locator":
+            "bar": "위치 표시줄에 팀원을 팀 색으로 표시합니다. 적에게는 보이지 않습니다."
+        "allow":
+          "lobby":
+            "switch": "로비에서 자유롭게 팀을 바꿀 수 있게 합니다."
+        "auto":
+          "balance":
+            "on":
+              "start": "경기 시작 시 팀 인원이 맞도록 플레이어를 자동으로 옮깁니다."
+        "show":
+          "teammates":
+            "in":
+              "lobby": "로비에서 팀원끼리 서로 보이게 합니다."
+              "game": "경기 중 팀원끼리 서로 보이게 합니다."
+        "voice":
+          "chat":
+            "enabled": "팀별 음성 채널을 위한 SocketSVC 연동을 켭니다."
+            "global":
+              "lobby": "로비의 모든 플레이어가 함께 쓰는 음성 채널을 만듭니다."
+            "team":
+              "groups":
+                "in":
+                  "game": "경기 중 팀마다 별도의 음성 채널을 만듭니다."
+    "option":
+      "min":
+        "players": "<#f4d35e><bold>최소 인원</bold></#f4d35e>"
+      "countdown": "<#f4d35e><bold>카운트다운 (초)</bold></#f4d35e>"
+      "disable":
+        "natural":
+          "regen": "<#f95738><bold>자연 회복 끄기</bold></#f95738>"
+      "spectator":
+        "on":
+          "death": "<#7dd3fc><bold>사망 시 관전</bold></#7dd3fc>"
+      "chunky":
+        "enabled": "<#86efac><bold>Chunky 연동</bold></#86efac>"
+      "global":
+        "announcements": "<#c4b5fd><bold>Bungee 전체 공지</bold></#c4b5fd>"
+"help":
+  "title": "<gold>UHC 명령어 </gold><yellow>(<page>/<max_page>)</yellow>"
+  "suggest":
+    "hover": "<gray><command> 입력 제안</gray>"
+  "open":
+    "page":
+      "hover": "<gray><page> 페이지 열기</gray>"
+  "prev":
+    "button": "« 이전"
+  "next":
+    "button": "다음 »"
+  "desc":
+    "kill": "플레이어 또는 선택자를 탈락시킵니다."
+    "level": "레벨, XP, 다음 레벨 진행도를 봅니다."
+    "recipe": "커스텀 조합법 보기를 엽니다."
+    "revive": "탈락한 플레이어를 부활시킵니다."
+"papi":
+  "status": "<#7b8aa0>PlaceholderAPI:</#7b8aa0> <white>설치=<installed></white> <#7b8aa0>| 활성:</#7b8aa0> <white><enabled></white> <#7b8aa0>| 버전:</#7b8aa0> <white><version></white>\n<#7b8aa0>상태:</#7b8aa0> <white><expansions></white>"
+"gamemode":
+  "players":
+    "only": "<red>대상 없이 사용하려면 플레이어여야 합니다.</red>"
+  "no":
+    "permission":
+      "others": "<red>다른 플레이어의 게임 모드를 바꿀 권한이 없습니다.</red>"
+  "self":
+    "set": "<#6dd3a0>게임 모드를 <gamemode>(으)로 바꿨습니다.</#6dd3a0>"
+  "other":
+    "set": "<#6dd3a0><player> 님의 게임 모드를 <gamemode>(으)로 바꿨습니다.</#6dd3a0>"
+  "target":
+    "set": "<#6dd3a0>게임 모드가 <gamemode>(으)로 바뀌었습니다.</#6dd3a0>"
+"announce":
+  "header": "<gray><bold>==============================</bold></gray>"
+  "title": "<#f95738><bold>공지</bold></#f95738>"
+  "footer": "<gray><bold>==============================</bold></gray>"
+  "sent": "<#6dd3a0>공지를 보냈습니다.</#6dd3a0>"
+"confirm":
+  "title": "<red><bold>정말 하시겠습니까?</bold></red>"
+  "filler": "<dark_red> </dark_red>"
+  "continue":
+    "text": "<#6dd3a0><bold>확인</bold></#6dd3a0>"
+    "lore": "<#cbd5e1>클릭하여 이 작업을 확인합니다.</#cbd5e1>"
+  "cancel":
+    "text": "<#f95738><bold>취소</bold></#f95738>"
+    "lore": "<#cbd5e1>클릭하여 이 메뉴를 닫습니다.</#cbd5e1>"
+  "cancelled": "<#f4d35e>작업을 취소했습니다.</#f4d35e>"
+"checkready":
+  "title": "<#f4d35e><bold>준비 확인</bold></#f4d35e>"
+  "filler": "<dark_gray> </dark_gray>"
+  "ready":
+    "text": "<#6dd3a0><bold>준비 완료</bold></#6dd3a0>"
+    "lore": "<#cbd5e1>플레이할 준비가 되었으면 클릭하세요.</#cbd5e1>"
+  "not":
+    "ready":
+      "text": "<prefix><#f95738><player></#f95738> <#faf0ca>님은 준비되지 않았습니다.</#faf0ca>"
+      "button": "<#f95738><bold>준비 안 됨</bold></#f95738>"
+      "lore": "<#cbd5e1>아직 준비되지 않았으면 클릭하세요.</#cbd5e1>"
+  "started": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>님이 플레이어</#cbd5e1> <white><count></white> <#cbd5e1>명에게 준비 확인을 시작했습니다. 제한 시간</#cbd5e1> <white><seconds>s</white> <#cbd5e1>.</#cbd5e1>"
+  "opened": "<#6dd3a0>플레이어 <count>명에게 준비 확인을 열었습니다. 제한 시간: <seconds>초.</#6dd3a0>"
+  "already":
+    "active": "<#f4d35e>이미 준비 확인이 진행 중입니다.</#f4d35e>"
+  "no":
+    "players": "<#f4d35e>확인할 접속 플레이어가 없습니다.</#f4d35e>"
+  "marked":
+    "ready": "<#6dd3a0>준비 완료로 표시했습니다.</#6dd3a0>"
+  "all":
+    "ready": "<prefix><#6dd3a0>모두 준비되었습니다.</#6dd3a0>"
+  "timeout": "<prefix><#f95738>준비 확인 시간이 끝났습니다.</#f95738> <#faf0ca>아직 기다리는 중:</#faf0ca> <white><players></white>"
+  "actionbar": "<#f4d35e>준비 확인</#f4d35e> <#7b8aa0>| 남은 인원:</#7b8aa0> <white><remaining>/<total></white> <#7b8aa0>| 남은 시간:</#7b8aa0> <white><seconds>s</white>"
+"profile":
+  "title": "<#334155><bold><player> 님의 프로필</bold></#334155>"
+  "filler": "<dark_gray> </dark_gray>"
+  "head": "<#f4d35e><bold><player></bold></#f4d35e>"
+  "level":
+    "text": "<#a3e635><bold>레벨</bold></#a3e635>"
+    "lore": "<#cbd5e1>현재 레벨: <white><level></white></#cbd5e1>"
+  "exp":
+    "lore": "<#7b8aa0>경험치: <white><experience></white></#7b8aa0>"
+  "stats": "<#f95738><bold>통계</bold></#f95738>"
+  "kills":
+    "lore": "<#7b8aa0>처치:</#7b8aa0> <white><kills></white>"
+  "deaths":
+    "lore": "<#7b8aa0>사망:</#7b8aa0> <white><deaths></white>"
+  "assists":
+    "lore": "<#7b8aa0>어시스트:</#7b8aa0> <white><assists></white>"
+  "kd":
+    "lore": "<#7b8aa0>KD 비율:</#7b8aa0> <white><kd></white>"
+  "killstreak":
+    "lore": "<#7b8aa0>최고 연속 처치:</#7b8aa0> <white><killstreak></white>"
+  "wins":
+    "lore": "<#7b8aa0>승리:</#7b8aa0> <white><wins></white>"
+  "games":
+    "lore": "<#7b8aa0>플레이한 경기:</#7b8aa0> <white><games></white>"
+  "list":
+    "title": "<#6dd3a0><bold>알려진 플레이어</bold></#6dd3a0> <#7b8aa0>(총 <count>명)</#7b8aa0> <#334155>|</#334155> <#7b8aa0>페이지 <white><page></white>/<white><pages></white></#7b8aa0>"
+    "entry":
+      "text": "<#334155><index>.</#334155> <white><player></white> <#334155>|</#334155> <#f4d35e><wins>승</#f4d35e> <#fca5a5><kills>킬</#fca5a5> <#7b8aa0><deaths>데스</#7b8aa0> <#a3e635>Lv<level></#a3e635> <#7b8aa0>(<games>경기)</#7b8aa0>"
+      "hover": "<#cbd5e1>클릭하여 <white><player></white> 님의 프로필을 엽니다.</#cbd5e1>"
+    "next": "<#7b8aa0>» 클릭하여 <white><next></white> 페이지로</#7b8aa0>"
+    "empty": "<#f4d35e>아직 기록된 플레이어 프로필이 없습니다.</#f4d35e>"
+  "summary":
+    "title": "<#6dd3a0><player> 님의 프로필</#6dd3a0>"
+    "level": "<#7b8aa0>레벨:</#7b8aa0> <white><level></white> <#7b8aa0>| 경험치:</#7b8aa0> <white><experience></white>"
+    "stats": "<#7b8aa0>처치:</#7b8aa0> <white><kills></white> <#7b8aa0>| 사망:</#7b8aa0> <white><deaths></white> <#7b8aa0>| 어시스트:</#7b8aa0> <white><assists></white> <#7b8aa0>| KD:</#7b8aa0> <white><kd></white> <#7b8aa0>| 연속 처치:</#7b8aa0> <white><killstreak></white> <#7b8aa0>| 승리:</#7b8aa0> <white><wins></white> <#7b8aa0>| 경기:</#7b8aa0> <white><games></white>"
+"level":
+  "summary": "<#7b8aa0><player> 님의 레벨:</#7b8aa0> <white><level></white> <#7b8aa0>| XP:</#7b8aa0> <white><experience></white> <#7b8aa0>| 진행도:</#7b8aa0> <white><progress>%</white> <#7b8aa0>| 다음까지:</#7b8aa0> <white><remaining></white>"
+"recipes":
+  "title": "<#334155><bold>커스텀 조합법</bold></#334155>"
+  "detail":
+    "title": "<#334155><bold><recipe></bold></#334155>"
+  "filler": "<dark_gray> </dark_gray>"
+  "close": "<#f95738><bold>닫기</bold></#f95738>"
+  "shaped": "모양 있는 조합"
+  "shapeless": "모양 없는 조합"
+  "click":
+    "view": "<#93c5fd>▶ 클릭하여 조합법 보기</#93c5fd>"
+    "toggle": "<#93c5fd>▶ 우클릭으로 켜기/끄기</#93c5fd>"
+  "empty": "<#f95738><bold>커스텀 조합법 없음</bold></#f95738>"
+  "result":
+    "label": "<#7b8aa0><bold>결과물</bold></#7b8aa0>"
+  "back": "<#f95738><bold>조합법 목록으로</bold></#f95738>"
+  "type": "<#7b8aa0>종류:</#7b8aa0> <white><type></white>"
+  "shape":
+    "text": "<#7b8aa0>모양:</#7b8aa0>"
+    "row": "<#9db4c0><row></#9db4c0>"
+  "ingredients": "<#7b8aa0>재료:</#7b8aa0>"
+  "ingredient":
+    "entry": "<#9db4c0>- <white><ingredient></white></#9db4c0>"
+  "water":
+    "bottle":
+      "name": "물병"
+"recipe":
+  "compact":
+    "golden":
+      "apple":
+        "name": "<#f4d35e><bold>압축 황금 사과</bold></#f4d35e>"
+        "lore":
+          "1": "<#cbd5e1>금 블록으로 조합합니다.</#cbd5e1>"
+          "2": "<#7b8aa0>더 강한 재생과 흡수 효과를 줍니다.</#7b8aa0>"
+  "golden":
+    "head":
+      "name": "<#f4d35e><bold>황금 머리</bold></#f4d35e>"
+      "lore":
+        "1": "<#cbd5e1>우클릭하여 먹습니다.</#cbd5e1>"
+        "2": "<#7b8aa0>재생과 추가 흡수 효과를 줍니다.</#7b8aa0>"
+"join":
+  "message": "<#7b8aa0>[</#7b8aa0><#6dd3a0>+</#6dd3a0><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>님이 서버에 접속했습니다.</#cbd5e1> <#6b7280>(<online>명 접속)</#6b7280>"
+  "locked": "<#f4d35e>이미 경기가 진행 중입니다. 관전자로 참가합니다.</#f4d35e>"
+"quit":
+  "message": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>님이 서버에서 나갔습니다.</#cbd5e1> <#6b7280>(<online>명 접속)</#6b7280>"
+"world":
+  "preview":
+    "started": "<#7dd3fc>미리보기 월드를 생성하는 중입니다. 준비되면 이동합니다.</#7dd3fc>"
+    "already": "<#f95738>이미 월드 미리보기가 열려 있습니다. 먼저 확인하거나 취소하세요.</#f95738>"
+    "blocked": "<#f95738>월드를 미리 보려면 먼저 스태프 모드나 연습장을 나가세요.</#f95738>"
+    "busy": "<#f4d35e>아직 생성 중입니다. 잠시만 기다려 주세요...</#f4d35e>"
+    "rerolling": "<#7dd3fc>다시 뽑는 중: 새 월드를 생성합니다...</#7dd3fc>"
+    "ready": "<#6dd3a0><white><world></white> 미리보기 <#7b8aa0>(시드 <seed>, <attempts>번 시도)</#7b8aa0>. 핫바에서 선택하세요: <#6dd3a0>확정</#6dd3a0>, <#7dd3fc>다시 뽑기</#7dd3fc>, <#f95738>취소</#f95738>.</#6dd3a0>"
+    "title": "<#6dd3a0><bold><world></bold></#6dd3a0>"
+    "subtitle": "<#7b8aa0>시드 <seed></#7b8aa0>"
+    "confirmed": "<#6dd3a0><white><world></white>을(를) UHC 월드로 선택했습니다.</#6dd3a0>"
+    "cancelled": "<#f4d35e>월드 미리보기를 취소했습니다. 게임 월드는 바뀌지 않았습니다.</#f4d35e>"
+    "no-land": "<#f95738><attempts>번 시도했지만 중앙에 육지가 있는 월드를 찾지 못했습니다.</#f95738>"
+    "bossbar":
+      "creating": "<#7dd3fc>월드 생성 중</#7dd3fc> <#7b8aa0>(시도 <attempt>/<max>)</#7b8aa0>"
+      "land": "<#7dd3fc>중앙의 육지를 찾는 중</#7dd3fc> <#7b8aa0>(시도 <attempt>/<max>)</#7b8aa0>"
+      "chunks": "<#7dd3fc>지형 불러오는 중</#7dd3fc> <#7b8aa0>(시도 <attempt>/<max>)</#7b8aa0>"
+    "actionbar":
+      "generating": "<#7dd3fc><bold>월드 미리보기</bold></#7dd3fc> <#7b8aa0>·</#7b8aa0> <#f4d35e>생성 중 (시도 <attempt>/<max>)...</#f4d35e>"
+      "previewing": "<#7dd3fc><bold>월드 미리보기</bold></#7dd3fc> <#7b8aa0>·</#7b8aa0> <white><world></white> <#7b8aa0>· 시드 <seed> · #<count></#7b8aa0>"
+    "item":
+      "confirm":
+        "name": "<#6dd3a0><bold>이 월드 사용</bold></#6dd3a0>"
+        "lore": "<#7b8aa0>우클릭하여 이 월드를 경기용으로 선택합니다.</#7b8aa0>"
+      "reroll":
+        "name": "<#7dd3fc><bold>다시 뽑기</bold></#7dd3fc>"
+        "lore": "<#7b8aa0>우클릭하여 이 월드를 버리고 새로 생성합니다.</#7b8aa0>"
+      "cancel":
+        "name": "<#f95738><bold>취소</bold></#f95738>"
+        "lore": "<#7b8aa0>우클릭하여 취소하고 로비로 돌아갑니다.</#7b8aa0>"
+  "generated":
+    "text": "<#6dd3a0>UHC 월드 <world>을(를) 생성하고 선택했습니다.</#6dd3a0>"
+    "land": "<#6dd3a0><white><attempts></white>번 시도 끝에 중앙이 육지인 UHC 월드 <world>을(를) 생성하고 선택했습니다.</#6dd3a0>"
+  "gen":
+    "option":
+      "unknown": "<red>알 수 없는 월드 생성 옵션: <option>.</red>"
+      "invalid": "<red>옵션 <option>에 잘못된 값 <value>.</red>"
+  "generator":
+    "invalid": "<red>해당 월드 생성기나 생물 군계 제공자를 찾을 수 없습니다.</red>"
+  "loaded": "<#6dd3a0>월드 <world>을(를) 불러왔습니다.</#6dd3a0>"
+  "unloaded": "<#f4d35e>월드 <world>을(를) 내렸습니다.</#f4d35e>"
+  "selected": "<#6dd3a0>UHC 월드로 <world>을(를) 선택했습니다.</#6dd3a0>"
+  "deleted": "<#6dd3a0>월드 <world>을(를) 삭제했습니다.</#6dd3a0>"
+  "cleaned": "<#6dd3a0>생성된 UHC 월드 <count>개를 삭제했습니다.</#6dd3a0>"
+  "clean":
+    "empty": "<#f4d35e>삭제할 생성 UHC 월드가 없습니다.</#f4d35e>"
+  "preload":
+    "started": "<#7dd3fc><world>의 Chunky 미리 생성을 시작했습니다 (<shape>, 반경 <radius>블록).</#7dd3fc>"
+    "complete": "<prefix><#6dd3a0><world>의 Chunky 미리 생성이 끝났습니다.</#6dd3a0>"
+    "active": "<#f4d35e><world>의 Chunky 미리 생성이 이미 진행 중입니다.</#f4d35e>"
+    "stopped": "<#f4d35e><world>의 Chunky 미리 생성을 중지했습니다.</#f4d35e>"
+    "status": "<#7dd3fc>Chunky 미리 생성</#7dd3fc> <#7b8aa0>| 월드:</#7b8aa0> <white><world></white> <#7b8aa0>| 모양:</#7b8aa0> <white><shape></white> <#7b8aa0>| 반경:</#7b8aa0> <white><radius></white> <#7b8aa0>| 진행도:</#7b8aa0> <white><percent>%</white> <#7b8aa0>(<generated>/<total>)</#7b8aa0>"
+    "bossbar": "<#7dd3fc><world> 미리 생성 중</#7dd3fc> <white><percent>%</white> <#9db4c0>(<generated>/<total>)</#9db4c0>"
+  "dimension":
+    "enabled": "<prefix><#6dd3a0><bold><dimension></bold> 차원이 <bold>열렸습니다</bold>.</#6dd3a0>"
+    "disabled": "<prefix><#f4d35e><bold><dimension></bold> 차원이 <bold>닫혔습니다</bold>.</#f4d35e>"
+  "current": "<#7b8aa0>현재 UHC 월드:</#7b8aa0> <white><world></white>"
+  "teleported": "<#6dd3a0>월드 <world>(으)로 이동했습니다.</#6dd3a0>"
+  "list-header": "<#f4d35e><bold>월드</bold></#f4d35e> <#7b8aa0>(<count>) - 이름을 클릭해 이동, 내려진 월드는 먼저 불러오세요</#7b8aa0>"
+  "list-entry": " <name> <status><players><current>"
+  "list-loaded": "<#86efac>불러옴</#86efac> <#c4b5fd><environment></#c4b5fd>"
+  "list-unloaded": "<#94a3b8>내려짐</#94a3b8>"
+  "list-players": " <#a8c0d6><count>명 접속</#a8c0d6>"
+  "list-current": " <#f4d35e>[게임 월드]</#f4d35e>"
+  "list-empty": "<#fda4af>월드가 없습니다.</#fda4af>"
+  "list-hover-tp": "클릭하여 <world>(으)로 이동"
+  "list-hover-load": "클릭하여 /world load <world> 입력"
+  "list-hover-select": "클릭하여 <world>을(를) 게임 월드로 설정"
+"border":
+  "current": "<#7b8aa0>월드:</#7b8aa0> <white><world></white> <#7b8aa0>| 크기:</#7b8aa0> <white><size></white> <#7b8aa0>| 중심:</#7b8aa0> <white><center_x>, <center_z></white>"
+  "set": "<#6dd3a0>경계 크기를 <size>(으)로 설정했습니다.</#6dd3a0>"
+  "centered": "<#6dd3a0>경계 중심을 <center_x>, <center_z>(으)로 설정했습니다.</#6dd3a0>"
+  "shrink":
+    "started": "<prefix><#6dd3a0>경계가 <seconds>초에 걸쳐 <size>(으)로 줄어듭니다.</#6dd3a0>"
+  "reset": "<#6dd3a0>경계를 설정된 크기 <size>(으)로 되돌렸습니다.</#6dd3a0>"
+  "shrinking": "<prefix><#ee964b>경계 <stage>/<total>단계: <size>(으)로 줄어드는 중입니다.</#ee964b>"
+"center":
+  "waypoint":
+    "name": "<gradient:#f4d35e:#ee964b><bold>중앙</bold></gradient>"
+"portals":
+  "disabled": "<#f95738>이 서버에서는 네더와 엔드 이동이 막혀 있습니다.</#f95738>"
+"potions":
+  "disabled": "<#f95738>이번 경기에서는 물약을 쓸 수 없습니다.</#f95738>"
+"suspicious":
+  "stew":
+    "disabled": "<#f95738>이번 경기에서는 수상한 스튜를 쓸 수 없습니다.</#f95738>"
+"enchanted-golden-apple-disabled": "<#f95738>이번 경기에서는 마법이 부여된 황금 사과를 쓸 수 없습니다.</#f95738>"
+"golden-head-name": "<#f4d35e><bold>황금 머리</bold></#f4d35e>"
+"recipe-golden-head-name": "<#f4d35e><bold>황금 머리</bold></#f4d35e>"
+"recipe-golden-head-lore-1": "<#cbd5e1>우클릭하여 먹습니다.</#cbd5e1>"
+"recipe-golden-head-lore-2": "<#7b8aa0>재생과 추가 흡수 효과를 줍니다.</#7b8aa0>"
+"enchanting":
+  "disabled": "<#f95738>이번 경기에서는 마법 부여를 할 수 없습니다.</#f95738>"
+"brewing":
+  "disabled": "<#f95738>이번 경기에서는 양조를 할 수 없습니다.</#f95738>"
+"grindstone":
+  "disabled": "<#f95738>이번 경기에서는 숫돌을 쓸 수 없습니다.</#f95738>"
+"staff-mode":
+  "enabled": "<#6dd3a0>스태프 모드를 켰습니다. 투명 상태입니다.</#6dd3a0>"
+  "disabled": "<#f4d35e>스태프 모드를 껐습니다.</#f4d35e>"
+  "not-while-playing": "<#f95738>경기에 참가 중일 때는 스태프 모드를 쓸 수 없습니다.</#f95738>"
+  "not-in-practice": "<#f95738>스태프 모드에 들어가기 전에 연습장을 나가세요.</#f95738>"
+  "ended-joined-match": "<#f4d35e>경기에 참가하게 되어 스태프 모드가 종료되었습니다.</#f4d35e>"
+  "vanish-on": "<#6dd3a0>투명 상태가 되었습니다.</#6dd3a0>"
+  "vanish-off": "<#f4d35e>이제 플레이어에게 보입니다.</#f4d35e>"
+  "no-players": "<#f95738>이동할 대상이 없습니다.</#f95738>"
+  "teleported": "<#6dd3a0><player> 님에게 이동했습니다.</#6dd3a0>"
+  "player-offline": "<#f95738><player> 님은 더 이상 접속해 있지 않습니다.</#f95738>"
+  "actionbar": "<#93c5fd><bold>스태프 모드</bold></#93c5fd> <#7b8aa0>·</#7b8aa0> <state>"
+  "actionbar-vanished": "<#6dd3a0>투명</#6dd3a0>"
+  "actionbar-visible": "<#f95738>보임</#f95738>"
+  "item":
+    "menu":
+      "name": "<#93c5fd><bold>플레이어</bold></#93c5fd>"
+      "lore": "<#7b8aa0>우클릭하여 플레이어 메뉴를 엽니다.</#7b8aa0>"
+    "random":
+      "name": "<#c4b5fd><bold>무작위 이동</bold></#c4b5fd>"
+      "lore": "<#7b8aa0>우클릭하여 무작위 플레이어에게 이동합니다.</#7b8aa0>"
+    "inspect":
+      "name": "<#f4d35e><bold>인벤토리 검사</bold></#f4d35e>"
+      "lore": "<#7b8aa0>플레이어를 우클릭하여 인벤토리를 엽니다.</#7b8aa0>"
+    "freeze":
+      "name": "<#7dd3fc><bold>얼리기</bold></#7dd3fc>"
+      "lore": "<#7b8aa0>플레이어를 우클릭하여 얼리거나 풉니다.</#7b8aa0>"
+    "vanish-on":
+      "name": "<#6dd3a0><bold>투명: 켜짐</bold></#6dd3a0>"
+      "lore": "<#7b8aa0>우클릭하여 보이게 됩니다.</#7b8aa0>"
+    "vanish-off":
+      "name": "<#f95738><bold>투명: 꺼짐</bold></#f95738>"
+      "lore": "<#7b8aa0>우클릭하여 투명해집니다.</#7b8aa0>"
+    "exit":
+      "name": "<#f95738><bold>스태프 모드 나가기</bold></#f95738>"
+      "lore": "<#7b8aa0>우클릭하여 스태프 모드를 나갑니다.</#7b8aa0>"
+  "menu":
+    "title": "<#93c5fd><bold>스태프 · 플레이어</bold></#93c5fd> <#7b8aa0>(<page>/<pages>)</#7b8aa0>"
+    "previous": "<#f4d35e>이전 페이지</#f4d35e>"
+    "next": "<#f4d35e>다음 페이지</#f4d35e>"
+    "head-name": "<#faf0ca><bold><player></bold></#faf0ca>"
+    "lore-state": "<#7b8aa0>상태:</#7b8aa0> <state>"
+    "lore-health": "<#7b8aa0>체력:</#7b8aa0> <#f95738><health> ❤</#f95738>"
+    "lore-world": "<#7b8aa0>월드:</#7b8aa0> <white><world></white>"
+    "lore-frozen": "<#7dd3fc><bold>얼어 있음</bold></#7dd3fc>"
+    "lore-actions": "<#7b8aa0>좌클릭: 이동 · 우클릭: 인벤토리 · Shift: 얼리기</#7b8aa0>"
+    "state":
+      "alive": "<#6dd3a0>생존</#6dd3a0>"
+      "spectator": "<#7b8aa0>관전자</#7b8aa0>"
+      "lobby": "<#93c5fd>로비</#93c5fd>"
+      "staff": "<#c4b5fd>스태프</#c4b5fd>"
+    "lore-ping": "<#7b8aa0>핑:</#7b8aa0> <white><ping>ms</white>"
+    "lore-match": "<#7b8aa0>이번 경기:</#7b8aa0> <white><kills></white> <#7b8aa0>처치 ·</#7b8aa0> <#7dd3fc><diamonds></#7dd3fc> <#7b8aa0>다이아몬드 ·</#7b8aa0> <#f4d35e><gold></#f4d35e> <#7b8aa0>금</#7b8aa0>"
+  "usage": "<#f4d35e><bold>/staff</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/staff</#93c5fd> <#7b8aa0>- 스태프 모드 전환</#7b8aa0><newline> <#93c5fd>/staff tp <player></#93c5fd> <#7b8aa0>- 투명 상태로 플레이어에게 이동</#7b8aa0><newline> <#93c5fd>/staff list</#93c5fd> <#7b8aa0>- 접속 중인 스태프</#7b8aa0><newline> <#93c5fd>/staff help</#93c5fd> <#7b8aa0>- 사용할 수 있는 모든 스태프 도구</#7b8aa0>"
+  "list":
+    "header": "<#93c5fd><bold>접속 중인 스태프</bold></#93c5fd> <#7b8aa0>(<count>)</#7b8aa0>"
+    "entry": " <#7b8aa0>•</#7b8aa0> <rank><white><player></white> <#7b8aa0>-</#7b8aa0> <state>"
+    "empty": "<#7b8aa0>접속 중인 스태프가 없습니다.</#7b8aa0>"
+    "state-off": "<#7b8aa0>플레이 중</#7b8aa0>"
+    "state-vanished": "<#6dd3a0>스태프 모드, 투명</#6dd3a0>"
+    "state-visible": "<#f4d35e>스태프 모드, 보임</#f4d35e>"
+"nether-close":
+  "warning": "<prefix><#f97316><white><time></white> 후 네더가 닫힙니다. 그 전에 나오세요!</#f97316>"
+  "closed": "<prefix><#f95738><bold>네더가 닫혔습니다.</bold></#f95738> <#cbd5e1>아직 안에 있던 플레이어는 오버월드로 옮겨졌습니다.</#cbd5e1>"
+  "moved": "<#f4d35e>네더가 닫혀 오버월드로 옮겨졌습니다.</#f4d35e>"
+  "portal-blocked": "<#f95738>이번 경기 동안 네더는 닫혀 있습니다.</#f95738>"
+"meetup":
+  "start": "<prefix><#fb7185><bold>밋업!</bold></#fb7185> <#cbd5e1>플레이어 <white><players></white>명 모두 중앙으로 모였습니다. 경계: <white><size>×<size></white>.</#cbd5e1>"
+  "arena-start": "<prefix><#fb7185><bold>밋업!</bold></#fb7185> <#cbd5e1>플레이어 <white><players></white>명 모두 <white><arena></white> 경기장으로 모였습니다. 경계: <white><size>×<size></white>.</#cbd5e1>"
+"match-stats":
+  "title": "<#93c5fd>  경기 통계</#93c5fd>"
+  "line": "<#7b8aa0>  <category></#7b8aa0> <white><player></white> <#7b8aa0>·</#7b8aa0> <#faf0ca><value></#faf0ca>"
+  "header": "<#7b8aa0>  ─</#7b8aa0> <#f4d35e><bold><category></bold></#f4d35e>"
+  "entry": "<#7b8aa0>    #<rank></#7b8aa0> <white><player></white> <#7b8aa0>·</#7b8aa0> <#faf0ca><value></#faf0ca>"
+  "hearts": "<value> ❤"
+  "category":
+    "damage-dealt": "준 피해"
+    "damage-taken": "받은 피해"
+    "diamonds": "캔 다이아몬드"
+    "gold": "캔 금"
+    "golden-apples": "먹은 황금 사과"
+"docs":
+  "title": "<gold>시련UHC 가이드</gold>"
+  "yes": "<dark_green>예</dark_green>"
+  "no": "<dark_red>아니요</dark_red>"
+  "off": "<dark_gray>꺼짐</dark_gray>"
+  "solo": "솔로"
+  "teams-of": "<size>인 팀"
+  "nether-closes": "<dark_green>예</dark_green>, <time>에 닫힘"
+  "no-scenarios": "<dark_gray>없음 - 바닐라 UHC.</dark_gray>"
+  "scenario-entry": "<dark_aqua>•</dark_aqua> <name>"
+  "ending":
+    "meetup": "중앙에서 <dark_red>밋업</dark_red>"
+    "sudden-death": "<dark_red>서든 데스</dark_red>"
+  "page":
+    "contents": "<gold><bold>시련UHC</bold></gold><newline><dark_gray>울트라 하드코어 가이드</dark_gray><newline><newline><black>자연 회복 없음 - 황금 사과와 황금 머리로 회복하세요. 마지막까지 살아남은 플레이어(또는 팀)가 승리합니다.</black><newline><newline><click:change_page:'2'><dark_blue>» 경기 진행 방식</dark_blue></click><newline><click:change_page:'3'><dark_blue>» 규칙</dark_blue></click><newline><click:change_page:'4'><dark_blue>» 시나리오</dark_blue></click><newline><click:change_page:'5'><dark_blue>» 명령어</dark_blue></click><newline><click:change_page:'6'><dark_blue>» 온라인 문서</dark_blue></click>"
+    "contents-staff": "<gold><bold>시련UHC</bold></gold><newline><dark_gray>울트라 하드코어 가이드</dark_gray><newline><newline><black>자연 회복 없음 - 황금 사과와 황금 머리로 회복하세요. 마지막까지 살아남은 플레이어(또는 팀)가 승리합니다.</black><newline><newline><click:change_page:'2'><dark_blue>» 경기 진행 방식</dark_blue></click><newline><click:change_page:'3'><dark_blue>» 규칙</dark_blue></click><newline><click:change_page:'4'><dark_blue>» 시나리오</dark_blue></click><newline><click:change_page:'5'><dark_blue>» 명령어</dark_blue></click><newline><click:change_page:'6'><dark_blue>» 스태프 도구</dark_blue></click><newline><click:change_page:'7'><dark_blue>» 온라인 문서</dark_blue></click>"
+    "match": "<gold><bold>경기 진행 방식</bold></gold><newline><newline><black>1. 모두가 흩어져 배치됩니다.<newline>2. <dark_red><grace></dark_red> 동안 PvP가 꺼져 있습니다.<newline>3. <border_initial> 경계가 <border_start> 후부터 <border_duration>에 걸쳐 <border_final>까지 줄어듭니다.<newline>4. 최종 회복: 시작 <final_heal> 후.<newline>5. <duration> 후 <ending>(으)로 경기가 끝납니다.</black>"
+    "rules": "<gold><bold>규칙</bold></gold><newline><newline><black>모드: <teams><newline>자연 회복: <regen><newline>황금 머리: <golden_heads><newline>마법 황금 사과: <notch_apples><newline>물약: <potions><newline>네더: <nether><newline>엔드: <end><newline>재접속 시간: <reconnect></black>"
+    "scenarios": "<gold><bold>시나리오</bold></gold><newline><newline><black><scenarios></black>"
+    "commands": "<gold><bold>명령어</bold></gold><newline><newline><dark_blue>/team</dark_blue> <black>팀</black><newline><dark_blue>/kit</dark_blue> <black>키트 선택</black><newline><dark_blue>/scenarios</dark_blue> <black>시나리오</black><newline><dark_blue>/profile</dark_blue> <black>내 통계</black><newline><dark_blue>/lb</dark_blue> <black>순위표</black><newline><dark_blue>/msg</dark_blue> <black>개인 메시지</black><newline><dark_blue>/report</dark_blue> <black>플레이어 신고</black><newline><dark_blue>/lang</dark_blue> <black>언어</black><newline><dark_blue>/menu</dark_blue> <black>빠른 메뉴</black>"
+    "staff": "<gold><bold>스태프 도구</bold></gold><newline><newline><dark_blue>/staff</dark_blue> <black>스태프 모드</black><newline><dark_blue>/staff help</dark_blue> <black>모든 스태프 도구</black><newline><dark_blue>/staff freeze</dark_blue> <black>플레이어 얼리기</black><newline><dark_blue>/staff invsee</dark_blue> <black>인벤토리 보기</black><newline><dark_blue>/staff chat</dark_blue> <black>스태프 채팅</black><newline><dark_blue>/admin</dark_blue> <black>모든 관리 도구</black><newline><dark_blue>/admin start</dark_blue> <black>시작</black><newline><dark_blue>/admin pause</dark_blue> <black>일시 정지</black><newline><dark_blue>/revive</dark_blue> <black>부활</black>"
+    "online": "<gold><bold>온라인 문서</bold></gold><newline><newline><black>모든 설정과 시나리오가 설명된 전체 문서:</black><newline><newline><click:open_url:'<url>'><dark_blue><u>문서 열기</u></dark_blue></click>"
+"tab-layout":
+  "your-team": "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>(나 · <alive>/<count>)</#7b8aa0>"
+  "team": "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>(<alive>/<count>)</#7b8aa0>"
+  "players": "<#f4d35e><bold>▌ 플레이어</bold></#f4d35e> <#7b8aa0>(<count>)</#7b8aa0>"
+  "spectators": "<#9ca3af><bold>▌ 관전자</bold></#9ca3af> <#7b8aa0>(<count>)</#7b8aa0>"
+  "player": "<rank><<color>><name></<color>>"
+  "player-dead": "<rank><#6b7280><st><name></st></#6b7280>"
+  "player-offline": "<rank><#6b7280><name> <i>(접속 끊김)</i></#6b7280>"
+  "spectator": "<rank><#9ca3af><name></#9ca3af>"
+  "staff": "<rank><#c4b5fd><name></#c4b5fd> <#7b8aa0>[스태프]</#7b8aa0>"
+  "health": " <#f95738><value></#f95738>"
+  "kills": " <#cbd5e1>⚔<kills></#cbd5e1>"
+  "more": "<#7b8aa0>외 <count>명…</#7b8aa0>"
+  "stats":
+    "line": "<#7b8aa0><label></#7b8aa0> <white><value></white>"
+    "title-match": "<#f4d35e><bold>▌ 내 통계</bold></#f4d35e>"
+    "title-game": "<#7dd3fc><bold>▌ 경기</bold></#7dd3fc>"
+    "title-lobby": "<#f4d35e><bold>▌ 내 프로필</bold></#f4d35e>"
+    "title-lobby-info": "<#7dd3fc><bold>▌ 로비</bold></#7dd3fc>"
+    "kills": "처치"
+    "damage-dealt": "준 피해"
+    "damage-taken": "받은 피해"
+    "diamonds": "다이아"
+    "gold": "금"
+    "golden-apples": "황금 사과"
+    "alive": "생존"
+    "teams": "팀"
+    "time": "시간"
+    "border": "경계"
+    "next": "다음"
+    "level": "레벨"
+    "wins": "승리"
+    "deaths": "사망"
+    "kd": "K/D"
+    "games": "경기"
+    "online": "접속"
+    "needed": "필요"
+    "ping": "핑"
+"database":
+  "clear":
+    "usage": "<#f4d35e><bold>/admin database</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin database cleardata <player|pattern> [confirm]</#93c5fd> <#7b8aa0>- 저장된 플레이어 데이터 삭제</#7b8aa0><newline> <#93c5fd>/admin database clearall confirm</#93c5fd> <#7b8aa0>- 모든 플레이어 데이터 삭제</#7b8aa0><newline> <#64748b>*는 모든 문자와 일치, 예: HippoDev_*</#64748b>"
+    "not-found": "<#f95738><white><player></white> 님의 저장된 프로필이 없습니다.</#f95738>"
+    "done": "<#6dd3a0><white><player></white> 님의 저장된 데이터를 모두 삭제했습니다.</#6dd3a0>"
+    "all-confirm": "<#f95738><bold>모든</bold> 플레이어의 저장된 데이터가 영구히 삭제되며 되돌릴 수 없습니다.</#f95738> <#cbd5e1>계속하려면</#cbd5e1> <click:suggest_command:'/admin database clearall confirm'><white><u>/admin database clearall confirm</u></white></click> <#cbd5e1>을(를) 실행하세요.</#cbd5e1>"
+    "all-done": "<#6dd3a0>플레이어 <white><count></white>명의 저장된 데이터를 삭제했습니다.</#6dd3a0>"
+    "pattern-confirm": "<#f95738><white><pattern></white>에 해당하는 플레이어 <white><count></white>명:</#f95738> <#cbd5e1><players></#cbd5e1> <#cbd5e1>모두 삭제하려면</#cbd5e1> <click:suggest_command:'/admin database cleardata <pattern> confirm'><white><u>/admin database cleardata <pattern> confirm</u></white></click> <#cbd5e1>을(를) 실행하세요.</#cbd5e1>"
+    "pattern-done": "<#6dd3a0><white><pattern></white>에 해당하는 플레이어 <white><count></white>명의 데이터를 삭제했습니다.</#6dd3a0>"
+"profile-dialog":
+  "title": "<#f4d35e><bold><player></bold></#f4d35e><#7b8aa0> 님의 프로필</#7b8aa0>"
+  "level": "<#c4b5fd><bold>레벨 <level></bold></#c4b5fd>  <bar>  <#7b8aa0><experience>/<needed> XP</#7b8aa0>"
+  "combat": "<#f95738>⚔ 처치</#f95738> <white><kills></white>   <#9ca3af>☠ 사망</#9ca3af> <white><deaths></white>   <#7dd3fc>✚ 어시스트</#7dd3fc> <white><assists></white>   <#fda4af>K/D</#fda4af> <white><kd></white>"
+  "games": "<#f4d35e>★ 승리</#f4d35e> <white><wins></white>   <#a7f3d0>경기</#a7f3d0> <white><games></white>   <#86efac>승률</#86efac> <white><winrate></white>"
+  "streak": "<#fb7185>🔥 최고 연속 처치</#fb7185> <white><best></white>   <#7b8aa0>현재</#7b8aa0> <white><current></white>"
+  "items": "<#f4d35e>황금 사과</#f4d35e> <white><golden_apples></white>   <#f4d35e>황금 머리</#f4d35e> <white><golden_heads></white>   <#93c5fd>활 사격</#93c5fd> <white><bow_shots></white>"
+  "ores": "<#7dd3fc>다이아몬드</#7dd3fc> <white><diamonds></white>  <#f4d35e>금</#f4d35e> <white><gold></white>  <#cbd5e1>철</#cbd5e1> <white><iron></white>  <#6dd3a0>에메랄드</#6dd3a0> <white><emeralds></white>  <#a8a29e>고대 잔해</#a8a29e> <white><ancient_debris></white>  <#c4b5fd>스포너</#c4b5fd> <white><spawners></white>"
+  "lobby": "<#facc15>🎉 로비 우승</#facc15> <white><lobby_wins></white>   <#7b8aa0>채팅</#7b8aa0> <white><chat_wins></white>  <#7b8aa0>보물</#7b8aa0> <white><treasures></white>  <#7b8aa0>감자</#7b8aa0> <white><potato_wins></white>  <#7b8aa0>파쿠르 완주</#7b8aa0> <white><parkour></white>"
+  "rank": "<#7b8aa0>순위:</#7b8aa0> <#f4d35e>승리 <wins_rank></#f4d35e>  <#f95738>처치 <kills_rank></#f95738>  <#c4b5fd>레벨 <level_rank></#c4b5fd>"
+  "button":
+    "leaderboard": "<#fbbf24>🏆 순위표</#fbbf24>"
+    "kits": "<#fb923c>🎒 키트</#fb923c>"
+    "language": "<#7dd3fc>🌐 언어</#7dd3fc>"
+    "players": "<#cbd5e1>👥 모든 플레이어</#cbd5e1>"
+    "settings": "<#cbd5e1>🔧 설정</#cbd5e1>"
+"leaderboard-dialog":
+  "title": "<#fbbf24><bold>🏆 순위표</bold></#fbbf24>"
+  "header": "<#7b8aa0>기준:</#7b8aa0> <stat>   <#7b8aa0>페이지 <page>/<max_page></#7b8aa0>"
+  "entry": "<#f4d35e><bold>#<rank></bold></#f4d35e>  <white><player></white>  <#7b8aa0>-</#7b8aa0>  <#f4d35e><value></#f4d35e>"
+  "you": "<#7b8aa0>내 순위:</#7b8aa0> <#6dd3a0><bold>#<rank></bold></#6dd3a0> <#7b8aa0>(<value>)</#7b8aa0>"
+  "you-unranked": "<#7b8aa0>이 항목에서는 아직 순위가 없습니다.</#7b8aa0>"
+  "stat-selected": "<#6dd3a0>▶</#6dd3a0> <stat> <#6dd3a0>◀</#6dd3a0>"
+  "prev": "<#7dd3fc>◀ 이전</#7dd3fc>"
+  "prev-disabled": "<#3f4a5a>◀ 이전</#3f4a5a>"
+  "next": "<#7dd3fc>다음 ▶</#7dd3fc>"
+  "next-disabled": "<#3f4a5a>다음 ▶</#3f4a5a>"
+  "view-profile": "<#7dd3fc>▶ 클릭하여 프로필 보기</#7dd3fc>"
+"settings-dialog":
+  "title": "<item:comparator> <#cbd5e1><bold>설정</bold></#cbd5e1>"
+  "description": "<#7b8aa0>설정을 클릭하면 켜거나 끕니다. 선택은 프로필에 저장됩니다.</#7b8aa0>"
+  "state":
+    "on": "<item:lime_dye> <#6dd3a0><bold>켜짐</bold></#6dd3a0>"
+    "off": "<item:gray_dye> <#f95738><bold>꺼짐</bold></#f95738>"
+  "icon":
+    "scoreboard": "<item:paper>"
+    "own-nametag": "<item:name_tag>"
+    "private-messages": "<item:writable_book>"
+    "join-leave-messages": "<item:oak_door>"
+    "show-cosmetics": "<item:blaze_powder>"
+    "hide-lobby-players": "<item:ender_eye>"
+    "lobby-fly": "<item:feather>"
+  "setting":
+    "scoreboard": "<icon> <white>스코어보드</white>  <state>"
+    "own-nametag": "<icon> <white>내 이름표</white>  <state>"
+    "private-messages": "<icon> <white>개인 메시지</white>  <state>"
+    "join-leave-messages": "<icon> <white>접속/퇴장 메시지</white>  <state>"
+    "show-cosmetics": "<icon> <white>꾸미기 표시</white>  <state>"
+    "hide-lobby-players": "<icon> <white>로비 플레이어 숨기기</white>  <state>"
+    "lobby-fly": "<icon> <white>로비 비행</white>  <state>"
+  "tooltip":
+    "scoreboard": "<#cbd5e1>화면 옆에 경기 스코어보드를 표시합니다. 단축 명령어: /sb</#cbd5e1>"
+    "own-nametag": "<#cbd5e1>머리 위에 내 이름표를 표시해 3인칭(F5)에서 볼 수 있습니다.</#cbd5e1>"
+    "private-messages": "<#cbd5e1>다른 플레이어가 /msg로 메시지를 보낼 수 있게 합니다. 스태프는 항상 보낼 수 있습니다.</#cbd5e1>"
+    "join-leave-messages": "<#cbd5e1>플레이어가 접속하거나 나갈 때 채팅 메시지를 표시합니다.</#cbd5e1>"
+    "show-cosmetics": "<#cbd5e1>다른 플레이어의 궤도 효과, 궤적, 처치 효과를 봅니다. 내 꾸미기는 항상 보입니다.</#cbd5e1>"
+    "hide-lobby-players": "<#cbd5e1>로비에 있는 동안 다른 플레이어를 모두 숨깁니다. 경기에는 영향이 없습니다.</#cbd5e1>"
+    "lobby-fly": "<#cbd5e1>로비에서 날아다닙니다. 로비에서만 작동합니다.</#cbd5e1>"
+"lobbygame":
+  "only":
+    "waiting": "<#f95738>로비 미니게임은 서버가 대기 로비 상태일 때만 진행할 수 있습니다.</#f95738>"
+  "already":
+    "running": "<#f95738>이미 로비 미니게임이 진행 중입니다.</#f95738>"
+  "none":
+    "running": "<#f4d35e>진행 중인 로비 미니게임이 없습니다.</#f4d35e>"
+  "no":
+    "words": "<#f95738>단어 맞추기 단어가 설정되어 있지 않습니다.</#f95738>"
+  "word":
+    "invalid": "<#f95738>잘못된 단어입니다. 영문자나 숫자만 사용하세요.</#f95738>"
+    "exists": "<#f95738><word>은(는) 이미 단어 목록에 있습니다.</#f95738>"
+    "missing": "<#f95738><word>은(는) 단어 목록에 없습니다.</#f95738>"
+    "added": "<#6dd3a0>단어 목록에 <word>을(를) 추가했습니다.</#6dd3a0>"
+    "removed": "<#f95738>단어 목록에서 <word>을(를) 삭제했습니다.</#f95738>"
+    "list":
+      "text": "<#faf0ca>단어 맞추기 단어:</#faf0ca> <white><words></white>"
+      "empty": "<#f4d35e>아직 설정된 단어가 없습니다.</#f4d35e>"
+  "start":
+    "command":
+      "success": "<#6dd3a0>로비 미니게임을 시작했습니다.</#6dd3a0>"
+  "stopped":
+    "text": "<prefix><#f95738><sender></#f95738> <#cbd5e1>님이 로비 미니게임을 중지했습니다.</#cbd5e1>"
+    "command": "<#6dd3a0>로비 미니게임을 중지했습니다.</#6dd3a0>"
+  "started":
+    "math": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>님이 계산 문제를 냈습니다:</#cbd5e1> <white><expression></white>"
+    "unscramble": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>님이 단어 맞추기를 냈습니다:</#cbd5e1> <white><scrambled></white>"
+  "title":
+    "text": "<#f4d35e><bold>로비 미니게임</bold></#f4d35e>"
+    "math":
+      "subtitle": "<white>계산하세요: <expression></white>"
+    "unscramble":
+      "subtitle": "<white>단어를 맞추세요: <scrambled></white>"
+  "winner":
+    "text": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>님이 <white><time></white> 만에 우승!</#cbd5e1> <#7b8aa0>— 정답:</#7b8aa0> <white><answer></white>"
+    "title": "<#6dd3a0><bold><player></bold></#6dd3a0>"
+    "subtitle": "<white><time> 만에 우승</white>"
+  "timeout": "<prefix><#f95738>제한 시간 안에 아무도 맞히지 못했습니다.</#f95738> <#cbd5e1>정답:</#cbd5e1> <white><answer></white>"
+"match":
+  "starting": "<prefix><#f4d35e><seconds>초 후 경기가 시작됩니다.</#f4d35e>"
+  "force":
+    "started": "<prefix><#f95738>카운트다운을 건너뛰고 경기를 강제로 시작했습니다.</#f95738>"
+  "started": "<prefix><#6dd3a0>UHC가 시작되었습니다.</#6dd3a0>"
+  "exp":
+    "earned": "<#f4d35e>이번 경기에서 경험치 <white><experience></white>을(를) 얻었습니다.</#f4d35e>"
+  "rejoined": "<#6dd3a0>진행 중인 경기에 다시 참가했습니다.</#6dd3a0> <#7dd3fc>남은 재접속 시간:</#7dd3fc> <white><time></white>"
+  "disconnected": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>님이 경기에서 나갔습니다. 재접속 제한</#cbd5e1> <white><minutes>분</white> <#6b7280>(<time> 남음)</#6b7280>"
+  "draw": "<prefix><#f95738>승자 없이 경기가 끝났습니다.</#f95738>"
+  "summary":
+    "header": "<#334155><st>                                        </st></#334155>"
+    "title": "<#f4d35e><bold>  ⚔ 경기 요약</bold></#f4d35e>"
+    "winner": "<#7b8aa0>  승자     </#7b8aa0><#f4d35e><bold><winner></bold></#f4d35e>"
+    "duration": "<#7b8aa0>  경기 시간 </#7b8aa0><white><duration></white>"
+    "players": "<#7b8aa0>  플레이어 </#7b8aa0><white><players></white>"
+    "divider": "<#1e293b><st>                                        </st></#1e293b>"
+    "kills":
+      "header": "<#93c5fd>  처치 순위</#93c5fd>"
+      "entry": "<#7b8aa0>  <rank>.</#7b8aa0> <white><player></white><#7b8aa0> — </#7b8aa0><#f4d35e><kills>처치<plural></#f4d35e>"
+      "none": "<#7b8aa0>  기록된 처치가 없습니다.</#7b8aa0>"
+    "footer": "<#334155><st>                                        </st></#334155>"
+  "ending":
+    "text": "<prefix><#9db4c0>경기가 끝납니다. <white><seconds>초</white> 후 로비로 돌아갑니다.</#9db4c0>"
+    "actionbar": "<#faf0ca><seconds>초 후 로비로 돌아갑니다</#faf0ca>"
+  "countdown":
+    "actionbar": "<#ee964b><white><seconds>초</white> 후 경기 시작</#ee964b>"
+  "stopped": "<#f95738>경기가 중지되었습니다.</#f95738>"
+  "reset": "<#6dd3a0>모든 경기 상태와 플레이어 데이터를 강제로 초기화했습니다.</#6dd3a0>"
+"countdown": "<prefix><#ee964b><seconds>초 후 시작합니다.</#ee964b>"
+"title":
+  "opening": "<gradient:#f4d35e:#ee964b><bold>시련UHC</bold></gradient>"
+  "match":
+    "starting": "<#f4d35e><bold>경기 시작</bold></#f4d35e>"
+    "started": "<#6dd3a0><bold>UHC 진행 중</bold></#6dd3a0>"
+    "draw": "<#f95738><bold>승자 없음</bold></#f95738>"
+    "ending": "<#9db4c0><bold>경기 종료</bold></#9db4c0>"
+  "countdown": "<#ee964b><bold><seconds></bold></#ee964b>"
+  "launch":
+    "far": "<gradient:#faf0ca:#f4d35e><bold><seconds></bold></gradient>"
+    "final": "<gradient:#ee964b:#f95738><bold>❰ <seconds> ❱</bold></gradient>"
+    "go": "<gradient:#f95738:#f4d35e:#6dd3a0><bold>⚔ 싸워라 ⚔</bold></gradient>"
+  "scatter":
+    "sequence":
+      "start": "<#faf0ca><bold>배치 시작</bold></#faf0ca>"
+    "settle":
+      "wait": "<#9db4c0><bold>맵 준비 중</bold></#9db4c0>"
+  "scattered": "<#6dd3a0><bold>배치 완료</bold></#6dd3a0>"
+  "grace":
+    "start": "<#faf0ca><bold>보호 시간</bold></#faf0ca>"
+    "end": "<#f95738><bold>PvP 시작</bold></#f95738>"
+  "final":
+    "duel":
+      "start": "<#f4d35e><bold>최종 결투</bold></#f4d35e>"
+    "heal": "<#6dd3a0><bold>최종 회복</bold></#6dd3a0>"
+  "sudden":
+    "death":
+      "start": "<#f95738><bold>서든 데스</bold></#f95738>"
+      "finish": "<#f4d35e><bold>서든 데스 승자</bold></#f4d35e>"
+  "revived":
+    "self": "<#6dd3a0><bold>부활</bold></#6dd3a0>"
+  "winner": "<#f4d35e><bold>승자</bold></#f4d35e>"
+  "border":
+    "shrinking": "<#ee964b><bold>경계 축소</bold></#ee964b>"
+  "eliminated":
+    "text": "<#f95738><bold>탈락</bold></#f95738>"
+    "announcement": "<#f95738><bold>플레이어 탈락</bold></#f95738>"
+"subtitle":
+  "opening":
+    "starting": "<white>곧 시작합니다</white>"
+    "credits": "<#7b8aa0>제작: <white>平常網路資訊工作室 (RNIS)</white></#7b8aa0>"
+    "version": "<#7b8aa0>버전 <white><version></white></#7b8aa0>"
+  "match":
+    "starting": "<white><seconds>초 후 카운트다운이 시작됩니다.</white>"
+    "started": "<white>경기가 시작되었습니다.</white>"
+    "draw": "<white>모든 플레이어가 탈락했습니다.</white>"
+    "ending": "<white><seconds>초 후 로비로 돌아갑니다.</white>"
+  "countdown": "<white>경기 시작까지</white>"
+  "launch":
+    "far": "<#7b8aa0>곧 경기가 시작됩니다</#7b8aa0>"
+    "final": "<#f95738>전투를 준비하세요</#f95738>"
+    "go": "<white>곧 배치됩니다 — 승리를 위해 싸우세요!</white>"
+  "scatter":
+    "sequence":
+      "start": "<white>플레이어를 이동시키는 중입니다.</white>"
+    "settle":
+      "wait": "<white>시작까지 <seconds>초 기다립니다.</white>"
+  "scattered": "<white>경기 위치가 정해졌습니다.</white>"
+  "grace":
+    "start": "<white><seconds>초 동안 PvP 보호.</white>"
+    "end": "<white>보호 시간이 끝났습니다.</white>"
+  "final":
+    "duel":
+      "start": "<white><seconds>초 후 경기가 끝납니다.</white>"
+    "heal": "<white>체력과 허기가 회복되었습니다.</white>"
+  "sudden":
+    "death":
+      "start": "<white>마지막까지 살아남는 사람이 승리합니다.</white>"
+      "finish": "<white><player> 님이 경기에서 승리했습니다.</white>"
+  "revived":
+    "self": "<white>경기에 복귀했습니다.</white>"
+  "winner": "<white><player> 님이 경기에서 승리했습니다.</white>"
+  "border":
+    "shrinking": "<white><stage>/<total>단계: <size>까지.</white>"
+  "eliminated":
+    "text": "<white>경기에서 탈락했습니다.</white>"
+    "announcement": "<white><player> 님이 탈락했습니다.</white>"
+"pause":
+  "enabled": "<prefix><#f4d35e>경기가 일시 정지되었습니다.</#f4d35e>"
+  "disabled": "<prefix><#6dd3a0>경기가 재개되었습니다.</#6dd3a0>"
+  "already": "<#f4d35e>이미 경기가 일시 정지되어 있습니다.</#f4d35e>"
+  "invalid": "<#f95738>카운트다운, 보호 시간, 진행 중, 서든 데스, 로비 복귀 중에만 일시 정지할 수 있습니다.</#f95738>"
+  "blocked": "<#f95738>경기가 일시 정지 중이라 지금은 할 수 없습니다.</#f95738>"
+"resume":
+  "invalid": "<#f95738>경기가 일시 정지되어 있지 않습니다.</#f95738>"
+"match-restore":
+  "host-notice": "<prefix><#f4d35e>경기 도중 서버가 재시작되었습니다. 경기가 복원되어 일시 정지 상태입니다 (<white><phase></white>). 아직 <white><offline></white>명이 접속하지 않았습니다. 계속하려면 <white>/admin resume</white>, 끝내려면 <white>/admin stop</white>을 실행하세요.</#f4d35e>"
+  "player-notice": "<prefix><#f4d35e>경기 도중 서버가 재시작되었습니다. 호스트가 재개할 때까지 경기가 일시 정지됩니다.</#f4d35e>"
+"freeze":
+  "enabled": "<#7dd3fc><player> 님을 얼렸습니다.</#7dd3fc>"
+  "disabled": "<#6dd3a0><player> 님을 풀어 주었습니다.</#6dd3a0>"
+  "already": "<#f4d35e><player> 님은 이미 얼어 있습니다.</#f4d35e>"
+  "notify": "<#f95738>관리자가 당신을 얼렸습니다.</#f95738>"
+  "blocked": "<#f95738>얼어 있어서 그렇게 할 수 없습니다.</#f95738>"
+"unfreeze":
+  "already": "<#f4d35e><player> 님은 얼어 있지 않습니다.</#f4d35e>"
+  "notify": "<#6dd3a0>얼음이 풀렸습니다.</#6dd3a0>"
+"scatter":
+  "sequence":
+    "start": "<prefix><#faf0ca>배치를 시작합니다. 플레이어를 한 명씩 이동시킵니다.</#faf0ca>"
+  "bossbar": "<#f4d35e>플레이어 배치 중 <white><current>/<total></white> <#7b8aa0>(<percent>%)</#7b8aa0>"
+  "settle":
+    "wait": "<prefix><#9db4c0>맵이 준비될 때까지 <seconds>초 기다립니다.</#9db4c0>"
+  "countdown":
+    "bossbar": "<#22c55e><white><seconds></white>초 후 게임 시작"
+    "title": "<#22c55e><bold><seconds></bold></#22c55e>"
+"scattered": "<#6dd3a0>배치되었습니다.</#6dd3a0>"
+"advancement-message": "<#f4d35e><player></#f4d35e> <#faf0ca>님이 발전 과제를 달성했습니다</#faf0ca> <#86efac>[</#86efac><advancement><#86efac>]</#86efac>"
+"arrow-health": "<red>❤ <player></red> <gray>—</gray> <white><health>/<max_health></white>"
+"achievement":
+  "root":
+    "title": "시련UHC"
+    "description": "시련UHC 업적을 달성해 나가세요."
+  "first_game":
+    "title": "첫 경기"
+    "description": "첫 UHC 경기를 플레이하세요."
+  "regular":
+    "title": "단골"
+    "description": "UHC 경기를 5번 플레이하세요."
+  "veteran":
+    "title": "베테랑"
+    "description": "UHC 경기를 10번 플레이하세요."
+  "marathon":
+    "title": "마라톤"
+    "description": "UHC 경기를 25번 플레이하세요."
+  "first_blood":
+    "title": "첫 피"
+    "description": "첫 처치를 기록하세요."
+  "hat_trick":
+    "title": "해트트릭"
+    "description": "누적 처치 3회를 달성하세요."
+  "hunter":
+    "title": "사냥꾼"
+    "description": "누적 처치 10회를 달성하세요."
+  "slayer":
+    "title": "학살자"
+    "description": "누적 처치 25회를 달성하세요."
+  "on_fire":
+    "title": "불타오르네"
+    "description": "5연속 처치를 달성하세요."
+  "helper":
+    "title": "조력자"
+    "description": "첫 어시스트를 기록하세요."
+  "team_player":
+    "title": "팀 플레이어"
+    "description": "누적 어시스트 5회를 달성하세요."
+  "support_master":
+    "title": "서포트 마스터"
+    "description": "누적 어시스트 15회를 달성하세요."
+  "champion":
+    "title": "챔피언"
+    "description": "첫 UHC 경기에서 승리하세요."
+  "contender":
+    "title": "도전자"
+    "description": "UHC 경기에서 3번 승리하세요."
+  "legend":
+    "title": "전설"
+    "description": "UHC 경기에서 5번 승리하세요."
+  "unlucky":
+    "title": "운이 없었다"
+    "description": "UHC 경기에서 한 번 사망하세요."
+  "novice":
+    "title": "초보자"
+    "description": "레벨 1에 도달하세요."
+  "learner":
+    "title": "배우는 자"
+    "description": "레벨 3에 도달하세요."
+  "apprentice":
+    "title": "견습생"
+    "description": "레벨 5에 도달하세요."
+  "seasoned":
+    "title": "숙련자"
+    "description": "레벨 10에 도달하세요."
+  "adept":
+    "title": "능숙한 자"
+    "description": "레벨 15에 도달하세요."
+  "expert":
+    "title": "전문가"
+    "description": "레벨 18에 도달하세요."
+  "prestige":
+    "title": "명성"
+    "description": "레벨 20에 도달하세요."
+  "elite":
+    "title": "정예"
+    "description": "레벨 25에 도달하세요."
+  "master":
+    "title": "마스터"
+    "description": "레벨 30에 도달하세요."
+  "ascendant":
+    "title": "초월자"
+    "description": "레벨 40에 도달하세요."
+  "void_walker":
+    "title": "공허 속으로"
+    "description": "공허로 떨어지세요."
+  "hot_feet":
+    "title": "뜨거운 발"
+    "description": "용암에서 사망하세요."
+  "crispy":
+    "title": "바삭바삭"
+    "description": "불에 타 사망하세요."
+  "sniper":
+    "title": "저격수"
+    "description": "30블록 이상 떨어진 곳에서 활로 처치하세요."
+  "pacifist":
+    "title": "평화주의자"
+    "description": "한 번도 처치하지 않고 경기에서 승리하세요."
+  "speedrunner":
+    "title": "스피드러너"
+    "description": "5분 안에 경기에서 승리하세요."
+  "close_call":
+    "title": "아슬아슬"
+    "description": "체력이 하트 2개 이하로 남은 채 경기에서 승리하세요."
+  "totem_saved":
+    "title": "죽음을 속이다"
+    "description": "불사의 토템으로 치명타에서 살아남으세요."
+  "lobby_first_win":
+    "title": "로비 챔피언"
+    "description": "첫 로비 게임에서 우승하세요."
+  "lobby_regular":
+    "title": "로비 단골"
+    "description": "로비 게임에서 10번 우승하세요."
+  "lobby_legend":
+    "title": "로비 전설"
+    "description": "로비 게임에서 50번 우승하세요."
+  "quiz_whiz":
+    "title": "퀴즈 천재"
+    "description": "채팅 게임에서 10번 우승하세요."
+  "treasure_hunter":
+    "title": "보물 사냥꾼"
+    "description": "로비 보물을 5개 찾으세요."
+  "hot_hands":
+    "title": "뜨거운 손"
+    "description": "뜨거운 감자에서 3번 우승하세요."
+  "free_runner":
+    "title": "프리러너"
+    "description": "로비 파쿠르를 완주하세요."
+  "parkour_speed":
+    "title": "빠른 발"
+    "description": "로비 파쿠르를 아주 빠르게 완주하세요."
+"grace":
+  "start": "<prefix><#faf0ca><seconds>초 동안 보호 시간이 시작되었습니다.</#faf0ca>"
+  "end": "<prefix><#f95738>보호 시간이 끝났습니다. PvP가 시작됩니다.</#f95738>"
+  "skipped": "<prefix><#f95738>보호 시간을 건너뛰었습니다. 이제 PvP가 가능합니다.</#f95738>"
+  "blocked": "<#f95738>보호 시간에는 PvP를 할 수 없습니다.</#f95738>"
+"skipphase":
+  "invalid": "<#f95738>지금은 건너뛸 수 있는 단계가 없습니다.</#f95738>"
+  "skipped": "<#f4d35e><white><phase></white> 단계를 건너뛰고 <white><next></white>(으)로 넘어갔습니다.</#f4d35e>"
+"rescatter-started": "<prefix><#f4d35e>참가자들을 다시 배치하는 중입니다.</#f4d35e>"
+"final":
+  "heal": "<prefix><#86efac>생존한 모든 플레이어에게 최종 회복이 주어졌습니다.</#86efac>"
+  "duel":
+    "start": "<prefix><#f4d35e>최종 결투가 시작되었습니다. 그 전에 승자가 없으면 <seconds>초 후 경기가 끝납니다.</#f4d35e>"
+"sudden":
+  "death":
+    "start": "<prefix><#f95738>서든 데스 시작! 생존자 전원이 기반암 상자에 갇혀 마지막 한 명이 남을 때까지 싸웁니다.</#f95738>"
+    "finish": "<prefix><#f4d35e><player></#f4d35e> <#f95738>님이 서든 데스로 승리했습니다.</#f95738>"
+"eliminated":
+  "text": "<#f95738>탈락했습니다.</#f95738>"
+  "announcement": "<prefix><#f95738><player></#f95738> <#faf0ca>님이 탈락했습니다.</#faf0ca>"
+"mannequin":
+  "name": "<#fca5a5>접속 끊김</#fca5a5> <dark_gray>-</dark_gray> <white><player></white>"
+  "tab": "<gray><strikethrough><player></strikethrough></gray> <#fca5a5>(접속 끊김)</#fca5a5>"
+"kick":
+  "on":
+    "death":
+      "message": "<#f95738><bold>사망했습니다.</bold></#f95738>\n<#faf0ca>이 서버는 사망 시 추방하도록 설정되어 있습니다.</#faf0ca>"
+"elimination":
+  "forced": "<#6dd3a0>플레이어 <count>명을 탈락시켰습니다.</#6dd3a0>"
+"killalloffline":
+  "none": "<#f4d35e>접속이 끊긴 참가자가 없습니다.</#f4d35e>"
+  "done": "<#6dd3a0>접속이 끊긴 플레이어 <count>명을 탈락시켰습니다.</#6dd3a0>"
+"revived":
+  "self": "<#6dd3a0>부활했습니다.</#6dd3a0>"
+  "announcement": "<prefix><#6dd3a0><player></#6dd3a0> <#faf0ca>님이 부활했습니다.</#faf0ca>"
+"revive":
+  "invalid": "<#f95738><player> 님은 탈락하지 않았습니다.</#f95738>"
+"spectator":
+  "teleporter":
+    "title": "<#334155><bold>플레이어 목록</bold></#334155>"
+    "prev": "<#f4d35e><bold>이전 페이지</bold></#f4d35e>"
+    "page": "<#9db4c0><bold>페이지 <page>/<max_page></bold></#9db4c0>"
+    "next": "<#f4d35e><bold>다음 페이지</bold></#f4d35e>"
+  "menu":
+    "title": "<#6dd3a0><bold>관전 도구</bold></#6dd3a0>"
+  "inspector":
+    "title": "<#334155><bold>플레이어 검사</bold></#334155>"
+  "inspect":
+    "view":
+      "title": "<#334155><bold><player> 님의 인벤토리</bold></#334155>"
+  "target":
+    "head":
+      "name": "<#6dd3a0><bold><player></bold></#6dd3a0>"
+      "teleport":
+        "lore": "<#cbd5e1>클릭하여 이동합니다.</#cbd5e1>"
+      "inspect":
+        "lore": "<#cbd5e1>클릭하여 인벤토리를 검사합니다.</#cbd5e1>"
+      "health": "<#fca5a5>❤ <white><health></white></#fca5a5>   <#7b8aa0>핑</#7b8aa0> <white><ping>ms</white>"
+      "coords": "<#7b8aa0>X:</#7b8aa0> <white><x></white> <#7b8aa0>Y:</#7b8aa0> <white><y></white> <#7b8aa0>Z:</#7b8aa0> <white><z></white>"
+    "offline": "<#f95738><player> 님을 더 이상 찾을 수 없습니다.</#f95738>"
+  "speed":
+    "title": "<#334155><bold>속도 조절</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "walk":
+      "slow": "<white><bold>걷기 0.10</bold></white>"
+      "normal": "<white><bold>걷기 0.20</bold></white>"
+      "fast": "<white><bold>걷기 0.30</bold></white>"
+    "fly":
+      "slow": "<white><bold>비행 0.05</bold></white>"
+      "normal": "<white><bold>비행 0.10</bold></white>"
+      "fast": "<white><bold>비행 0.20</bold></white>"
+    "updated": "<#a7f3d0><type> 속도가 <value>(으)로 바뀌었습니다.</#a7f3d0>"
+  "night":
+    "vision":
+      "enabled": "<#c4b5fd>관전자 야간 투시를 켰습니다.</#c4b5fd>"
+      "disabled": "<#f4d35e>관전자 야간 투시를 껐습니다.</#f4d35e>"
+  "teleported":
+    "text": "<#7dd3fc><player> 님에게 이동했습니다.</#7dd3fc>"
+    "center": "<#7dd3fc>경계 중심으로 이동했습니다.</#7dd3fc>"
+  "no":
+    "targets": "<#f4d35e>지금은 관전할 수 있는 대상이 없습니다.</#f4d35e>"
+  "match":
+    "not":
+      "started": "<#f4d35e>경기가 아직 시작되지 않아 UHC 월드에 들어갈 수 없습니다.</#f4d35e>"
+"pm":
+  "sent": "<#6dd3a0><player> 님에게 메시지를 보냈습니다.</#6dd3a0>"
+"winner": "<prefix><#f4d35e><player></#f4d35e> <#6dd3a0>님이 경기에서 승리했습니다.</#6dd3a0>"
+"chat":
+  "muted":
+    "text": "<prefix><#f95738>전체 채팅이 음소거되었습니다.</#f95738>"
+    "blocked": "<#f95738>현재 전체 채팅이 음소거되어 있습니다.</#f95738>"
+  "unmuted": "<prefix><#6dd3a0>전체 채팅 음소거가 해제되었습니다.</#6dd3a0>"
+  "mute":
+    "already": "<#f4d35e>전체 채팅은 이미 음소거되어 있습니다.</#f4d35e>"
+  "unmute":
+    "already": "<#f4d35e>전체 채팅은 이미 음소거 해제 상태입니다.</#f4d35e>"
+  "cleared": "<prefix><#7dd3fc><white><player></white> 님이 채팅을 지웠습니다.</#7dd3fc>"
+  "message":
+    "cleared": "<#fda4af><white><staff></white> 님이 <white><player></white> 님의 메시지를 지웠습니다.</#fda4af>"
+  "clear":
+    "button":
+      "hover": "<#fda4af><white><player></white> 님의 메시지 지우기.</#fda4af>"
+"drops":
+  "cleared": "<prefix><#7dd3fc><white><player></white> 님이 떨어진 아이템 <white><count></white>개를 치웠습니다.</#7dd3fc>"
+"staffchat":
+  "enabled": "<#6dd3a0>스태프 채팅 모드를 켰습니다.</#6dd3a0>"
+  "disabled": "<#f95738>스태프 채팅 모드를 껐습니다.</#f95738>"
+"alerts":
+  "title": "<#f4d35e><bold>알림 옵션</bold></#f4d35e>"
+  "filler": "<dark_gray> </dark_gray>"
+  "report": "<#f95738><bold>신고 알림</bold></#f95738>"
+  "item":
+    "pvp": "<#ee964b><bold>아이템 PvP 알림</bold></#ee964b>"
+  "pvp": "<#7dd3fc><bold>PvP 알림</bold></#7dd3fc>"
+  "mining": "<#86efac><bold>채광 알림</bold></#86efac>"
+  "status":
+    "on": "<#6dd3a0>상태: 켜짐</#6dd3a0>"
+    "off": "<#f95738>상태: 꺼짐</#f95738>"
+  "click":
+    "toggle": "<#cbd5e1>클릭하여 이 알림을 켜거나 끕니다.</#cbd5e1>"
+  "category":
+    "enabled": "<#6dd3a0><category> 알림을 켰습니다.</#6dd3a0>"
+    "disabled": "<#f95738><category> 알림을 껐습니다.</#f95738>"
+"report":
+  "submitted": "<#6dd3a0><target> 님에 대한 신고가 접수되었습니다.</#6dd3a0>"
+  "alert": "<#f95738>신고</#f95738> <#7b8aa0>| 신고자:</#7b8aa0> <white><reporter></white> <#7b8aa0>| 대상:</#7b8aa0> <white><target></white> <#7b8aa0>| 월드:</#7b8aa0> <white><world></white> <#7b8aa0>| 사유:</#7b8aa0> <white><reason></white>"
+"alert":
+  "pvp": "<#7dd3fc>PvP</#7dd3fc> <#7b8aa0>| 공격자:</#7b8aa0> <white><attacker></white> <#7b8aa0>| 피해자:</#7b8aa0> <white><victim></white> <#7b8aa0>| 월드:</#7b8aa0> <white><world></white>"
+  "item":
+    "pvp": "<#ee964b>아이템 PvP</#ee964b> <#7b8aa0>| 공격자:</#7b8aa0> <white><attacker></white> <#7b8aa0>| 피해자:</#7b8aa0> <white><victim></white> <#7b8aa0>| 아이템:</#7b8aa0> <white><item></white>"
+  "mining": "<#86efac>채광</#86efac> <#7b8aa0>| 플레이어:</#7b8aa0> <white><player></white> <#7b8aa0>| 광석:</#7b8aa0> <white><ore></white> <#7b8aa0>| 위치:</#7b8aa0> <white><x>, <y>, <z></white> <#7b8aa0>| 월드:</#7b8aa0> <white><world></white>"
+"state": "<#7b8aa0>단계:</#7b8aa0> <white><phase></white> <#7b8aa0>| 생존:</#7b8aa0> <white><alive></white> <#7b8aa0>| 사망:</#7b8aa0> <white><dead></white>"
+"errors":
+  "discord-not-configured": "<red>디스코드 초대 링크가 설정되어 있지 않습니다.</red>"
+  "invalid-max-players": "<red>최대 인원은 양수여야 합니다.</red>"
+  "no":
+    "permission": "<red>그렇게 할 권한이 없습니다.</red>"
+    "grace":
+      "period": "<red>건너뛸 보호 시간이 없습니다.</red>"
+    "elimination":
+      "targets": "<red>대상과 일치하는 경기 참가자가 없습니다.</red>"
+    "reply":
+      "target": "<red>답장할 상대가 없습니다.</red>"
+    "active":
+      "participants": "<red>다시 배치할 참가자가 없습니다.</red>"
+  "players":
+    "only": "<red>플레이어만 이 명령어를 사용할 수 있습니다.</red>"
+  "already":
+    "running": "<red>이미 경기가 진행 중입니다.</red>"
+  "not":
+    "running": "<red>중지할 경기가 없습니다.</red>"
+    "enough":
+      "players": "<red>시작하려면 <required>명이 필요합니다. 현재 접속: <current>명.</red>"
+      "teams": "<red>팀 모드에서는 시작하려면 최소 2팀이 필요합니다.</red>"
+  "world":
+    "missing": "<red>설정된 게임 월드 <world>이(가) 불러와지지 않았습니다.</red>"
+    "not":
+      "loaded": "<red>월드 <world>은(는) 현재 불러와져 있지 않습니다.</red>"
+      "overworld": "<red>월드 <world>은(는) 일반 오버월드가 아닙니다.</red>"
+    "create":
+      "failed": "<red>월드 <world>을(를) 만들지 못했습니다.</red>"
+    "center":
+      "not":
+        "land": "<red>월드 <world>의 중앙에 육지가 없습니다.</red>"
+    "protected": "<red>월드 <world>은(는) 보호되어 있어 삭제하거나 재생성할 수 없습니다.</red>"
+    "preview":
+      "active": "<red>월드 미리보기가 진행 중입니다. 시작하기 전에 확정하거나 취소하세요.</red>"
+    "unload":
+      "failed": "<red>월드 <world>을(를) 내리지 못했습니다.</red>"
+    "delete":
+      "failed": "<red>월드 <world>을(를) 삭제하지 못했습니다.</red>"
+  "rescatter":
+    "invalid":
+      "phase": "<red>재배치는 배치 단계나 보호 시간에만 할 수 있습니다.</red>"
+  "invalid":
+    "world":
+      "name": "<red>월드 이름에는 영문자, 숫자, 밑줄, 하이픈만 쓸 수 있습니다.</red>"
+    "border":
+      "size": "<red>경계 크기는 양수여야 합니다.</red>"
+      "center": "<red>경계 중심은 올바른 X, Z 숫자여야 합니다.</red>"
+    "duration": "<red>시간은 양의 정수(초)여야 합니다.</red>"
+  "command":
+    "disabled": "<red>플레이어는 기본 서버 명령어를 사용할 수 없습니다.</red>"
+  "chunky":
+    "unavailable": "<red>Chunky가 설치되지 않았거나 꺼져 있습니다. 월드 미리 생성을 쓰려면 Chunky 플러그인을 설치하세요.</red>"
+    "disabled": "<red>설정에서 Chunky 연동이 꺼져 있습니다.</red>"
+    "no":
+      "active":
+        "task": "<red>진행 중인 Chunky 미리 생성이 없습니다.</red>"
+  "player":
+    "not":
+      "found": "<red><player> 님은 접속해 있지 않습니다.</red>"
+  "use":
+    "pm":
+      "command": "<#f4d35e>개인 메시지는 <white>/msg</white>를 사용하세요.</#f4d35e>"
+  "pm":
+    "self": "<red>자신에게 메시지를 보낼 수 없습니다.</red>"
+  "report":
+    "self": "<red>자신을 신고할 수 없습니다.</red>"
+  "world-not-found": "<red><world>(이)라는 월드가 없습니다. /world list를 확인하세요.</red>"
+"settings":
+  "enabled": "<#6dd3a0>켜짐</#6dd3a0>"
+  "disabled": "<#f95738>꺼짐</#f95738>"
+"team":
+  "winner": "<prefix><#6dd3a0><team> 팀이 경기에서 승리했습니다!</#6dd3a0>"
+  "eliminated": "<prefix><#f95738>☠</#f95738> <team> <#faf0ca>팀이 전멸했습니다!</#faf0ca> <#7b8aa0>(남은 팀 <white><teams></white>)</#7b8aa0>"
+  "title":
+    "winner": "<#6dd3a0><bold><team></bold></#6dd3a0>"
+  "subtitle":
+    "winner": "<white>경기 승리</white>"
+  "disabled": "<#f95738>설정에서 팀이 꺼져 있습니다.</#f95738>"
+  "no":
+    "team": "<#f4d35e>팀에 속해 있지 않습니다.</#f4d35e>"
+  "already": "<#f4d35e>이미 <white><team></white> 팀에 있습니다.</#f4d35e>"
+  "full": "<#f95738><team> 팀은 이미 가득 찼습니다.</#f95738>"
+  "joined":
+    "text": "<#6dd3a0><white><team></white> 팀에 참가했습니다.</#6dd3a0>"
+    "hint": "<#7b8aa0><white>/tm</white>으로 팀 채팅을 전환하고, <white>/tc</white>로 좌표를 보낼 수 있습니다.</#7b8aa0>"
+  "coords":
+    "message": "<#7dd3fc>좌표</#7dd3fc> <gray>(<world>)</gray> <white><x></white><gray>,</gray> <white><y></white><gray>,</gray> <white><z></white>"
+    "sent": "<#6dd3a0>팀에 좌표를 보냈습니다.</#6dd3a0>"
+  "left": "<#f4d35e><white><team></white> 팀을 나갔습니다.</#f4d35e>"
+  "join":
+    "locked": "<#f95738>현재 로비에서 팀을 바꿀 수 없습니다.</#f95738>"
+  "friendly":
+    "fire":
+      "blocked": "<#f95738>아군 공격이 꺼져 있습니다.</#f95738>"
+  "chat":
+    "enabled": "<#6dd3a0>팀 채팅을 켰습니다.</#6dd3a0>"
+    "disabled": "<#f95738>팀 채팅을 껐습니다.</#f95738>"
+  "usage":
+    "root": "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- 팀 메뉴 열기</#7b8aa0><newline> <#93c5fd>/team list | join <team> | leave</#93c5fd> <#7b8aa0>- 팀 둘러보기, 참가, 나가기</#7b8aa0><newline> <#93c5fd>/team create [이름]</#93c5fd> <#7b8aa0>- 내 팀 만들기</#7b8aa0><newline> <#93c5fd>/team invite <player></#93c5fd> <#7b8aa0>- 초대하기 (리더)</#7b8aa0><newline> <#93c5fd>/team rename <display name> | color <color></#93c5fd> <#7b8aa0>- 팀 이름/색 바꾸기 (리더)</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- 참가 허용 범위 (리더)</#7b8aa0><newline> <#93c5fd>/team transfer <player> | kick <player> | disband</#93c5fd> <#7b8aa0>- 팀 관리 (리더)</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- 팀 채팅 전환 (또는 /tm)</#7b8aa0>"
+    "join": "<#f4d35e><bold>/team join</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team join <team></#93c5fd> <#7b8aa0>- 공개 팀에 참가</#7b8aa0>"
+    "create": "<#f4d35e><bold>/team create</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team create [이름]</#93c5fd> <#7b8aa0>- 팀 만들기 (이름은 선택)</#7b8aa0>"
+    "delete": "<#f4d35e><bold>/admin team delete</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team delete <team></#93c5fd> <#7b8aa0>- 팀 삭제</#7b8aa0>"
+    "set": "<#f4d35e><bold>/admin team set</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team set <player> <team></#93c5fd> <#7b8aa0>- 플레이어를 팀에 배정</#7b8aa0>"
+    "rename": "<#f4d35e><bold>/admin team rename</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team rename <team> <display name></#93c5fd> <#7b8aa0>- 팀 이름 변경</#7b8aa0>"
+    "color": "<#f4d35e><bold>/admin team color</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team color <team> <color></#93c5fd> <#7b8aa0>- 팀 색 변경</#7b8aa0>"
+    "size": "<#f4d35e><bold>/admin team size</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin team size <size></#93c5fd> <#7b8aa0>- 팀당 인원</#7b8aa0>"
+    "transfer": "<#f4d35e><bold>/team transfer</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team transfer <player></#93c5fd> <#7b8aa0>- 다른 사람을 리더로 지정</#7b8aa0>"
+    "kick": "<#f4d35e><bold>/team kick</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team kick <player></#93c5fd> <#7b8aa0>- 팀에서 플레이어 내보내기</#7b8aa0>"
+  "list":
+    "disabled": "<#f95738>팀이 꺼져 있습니다.</#f95738>"
+    "empty": "<#f4d35e>아직 만들어진 팀이 없습니다.</#f4d35e>"
+    "line": "<team_prefix><team><gray>:</gray> <white><players></white>"
+    "none": "없음"
+  "visibility":
+    "public": "공개"
+    "private": "비공개"
+  "private": "<#f95738><team> 팀은 비공개입니다. 팀 리더에게 초대하거나 옮겨 달라고 요청하세요.</#f95738>"
+  "not":
+    "leader": "<#f95738>팀 리더만 할 수 있습니다.</#f95738>"
+  "set":
+    "public": "<#6dd3a0><team> 팀이 공개로 바뀌었습니다.</#6dd3a0>"
+    "private": "<#f4d35e><team> 팀이 비공개로 바뀌었습니다.</#f4d35e>"
+  "transfer":
+    "not":
+      "member": "<#f95738><player> 님은 당신의 팀원이 아닙니다.</#f95738>"
+  "leader":
+    "transferred": "<#6dd3a0><player> 님이 이제 <team> 팀의 리더입니다.</#6dd3a0>"
+  "kicked": "<#f4d35e><team> 팀에서 <white><player></white> 님을 내보냈습니다.</#f4d35e>"
+  "kick":
+    "self": "<#f95738>자신을 내보낼 수 없습니다.</#f95738>"
+  "disbanded": "<#f95738><white><team></white> 팀을 해체했습니다.</#f95738>"
+  "admin":
+    "invalid":
+      "id": "<#f95738>팀 ID에는 영문 소문자, 숫자, 밑줄만 쓸 수 있습니다.</#f95738>"
+      "color": "<#f95738>올바른 팀 색이 아닙니다.</#f95738>"
+    "already":
+      "exists": "<#f95738><white><team></white> 팀은 이미 있습니다.</#f95738>"
+    "missing": "<#f95738><white><team></white> 팀은 존재하지 않습니다.</#f95738>"
+    "created": "<#6dd3a0><white><team></white> 팀을 만들었습니다.</#6dd3a0>"
+    "deleted":
+      "text": "<#f95738><white><team></white> 팀을 삭제했습니다.</#f95738>"
+      "all": "<#f95738>팀 <white><count></white>개를 삭제했습니다.</#f95738>"
+    "renamed": "<#6dd3a0><white><team></white> 팀의 이름을 <white><name></white>(으)로 바꿨습니다.</#6dd3a0>"
+    "recolored": "<#6dd3a0><white><team></white> 팀의 색을 <white><color></white>(으)로 바꿨습니다.</#6dd3a0>"
+    "cleared": "<#f4d35e>모든 팀 소속을 비웠습니다.</#f4d35e>"
+    "shuffle":
+      "text": "<#ffd166><bold>플레이어 섞기</bold></#ffd166>"
+      "lore": "<#cbd5e1>접속 중인 모든 플레이어를 무작위로 균형 있게 팀에 배정합니다.</#cbd5e1>"
+      "empty": "<#f95738>팀에 섞을 플레이어가 없습니다.</#f95738>"
+    "shuffled": "<prefix><#6dd3a0>플레이어 <white><count></white>명을 팀에 균형 있게 배정했습니다.</#6dd3a0>"
+    "enabled": "<#6dd3a0>팀을 켰습니다.</#6dd3a0>"
+    "disabled": "<#f95738>팀을 껐습니다.</#f95738>"
+    "size":
+      "set": "<#6dd3a0>팀 최대 인원이 <white><size></white>명이 되었습니다.</#6dd3a0>"
+    "title": "<#334155><bold>팀 관리</bold></#334155>"
+    "create":
+      "text": "<#6dd3a0><bold>팀 만들기</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>클릭하여 팀 만들기 창을 엽니다.</#cbd5e1>"
+    "clear":
+      "text": "<#f4d35e><bold>소속 비우기</bold></#f4d35e>"
+      "lore": "<#cbd5e1>모든 플레이어를 팀에서 빼냅니다 (팀 정의는 유지).</#cbd5e1>"
+    "delete":
+      "all":
+        "text": "<#f95738><bold>모든 팀 삭제</bold></#f95738>"
+        "lore": "<#cbd5e1>모든 팀 정의와 소속을 삭제합니다.</#cbd5e1>"
+    "enable":
+      "text": "<#6dd3a0><bold>팀 켜기</bold></#6dd3a0>"
+    "disable":
+      "text": "<#f95738><bold>팀 끄기</bold></#f95738>"
+    "toggle":
+      "lore": "<#cbd5e1>현재 팀 상태: <state></#cbd5e1>"
+    "set-team":
+      "text": "<#6dd3a0><bold>플레이어 팀 지정</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>클릭하여 플레이어를 팀에 배정합니다.</#cbd5e1>"
+    "rename-team":
+      "text": "<#f4d35e><bold>팀 이름 변경</bold></#f4d35e>"
+      "lore": "<#cbd5e1>클릭하여 팀 이름을 바꿉니다.</#cbd5e1>"
+    "recolor-team":
+      "text": "<#cbd5e1><bold>팀 색 변경</bold></#cbd5e1>"
+      "lore": "<#cbd5e1>클릭하여 팀 색을 바꿉니다.</#cbd5e1>"
+    "delete-team":
+      "text": "<#f95738><bold>팀 삭제</bold></#f95738>"
+      "lore": "<#cbd5e1>클릭하여 팀을 삭제합니다.</#cbd5e1>"
+    "picker":
+      "select-player":
+        "title": "<#475569><bold>관리: 플레이어 선택</bold></#475569>"
+        "lore": "<#7dd3fc>클릭하여 이 플레이어를 선택합니다.</#7dd3fc>"
+      "set-team-title": "<#475569><bold>팀 지정: <player></bold></#475569>"
+      "back-to-players": "<red>플레이어 목록으로</red>"
+      "remove-from-team":
+        "text": "<#f87171><bold>팀에서 빼기</bold></#f87171>"
+        "lore": "<gray>클릭하여 플레이어를 현재 팀에서 뺍니다.</gray>"
+      "assign-team-lore": "<#7dd3fc>클릭하여 플레이어를 이 팀에 배정합니다.</#7dd3fc>"
+      "removed-from-team": "<green><player> 님을 팀에서 뺐습니다.</green>"
+      "recolor-team":
+        "title": "<#475569><bold>관리: 팀 색 변경</bold></#475569>"
+        "lore": "<#7dd3fc>클릭하여 색을 바꿀 팀으로 선택합니다.</#7dd3fc>"
+      "delete-team":
+        "title": "<#e11d48><bold>관리: 팀 삭제</bold></#e11d48>"
+        "lore": "<#f43f5e>클릭하여 이 팀을 영구히 삭제합니다.</#f43f5e>"
+  "menu":
+    "title": "<#334155><bold>팀 선택</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "join-by-name":
+      "text": "<#7dd3fc><bold>이름으로 팀 참가</bold></#7dd3fc>"
+      "lore": "<white>클릭하여 팀 ID나 표시 이름을 입력해 참가합니다.</white>"
+    "info":
+      "text": "<#f4d35e><bold>팀 정보</bold></#f4d35e>"
+      "lore":
+        "size": "<#cbd5e1>최대 인원: <white><size></white></#cbd5e1>"
+        "friendly":
+          "fire": "<#cbd5e1>아군 공격: <state></#cbd5e1>"
+        "current":
+          "text": "<#cbd5e1>현재 팀: <white><team></white></#cbd5e1>"
+          "none": "<#cbd5e1>현재 팀: <white>없음</white></#cbd5e1>"
+        "visibility":
+          "text": "<#cbd5e1>공개 여부: <white><visibility></white></#cbd5e1>"
+          "none": "<#cbd5e1>공개 여부: <white>없음</white></#cbd5e1>"
+        "leader":
+          "text": "<#cbd5e1>리더: <white><leader></white></#cbd5e1>"
+          "none": "<#cbd5e1>리더: <white>없음</white></#cbd5e1>"
+    "team":
+      "size": "<#cbd5e1>팀원: <white><size></white></#cbd5e1>"
+      "members": "<#cbd5e1><members></#cbd5e1>"
+      "leader": "<#cbd5e1>리더: <white><leader></white></#cbd5e1>"
+      "visibility": "<#cbd5e1>공개 여부: <white><visibility></white></#cbd5e1>"
+    "create":
+      "text": "<#6dd3a0><bold>팀 만들기</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>클릭하여 내 팀을 만듭니다.</#cbd5e1>"
+    "no":
+      "team": "<#f95738><bold>팀 없음</bold></#f95738>"
+    "manage":
+      "text": "<#f4d35e><bold>팀 관리</bold></#f4d35e>"
+      "lore": "<#cbd5e1>리더 관리 메뉴를 엽니다.</#cbd5e1>"
+      "unavailable": "<#6b7280><bold>리더 전용</bold></#6b7280>"
+    "click":
+      "join": "<#7dd3fc>클릭하여 이 팀에 참가합니다.</#7dd3fc>"
+    "selected": "<#6dd3a0>현재 선택됨.</#6dd3a0>"
+    "leave":
+      "text": "<#f95738><bold>팀 나가기</bold></#f95738>"
+      "lore": "<#cbd5e1>클릭하여 현재 팀을 나갑니다.</#cbd5e1>"
+    "disband":
+      "text": "<#f95738><bold>팀 해체</bold></#f95738>"
+      "lore": "<#cbd5e1>이 팀을 없애고 모든 팀원의 배정을 해제합니다.</#cbd5e1>"
+    "invite":
+      "text": "<#7dd3fc><bold>플레이어 초대</bold></#7dd3fc>"
+      "lore": "<#cbd5e1>클릭하여 플레이어를 팀에 초대합니다.</#cbd5e1>"
+    "admin":
+      "text": "<#ffd166><bold>관리 패널</bold></#ffd166>"
+      "lore": "<#cbd5e1>팀 관리 메뉴를 엽니다.</#cbd5e1>"
+  "manage":
+    "title": "<#334155><bold><team> 관리</bold></#334155>"
+    "back": "<#7dd3fc><bold>뒤로</bold></#7dd3fc>"
+    "set":
+      "public": "<#6dd3a0><bold>공개로 설정</bold></#6dd3a0>"
+      "private": "<#f4d35e><bold>비공개로 설정</bold></#f4d35e>"
+    "visibility":
+      "lore": "<#cbd5e1>현재: <white><visibility></white></#cbd5e1>"
+    "member":
+      "text": "<white><name></white>"
+      "leader": "<#f4d35e>리더</#f4d35e>"
+      "kick": "<#f95738>클릭하여 이 팀원을 내보냅니다.</#f95738>"
+      "transfer": "<#ffd166>관리자: 리더를 클릭해 리더를 넘깁니다.</#ffd166>"
+    "rename":
+      "text": "<#ffd166><bold>팀 이름 변경</bold></#ffd166>"
+      "lore": "<#cbd5e1>클릭하여 이름 변경 창을 엽니다.</#cbd5e1>"
+    "color":
+      "text": "<#ffd166><bold>색 변경</bold></#ffd166>"
+      "lore": "<#cbd5e1>클릭하여 색 선택을 엽니다.</#cbd5e1>"
+    "invite-by-name":
+      "text": "<#6dd3a0><bold>이름으로 초대</bold></#6dd3a0>"
+      "lore": "<white>클릭하여 이름을 입력해 플레이어를 초대합니다.</white>"
+    "transfer-leader":
+      "text": "<#f4d35e><bold>리더 넘기기</bold></#f4d35e>"
+      "lore": "<white>클릭하여 이름으로 다른 팀원에게 리더를 넘깁니다.</white>"
+    "kick-by-name":
+      "text": "<#f95738><bold>이름으로 내보내기</bold></#f95738>"
+      "lore": "<white>클릭하여 이름을 입력해 팀원을 내보냅니다.</white>"
+  "color":
+    "title": "<#334155><bold>팀 색 — <team></bold></#334155>"
+    "selected": "<#6dd3a0>현재 선택됨.</#6dd3a0>"
+    "click": "<#7dd3fc>클릭하여 이 색을 적용합니다.</#7dd3fc>"
+  "create-dialog":
+    "title": "<#f4d35e><bold>팀 만들기</bold></#f4d35e>"
+    "body": "<#9db4c0>새 팀의 표시 이름을 입력하세요.</#9db4c0>"
+    "input-label": "<#cbd5e1>팀 이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>만들기</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "rename-dialog":
+    "title": "<#f4d35e><bold>팀 이름 변경</bold></#f4d35e>"
+    "body": "<#9db4c0>이 팀의 새 표시 이름을 입력하세요.</#9db4c0>"
+    "input-label": "<#cbd5e1>새 이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>변경</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "join-dialog":
+    "title": "<#f4d35e><bold>팀 참가</bold></#f4d35e>"
+    "body": "<#9db4c0>참가할 팀의 ID나 표시 이름을 입력하세요.</#9db4c0>"
+    "input-label": "<#cbd5e1>팀 ID/이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>참가</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "invite-dialog":
+    "title": "<#f4d35e><bold>플레이어 초대</bold></#f4d35e>"
+    "body": "<#9db4c0>초대할 플레이어의 이름을 입력하세요.</#9db4c0>"
+    "input-label": "<#cbd5e1>플레이어 이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>초대</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "transfer-dialog":
+    "title": "<#f4d35e><bold>리더 넘기기</bold></#f4d35e>"
+    "body": "<#9db4c0>리더를 넘길 팀원의 이름을 입력하세요.</#9db4c0>"
+    "input-label": "<#cbd5e1>팀원 이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>넘기기</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "kick-dialog":
+    "title": "<#f95738><bold>팀원 내보내기</bold></#f95738>"
+    "body": "<#9db4c0>내보낼 팀원의 이름을 입력하세요.</#9db4c0>"
+    "input-label": "<#cbd5e1>팀원 이름</#cbd5e1>"
+    "confirm": "<#f95738><bold>내보내기</bold></#f95738>"
+    "cancel": "<#cbd5e1>취소</#cbd5e1>"
+  "admin-set-dialog":
+    "title": "<#f4d35e><bold>플레이어 팀 지정</bold></#f4d35e>"
+    "body": "<#9db4c0>플레이어를 팀에 직접 배정합니다.</#9db4c0>"
+    "player-label": "<#cbd5e1>플레이어 이름</#cbd5e1>"
+    "team-label": "<#cbd5e1>팀 ID/이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>배정</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "admin-rename-dialog":
+    "title": "<#f4d35e><bold>관리: 팀 이름 변경</bold></#f4d35e>"
+    "body": "<#9db4c0>팀 ID와 새 표시 이름을 입력하세요.</#9db4c0>"
+    "team-label": "<#cbd5e1>팀 ID</#cbd5e1>"
+    "name-label": "<#cbd5e1>새 이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>변경</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "admin-recolor-dialog":
+    "title": "<#f4d35e><bold>관리: 팀 색 변경</bold></#f4d35e>"
+    "body": "<#9db4c0>팀 ID와 올바른 색 이름을 입력하세요 (예: RED, BLUE).</#9db4c0>"
+    "team-label": "<#cbd5e1>팀 ID</#cbd5e1>"
+    "color-label": "<#cbd5e1>색 이름</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>색 변경</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+  "admin-delete-dialog":
+    "title": "<#f95738><bold>팀 삭제</bold></#f95738>"
+    "body": "<#9db4c0>삭제할 팀의 ID를 입력하세요.</#9db4c0>"
+    "team-label": "<#cbd5e1>팀 ID</#cbd5e1>"
+    "confirm": "<#f95738><bold>삭제</bold></#f95738>"
+    "cancel": "<#cbd5e1>취소</#cbd5e1>"
+  "invite":
+    "title": "<#334155><bold>초대 — <team></bold></#334155>"
+    "sent": "<#6dd3a0><white><player></white> 님을 <white><team></white> 팀에 초대했습니다.</#6dd3a0>"
+    "received": "<#f4d35e><leader></leader> 님이 <white><team></white> 팀에 초대했습니다.</#f4d35e>"
+    "accepted": "<#6dd3a0>초대를 수락하고 <white><team></white> 팀에 참가했습니다.</#6dd3a0>"
+    "declined": "<#f95738><white><team></white> 팀의 초대를 거절했습니다.</#f95738>"
+    "already-invited": "<#f95738><player> 님은 이미 팀에 초대되었습니다.</#f95738>"
+    "already-invited-lore": "<#f4d35e>이미 초대됨</#f4d35e>"
+    "not-pending": "<#f95738>해당 팀의 대기 중인 초대가 없습니다.</#f95738>"
+    "expired": "<#f95738>초대가 만료되었습니다.</#f95738>"
+    "target-has-team": "<#f95738><player> 님은 이미 팀에 속해 있습니다.</#f95738>"
+    "click-invite": "<#7dd3fc>클릭하여 이 플레이어를 초대합니다.</#7dd3fc>"
+  "pagination":
+    "prev":
+      "text": "<#7dd3fc><bold>« 이전 페이지</bold></#7dd3fc>"
+      "lore": "<gray><page> 페이지</gray>"
+    "next":
+      "text": "<#7dd3fc><bold>다음 페이지 »</bold></#7dd3fc>"
+      "lore": "<gray><page> 페이지</gray>"
+  "admin-clear-dialog":
+    "title": "<#f95738><bold>소속을 비울까요?</bold></#f95738>"
+    "body": "<#9db4c0>모든 팀 소속을 비우시겠습니까? 모든 플레이어의 배정이 해제됩니다.</#9db4c0>"
+    "confirm": "<#f95738><bold>비우기</bold></#f95738>"
+    "cancel": "<#cbd5e1>취소</#cbd5e1>"
+  "admin-delete-all-dialog":
+    "title": "<#f95738><bold>모든 팀을 삭제할까요?</bold></#f95738>"
+    "body": "<#9db4c0>모든 팀을 영구히 삭제하시겠습니까? 되돌릴 수 없습니다.</#9db4c0>"
+    "confirm": "<#f95738><bold>모두 삭제</bold></#f95738>"
+    "cancel": "<#cbd5e1>취소</#cbd5e1>"
+"goldenhead":
+  "given": "<#6dd3a0><white><player></white> 님에게 황금 머리를 주었습니다.</#6dd3a0>"
+  "received": "<#6dd3a0>황금 머리를 받았습니다.</#6dd3a0>"
+"practice":
+  "dialog":
+    "title": "<#f87171><bold>⚔ 연습장</bold></#f87171>"
+    "description": "<#cbd5e1>UHC 키트로 하는 개인전 연습입니다. 죽으면 바로 부활합니다.</#cbd5e1>"
+    "status-open": "<#6dd3a0>● 열림</#6dd3a0> <#7b8aa0>· <white><players></white>/<max>명 플레이 중</#7b8aa0>"
+    "status-closed": "<#f95738>● 닫힘</#f95738> <#7b8aa0>- 관리자가 아직 열지 않았습니다.</#7b8aa0>"
+    "layout-custom": "<#7b8aa0>키트 배치:</#7b8aa0> <#93c5fd>내 배치</#93c5fd>"
+    "layout-default": "<#7b8aa0>키트 배치:</#7b8aa0> <white>기본</white>"
+    "join": "<#6dd3a0><bold>⚔ 연습장 입장</bold></#6dd3a0>"
+    "leave": "<#f95738><bold>연습장 나가기</bold></#f95738>"
+    "edit-layout": "<#93c5fd>✎ 키트 배치 편집</#93c5fd>"
+    "reset-layout": "<#f4d35e>↺ 키트 배치 초기화</#f4d35e>"
+  "layout":
+    "title": "<#93c5fd><bold>✎ 키트 배치</bold></#93c5fd>"
+    "help-title": "<#93c5fd><bold>사용 방법</bold></#93c5fd>"
+    "help-1": "<#cbd5e1>아래 인벤토리에서 아이템 위치를 옮기세요.</#cbd5e1>"
+    "help-2": "<#7b8aa0>다 되면 이 창을 닫거나 저장을 누르세요.</#7b8aa0>"
+    "save": "<#6dd3a0><bold>✔ 저장</bold></#6dd3a0>"
+    "reset": "<#f4d35e><bold>↺ 기본으로 초기화</bold></#f4d35e>"
+    "cancel": "<#f95738><bold>✖ 취소</bold></#f95738>"
+    "editing": "<#93c5fd>인벤토리에서 연습 키트를 배치한 다음, 창을 닫으면 저장됩니다.</#93c5fd>"
+    "saved": "<#6dd3a0>키트 배치를 저장했습니다 - 연습장에 들어갈 때마다 사용됩니다.</#6dd3a0>"
+    "cancelled": "<#cbd5e1>키트 배치를 바꾸지 않았습니다.</#cbd5e1>"
+    "reset-done": "<#6dd3a0>키트 배치를 기본으로 초기화했습니다.</#6dd3a0>"
+    "lobby-only": "<#f95738>키트 배치는 로비에서만 편집할 수 있습니다.</#f95738>"
+    "no-kit": "<#f95738>아직 연습 키트가 없습니다 - 관리자가 /practice setkit으로 설정합니다.</#f95738>"
+    "finish-first": "<#f95738>먼저 키트 배치 편집을 마치세요.</#f95738>"
+  "enabled": "<#6dd3a0>연습 모드를 켰습니다.</#6dd3a0>"
+  "disabled": "<#f95738>연습 모드를 껐습니다.</#f95738>"
+  "joined": "<#6dd3a0>연습 모드에 참가했습니다.</#6dd3a0>"
+  "left": "<#7b8aa0>연습 모드를 나갔습니다.</#7b8aa0>"
+  "kit-saved": "<#6dd3a0>연습 키트를 저장했습니다.</#6dd3a0>"
+  "not-enabled": "<#f95738>현재 연습 모드가 꺼져 있습니다.</#f95738>"
+  "full": "<#f95738>연습장이 가득 찼습니다.</#f95738>"
+  "leave-hint": "<#7b8aa0>나가려면 <white>/practice</white>를 다시 사용하세요.</#7b8aa0>"
+  "game-started": "<#f95738>경기가 시작되어 연습 모드가 닫혔습니다.</#f95738>"
+  "world-regenerating": "<#f95738>연습 월드를 재생성하는 중입니다.</#f95738>"
+  "regen-started": "<#ee964b>연습 월드 재생성을 시작했습니다...</#ee964b>"
+  "regen-done": "<#6dd3a0>연습 월드 재생성이 끝났습니다.</#6dd3a0>"
+  "regen-failed": "<red>연습 월드 재생성 실패: 기존 월드를 내리지 못했습니다.</red>"
+"scenarios":
+  "enchanting-disabled": "<#f95738>이번 경기에서는 마법 부여를 할 수 없습니다."
+  "grindstone-disabled": "<#f95738>이번 경기에서는 숫돌을 쓸 수 없습니다."
+  "enchanting-table-blocked": "<#f95738>이번 경기에서는 마법 부여대를 만들 수 없습니다."
+  "hastey-grindstone-blocked": "<#f95738>이번 경기에서는 Hastey 도구에 숫돌을 쓸 수 없습니다."
+  "web-limit-reached": "<#f95738>이번 경기에서 가질 수 있는 거미줄 최대 개수에 도달했습니다."
+  "dnd-combat-locked": "<#f95738>이미 다른 플레이어와 전투 중입니다."
+  "backpack":
+    "title": "<dark_gray><bold>팀 배낭</bold>"
+  "extra-inventory":
+    "title": "<dark_gray><bold>추가 인벤토리</bold>"
+  "backpack-not-active": "<#f95738>배낭은 경기 중에만 사용할 수 있습니다."
+  "backpack-disabled": "<#f95738>Backpacks 시나리오가 켜져 있지 않습니다."
+  "backpack-no-team": "<#f95738>배낭을 쓰려면 팀에 속해 있어야 합니다."
+  "extra-inventory-not-active": "<#f95738>추가 인벤토리는 경기 중에만 사용할 수 있습니다."
+  "extra-inventory-disabled": "<#f95738>Extra Inventory 시나리오가 켜져 있지 않습니다."
+  "nineslot-restricted": "<#f95738>이번 경기에서는 핫바(9칸)만 사용할 수 있습니다."
+  "benchblitz-blocked": "<#f95738>이번 경기에서는 제작대를 더 얻을 수 없습니다."
+  "safe-loot-blocked": "<#f95738>처치한 플레이어만 이 상자를 열 수 있습니다."
+  "no-clean-protected": "<#6dd3a0><white><seconds></white>초 동안 플레이어 공격을 받지 않습니다."
+  "auto-disabled": "<#ee964b>충돌하는 시나리오를 자동으로 껐습니다: <white><scenarios></white></#ee964b>"
+  "start-title": "<#f4d35e><bold>시나리오</bold>"
+  "start-subtitle": "<gray>행운을 빕니다.</gray>"
+  "start-divider": "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "start-header": "<#f4d35e><bold>⚑ 활성 시나리오</bold>"
+  "start-entry": "  <#7b8aa0>◆</#7b8aa0> <white><name></white>"
+  "start-none": "  <gray><i>시나리오 없음 — 바닐라 UHC.</i></gray>"
+  "start-footer": "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "gui":
+    "title": "<dark_gray><bold>시나리오</bold>"
+    "modifier-title": "<dark_gray><bold><scenario> 설정</bold>"
+    "modifier-anvil-title": "<dark_gray><bold>값 설정</bold>"
+    "modifier-dialog-title": "<dark_gray><bold><label></bold>"
+    "modifier-dialog-input-label": "<#7b8aa0>새 값"
+    "modifier-dialog-submit": "<#6dd3a0><bold>확인</bold>"
+    "modifier-dialog-cancel": "<#f95738>취소"
+    "modifier-back": "<#7dd3fc><bold>시나리오 목록으로</bold>"
+    "hint-toggle": "<#93c5fd>▶ 좌클릭으로 전환."
+    "hint-view": "<#f4d35e>▶ 보기 전용. 수정은 관리자에게 요청하세요."
+    "hint-settings": "<#a78bfa>▶ 우클릭으로 설정 편집."
+    "modifier-hint": "<#93c5fd>▶ 클릭하여 편집."
+    "modifier-value": "<#7b8aa0>값  <white><value></white>"
+    "modifier-summary": "<#7b8aa0><label>:</#7b8aa0> <white><value></white>"
+    "conflicts": "<#f4a261>충돌: <conflicts>"
+    "status-lore": "<#7b8aa0>상태  <value>"
+    "prev": "<#7dd3fc>◀ 이전 페이지"
+    "next": "<#7dd3fc>다음 페이지 ▶"
+    "page-indicator": "<bold><#f4d35e>페이지 <current> / <total>"
+    "category-lore": "<#7b8aa0>분류"
+    "category":
+      "world": "월드"
+      "meta": "메타"
+      "loot_death": "전리품 / 사망"
+      "ore_modifiers": "광석 변경"
+      "resource_restrictions": "자원 제한"
+      "enchanting": "마법 부여"
+      "tools_weapons": "도구 / 무기"
+      "exp": "경험치"
+      "drops": "드롭 변경"
+      "player_effects": "플레이어 효과"
+      "combat": "전투"
+      "inventory": "인벤토리 / 보관"
+      "game_mode": "게임 모드"
+    "world":
+      "nether":
+        "name": "<bold><#f4d35e>네더"
+        "desc": "<gray>경기 중 네더에 들어갈 수 있게 합니다."
+      "end":
+        "name": "<bold><#f4d35e>엔드"
+        "desc": "<gray>경기 중 엔드에 들어갈 수 있게 합니다."
+    "modifier":
+      "limitations-diamonds": "<bold><#f4d35e>최대 다이아몬드"
+      "limitations-gold": "<bold><#f4d35e>최대 금 주괴"
+      "limitations-iron": "<bold><#f4d35e>최대 철 주괴"
+      "broadcaster-chance": "<bold><#f4d35e>방송 확률 (%)"
+      "sky-high-limit": "<bold><#f4d35e>Y 높이 제한"
+      "no-clean-seconds": "<bold><#f4d35e>무적 시간 (초)"
+      "time-bomb-seconds": "<bold><#f4d35e>폭발까지 시간 (초)"
+      "coronavirus-interval-minutes": "<bold><#f4d35e>간격 (분)"
+      "raining-tnt-interval-minutes": "<bold><#f4d35e>간격 (분)"
+      "web-limit-count": "<bold><#f4d35e>인벤토리 거미줄 최대 개수"
+      "lucky-leaves-chance": "<bold><#f4d35e>황금 사과 확률 (%)"
+      "nether-enable-time": "<bold><#f4d35e>열리는 시간 (분, 0 = 끔)"
+      "nether-disable-time": "<bold><#f4d35e>닫히는 시간 (분, 0 = 끔)"
+      "end-enable-time": "<bold><#f4d35e>열리는 시간 (분, 0 = 끔)"
+      "end-disable-time": "<bold><#f4d35e>닫히는 시간 (분, 0 = 끔)"
+    "scenario":
+      "random":
+        "name": "<bold><#f4d35e>Random"
+        "desc": "<#6b7280><i>경기 시작 시 무작위 시나리오 조합이 선택됩니다.</i>"
+      "chest":
+        "name": "<bold><#f4d35e>Chest"
+        "desc": "<#6b7280><i>플레이어를 처치하면 전리품이 사망 위치의 상자에 담깁니다.</i>"
+      "time-bomb":
+        "name": "<bold><#f4d35e>Time Bomb"
+        "desc": "<#6b7280><i>플레이어를 처치하면 전리품이 상자에 담기고, 정해진 시간 후 폭발합니다.</i>"
+      "safe-loot":
+        "name": "<bold><#f4d35e>Safe Loot"
+        "desc": "<#6b7280><i>Time Bomb이 켜져 있을 때, 처치한 플레이어만 상자를 열 수 있습니다.</i>"
+      "no-clean":
+        "name": "<bold><#f4d35e>No Clean"
+        "desc": "<#6b7280><i>플레이어를 처치하면 정해진 시간 동안 무적이 됩니다.</i>"
+      "golden-retriever":
+        "name": "<bold><#f4d35e>Golden Retriever"
+        "desc": "<#6b7280><i>플레이어가 죽으면 황금 머리 1개를 떨어뜨립니다.</i>"
+      "bleedingsweets":
+        "name": "<bold><#f4d35e>Bleeding Sweets"
+        "desc": "<#6b7280><i>플레이어가 죽으면 다이아몬드 1개, 금 5개, 화살 16개, 실 1개를 떨어뜨립니다.</i>"
+      "bookception":
+        "name": "<bold><#f4d35e>Bookception"
+        "desc": "<#6b7280><i>플레이어가 죽으면 사망 위치에 무작위 마법이 부여된 책이 나타납니다.</i>"
+      "zombies":
+        "name": "<bold><#f4d35e>Zombies"
+        "desc": "<#6b7280><i>플레이어가 죽으면 사망 위치에 좀비가 생성됩니다.</i>"
+      "betazombies":
+        "name": "<bold><#f4d35e>BetaZombies"
+        "desc": "<#6b7280><i>좀비를 처치하면 깃털을 떨어뜨립니다. (ZOMBIES 필요)</i>"
+      "double-ores":
+        "name": "<bold><#f4d35e>Double Ores"
+        "desc": "<#6b7280><i>모든 광석이 평소의 2배를 떨어뜨립니다.</i>"
+      "triple-ores":
+        "name": "<bold><#f4d35e>Triple Ores"
+        "desc": "<#6b7280><i>모든 광석이 평소의 3배를 떨어뜨립니다.</i>"
+      "double-or-nothing":
+        "name": "<bold><#f4d35e>Double or Nothing"
+        "desc": "<#6b7280><i>철, 금, 다이아몬드 광석을 캘 때 50% 확률로 2배 또는 0개가 나옵니다.</i>"
+      "blood-diamonds":
+        "name": "<bold><#f4d35e>Blood Diamonds"
+        "desc": "<#6b7280><i>다이아몬드 광석을 캐면 하트 반 칸을 잃습니다.</i>"
+      "blood-gold":
+        "name": "<bold><#f4d35e>Blood Gold"
+        "desc": "<#6b7280><i>금 광석을 캐면 하트 반 칸을 잃습니다.</i>"
+      "broadcaster":
+        "name": "<bold><#f4d35e>Broadcaster"
+        "desc": "<#6b7280><i>금이나 다이아몬드를 캐면 일정 확률로 좌표가 공개되고 발광합니다.</i>"
+      "limitations":
+        "name": "<bold><#f4d35e>Limitations"
+        "desc": "<#6b7280><i>플레이어마다 캘 수 있는 다이아몬드, 금, 철의 수가 제한됩니다.</i>"
+      "diamond-less":
+        "name": "<bold><#f4d35e>Diamond Less"
+        "desc": "<#6b7280><i>다이아몬드를 캘 수 없습니다. 대신 플레이어를 처치하면 다이아몬드 1개를 얻습니다.</i>"
+      "gold-less":
+        "name": "<bold><#f4d35e>Gold Less"
+        "desc": "<#6b7280><i>금을 캘 수 없습니다. 대신 플레이어를 처치하면 금 주괴 1개를 얻습니다.</i>"
+      "iron-less":
+        "name": "<bold><#f4d35e>Iron Less"
+        "desc": "<#6b7280><i>철을 캘 수 없습니다. 대신 플레이어를 처치하면 철 주괴 8개를 얻습니다.</i>"
+      "woodlife":
+        "name": "<bold><#f4d35e>Woodlife"
+        "desc": "<#6b7280><i>석탄이 비활성화됩니다.</i>"
+      "nodiamondarmor":
+        "name": "<bold><#f4d35e>No Diamond Armor"
+        "desc": "<#6b7280><i>다이아몬드 갑옷을 만들 수 없습니다.</i>"
+      "no-enchant":
+        "name": "<bold><#f4d35e>No Enchant"
+        "desc": "<#6b7280><i>마법 부여대와 모루가 비활성화됩니다.</i>"
+      "bare-bones":
+        "name": "<bold><#f4d35e>Bare Bones"
+        "desc": "<#6b7280><i>마법 부여와 모루 사용 불가. 황금 사과 제작 불가. 플레이어가 죽으면 다이아몬드 1개, 황금 사과 2개, 화살 32개, 실 2개를 떨어뜨립니다.</i>"
+      "limited-enchants":
+        "name": "<bold><#f4d35e>Limited Enchants"
+        "desc": "<#6b7280><i>마법 부여대를 만들 수 없습니다. 0,0과 각 사분면 모서리(±500)에 미리 놓인 마법 부여대가 있습니다.</i>"
+      "infinite-enchant":
+        "name": "<bold><#f4d35e>Infinite Enchant"
+        "desc": "<#6b7280><i>무한 마법 부여. 마법 부여대, 모루, 책장, 30k XP를 가지고 시작합니다.</i>"
+      "blood-enchants":
+        "name": "<bold><#f4d35e>Blood Enchants"
+        "desc": "<#6b7280><i>마법 부여에 쓴 레벨 하나마다 하트 반 칸을 잃습니다.</i>"
+      "better-enchant":
+        "name": "<bold><#f4d35e>Better Enchant"
+        "desc": "<#6b7280><i>모루에서 마법이 부여된 책을 쓰면, 아이템에 적용된 마법은 책에서 사라집니다. 모든 마법을 다 쓰면 일반 책이 됩니다.</i>"
+      "limitedp4":
+        "name": "<bold><#f4d35e>Limited P4"
+        "desc": "<#6b7280><i>보호 IV는 아이템 하나에만 부여할 수 있습니다.</i>"
+      "exposure":
+        "name": "<bold><#f4d35e>Exposure"
+        "desc": "<#6b7280><i>마법 부여대를 만들면 1분간 채굴 피로를 받고 지상으로 이동됩니다.</i>"
+      "hidden-enchant":
+        "name": "<bold><#f4d35e>Hidden Enchant"
+        "desc": "<#6b7280><i>마법 부여대가 마법 이름을 보여주지 않습니다 — 눈을 감고 부여하세요.</i>"
+      "grindstone-less":
+        "name": "<bold><#f4d35e>Grindstone Less"
+        "desc": "<#6b7280><i>숫돌이 비활성화됩니다. 마법을 제거할 수 없습니다.</i>"
+      "blood-grindstone":
+        "name": "<bold><#f4d35e>Blood Grindstone"
+        "desc": "<#6b7280><i>숫돌로 제거한 마법 레벨 하나마다 하트 반 칸을 잃습니다.</i>"
+      "hastey-boys":
+        "name": "<bold><#f4d35e>Hastey Boys"
+        "desc": "<#6b7280><i>만든 채굴 도구에 효율 III이 붙습니다. 숫돌로 효율을 제거할 수 없습니다.</i>"
+      "hastey-boys-lite":
+        "name": "<bold><#f4d35e>Hastey Boys Lite"
+        "desc": "<#6b7280><i>만든 채굴 도구에 효율 I이 붙습니다. 숫돌로 효율을 제거할 수 없습니다.</i>"
+      "op-hastey-boys":
+        "name": "<bold><#f4d35e>OP Hastey Boys"
+        "desc": "<#6b7280><i>만든 채굴 도구에 효율 V가 붙습니다. 숫돌로 효율을 제거할 수 없습니다.</i>"
+      "carrotcombo":
+        "name": "<bold><#f4d35e>Carrot Combo"
+        "desc": "<#6b7280><i>검을 만들면 마법이 부여된 당근도 함께 나옵니다.</i>"
+      "bow-nerf":
+        "name": "<bold><#f4d35e>Bow Nerf"
+        "desc": "<#6b7280><i>화살 피해가 50% 줄어듭니다.</i>"
+      "rod-less":
+        "name": "<bold><#f4d35e>Rod Less"
+        "desc": "<#6b7280><i>낚싯대가 비활성화됩니다.</i>"
+      "bow-less":
+        "name": "<bold><#f4d35e>Bow Less"
+        "desc": "<#6b7280><i>활이 비활성화됩니다.</i>"
+      "sword-less":
+        "name": "<bold><#f4d35e>Sword Less"
+        "desc": "<#6b7280><i>검이 비활성화됩니다.</i>"
+      "horse-less":
+        "name": "<bold><#f4d35e>Horse Less"
+        "desc": "<#6b7280><i>말과 당나귀를 길들일 수 없습니다.</i>"
+      "fast-obsidian":
+        "name": "<bold><#f4d35e>Fast Obsidian"
+        "desc": "<#6b7280><i>흑요석이 돌만큼 빨리 부서집니다.</i>"
+      "double-exp":
+        "name": "<bold><#f4d35e>Double EXP"
+        "desc": "<#6b7280><i>얻는 경험치가 모두 2배가 됩니다.</i>"
+      "triple-exp":
+        "name": "<bold><#f4d35e>Triple EXP"
+        "desc": "<#6b7280><i>얻는 경험치가 모두 3배가 됩니다.</i>"
+      "double-drops":
+        "name": "<bold><#f4d35e>Double Drops"
+        "desc": "<#6b7280><i>동물과 몹의 드롭이 2배가 됩니다.</i>"
+      "triple-drops":
+        "name": "<bold><#f4d35e>Triple Drops"
+        "desc": "<#6b7280><i>동물과 몹의 드롭이 3배가 됩니다.</i>"
+      "cut-clean":
+        "name": "<bold><#f4d35e>Cut Clean"
+        "desc": "<#6b7280><i>모든 원석과 날고기가 떨어질 때 자동으로 제련됩니다.</i>"
+      "lucky-leaves":
+        "name": "<bold><#f4d35e>Lucky Leaves"
+        "desc": "<#6b7280><i>나뭇잎을 부수거나 사라질 때 설정된 확률로 황금 사과가 떨어집니다.</i>"
+      "tree-drops":
+        "name": "<bold><#f4d35e>Tree Drops"
+        "desc": "<#6b7280><i>나뭇잎을 부수거나 사라질 때 금(0.5%), 다이아몬드(0.1%), 깃털(10%)이 떨어질 수 있습니다.</i>"
+      "flower-power":
+        "name": "<bold><#f4d35e>Flower Power"
+        "desc": "<#6b7280><i>꽃을 부수면 무작위 아이템이 떨어집니다.</i>"
+      "timber":
+        "name": "<bold><#f4d35e>Timber"
+        "desc": "<#6b7280><i>원목 하나를 부수면 연결된 나무 전체가 베어집니다 (최대 256개).</i>"
+      "veinminer":
+        "name": "<bold><#f4d35e>Vein Miner"
+        "desc": "<#6b7280><i>웅크린 채 광석을 캐면 연결된 같은 광석이 모두 부서집니다.</i>"
+      "baldchicken":
+        "name": "<bold><#f4d35e>Bald Chicken"
+        "desc": "<#6b7280><i>닭이 깃털을 떨어뜨리지 않습니다. 스켈레톤은 화살 3-5개를 떨어뜨립니다.</i>"
+      "bats":
+        "name": "<bold><#f4d35e>Bats"
+        "desc": "<#6b7280><i>박쥐를 처치하면 95% 확률로 황금 사과, 5% 확률로 사망합니다.</i>"
+      "no-fall-damage":
+        "name": "<bold><#f4d35e>No Fall Damage"
+        "desc": "<#6b7280><i>낙하 피해를 받지 않습니다.</i>"
+      "fire-less":
+        "name": "<bold><#f4d35e>Fire Less"
+        "desc": "<#6b7280><i>불과 화상 피해를 받지 않습니다.</i>"
+      "absorptionless":
+        "name": "<bold><#f4d35e>Absorptionless"
+        "desc": "<#6b7280><i>흡수 하트가 없습니다 - 황금 사과와 머리는 회복만 합니다.</i>"
+      "double-health":
+        "name": "<bold><#f4d35e>Double Health"
+        "desc": "<#6b7280><i>모든 플레이어의 하트가 10개 대신 20개입니다.</i>"
+      "night-vision":
+        "name": "<bold><#f4d35e>Night Vision"
+        "desc": "<#6b7280><i>모든 플레이어가 영구 야간 투시를 가지고 시작합니다.</i>"
+      "invisibility-protection":
+        "name": "<bold><#f4d35e>Invisibility Protection"
+        "desc": "<#6b7280><i>게임 시작 시 모든 플레이어가 5분간 투명화를 받습니다.</i>"
+      "birds":
+        "name": "<bold><#f4d35e>Birds"
+        "desc": "<#6b7280><i>모든 플레이어가 날 수 있습니다.</i>"
+      "noodlejump":
+        "name": "<bold><#f4d35e>Noodle Jump"
+        "desc": "<#6b7280><i>게임 시작 시 모든 플레이어가 영구 점프 강화를 받습니다.</i>"
+      "superheros":
+        "name": "<bold><#f4d35e>Superheroes"
+        "desc": "<#6b7280><i>플레이어마다 무작위 특수 능력을 받습니다. 낙하 피해 없음.</i>"
+      "everyrose":
+        "name": "<bold><#f4d35e>Every Rose"
+        "desc": "<#6b7280><i>게임 시작 시 가시 III이 부여된 황금 흉갑을 받습니다.</i>"
+      "pyro":
+        "name": "<bold><#f4d35e>Pyro"
+        "desc": "<#6b7280><i>화염 I과 발화 I이 부여된 책을 가지고 시작합니다.</i>"
+      "criple":
+        "name": "<bold><#f4d35e>Criple"
+        "desc": "<#6b7280><i>낙하 피해를 받으면 30초간 구속 효과를 받습니다.</i>"
+      "sky-high":
+        "name": "<bold><#f4d35e>Sky High"
+        "desc": "<#6b7280><i>설정된 Y 높이 아래에 있으면 30초마다 하트 1칸의 피해를 받습니다.</i>"
+      "long-shots":
+        "name": "<bold><#f4d35e>Long Shots"
+        "desc": "<#6b7280><i>50블록 넘게 떨어진 플레이어를 맞히면 하트 1칸을 회복하고 1.5배 피해를 줍니다.</i>"
+      "switcheroo":
+        "name": "<bold><#f4d35e>Switcheroo"
+        "desc": "<#6b7280><i>플레이어를 쏘면 서로 위치가 바뀝니다.</i>"
+      "dnd":
+        "name": "<bold><#f4d35e>DnD"
+        "desc": "<#6b7280><i>한 플레이어와 전투를 시작하면 전투가 끝날 때까지 그 플레이어하고만 싸울 수 있습니다.</i>"
+      "web-cage":
+        "name": "<bold><#f4d35e>Web Cage"
+        "desc": "<#6b7280><i>플레이어를 처치하면 주변이 거미줄 구체로 둘러싸입니다.</i>"
+      "web-limit":
+        "name": "<bold><#f4d35e>Web Limit"
+        "desc": "<#6b7280><i>인벤토리에 가질 수 있는 거미줄 수가 제한됩니다.</i>"
+      "grass-explosion":
+        "name": "<bold><#f4d35e>Grass Explosion"
+        "desc": "<#6b7280><i>잔디 위를 걸으면 25% 확률로 폭발이 일어납니다.</i>"
+      "raining-tnt":
+        "name": "<bold><#f4d35e>Raining TNT"
+        "desc": "<#6b7280><i>일정 간격(설정 가능)마다 무작위 플레이어 2명에게 TNT가 쏟아집니다.</i>"
+      "coronavirus":
+        "name": "<bold><#f4d35e>Coronavirus"
+        "desc": "<#6b7280><i>일정 간격(설정 가능)마다 무작위 플레이어가 멀미와 독에 걸립니다.</i>"
+      "bombers":
+        "name": "<bold><#f4d35e>Bombers"
+        "desc": "<#6b7280><i>모두 부서지지 않는 부싯돌과 부시를 가지고 시작합니다. 대부분의 몹이 TNT를 떨어뜨립니다.</i>"
+      "back-packs":
+        "name": "<bold><#f4d35e>Backpacks"
+        "desc": "<#6b7280><i>/backpack으로 팀 공용 배낭을 열 수 있습니다.</i>"
+      "extra-inventory":
+        "name": "<bold><#f4d35e>Extra Inventory"
+        "desc": "<#6b7280><i>/extrainventory로 추가 인벤토리 공간을 쓸 수 있습니다.</i>"
+      "nineslot":
+        "name": "<bold><#f4d35e>Nine Slot"
+        "desc": "<#6b7280><i>플레이어마다 인벤토리 9칸만 쓸 수 있습니다.</i>"
+      "benchblitz":
+        "name": "<bold><#f4d35e>Bench Blitz"
+        "desc": "<#6b7280><i>제작대 1개를 가지고 시작하며 더 얻을 수 없습니다.</i>"
+      "gone-fishing":
+        "name": "<bold><#f4d35e>Gone Fishing"
+        "desc": "<#6b7280><i>내구성 200 낚싯대와 모루 한 묶음을 받습니다.</i>"
+      "puppypower":
+        "name": "<bold><#f4d35e>Puppy Power"
+        "desc": "<#6b7280><i>모든 플레이어가 뼈, 썩은 살점, 늑대 생성 알을 한 묶음씩 받습니다.</i>"
+      "build-uhc":
+        "name": "<bold><#f4d35e>Build UHC"
+        "desc": "<#6b7280><i>게임 시작 시 모든 플레이어가 키트를 받습니다.</i>"
+      "soup":
+        "name": "<bold><#f4d35e>Soup"
+        "desc": "<#6b7280><i>버섯 스튜를 우클릭하면 하트 3.5칸을 회복합니다.</i>"
+      "hypixel-heads":
+        "name": "<bold><#f4d35e>Hypixel Heads"
+        "desc": "<#6b7280><i>플레이어 머리를 우클릭하면 재생 III 4초, 신속 II 20초를 받습니다.</i>"
+      "redvsblue":
+        "name": "<bold><#f4d35e>Red vs Blue"
+        "desc": "<#6b7280><i>게임 시작 시 두 팀(빨강, 파랑)으로 무작위 배정됩니다.</i>"
+      "moles":
+        "name": "<bold><#f4d35e>Moles"
+        "desc": "<#6b7280><i>팀마다 한 명이 몰래 다른 플레이어를 탈락시키려는 첩자(Mole)입니다.</i>"
+      "anonymous":
+        "name": "<bold><#f4d35e>Anonymous"
+        "desc": "<#6b7280><i>모든 플레이어의 이름과 스킨이 숨겨집니다.</i>"
+      "lafs":
+        "name": "<bold><#f4d35e>LAFS"
+        "desc": "<#6b7280><i>경기 전에 서로 우클릭한 플레이어끼리 팀이 됩니다.</i>"
+      "tracker":
+        "name": "<bold><#f4d35e>Tracker"
+        "desc": "<#6b7280><i>모든 플레이어가 다른 플레이어를 추적하는 나침반을 받습니다.</i>"
+      "randomizer":
+        "name": "<bold><#f4d35e>Randomizer"
+        "desc": "<#6b7280><i>블록마다 설정에 따라 무작위 아이템이 떨어집니다.</i>"
+      "luckyroulette":
+        "name": "<bold><#f4d35e>Lucky Roulette"
+        "desc": "<#6b7280><i>2분마다 모든 플레이어가 무작위 아이템을 받습니다.</i>"
+      "lightsout":
+        "name": "<bold><#f4d35e>Lights Out"
+        "desc": "<#6b7280><i>경기 중 횃불을 설치할 수 없습니다.</i>"
+    "status-enabled": "<#6dd3a0><bold>켜짐</bold>"
+    "status-disabled": "<#f95738><bold>꺼짐</bold>"
+    "off": "끔"
+    "reset": "<#f95738><bold>모든 시나리오 초기화</bold>"
+    "reset-lore": "<#7b8aa0>모든 시나리오를 끄고 월드 설정을 기본값으로 되돌립니다."
+"scenario":
+  "broadcaster":
+    "found": "<prefix><#f4d35e><player></#f4d35e> <gray>님이</gray> <white><ore></white> <gray>을(를) 찾았습니다. 위치:</gray> <white><x>, <y>, <z></white>"
+  "coronavirus":
+    "affected": "<prefix><#a78bfa><player></#a78bfa> <gray>님이 코로나바이러스에 감염되었습니다!</gray>"
+  "raining-tnt":
+    "targeted": "<prefix><#f95738><white><player></white> 님에게 TNT가 쏟아집니다!"
+  "time-bomb":
+    "timer": "<bold><timer_color>💣 <seconds>초</bold>"
+"arena":
+  "usage": "<#f4d35e><bold>/admin arena</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin arena generate <name> [colosseum|forest|ruins]</#93c5fd> <#7b8aa0>- 스폰이 있는 경기장 건설</#7b8aa0><newline> <#93c5fd>/admin arena pos1 | pos2</#93c5fd> <#7b8aa0>- 서 있는 곳을 모서리로 선택</#7b8aa0><newline> <#93c5fd>/admin arena create <name></#93c5fd> <#7b8aa0>- 선택 영역을 경기장으로 저장</#7b8aa0><newline> <#93c5fd>/admin arena import <name> <schematic></#93c5fd> <#7b8aa0>- WorldEdit 스케매틱 사용</#7b8aa0><newline> <#93c5fd>/admin arena paste <name></#93c5fd> <#7b8aa0>- 여기에 붙여 넣고 편집</#7b8aa0><newline> <#93c5fd>/admin arena addspawn | autospawns | clearspawns <name></#93c5fd> <#7b8aa0>- 스폰 지점 설정</#7b8aa0><newline> <#93c5fd>/admin arena use <name|random|off></#93c5fd> <#7b8aa0>- 밋업에 쓸 경기장</#7b8aa0><newline> <#93c5fd>/admin arena list | info <name> | delete <name></#93c5fd> <#7b8aa0>- 경기장 관리</#7b8aa0>"
+  "invalid-name": "<#f95738>경기장 이름에는 영문자, 숫자, 밑줄, 하이픈만 쓸 수 있습니다 (\"random\"은 사용 불가).</#f95738>"
+  "not-found": "<#f95738><white><name></white>(이)라는 경기장이 없습니다.</#f95738>"
+  "corner-set": "<#6dd3a0>모서리 <white><corner></white>을(를) <white><x>, <y>, <z></white>(으)로 설정했습니다.</#6dd3a0>"
+  "no-selection": "<#f95738>먼저 경기장을 선택하세요: WorldEdit의 //wand를 쓰거나, 서로 마주 보는 두 모서리에 서서 /admin arena pos1과 /admin arena pos2를 사용하세요.</#f95738>"
+  "created": "<#6dd3a0>경기장 <white><name></white>(<white><size></white>)을(를) <white><format></white> 파일로 저장했습니다.</#6dd3a0> <#cbd5e1>각 시작 지점에 서서 /admin arena addspawn <name>을 사용하세요.</#cbd5e1>"
+  "save-failed": "<#f95738>경기장 <white><name></white>을(를) 저장하지 못했습니다: <error></#f95738>"
+  "needs-worldedit": "<#f95738>스케매틱을 가져오려면 WorldEdit이나 FastAsyncWorldEdit이 필요합니다.</#f95738>"
+  "schematic-not-found": "<#f95738>WorldEdit 스케매틱 폴더에 <white><schematic></white>(이)라는 스케매틱이 없습니다.</#f95738>"
+  "imported": "<#6dd3a0>경기장 <white><name></white>(<white><size></white>)을(를) 가져왔습니다.</#6dd3a0> <#cbd5e1>/admin arena paste <name>으로 배치한 뒤 스폰을 추가하세요.</#cbd5e1>"
+  "pasted": "<#6dd3a0><white><name></white>을(를) 발밑을 모서리로 붙여 넣었습니다.</#6dd3a0> <#cbd5e1>각 시작 지점에 서서 /admin arena addspawn <name>을 사용하세요.</#cbd5e1>"
+  "paste-failed": "<#f95738>경기장 <white><name></white>을(를) 붙여 넣지 못했습니다: <error></#f95738>"
+  "unusable": "<#f95738><white><name></white>은(는) WorldEdit 스케매틱이지만 WorldEdit도 FastAsyncWorldEdit도 설치되어 있지 않습니다.</#f95738>"
+  "spawn-added": "<#6dd3a0><white><name></white>에 스폰 <white>#<count></white>을(를) 추가했습니다.</#6dd3a0>"
+  "spawn-outside": "<#f95738>스폰을 추가하려면 <white><name></white> 안에 서 있어야 합니다. 먼저 /admin arena paste <name>으로 복사본을 배치하세요.</#f95738>"
+  "spawns-cleared": "<#6dd3a0><white><name></white>의 스폰을 모두 지웠습니다. 플레이어는 원형으로 배치됩니다.</#6dd3a0>"
+  "deleted": "<#6dd3a0>경기장 <white><name></white>을(를) 삭제했습니다.</#6dd3a0>"
+  "list": "<#7b8aa0>경기장:</#7b8aa0> <white><names></white>"
+  "list-empty": "<#7b8aa0>아직 경기장이 없습니다. 영역을 선택하고 /admin arena create <name>을 사용하세요.</#7b8aa0>"
+  "info": "<white><name></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><size> · <format> · 스폰 <spawns>개</#cbd5e1>"
+  "use-set": "<#6dd3a0>밋업은 <white><name></white>에서 진행됩니다.</#6dd3a0>"
+  "use-random": "<#6dd3a0>밋업은 무작위 경기장에서 진행됩니다.</#6dd3a0>"
+  "use-off": "<#6dd3a0>밋업은 열린 월드에서 진행됩니다.</#6dd3a0>"
+  "meetup-disabled": "<#f4d35e>밋업이 꺼져 있습니다 - 경기장을 쓰려면 /config에서 meetup.enabled를 켜세요.</#f4d35e>"
+  "generate-usage": "<#f4d35e><bold>/admin arena generate</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin arena generate <name> [colosseum|forest|ruins] [반경] [스폰 수]</#93c5fd> <#7b8aa0>- 반경 12-60, 스폰 2-100</#7b8aa0>"
+  "generating": "<#7dd3fc>경기장 <white><name></white>을(를) 짓는 중...</#7dd3fc>"
+  "generated": "<#6dd3a0>스폰 <white><spawns></white>개가 있는 경기장 <white><name></white>(<white><size></white>)을(를) 지었습니다.</#6dd3a0> <#cbd5e1>/admin arena use <name>으로 사용하세요.</#cbd5e1>"
+  "autospawns-done": "<#6dd3a0><white><name></white>에 스폰 <white><spawns></white>개를 배치했습니다.</#6dd3a0>"
+  "autospawns-not-pasted": "<#f95738>경기장 <white><name></white>이(가) 어디에도 붙여 넣어지지 않았습니다 - 먼저 /admin arena paste <name>을 사용하세요.</#f95738>"
+"rank":
+  "help":
+    "title": "<#f4d35e><bold>등급 명령어</bold></#f4d35e>"
+    "entry": "<#334155>  •</#334155> <#f4d35e><usage></#f4d35e> <#334155>-</#334155> <white><description></white>"
+    "hover": "<#7b8aa0>클릭하여 입력:</#7b8aa0> <white><command></white>"
+    "time": "<#7b8aa0>  기간: <white>30m</white>, <white>12h</white>, <white>7d</white>, <white>2w</white>, <white>1d12h</white> - 생략하면 영구 등급입니다.</#7b8aa0>"
+    "grant":
+      "usage": "/admin rank grant <player> <rank> [기간]"
+      "description": "플레이어에게 등급 부여"
+    "revoke":
+      "usage": "/admin rank revoke <player> <rank>"
+      "description": "등급 회수"
+    "info":
+      "usage": "/admin rank info [플레이어]"
+      "description": "플레이어의 등급 보기"
+    "list":
+      "usage": "/admin rank list [등급]"
+      "description": "모든 등급 또는 등급 보유자 목록"
+  "unknown-rank": "<#f95738><white><rank></white>(이)라는 등급이 없습니다. 등급: <white><ranks></white></#f95738>"
+  "player-not-found": "<#f95738><white><player></white>(이)라는 마인크래프트 계정을 찾을 수 없습니다.</#f95738>"
+  "looking-up": "<#7b8aa0><white><player></white> 님은 접속한 적이 없습니다 - 계정을 찾는 중...</#7b8aa0>"
+  "invalid-time": "<#f95738><white><time></white>은(는) 올바른 기간이 아닙니다. 예: 30m, 12h, 7d, 2w, 1d12h.</#f95738>"
+  "granted": "<#6dd3a0><white><player></white> 님에게 <white><rank></white> 등급을 <time> 부여했습니다.</#6dd3a0>"
+  "updated": "<#6dd3a0><white><player></white> 님은 이미 <white><rank></white> 등급이 있습니다 - 이제 <time> 유지됩니다.</#6dd3a0>"
+  "revoked": "<#6dd3a0><white><player></white> 님의 <white><rank></white> 등급을 회수했습니다.</#6dd3a0>"
+  "not-held": "<#f95738><white><player></white> 님은 <white><rank></white> 등급이 없습니다.</#f95738>"
+  "received": "<#6dd3a0><white><rank></white> 등급을 <time> 받았습니다.</#6dd3a0>"
+  "removed": "<#f4d35e><white><rank></white> 등급이 회수되었습니다.</#f4d35e>"
+  "expired": "<#f4d35e><white><rank></white> 등급이 만료되었습니다.</#f4d35e>"
+  "info-header": "<#7b8aa0><white><player></white> 님의 등급:</#7b8aa0>"
+  "info-entry": "<#7b8aa0>  ▸</#7b8aa0> <rank_prefix><white><rank></white> <#7b8aa0>· <time></#7b8aa0>"
+  "info-none": "<#7b8aa0><white><player></white> 님은 등급이 없습니다.</#7b8aa0>"
+  "list-header": "<#7b8aa0>등급 (높은 순):</#7b8aa0>"
+  "list-entry": "<#7b8aa0>  ▸</#7b8aa0> <rank_prefix><white><rank></white> <#7b8aa0>· id <id> · 가중치 <weight> · <count>명</#7b8aa0>"
+  "list-empty": "<#7b8aa0>정의된 등급이 없습니다. ranks.yml에 추가하세요.</#7b8aa0>"
+  "list-footer": "<#7b8aa0>  » 등급 명령어는 클릭하거나 입력:</#7b8aa0> <#7dd3fc>/admin rank help</#7dd3fc> <#7b8aa0></#7b8aa0>"
+  "members": "<#7b8aa0><rank>:</#7b8aa0> <white><names></white>"
+  "members-none": "<#7b8aa0><white><rank></white> 등급을 가진 사람이 없습니다.</#7b8aa0>"
+  "time-forever": "영구히"
+  "time-for": "<time> 동안"
+  "time-permanent": "영구"
+  "time-left": "<time> 남음"
+"give":
+  "usage": "<#f4d35e><bold>/admin give</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin give <player|*> <item> [수량]</#93c5fd> <#7b8aa0>- 아이템 주기</#7b8aa0><newline> <#64748b>* = 생존자 전원 (경기 전에는 로비의 모든 플레이어)</#64748b>"
+  "unknown-item": "<#f95738><white><item></white>(이)라는 아이템이 없습니다.</#f95738>"
+  "invalid-amount": "<#f95738>수량은 1에서 <white><max></white> 사이여야 합니다.</#f95738>"
+  "sent": "<#6dd3a0><white><player></white> 님에게 <white><amount>× <item></white>을(를) 주었습니다.</#6dd3a0>"
+  "received": "<#6dd3a0><white><amount>× <item></white>을(를) 받았습니다.</#6dd3a0>"
+"freeze-many": "<#6dd3a0>플레이어 <white><count></white>명을 얼렸습니다.</#6dd3a0>"
+"unfreeze-many": "<#6dd3a0>플레이어 <white><count></white>명을 풀어 주었습니다.</#6dd3a0>"
+"potion-type-disabled": "<#f95738>이번 경기에서는 <potion> 물약을 쓸 수 없습니다.</#f95738>"
+"potion-name":
+  "strength": "힘"
+  "speed": "신속"
+  "invisibility": "투명화"
+"bed-explosions-disabled": "<#f95738>이번 경기에서는 침대와 리스폰 정박기 폭발이 막혀 있습니다.</#f95738>"
+"whitelist":
+  "usage": "<#f4d35e><bold>/admin whitelist</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin whitelist on | off</#93c5fd> <#7b8aa0>- 화이트리스트 켜기/끄기</#7b8aa0><newline> <#93c5fd>/admin whitelist add | remove <player></#93c5fd> <#7b8aa0>- 화이트리스트 편집</#7b8aa0><newline> <#93c5fd>/admin whitelist list | clear</#93c5fd> <#7b8aa0>- 화이트리스트 보기 / 비우기</#7b8aa0><newline> <#93c5fd>/admin whitelist all</#93c5fd> <#7b8aa0>- 접속 중인 모두를 등록</#7b8aa0><newline> <#93c5fd>/admin whitelist reload</#93c5fd> <#7b8aa0>- whitelist.json 다시 불러오기</#7b8aa0>"
+  "reloaded": "<#6dd3a0>whitelist.json에서 화이트리스트를 다시 불러왔습니다.</#6dd3a0>"
+  "on": "<#6dd3a0>화이트리스트를 <white>켰습니다</white>.</#6dd3a0>"
+  "off": "<#6dd3a0>화이트리스트를 <white>껐습니다</white>.</#6dd3a0>"
+  "added": "<#6dd3a0>화이트리스트에 <white><player></white> 님을 추가했습니다.</#6dd3a0>"
+  "removed": "<#6dd3a0>화이트리스트에서 <white><player></white> 님을 뺐습니다.</#6dd3a0>"
+  "list": "<#7b8aa0>화이트리스트 (<white><state></white>, <white><count></white>명):</#7b8aa0> <white><names></white>"
+  "state-on": "켜짐"
+  "state-off": "꺼짐"
+  "cleared": "<#6dd3a0>화이트리스트에서 <white><count></white>명을 뺐습니다 (항상 허용된 이름은 유지).</#6dd3a0>"
+  "all": "<#6dd3a0>접속 중인 플레이어 <white><count></white>명을 화이트리스트에 등록했습니다.</#6dd3a0>"
+"help-desc-helpop": "스태프에게 질문하기."
+"help-desc-thank": "호스트에게 감사하기."
+"helpop":
+  "staff": "<#c4b5fd>[HelpOp]</#c4b5fd> <white><player></white><#7b8aa0>:</#7b8aa0> <#faf0ca><message></#faf0ca>"
+  "staff-hover": "<#7b8aa0>클릭하여 <white><player></white> 님에게 답장</#7b8aa0>"
+  "sent": "<#6dd3a0>질문을 스태프에게 보냈습니다.</#6dd3a0>"
+  "no-staff": "<#f4d35e>지금은 접속한 스태프가 없습니다 - 나중에 다시 시도하거나 /report를 사용하세요.</#f4d35e>"
+  "cooldown": "<#f95738><white><seconds>초</white> 후에 다시 질문할 수 있습니다.</#f95738>"
+  "dialog":
+    "title": "<#c4b5fd><bold>스태프에게 질문</bold></#c4b5fd>"
+    "body": "<#9db4c0>질문을 입력하세요 - 접속 중인 모든 스태프가 보게 됩니다.</#9db4c0>"
+    "input": "<#cbd5e1>질문 내용</#cbd5e1>"
+    "send": "<#6dd3a0><bold>보내기</bold></#6dd3a0>"
+    "cancel": "<#f95738>취소</#f95738>"
+"thank":
+  "no-host": "<#f4d35e>지금은 감사할 호스트가 접속해 있지 않습니다.</#f4d35e>"
+  "cooldown": "<#f95738><white><minutes>분</white> 후에 다시 호스트에게 감사할 수 있습니다.</#f95738>"
+  "sent": "<#6dd3a0><white><host></white> 님에게 감사를 전했습니다!</#6dd3a0>"
+  "broadcast": "<#fb7185>❤</#fb7185> <white><player></white> <#faf0ca>님이 호스트</#faf0ca> <#f4d35e><host></#f4d35e><#faf0ca> 님에게 감사를 전했습니다!</#faf0ca>"
+  "broadcast-message": "<#fb7185>❤</#fb7185> <white><player></white> <#faf0ca>님이 호스트</#faf0ca> <#f4d35e><host></#f4d35e><#7b8aa0>:</#7b8aa0> <#faf0ca>\"<message>\"</#faf0ca>"
+  "title": "<#fb7185><bold>❤ 고마워요!</bold></#fb7185>"
+  "subtitle": "<white><player></white> <#faf0ca>님이 호스트해 주셔서 감사하다고 합니다</#faf0ca>"
+  "dialog":
+    "title": "<#fb7185><bold>호스트에게 감사하기</bold></#fb7185>"
+    "body": "<#9db4c0>이 게임을 진행해 준 <white><host></white> 님에게 감사를 전하세요.</#9db4c0>"
+    "input": "<#cbd5e1>메시지 (선택)</#cbd5e1>"
+    "send": "<#fb7185><bold>❤ 감사하기</bold></#fb7185>"
+"help-desc-cosmetics": "궤도, 궤적, 처치, 승리 효과를 사고 장착합니다."
+"help-desc-team": "팀 만들기, 참가, 관리."
+"help-desc-tm": "팀 채팅: 전환하거나 메시지 하나 보내기."
+"help-desc-tc": "팀에 좌표 공유."
+"help-desc-msg": "개인 메시지 보내기."
+"help-desc-r": "마지막 개인 메시지에 답장."
+"help-desc-profile": "내 통계 또는 다른 플레이어의 통계."
+"help-desc-leaderboard": "승리, 처치 등 상위 플레이어."
+"help-desc-kit": "시작 키트 보기 (관리자는 편집 가능)."
+"help-desc-scenarios": "이번 경기의 시나리오 보기 (관리자는 변경 가능)."
+"help-desc-vote": "이번 경기 시나리오에 투표."
+"help-desc-language": "언어 선택."
+"help-desc-report": "플레이어를 스태프에게 신고."
+"help-desc-list": "접속 중인 사람."
+"help-desc-ping": "내 핑, 특정 플레이어 또는 모두의 핑 (all)."
+"help-desc-menu": "모든 기능이 있는 빠른 메뉴."
+"help-desc-docs": "게임 내 가이드."
+"help-desc-practice": "PvP 연습장."
+"help-desc-parkour": "로비 파쿠르: 다시 시작, 나가기, 최고 기록."
+"help-desc-hotpotato": "로비 뜨거운 감자 참가/나가기."
+"help-desc-staff": "스태프 모드와 관리 도구."
+"help-desc-admin": "경기, 월드, 서버 도구."
+"help-desc-gm": "게임 모드 변경 (나 또는 플레이어)."
+"help-desc-world": "월드 불러오기, 이동, 삭제."
+"help-desc-heal": "체력과 허기 회복 (* = 전원)."
+"cosmetics":
+  "menu":
+    "title": "<#b7791f>✦</#b7791f> <#404040>꾸미기</#404040>"
+    "type-title": "<#b7791f>✦</#b7791f> <#404040><type></#404040>"
+    "points": "<#facc15><bold>☀ <points> 포인트</bold></#facc15>"
+    "points-lore": "<#7b8aa0>처치, 어시스트, 승리, 시상, 경기 참여로 포인트를 얻습니다.</#7b8aa0>"
+    "equipped": "<#7b8aa0>장착 중:</#7b8aa0> <white><name></white>"
+    "none": "<#6b7280>없음</#6b7280>"
+    "count": "<#7b8aa0><count>개 중 선택</#7b8aa0>"
+    "back": "<#cbd5e1>← 뒤로</#cbd5e1>"
+    "previous": "<#cbd5e1>← 페이지 <page>/<pages></#cbd5e1>"
+    "next": "<#cbd5e1>페이지 <page>/<pages> →</#cbd5e1>"
+    "unequip": "<#f95738>장착 해제</#f95738>"
+  "type":
+    "orbit":
+      "name": "<#c4b5fd>궤도 효과</#c4b5fd>"
+      "lore": "<#9db4c0>로비에서 내 주위를 도는 파티클.</#9db4c0>"
+    "walk-trail":
+      "name": "<#86efac>걷기 궤적</#86efac>"
+      "lore": "<#9db4c0>로비에서 걸은 자리에 남는 파티클.</#9db4c0>"
+    "arrow-trail":
+      "name": "<#93c5fd>화살 궤적</#93c5fd>"
+      "lore": "<#9db4c0>화살을 따라가는 파티클.</#9db4c0>"
+    "rod-trail":
+      "name": "<#7dd3fc>낚싯대 궤적</#7dd3fc>"
+      "lore": "<#9db4c0>낚싯바늘을 따라가는 파티클.</#9db4c0>"
+    "kill-effect":
+      "name": "<#f95738>처치 효과</#f95738>"
+      "lore": "<#9db4c0>쓰러진 상대의 자리에서 재생됩니다.</#9db4c0>"
+    "win-effect":
+      "name": "<#facc15>승리 효과</#facc15>"
+      "lore": "<#9db4c0>경기에서 승리하면 내 주위에서 재생됩니다.</#9db4c0>"
+  "item":
+    "price": "<#7b8aa0>가격:</#7b8aa0> <#facc15><price> 포인트</#facc15>"
+    "equipped": "<#6dd3a0>✔ 장착 중</#6dd3a0> <#7b8aa0>- 클릭하여 해제</#7b8aa0>"
+    "owned": "<#93c5fd>보유 중</#93c5fd> <#7b8aa0>- 클릭하여 장착</#7b8aa0>"
+    "buy": "<#facc15>클릭하여 구매</#facc15>"
+    "locked": "<#f95738><missing> 포인트가 더 필요합니다</#f95738>"
+    "preview": "<#c4b5fd>우클릭으로 미리보기</#c4b5fd>"
+  "preview":
+    "started": "<#c4b5fd><name><#c4b5fd> 미리보기 중. 웅크리면 끝납니다.</#c4b5fd>"
+    "ended": "<#cbd5e1>미리보기가 끝났습니다.</#cbd5e1>"
+    "unavailable": "<#f95738>꾸미기 미리보기는 경기 전 로비에서만 할 수 있습니다.</#f95738>"
+    "actionbar": "<#c4b5fd><bold>미리보기</bold></#c4b5fd> <name> <#7b8aa0>· 웅크려서 나가기 · <seconds>초</#7b8aa0>"
+  "bought": "<#6dd3a0><name><#6dd3a0>을(를) <white><price></white> 포인트에 구매하고 장착했습니다!</#6dd3a0>"
+  "equipped": "<#6dd3a0><name><#6dd3a0>을(를) 장착했습니다.</#6dd3a0>"
+  "unequipped": "<#cbd5e1>장착을 해제했습니다.</#cbd5e1>"
+  "not-enough": "<#f95738><white><price></white> 포인트가 필요합니다 - 보유: <white><points></white>.</#f95738>"
+  "reloaded": "<#6dd3a0>cosmetics.yml을 다시 불러왔습니다.</#6dd3a0>"
+  "points-usage": "<#f4d35e><bold>/admin points</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin points <give|take> <player|*> <amount></#93c5fd> <#7b8aa0>- 꾸미기 포인트 변경</#7b8aa0>"
+  "points-adjusted": "<#6dd3a0><white><player></white> 님: <amount> 포인트.</#6dd3a0>"
+  "points-received": "<#facc15>+<amount> 포인트</#facc15> <#7b8aa0>(현재 <points>)</#7b8aa0>"
+  "points-taken": "<#f95738>-<amount> 포인트</#f95738> <#7b8aa0>(현재 <points>)</#7b8aa0>"
+"announce-header": "<#f4d35e><bold>==============================</bold></#f4d35e>"
+"announce-title": "<#f95738><bold>     ✦ 공지 ✦</bold></#f95738>"
+"announce-line": "<white>    <message></white>"
+"announce-signature": "<#7b8aa0>    — <sender></#7b8aa0>"
+"announce-footer": "<#f4d35e><bold>==============================</bold></#f4d35e>"
+"announce-sent": "<#6dd3a0>공지를 보냈습니다.</#6dd3a0>"
+"lobby-games":
+  "reward": "<#facc15>+<points> 꾸미기 포인트!</#facc15>"
+  "started":
+    "type": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>님이 빠른 타자를 시작했습니다! 가장 먼저 입력하는 사람이 승리:</#cbd5e1> <white><phrase></white>"
+    "trivia": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>님의 퀴즈:</#cbd5e1> <white><question></white>"
+    "number": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>님이 1부터 <max> 사이의 숫자를 생각하고 있습니다. 채팅으로 맞혀 보세요!</#cbd5e1>"
+    "reaction": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>님이 반응 속도 게임을 시작했습니다. 클릭할 준비를 하세요...</#cbd5e1>"
+  "title":
+    "type": "<white>입력: <phrase></white>"
+    "trivia": "<white>퀴즈! 채팅을 확인하세요</white>"
+    "number": "<white>1부터 <max> 사이의 숫자를 맞히세요</white>"
+    "reaction": "<white>클릭할 준비...</white>"
+  "trivia":
+    "none": "<#f95738>설정된 퀴즈 문제가 없습니다.</#f95738>"
+  "reaction":
+    "button": "<prefix><#6dd3a0><bold>[ 지금 클릭 ]</bold></#6dd3a0>"
+    "hover": "<#6dd3a0>최대한 빨리 클릭하세요!</#6dd3a0>"
+    "too-late": "<#f95738>너무 늦었습니다. 다른 사람이 먼저 클릭했습니다.</#f95738>"
+  "number":
+    "higher": "<#f4d35e><guess>은(는) 너무 작습니다. 더 크게!</#f4d35e>"
+    "lower": "<#f4d35e><guess>은(는) 너무 큽니다. 더 작게!</#f4d35e>"
+    "slow-down": "<#f95738>천천히, 한 번에 하나씩 맞혀 보세요.</#f95738>"
+  "direction":
+    "north": "북쪽"
+    "north-east": "북동쪽"
+    "east": "동쪽"
+    "south-east": "남동쪽"
+    "south": "남쪽"
+    "south-west": "남서쪽"
+    "west": "서쪽"
+    "north-west": "북서쪽"
+  "treasure":
+    "hidden": "<prefix><#facc15><bold>보물찾기!</bold></#facc15> <#cbd5e1><sender> 님이 로비 어딘가에 보물을 숨겼습니다. 가장 먼저 닿으면 <points> 포인트!</#cbd5e1>"
+    "hint": "<prefix><#cbd5e1>보물 힌트: 스폰에서 <white><direction></white>, 약 <white><distance></white>블록 거리<height>.</#cbd5e1>"
+    "hint-close": "<prefix><#facc15>마지막 보물 힌트:</#facc15> <#cbd5e1><white>X <x></white>, <white>Z <z></white> 근처<height>.</#cbd5e1>"
+    "height":
+      "above": ", 높은 곳"
+      "below": ", 낮은 곳"
+      "level": ", 스폰과 비슷한 높이"
+    "label": "<#facc15><bold>✦ 보물 ✦</bold></#facc15>"
+    "warm": "<#fb923c>🔥 따뜻해요... 보물이 가까워요</#fb923c>"
+    "land": "<#facc15>보물 위에 올라서면 획득!</#facc15>"
+    "hot": "<#f95738><bold>🔥🔥 뜨거워요! 바로 여기예요</bold></#f95738>"
+    "found": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>님이</#cbd5e1> <white><time></white><#cbd5e1> 만에 보물을 찾았습니다!</#cbd5e1>"
+    "expired": "<prefix><#f95738>아무도 보물을 찾지 못했습니다.</#f95738> <#7b8aa0>위치: <x>, <y>, <z>.</#7b8aa0>"
+    "already": "<#f95738>이미 보물이 숨겨져 있습니다.</#f95738>"
+    "no-spot": "<#f95738>로비 스폰 근처에서 보물을 숨길 곳을 찾지 못했습니다.</#f95738>"
+  "potato":
+    "announce": "<prefix><#fb923c><bold>뜨거운 감자!</bold></#fb923c> <#cbd5e1><sender> 님이 라운드를 시작했습니다. <seconds>초 안에 참가한 뒤, TNT가 터지기 전에 누군가를 때려 넘기세요!</#cbd5e1>"
+    "join-button": "<prefix><#6dd3a0><bold>[ 뜨거운 감자 참가 ]</bold></#6dd3a0>"
+    "join-hover": "<#6dd3a0>클릭하여 참가 (또는 /hotpotato)</#6dd3a0>"
+    "joined": "<#6dd3a0><player> 님이 뜨거운 감자에 참가했습니다.</#6dd3a0> <#7b8aa0>(<count>명)</#7b8aa0>"
+    "already-joined": "<#f4d35e>이미 참가했습니다.</#f4d35e>"
+    "not-joining": "<#f95738>지금은 참가할 수 있는 뜨거운 감자 라운드가 없습니다.</#f95738>"
+    "not-in-lobby": "<#f95738>로비에 있어야 플레이할 수 있습니다.</#f95738>"
+    "not-playing": "<#f95738>뜨거운 감자 게임에 참가하고 있지 않습니다.</#f95738>"
+    "left": "<#f4d35e>뜨거운 감자에서 나갔습니다.</#f4d35e>"
+    "not-enough": "<prefix><#f95738>뜨거운 감자 참가 인원이 부족합니다 (<count>/<min>).</#f95738>"
+    "already": "<#f95738>이미 뜨거운 감자 라운드가 진행 중입니다.</#f95738>"
+    "round": "<prefix><#fb923c><bold><player></bold></#fb923c> <#cbd5e1>님이 감자를 들고 있습니다! 남은 인원 <count>명.</#cbd5e1>"
+    "passed": "<#fb923c><player></#fb923c> <#cbd5e1>님이 감자를</#cbd5e1> <#fb923c><target></#fb923c><#cbd5e1> 님에게 넘겼습니다!</#cbd5e1>"
+    "exploded": "<prefix><#f95738>💥 <player> 님이 터졌습니다!</#f95738> <#cbd5e1>남은 인원 <count>명.</#cbd5e1>"
+    "you-exploded": "<#f95738>탈락! 다음엔 행운이 있기를.</#f95738>"
+    "winner": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>님이 뜨거운 감자에서 우승했습니다!</#cbd5e1>"
+    "you-title": "<#f95738><bold>감자를 들고 있습니다!</bold></#f95738>"
+    "you-subtitle": "<white>누군가를 때려 넘기세요!</white>"
+    "actionbar-holder": "<#f95738><bold>감자를 들고 있습니다</bold> · 누군가를 때리세요! <seconds>초</#f95738>"
+    "actionbar-other": "<#fb923c><player> 님이 감자를 들고 있습니다 · <seconds>초</#fb923c>"
+  "parkour":
+    "started": "<#6dd3a0>파쿠르 시작! 결승점까지 가세요.</#6dd3a0> <#7b8aa0>(체크포인트 <total>개)</#7b8aa0>"
+    "checkpoint": "<#93c5fd>체크포인트 <number>/<total></#93c5fd> <#7b8aa0>· <time></#7b8aa0>"
+    "missed-checkpoint": "<#f95738>체크포인트 <number>을(를) 건너뛰었습니다!</#f95738>"
+    "fell": "<#f4d35e>마지막 체크포인트로 돌아갑니다.</#f4d35e>"
+    "cancelled": "<#f95738>파쿠르를 취소했습니다.</#f95738>"
+    "cancelled-fly": "<#f95738>파쿠르 취소: 비행 금지입니다.</#f95738>"
+    "finished-self": "<#6dd3a0><white><time></white> 만에 완주했습니다.</#6dd3a0> <#7b8aa0>최고 기록: <best></#7b8aa0>"
+    "personal-best": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>님이 파쿠르를 <white><time></white> 만에 완주</#cbd5e1> <#facc15>(개인 최고 기록)</#facc15>"
+    "record": "<prefix><#facc15><bold>파쿠르 신기록!</bold></#facc15> <#6dd3a0><player></#6dd3a0> <#cbd5e1>님,</#cbd5e1> <white><time></white>"
+    "actionbar": "<#7b8aa0>파쿠르</#7b8aa0> <white><time></white> <#7b8aa0>· 체크포인트</#7b8aa0> <white><checkpoint>/<total></white>"
+    "not-set": "<#f95738>파쿠르 코스가 아직 설정되지 않았습니다.</#f95738>"
+    "not-in-lobby": "<#f95738>파쿠르는 로비에서만 할 수 있습니다.</#f95738>"
+    "top-header": "<#facc15><bold>🏃 파쿠르 최고 기록</bold></#facc15>"
+    "top-entry": "<#7b8aa0>#<rank></#7b8aa0> <white><player></white> <#6dd3a0><time></#6dd3a0>"
+    "top-empty": "<#7b8aa0>아직 파쿠르를 완주한 사람이 없습니다.</#7b8aa0>"
+    "hologram":
+      "start": "<#6dd3a0><bold>파쿠르 시작</bold></#6dd3a0>"
+      "checkpoint": "<#93c5fd>체크포인트 <number></#93c5fd>"
+      "finish": "<#facc15><bold>결승점</bold></#facc15>"
+    "setup":
+      "start": "<#6dd3a0>여기를 파쿠르 시작점으로 설정했습니다.</#6dd3a0>"
+      "checkpoint": "<#6dd3a0>여기에 체크포인트 <number>을(를) 추가했습니다.</#6dd3a0>"
+      "checkpoint-removed": "<#f4d35e>마지막 체크포인트를 지웠습니다 (남은 <count>개).</#f4d35e>"
+      "finish": "<#6dd3a0>여기를 파쿠르 결승점으로 설정했습니다.</#6dd3a0>"
+      "cleared": "<#f95738>파쿠르 코스를 삭제했습니다.</#f95738>"
+      "times-reset": "<#f95738>파쿠르 최고 기록을 모두 지웠습니다.</#f95738>"
+"pause-menu-language-note": "<#7b8aa0>일시 정지 화면(Esc)의 빠른 메뉴는 다음 접속 때 언어가 바뀝니다.</#7b8aa0>"
+"lobby-container-blocked": "<#f95738>로비에서는 보관함을 열 수 없습니다.</#f95738>"
+"alerts-teleport-button": "<#93c5fd>[이동]</#93c5fd>"
+"alerts-teleport-hover": "<#cbd5e1>클릭하여 투명 상태로 <white><player></white> 님에게 이동 (스태프 모드).</#cbd5e1>"
+"autostart":
+  "started": "<prefix><#6dd3a0>플레이어 <white><players></white>명이 모였습니다 - <white><seconds>초</white> 후 경기가 자동으로 시작됩니다.</#6dd3a0>"
+  "countdown": "<prefix><#f4d35e><white><seconds>초</white> 후 경기가 자동으로 시작됩니다.</#f4d35e>"
+  "cancelled": "<prefix><#f95738>자동 시작 취소 - 플레이어 <white><players>/<needed></white>명.</#f95738>"
+  "actionbar": "<#f4d35e><white><bold><seconds></bold></white>초 후 자동 시작</#f4d35e>"
+"voting":
+  "menu-title": "<#334155><bold>시나리오 투표</bold></#334155> <#64748b>(최대 <max>개)</#64748b>"
+  "item-votes": "<#f4d35e>★ <white><votes></white>표</#f4d35e>"
+  "item-vote": "<#93c5fd>▶ 클릭하여 투표</#93c5fd>"
+  "item-unvote": "<#6dd3a0>✔ 투표함</#6dd3a0> <#7b8aa0>- 클릭하여 취소</#7b8aa0>"
+  "voted": "<#6dd3a0><white><name></white>에 투표했습니다.</#6dd3a0>"
+  "unvoted": "<#cbd5e1><white><name></white> 투표를 취소했습니다.</#cbd5e1>"
+  "max": "<#f95738>시나리오는 최대 <white><max></white>개까지 투표할 수 있습니다 - 먼저 하나를 취소하세요.</#f95738>"
+  "disabled": "<#f95738>시나리오 투표가 꺼져 있습니다.</#f95738>"
+  "closed": "<#f95738>투표는 경기 전 로비에서만 할 수 있습니다.</#f95738>"
+  "announce": "<prefix><#93c5fd>이번 경기 시나리오에 투표하세요!</#93c5fd> <#f4d35e><bold>[클릭하여 투표]</bold></#f4d35e> <#7b8aa0>또는 /vote</#7b8aa0>"
+  "winners": "<prefix><#6dd3a0>투표 결과:</#6dd3a0> <white><scenarios></white>"
+  "no-winners": "<prefix><#7b8aa0>이번 경기에 추가할 수 있는 투표 시나리오가 없습니다.</#7b8aa0>"
+"reboot":
+  "countdown": "<prefix><#f95738><bold><white><time></white> 후 서버가 재시작됩니다.</bold></#f95738>"
+  "now": "<prefix><#f95738><bold>지금 재시작합니다 - 잠시 후 만나요!</bold></#f95738>"
+  "cancelled": "<prefix><#6dd3a0>서버 재시작이 취소되었습니다.</#6dd3a0>"
+  "none": "<#f95738>예정된 재시작이 없습니다.</#f95738>"
+  "bossbar": "<#f95738><bold>⟳ 서버 재시작까지</bold></#f95738> <white><bold><time></bold></white>"
+  "title": "<color><bold><seconds></bold>"
+  "title-subtitle": "<#cbd5e1>서버 재시작 중…</#cbd5e1>"
+  "final-title": "<#f95738><bold>⟳ 재시작 중</bold></#f95738>"
+  "final-subtitle": "<#cbd5e1>잠시 후 만나요!</#cbd5e1>"
+  "kick": "<#f95738><bold>⟳ 서버 재시작 중</bold></#f95738><newline><newline><#cbd5e1>서버를 재시작하고 있습니다 - 1분 정도면 돌아옵니다.</#cbd5e1><newline><#7b8aa0>잠시 후 다시 접속하세요.</#7b8aa0>"
+"announcements":
+  "lines":
+    - "<prefix><#93c5fd>도움이 필요하면 <white>/helpop</white>으로 스태프에게 질문하세요.</#93c5fd>"
+    - "<prefix><#93c5fd>핵 사용자를 봤다면 <white>/report <player> <reason></white>으로 신고하세요.</#93c5fd>"
+    - "<prefix><#93c5fd>다른 팀과의 연합(크로스 팀)은 금지이며 퇴장 조치됩니다.</#93c5fd>"
+    - "<prefix><#93c5fd>자연 회복이 없습니다 - 황금 사과와 황금 머리로 회복하세요.</#93c5fd>"
+    - "<prefix><#93c5fd><white>/profile</white>로 내 통계를, <white>/lb</white>로 상위 플레이어를 확인하세요.</#93c5fd>"
+    - "<prefix><#93c5fd>포인트는 <white>/cosmetics</white>에서 효과를 사는 데 쓰세요.</#93c5fd>"
+"admin":
+  "header": "<#f4d35e><bold>/admin</bold></#f4d35e> <#7b8aa0>사용법: (도구 <count>개 - 클릭하면 입력됩니다)</#7b8aa0>"
+  "entry": " <#93c5fd>/admin <tool></#93c5fd> <#7b8aa0><description></#7b8aa0>"
+  "unknown": "<#f95738>알 수 없는 관리 도구 <white><tool></white>. 목록은 /admin을 입력하세요.</#f95738>"
+  "gm-usage": "<#f4d35e><bold>/admin gm</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin gm <c|s|a|sp> [플레이어]</#93c5fd> <#7b8aa0>- 크리에이티브, 서바이벌, 모험, 관전</#7b8aa0>"
+  "desc":
+    "start": "- 경기 카운트다운 시작"
+    "forcestart": "- 카운트다운 건너뛰고 바로 배치"
+    "stop": "- 경기 중지"
+    "pause": "- 경기 일시 정지"
+    "resume": "- 일시 정지된 경기 재개"
+    "state": "- 단계와 인원"
+    "skipphase": "- 다음 단계로 이동"
+    "skipgraceperiod": "- 보호 시간 종료, PvP 시작"
+    "rescatter": "- 모두 다시 배치"
+    "checkready": "- 모두에게 준비 여부 확인"
+    "reset": "- 로비로 완전 초기화"
+    "revive": "- 플레이어 부활"
+    "kill": "- 플레이어 탈락"
+    "killalloffline": "- 접속 끊긴 모두 탈락"
+    "givegoldenhead": "- 황금 머리 주기"
+    "lobbygame": "- 로비 미니게임"
+    "gen": "- 새 게임 월드 (미리보기 포함)"
+    "preloadworld": "- Chunky로 미리 생성"
+    "setworld": "- 게임 월드 선택"
+    "setlobby": "- 서 있는 곳을 로비 스폰으로"
+    "world": "- 월드 불러오기, 이동, 삭제"
+    "border": "- 월드 경계"
+    "arena": "- 밋업 경기장"
+    "config": "- 게임 설정 메뉴"
+    "preset": "- 설정 프리셋 저장 / 불러오기"
+    "scenarios": "- 시나리오 켜기/끄기"
+    "kit": "- 시작 키트 편집"
+    "team": "- 팀 관리 패널"
+    "heal": "- 체력과 허기 회복"
+    "give": "- 아이템 주기 (* = 전원)"
+    "gm": "- 게임 모드: c / s / a / sp"
+    "experience": "- 프로필 XP 설정/변경"
+    "rank": "- 등급 부여/회수"
+    "points": "- 꾸미기 포인트 주기/빼기"
+    "database": "- 플레이어 데이터 삭제/가져오기"
+    "whitelist": "- 서버 화이트리스트"
+    "setmaxplayers": "- 최대 인원"
+    "reload": "- 설정 다시 불러오기"
+    "papi": "- PlaceholderAPI 상태"
+    "reboot": "- 카운트다운 후 재시작"
+    "namehistory": "- 플레이어의 예전 이름"
+    "announce": "- 모두에게 크게 공지"
+  "category":
+    "match": "<#f4d35e>▌ <bold>경기</bold></#f4d35e>"
+    "world": "<#f4d35e>▌ <bold>월드와 설정</bold></#f4d35e>"
+    "players": "<#f4d35e>▌ <bold>플레이어</bold></#f4d35e>"
+    "server": "<#f4d35e>▌ <bold>서버</bold></#f4d35e>"
+"staff-tools":
+  "header": "<#f4d35e><bold>/staff</bold></#f4d35e> <#7b8aa0>사용법: (도구 <count>개 - 클릭하면 입력됩니다)</#7b8aa0>"
+  "entry": " <#93c5fd>/staff <tool></#93c5fd> <#7b8aa0><description></#7b8aa0>"
+  "unknown": "<#f95738>알 수 없는 스태프 도구 <white><tool></white>. 목록은 /staff help를 입력하세요.</#f95738>"
+  "category":
+    "mode": "<#f4d35e>▌ <bold>스태프 모드</bold></#f4d35e>"
+    "players": "<#f4d35e>▌ <bold>플레이어</bold></#f4d35e>"
+    "chat": "<#f4d35e>▌ <bold>채팅</bold></#f4d35e>"
+  "desc":
+    "tp": "- 투명 상태로 플레이어에게 이동"
+    "list": "- 접속 중인 스태프"
+    "state": "- 경기 단계와 인원"
+    "freeze": "- 플레이어 움직임 정지"
+    "unfreeze": "- 플레이어 얼음 풀기"
+    "invsee": "- 플레이어 인벤토리 열기"
+    "chat": "- 스태프 전용 채팅"
+    "alerts": "- 받을 알림 선택"
+    "announce": "- 크게 공지"
+    "mutechat": "- 전체 채팅 잠그기"
+    "unmutechat": "- 전체 채팅 잠금 해제"
+    "clearchat": "- 채팅 지우기"
+    "cleardrop": "- 떨어진 아이템 치우기"
+"punish":
+  "no-reason": "사유 없음"
+  "invalid-duration": "<#f95738>30m, 12h, 7d, 2w 같은 기간을 입력하세요.</#f95738>"
+  "exempt": "<#f95738><player> 님은 처벌할 수 없습니다.</#f95738>"
+  "not-banned": "<#f4d35e><player> 님은 차단되어 있지 않습니다.</#f4d35e>"
+  "not-muted": "<#f4d35e><player> 님은 채팅 금지 상태가 아닙니다.</#f4d35e>"
+  "not-online": "<#f4d35e><player> 님은 접속해 있지 않습니다.</#f4d35e>"
+  "usage":
+    "ban": "<#f4d35e><bold>/ban</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/ban <player> [사유]</#93c5fd> <#7b8aa0>- 영구 차단</#7b8aa0><newline> <#93c5fd>/ban <player> <duration> [사유]</#93c5fd> <#7b8aa0>- 기간 차단 (30m, 12h, 7d, 2w)</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- 비공개: 스태프만 볼 수 있음</#7b8aa0>"
+    "tempban": "<#f4d35e><bold>/tempban</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/tempban <player> <duration> [사유]</#93c5fd> <#7b8aa0>- 기간 차단 (30m, 12h, 7d, 2w)</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- 비공개: 스태프만 볼 수 있음</#7b8aa0>"
+    "unban": "<#f4d35e><bold>/unban</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/unban <player></#93c5fd> <#7b8aa0>- 차단 해제</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- 비공개: 스태프만 볼 수 있음</#7b8aa0>"
+    "kick": "<#f4d35e><bold>/kick</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kick <player> [사유]</#93c5fd> <#7b8aa0>- 서버에서 추방</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- 비공개: 스태프만 볼 수 있음</#7b8aa0>"
+    "mute": "<#f4d35e><bold>/mute</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/mute <player> [사유]</#93c5fd> <#7b8aa0>- 영구 채팅 금지</#7b8aa0><newline> <#93c5fd>/mute <player> <duration> [사유]</#93c5fd> <#7b8aa0>- 기간 채팅 금지</#7b8aa0><newline> <#93c5fd>/mute</#93c5fd> <#7b8aa0>- 모두의 전체 채팅 잠그기</#7b8aa0>"
+    "tempmute": "<#f4d35e><bold>/tempmute</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/tempmute <player> <duration> [사유]</#93c5fd> <#7b8aa0>- 기간 채팅 금지 (30m, 12h, 7d)</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- 비공개: 스태프만 볼 수 있음</#7b8aa0>"
+    "unmute": "<#f4d35e><bold>/unmute</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/unmute <player></#93c5fd> <#7b8aa0>- 채팅 금지 해제</#7b8aa0><newline> <#93c5fd>/unmute</#93c5fd> <#7b8aa0>- 전체 채팅 잠금 해제</#7b8aa0>"
+    "warn": "<#f4d35e><bold>/warn</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/warn <player> <reason></#93c5fd> <#7b8aa0>- 플레이어 경고 (본인과 스태프만 볼 수 있음)</#7b8aa0>"
+    "history": "<#f4d35e><bold>/history</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/history <player></#93c5fd> <#7b8aa0>- 차단, 채팅 금지, 추방, 경고 기록</#7b8aa0>"
+  "announce":
+    "ban": "<prefix><#f95738><bold><player></bold> 님이 <staff> 님에 의해 차단되었습니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "tempban": "<prefix><#f95738><bold><player></bold> 님이 <staff> 님에 의해 <duration> 동안 차단되었습니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "unban": "<prefix><#6dd3a0><player> 님의 차단이 <staff> 님에 의해 해제되었습니다.</#6dd3a0>"
+    "kick": "<prefix><#f4d35e><player> 님이 <staff> 님에 의해 추방되었습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "mute": "<prefix><#f4d35e><player> 님이 <staff> 님에 의해 채팅 금지되었습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "tempmute": "<prefix><#f4d35e><player> 님이 <staff> 님에 의해 <duration> 동안 채팅 금지되었습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "unmute": "<prefix><#6dd3a0><player> 님의 채팅 금지가 <staff> 님에 의해 해제되었습니다.</#6dd3a0>"
+    "warn": "<prefix><#f4d35e><player> 님이 <staff> 님에게 경고를 받았습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+  "announce-silent":
+    "ban": "<#7b8aa0>[비공개]</#7b8aa0> <#f95738><player> 님이 <staff> 님에 의해 차단되었습니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "tempban": "<#7b8aa0>[비공개]</#7b8aa0> <#f95738><player> 님이 <staff> 님에 의해 <duration> 동안 차단되었습니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "unban": "<#7b8aa0>[비공개]</#7b8aa0> <#6dd3a0><player> 님의 차단이 <staff> 님에 의해 해제되었습니다.</#6dd3a0>"
+    "kick": "<#7b8aa0>[비공개]</#7b8aa0> <#f4d35e><player> 님이 <staff> 님에 의해 추방되었습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "mute": "<#7b8aa0>[비공개]</#7b8aa0> <#f4d35e><player> 님이 <staff> 님에 의해 채팅 금지되었습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "tempmute": "<#7b8aa0>[비공개]</#7b8aa0> <#f4d35e><player> 님이 <staff> 님에 의해 <duration> 동안 채팅 금지되었습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+    "unmute": "<#7b8aa0>[비공개]</#7b8aa0> <#6dd3a0><player> 님의 채팅 금지가 <staff> 님에 의해 해제되었습니다.</#6dd3a0>"
+    "warn": "<#7b8aa0>[스태프]</#7b8aa0> <#f4d35e><player> 님이 <staff> 님에게 경고를 받았습니다.</#f4d35e> <#7b8aa0>사유: <reason></#7b8aa0>"
+  "muted-self": "<#f95738>채팅이 금지되었습니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+  "muted-self-temp": "<#f95738><duration> 동안 채팅이 금지되었습니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+  "unmuted-self": "<#6dd3a0>다시 채팅할 수 있습니다.</#6dd3a0>"
+  "still-muted": "<#f95738>채팅이 금지된 상태입니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+  "still-muted-temp": "<#f95738>앞으로 <duration> 동안 채팅이 금지됩니다.</#f95738> <#7b8aa0>사유: <reason></#7b8aa0>"
+  "warned-self": "<#f95738><bold>경고:</bold></#f95738> <white><reason></white> <#7b8aa0>(경고 #<count>)</#7b8aa0>"
+  "screen":
+    "permanent": "영구"
+    "ban": "<#f95738><bold>이 서버에서 차단되었습니다.</bold></#f95738><newline><newline><#7b8aa0>사유:</#7b8aa0> <white><reason></white><newline><#7b8aa0>기간:</#7b8aa0> <white>영구</white>"
+    "tempban": "<#f95738><bold>이 서버에서 차단되었습니다.</bold></#f95738><newline><newline><#7b8aa0>사유:</#7b8aa0> <white><reason></white><newline><#7b8aa0>남은 기간:</#7b8aa0> <white><duration></white>"
+    "kick": "<#f4d35e><bold>추방되었습니다.</bold></#f4d35e><newline><newline><#7b8aa0>사유:</#7b8aa0> <white><reason></white>"
+    "full": "<#f4d35e><bold>서버가 가득 찼습니다.</bold></#f4d35e><newline><newline><#7b8aa0>접속 인원:</#7b8aa0> <white><online>/<max></white><newline><#cbd5e1>잠시 후 다시 시도하세요.</#cbd5e1>"
+    "whitelist": "<#f4d35e><bold>화이트리스트에 등록되어 있지 않습니다.</bold></#f4d35e><newline><newline><#cbd5e1>지금은 비공개 서버입니다. 호스트에게 추가를 요청하세요.</#cbd5e1>"
+    "idle": "<#f4d35e><bold>잠수로 추방되었습니다.</bold></#f4d35e><newline><newline><#cbd5e1>언제든 다시 접속할 수 있습니다.</#cbd5e1>"
+    "restart": "<#93c5fd><bold>서버가 재시작 중입니다.</bold></#93c5fd><newline><newline><#cbd5e1>1분 후 다시 접속하세요. 진행 중인 경기는 기다리고 있습니다.</#cbd5e1>"
+  "type":
+    "ban": "차단"
+    "unban": "차단 해제"
+    "kick": "추방"
+    "mute": "채팅 금지"
+    "unmute": "채팅 금지 해제"
+    "warn": "경고"
+  "history":
+    "header": "<#facc15><bold><player></bold></#facc15> <#7b8aa0>· 차단 <bans> · 채팅 금지 <mutes> · 추방 <kicks> · 경고 <warns></#7b8aa0>"
+    "banned-now": "<#f95738>● 현재 차단 중</#f95738> <#7b8aa0>(<duration>) · <reason></#7b8aa0>"
+    "muted-now": "<#f4d35e>● 현재 채팅 금지 중</#f4d35e> <#7b8aa0>(<duration>) · <reason></#7b8aa0>"
+    "entry": "<#7b8aa0><ago> 전</#7b8aa0> <white><type></white><#7b8aa0><duration> · 처리: <staff> · <reason></#7b8aa0>"
+    "empty": "<#7b8aa0>처벌 기록이 없습니다.</#7b8aa0>"
+  "anim":
+    "ban-title": "<gradient:#ff3b3b:#7f1d1d><bold>차단됨</bold></gradient>"
+    "ban-subtitle": "<#fca5a5><reason></#fca5a5>"
+    "kick-title": "<gradient:#fb923c:#f95738><bold>추방됨</bold></gradient>"
+    "kick-subtitle": "<#fed7aa><reason></#fed7aa>"
+    "mute-title": "<#94a3b8><bold>채팅 금지</bold></#94a3b8>"
+    "mute-subtitle": "<#cbd5e1><reason></#cbd5e1>"
+  "nametag-muted": "<item:barrier> "
+"profile-card":
+  "hover": "<#facc15><bold><player></bold></#facc15>  <rank><newline><#c4b5fd>레벨 <level></#c4b5fd><newline><#f4d35e>★ 승리</#f4d35e> <white><wins></white>  <#7b8aa0>경기</#7b8aa0> <white><games></white><newline><#f95738>⚔ 처치</#f95738> <white><kills></white>  <#9ca3af>☠ 사망</#9ca3af> <white><deaths></white>  <#fda4af>K/D</#fda4af> <white><kd></white><newline><#facc15>🎉 로비 우승</#facc15> <white><lobby_wins></white>"
+  "no-rank": "<#7b8aa0>플레이어</#7b8aa0>"
+  "click-profile": "<#6b7280>▸ 클릭하여 <player> 님의 프로필 열기</#6b7280>"
+  "click-message": "<#6b7280>▸ 클릭하여 <player> 님에게 메시지</#6b7280>"
+"dimension-schedule":
+  "name":
+    "nether": "네더"
+    "end": "엔드"
+  "warning": "<prefix><#f97316><white><time></white> 후 <dimension>이(가) 닫힙니다. 그 전에 나오세요!</#f97316>"
+  "closed": "<prefix><#f95738><bold><dimension>이(가) 닫혔습니다.</bold></#f95738> <#cbd5e1>아직 안에 있던 플레이어는 오버월드로 옮겨졌습니다.</#cbd5e1>"
+  "opened": "<prefix><#6dd3a0><bold><dimension>이(가) 열렸습니다!</bold></#6dd3a0>"
+  "moved": "<#f4d35e><dimension>이(가) 닫혀 오버월드로 옮겨졌습니다.</#f4d35e>"
+  "portal-closed": "<#f95738>이번 경기 동안 <dimension>은(는) 닫혀 있습니다.</#f95738>"
+  "not-open-yet": "<#f4d35e><white><time></white> 후 <dimension>이(가) 열립니다.</#f4d35e>"
+"config-menu-label-game-bed-explosions": "침대 / 정박기 폭발"
+"config-menu-desc-game-bed-explosions": "바닐라처럼 네더/엔드에서는 침대가, 네더 밖에서는 리스폰 정박기가 폭발합니다."
+"config-menu-label-game-generation": "경기 월드 종류"
+"config-menu-desc-game-generation": "새로 생성하는 경기 월드의 지형: NORMAL, AMPLIFIED, LARGE_BIOMES, FLAT, VOID."
+"config-menu-label-game-invisibility-potions": "투명화 물약"
+"config-menu-desc-game-invisibility-potions": "투명화 물약이 작동합니다 (마시기, 투척, 잔류, 화살 포함)."
+"config-menu-label-game-no-baby-animals": "새끼 동물 금지"
+"config-menu-desc-game-no-baby-animals": "동물 번식을 막아 잠수 번식 농장을 방지합니다."
+"config-menu-label-game-no-nametag": "이름표 없음"
+"config-menu-desc-game-no-nametag": "경기 내내 모든 플레이어의 이름표를 숨깁니다."
+"config-menu-label-game-ready-check-timeout-seconds": "준비 확인 제한 시간"
+"config-menu-desc-game-ready-check-timeout-seconds": "준비 확인에 응답할 수 있는 시간(초)."
+"config-menu-label-game-speed-potions": "신속 물약"
+"config-menu-desc-game-speed-potions": "신속 물약이 작동합니다 (마시기, 투척, 잔류, 화살 포함)."
+"config-menu-label-game-strength-potions": "힘 물약"
+"config-menu-desc-game-strength-potions": "힘 물약이 작동합니다 (마시기, 투척, 잔류, 화살 포함)."
+"config-menu-label-lobby-generation": "로비 월드 종류"
+"config-menu-desc-lobby-generation": "로비 월드를 새로 만들어야 할 때의 지형: VOID, NORMAL, FLAT, AMPLIFIED, LARGE_BIOMES."
+"config-menu-label-meetup-arena": "밋업 경기장"
+"config-menu-desc-meetup-arena": "밋업을 진행할 저장된 경기장 (/arena 참고). 비우면 열린 월드, \"random\"이면 아무 경기장."
+"config-menu-label-meetup-border-size": "밋업 경계 크기"
+"config-menu-desc-meetup-border-size": "밋업이 시작될 때의 경계 크기. 이후 최종 경계 크기까지 줄어듭니다."
+"config-menu-label-meetup-enabled": "밋업 사용"
+"config-menu-desc-meetup-enabled": "서든 데스를 기반암 상자 대신 저장된 경기장(meetup.arena)에서 진행합니다."
+"config-menu-label-meetup-kit": "밋업 키트"
+"config-menu-desc-meetup-kit": "밋업이 시작되면 모두에게 무작위 철/다이아몬드 갑옷과 검을 줍니다."
+"config-menu-label-ui-arrow-health": "화살 명중 체력 표시"
+"config-menu-desc-ui-arrow-health": "투사체로 맞히면 쏜 사람의 액션 바에 대상의 남은 체력을 표시합니다."
+"config-menu-label-ui-full-width-tab": "넓은 탭 목록"
+"config-menu-desc-ui-full-width-tab": "넓은 탭 목록: 내 팀이 먼저, 다른 팀과 관전자가 그다음, 마지막 열에 내 통계."
+"config-menu-label-ui-tab-health-mode": "탭 체력 표시"
+"leaderboard-hologram-title": "<#f4d35e><bold><stat> 상위권</bold></#f4d35e>"
+"leaderboard-hologram-line": "<#7dd3fc><rank>.</#7dd3fc> <white><player></white> <#7b8aa0>-</#7b8aa0> <#f4d35e><value></#f4d35e>"
+"hologram-usage": "<#f4d35e>사용법: /hologram set <type></#f4d35e>"
+"hologram-invalid-type": "<#f95738>알 수 없는 홀로그램 종류 <white><type></white>.</#f95738>"
+"hologram-set": "<#6dd3a0><white><type></white> 홀로그램 위치를 갱신했습니다.</#6dd3a0>"
+"kit-set": "<#6dd3a0>키트를 선택했습니다: <white><kit></white></#6dd3a0>"
+"config-menu-readonly-lore": "<#f4d35e>이 항목은 GUI에서 읽기 전용입니다.</#f4d35e>"
+"papi-status-enabled-detail": "MiniMessage의 PAPI 해석이 켜져 있고, %試煉UHC_*% 플레이스홀더가 등록되었습니다."
+"papi-status-disabled-detail": "PlaceholderAPI가 로드되지 않았습니다. PAPI 플레이스홀더를 쓰려면 plugins/에 설치하세요."
+"lobby-item":
+  "scenarios":
+    "name": "<#f4d35e><bold>시나리오</bold></#f4d35e>"
+    "lore":
+      - "<#cbd5e1>이번 경기에 켜진 시나리오를 봅니다.</#cbd5e1>"
+      - "<#6b7280>▸ 우클릭으로 열기</#6b7280>"
+  "cosmetics":
+    "name": "<gradient:#c084fc:#f472b6><bold>꾸미기 상점</bold></gradient>"
+    "lore":
+      - "<#cbd5e1>궤도 효과, 궤적, 처치와 승리 효과.</#cbd5e1>"
+      - "<#facc15>☀ <points> 포인트</#facc15>"
+      - "<#6b7280>▸ 우클릭으로 열기</#6b7280>"
+  "menu":
+    "name": "<gradient:#f4d35e:#ee964b><bold>메뉴</bold></gradient>"
+    "lore":
+      - "<#cbd5e1>모든 기능을 한눈에.</#cbd5e1>"
+      - "<#6b7280>▸ 우클릭으로 열기</#6b7280>"
+  "settings":
+    "name": "<#cbd5e1><bold>개인 설정</bold></#cbd5e1>"
+    "lore":
+      - "<#cbd5e1>스코어보드, 이름표, 메시지, 효과.</#cbd5e1>"
+      - "<#6b7280>▸ 우클릭으로 열기</#6b7280>"
+  "docs":
+    "name": "<#64748b><bold>도움말</bold></#64748b>"
+    "lore":
+      - "<#cbd5e1>서버와 UHC 플레이 방법 안내.</#cbd5e1>"
+      - "<#6b7280>▸ 우클릭으로 열기</#6b7280>"
+  "rules":
+    "name": "<#f95738><bold>규칙</bold></#f95738>"
+    "lore":
+      - "<#cbd5e1>서버 규칙을 읽습니다.</#cbd5e1>"
+      - "<#6b7280>▸ 우클릭으로 열기</#6b7280>"
+  "helpop":
+    "name": "<#c4b5fd><bold>스태프에게 질문</bold></#c4b5fd>"
+    "lore":
+      - "<#cbd5e1>접속 중인 스태프에게 질문합니다.</#cbd5e1>"
+      - "<#6b7280>▸ 우클릭으로 열기</#6b7280>"
+"spectator-item":
+  "teleporter":
+    "name": "<#6dd3a0><bold>플레이어 목록</bold></#6dd3a0>"
+    "lore":
+      - "<#cbd5e1>플레이어 목록을 엽니다.</#cbd5e1>"
+      - "<#7b8aa0>플레이어를 클릭하면 이동합니다.</#7b8aa0>"
+  "random_player":
+    "name": "<#f4d35e><bold>무작위 플레이어</bold></#f4d35e>"
+    "lore":
+      - "<white>생존한 무작위 플레이어에게 이동합니다.</white>"
+      - "<#d7e1ea>맵을 빠르게 둘러보세요.</#d7e1ea>"
+  "center":
+    "name": "<#7dd3fc><bold>0,0으로 이동</bold></#7dd3fc>"
+    "lore":
+      - "<white>월드 중앙으로 바로 이동합니다.</white>"
+      - "<#d7e1ea>전투와 최종 결투를 보기에 좋습니다.</#d7e1ea>"
+  "inspect":
+    "name": "<#fda4af><bold>인벤토리 보기</bold></#fda4af>"
+    "lore":
+      - "<white>생존 플레이어 목록을 엽니다.</white>"
+      - "<#d7e1ea>클릭하면 그 플레이어의 인벤토리를 봅니다.</#d7e1ea>"
+  "night_vision":
+    "name": "<#c4b5fd><bold>야간 투시</bold></#c4b5fd>"
+    "lore":
+      - "<white>관전자 야간 투시를 전환합니다.</white>"
+      - "<#d7e1ea>동굴과 어두운 곳의 전투를 보기에 좋습니다.</#d7e1ea>"
+  "speed":
+    "name": "<#a7f3d0><bold>속도 조절</bold></#a7f3d0>"
+    "lore":
+      - "<white>비행과 걷기 속도를 조절합니다.</white>"
+      - "<#d7e1ea>속도 조절 메뉴를 엽니다.</#d7e1ea>"
+  "info":
+    "name": "<#9db4c0><bold>관전 모드</bold></#9db4c0>"
+    "lore":
+      - "<#cbd5e1>현재 커스텀 관전 모드입니다.</#cbd5e1>"
+      - "<#7b8aa0>도구로 이동하고 플레이어를 확인하세요.</#7b8aa0>"
+    "action-message": "<#9db4c0>관전 도구로 이동하거나, 플레이어를 확인하거나, 속도를 조절하세요.</#9db4c0>"
+"scoreboard-event-none": "없음"
+"scoreboard-event-live": "진행 중"
+"scoreboard-event-match-start": "경기 시작"
+"scoreboard-event-scattering": "배치 중"
+"scoreboard-event-pvp": "PvP"
+"scoreboard-event-final-heal": "최종 회복"
+"scoreboard-event-final-duel": "최종 결투"
+"scoreboard-event-border-stage": "경계 <stage>/<total>"
+"scoreboard-event-sudden-death": "서든 데스"
+"scoreboard-event-match-end": "경기 종료"
+"scoreboard-event-lobby-return": "로비 복귀"
+"scoreboard-status-off": "꺼짐"
+"scoreboard-status-done": "완료"
+"scoreboard":
+  "title": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>시련UHC</bold></gradient> <#fda4af>◆</#fda4af>"
+  "footer":
+    "lines":
+      - "<#a7f3d0>play.example.net</#a7f3d0>"
+  "default":
+    "lines":
+      - "<#7dd3fc>✦</#7dd3fc> <white>Trial 서버</white>"
+      - ""
+      - "<#7dd3fc>⌚</#7dd3fc> <white>단계:</white> <white><phase></white>"
+      - "<#a7f3d0>⌂</#a7f3d0> <white>월드:</white> <white><world></white>"
+      - "<#fda4af>☻</#fda4af> <white>접속:</white> <white><online></white>"
+  "waiting":
+    "lines":
+      - "<#c4b5fd>✦</#c4b5fd> <white>대기 로비</white>"
+      - ""
+      - "<#fda4af>☻</#fda4af> <white>플레이어:</white> <white><online></white>"
+      - "<#f4d35e>⚑</#f4d35e> <white>필요 인원:</white> <white><players_to_start></white>"
+      - "<#a7f3d0>⌂</#a7f3d0> <white>월드:</white> <white><world></white>"
+  "countdown":
+    "lines":
+      - "<#f4d35e>⌛</#f4d35e> <white>곧 경기 시작</white>"
+      - ""
+      - "<#f4d35e>⌚</#f4d35e> <white>시작까지:</white> <white><timer></white>"
+      - "<#fda4af>☻</#fda4af> <white>플레이어:</white> <white><online></white>"
+      - "<#a7f3d0>⌂</#a7f3d0> <white>월드:</white> <white><world></white>"
+  "grace":
+    "lines":
+      - "<#93c5fd>✚</#93c5fd> <white>보호 시간</white>"
+      - ""
+      - "<#f4d35e>⌚</#f4d35e> <white>남은 시간:</white> <white><timer></white>"
+      - "<#fda4af>♥</#fda4af> <white>생존:</white> <white><alive></white>"
+      - "<#7dd3fc>◫</#7dd3fc> <white>경계:</white> <white><border></white>"
+      - "<#86efac>✦</#86efac> <white>다음 이벤트:</white> <white><next_event></white>"
+      - "<#93c5fd>⌚</#93c5fd> <white>카운트다운:</white> <white><next_event_timer></white>"
+  "running":
+    "lines":
+      - "<#ff8a80>✦</#ff8a80> <white>UHC 진행 중</white>"
+      - ""
+      - "<#fda4af>♥</#fda4af> <white>생존:</white> <white><alive></white>"
+      - "<#ff8a80>☠</#ff8a80> <white>사망:</white> <white><dead></white>"
+      - "<#c4b5fd>☁</#c4b5fd> <white>관전:</white> <white><spectators></white>"
+      - "<#7dd3fc>◫</#7dd3fc> <white>경계:</white> <white><border></white>"
+      - "<#86efac>✦</#86efac> <white>다음 이벤트:</white> <white><next_event></white>"
+      - "<#93c5fd>⌚</#93c5fd> <white>카운트다운:</white> <white><next_event_timer></white>"
+      - "<#f4d35e>⌚</#f4d35e> <white>경과 시간:</white> <white><elapsed></white>"
+"tab":
+  "player-format": "<white>•</white> <#fff3b0><player></#fff3b0>"
+  "spectator-format": "<gray>• <player></gray>"
+  "disconnected-line": "<white>접속 끊김:</white> <#fda4af><players></#fda4af>"
+  "default":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>시련UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>제작 <#ff8a80>平常網路資訊工作室</#ff8a80></white>\n"
+    "footer": "\n<white>버전:</white> <#fff3b0><version></#fff3b0>"
+  "waiting":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>시련UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>다음 경기 준비 중</white>\n"
+    "footer": "\n<white>시작까지 필요 인원:</white> <#ff8a80><players_to_start></#ff8a80>"
+  "countdown":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>시련UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white><timer> 후 시작</white>\n"
+    "footer": "\n<white>월드:</white> <#fff3b0><world></#fff3b0>"
+  "grace":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>시련UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>보호 시간: <timer></white>\n"
+    "footer": "\n<white>생존:</white> <#fff3b0><alive></#fff3b0> <white>| 경계:</white> <#ffd166><border></#ffd166>"
+  "running":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>시련UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>경기 진행 중</white>\n"
+    "footer": "\n<white>생존:</white> <#fff3b0><alive></#fff3b0> <white>| 관전:</white> <#fff3b0><spectators></#fff3b0>"
+"chat-clear-button": "<red><bold>[x]</bold></red>"
+"profile-passport":
+  "title": "<#f4d35e><bold>✈ 플레이어 여권</bold></#f4d35e> <#7b8aa0>(<page>/<pages>)</#7b8aa0>"
+  "header": "<#cbd5e1>등록된 플레이어 <white><count></white>명.</#cbd5e1> <#7b8aa0>이름에 마우스를 올리면 여권, 클릭하면 프로필이 열립니다.</#7b8aa0>"
+  "empty": "<#f4d35e>아직 기록된 플레이어 프로필이 없습니다.</#f4d35e>"
+  "button": "<white><player></white> <#a3e635>Lv<level></#a3e635>"
+  "previous": "<#93c5fd>« <page> 페이지</#93c5fd>"
+  "next": "<#93c5fd><page> 페이지 »</#93c5fd>"
+  "card": "<#f4d35e><bold>✈ 시련UHC 여권</bold></#f4d35e><newline><#334155>━━━━━━━━━━━━━━━━━━━━━━</#334155><newline><#7b8aa0>이름</#7b8aa0>  <white><bold><player></bold></white><newline><#7b8aa0>등급</#7b8aa0>  <rank><newline><#7b8aa0>번호</#7b8aa0>  <#cbd5e1><number></#cbd5e1><newline><#7b8aa0>레벨</#7b8aa0>  <#a3e635>Lv<level></#a3e635><newline><#7b8aa0>전적</#7b8aa0>  <#f4d35e><wins>승</#f4d35e> <#7b8aa0>/</#7b8aa0> <white><games>경기</white><newline><#7b8aa0>전투</#7b8aa0>  <#fca5a5><kills>처치</#fca5a5>  <#9ca3af><deaths>사망</#9ca3af>  <#7dd3fc>K/D <kd></#7dd3fc><newline><#334155>━━━━━━━━━━━━━━━━━━━━━━</#334155><newline><#475569><machine></#475569><newline><#6dd3a0>클릭하여 프로필 열기</#6dd3a0>"
+"custom-command":
+  "confirm-title": "<#f4d35e><bold>정말 하시겠습니까?</bold></#f4d35e>"
+  "confirm-yes": "<#6dd3a0><bold>예</bold></#6dd3a0>"
+  "confirm-no": "<#f95738>취소</#f95738>"
+  "transferring": "<#7dd3fc><white><server></white>(으)로 보내는 중...</#7dd3fc>"
+  "players-only": "<#f95738>플레이어만 이 명령어를 사용할 수 있습니다.</#f95738>"
+  "unavailable": "<#f95738>이 명령어는 삭제되었습니다. 다음 재시작 후 사라집니다.</#f95738>"
+"namehistory":
+  "header": "<#f4d35e><bold>이름 기록</bold></#f4d35e> <#7b8aa0>:</#7b8aa0> <white><player></white> <#475569>(<uuid>)</#475569> <#7b8aa0>- 이름 <count>개, 최신순</#7b8aa0>"
+  "entry": " <#334155>•</#334155> <white><name></white> <#7b8aa0><since></#7b8aa0><tags>"
+  "tag-current": " <#6dd3a0>[현재]</#6dd3a0>"
+  "tag-searched": " <#f4d35e>[검색함]</#f4d35e>"
+  "since-unknown": "기록 시작 전"
+  "footer": "<#475569>이 서버에서 본 이름만 표시됩니다. 이름을 클릭하면 복사됩니다.</#475569>"
+  "shared": "<#f4d35e><white><player></white>(이)라는 이름을 쓴 플레이어가 <count>명 있습니다:</#f4d35e>"
+  "not-found": "<#fda4af><white><player></white>(이)라는 이름으로 접속한 플레이어가 없습니다.</#fda4af>"
+"discord-chat-in": "<#5865F2>[Discord]</#5865F2> <white><name></white><dark_gray>:</dark_gray> <#cbd5e1><message></#cbd5e1>"
+"lobby-pvp-health": "<#fca5a5>⚔ <white><player></white></#fca5a5>  <bar>  <white><health></white><#7b8aa0>/<max_health></#7b8aa0>"
+"list-group": "<#7b8aa0>▌</#7b8aa0> <rank> <#7b8aa0>(<count>)</#7b8aa0>"
+"list-group-default": "<#7b8aa0>▌</#7b8aa0> <white>플레이어</white> <#7b8aa0>(<count>)</#7b8aa0>"
+"list-separator": "<dark_gray>, </dark_gray>"
+"maintenance.usage": "<#f4d35e><bold>/admin maintenance</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin maintenance on [시간] [사유]</#93c5fd> <#7b8aa0>- 스태프만 접속 가능. 시간(5m, 30s)을 주면 먼저 카운트다운</#7b8aa0><newline> <#93c5fd>/admin maintenance cancel</#93c5fd> <#7b8aa0>- 카운트다운 중지</#7b8aa0><newline> <#93c5fd>/admin maintenance off</#93c5fd> <#7b8aa0>- 서버 다시 열기</#7b8aa0><newline> <#93c5fd>/admin maintenance status</#93c5fd> <#7b8aa0>- 켜짐/꺼짐, 사유, 허용 목록</#7b8aa0><newline> <#93c5fd>/admin maintenance allow | disallow <player></#93c5fd> <#7b8aa0>- 점검 중 접속 허용</#7b8aa0>"
+"maintenance.enabled": "<prefix><#f95738>🛠 점검 모드 <bold>켜짐</bold> - 스태프만 접속할 수 있습니다.</#f95738>"
+"maintenance.disabled": "<prefix><#6dd3a0>🛠 점검이 끝났습니다 - 모두 다시 접속할 수 있습니다.</#6dd3a0>"
+"maintenance.kicked": "<#7b8aa0>플레이어 <white><kicked></white>명을 서버에서 내보냈습니다.</#7b8aa0>"
+"maintenance.already-on": "<#f4d35e>이미 점검 모드입니다.</#f4d35e>"
+"maintenance.already-off": "<#f4d35e>이미 점검 모드가 꺼져 있습니다.</#f4d35e>"
+"maintenance.status": "<#7b8aa0>점검:</#7b8aa0> <state> <#7b8aa0>· 사유:</#7b8aa0> <white><reason></white> <#7b8aa0>· 허용:</#7b8aa0> <white><players></white>"
+"maintenance.state-on": "<#f95738><bold>켜짐</bold></#f95738>"
+"maintenance.state-off": "<#6dd3a0><bold>꺼짐</bold></#6dd3a0>"
+"maintenance.allowed": "<#6dd3a0><white><player></white> 님은 점검 중에도 접속할 수 있습니다.</#6dd3a0>"
+"maintenance.disallowed": "<#f4d35e><white><player></white> 님은 이제 점검 중에 접속할 수 없습니다.</#f4d35e>"
+"maintenance.no-reason": "곧 돌아오겠습니다."
+"punish.screen.maintenance": "<#f4d35e><bold>🛠 서버 점검 중입니다.</bold></#f4d35e><newline><newline><#cbd5e1><reason></#cbd5e1><newline><#7b8aa0>나중에 다시 접속해 주세요.</#7b8aa0>"
+"admin.desc.maintenance": "- 점검 모드 (스태프만 접속 가능)"
+"maintenance.countdown": "<prefix><#f4d35e>🛠 <white><time></white> 후 점검이 시작됩니다.</#f4d35e> <#7b8aa0>플레이어는 서버에서 내보내집니다.</#7b8aa0>"
+"maintenance.bossbar": "<#f4d35e>🛠 점검까지</#f4d35e> <white><time></white>"
+"maintenance.cancelled": "<#6dd3a0>점검 카운트다운이 취소되었습니다.</#6dd3a0>"
+"maintenance.no-countdown": "<#f4d35e>진행 중인 점검 카운트다운이 없습니다.</#f4d35e>"
+"voice-status":
+  "talking": "<#6dd3a0><bold>♪</bold></#6dd3a0> "
+  "connected": "<#7b8aa0>♪</#7b8aa0> "
+  "muted": "<#f95738>✖</#f95738> "
+"team.name-too-long": "<#f95738>팀 이름은 최대 <white><max></white>자까지 가능합니다.</#f95738>"
+"staff-mode.item.noclip.name": "<#c4b5fd><bold>벽 통과</bold></#c4b5fd>"
+"staff-mode.item.noclip.lore": "<#7b8aa0>우클릭하면 벽을 통과해 날 수 있습니다. /staff noclip으로 끕니다.</#7b8aa0>"
+"staff-mode.noclip-on": "<#c4b5fd>벽 통과 켜짐 - 벽을 뚫고 날 수 있습니다.</#c4b5fd> <#7b8aa0>켜져 있는 동안 도구를 쓸 수 없습니다. <white>/staff noclip</white>으로 끄세요.</#7b8aa0>"
+"staff-mode.noclip-off": "<#6dd3a0>벽 통과 꺼짐 - 스태프 도구가 돌아왔습니다.</#6dd3a0>"
+"staff-mode.noclip-needs-staff": "<#f95738>벽 통과는 스태프 모드에서만 쓸 수 있습니다 (/staff).</#f95738>"
+"staff-mode.actionbar-noclip": " <#7b8aa0>·</#7b8aa0> <#c4b5fd>벽 통과</#c4b5fd> <#7b8aa0>(/staff noclip)</#7b8aa0>"
+"staff-mode.container-title": "<#334155><bold><container></bold></#334155> <#7b8aa0>(읽기 전용)</#7b8aa0>"
+"staff-tools.desc.noclip": "- 벽 통과 비행 (스태프 모드)"
+"tab-layout.player-left": "<rank><#6b7280><st><name></st> ☠</#6b7280>"
+"border-final-mobs-cleared": "<prefix><#93c5fd>경계가 최종 크기에 도달했습니다 - 적대적 몹이 더 이상 생성되지 않습니다.</#93c5fd> <#7b8aa0>(<count>마리 제거)</#7b8aa0>"
+"match.summary.team": "<#7b8aa0>  팀원     </#7b8aa0><members>"
+"match.summary.member-alive": "<white><player></white>"
+"match.summary.member-dead": "<gray><st><player></st></gray>"
+"language.dialog.title": "<#93c5fd><bold>🌐 언어</bold></#93c5fd>"
+"language.dialog.body": "<#cbd5e1>시련UHC에서 사용할 언어를 고르세요. 채팅, 메뉴, 제목, 스코어보드가 모두 바뀝니다.</#cbd5e1>"
+"language.dialog.current": "<#7b8aa0>현재:</#7b8aa0> <white><language></white>"
+"language.dialog.current-auto": "<#7b8aa0>현재:</#7b8aa0> <white><language></white> <#7b8aa0>(자동)</#7b8aa0>"
+"language.dialog.auto": "<#7dd3fc>🌐 자동</#7dd3fc> <#7b8aa0>(마인크래프트 따르기)</#7b8aa0>"
+"language.dialog.auto-selected": "<#6dd3a0>✔</#6dd3a0> <#7dd3fc>자동</#7dd3fc> <#7b8aa0>(마인크래프트 따르기)</#7b8aa0>"
+"language.dialog.entry": "<white><name></white> <#7b8aa0><code></#7b8aa0>"
+"language.dialog.entry-selected": "<#6dd3a0>✔</#6dd3a0> <white><bold><name></bold></white> <#7b8aa0><code></#7b8aa0>"
+"language.dialog.tooltip": "<#7b8aa0>번역:</#7b8aa0> <white><translator></white>"
+"database.backup.usage": "<#f4d35e><bold>/admin database backup</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin database backup [create] [name]</#93c5fd> <#7b8aa0>- 모든 플레이어 데이터를 지금 백업</#7b8aa0><newline> <#93c5fd>/admin database backup list</#93c5fd> <#7b8aa0>- 저장된 백업</#7b8aa0><newline> <#93c5fd>/admin database backup info <name></#93c5fd> <#7b8aa0>- 백업 내용 보기</#7b8aa0><newline> <#93c5fd>/admin database backup load <name> confirm</#93c5fd> <#7b8aa0>- 모든 플레이어 데이터를 백업으로 교체</#7b8aa0><newline> <#93c5fd>/admin database backup delete <name> confirm</#93c5fd> <#7b8aa0>- 백업 삭제</#7b8aa0>"
+"database.backup.invalid-name": "<#f95738>백업 이름에는 영문자, 숫자, 점, 하이픈, 밑줄만 쓸 수 있습니다 (최대 48자).</#f95738>"
+"database.backup.exists": "<#f95738><white><name></white>(이)라는 백업이 이미 있습니다.</#f95738>"
+"database.backup.busy": "<#f4d35e>백업을 만들거나 불러오는 중입니다. 잠시 후 다시 시도하세요.</#f4d35e>"
+"database.backup.creating": "<#7dd3fc>모든 플레이어 데이터를 <white><name></white>(으)로 백업하는 중...</#7dd3fc>"
+"database.backup.created": "<#6dd3a0>백업 <white><name></white> 저장 완료: 프로필 <white><profiles></white>개, <white><size></white>.</#6dd3a0>"
+"database.backup.failed": "<#f95738>백업 실패: <white><error></white></#f95738>"
+"database.backup.list-empty": "<#7b8aa0>아직 백업이 없습니다. /admin database backup으로 만드세요.</#7b8aa0>"
+"database.backup.list-header": "<#f4d35e><bold>데이터베이스 백업</bold></#f4d35e> <#7b8aa0>(<count>개, 최신순 - 클릭하면 자세히)</#7b8aa0>"
+"database.backup.list-entry": " <click:run_command:'/admin database backup info <name>'><#93c5fd><name></#93c5fd></click> <#7b8aa0>· <date> · 프로필 <profiles>개 · <size></#7b8aa0>"
+"database.backup.info": "<#f4d35e><bold>백업 <name></bold></#f4d35e><newline> <#7b8aa0>생성:</#7b8aa0> <white><date></white> <#7b8aa0>작성자</#7b8aa0> <white><by></white><newline> <#7b8aa0>원본 저장소:</#7b8aa0> <white><storage></white><newline> <#7b8aa0>프로필:</#7b8aa0> <white><profiles></white> <#7b8aa0>· 크기:</#7b8aa0> <white><size></white><newline> <#7b8aa0>추가 포함:</#7b8aa0> <white><files></white><newline> <click:suggest_command:'/admin database backup load <name> confirm'><#f4d35e>[이 백업 불러오기]</#f4d35e></click>"
+"database.backup.not-found": "<#f95738><white><name></white>(이)라는 백업이 없습니다. /admin database backup list를 확인하세요.</#f95738>"
+"database.backup.load-confirm": "<#f95738><bold>모든</bold> 플레이어 데이터(프로필, 등급, 처벌, 파쿠르 기록)가 백업 <white><name></white>(으)로 교체됩니다.</#f95738> <#cbd5e1>현재 데이터는 먼저 백업됩니다. 계속하려면</#cbd5e1> <click:suggest_command:'/admin database backup load <name> confirm'><white><u>/admin database backup load <name> confirm</u></white></click> <#cbd5e1>을(를) 실행하세요.</#cbd5e1>"
+"database.backup.loading": "<#7dd3fc>현재 데이터를 <white><safety></white>(으)로 저장한 뒤 <white><name></white>을(를) 불러오는 중...</#7dd3fc>"
+"database.backup.loaded": "<#6dd3a0>백업 <white><name></white>을(를) 불러왔습니다: 프로필 <white><profiles></white>개 복원.</#6dd3a0> <#7b8aa0>이전 데이터는 <white><safety></white>(으)로 저장되어 있습니다.</#7b8aa0>"
+"database.backup.load-failed": "<#f95738>백업 불러오기 실패: <white><error></white></#f95738> <#7b8aa0>복원이 시작되기 전이라면 아무것도 바뀌지 않았습니다. 콘솔을 확인하세요.</#7b8aa0>"
+"database.backup.delete-confirm": "<#f95738>백업 <white><name></white>을(를) 영구히 삭제할까요?</#f95738> <#cbd5e1>확인하려면</#cbd5e1> <click:suggest_command:'/admin database backup delete <name> confirm'><white><u>/admin database backup delete <name> confirm</u></white></click> <#cbd5e1>을(를) 실행하세요.</#cbd5e1>"
+"database.backup.deleted": "<#6dd3a0>백업 <white><name></white>을(를) 삭제했습니다.</#6dd3a0>"
+"cosmetics.type.join-effect.name": "<#a78bfa>입장 효과</#a78bfa>"
+"cosmetics.type.join-effect.lore": "<#9db4c0>서버에 접속하면 내 주위에서 재생됩니다.</#9db4c0>"
+"database.clear.dialog.title": "<#f95738><bold>🗑 플레이어 데이터 삭제</bold></#f95738>"
+"database.clear.dialog.select-body": "<#cbd5e1>플레이어 <white><count></white>명의 데이터를 삭제합니다:</#cbd5e1> <white><players></white><newline><newline><#7b8aa0>삭제할 항목을 체크한 뒤 「다음」으로 확인하세요.</#7b8aa0>"
+"database.clear.dialog.next": "<#f4d35e><bold>다음 ▶</bold></#f4d35e>"
+"database.clear.dialog.cancel": "<#cbd5e1>취소</#cbd5e1>"
+"database.clear.dialog.nothing": "<#f4d35e>삭제할 항목을 하나 이상 선택하세요.</#f4d35e>"
+"database.clear.dialog.confirm-title": "<#f95738><bold>⚠ 정말 삭제할까요?</bold></#f95738>"
+"database.clear.dialog.confirm-body": "<#cbd5e1>플레이어 <white><count></white>명(<white><players></white>)의 다음 데이터가 영구히 삭제됩니다:</#cbd5e1><newline><newline><parts><newline><newline><#7b8aa0>되돌릴 수 없습니다. 먼저 /admin database backup으로 백업하세요.</#7b8aa0>"
+"database.clear.dialog.confirm": "<#f95738><bold>🗑 삭제</bold></#f95738>"
+"database.clear.dialog.back": "<#cbd5e1>◀ 뒤로</#cbd5e1>"
+"database.clear.dialog.done": "<#6dd3a0>플레이어 <white><count></white>명의 데이터 <white><parts></white>종류를 삭제했습니다.</#6dd3a0>"
+"database.clear.dialog.part.stats": "경기 통계 (처치, 사망, 승리, 경기 수, 광석...)"
+"database.clear.dialog.part.level": "레벨과 경험치"
+"database.clear.dialog.part.lobby": "로비 게임 통계와 파쿠르 기록"
+"database.clear.dialog.part.cosmetics": "꾸미기와 포인트"
+"database.clear.dialog.part.settings": "설정, 언어, 키트"
+"database.clear.dialog.part.names": "이름 기록"
+"database.clear.dialog.part.ranks": "등급"
+"database.clear.dialog.part.punishments": "처벌 (기록, 채팅 금지, 차단)"
+"database.clear.dialog.part.everything": "<#f95738><bold>전부</bold></#f95738> (프로필 전체 삭제)"
+"ceremony.intro.title": "<gradient:#f4d35e:#ee964b><bold>경기 시상식</bold></gradient>"
+"ceremony.intro.subtitle": "<#cbd5e1>이번 경기의 주인공은?</#cbd5e1>"
+"ceremony.montage.title": "<#93c5fd><bold>기타 시상</bold></#93c5fd>"
+"ceremony.montage.subtitle": "<#cbd5e1>특별상</#cbd5e1>"
+"ceremony.podium.title": "<gradient:#f4d35e:#ee964b><bold>시상대</bold></gradient>"
+"ceremony.podium.subtitle": "<#cbd5e1>상위 3위</#cbd5e1>"
+"ceremony.podium.place.1": "<gradient:#fde047:#f59e0b><bold>🥇 1위</bold></gradient>"
+"ceremony.podium.place.2": "<gradient:#e5e7eb:#94a3b8><bold>🥈 2위</bold></gradient>"
+"ceremony.podium.place.3": "<gradient:#fdba74:#c2410c><bold>🥉 3위</bold></gradient>"
+"ceremony.podium.name": "<white><name></white>"
+"ceremony.award.kills.title": "<#f4d35e><bold>⚔ 최다 처치</bold></#f4d35e>"
+"ceremony.award.kills.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value>킬</#cbd5e1>"
+"ceremony.award.damage-dealt.title": "<#f4d35e><bold>✦ 최다 피해</bold></#f4d35e>"
+"ceremony.award.damage-dealt.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 피해</#cbd5e1>"
+"ceremony.award.diamonds.title": "<#f4d35e><bold>◆ 최다 다이아몬드</bold></#f4d35e>"
+"ceremony.award.diamonds.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>다이아 <value>개</#cbd5e1>"
+"ceremony.award.golden-apples.title": "<#f4d35e><bold>🍎 황금 사과왕</bold></#f4d35e>"
+"ceremony.award.golden-apples.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value>개 먹음</#cbd5e1>"
+"ceremony.award.survived.title": "<#f4d35e><bold>⌛ 최장 생존</bold></#f4d35e>"
+"ceremony.award.survived.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 생존</#cbd5e1>"
+"ceremony.award.damage-taken.title": "<#f4d35e><bold>🛡 최고의 탱커</bold></#f4d35e>"
+"ceremony.award.damage-taken.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 받음</#cbd5e1>"
+"ceremony.award.gold.title": "<#f4d35e><bold>⛏ 금 캐는 사람</bold></#f4d35e>"
+"ceremony.award.gold.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>금 <value>개</#cbd5e1>"
+"ceremony.award.assists.title": "<#f4d35e><bold>✚ 최고의 팀원</bold></#f4d35e>"
+"ceremony.award.assists.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>어시스트 <value>회</#cbd5e1>"
+"ceremony.award.first-blood.title": "<#f4d35e><bold>🩸 퍼스트 블러드</bold></#f4d35e>"
+"ceremony.award.first-blood.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>첫 처치</#cbd5e1>"
+"ceremony.award.iron.title": "<#f4d35e><bold>⛏ 철 광부</bold></#f4d35e>"
+"ceremony.award.iron.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>철 <value>개</#cbd5e1>"
+"ceremony.skip-hint": "<#7b8aa0>웅크리기 두 번으로 건너뛰기</#7b8aa0>"
+"ceremony.skip-confirm": "<#f4d35e>한 번 더 웅크리면 시상식을 건너뜁니다</#f4d35e>"
+"ceremony.skipped": "<#7b8aa0>시상식에서 나왔습니다.</#7b8aa0>"
+"ceremony.spawn-prompt": "<prefix><#cbd5e1>플레이해 주셔서 감사합니다! <click:run_command:'/spawn'><hover:show_text:'/spawn'><white><u>/spawn</u></white></hover></click>으로 스폰에 돌아갈 수 있습니다.</#cbd5e1>"
+"podium.usage": "<#f4d35e><bold>/admin podium</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin podium set <1|2|3|stage|view></#93c5fd> <#7b8aa0>- 서 있는 곳을 지정 (시상대, 시상 무대, 관람 위치)</#7b8aa0><newline> <#93c5fd>/admin podium info</#93c5fd> <#7b8aa0>- 저장된 위치 보기</#7b8aa0><newline> <#93c5fd>/admin podium test</#93c5fd> <#7b8aa0>- 접속 중인 플레이어로 시상식 미리보기</#7b8aa0><newline> <#93c5fd>/admin podium skip</#93c5fd> <#7b8aa0>- 진행 중인 시상식을 모두에게 종료</#7b8aa0><newline> <#93c5fd>/admin podium clear</#93c5fd> <#7b8aa0>- 시상대의 NPC와 텍스트 지우기</#7b8aa0>"
+"podium.set": "<#6dd3a0>시상 위치 <white><spot></white>을(를) 지금 서 있는 곳(과 방향)으로 지정했습니다.</#6dd3a0>"
+"podium.spot.1": "1위"
+"podium.spot.2": "2위"
+"podium.spot.3": "3위"
+"podium.spot.stage": "시상 무대"
+"podium.spot.view": "관람 위치"
+"podium.info-line": " <#93c5fd><spot></#93c5fd> <#7b8aa0>·</#7b8aa0> <white><where></white>"
+"podium.not-set": "<#7b8aa0>지정 안 됨</#7b8aa0>"
+"podium.fallback-note": "<#f4d35e>시상대가 모두 지정되지 않아 로비 스폰 앞에 임시 시상대를 만듭니다.</#f4d35e>"
+"podium.cleared": "<#6dd3a0>시상대의 NPC와 텍스트를 지웠습니다.</#6dd3a0>"
+"podium.not-running": "<#f4d35e>진행 중인 시상식이 없습니다.</#f4d35e>"
+"podium.skipped": "<#6dd3a0>모두의 시상식을 종료했습니다.</#6dd3a0>"
+"podium.test-busy": "<#f95738>로비에서 시상식이 진행 중이 아닐 때만 사용할 수 있습니다.</#f95738>"
+"podium.test-started": "<#6dd3a0>시상식 미리보기를 재생하는 중...</#6dd3a0>"
+"podium.no-lobby": "<#f95738>먼저 로비 스폰을 지정하세요 (/admin setlobby).</#f95738>"
+"admin.desc.podium": "- 경기 후 시상대와 시상식"
+"match-exp-earned": "<#f4d35e>이번 경기에서 경험치 <white><experience></white>을(를) 얻었습니다.</#f4d35e>"
+"match-points-earned": "<#facc15>이번 경기에서 <white><points></white> 포인트를 얻었습니다.</#facc15>"
+"scenarios.gui.none": "<#7b8aa0><bold>시나리오 없음</bold></#7b8aa0>"
+"scenarios.gui.none-lore": "<#7b8aa0>이번 경기는 기본 UHC입니다. 활성화된 시나리오가 없습니다.</#7b8aa0>"
+"scenarios.gui.filter.all": "<#93c5fd><bold>표시: 모든 시나리오</bold></#93c5fd>"
+"scenarios.gui.filter.active": "<#6dd3a0><bold>표시: 활성화된 것만</bold></#6dd3a0>"
+"scenarios.gui.filter.lore": "<#7b8aa0>클릭하여 모든 시나리오와 활성화된 것만 보기를 전환합니다.</#7b8aa0>"
+"hub.no-return": "<#f4d35e>돌아갈 서버가 없습니다. 로비 스폰으로 가려면 <white>/spawn</white>을 사용하세요.</#f4d35e>"
+"item.empty": "<#f95738>보여줄 아이템을 손에 들어주세요.</#f95738>"
+"list-vanished-tag": " <#7b8aa0><i>(투명)</i></#7b8aa0>"
+"sudden-death-box": "<prefix><#faf0ca><players>명이 <size>×<size> 기반암 상자로 이동했습니다.</#faf0ca>"
+"config-menu-label-game-sudden-death-box-size": "서든 데스 기반암 상자 크기"
+"config-menu-desc-game-sudden-death-box-size": "경기 시간이 끝나면 생존자 전원이 이 너비의 기반암 상자에 갇혀 한 명이 남을 때까지 싸웁니다."
+"admin.desc.debug": "- 디버그 미리보기 (중앙 표시)"
+"debug.usage": "<#f95738>사용법: /admin debug center_waypoint</#f95738>"
+"debug.center-waypoint": "<prefix><#6dd3a0>중앙 표시를 이 위치에 <seconds>초 동안 보여줍니다.</#6dd3a0>"
+"ceremony.crown.name": "<#f4d35e><bold>챔피언의 왕관</bold></#f4d35e>"
+"ceremony.crown.lore": "<#faf0ca>지난 경기 우승자의 증표.</#faf0ca>"
+"ceremony.crown.given": "<prefix><#f4d35e>👑 우승했습니다! 다음 경기까지 챔피언의 왕관을 쓰세요.</#f4d35e>"

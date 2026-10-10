@@ -1,0 +1,3317 @@
+# Japanese (日本語). Translated by AI (Claude); placeholders and tags match messages.yml.
+"language":
+  "name": "日本語"
+  "code": "ja_jp"
+  "translator": "AI（Claude）"
+  "current": "<#7b8aa0>言語モード：</#7b8aa0> <white><mode></white> <#7b8aa0>| 使用中：</#7b8aa0> <white><effective></white>\n<#7b8aa0>利用可能：</#7b8aa0> <white><available></white>"
+  "set":
+    "text": "<#6dd3a0>言語を <white><language></white> に設定しました。</#6dd3a0>"
+    "auto": "<#6dd3a0>言語はMinecraftクライアントの設定に従います。</#6dd3a0>"
+  "invalid": "<#f95738>言語 <white><language></white> は利用できません。</#f95738> <#7b8aa0>利用可能：</#7b8aa0> <white><available></white>"
+  "menu":
+    "title": "<#334155><bold>言語を選択</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "auto":
+      "text": "<#7dd3fc><bold>自動検出</bold></#7dd3fc>"
+      "lore": "<#cbd5e1>Minecraftクライアントの言語に従います。</#cbd5e1>"
+    "language":
+      "name": "<#f4d35e><bold><language></bold></#f4d35e>"
+    "select":
+      "lore": "<#cbd5e1>クリックでこの言語を使う</#cbd5e1>"
+    "code":
+      "lore": "<#7b8aa0>ロケール：</#7b8aa0> <white><language></white>"
+    "translator":
+      "lore": "<#7b8aa0>翻訳：</#7b8aa0> <white><translator></white>"
+    "current":
+      "lore": "<#7b8aa0>現在：</#7b8aa0> <white><language></white>"
+    "selected":
+      "lore": "<#6dd3a0>現在選択中。</#6dd3a0>"
+"prefix": "<gradient:#f4d35e:#ee964b><bold>試練UHC</bold></gradient> <gray>»</gray> "
+"discord-link": "<white><click:open_url:'<link>'><underlined><link></underlined></click></white>"
+"nightvision-enabled": "<#6dd3a0>暗視を有効にしました。</#6dd3a0>"
+"nightvision-disabled": "<#f95738>暗視を無効にしました。</#f95738>"
+"scoreboard-shown": "<#6dd3a0>スコアボードを表示しました。</#6dd3a0>"
+"scoreboard-hidden": "<#f95738>スコアボードを非表示にしました。</#f95738> <#7b8aa0><white>/sb</white> で再表示できます。</#7b8aa0>"
+"settings-unknown": "<#f95738>不明な設定です：<white><setting></white>。</#f95738>"
+"pm-disabled": "<#f95738><player> はプライベートメッセージを受け付けていません。</#f95738>"
+"usage-settings": "<#f4d35e><bold>/settings</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/settings</#93c5fd> <#7b8aa0>- 個人設定を開く</#7b8aa0><newline> <#93c5fd>/settings toggle <設定></#93c5fd> <#7b8aa0>- 設定を1つ切り替える</#7b8aa0>"
+"usage-scoreboard": "<#f4d35e><bold>/sb</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/sb [on|off]</#93c5fd> <#7b8aa0>- スコアボードの表示／非表示</#7b8aa0>"
+"usage-setmaxplayers": "<#f4d35e><bold>/admin setmaxplayers</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin setmaxplayers <人数></#93c5fd> <#7b8aa0>- サーバーの最大人数を変更</#7b8aa0>"
+"usage-database-import": "<#f4d35e><bold>/admin database</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin database import <yaml|postgresql|mariadb></#93c5fd> <#7b8aa0>- 別のストレージからプロフィールをコピー</#7b8aa0>"
+"database-import-started": "<#7dd3fc><white><type></white> からプロフィールをインポート中... バックグラウンドで実行されます。</#7dd3fc>"
+"database-import-success": "<#6dd3a0><white><type></white> から <white><count></white> 件のプロフィールを現在のストレージにインポートしました。</#6dd3a0>"
+"database-import-failed": "<red><white><type></white> からのインポートに失敗しました：<white><error></white></red>"
+"max-players-set": "<#6dd3a0>最大人数を <white><amount></white> に設定しました。</#6dd3a0>"
+"baby-animals-disabled": "<#f95738>この試合では動物の繁殖が無効です。"
+"config-preset-usage": "<#f4d35e><bold>/admin preset</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin preset</#93c5fd> <#7b8aa0>- プリセットメニューを開く</#7b8aa0><newline> <#93c5fd>/admin preset save <名前></#93c5fd> <#7b8aa0>- 現在の設定を保存</#7b8aa0><newline> <#93c5fd>/admin preset load <名前></#93c5fd> <#7b8aa0>- プリセットを適用</#7b8aa0><newline> <#93c5fd>/admin preset delete <名前></#93c5fd> <#7b8aa0>- プリセットを削除</#7b8aa0><newline> <#93c5fd>/admin preset list</#93c5fd> <#7b8aa0>- 保存済みプリセット一覧</#7b8aa0>"
+"config-preset-invalid-name": "<#f95738>プリセット名には英字、数字、アンダースコア、ハイフンのみ使えます。</#f95738>"
+"config-preset-saved": "<#6dd3a0>現在の設定をプリセット <white><name></white> として保存しました。</#6dd3a0>"
+"config-preset-save-failed": "<#f95738>プリセット <white><name></white> を保存できませんでした。</#f95738>"
+"config-preset-match-running": "<#f95738>プリセットはロビーでのみ適用できます（試合中は不可）。</#f95738>"
+"config-preset-loaded": "<#6dd3a0>プリセット <white><name></white> を適用しました。</#6dd3a0>"
+"config-preset-load-failed": "<#f95738>プリセット <white><name></white> を適用できませんでした。</#f95738>"
+"config-preset-not-found": "<#f95738><white><name></white> という名前のプリセットは見つかりません。</#f95738>"
+"config-preset-deleted": "<#6dd3a0>プリセット <white><name></white> を削除しました。</#6dd3a0>"
+"config-preset-list": "<#7b8aa0>保存済みプリセット：</#7b8aa0> <white><names></white>"
+"config-preset-list-empty": "<#7b8aa0>保存済みのプリセットはまだありません。</#7b8aa0>"
+"config-preset-dialog-title": "設定プリセット"
+"config-preset-dialog-body": "<gray>下に名前を入力すると現在の設定を保存します。保存済みプリセットをクリックすると読み込みます。</gray>"
+"config-preset-dialog-input": "プリセット名"
+"config-preset-dialog-save": "<green>入力した名前で保存</green>"
+"config-preset-dialog-delete": "<red>入力した名前を削除</red>"
+"config-preset-dialog-preset": "<aqua><name></aqua>"
+"config-preset-dialog-load-hint": "<gray>クリックでこのプリセットを読み込みます。</gray><newline><dark_gray>/admin preset load <id></dark_gray>"
+"config-menu-action-set-lobby": "<#93c5fd><bold>ロビーを設定</bold></#93c5fd>"
+"config-menu-action-set-lobby-lore-1": "<#cbd5e1>ロビーのスポーン地点を現在地に設定します。</#cbd5e1>"
+"config-menu-action-set-lobby-lore-2": "<#93c5fd>▶ クリックでここをロビーに設定</#93c5fd>"
+"config-menu-action-set-lobby-lore-3": "<#7b8aa0>/admin setlobby と同じ</#7b8aa0>"
+"config-menu-start-button": "<#22c55e><bold>ゲーム開始</bold></#22c55e>"
+"config-menu-start-button-active": "<#ef4444><bold>ゲーム進行中</bold></#ef4444>"
+"config-menu-start-button-lore": "<#cbd5e1>クリックでUHCを開始します。</#cbd5e1>"
+"config-menu-start-button-active-lore": "<#7b8aa0>すでにゲームが進行中です。</#7b8aa0>"
+"config-menu-stop-button": "<#f95738><bold>試合を停止</bold></#f95738>"
+"config-menu-stop-button-idle": "<#7b8aa0><bold>試合を停止</bold></#7b8aa0>"
+"config-menu-stop-button-lore": "<#cbd5e1>クリックで現在の試合を停止し、全員をロビーに戻します。</#cbd5e1>"
+"config-menu-stop-button-confirm-lore": "<#f4d35e>確認が必要です。</#f4d35e>"
+"config-menu-stop-button-idle-lore": "<#7b8aa0>停止できる試合はありません。</#7b8aa0>"
+"config-menu-reset-button": "<#f4d35e><bold>試合をリセット</bold></#f4d35e>"
+"config-menu-reset-button-lore": "<#cbd5e1>試合を強制的に完全リセットし、全員をロビー状態に戻します。</#cbd5e1>"
+"config-menu-reset-button-confirm-lore": "<#f4d35e>確認が必要です。</#f4d35e>"
+"help-desc-kill": "プレイヤーを脱落させる。"
+"help-desc-level": "あなたのレベル、経験値、進捗。"
+"experience-updated": "<#6dd3a0><white><player></white> の経験値を <white><experience></white> XP（レベル <white><level></white>）に設定しました。</#6dd3a0>"
+"experience-updated-many": "<#6dd3a0><white><count></white> 人の経験値を更新しました：</#6dd3a0> <#cbd5e1><players></#cbd5e1>"
+"experience-invalid-amount": "<#f95738><white><amount></white> は無効な値です。0以上の整数を入力してください。</#f95738>"
+"help-desc-recipe": "カスタムレシピ。"
+"help-desc-revive": "脱落したプレイヤーを復活させる。"
+"help-desc-discord": "サーバーのDiscord招待リンクを表示。"
+"help-desc-config": "ゲーム設定を見る（管理者は変更可）。"
+"config-menu-desc-ui-tab-health-mode": "Tabの名前の後ろの体力（0-20）。HEARTS = 20.0❤、NUMBER = 20、NONE = 非表示。（バニラのTabではHEARTSはハートのアイコン）"
+"ipvp-blocked": "<#f95738>猶予期間中は他のプレイヤーの近くで <white><item></white> を使えません。</#f95738>"
+"alert-ipvp": "<#f95738>iPvP をブロック</#f95738> <#7b8aa0>| プレイヤー：</#7b8aa0> <white><attacker></white> <#7b8aa0>| 近く：</#7b8aa0> <white><victim></white> <#7b8aa0>| アイテム：</#7b8aa0> <white><item></white>"
+"help-desc-spawn": "ロビーのスポーンに戻り、ロビーアイテムを受け取る。"
+"spawn":
+  "teleported": "<#6dd3a0>スポーンに戻りました - ロビーアイテムを復元しました。</#6dd3a0>"
+  "in-game": "<#f95738>試合中は /spawn を使えません。</#f95738>"
+  "staff-mode": "<#f95738>先にスタッフモードを解除してください（/staff）。</#f95738>"
+  "frozen": "<#f95738>凍結中は /spawn を使えません。</#f95738>"
+  "no-lobby": "<#f95738>ロビーのスポーンがまだ設定されていません。</#f95738>"
+"list-entry-eliminated": "<head> <gray><player></gray>"
+"list-entry-lobby-spectator": "<head> <#9db4c0><player></#9db4c0>"
+"list-entry-active": "<head> <#6dd3a0><player></#6dd3a0>"
+"list-entry-default": "<head> <white><player></white>"
+"list-entry-team": "<head> <team_prefix><player>"
+"help-desc-rules": "サーバールールを見る。"
+"help-desc-nightvision": "自分の暗視を切り替える。"
+"help-desc-settings": "個人設定。"
+"help-desc-scoreboard": "スコアボードの表示／非表示。"
+"alerts-title": "<black><bold>アラート設定</bold></black>"
+"alerts-filler": "<dark_gray> </dark_gray>"
+"alerts-report": "<#f95738><bold>通報アラート</bold></#f95738>"
+"alerts-item-pvp": "<#ee964b><bold>アイテムPvPアラート</bold></#ee964b>"
+"alerts-pvp": "<#7dd3fc><bold>PvPアラート</bold></#7dd3fc>"
+"alerts-mining": "<#86efac><bold>採掘アラート</bold></#86efac>"
+"alerts-vulcan": "<#a78bfa><bold>Vulcanアラート</bold></#a78bfa>"
+"alerts-status-on": "<#6dd3a0>状態：有効</#6dd3a0>"
+"alerts-status-off": "<#f95738>状態：無効</#f95738>"
+"alerts-click-toggle": "<#cbd5e1>クリックでこのアラートを切り替えます。</#cbd5e1>"
+"alerts-category-enabled": "<#6dd3a0><category> アラートを有効にしました。</#6dd3a0>"
+"alerts-category-disabled": "<#f95738><category> アラートを無効にしました。</#f95738>"
+"rules":
+  "dialog-title": "<gradient:#f4d35e:#ee964b><bold>サーバールール</bold></gradient>"
+  "dialog-body": "<#cbd5e1>プレイ前に以下のルールを読み、同意してください。</#cbd5e1>"
+  "agree-button": "<#6dd3a0><bold>同意する</bold></#6dd3a0>"
+  "confirmed": "<#6dd3a0>確認ありがとうございます - 楽しんでください！</#6dd3a0>"
+  "already-confirmed": "<#7b8aa0>すでにルールを確認済みです。</#7b8aa0>"
+"quick-actions":
+  "menu":
+    "title": "<bold>試練UHC メニュー</bold>"
+    "label": "<#f4d35e><bold>試練UHC メニュー</bold></#f4d35e>"
+"info":
+  "title": "<gradient:#f4d35e:#ee964b><bold>試練UHC</bold></gradient>"
+  "version": "<#7b8aa0>バージョン：</#7b8aa0> <white><version></white>"
+  "author":
+    "text": "<#7b8aa0>開発：</#7b8aa0> <#f4d35e>平常網路資訊工作室</#f4d35e>"
+    "hover": "<#faf0ca>クリックでGitHubを開く</#faf0ca>"
+"usage":
+  "uhc":
+    "root": "<#f4d35e><bold>/uhc</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/uhc help [ページ]</#93c5fd> <#7b8aa0>- 使えるコマンド一覧</#7b8aa0><newline> <#93c5fd>/uhc level [プレイヤー]</#93c5fd> <#7b8aa0>- レベルと経験値</#7b8aa0><newline> <#93c5fd>/uhc recipes</#93c5fd> <#7b8aa0>- カスタムレシピ</#7b8aa0><newline> <#93c5fd>/uhc docs</#93c5fd> <#7b8aa0>- ゲーム内ガイド</#7b8aa0><newline> <#64748b>管理ツール：/admin · スタッフツール：/staff help</#64748b>"
+    "kill": "<#f4d35e><bold>/kill</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kill <プレイヤー|セレクター></#93c5fd> <#7b8aa0>- プレイヤーを脱落させる（* = 生存者全員）</#7b8aa0>"
+    "level": "<#f4d35e><bold>/uhc level</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/uhc level [プレイヤー]</#93c5fd> <#7b8aa0>- レベル、経験値、進捗を表示</#7b8aa0>"
+    "experience": "<#f4d35e><bold>/admin experience</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin experience <プレイヤー|パターン> set <量></#93c5fd> <#7b8aa0>- 合計XPを設定</#7b8aa0><newline> <#93c5fd>/admin experience <プレイヤー|パターン> add|remove <量></#93c5fd> <#7b8aa0>- XPを増減</#7b8aa0><newline> <#93c5fd>/admin experience <プレイヤー|パターン> setlevel <レベル></#93c5fd> <#7b8aa0>- レベルを設定</#7b8aa0><newline> <#64748b>100 XP = 1レベル · * は任意の文字列（例：HippoDev_*）</#64748b>"
+    "revive": "<#f4d35e><bold>/revive</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/revive <プレイヤー></#93c5fd> <#7b8aa0>- 脱落したプレイヤーを復活</#7b8aa0>"
+    "lobbygame": "<#f4d35e><bold>/admin lobbygame</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin lobbygame start <ゲーム></#93c5fd> <#7b8aa0>- math, unscramble, type, trivia, number, reaction, treasure, potato</#7b8aa0><newline> <#93c5fd>/admin lobbygame stop</#93c5fd> <#7b8aa0>- 進行中のゲームを停止</#7b8aa0><newline> <#93c5fd>/admin lobbygame word <add|remove|list> [単語]</#93c5fd> <#7b8aa0>- 並べ替え単語リストを編集</#7b8aa0><newline> <#93c5fd>/admin lobbygame parkour <setstart|addcheckpoint|removecheckpoint|setfinish|clear|resettimes|top></#93c5fd> <#7b8aa0>- パルクールを設定</#7b8aa0>"
+    "pm": "<#f4d35e><bold>/msg</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/msg <プレイヤー> <メッセージ></#93c5fd> <#7b8aa0>- プライベートメッセージを送る</#7b8aa0>"
+    "reply": "<#f4d35e><bold>/r</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/r <メッセージ></#93c5fd> <#7b8aa0>- 最後のプライベートメッセージに返信</#7b8aa0>"
+    "profile": "<#f4d35e><bold>/profile</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/profile [プレイヤー]</#93c5fd> <#7b8aa0>- プロフィールを表示</#7b8aa0><newline> <#93c5fd>/profile list [ページ]</#93c5fd> <#7b8aa0>- 保存されたプロフィール一覧</#7b8aa0>"
+    "world":
+      "root": "<#f4d35e><bold>/world</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/world list | current</#93c5fd> <#7b8aa0>- ワールド一覧／ゲームワールドを表示</#7b8aa0><newline> <#93c5fd>/world gen [ワールド]</#93c5fd> <#7b8aa0>- ゲームワールドを生成</#7b8aa0><newline> <#93c5fd>/world load|unload <ワールド></#93c5fd> <#7b8aa0>- ワールドを読み込み／アンロード</#7b8aa0><newline> <#93c5fd>/world select <ワールド></#93c5fd> <#7b8aa0>- 試合に使うワールドを選ぶ</#7b8aa0><newline> <#93c5fd>/world tp [ワールド]</#93c5fd> <#7b8aa0>- ワールドへ移動</#7b8aa0><newline> <#93c5fd>/world preload [ワールド] [半径]</#93c5fd> <#7b8aa0>- Chunkyで事前生成</#7b8aa0><newline> <#93c5fd>/world regen [ワールド] | delete <ワールド></#93c5fd> <#7b8aa0>- ワールドを再生成／削除</#7b8aa0><newline> <#93c5fd>/world clean</#93c5fd> <#7b8aa0>- 生成された uhc_ ワールドをすべて削除</#7b8aa0>"
+      "load": "<#f4d35e><bold>/world load</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/world load <ワールド></#93c5fd> <#7b8aa0>- ワールドフォルダを読み込む</#7b8aa0>"
+      "unload": "<#f4d35e><bold>/world unload</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/world unload <ワールド></#93c5fd> <#7b8aa0>- ワールドをアンロード</#7b8aa0>"
+      "tp": "<#f4d35e><bold>/world tp</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/world tp [ワールド]</#93c5fd> <#7b8aa0>- ワールドへ移動（既定：ゲームワールド）</#7b8aa0>"
+      "preload": "<#f4d35e><bold>/world preload</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/world preload [ワールド] [半径]</#93c5fd> <#7b8aa0>- Chunkyで事前生成</#7b8aa0>"
+    "border": "<#f4d35e><bold>/admin border</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin border info</#93c5fd> <#7b8aa0>- 現在のサイズと中心</#7b8aa0><newline> <#93c5fd>/admin border set <サイズ></#93c5fd> <#7b8aa0>- 今すぐサイズを設定</#7b8aa0><newline> <#93c5fd>/admin border center <x> <z></#93c5fd> <#7b8aa0>- 中心を移動</#7b8aa0><newline> <#93c5fd>/admin border shrink <サイズ> <秒></#93c5fd> <#7b8aa0>- 時間をかけて縮小</#7b8aa0><newline> <#93c5fd>/admin border reset</#93c5fd> <#7b8aa0>- 設定値のサイズに戻す</#7b8aa0>"
+    "announce": "<#f4d35e><bold>/staff announce</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/staff announce <メッセージ></#93c5fd> <#7b8aa0>- 全員への大きなお知らせ</#7b8aa0><newline> <#64748b>| = 改行 · [en] … [ja_jp] … で各プレイヤーの言語を表示</#64748b>"
+    "heal": "<#f4d35e><bold>/heal</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/heal [プレイヤー]</#93c5fd> <#7b8aa0>- 体力と満腹度を全回復（* = 全員）</#7b8aa0>"
+    "invsee": "<#f4d35e><bold>/staff invsee</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/staff invsee <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーのインベントリを開く</#7b8aa0>"
+    "freeze": "<#f4d35e><bold>/staff freeze</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/staff freeze <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを動けなくする（* = 全員）</#7b8aa0>"
+    "unfreeze": "<#f4d35e><bold>/staff unfreeze</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/staff unfreeze <プレイヤー></#93c5fd> <#7b8aa0>- 凍結したプレイヤーを解放</#7b8aa0>"
+    "preloadworld": "<#f4d35e><bold>/admin preloadworld</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin preloadworld [半径]</#93c5fd> <#7b8aa0>- ゲームワールドを事前生成</#7b8aa0><newline> <#93c5fd>/admin preloadworld status | stop</#93c5fd> <#7b8aa0>- 進捗／事前生成を停止</#7b8aa0>"
+    "language": "<#f4d35e><bold>/language</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/language</#93c5fd> <#7b8aa0>- 言語メニューを開く</#7b8aa0><newline> <#93c5fd>/language <locale|auto></#93c5fd> <#7b8aa0>- 言語を選ぶ、またはゲームの言語に従う</#7b8aa0>"
+    "gen": "<#f4d35e><bold>/admin gen</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin gen</#93c5fd> <#7b8aa0>- 新しいワールドを生成してプレビュー</#7b8aa0><newline> <#93c5fd>/admin gen <ワールド></#93c5fd> <#7b8aa0>- この名前でワールドを直接生成</#7b8aa0><newline> <#93c5fd>terrain=normal|flat|amplified|large_biomes|void</#93c5fd> <#7b8aa0>- 地形の種類</#7b8aa0><newline> <#93c5fd>biome=<バイオーム> · seed=<数値></#93c5fd> <#7b8aa0>- 単一バイオーム／固定シード</#7b8aa0><newline> <#93c5fd>structures=true|false · hardcore=true|false</#93c5fd> <#7b8aa0>- 構造物／ハードコア</#7b8aa0><newline> <#93c5fd>pack=uhc · generator=Plugin:id · biome-provider=Plugin:id · generator-settings=<データ></#93c5fd> <#7b8aa0>- データパック／カスタム生成器</#7b8aa0>"
+    "report": "<#f4d35e><bold>/report</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/report <プレイヤー> <理由></#93c5fd> <#7b8aa0>- プレイヤーをスタッフに通報</#7b8aa0>"
+    "kit":
+      "create": "<#f4d35e><bold>/kit create</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kit create <キット></#93c5fd> <#7b8aa0>- インベントリからキットを作成</#7b8aa0>"
+      "edit": "<#f4d35e><bold>/kit edit</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kit edit <キット></#93c5fd> <#7b8aa0>- キットをインベントリに読み込んで編集</#7b8aa0>"
+      "save": "<#f4d35e><bold>/kit save</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kit save [キット]</#93c5fd> <#7b8aa0>- 編集中のキットを保存</#7b8aa0>"
+    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin reboot <時間></#93c5fd> <#7b8aa0>- カウントダウン後に再起動：30s, 5m, 1h, 1m30s（数字だけなら分）</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 再起動を取り消す</#7b8aa0>"
+    namehistory: "<#f4d35e><bold>/admin namehistory</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin namehistory <名前></#93c5fd> <#7b8aa0>- プレイヤーが使った全ての名前（現在または以前の名前で検索）</#7b8aa0>"
+  "team":
+    "root": "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- チームメニューを開く</#7b8aa0><newline> <#93c5fd>/team list | join <チーム> | leave</#93c5fd> <#7b8aa0>- チームを見る、参加、脱退</#7b8aa0><newline> <#93c5fd>/team create [名前]</#93c5fd> <#7b8aa0>- 自分のチームを作る</#7b8aa0><newline> <#93c5fd>/team invite <プレイヤー></#93c5fd> <#7b8aa0>- 招待する（リーダー）</#7b8aa0><newline> <#93c5fd>/team rename <表示名> | color <色></#93c5fd> <#7b8aa0>- チームの見た目を変更（リーダー）</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- 参加できる人（リーダー）</#7b8aa0><newline> <#93c5fd>/team transfer <プレイヤー> | kick <プレイヤー> | disband</#93c5fd> <#7b8aa0>- チームを管理（リーダー）</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- チームチャットの切替（または /tm）</#7b8aa0>"
+    "join": "<#f4d35e><bold>/team join</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team join <チーム></#93c5fd> <#7b8aa0>- 公開チームに参加</#7b8aa0>"
+    "create": "<#f4d35e><bold>/team create</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team create [名前]</#93c5fd> <#7b8aa0>- チームを作る（名前は省略可）</#7b8aa0>"
+    "delete": "<#f4d35e><bold>/admin team delete</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team delete <チーム></#93c5fd> <#7b8aa0>- チームを削除</#7b8aa0>"
+    "set": "<#f4d35e><bold>/admin team set</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team set <プレイヤー> <チーム></#93c5fd> <#7b8aa0>- プレイヤーをチームに入れる</#7b8aa0>"
+    "rename": "<#f4d35e><bold>/admin team rename</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team rename <チーム> <表示名></#93c5fd> <#7b8aa0>- チーム名を変更</#7b8aa0>"
+    "rename-own": "<#f4d35e><bold>/team rename</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team rename <表示名></#93c5fd> <#7b8aa0>- 自分のチーム名を変更（リーダー）</#7b8aa0>"
+    "color": "<#f4d35e><bold>/admin team color</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team color <チーム> <色></#93c5fd> <#7b8aa0>- チームの色を変更</#7b8aa0>"
+    "color-own": "<#f4d35e><bold>/team color</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team color <色></#93c5fd> <#7b8aa0>- 自分のチームの色を変更（リーダー）</#7b8aa0>"
+    "size": "<#f4d35e><bold>/admin team size</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team size <人数></#93c5fd> <#7b8aa0>- 1チームの人数</#7b8aa0>"
+    "transfer": "<#f4d35e><bold>/team transfer</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team transfer <プレイヤー></#93c5fd> <#7b8aa0>- 他の人をリーダーにする</#7b8aa0>"
+    "kick": "<#f4d35e><bold>/team kick</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team kick <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーをチームから外す</#7b8aa0>"
+    "invite": "<#f4d35e><bold>/team invite</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team invite <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーをチームに招待</#7b8aa0>"
+  "teamadmin":
+    "root": "<#f4d35e><bold>/admin team</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team</#93c5fd> <#7b8aa0>- チーム管理パネルを開く</#7b8aa0><newline> <#93c5fd>/admin team enable | disable | size <人数></#93c5fd> <#7b8aa0>- チームモードのオン／オフ、1チームの人数</#7b8aa0><newline> <#93c5fd>/admin team create | delete <チーム></#93c5fd> <#7b8aa0>- チームを追加／削除</#7b8aa0><newline> <#93c5fd>/admin team set <プレイヤー> <チーム> | kick <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを移動</#7b8aa0><newline> <#93c5fd>/admin team rename <チーム> <表示名> | color <チーム> <色></#93c5fd> <#7b8aa0>- チーム名と色</#7b8aa0><newline> <#93c5fd>/admin team shuffle | clear | disband <チーム></#93c5fd> <#7b8aa0>- シャッフル／全チームを空に／1チーム解散</#7b8aa0>"
+"reloaded": "<#6dd3a0>設定を再読み込みしました。</#6dd3a0>"
+"lobby":
+  "set": "<#6dd3a0>ロビーの位置を更新しました。</#6dd3a0>"
+  "pvp":
+    "hold":
+      "instruction": "<#f4d35e>PvPソードを <seconds> 秒持つとロビーPvPが有効になります。</#f4d35e>"
+      "start": "<#f4d35e>PvPソードを <seconds> 秒持ち続けるとロビーPvPが有効になります。</#f4d35e>"
+      "tick": "<#f4d35e>ロビーPvPが有効になるまで <seconds> 秒...</#f4d35e>"
+    "disable":
+      "tick": "<#f4d35e>ロビーPvPが無効になるまで <seconds> 秒...</#f4d35e>"
+    "enabled":
+      "self": "<#6dd3a0>ロビーPvPが有効になりました。</#6dd3a0>"
+    "disabled":
+      "self": "<#f4d35e>ロビーPvPが無効になりました。</#f4d35e>"
+      "target": "<#f4d35e><player> はロビーPvPを有効にしていません。</#f4d35e>"
+    "enable":
+      "required": "<#f4d35e>先に自分のロビーPvPを有効にしてください。</#f4d35e>"
+  "spectator":
+    "enabled": "<#9db4c0>観戦モードになりました。試合には参加しません。</#9db4c0>"
+    "disabled": "<#6dd3a0>次の試合の参加待ちに戻りました。</#6dd3a0>"
+  "fly":
+    "enabled": "<#7dd3fc>ロビーでの飛行を有効にしました。</#7dd3fc>"
+    "disabled": "<#f4d35e>ロビーでの飛行を無効にしました。</#f4d35e>"
+    "blocked": "<#f95738>ロビーPvPが有効な間はロビーで飛行できません。</#f95738>"
+  "item":
+    "toggle":
+      "enabled":
+        "suffix": "<#6dd3a0><bold>[有効]</bold></#6dd3a0>"
+        "line": "<#6dd3a0>状態：有効</#6dd3a0>"
+      "disabled":
+        "suffix": "<#f95738><bold>[無効]</bold></#f95738>"
+        "line": "<#f95738>状態：無効</#f95738>"
+    "no":
+      "permission":
+        "lore": "<#f95738>このアイテムは使えません。</#f95738>"
+    "fly_toggle":
+      "name": "<#7dd3fc><bold>ロビー飛行</bold></#7dd3fc>"
+      "lore":
+        - "<#cbd5e1>ロビーでの飛行を切り替えます。</#cbd5e1>"
+        - "<#7b8aa0>OPと権限を持つプレイヤーのみ。</#7b8aa0>"
+    "hide_players":
+      "name": "<#f4d35e><bold>プレイヤーを隠す</bold></#f4d35e>"
+      "lore":
+        - "<#cbd5e1>ロビーのプレイヤー表示を切り替えます。</#cbd5e1>"
+        - "<#7b8aa0>他のプレイヤーを隠してすっきりと。</#7b8aa0>"
+    "recipes":
+      "name": "<#f4d35e><bold>UHCレシピ</bold></#f4d35e>"
+      "lore":
+        - "<#cbd5e1>UHCのカスタムレシピを開きます。</#cbd5e1>"
+        - "<#7b8aa0>ゴールデンヘッドなどのレシピを確認。</#7b8aa0>"
+    "pvp_sword":
+      "name": "<#f95738><bold>ロビーPvP</bold></#f95738>"
+      "lore":
+        - "<#cbd5e1>この剣を3秒間持ってください。</#cbd5e1>"
+        - "<#7b8aa0>自分のロビーPvPが有効になります。</#7b8aa0>"
+    "stats":
+      "name": "<#f4d35e><bold>プロフィール</bold></#f4d35e>"
+      "lore":
+        - "<#cbd5e1>プロフィールを開きます。</#cbd5e1>"
+        - "<#7b8aa0>プロフィール、レベル、統計を表示。</#7b8aa0>"
+    "language":
+      "name": "<#93c5fd><bold>言語</bold></#93c5fd>"
+      "lore":
+        - "<#cbd5e1>言語選択メニューを開きます。</#cbd5e1>"
+        - "<#7b8aa0>好きな言語を選べます。</#7b8aa0>"
+    "kit_selector":
+      "name": "<#93c5fd><bold>キット選択</bold></#93c5fd>"
+      "lore":
+        - "<#cbd5e1>開始時のインベントリをプレビュー。</#cbd5e1>"
+        - "<#7b8aa0>試合前に使うキットを選びます。</#7b8aa0>"
+    "config":
+      "name": "<#6dd3a0><bold>ゲーム設定</bold></#6dd3a0>"
+      "lore":
+        - "<#cbd5e1>設定ビューアを開きます。</#cbd5e1>"
+        - "<#7b8aa0>管理者は値を直接変更できます。</#7b8aa0>"
+    "leaderboard":
+      "name": "<#6dd3a0><bold>ランキング</bold></#6dd3a0>"
+      "lore":
+        - "<#cbd5e1>上位プレイヤーや順位を表示。</#cbd5e1>"
+        - "<#7b8aa0>ランキングを開きます。</#7b8aa0>"
+    "team_selector":
+      "name": "<#7dd3fc><bold>チーム</bold></#7dd3fc>"
+      "lore":
+        - "<#cbd5e1>チーム選択を開きます。</#cbd5e1>"
+        - "<#7b8aa0>試合前にチームに参加・脱退。</#7b8aa0>"
+    "lobby_spectator":
+      "name": "<#9db4c0><bold>試合を観戦</bold></#9db4c0>"
+      "lore":
+        - "<white>観戦モードに切り替えます。</white>"
+        - "<#d7e1ea>試合開始の人数に数えられません。</#d7e1ea>"
+  "players":
+    "hidden": "<#f4d35e>ロビーの他のプレイヤーを非表示にしました。</#f4d35e>"
+    "shown": "<#6dd3a0>ロビーの他のプレイヤーを表示しました。</#6dd3a0>"
+"heal":
+  "self": "<#6dd3a0>回復しました。</#6dd3a0>"
+  "other": "<#6dd3a0><player> を回復しました。</#6dd3a0>"
+  "received": "<#6dd3a0>管理者に回復されました。</#6dd3a0>"
+"ping":
+  "text": "<#7dd3fc>あなたのPingは <white><ping>ms</white> です。</#7dd3fc>"
+  "other": "<#7dd3fc><player> のPingは <white><ping>ms</white> です。</#7dd3fc>"
+"pingall":
+  "summary": "<#7b8aa0>プレイヤーのPing</#7b8aa0> <#cbd5e1>（<online> 人オンライン）</#cbd5e1>  <#7b8aa0><page>/<pages> ページ</#7b8aa0>"
+  "entry": "<#7b8aa0>  <ping_color><player></#7b8aa0></ping_color><#7b8aa0>：</#7b8aa0> <ping_color><ping>ms</ping_color>"
+  "nav":
+    "prev": "<#93c5fd>[← 前へ]</#93c5fd>"
+    "next": "<#93c5fd>[次へ →]</#93c5fd>"
+    "gap": "<#7b8aa0>  </#7b8aa0>"
+"list":
+  "summary": "<#7b8aa0>オンライン：</#7b8aa0> <white><online>/<max></white>"
+  "entry":
+    "eliminated": "<rank><gray><player></gray>"
+    "lobby":
+      "spectator": "<rank><#9db4c0><player></#9db4c0>"
+    "active": "<rank><#6dd3a0><player></#6dd3a0>"
+    "default": "<rank><white><player></white>"
+"leaderboard":
+  "title": "<#334155><bold>ランキング</bold></#334155>"
+  "empty": "<#f95738><bold>ランキングのデータはまだありません。</bold></#f95738>"
+  "invalid":
+    "stat": "<#f95738>不明なランキング項目です。</#f95738>"
+  "stat":
+    "wins": "<#f4d35e><bold>勝利</bold></#f4d35e>"
+    "kills": "<#f95738><bold>キル</bold></#f95738>"
+    "assists": "<#7dd3fc><bold>アシスト</bold></#7dd3fc>"
+    "deaths": "<#9ca3af><bold>デス</bold></#9ca3af>"
+    "games": "<#a7f3d0><bold>試合数</bold></#a7f3d0>"
+    "level": "<#c4b5fd><bold>レベル</bold></#c4b5fd>"
+    "experience": "<#86efac><bold>経験値</bold></#86efac>"
+    "kd": "<#fda4af><bold>KD</bold></#fda4af>"
+    "killstreak": "<#fb7185><bold>連続キル</bold></#fb7185>"
+    "diamonds": "<#7dd3fc><bold>ダイヤモンド</bold></#7dd3fc>"
+    "gold": "<#f4d35e><bold>金</bold></#f4d35e>"
+    "apples": "<#facc15><bold>金のリンゴ</bold></#facc15>"
+    "lobby": "<#facc15><bold>ロビーゲーム</bold></#facc15>"
+  "page": "<#f4d35e><bold><page>/<max_page> ページ</bold></#f4d35e>"
+  "prev":
+    "page": "<#7dd3fc><bold>前のページ</bold></#7dd3fc>"
+  "next":
+    "page": "<#7dd3fc><bold>次のページ</bold></#7dd3fc>"
+  "entry":
+    "name": "<#f4d35e><bold>#<rank> <player></bold></#f4d35e>"
+    "selected":
+      "stat": "<#f4d35e><bold><stat>:</bold></#f4d35e> <white><value></white>"
+    "value": "<#7dd3fc>値：</#7dd3fc> <white><value></white>"
+    "kills": "<#7b8aa0>キル：</#7b8aa0> <white><kills></white>"
+    "wins": "<#7b8aa0>勝利：</#7b8aa0> <white><wins></white>"
+    "assists": "<#7b8aa0>アシスト：</#7b8aa0> <white><assists></white>"
+    "deaths": "<#7b8aa0>デス：</#7b8aa0> <white><deaths></white>"
+    "games": "<#7b8aa0>試合数：</#7b8aa0> <white><games></white>"
+    "level": "<#7b8aa0>レベル：</#7b8aa0> <white><level></white>"
+    "experience": "<#7b8aa0>経験値：</#7b8aa0> <white><experience></white>"
+    "kd": "<#7b8aa0>KD：</#7b8aa0> <white><kd></white>"
+    "killstreak": "<#7b8aa0>最高連続キル：</#7b8aa0> <white><killstreak></white>"
+"kit":
+  "menu":
+    "title": "<#334155><bold>キット選択</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "empty":
+      "text": "<#f95738><bold>キットがありません</bold></#f95738>"
+      "lore": "<#cbd5e1>kits.yml にキットを追加すると使えます。</#cbd5e1>"
+    "select":
+      "lore":
+        "admin": "<#cbd5e1>クリックでこのキットを全体に適用します。</#cbd5e1>"
+        "viewer": "<#cbd5e1>プレビューのみ。使用キットは管理者が選びます。</#cbd5e1>"
+    "code":
+      "lore": "<#7b8aa0>ID：</#7b8aa0> <white><kit></white>"
+    "selected":
+      "lore": "<#6dd3a0>現在使用中。</#6dd3a0>"
+    "preview":
+      "title": "<#f4d35e><bold><kit></bold></#f4d35e>"
+      "lore":
+        "1": "<#cbd5e1>開始時のインベントリと同じ内容です。</#cbd5e1>"
+        "2": "<#7b8aa0>5段目がホットバーです。</#7b8aa0>"
+    "offhand":
+      "label": "<#9db4c0><bold>オフハンド</bold></#9db4c0>"
+      "lore": "<#7b8aa0>盾やトーテムなどのスロットプレビュー。</#7b8aa0>"
+  "default":
+    "description":
+      - "<#cbd5e1>管理者がゲーム内で編集します。</#cbd5e1>"
+  "set":
+    "global":
+      "text": "<#6dd3a0>全体のキットを <white><kit></white> に設定しました。</#6dd3a0>"
+      "broadcast": "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>が使用キットを</#cbd5e1> <white><kit></white><#cbd5e1> に設定しました。</#cbd5e1>"
+  "locked": "<#f95738>キットはロビーでのみ選べます。</#f95738>"
+  "create":
+    "success": "<#6dd3a0>キット <white><kit></white> を作成し、インベントリに読み込みました。</#6dd3a0>"
+    "failed": "<#f95738>キットを作成できません。すでに存在する可能性があります。</#f95738>"
+  "edit":
+    "loaded": "<#7dd3fc>キット <white><kit></white> をインベントリに読み込みました。終わったら <white>/kit save</white> を使ってください。</#7dd3fc>"
+    "saved": "<#6dd3a0>現在のインベントリをキット <white><kit></white> に保存しました。</#6dd3a0>"
+    "broadcast": "<prefix><#93c5fd><admin></#93c5fd> <#cbd5e1>がキット</#cbd5e1> <white><kit></white><#cbd5e1> を更新しました。</#cbd5e1>"
+    "failed": "<#f95738>キットを kits.yml に保存できませんでした。</#f95738>"
+"config":
+  "menu":
+    "title": "<#334155><bold>ゲーム設定</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "no":
+      "permission": "<#f4d35e>このメニューは閲覧できますが、値を変更できるのは管理者のみです。</#f4d35e>"
+    "admin":
+      "title": "<#6dd3a0><bold>管理者編集モード</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>下の項目をクリックすると即座に値が変わります。</#cbd5e1>"
+    "viewer":
+      "title": "<#f4d35e><bold>閲覧モード</bold></#f4d35e>"
+      "lore": "<#cbd5e1>設定を閲覧できます。変更は管理者のみ。</#cbd5e1>"
+    "section":
+      "game": "<#f4d35e><bold>ゲーム</bold></#f4d35e>"
+      "rules": "<#7dd3fc><bold>ルール</bold></#7dd3fc>"
+      "integrations": "<#c4b5fd><bold>連携</bold></#c4b5fd>"
+      "lore": "<#7b8aa0>セクション見出し</#7b8aa0>"
+    "updated": "<#6dd3a0><white><option></white> を <white><value></white> に更新しました。</#6dd3a0>"
+    "page": "<#f4d35e><bold><page>/<max_page> ページ</bold></#f4d35e>"
+    "prev": "<#7dd3fc><bold>前のページ</bold></#7dd3fc>"
+    "next": "<#7dd3fc><bold>次のページ</bold></#7dd3fc>"
+    "entry":
+      "name": "<#f4d35e><bold><label></bold></#f4d35e>"
+    "type":
+      "lore": "<#7b8aa0>種類：</#7b8aa0> <white><type></white>"
+    "path":
+      "lore": "<#6b7280>パス：</#6b7280> <white><path></white>"
+    "readonly": "<#f4d35e>この設定は設定GUIでは読み取り専用です。</#f4d35e>"
+    "chat":
+      "prompt": "<#7dd3fc><white><path></white> を編集中。</#7dd3fc> <#7b8aa0>現在：</#7b8aa0> <white><current></white>"
+      "hint": "<#cbd5e1>新しい値をチャットに入力してください。<white>exit</white> で取消、<white>sth</white> で空にします。</#cbd5e1>"
+      "cancelled": "<#f4d35e>設定の編集を取り消しました。</#f4d35e>"
+    "group":
+      "lore": "<#7b8aa0>カテゴリ</#7b8aa0>"
+      "game": "<#f4d35e><bold>ゲーム</bold></#f4d35e>"
+      "time": "<#f59e0b><bold>時間</bold></#f59e0b>"
+      "rules": "<#7dd3fc><bold>ルール</bold></#7dd3fc>"
+      "meetup": "<#fb7185><bold>ミートアップ</bold></#fb7185>"
+      "border": "<#f59e0b><bold>ボーダー</bold></#f59e0b>"
+      "ready":
+        "check": "<#a7f3d0><bold>準備確認</bold></#a7f3d0>"
+      "chunky": "<#86efac><bold>Chunky</bold></#86efac>"
+      "announce": "<#c4b5fd><bold>お知らせ</bold></#c4b5fd>"
+      "motd": "<#67e8f9><bold>MOTD</bold></#67e8f9>"
+      "lobby": "<#93c5fd><bold>ロビー</bold></#93c5fd>"
+      "teams": "<#38bdf8><bold>チーム</bold></#38bdf8>"
+      "ui": "<#cbd5e1><bold>表示</bold></#cbd5e1>"
+      "ores": "<#f97316><bold>鉱石</bold></#f97316>"
+      "chat": "<#e879f9><bold>チャット</bold></#e879f9>"
+      "other": "<#d1d5db><bold>その他</bold></#d1d5db>"
+    "action":
+      "no":
+        "permission":
+          "lore": "<#f95738>この操作を行う権限がありません。</#f95738>"
+      "set":
+        "lobby":
+          "text": "<#93c5fd><bold>ロビーを設定</bold></#93c5fd>"
+          "lore":
+            "1": "<#6b7280><i>ロビーのスポーン地点を現在地に設定します。</i></#6b7280>"
+            "2": "<#93c5fd>▶ クリックでここをロビーに設定</#93c5fd>"
+            "3": "<#7b8aa0>/admin setlobby と同じ</#7b8aa0>"
+      "start":
+        "button":
+          "text": "<#22c55e><bold>ゲーム開始</bold></#22c55e>"
+          "lore": "<#cbd5e1>クリックでUHCを開始します。</#cbd5e1>"
+          "active":
+            "text": "<#ef4444><bold>ゲーム進行中</bold></#ef4444>"
+            "lore": "<#7b8aa0>すでにゲームが進行中です。</#7b8aa0>"
+      "stop":
+        "button":
+          "text": "<#f95738><bold>試合を停止</bold></#f95738>"
+          "lore": "<#cbd5e1>クリックで現在の試合を停止し、全員をロビーに戻します。</#cbd5e1>"
+          "confirm":
+            "lore": "<#f4d35e>確認が必要です。</#f4d35e>"
+          "idle":
+            "text": "<#7b8aa0><bold>試合を停止</bold></#7b8aa0>"
+            "lore": "<#7b8aa0>停止できる試合はありません。</#7b8aa0>"
+      "reset":
+        "button":
+          "text": "<#f4d35e><bold>試合をリセット</bold></#f4d35e>"
+          "lore": "<#cbd5e1>試合を強制的に完全リセットし、全員をロビー状態に戻します。</#cbd5e1>"
+          "confirm":
+            "lore": "<#f4d35e>確認が必要です。</#f4d35e>"
+    "value":
+      "lore": "<#7b8aa0>値</#7b8aa0>  <white><value></white>"
+    "status":
+      "lore": "<#7b8aa0>状態</#7b8aa0>  <value>"
+      "on": "<#6dd3a0><bold>有効</bold></#6dd3a0>"
+      "off": "<#f95738><bold>無効</bold></#f95738>"
+    "int":
+      "edit":
+        "lore": "<#93c5fd>▶ 左 -1  右 +1  Shift ±10</#93c5fd>"
+    "double":
+      "edit":
+        "lore": "<#93c5fd>▶ 左 -0.5  右 +0.5  Shift ±5.0  ドロップ ±0.1</#93c5fd>"
+    "bool":
+      "edit":
+        "lore": "<#93c5fd>▶ クリックで切り替え</#93c5fd>"
+      "on": "有効"
+      "off": "無効"
+    "anvil":
+      "title": "<#334155><bold>値を編集</bold></#334155>"
+    "string":
+      "edit":
+        "lore": "<#93c5fd>▶ クリックでテキスト編集を開く</#93c5fd>"
+      "cycle":
+        "lore": "<#93c5fd>▶ 左／右クリックで選択肢を切り替え</#93c5fd>"
+    "view":
+      "lore": "<#f4d35e>▶ 閲覧のみ。変更は管理者に依頼してください。</#f4d35e>"
+    "label":
+      "game":
+        "antiburn": "炎上ダメージ無効"
+        "no":
+          "mobs": "モブなし"
+          "suspicious":
+            "stew": "怪しげなシチュー禁止"
+          "enchanting": "エンチャント禁止"
+          "brewing": "醸造禁止"
+          "grindstone": "砥石禁止"
+        "mob":
+          "rate":
+            "multiplier": "モブ湧き倍率"
+        "apple":
+          "rate": "リンゴドロップ倍率"
+        "mobs":
+          "attack": "モブが攻撃する"
+        "allow":
+          "potions": "ポーション許可"
+        "difficulty": "難易度"
+        "min":
+          "players": "最少人数"
+        "countdown":
+          "seconds": "カウントダウン秒数"
+        "grace":
+          "period":
+            "seconds": "猶予期間の秒数"
+        "nametag":
+          "hide":
+            "seconds": "ネームタグ非表示秒数"
+        "final":
+          "heal":
+            "seconds": "ファイナルヒール秒数"
+          "duel":
+            "seconds": "最終決闘秒数"
+        "scatter":
+          "radius": "スキャッター半径"
+          "last":
+            "countdown": "スキャッター最終カウントダウン"
+        "max":
+          "duration":
+            "seconds": "試合の最大秒数"
+        "ender":
+          "pearl":
+            "damage": "エンダーパールのダメージ"
+        "shears":
+          "enabled": "ハサミで金のリンゴ"
+          "rate": "ハサミの金のリンゴ確率"
+        "enchanted":
+          "golden":
+            "apples": "エンチャントされた金のリンゴ"
+        "golden":
+          "heads": "ゴールデンヘッド"
+        "player":
+          "glowing": "プレイヤー発光"
+      "border":
+        "initial":
+          "size": "初期ボーダーサイズ"
+        "final":
+          "size": "最終ボーダーサイズ"
+        "shrink":
+          "start":
+            "seconds": "ボーダー縮小開始"
+          "duration":
+            "seconds": "ボーダー縮小時間"
+        "force":
+          "tp":
+            "inside": "ボーダー内へ強制TP"
+            "buffer": "強制TPの余白"
+        "first":
+          "shrink":
+            "size": "初回縮小サイズ"
+      "rules":
+        "spectator":
+          "on":
+            "death": "死亡時に観戦"
+          "chat":
+            "isolated": "観戦チャット分離"
+        "disable":
+          "natural":
+            "regen": "自然回復無効"
+        "kick":
+          "on":
+            "death": "死亡時にキック"
+        "drop":
+          "head":
+            "on":
+              "kill": "キル時に頭をドロップ"
+      "teams":
+        "enabled": "チーム有効"
+        "max":
+          "size": "チーム最大人数"
+        "friendly":
+          "fire": "フレンドリーファイア"
+        "teammate":
+          "glow": "味方の発光"
+          "locator":
+            "bar": "味方のロケーターバー"
+        "allow":
+          "lobby":
+            "switch": "ロビーでのチーム変更"
+        "auto":
+          "balance":
+            "on":
+              "start": "開始時に自動バランス"
+        "show":
+          "teammates":
+            "in":
+              "lobby": "ロビーで味方を表示"
+              "game": "試合中に味方を表示"
+        "voice":
+          "chat":
+            "enabled": "チームボイスチャット"
+            "global":
+              "lobby": "ロビー全体ボイス"
+            "team":
+              "groups":
+                "in":
+                  "game": "試合中チームボイス"
+    "desc":
+      "game":
+        "antiburn": "試合開始後は火と炎上のダメージを受けません（溶岩はダメージあり）。"
+        "no":
+          "mobs": "試合中、敵対モブが一切湧きません。"
+          "suspicious":
+            "stew": "怪しげなシチューをゲームから取り除きます。"
+          "enchanting": "エンチャントテーブルを使えなくします。"
+          "brewing": "ポーションの醸造を禁止します。"
+          "grindstone": "砥石を使えなくします。"
+        "mob":
+          "rate":
+            "multiplier": "自然なモブ湧き率の倍率。1.0 = 通常。"
+        "apple":
+          "rate": "葉の消滅で金のリンゴが落ちる倍率。1.0 = 通常。"
+        "mobs":
+          "attack": "敵対モブがプレイヤーを狙って攻撃するかどうか。"
+        "allow":
+          "potions": "プレイヤーがポーションを使えるかどうか。"
+        "difficulty": "ワールドの難易度。モブのダメージと空腹の減りに影響します。"
+        "min":
+          "players": "試合開始に必要な最少人数。"
+        "countdown":
+          "seconds": "スキャッター前のカウントダウンの長さ。"
+        "grace":
+          "period":
+            "seconds": "スキャッター後、この秒数の間PvPが無効になります。0でスキップ。"
+        "nametag":
+          "hide":
+            "seconds": "試合開始からこの秒数の間、ネームタグを隠します。0で常に表示。"
+        "final":
+          "heal":
+            "seconds": "試合開始からこの秒数後に全員が全回復します（例：600 = 10分の時点）。0で無効。"
+          "duel":
+            "seconds": "残り2人になったときの最終決闘の長さ。"
+        "scatter":
+          "radius": "プレイヤーがスキャッターされる最大半径（ブロック）。"
+          "last":
+            "countdown": "スキャッターの最後のN秒間、タイトルでカウントダウンを表示します。"
+        "max":
+          "duration":
+            "seconds": "サドンデスが始まるまでの試合の最大時間。0で無制限。"
+        "ender":
+          "pearl":
+            "damage": "エンダーパールの着地で落下ダメージを受けるかどうか。"
+        "shears":
+          "enabled": "羊の毛を刈ると金のリンゴが落ちることがあるかどうか。"
+          "rate": "ハサミで葉を右クリックしたとき金のリンゴが落ちる確率（0-100%）。"
+        "enchanted":
+          "golden":
+            "apples": "エンチャントされた金のリンゴを入手・使用できるかどうか。"
+        "golden":
+          "heads": "プレイヤーの頭と金インゴットでゴールデンヘッドを作れるようにします。"
+        "player":
+          "glowing": "全プレイヤーが発光し、壁越しに見えます。"
+      "border":
+        "initial":
+          "size": "ワールドボーダーの開始時の直径（ブロック）。"
+        "final":
+          "size": "縮小し終えた後のボーダーの直径。"
+        "shrink":
+          "start":
+            "seconds": "試合開始からボーダーが縮み始めるまでの秒数。"
+          "duration":
+            "seconds": "ボーダーが最終サイズまで縮むのにかかる合計秒数。"
+        "force":
+          "tp":
+            "inside": "ボーダーの外にいるプレイヤーを自動で内側にテレポートします。"
+            "buffer": "強制テレポート時にボーダーの端から離す距離。"
+        "first":
+          "shrink":
+            "size": "試合開始時にボーダーをすぐこのサイズに縮めます。0で無効。"
+      "rules":
+        "spectator":
+          "on":
+            "death": "脱落したプレイヤーは切断されず観戦者になります。"
+          "chat":
+            "isolated": "試合中、観戦者のチャットは観戦者とスタッフにしか届かず、位置の報告を防ぎます。"
+        "disable":
+          "natural":
+            "regen": "満腹度による自然回復を止めます。回復は金のリンゴ頼みになります。"
+        "kick":
+          "on":
+            "death": "脱落した瞬間にサーバーからキックします。"
+        "drop":
+          "head":
+            "on":
+              "kill": "倒されたプレイヤーの頭をドロップし、ゴールデンヘッドの材料にできます。"
+      "teams":
+        "enabled": "チームモードを有効にします。プレイヤーはチームに分かれて一緒に勝利を目指します。"
+        "max":
+          "size": "1チームの最大人数。"
+        "friendly":
+          "fire": "味方同士でダメージを与えられるかどうか。"
+        "teammate":
+          "glow": "味方を壁越しに見える発光の輪郭で強調します。"
+          "locator":
+            "bar": "ロケーターバーに味方をチーム色で表示します。敵からは見えません。"
+        "allow":
+          "lobby":
+            "switch": "ロビーで自由にチームを変更できます。"
+        "auto":
+          "balance":
+            "on":
+              "start": "試合開始時に人数が均等になるよう自動でプレイヤーを移動します。"
+        "show":
+          "teammates":
+            "in":
+              "lobby": "ロビーでチームメンバー同士が見えるようにします。"
+              "game": "試合中にチームメンバー同士が見えるようにします。"
+        "voice":
+          "chat":
+            "enabled": "SocketSVC連携を有効にし、チームごとのボイスチャンネルを作ります。"
+            "global":
+              "lobby": "ロビーの全員で共有するボイスチャンネルを作ります。"
+            "team":
+              "groups":
+                "in":
+                  "game": "試合中、チームごとに別々のボイスチャンネルを作ります。"
+    "option":
+      "min":
+        "players": "<#f4d35e><bold>最少人数</bold></#f4d35e>"
+      "countdown": "<#f4d35e><bold>カウントダウン秒数</bold></#f4d35e>"
+      "disable":
+        "natural":
+          "regen": "<#f95738><bold>自然回復無効</bold></#f95738>"
+      "spectator":
+        "on":
+          "death": "<#7dd3fc><bold>死亡時に観戦</bold></#7dd3fc>"
+      "chunky":
+        "enabled": "<#86efac><bold>Chunky連携</bold></#86efac>"
+      "global":
+        "announcements": "<#c4b5fd><bold>Bungee全体お知らせ</bold></#c4b5fd>"
+"help":
+  "title": "<gold>UHCコマンド </gold><yellow>(<page>/<max_page>)</yellow>"
+  "suggest":
+    "hover": "<gray><command> を入力欄へ</gray>"
+  "open":
+    "page":
+      "hover": "<gray><page> ページを開く</gray>"
+  "prev":
+    "button": "« 前へ"
+  "next":
+    "button": "次へ »"
+  "desc":
+    "kill": "プレイヤーまたはセレクターを脱落させる。"
+    "level": "レベル、XP、次のレベルまでの進捗。"
+    "recipe": "カスタムレシピを開く。"
+    "revive": "脱落したプレイヤーを復活させる。"
+"papi":
+  "status": "<#7b8aa0>PlaceholderAPI：</#7b8aa0> <white>導入=<installed></white> <#7b8aa0>| 有効：</#7b8aa0> <white><enabled></white> <#7b8aa0>| バージョン：</#7b8aa0> <white><version></white>\n<#7b8aa0>状態：</#7b8aa0> <white><expansions></white>"
+"gamemode":
+  "players":
+    "only": "<red>対象を指定しない場合はプレイヤーのみ使えます。</red>"
+  "no":
+    "permission":
+      "others": "<red>他のプレイヤーのゲームモードを変更する権限がありません。</red>"
+  "self":
+    "set": "<#6dd3a0>ゲームモードを <gamemode> にしました。</#6dd3a0>"
+  "other":
+    "set": "<#6dd3a0><player> のゲームモードを <gamemode> にしました。</#6dd3a0>"
+  "target":
+    "set": "<#6dd3a0>ゲームモードが <gamemode> に変更されました。</#6dd3a0>"
+"announce":
+  "header": "<gray><bold>==============================</bold></gray>"
+  "title": "<#f95738><bold>お知らせ</bold></#f95738>"
+  "footer": "<gray><bold>==============================</bold></gray>"
+  "sent": "<#6dd3a0>お知らせを送信しました。</#6dd3a0>"
+"confirm":
+  "title": "<red><bold>よろしいですか？</bold></red>"
+  "filler": "<dark_red> </dark_red>"
+  "continue":
+    "text": "<#6dd3a0><bold>確認</bold></#6dd3a0>"
+    "lore": "<#cbd5e1>クリックでこの操作を確定します。</#cbd5e1>"
+  "cancel":
+    "text": "<#f95738><bold>キャンセル</bold></#f95738>"
+    "lore": "<#cbd5e1>クリックでこのメニューを閉じます。</#cbd5e1>"
+  "cancelled": "<#f4d35e>操作を取り消しました。</#f4d35e>"
+"checkready":
+  "title": "<#f4d35e><bold>準備確認</bold></#f4d35e>"
+  "filler": "<dark_gray> </dark_gray>"
+  "ready":
+    "text": "<#6dd3a0><bold>準備OK</bold></#6dd3a0>"
+    "lore": "<#cbd5e1>準備ができたらクリック。</#cbd5e1>"
+  "not":
+    "ready":
+      "text": "<prefix><#f95738><player></#f95738> <#faf0ca>はまだ準備ができていません。</#faf0ca>"
+      "button": "<#f95738><bold>まだ</bold></#f95738>"
+      "lore": "<#cbd5e1>まだ準備ができていなければクリック。</#cbd5e1>"
+  "started": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>が</#cbd5e1> <white><count></white> <#cbd5e1>人に準備確認を開始しました。制限時間</#cbd5e1> <white><seconds>s</white><#cbd5e1>。</#cbd5e1>"
+  "opened": "<#6dd3a0><count> 人に準備確認を開きました。制限時間：<seconds>s。</#6dd3a0>"
+  "already":
+    "active": "<#f4d35e>準備確認はすでに進行中です。</#f4d35e>"
+  "no":
+    "players": "<#f4d35e>確認できるオンラインのプレイヤーがいません。</#f4d35e>"
+  "marked":
+    "ready": "<#6dd3a0>準備OKにしました。</#6dd3a0>"
+  "all":
+    "ready": "<prefix><#6dd3a0>全員の準備ができました。</#6dd3a0>"
+  "timeout": "<prefix><#f95738>準備確認がタイムアウトしました。</#f95738> <#faf0ca>未回答：</#faf0ca> <white><players></white>"
+  "actionbar": "<#f4d35e>準備確認</#f4d35e> <#7b8aa0>| 残り：</#7b8aa0> <white><remaining>/<total></white> <#7b8aa0>| 残り時間：</#7b8aa0> <white><seconds>s</white>"
+"profile":
+  "title": "<#334155><bold><player> のプロフィール</bold></#334155>"
+  "filler": "<dark_gray> </dark_gray>"
+  "head": "<#f4d35e><bold><player></bold></#f4d35e>"
+  "level":
+    "text": "<#a3e635><bold>レベル</bold></#a3e635>"
+    "lore": "<#cbd5e1>現在のレベル：<white><level></white></#cbd5e1>"
+  "exp":
+    "lore": "<#7b8aa0>経験値：<white><experience></white></#7b8aa0>"
+  "stats": "<#f95738><bold>統計</bold></#f95738>"
+  "kills":
+    "lore": "<#7b8aa0>キル：</#7b8aa0> <white><kills></white>"
+  "deaths":
+    "lore": "<#7b8aa0>デス：</#7b8aa0> <white><deaths></white>"
+  "assists":
+    "lore": "<#7b8aa0>アシスト：</#7b8aa0> <white><assists></white>"
+  "kd":
+    "lore": "<#7b8aa0>KD比：</#7b8aa0> <white><kd></white>"
+  "killstreak":
+    "lore": "<#7b8aa0>最高連続キル：</#7b8aa0> <white><killstreak></white>"
+  "wins":
+    "lore": "<#7b8aa0>勝利：</#7b8aa0> <white><wins></white>"
+  "games":
+    "lore": "<#7b8aa0>試合数：</#7b8aa0> <white><games></white>"
+  "list":
+    "title": "<#6dd3a0><bold>登録プレイヤー</bold></#6dd3a0> <#7b8aa0>（全 <count> 人）</#7b8aa0> <#334155>|</#334155> <#7b8aa0><white><page></white>/<white><pages></white> ページ</#7b8aa0>"
+    "entry":
+      "text": "<#334155><index>.</#334155> <white><player></white> <#334155>|</#334155> <#f4d35e><wins>勝</#f4d35e> <#fca5a5><kills>キル</#fca5a5> <#7b8aa0><deaths>デス</#7b8aa0> <#a3e635>Lv<level></#a3e635> <#7b8aa0>（<games> 試合）</#7b8aa0>"
+      "hover": "<#cbd5e1>クリックで <white><player></white> のプロフィールを開く</#cbd5e1>"
+    "next": "<#7b8aa0>» クリックで <white><next></white> ページへ</#7b8aa0>"
+    "empty": "<#f4d35e>まだプレイヤーのプロフィールは記録されていません。</#f4d35e>"
+  "summary":
+    "title": "<#6dd3a0><player> のプロフィール</#6dd3a0>"
+    "level": "<#7b8aa0>レベル：</#7b8aa0> <white><level></white> <#7b8aa0>| 経験値：</#7b8aa0> <white><experience></white>"
+    "stats": "<#7b8aa0>キル：</#7b8aa0> <white><kills></white> <#7b8aa0>| デス：</#7b8aa0> <white><deaths></white> <#7b8aa0>| アシスト：</#7b8aa0> <white><assists></white> <#7b8aa0>| KD：</#7b8aa0> <white><kd></white> <#7b8aa0>| 連続キル：</#7b8aa0> <white><killstreak></white> <#7b8aa0>| 勝利：</#7b8aa0> <white><wins></white> <#7b8aa0>| 試合数：</#7b8aa0> <white><games></white>"
+"level":
+  "summary": "<#7b8aa0><player> のレベル：</#7b8aa0> <white><level></white> <#7b8aa0>| XP：</#7b8aa0> <white><experience></white> <#7b8aa0>| 進捗：</#7b8aa0> <white><progress>%</white> <#7b8aa0>| 次まで：</#7b8aa0> <white><remaining></white>"
+"recipes":
+  "title": "<#334155><bold>カスタムレシピ</bold></#334155>"
+  "detail":
+    "title": "<#334155><bold><recipe></bold></#334155>"
+  "filler": "<dark_gray> </dark_gray>"
+  "close": "<#f95738><bold>閉じる</bold></#f95738>"
+  "shaped": "定形レシピ"
+  "shapeless": "不定形レシピ"
+  "click":
+    "view": "<#93c5fd>▶ クリックでレシピを見る</#93c5fd>"
+    "toggle": "<#93c5fd>▶ 右クリックでオン/オフ</#93c5fd>"
+  "empty": "<#f95738><bold>カスタムレシピはありません</bold></#f95738>"
+  "result":
+    "label": "<#7b8aa0><bold>完成品</bold></#7b8aa0>"
+  "back": "<#f95738><bold>レシピ一覧に戻る</bold></#f95738>"
+  "type": "<#7b8aa0>種類：</#7b8aa0> <white><type></white>"
+  "shape":
+    "text": "<#7b8aa0>形：</#7b8aa0>"
+    "row": "<#9db4c0><row></#9db4c0>"
+  "ingredients": "<#7b8aa0>材料：</#7b8aa0>"
+  "ingredient":
+    "entry": "<#9db4c0>- <white><ingredient></white></#9db4c0>"
+  "water":
+    "bottle":
+      "name": "水入り瓶"
+"recipe":
+  "compact":
+    "golden":
+      "apple":
+        "name": "<#f4d35e><bold>圧縮金のリンゴ</bold></#f4d35e>"
+        "lore":
+          "1": "<#cbd5e1>金ブロックで作ります。</#cbd5e1>"
+          "2": "<#7b8aa0>より強い再生と衝撃吸収を得られます。</#7b8aa0>"
+  "golden":
+    "head":
+      "name": "<#f4d35e><bold>ゴールデンヘッド</bold></#f4d35e>"
+      "lore":
+        "1": "<#cbd5e1>右クリックで食べる。</#cbd5e1>"
+        "2": "<#7b8aa0>再生と追加の衝撃吸収を得られます。</#7b8aa0>"
+"join":
+  "message": "<#7b8aa0>[</#7b8aa0><#6dd3a0>+</#6dd3a0><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>がサーバーに参加しました。</#cbd5e1> <#6b7280>（<online> 人オンライン）</#6b7280>"
+  "locked": "<#f4d35e>試合はすでに進行中です。観戦者として参加しました。</#f4d35e>"
+"quit":
+  "message": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>がサーバーから退出しました。</#cbd5e1> <#6b7280>（<online> 人オンライン）</#6b7280>"
+"world":
+  "preview":
+    "started": "<#7dd3fc>プレビュー用ワールドを生成中。準備ができたらテレポートします。</#7dd3fc>"
+    "already": "<#f95738>すでにワールドプレビュー中です。先に確定かキャンセルをしてください。</#f95738>"
+    "blocked": "<#f95738>ワールドをプレビューする前に、スタッフモードか練習場を抜けてください。</#f95738>"
+    "busy": "<#f4d35e>まだ生成中です。少々お待ちください...</#f4d35e>"
+    "rerolling": "<#7dd3fc>再抽選：新しいワールドを生成中...</#7dd3fc>"
+    "ready": "<#6dd3a0><white><world></white> をプレビュー中 <#7b8aa0>（シード <seed>、<attempts> 回目）</#7b8aa0>。ホットバーで <#6dd3a0>確定</#6dd3a0>、<#7dd3fc>再抽選</#7dd3fc>、<#f95738>キャンセル</#f95738> を選べます。</#6dd3a0>"
+    "title": "<#6dd3a0><bold><world></bold></#6dd3a0>"
+    "subtitle": "<#7b8aa0>シード <seed></#7b8aa0>"
+    "confirmed": "<#6dd3a0><white><world></white> をUHCワールドに選びました。</#6dd3a0>"
+    "cancelled": "<#f4d35e>ワールドプレビューを取り消しました。ゲームワールドは変わっていません。</#f4d35e>"
+    "no-land": "<#f95738><attempts> 回試しても中心が陸地のワールドが見つかりませんでした。</#f95738>"
+    "bossbar":
+      "creating": "<#7dd3fc>ワールドを作成中</#7dd3fc> <#7b8aa0>（<attempt>/<max> 回目）</#7b8aa0>"
+      "land": "<#7dd3fc>中心の陸地を探しています</#7dd3fc> <#7b8aa0>（<attempt>/<max> 回目）</#7b8aa0>"
+      "chunks": "<#7dd3fc>地形を読み込み中</#7dd3fc> <#7b8aa0>（<attempt>/<max> 回目）</#7b8aa0>"
+    "actionbar":
+      "generating": "<#7dd3fc><bold>ワールドプレビュー</bold></#7dd3fc> <#7b8aa0>·</#7b8aa0> <#f4d35e>生成中（<attempt>/<max> 回目）...</#f4d35e>"
+      "previewing": "<#7dd3fc><bold>ワールドプレビュー</bold></#7dd3fc> <#7b8aa0>·</#7b8aa0> <white><world></white> <#7b8aa0>· シード <seed> · #<count></#7b8aa0>"
+    "item":
+      "confirm":
+        "name": "<#6dd3a0><bold>このワールドを使う</bold></#6dd3a0>"
+        "lore": "<#7b8aa0>右クリックでこのワールドを試合に使います。</#7b8aa0>"
+      "reroll":
+        "name": "<#7dd3fc><bold>再抽選</bold></#7dd3fc>"
+        "lore": "<#7b8aa0>右クリックでこのワールドを捨てて新しく生成します。</#7b8aa0>"
+      "cancel":
+        "name": "<#f95738><bold>キャンセル</bold></#f95738>"
+        "lore": "<#7b8aa0>右クリックで取り消してロビーに戻ります。</#7b8aa0>"
+  "generated":
+    "text": "<#6dd3a0>UHCワールド <world> を生成して選択しました。</#6dd3a0>"
+    "land": "<#6dd3a0><white><attempts></white> 回目で中心が陸地のUHCワールド <world> を生成して選択しました。</#6dd3a0>"
+  "gen":
+    "option":
+      "unknown": "<red>不明なワールド生成オプション：<option>。</red>"
+      "invalid": "<red>オプション <option> の値 <value> は無効です。</red>"
+  "generator":
+    "invalid": "<red>指定されたワールド生成器またはバイオーム提供元が見つかりません。</red>"
+  "loaded": "<#6dd3a0>ワールド <world> を読み込みました。</#6dd3a0>"
+  "unloaded": "<#f4d35e>ワールド <world> をアンロードしました。</#f4d35e>"
+  "selected": "<#6dd3a0>UHCワールド <world> を選択しました。</#6dd3a0>"
+  "deleted": "<#6dd3a0>ワールド <world> を削除しました。</#6dd3a0>"
+  "cleaned": "<#6dd3a0>生成されたUHCワールドを <count> 個削除しました。</#6dd3a0>"
+  "clean":
+    "empty": "<#f4d35e>削除できるUHCワールドはありません。</#f4d35e>"
+  "preload":
+    "started": "<#7dd3fc><world> のChunky事前生成を開始しました（<shape>、半径 <radius> ブロック）。</#7dd3fc>"
+    "complete": "<prefix><#6dd3a0><world> のChunky事前生成が完了しました。</#6dd3a0>"
+    "active": "<#f4d35e><world> のChunky事前生成はすでに進行中です。</#f4d35e>"
+    "stopped": "<#f4d35e><world> のChunky事前生成を停止しました。</#f4d35e>"
+    "status": "<#7dd3fc>Chunky事前生成</#7dd3fc> <#7b8aa0>| ワールド：</#7b8aa0> <white><world></white> <#7b8aa0>| 形状：</#7b8aa0> <white><shape></white> <#7b8aa0>| 半径：</#7b8aa0> <white><radius></white> <#7b8aa0>| 進捗：</#7b8aa0> <white><percent>%</white> <#7b8aa0>(<generated>/<total>)</#7b8aa0>"
+    "bossbar": "<#7dd3fc><world> を事前生成中</#7dd3fc> <white><percent>%</white> <#9db4c0>(<generated>/<total>)</#9db4c0>"
+  "dimension":
+    "enabled": "<prefix><#6dd3a0><bold><dimension></bold> が<bold>有効</bold>になりました。</#6dd3a0>"
+    "disabled": "<prefix><#f4d35e><bold><dimension></bold> が<bold>無効</bold>になりました。</#f4d35e>"
+  "current": "<#7b8aa0>現在のUHCワールド：</#7b8aa0> <white><world></white>"
+  "teleported": "<#6dd3a0>ワールド <world> にテレポートしました。</#6dd3a0>"
+  "list-header": "<#f4d35e><bold>ワールド</bold></#f4d35e> <#7b8aa0>（<count>）- 名前をクリックでテレポート、未読み込みなら先に読み込み</#7b8aa0>"
+  "list-entry": " <name> <status><players><current>"
+  "list-loaded": "<#86efac>読み込み済み</#86efac> <#c4b5fd><environment></#c4b5fd>"
+  "list-unloaded": "<#94a3b8>未読み込み</#94a3b8>"
+  "list-players": " <#a8c0d6><count> 人</#a8c0d6>"
+  "list-current": " <#f4d35e>[ゲームワールド]</#f4d35e>"
+  "list-empty": "<#fda4af>ワールドが見つかりません。</#fda4af>"
+  "list-hover-tp": "クリックで <world> にテレポート"
+  "list-hover-load": "クリックで /world load <world> を入力"
+  "list-hover-select": "クリックで <world> をゲームワールドにする"
+"border":
+  "current": "<#7b8aa0>ワールド：</#7b8aa0> <white><world></white> <#7b8aa0>| サイズ：</#7b8aa0> <white><size></white> <#7b8aa0>| 中心：</#7b8aa0> <white><center_x>, <center_z></white>"
+  "set": "<#6dd3a0>ボーダーサイズを <size> に設定しました。</#6dd3a0>"
+  "centered": "<#6dd3a0>ボーダーの中心を <center_x>, <center_z> に設定しました。</#6dd3a0>"
+  "shrink":
+    "started": "<prefix><#6dd3a0>ボーダーが <seconds> 秒かけて <size> まで縮みます。</#6dd3a0>"
+  "reset": "<#6dd3a0>ボーダーを設定値の <size> に戻しました。</#6dd3a0>"
+  "shrinking": "<prefix><#ee964b>ボーダー段階 <stage>/<total>：<size> まで縮小中。</#ee964b>"
+"center":
+  "waypoint":
+    "name": "<gradient:#f4d35e:#ee964b><bold>中心</bold></gradient>"
+"portals":
+  "disabled": "<#f95738>このサーバーではネザーとエンドへの移動が無効です。</#f95738>"
+"potions":
+  "disabled": "<#f95738>この試合ではポーションが無効です。</#f95738>"
+"suspicious":
+  "stew":
+    "disabled": "<#f95738>この試合では怪しげなシチューが無効です。</#f95738>"
+"enchanted-golden-apple-disabled": "<#f95738>この試合ではエンチャントされた金のリンゴが無効です。</#f95738>"
+"golden-head-name": "<#f4d35e><bold>ゴールデンヘッド</bold></#f4d35e>"
+"recipe-golden-head-name": "<#f4d35e><bold>ゴールデンヘッド</bold></#f4d35e>"
+"recipe-golden-head-lore-1": "<#cbd5e1>右クリックで食べる。</#cbd5e1>"
+"recipe-golden-head-lore-2": "<#7b8aa0>再生と追加の衝撃吸収を得られます。</#7b8aa0>"
+"enchanting":
+  "disabled": "<#f95738>この試合ではエンチャントが無効です。</#f95738>"
+"brewing":
+  "disabled": "<#f95738>この試合では醸造が無効です。</#f95738>"
+"grindstone":
+  "disabled": "<#f95738>この試合では砥石が無効です。</#f95738>"
+"staff-mode":
+  "enabled": "<#6dd3a0>スタッフモードを有効にしました。透明化中です。</#6dd3a0>"
+  "disabled": "<#f4d35e>スタッフモードを無効にしました。</#f4d35e>"
+  "not-while-playing": "<#f95738>試合に参加している間はスタッフモードを使えません。</#f95738>"
+  "not-in-practice": "<#f95738>スタッフモードに入る前に練習場を出てください。</#f95738>"
+  "ended-joined-match": "<#f4d35e>試合に参加したためスタッフモードを終了しました。</#f4d35e>"
+  "vanish-on": "<#6dd3a0>透明化しました。</#6dd3a0>"
+  "vanish-off": "<#f4d35e>プレイヤーから見えるようになりました。</#f4d35e>"
+  "no-players": "<#f95738>テレポート先のプレイヤーがいません。</#f95738>"
+  "teleported": "<#6dd3a0><player> にテレポートしました。</#6dd3a0>"
+  "player-offline": "<#f95738><player> はもうオンラインではありません。</#f95738>"
+  "actionbar": "<#93c5fd><bold>スタッフモード</bold></#93c5fd> <#7b8aa0>·</#7b8aa0> <state>"
+  "actionbar-vanished": "<#6dd3a0>透明化中</#6dd3a0>"
+  "actionbar-visible": "<#f95738>表示中</#f95738>"
+  "item":
+    "menu":
+      "name": "<#93c5fd><bold>プレイヤー</bold></#93c5fd>"
+      "lore": "<#7b8aa0>右クリックでプレイヤーメニューを開く</#7b8aa0>"
+    "random":
+      "name": "<#c4b5fd><bold>ランダムテレポート</bold></#c4b5fd>"
+      "lore": "<#7b8aa0>右クリックでランダムなプレイヤーにテレポート</#7b8aa0>"
+    "inspect":
+      "name": "<#f4d35e><bold>インベントリ確認</bold></#f4d35e>"
+      "lore": "<#7b8aa0>プレイヤーを右クリックでインベントリを開く</#7b8aa0>"
+    "freeze":
+      "name": "<#7dd3fc><bold>凍結</bold></#7dd3fc>"
+      "lore": "<#7b8aa0>プレイヤーを右クリックで凍結／解除</#7b8aa0>"
+    "vanish-on":
+      "name": "<#6dd3a0><bold>透明化：オン</bold></#6dd3a0>"
+      "lore": "<#7b8aa0>右クリックで姿を現す</#7b8aa0>"
+    "vanish-off":
+      "name": "<#f95738><bold>透明化：オフ</bold></#f95738>"
+      "lore": "<#7b8aa0>右クリックで透明化</#7b8aa0>"
+    "exit":
+      "name": "<#f95738><bold>スタッフモード終了</bold></#f95738>"
+      "lore": "<#7b8aa0>右クリックでスタッフモードを終了</#7b8aa0>"
+  "menu":
+    "title": "<#93c5fd><bold>スタッフ · プレイヤー</bold></#93c5fd> <#7b8aa0>(<page>/<pages>)</#7b8aa0>"
+    "previous": "<#f4d35e>前のページ</#f4d35e>"
+    "next": "<#f4d35e>次のページ</#f4d35e>"
+    "head-name": "<#faf0ca><bold><player></bold></#faf0ca>"
+    "lore-state": "<#7b8aa0>状態：</#7b8aa0> <state>"
+    "lore-health": "<#7b8aa0>体力：</#7b8aa0> <#f95738><health> ❤</#f95738>"
+    "lore-world": "<#7b8aa0>ワールド：</#7b8aa0> <white><world></white>"
+    "lore-frozen": "<#7dd3fc><bold>凍結中</bold></#7dd3fc>"
+    "lore-actions": "<#7b8aa0>左：テレポート · 右：インベントリ · Shift：凍結</#7b8aa0>"
+    "state":
+      "alive": "<#6dd3a0>生存</#6dd3a0>"
+      "spectator": "<#7b8aa0>観戦者</#7b8aa0>"
+      "lobby": "<#93c5fd>ロビー</#93c5fd>"
+      "staff": "<#c4b5fd>スタッフ</#c4b5fd>"
+    "lore-ping": "<#7b8aa0>Ping：</#7b8aa0> <white><ping>ms</white>"
+    "lore-match": "<#7b8aa0>この試合：</#7b8aa0> <white><kills></white> <#7b8aa0>キル ·</#7b8aa0> <#7dd3fc><diamonds></#7dd3fc> <#7b8aa0>ダイヤ ·</#7b8aa0> <#f4d35e><gold></#f4d35e> <#7b8aa0>金</#7b8aa0>"
+  "usage": "<#f4d35e><bold>/staff</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/staff</#93c5fd> <#7b8aa0>- スタッフモードの切替</#7b8aa0><newline> <#93c5fd>/staff tp <プレイヤー></#93c5fd> <#7b8aa0>- 透明化してプレイヤーの元へ</#7b8aa0><newline> <#93c5fd>/staff list</#93c5fd> <#7b8aa0>- オンラインのスタッフ</#7b8aa0><newline> <#93c5fd>/staff help</#93c5fd> <#7b8aa0>- 使えるスタッフツール一覧</#7b8aa0>"
+  "list":
+    "header": "<#93c5fd><bold>オンラインのスタッフ</bold></#93c5fd> <#7b8aa0>（<count>）</#7b8aa0>"
+    "entry": " <#7b8aa0>•</#7b8aa0> <rank><white><player></white> <#7b8aa0>-</#7b8aa0> <state>"
+    "empty": "<#7b8aa0>オンラインのスタッフはいません。</#7b8aa0>"
+    "state-off": "<#7b8aa0>プレイ中</#7b8aa0>"
+    "state-vanished": "<#6dd3a0>スタッフモード・透明化</#6dd3a0>"
+    "state-visible": "<#f4d35e>スタッフモード・表示中</#f4d35e>"
+"nether-close":
+  "warning": "<prefix><#f97316>ネザーはあと <white><time></white> で閉じます。それまでに脱出してください！</#f97316>"
+  "closed": "<prefix><#f95738><bold>ネザーが閉じました。</bold></#f95738> <#cbd5e1>中に残っていたプレイヤーはオーバーワールドに移動しました。</#cbd5e1>"
+  "moved": "<#f4d35e>ネザーが閉じたため、オーバーワールドに移動しました。</#f4d35e>"
+  "portal-blocked": "<#f95738>この試合の残り時間、ネザーは閉じています。</#f95738>"
+"meetup":
+  "start": "<prefix><#fb7185><bold>ミートアップ！</bold></#fb7185> <#cbd5e1><white><players></white> 人全員が中心に集められました。ボーダー：<white><size>×<size></white>。</#cbd5e1>"
+  "arena-start": "<prefix><#fb7185><bold>ミートアップ！</bold></#fb7185> <#cbd5e1><white><players></white> 人全員がアリーナ <white><arena></white> に集められました。ボーダー：<white><size>×<size></white>。</#cbd5e1>"
+"match-stats":
+  "title": "<#93c5fd>  試合の統計</#93c5fd>"
+  "line": "<#7b8aa0>  <category></#7b8aa0> <white><player></white> <#7b8aa0>·</#7b8aa0> <#faf0ca><value></#faf0ca>"
+  "header": "<#7b8aa0>  ─</#7b8aa0> <#f4d35e><bold><category></bold></#f4d35e>"
+  "entry": "<#7b8aa0>    #<rank></#7b8aa0> <white><player></white> <#7b8aa0>·</#7b8aa0> <#faf0ca><value></#faf0ca>"
+  "hearts": "<value> ❤"
+  "category":
+    "damage-dealt": "与ダメージ"
+    "damage-taken": "被ダメージ"
+    "diamonds": "採掘したダイヤ"
+    "gold": "採掘した金"
+    "golden-apples": "食べた金のリンゴ"
+"docs":
+  "title": "<gold>試練UHC ガイド</gold>"
+  "yes": "<dark_green>はい</dark_green>"
+  "no": "<dark_red>いいえ</dark_red>"
+  "off": "<dark_gray>オフ</dark_gray>"
+  "solo": "ソロ"
+  "teams-of": "<size>人チーム"
+  "nether-closes": "<dark_green>はい</dark_green>、<time> に閉鎖"
+  "no-scenarios": "<dark_gray>なし - バニラUHC。</dark_gray>"
+  "scenario-entry": "<dark_aqua>•</dark_aqua> <name>"
+  "ending":
+    "meetup": "中心での<dark_red>ミートアップ</dark_red>"
+    "sudden-death": "<dark_red>サドンデス</dark_red>"
+  "page":
+    "contents": "<gold><bold>試練UHC</bold></gold><newline><dark_gray>ウルトラハードコア ガイド</dark_gray><newline><newline><black>自然回復なし - 金のリンゴとゴールデンヘッドで回復。最後まで生き残ったプレイヤー（またはチーム）の勝ち。</black><newline><newline><click:change_page:'2'><dark_blue>» 試合の流れ</dark_blue></click><newline><click:change_page:'3'><dark_blue>» ルール</dark_blue></click><newline><click:change_page:'4'><dark_blue>» シナリオ</dark_blue></click><newline><click:change_page:'5'><dark_blue>» コマンド</dark_blue></click><newline><click:change_page:'6'><dark_blue>» オンライン資料</dark_blue></click>"
+    "contents-staff": "<gold><bold>試練UHC</bold></gold><newline><dark_gray>ウルトラハードコア ガイド</dark_gray><newline><newline><black>自然回復なし - 金のリンゴとゴールデンヘッドで回復。最後まで生き残ったプレイヤー（またはチーム）の勝ち。</black><newline><newline><click:change_page:'2'><dark_blue>» 試合の流れ</dark_blue></click><newline><click:change_page:'3'><dark_blue>» ルール</dark_blue></click><newline><click:change_page:'4'><dark_blue>» シナリオ</dark_blue></click><newline><click:change_page:'5'><dark_blue>» コマンド</dark_blue></click><newline><click:change_page:'6'><dark_blue>» スタッフツール</dark_blue></click><newline><click:change_page:'7'><dark_blue>» オンライン資料</dark_blue></click>"
+    "match": "<gold><bold>試合の流れ</bold></gold><newline><newline><black>1. 全員がスキャッターされる。<newline>2. <dark_red><grace></dark_red> の間PvPはオフ。<newline>3. <border_initial> のボーダーが <border_start> 後に縮み始め、<border_duration> かけて <border_final> になる。<newline>4. 開始 <final_heal> 後にファイナルヒール。<newline>5. <duration> 後、<ending>で試合終了。</black>"
+    "rules": "<gold><bold>ルール</bold></gold><newline><newline><black>モード：<teams><newline>自然回復：<regen><newline>ゴールデンヘッド：<golden_heads><newline>エンチャントされた金のリンゴ：<notch_apples><newline>ポーション：<potions><newline>ネザー：<nether><newline>エンド：<end><newline>再接続時間：<reconnect></black>"
+    "scenarios": "<gold><bold>シナリオ</bold></gold><newline><newline><black><scenarios></black>"
+    "commands": "<gold><bold>コマンド</bold></gold><newline><newline><dark_blue>/team</dark_blue> <black>チーム</black><newline><dark_blue>/kit</dark_blue> <black>キット選択</black><newline><dark_blue>/scenarios</dark_blue> <black>シナリオ</black><newline><dark_blue>/profile</dark_blue> <black>自分の統計</black><newline><dark_blue>/lb</dark_blue> <black>ランキング</black><newline><dark_blue>/msg</dark_blue> <black>個別メッセージ</black><newline><dark_blue>/report</dark_blue> <black>プレイヤーを通報</black><newline><dark_blue>/lang</dark_blue> <black>言語</black><newline><dark_blue>/menu</dark_blue> <black>クイックメニュー</black>"
+    "staff": "<gold><bold>スタッフツール</bold></gold><newline><newline><dark_blue>/staff</dark_blue> <black>スタッフモード</black><newline><dark_blue>/staff help</dark_blue> <black>全スタッフツール</black><newline><dark_blue>/staff freeze</dark_blue> <black>プレイヤー凍結</black><newline><dark_blue>/staff invsee</dark_blue> <black>インベントリ確認</black><newline><dark_blue>/staff chat</dark_blue> <black>スタッフチャット</black><newline><dark_blue>/admin</dark_blue> <black>全管理ツール</black><newline><dark_blue>/admin start</dark_blue> <black>開始</black><newline><dark_blue>/admin pause</dark_blue> <black>一時停止</black><newline><dark_blue>/revive</dark_blue> <black>復活</black>"
+    "online": "<gold><bold>オンライン資料</bold></gold><newline><newline><black>すべての設定とシナリオを解説した完全なドキュメント：</black><newline><newline><click:open_url:'<url>'><dark_blue><u>ドキュメントを開く</u></dark_blue></click>"
+"tab-layout":
+  "your-team": "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>（自分 · <alive>/<count>）</#7b8aa0>"
+  "team": "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>(<alive>/<count>)</#7b8aa0>"
+  "players": "<#f4d35e><bold>▌ プレイヤー</bold></#f4d35e> <#7b8aa0>(<count>)</#7b8aa0>"
+  "spectators": "<#9ca3af><bold>▌ 観戦者</bold></#9ca3af> <#7b8aa0>(<count>)</#7b8aa0>"
+  "player": "<rank><<color>><name></<color>>"
+  "player-dead": "<rank><#6b7280><st><name></st></#6b7280>"
+  "player-offline": "<rank><#6b7280><name> <i>（切断）</i></#6b7280>"
+  "spectator": "<rank><#9ca3af><name></#9ca3af>"
+  "staff": "<rank><#c4b5fd><name></#c4b5fd> <#7b8aa0>[スタッフ]</#7b8aa0>"
+  "health": " <#f95738><value></#f95738>"
+  "kills": " <#cbd5e1>⚔<kills></#cbd5e1>"
+  "more": "<#7b8aa0>他 <count> 人…</#7b8aa0>"
+  "stats":
+    "line": "<#7b8aa0><label></#7b8aa0> <white><value></white>"
+    "title-match": "<#f4d35e><bold>▌ あなたの統計</bold></#f4d35e>"
+    "title-game": "<#7dd3fc><bold>▌ 試合</bold></#7dd3fc>"
+    "title-lobby": "<#f4d35e><bold>▌ プロフィール</bold></#f4d35e>"
+    "title-lobby-info": "<#7dd3fc><bold>▌ ロビー</bold></#7dd3fc>"
+    "kills": "キル"
+    "damage-dealt": "与ダメ"
+    "damage-taken": "被ダメ"
+    "diamonds": "ダイヤ"
+    "gold": "金"
+    "golden-apples": "金リンゴ"
+    "alive": "生存"
+    "teams": "チーム"
+    "time": "時間"
+    "border": "ボーダー"
+    "next": "次"
+    "level": "レベル"
+    "wins": "勝利"
+    "deaths": "デス"
+    "kd": "K/D"
+    "games": "試合数"
+    "online": "オンライン"
+    "needed": "あと"
+    "ping": "Ping"
+"database":
+  "clear":
+    "usage": "<#f4d35e><bold>/admin database</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin database cleardata <プレイヤー|パターン> [confirm]</#93c5fd> <#7b8aa0>- プレイヤーの保存データを削除</#7b8aa0><newline> <#93c5fd>/admin database clearall confirm</#93c5fd> <#7b8aa0>- 全員のデータを削除</#7b8aa0><newline> <#64748b>* は任意の文字列（例：HippoDev_*）</#64748b>"
+    "not-found": "<#f95738><white><player></white> の保存データはありません。</#f95738>"
+    "done": "<#6dd3a0><white><player></white> の保存データをすべて削除しました。</#6dd3a0>"
+    "all-confirm": "<#f95738><bold>全</bold>プレイヤーの保存データを完全に削除します。元に戻せません。</#f95738> <#cbd5e1>実行するには</#cbd5e1> <click:suggest_command:'/admin database clearall confirm'><white><u>/admin database clearall confirm</u></white></click> <#cbd5e1>を入力してください。</#cbd5e1>"
+    "all-done": "<#6dd3a0><white><count></white> 人の保存データを削除しました。</#6dd3a0>"
+    "pattern-confirm": "<#f95738><white><pattern></white> に一致するプレイヤーは <white><count></white> 人：</#f95738> <#cbd5e1><players></#cbd5e1> <#cbd5e1>すべて削除するには</#cbd5e1> <click:suggest_command:'/admin database cleardata <pattern> confirm'><white><u>/admin database cleardata <pattern> confirm</u></white></click> <#cbd5e1>を入力してください。</#cbd5e1>"
+    "pattern-done": "<#6dd3a0><white><pattern></white> に一致する <white><count></white> 人の保存データを削除しました。</#6dd3a0>"
+"profile-dialog":
+  "title": "<#f4d35e><bold><player></bold></#f4d35e><#7b8aa0> のプロフィール</#7b8aa0>"
+  "level": "<#c4b5fd><bold>レベル <level></bold></#c4b5fd>  <bar>  <#7b8aa0><experience>/<needed> XP</#7b8aa0>"
+  "combat": "<#f95738>⚔ キル</#f95738> <white><kills></white>   <#9ca3af>☠ デス</#9ca3af> <white><deaths></white>   <#7dd3fc>✚ アシスト</#7dd3fc> <white><assists></white>   <#fda4af>K/D</#fda4af> <white><kd></white>"
+  "games": "<#f4d35e>★ 勝利</#f4d35e> <white><wins></white>   <#a7f3d0>試合数</#a7f3d0> <white><games></white>   <#86efac>勝率</#86efac> <white><winrate></white>"
+  "streak": "<#fb7185>🔥 最高連続キル</#fb7185> <white><best></white>   <#7b8aa0>現在</#7b8aa0> <white><current></white>"
+  "items": "<#f4d35e>金のリンゴ</#f4d35e> <white><golden_apples></white>   <#f4d35e>ゴールデンヘッド</#f4d35e> <white><golden_heads></white>   <#93c5fd>射撃数</#93c5fd> <white><bow_shots></white>"
+  "ores": "<#7dd3fc>ダイヤ</#7dd3fc> <white><diamonds></white>  <#f4d35e>金</#f4d35e> <white><gold></white>  <#cbd5e1>鉄</#cbd5e1> <white><iron></white>  <#6dd3a0>エメラルド</#6dd3a0> <white><emeralds></white>  <#a8a29e>古代の残骸</#a8a29e> <white><ancient_debris></white>  <#c4b5fd>スポナー</#c4b5fd> <white><spawners></white>"
+  "lobby": "<#facc15>🎉 ロビー勝利</#facc15> <white><lobby_wins></white>   <#7b8aa0>チャット</#7b8aa0> <white><chat_wins></white>  <#7b8aa0>宝</#7b8aa0> <white><treasures></white>  <#7b8aa0>ポテト</#7b8aa0> <white><potato_wins></white>  <#7b8aa0>パルクール</#7b8aa0> <white><parkour></white>"
+  "rank": "<#7b8aa0>ランキング：</#7b8aa0> <#f4d35e>勝利 <wins_rank></#f4d35e>  <#f95738>キル <kills_rank></#f95738>  <#c4b5fd>レベル <level_rank></#c4b5fd>"
+  "button":
+    "leaderboard": "<#fbbf24>🏆 ランキング</#fbbf24>"
+    "kits": "<#fb923c>🎒 キット</#fb923c>"
+    "language": "<#7dd3fc>🌐 言語</#7dd3fc>"
+    "players": "<#cbd5e1>👥 全プレイヤー</#cbd5e1>"
+    "settings": "<#cbd5e1>🔧 設定</#cbd5e1>"
+"leaderboard-dialog":
+  "title": "<#fbbf24><bold>🏆 ランキング</bold></#fbbf24>"
+  "header": "<#7b8aa0>並び順</#7b8aa0> <stat>   <#7b8aa0><page>/<max_page> ページ</#7b8aa0>"
+  "entry": "<#f4d35e><bold>#<rank></bold></#f4d35e>  <white><player></white>  <#7b8aa0>-</#7b8aa0>  <#f4d35e><value></#f4d35e>"
+  "you": "<#7b8aa0>あなたの順位：</#7b8aa0> <#6dd3a0><bold>#<rank></bold></#6dd3a0> <#7b8aa0>(<value>)</#7b8aa0>"
+  "you-unranked": "<#7b8aa0>この項目ではまだ順位がありません。</#7b8aa0>"
+  "stat-selected": "<#6dd3a0>▶</#6dd3a0> <stat> <#6dd3a0>◀</#6dd3a0>"
+  "prev": "<#7dd3fc>◀ 前へ</#7dd3fc>"
+  "prev-disabled": "<#3f4a5a>◀ 前へ</#3f4a5a>"
+  "next": "<#7dd3fc>次へ ▶</#7dd3fc>"
+  "next-disabled": "<#3f4a5a>次へ ▶</#3f4a5a>"
+  "view-profile": "<#7dd3fc>▶ クリックでプロフィールを見る</#7dd3fc>"
+"settings-dialog":
+  "title": "<item:comparator> <#cbd5e1><bold>設定</bold></#cbd5e1>"
+  "description": "<#7b8aa0>設定をクリックしてオン／オフを切り替えます。選択はプロフィールに保存されます。</#7b8aa0>"
+  "state":
+    "on": "<item:lime_dye> <#6dd3a0><bold>オン</bold></#6dd3a0>"
+    "off": "<item:gray_dye> <#f95738><bold>オフ</bold></#f95738>"
+  "icon":
+    "scoreboard": "<item:paper>"
+    "own-nametag": "<item:name_tag>"
+    "private-messages": "<item:writable_book>"
+    "join-leave-messages": "<item:oak_door>"
+    "show-cosmetics": "<item:blaze_powder>"
+    "hide-lobby-players": "<item:ender_eye>"
+    "lobby-fly": "<item:feather>"
+  "setting":
+    "scoreboard": "<icon> <white>スコアボード</white>  <state>"
+    "own-nametag": "<icon> <white>自分のネームタグ</white>  <state>"
+    "private-messages": "<icon> <white>個別メッセージ</white>  <state>"
+    "join-leave-messages": "<icon> <white>参加・退出メッセージ</white>  <state>"
+    "show-cosmetics": "<icon> <white>コスメを表示</white>  <state>"
+    "hide-lobby-players": "<icon> <white>ロビーでプレイヤーを隠す</white>  <state>"
+    "lobby-fly": "<icon> <white>ロビー飛行</white>  <state>"
+  "tooltip":
+    "scoreboard": "<#cbd5e1>画面の横に試合のスコアボードを表示します。ショートカット：/sb</#cbd5e1>"
+    "own-nametag": "<#cbd5e1>自分の頭上にネームタグを表示し、三人称視点（F5）で見えるようにします。</#cbd5e1>"
+    "private-messages": "<#cbd5e1>他のプレイヤーから /msg を受け取ります。スタッフからは常に届きます。</#cbd5e1>"
+    "join-leave-messages": "<#cbd5e1>プレイヤーの参加・退出時にチャットで知らせます。</#cbd5e1>"
+    "show-cosmetics": "<#cbd5e1>他のプレイヤーのオービット、軌跡、キルエフェクトを表示します。自分のものは常に表示。</#cbd5e1>"
+    "hide-lobby-players": "<#cbd5e1>ロビーにいる間、他の全員を隠します。試合には影響しません。</#cbd5e1>"
+    "lobby-fly": "<#cbd5e1>ロビーで飛び回れます。ロビーでのみ有効。</#cbd5e1>"
+"lobbygame":
+  "only":
+    "waiting": "<#f95738>ロビーミニゲームは待機ロビー中のみ実行できます。</#f95738>"
+  "already":
+    "running": "<#f95738>ロビーミニゲームはすでに進行中です。</#f95738>"
+  "none":
+    "running": "<#f4d35e>進行中のロビーミニゲームはありません。</#f4d35e>"
+  "no":
+    "words": "<#f95738>並べ替え用の単語が設定されていません。</#f95738>"
+  "word":
+    "invalid": "<#f95738>無効な単語です。英字か数字のみ使えます。</#f95738>"
+    "exists": "<#f95738><word> はすでに並べ替えリストにあります。</#f95738>"
+    "missing": "<#f95738><word> は並べ替えリストにありません。</#f95738>"
+    "added": "<#6dd3a0><word> を並べ替えリストに追加しました。</#6dd3a0>"
+    "removed": "<#f95738><word> を並べ替えリストから削除しました。</#f95738>"
+    "list":
+      "text": "<#faf0ca>並べ替え単語：</#faf0ca> <white><words></white>"
+      "empty": "<#f4d35e>並べ替え単語はまだ設定されていません。</#f4d35e>"
+  "start":
+    "command":
+      "success": "<#6dd3a0>ロビーミニゲームを開始しました。</#6dd3a0>"
+  "stopped":
+    "text": "<prefix><#f95738><sender></#f95738> <#cbd5e1>がロビーミニゲームを停止しました。</#cbd5e1>"
+    "command": "<#6dd3a0>ロビーミニゲームを停止しました。</#6dd3a0>"
+  "started":
+    "math": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>が計算問題を出しました：</#cbd5e1> <white><expression></white>"
+    "unscramble": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>が並べ替え問題を出しました：</#cbd5e1> <white><scrambled></white>"
+  "title":
+    "text": "<#f4d35e><bold>ロビーミニゲーム</bold></#f4d35e>"
+    "math":
+      "subtitle": "<white>計算：<expression></white>"
+    "unscramble":
+      "subtitle": "<white>並べ替え：<scrambled></white>"
+  "winner":
+    "text": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>が <white><time></white> で正解！</#cbd5e1> <#7b8aa0>— 答え：</#7b8aa0> <white><answer></white>"
+    "title": "<#6dd3a0><bold><player></bold></#6dd3a0>"
+    "subtitle": "<white><time> で正解</white>"
+  "timeout": "<prefix><#f95738>時間内に正解者はいませんでした。</#f95738> <#cbd5e1>答え：</#cbd5e1> <white><answer></white>"
+"match":
+  "starting": "<prefix><#f4d35e>試合は <seconds> 秒後に始まります。</#f4d35e>"
+  "force":
+    "started": "<prefix><#f95738>カウントダウンを省略して試合を強制開始しました。</#f95738>"
+  "started": "<prefix><#6dd3a0>UHC開始！</#6dd3a0>"
+  "exp":
+    "earned": "<#f4d35e>この試合で <white><experience></white> 経験値を獲得しました。</#f4d35e>"
+  "rejoined": "<#6dd3a0>進行中の試合に復帰しました。</#6dd3a0> <#7dd3fc>再接続の残り時間：</#7dd3fc> <white><time></white>"
+  "disconnected": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>が試合から離れました。再ログインの期限は</#cbd5e1> <white><minutes> 分</white> <#6b7280>（残り <time>）</#6b7280>"
+  "draw": "<prefix><#f95738>勝者なしで試合が終わりました。</#f95738>"
+  "summary":
+    "header": "<#334155><st>                                        </st></#334155>"
+    "title": "<#f4d35e><bold>  ⚔ 試合結果</bold></#f4d35e>"
+    "winner": "<#7b8aa0>  勝者     </#7b8aa0><#f4d35e><bold><winner></bold></#f4d35e>"
+    "duration": "<#7b8aa0>  時間     </#7b8aa0><white><duration></white>"
+    "players": "<#7b8aa0>  人数     </#7b8aa0><white><players></white>"
+    "divider": "<#1e293b><st>                                        </st></#1e293b>"
+    "kills":
+      "header": "<#93c5fd>  キルランキング</#93c5fd>"
+      "entry": "<#7b8aa0>  <rank>.</#7b8aa0> <white><player></white><#7b8aa0> — </#7b8aa0><#f4d35e><kills> キル</#f4d35e>"
+      "none": "<#7b8aa0>  キルの記録はありません。</#7b8aa0>"
+    "footer": "<#334155><st>                                        </st></#334155>"
+  "ending":
+    "text": "<prefix><#9db4c0>試合終了。<white><seconds>s</white> 後にロビーへ戻ります。</#9db4c0>"
+    "actionbar": "<#faf0ca><seconds> 秒後にロビーへ戻ります</#faf0ca>"
+  "countdown":
+    "actionbar": "<#ee964b>試合開始まで <white><seconds>秒</white></#ee964b>"
+  "stopped": "<#f95738>試合が停止されました。</#f95738>"
+  "reset": "<#6dd3a0>試合の状態とプレイヤーデータをすべて強制リセットしました。</#6dd3a0>"
+"countdown": "<prefix><#ee964b><seconds> 秒後に開始。</#ee964b>"
+"title":
+  "opening": "<gradient:#f4d35e:#ee964b><bold>試練UHC</bold></gradient>"
+  "match":
+    "starting": "<#f4d35e><bold>まもなく開始</bold></#f4d35e>"
+    "started": "<#6dd3a0><bold>UHC開始</bold></#6dd3a0>"
+    "draw": "<#f95738><bold>勝者なし</bold></#f95738>"
+    "ending": "<#9db4c0><bold>試合終了</bold></#9db4c0>"
+  "countdown": "<#ee964b><bold><seconds></bold></#ee964b>"
+  "launch":
+    "far": "<gradient:#faf0ca:#f4d35e><bold><seconds></bold></gradient>"
+    "final": "<gradient:#ee964b:#f95738><bold>❰ <seconds> ❱</bold></gradient>"
+    "go": "<gradient:#f95738:#f4d35e:#6dd3a0><bold>⚔ 戦え ⚔</bold></gradient>"
+  "scatter":
+    "sequence":
+      "start": "<#faf0ca><bold>スキャッター開始</bold></#faf0ca>"
+    "settle":
+      "wait": "<#9db4c0><bold>マップ準備中</bold></#9db4c0>"
+  "scattered": "<#6dd3a0><bold>スキャッター完了</bold></#6dd3a0>"
+  "grace":
+    "start": "<#faf0ca><bold>猶予期間</bold></#faf0ca>"
+    "end": "<#f95738><bold>PvP解禁</bold></#f95738>"
+  "final":
+    "duel":
+      "start": "<#f4d35e><bold>最終決闘</bold></#f4d35e>"
+    "heal": "<#6dd3a0><bold>ファイナルヒール</bold></#6dd3a0>"
+  "sudden":
+    "death":
+      "start": "<#f95738><bold>サドンデス</bold></#f95738>"
+      "finish": "<#f4d35e><bold>サドンデスの勝者</bold></#f4d35e>"
+  "revived":
+    "self": "<#6dd3a0><bold>復活</bold></#6dd3a0>"
+  "winner": "<#f4d35e><bold>勝者</bold></#f4d35e>"
+  "border":
+    "shrinking": "<#ee964b><bold>ボーダー縮小</bold></#ee964b>"
+  "eliminated":
+    "text": "<#f95738><bold>脱落</bold></#f95738>"
+    "announcement": "<#f95738><bold>プレイヤー脱落</bold></#f95738>"
+"subtitle":
+  "opening":
+    "starting": "<white>まもなく開始</white>"
+    "credits": "<#7b8aa0>制作：<white>平常網路資訊工作室 (RNIS)</white></#7b8aa0>"
+    "version": "<#7b8aa0>バージョン <white><version></white></#7b8aa0>"
+  "match":
+    "starting": "<white><seconds> 秒後にカウントダウン開始</white>"
+    "started": "<white>試合が始まりました。</white>"
+    "draw": "<white>全員が脱落しました。</white>"
+    "ending": "<white><seconds> 秒後にロビーへ戻ります。</white>"
+  "countdown": "<white>試合開始まで</white>"
+  "launch":
+    "far": "<#7b8aa0>まもなく試合開始</#7b8aa0>"
+    "final": "<#f95738>戦闘準備</#f95738>"
+    "go": "<white>スキャッター開始 — 勝利を目指せ！</white>"
+  "scatter":
+    "sequence":
+      "start": "<white>プレイヤーを順番にテレポート中。</white>"
+    "settle":
+      "wait": "<white><seconds> 秒後に本番開始。</white>"
+  "scattered": "<white>開始位置が決まりました。</white>"
+  "grace":
+    "start": "<white><seconds> 秒間のPvP保護。</white>"
+    "end": "<white>猶予期間が終わりました。</white>"
+  "final":
+    "duel":
+      "start": "<white><seconds> 秒後に試合終了。</white>"
+    "heal": "<white>体力と満腹度が回復しました。</white>"
+  "sudden":
+    "death":
+      "start": "<white>最後まで生き残った者の勝利。</white>"
+      "finish": "<white><player> の勝利。</white>"
+  "revived":
+    "self": "<white>試合に復帰しました。</white>"
+  "winner": "<white><player> が試合に勝利しました。</white>"
+  "border":
+    "shrinking": "<white>段階 <stage>/<total>：<size> まで。</white>"
+  "eliminated":
+    "text": "<white>あなたは脱落しました。</white>"
+    "announcement": "<white><player> が脱落しました。</white>"
+"pause":
+  "enabled": "<prefix><#f4d35e>試合を一時停止しました。</#f4d35e>"
+  "disabled": "<prefix><#6dd3a0>試合を再開しました。</#6dd3a0>"
+  "already": "<#f4d35e>試合はすでに一時停止中です。</#f4d35e>"
+  "invalid": "<#f95738>一時停止できるのはカウントダウン、猶予期間、試合中、サドンデス、ロビー帰還中のみです。</#f95738>"
+  "blocked": "<#f95738>試合は一時停止中です。今はその操作ができません。</#f95738>"
+"resume":
+  "invalid": "<#f95738>試合は一時停止していません。</#f95738>"
+"match-restore":
+  "host-notice": "<prefix><#f4d35e>試合中にサーバーが再起動しました。試合は復元され一時停止中です（<white><phase></white>）。まだ <white><offline></white> 人がオフラインです。<white>/admin resume</white> で再開、<white>/admin stop</white> で終了します。</#f4d35e>"
+  "player-notice": "<prefix><#f4d35e>試合中にサーバーが再起動しました。ホストが再開するまで一時停止中です。</#f4d35e>"
+"freeze":
+  "enabled": "<#7dd3fc><player> を凍結しました。</#7dd3fc>"
+  "disabled": "<#6dd3a0><player> の凍結を解除しました。</#6dd3a0>"
+  "already": "<#f4d35e><player> はすでに凍結されています。</#f4d35e>"
+  "notify": "<#f95738>管理者によって凍結されました。</#f95738>"
+  "blocked": "<#f95738>凍結中のためその操作はできません。</#f95738>"
+"unfreeze":
+  "already": "<#f4d35e><player> は凍結されていません。</#f4d35e>"
+  "notify": "<#6dd3a0>凍結が解除されました。</#6dd3a0>"
+"scatter":
+  "sequence":
+    "start": "<prefix><#faf0ca>スキャッター開始。プレイヤーを1人ずつテレポートします。</#faf0ca>"
+  "bossbar": "<#f4d35e>プレイヤーをスキャッター中 <white><current>/<total></white> <#7b8aa0>(<percent>%)</#7b8aa0>"
+  "settle":
+    "wait": "<prefix><#9db4c0>マップの準備を <seconds> 秒待っています。</#9db4c0>"
+  "countdown":
+    "bossbar": "<#22c55e>ゲーム開始まで <white><seconds></white>"
+    "title": "<#22c55e><bold><seconds></bold></#22c55e>"
+"scattered": "<#6dd3a0>スキャッターされました。</#6dd3a0>"
+"advancement-message": "<#f4d35e><player></#f4d35e> <#faf0ca>が進捗を達成：</#faf0ca> <#86efac>[</#86efac><advancement><#86efac>]</#86efac>"
+"arrow-health": "<red>❤ <player></red> <gray>—</gray> <white><health>/<max_health></white>"
+"achievement":
+  "root":
+    "title": "試練UHC"
+    "description": "試練UHCの実績を進めよう。"
+  "first_game":
+    "title": "初陣"
+    "description": "初めてのUHCをプレイする。"
+  "regular":
+    "title": "常連"
+    "description": "UHCを5試合プレイする。"
+  "veteran":
+    "title": "ベテラン"
+    "description": "UHCを10試合プレイする。"
+  "marathon":
+    "title": "マラソン"
+    "description": "UHCを25試合プレイする。"
+  "first_blood":
+    "title": "ファーストブラッド"
+    "description": "初めてのキルを取る。"
+  "hat_trick":
+    "title": "ハットトリック"
+    "description": "通算3キルに到達する。"
+  "hunter":
+    "title": "ハンター"
+    "description": "通算10キルに到達する。"
+  "slayer":
+    "title": "スレイヤー"
+    "description": "通算25キルに到達する。"
+  "on_fire":
+    "title": "絶好調"
+    "description": "5連続キルを達成する。"
+  "helper":
+    "title": "お手伝い"
+    "description": "初めてのアシストを取る。"
+  "team_player":
+    "title": "チームプレイヤー"
+    "description": "通算5アシストに到達する。"
+  "support_master":
+    "title": "サポートの達人"
+    "description": "通算15アシストに到達する。"
+  "champion":
+    "title": "チャンピオン"
+    "description": "初めてUHCで勝利する。"
+  "contender":
+    "title": "挑戦者"
+    "description": "UHCで3勝する。"
+  "legend":
+    "title": "伝説"
+    "description": "UHCで5勝する。"
+  "unlucky":
+    "title": "ついてない"
+    "description": "UHCの試合で1回死ぬ。"
+  "novice":
+    "title": "初心者"
+    "description": "レベル1に到達する。"
+  "learner":
+    "title": "見習い"
+    "description": "レベル3に到達する。"
+  "apprentice":
+    "title": "弟子"
+    "description": "レベル5に到達する。"
+  "seasoned":
+    "title": "熟練"
+    "description": "レベル10に到達する。"
+  "adept":
+    "title": "達人"
+    "description": "レベル15に到達する。"
+  "expert":
+    "title": "エキスパート"
+    "description": "レベル18に到達する。"
+  "prestige":
+    "title": "名声"
+    "description": "レベル20に到達する。"
+  "elite":
+    "title": "エリート"
+    "description": "レベル25に到達する。"
+  "master":
+    "title": "マスター"
+    "description": "レベル30に到達する。"
+  "ascendant":
+    "title": "超越者"
+    "description": "レベル40に到達する。"
+  "void_walker":
+    "title": "奈落の底へ"
+    "description": "奈落に落ちる。"
+  "hot_feet":
+    "title": "熱い足"
+    "description": "溶岩の中で死ぬ。"
+  "crispy":
+    "title": "こんがり"
+    "description": "焼け死ぬ。"
+  "sniper":
+    "title": "スナイパー"
+    "description": "30ブロック以上離れて弓でキルする。"
+  "pacifist":
+    "title": "平和主義者"
+    "description": "1キルもせずに試合に勝つ。"
+  "speedrunner":
+    "title": "スピードランナー"
+    "description": "5分以内に試合に勝つ。"
+  "close_call":
+    "title": "間一髪"
+    "description": "残り体力ハート2つ以下で試合に勝つ。"
+  "totem_saved":
+    "title": "死の回避"
+    "description": "不死のトーテムで致命傷を生き延びる。"
+  "lobby_first_win":
+    "title": "ロビーの覇者"
+    "description": "初めてロビーゲームに勝つ。"
+  "lobby_regular":
+    "title": "ロビーの常連"
+    "description": "ロビーゲームで10勝する。"
+  "lobby_legend":
+    "title": "ロビーの伝説"
+    "description": "ロビーゲームで50勝する。"
+  "quiz_whiz":
+    "title": "クイズ王"
+    "description": "チャットゲームで10勝する。"
+  "treasure_hunter":
+    "title": "トレジャーハンター"
+    "description": "ロビーの宝を5個見つける。"
+  "hot_hands":
+    "title": "ホットハンド"
+    "description": "ホットポテトで3勝する。"
+  "free_runner":
+    "title": "フリーランナー"
+    "description": "ロビーのパルクールを完走する。"
+  "parkour_speed":
+    "title": "韋駄天"
+    "description": "ロビーのパルクールを超高速で完走する。"
+"grace":
+  "start": "<prefix><#faf0ca>猶予期間が始まりました（<seconds>秒）。</#faf0ca>"
+  "end": "<prefix><#f95738>猶予期間が終わりました。PvP解禁です。</#f95738>"
+  "skipped": "<prefix><#f95738>猶予期間がスキップされました。PvP解禁です。</#f95738>"
+  "blocked": "<#f95738>猶予期間中はPvPできません。</#f95738>"
+"skipphase":
+  "invalid": "<#f95738>今スキップできる段階はありません。</#f95738>"
+  "skipped": "<#f4d35e>段階 <white><phase></white> をスキップし、<white><next></white> に進みました。</#f4d35e>"
+"rescatter-started": "<prefix><#f4d35e>参加者を再スキャッターしています。</#f4d35e>"
+"final":
+  "heal": "<prefix><#86efac>生存者全員にファイナルヒールが与えられました。</#86efac>"
+  "duel":
+    "start": "<prefix><#f4d35e>最終決闘開始。先に勝者が出なければ <seconds> 秒後に試合終了。</#f4d35e>"
+"sudden":
+  "death":
+    "start": "<prefix><#f95738>サドンデス開始！生存者全員が岩盤ボックスに閉じ込められ、最後の一人まで戦う。</#f95738>"
+    "finish": "<prefix><#f4d35e><player></#f4d35e> <#f95738>がサドンデスで勝利。</#f95738>"
+"eliminated":
+  "text": "<#f95738>あなたは脱落しました。</#f95738>"
+  "announcement": "<prefix><#f95738><player></#f95738> <#faf0ca>が脱落しました。</#faf0ca>"
+"mannequin":
+  "name": "<#fca5a5>切断中</#fca5a5> <dark_gray>-</dark_gray> <white><player></white>"
+  "tab": "<gray><strikethrough><player></strikethrough></gray> <#fca5a5>（切断中）</#fca5a5>"
+"kick":
+  "on":
+    "death":
+      "message": "<#f95738><bold>あなたは死亡しました。</bold></#f95738>\n<#faf0ca>このサーバーは死亡時にキックする設定です。</#faf0ca>"
+"elimination":
+  "forced": "<#6dd3a0><count> 人を脱落させました。</#6dd3a0>"
+"killalloffline":
+  "none": "<#f4d35e>切断中の参加者は見つかりません。</#f4d35e>"
+  "done": "<#6dd3a0>切断中のプレイヤー <count> 人を脱落させました。</#6dd3a0>"
+"revived":
+  "self": "<#6dd3a0>復活しました。</#6dd3a0>"
+  "announcement": "<prefix><#6dd3a0><player></#6dd3a0> <#faf0ca>が復活しました。</#faf0ca>"
+"revive":
+  "invalid": "<#f95738><player> は脱落していません。</#f95738>"
+"spectator":
+  "teleporter":
+    "title": "<#334155><bold>プレイヤー一覧</bold></#334155>"
+    "prev": "<#f4d35e><bold>前のページ</bold></#f4d35e>"
+    "page": "<#9db4c0><bold><page>/<max_page> ページ</bold></#9db4c0>"
+    "next": "<#f4d35e><bold>次のページ</bold></#f4d35e>"
+  "menu":
+    "title": "<#6dd3a0><bold>観戦ツール</bold></#6dd3a0>"
+  "inspector":
+    "title": "<#334155><bold>プレイヤーを確認</bold></#334155>"
+  "inspect":
+    "view":
+      "title": "<#334155><bold><player> のインベントリ</bold></#334155>"
+  "target":
+    "head":
+      "name": "<#6dd3a0><bold><player></bold></#6dd3a0>"
+      "teleport":
+        "lore": "<#cbd5e1>クリックでテレポート</#cbd5e1>"
+      "inspect":
+        "lore": "<#cbd5e1>クリックでインベントリを確認</#cbd5e1>"
+      "health": "<#fca5a5>❤ <white><health></white></#fca5a5>   <#7b8aa0>Ping</#7b8aa0> <white><ping>ms</white>"
+      "coords": "<#7b8aa0>X:</#7b8aa0> <white><x></white> <#7b8aa0>Y:</#7b8aa0> <white><y></white> <#7b8aa0>Z:</#7b8aa0> <white><z></white>"
+    "offline": "<#f95738><player> が見つかりません。</#f95738>"
+  "speed":
+    "title": "<#334155><bold>速度調整</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "walk":
+      "slow": "<white><bold>歩行 0.10</bold></white>"
+      "normal": "<white><bold>歩行 0.20</bold></white>"
+      "fast": "<white><bold>歩行 0.30</bold></white>"
+    "fly":
+      "slow": "<white><bold>飛行 0.05</bold></white>"
+      "normal": "<white><bold>飛行 0.10</bold></white>"
+      "fast": "<white><bold>飛行 0.20</bold></white>"
+    "updated": "<#a7f3d0><type> の速度を <value> にしました。</#a7f3d0>"
+  "night":
+    "vision":
+      "enabled": "<#c4b5fd>観戦用の暗視を有効にしました。</#c4b5fd>"
+      "disabled": "<#f4d35e>観戦用の暗視を無効にしました。</#f4d35e>"
+  "teleported":
+    "text": "<#7dd3fc><player> にテレポートしました。</#7dd3fc>"
+    "center": "<#7dd3fc>ボーダーの中心にテレポートしました。</#7dd3fc>"
+  "no":
+    "targets": "<#f4d35e>今観戦できる対象がいません。</#f4d35e>"
+  "match":
+    "not":
+      "started": "<#f4d35e>試合がまだ始まっていないため、UHCワールドには入れません。</#f4d35e>"
+"pm":
+  "sent": "<#6dd3a0><player> にメッセージを送りました。</#6dd3a0>"
+"winner": "<prefix><#f4d35e><player></#f4d35e> <#6dd3a0>が試合に勝利しました。</#6dd3a0>"
+"chat":
+  "muted":
+    "text": "<prefix><#f95738>全体チャットがミュートされました。</#f95738>"
+    "blocked": "<#f95738>全体チャットは現在ミュート中です。</#f95738>"
+  "unmuted": "<prefix><#6dd3a0>全体チャットのミュートが解除されました。</#6dd3a0>"
+  "mute":
+    "already": "<#f4d35e>全体チャットはすでにミュート中です。</#f4d35e>"
+  "unmute":
+    "already": "<#f4d35e>全体チャットはミュートされていません。</#f4d35e>"
+  "cleared": "<prefix><#7dd3fc><white><player></white> がチャットを消去しました。</#7dd3fc>"
+  "message":
+    "cleared": "<#fda4af><white><player></white> のメッセージは <white><staff></white> によって削除されました。</#fda4af>"
+  "clear":
+    "button":
+      "hover": "<#fda4af><white><player></white> のメッセージを削除</#fda4af>"
+"drops":
+  "cleared": "<prefix><#7dd3fc><white><player></white> がドロップアイテムを <white><count></white> 個消去しました。</#7dd3fc>"
+"staffchat":
+  "enabled": "<#6dd3a0>スタッフチャットモードを有効にしました。</#6dd3a0>"
+  "disabled": "<#f95738>スタッフチャットモードを無効にしました。</#f95738>"
+"alerts":
+  "title": "<#f4d35e><bold>アラート設定</bold></#f4d35e>"
+  "filler": "<dark_gray> </dark_gray>"
+  "report": "<#f95738><bold>通報アラート</bold></#f95738>"
+  "item":
+    "pvp": "<#ee964b><bold>アイテムPvPアラート</bold></#ee964b>"
+  "pvp": "<#7dd3fc><bold>PvPアラート</bold></#7dd3fc>"
+  "mining": "<#86efac><bold>採掘アラート</bold></#86efac>"
+  "status":
+    "on": "<#6dd3a0>状態：有効</#6dd3a0>"
+    "off": "<#f95738>状態：無効</#f95738>"
+  "click":
+    "toggle": "<#cbd5e1>クリックでこのアラートを切り替えます。</#cbd5e1>"
+  "category":
+    "enabled": "<#6dd3a0><category> アラートを有効にしました。</#6dd3a0>"
+    "disabled": "<#f95738><category> アラートを無効にしました。</#f95738>"
+"report":
+  "submitted": "<#6dd3a0><target> への通報を送信しました。</#6dd3a0>"
+  "alert": "<#f95738>通報</#f95738> <#7b8aa0>| 通報者：</#7b8aa0> <white><reporter></white> <#7b8aa0>| 対象：</#7b8aa0> <white><target></white> <#7b8aa0>| ワールド：</#7b8aa0> <white><world></white> <#7b8aa0>| 理由：</#7b8aa0> <white><reason></white>"
+"alert":
+  "pvp": "<#7dd3fc>PvP</#7dd3fc> <#7b8aa0>| 攻撃者：</#7b8aa0> <white><attacker></white> <#7b8aa0>| 被害者：</#7b8aa0> <white><victim></white> <#7b8aa0>| ワールド：</#7b8aa0> <white><world></white>"
+  "item":
+    "pvp": "<#ee964b>アイテムPvP</#ee964b> <#7b8aa0>| 攻撃者：</#7b8aa0> <white><attacker></white> <#7b8aa0>| 被害者：</#7b8aa0> <white><victim></white> <#7b8aa0>| アイテム：</#7b8aa0> <white><item></white>"
+  "mining": "<#86efac>採掘</#86efac> <#7b8aa0>| プレイヤー：</#7b8aa0> <white><player></white> <#7b8aa0>| 鉱石：</#7b8aa0> <white><ore></white> <#7b8aa0>| 座標：</#7b8aa0> <white><x>, <y>, <z></white> <#7b8aa0>| ワールド：</#7b8aa0> <white><world></white>"
+"state": "<#7b8aa0>段階：</#7b8aa0> <white><phase></white> <#7b8aa0>| 生存：</#7b8aa0> <white><alive></white> <#7b8aa0>| 死亡：</#7b8aa0> <white><dead></white>"
+"errors":
+  "discord-not-configured": "<red>Discordの招待リンクが設定されていません。</red>"
+  "invalid-max-players": "<red>最大人数は正の数で指定してください。</red>"
+  "no":
+    "permission": "<red>その操作を行う権限がありません。</red>"
+    "grace":
+      "period": "<red>スキップできる猶予期間はありません。</red>"
+    "elimination":
+      "targets": "<red>対象に一致する試合参加者がいません。</red>"
+    "reply":
+      "target": "<red>返信する相手がいません。</red>"
+    "active":
+      "participants": "<red>再スキャッターできる参加者がいません。</red>"
+  "players":
+    "only": "<red>このコマンドはプレイヤーのみ使えます。</red>"
+  "already":
+    "running": "<red>試合はすでに進行中です。</red>"
+  "not":
+    "running": "<red>停止できる試合はありません。</red>"
+    "enough":
+      "players": "<red>開始には <required> 人必要です。現在のオンライン：<current>。</red>"
+      "teams": "<red>チームモードでは開始に2チーム以上必要です。</red>"
+  "world":
+    "missing": "<red>設定されたゲームワールド <world> が読み込まれていません。</red>"
+    "not":
+      "loaded": "<red>ワールド <world> は現在読み込まれていません。</red>"
+      "overworld": "<red>ワールド <world> は通常のオーバーワールドではありません。</red>"
+    "create":
+      "failed": "<red>ワールド <world> を作成できませんでした。</red>"
+    "center":
+      "not":
+        "land": "<red>ワールド <world> の中心に陸地がありません。</red>"
+    "protected": "<red>ワールド <world> は保護されているため、削除・再生成できません。</red>"
+    "preview":
+      "active": "<red>ワールドプレビュー中です。開始前に確定かキャンセルをしてください。</red>"
+    "unload":
+      "failed": "<red>ワールド <world> をアンロードできませんでした。</red>"
+    "delete":
+      "failed": "<red>ワールド <world> を削除できませんでした。</red>"
+  "rescatter":
+    "invalid":
+      "phase": "<red>再スキャッターはスキャッター中か猶予期間中のみ可能です。</red>"
+  "invalid":
+    "world":
+      "name": "<red>ワールド名には英字、数字、アンダースコア、ハイフンのみ使えます。</red>"
+    "border":
+      "size": "<red>ボーダーサイズは正の数で指定してください。</red>"
+      "center": "<red>ボーダーの中心は有効なXとZの数値で指定してください。</red>"
+    "duration": "<red>時間は正の整数（秒）で指定してください。</red>"
+  "command":
+    "disabled": "<red>サーバーの標準コマンドはプレイヤーには無効です。</red>"
+  "chunky":
+    "unavailable": "<red>Chunkyが導入されていないか無効です。ワールドの事前生成にはChunkyプラグインが必要です。</red>"
+    "disabled": "<red>Chunky連携は設定で無効になっています。</red>"
+    "no":
+      "active":
+        "task": "<red>追跡中のChunky事前生成はありません。</red>"
+  "player":
+    "not":
+      "found": "<red>プレイヤー <player> はオンラインではありません。</red>"
+  "use":
+    "pm":
+      "command": "<#f4d35e>個別メッセージには <white>/msg</white> を使ってください。</#f4d35e>"
+  "pm":
+    "self": "<red>自分自身にメッセージは送れません。</red>"
+  "report":
+    "self": "<red>自分自身は通報できません。</red>"
+  "world-not-found": "<red><world> というワールドはありません。/world list を確認してください。</red>"
+"settings":
+  "enabled": "<#6dd3a0>有効</#6dd3a0>"
+  "disabled": "<#f95738>無効</#f95738>"
+"team":
+  "winner": "<prefix><#6dd3a0><team> が試合に勝利しました！</#6dd3a0>"
+  "eliminated": "<prefix><#f95738>☠</#f95738> <team> <#faf0ca>が全滅しました！</#faf0ca> <#7b8aa0>（残り <white><teams></white> チーム）</#7b8aa0>"
+  "title":
+    "winner": "<#6dd3a0><bold><team></bold></#6dd3a0>"
+  "subtitle":
+    "winner": "<white>が試合に勝利</white>"
+  "disabled": "<#f95738>チームは設定で無効になっています。</#f95738>"
+  "no":
+    "team": "<#f4d35e>チームに入っていません。</#f4d35e>"
+  "already": "<#f4d35e>すでに <white><team></white> に入っています。</#f4d35e>"
+  "full": "<#f95738><team> は満員です。</#f95738>"
+  "joined":
+    "text": "<#6dd3a0><white><team></white> に参加しました。</#6dd3a0>"
+    "hint": "<#7b8aa0><white>/tm</white> でチームチャットの切替、<white>/tc</white> で座標を送信できます。</#7b8aa0>"
+  "coords":
+    "message": "<#7dd3fc>座標</#7dd3fc> <gray>(<world>)</gray> <white><x></white><gray>,</gray> <white><y></white><gray>,</gray> <white><z></white>"
+    "sent": "<#6dd3a0>座標をチームに送信しました。</#6dd3a0>"
+  "left": "<#f4d35e><white><team></white> から脱退しました。</#f4d35e>"
+  "join":
+    "locked": "<#f95738>現在ロビーでのチーム変更はロックされています。</#f95738>"
+  "friendly":
+    "fire":
+      "blocked": "<#f95738>フレンドリーファイアは無効です。</#f95738>"
+  "chat":
+    "enabled": "<#6dd3a0>チームチャットを有効にしました。</#6dd3a0>"
+    "disabled": "<#f95738>チームチャットを無効にしました。</#f95738>"
+  "usage":
+    "root": "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- チームメニューを開く</#7b8aa0><newline> <#93c5fd>/team list | join <チーム> | leave</#93c5fd> <#7b8aa0>- チームを見る、参加、脱退</#7b8aa0><newline> <#93c5fd>/team create [名前]</#93c5fd> <#7b8aa0>- 自分のチームを作る</#7b8aa0><newline> <#93c5fd>/team invite <プレイヤー></#93c5fd> <#7b8aa0>- 招待する（リーダー）</#7b8aa0><newline> <#93c5fd>/team rename <表示名> | color <色></#93c5fd> <#7b8aa0>- チームの見た目を変更（リーダー）</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- 参加できる人（リーダー）</#7b8aa0><newline> <#93c5fd>/team transfer <プレイヤー> | kick <プレイヤー> | disband</#93c5fd> <#7b8aa0>- チームを管理（リーダー）</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- チームチャットの切替（または /tm）</#7b8aa0>"
+    "join": "<#f4d35e><bold>/team join</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team join <チーム></#93c5fd> <#7b8aa0>- 公開チームに参加</#7b8aa0>"
+    "create": "<#f4d35e><bold>/team create</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team create [名前]</#93c5fd> <#7b8aa0>- チームを作る（名前は省略可）</#7b8aa0>"
+    "delete": "<#f4d35e><bold>/admin team delete</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team delete <チーム></#93c5fd> <#7b8aa0>- チームを削除</#7b8aa0>"
+    "set": "<#f4d35e><bold>/admin team set</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team set <プレイヤー> <チーム></#93c5fd> <#7b8aa0>- プレイヤーをチームに入れる</#7b8aa0>"
+    "rename": "<#f4d35e><bold>/admin team rename</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team rename <チーム> <表示名></#93c5fd> <#7b8aa0>- チーム名を変更</#7b8aa0>"
+    "color": "<#f4d35e><bold>/admin team color</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team color <チーム> <色></#93c5fd> <#7b8aa0>- チームの色を変更</#7b8aa0>"
+    "size": "<#f4d35e><bold>/admin team size</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin team size <人数></#93c5fd> <#7b8aa0>- 1チームの人数</#7b8aa0>"
+    "transfer": "<#f4d35e><bold>/team transfer</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team transfer <プレイヤー></#93c5fd> <#7b8aa0>- 他の人をリーダーにする</#7b8aa0>"
+    "kick": "<#f4d35e><bold>/team kick</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team kick <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーをチームから外す</#7b8aa0>"
+  "list":
+    "disabled": "<#f95738>チームは無効です。</#f95738>"
+    "empty": "<#f4d35e>まだチームは作られていません。</#f4d35e>"
+    "line": "<team_prefix><team><gray>:</gray> <white><players></white>"
+    "none": "なし"
+  "visibility":
+    "public": "公開"
+    "private": "非公開"
+  "private": "<#f95738><team> は非公開チームです。リーダーに招待か移動を頼んでください。</#f95738>"
+  "not":
+    "leader": "<#f95738>それができるのはチームリーダーだけです。</#f95738>"
+  "set":
+    "public": "<#6dd3a0><team> を公開チームにしました。</#6dd3a0>"
+    "private": "<#f4d35e><team> を非公開チームにしました。</#f4d35e>"
+  "transfer":
+    "not":
+      "member": "<#f95738><player> はあなたのチームにいません。</#f95738>"
+  "leader":
+    "transferred": "<#6dd3a0><player> が <team> のリーダーになりました。</#6dd3a0>"
+  "kicked": "<#f4d35e><white><player></white> を <team> から外しました。</#f4d35e>"
+  "kick":
+    "self": "<#f95738>自分自身はキックできません。</#f95738>"
+  "disbanded": "<#f95738>チーム <white><team></white> を解散しました。</#f95738>"
+  "admin":
+    "invalid":
+      "id": "<#f95738>チームIDには小文字の英字、数字、アンダースコアのみ使えます。</#f95738>"
+      "color": "<#f95738>有効なチームの色ではありません。</#f95738>"
+    "already":
+      "exists": "<#f95738>チーム <white><team></white> はすでに存在します。</#f95738>"
+    "missing": "<#f95738>チーム <white><team></white> は存在しません。</#f95738>"
+    "created": "<#6dd3a0>チーム <white><team></white> を作成しました。</#6dd3a0>"
+    "deleted":
+      "text": "<#f95738>チーム <white><team></white> を削除しました。</#f95738>"
+      "all": "<#f95738>チームを <white><count></white> 個削除しました。</#f95738>"
+    "renamed": "<#6dd3a0><white><team></white> の名前を <white><name></white> に変更しました。</#6dd3a0>"
+    "recolored": "<#6dd3a0><white><team></white> の色を <white><color></white> に変更しました。</#6dd3a0>"
+    "cleared": "<#f4d35e>すべてのチーム所属を解除しました。</#f4d35e>"
+    "shuffle":
+      "text": "<#ffd166><bold>プレイヤーをシャッフル</bold></#ffd166>"
+      "lore": "<#cbd5e1>オンラインの全員をランダムに均等にチームへ振り分けます。</#cbd5e1>"
+      "empty": "<#f95738>振り分けられるプレイヤーがいません。</#f95738>"
+    "shuffled": "<prefix><#6dd3a0><white><count></white> 人をチームに均等に振り分けました。</#6dd3a0>"
+    "enabled": "<#6dd3a0>チームを有効にしました。</#6dd3a0>"
+    "disabled": "<#f95738>チームを無効にしました。</#f95738>"
+    "size":
+      "set": "<#6dd3a0>チームの最大人数を <white><size></white> にしました。</#6dd3a0>"
+    "title": "<#334155><bold>チーム管理</bold></#334155>"
+    "create":
+      "text": "<#6dd3a0><bold>チームを作成</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>クリックでチーム作成ダイアログを開く</#cbd5e1>"
+    "clear":
+      "text": "<#f4d35e><bold>所属を解除</bold></#f4d35e>"
+      "lore": "<#cbd5e1>全員をチームから外します（チーム自体は残ります）。</#cbd5e1>"
+    "delete":
+      "all":
+        "text": "<#f95738><bold>全チームを削除</bold></#f95738>"
+        "lore": "<#cbd5e1>すべてのチームと所属を削除します。</#cbd5e1>"
+    "enable":
+      "text": "<#6dd3a0><bold>チームを有効化</bold></#6dd3a0>"
+    "disable":
+      "text": "<#f95738><bold>チームを無効化</bold></#f95738>"
+    "toggle":
+      "lore": "<#cbd5e1>チームの状態：<state></#cbd5e1>"
+    "set-team":
+      "text": "<#6dd3a0><bold>プレイヤーのチームを設定</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>クリックで任意のプレイヤーをチームに割り当て</#cbd5e1>"
+    "rename-team":
+      "text": "<#f4d35e><bold>チーム名を変更</bold></#f4d35e>"
+      "lore": "<#cbd5e1>クリックで任意のチーム名を変更</#cbd5e1>"
+    "recolor-team":
+      "text": "<#cbd5e1><bold>チームの色を変更</bold></#cbd5e1>"
+      "lore": "<#cbd5e1>クリックで任意のチームの色を変更</#cbd5e1>"
+    "delete-team":
+      "text": "<#f95738><bold>チームを削除</bold></#f95738>"
+      "lore": "<#cbd5e1>クリックで任意のチームを削除</#cbd5e1>"
+    "picker":
+      "select-player":
+        "title": "<#475569><bold>管理：プレイヤーを選択</bold></#475569>"
+        "lore": "<#7dd3fc>クリックでこのプレイヤーを選択</#7dd3fc>"
+      "set-team-title": "<#475569><bold>チーム設定：<player></bold></#475569>"
+      "back-to-players": "<red>プレイヤー一覧に戻る</red>"
+      "remove-from-team":
+        "text": "<#f87171><bold>チームから外す</bold></#f87171>"
+        "lore": "<gray>クリックでこのプレイヤーを現在のチームから外します。</gray>"
+      "assign-team-lore": "<#7dd3fc>クリックでプレイヤーをこのチームに割り当て</#7dd3fc>"
+      "removed-from-team": "<green><player> をチームから外しました。</green>"
+      "recolor-team":
+        "title": "<#475569><bold>管理：チームの色を変更</bold></#475569>"
+        "lore": "<#7dd3fc>クリックで色を変えるチームを選択</#7dd3fc>"
+      "delete-team":
+        "title": "<#e11d48><bold>管理：チームを削除</bold></#e11d48>"
+        "lore": "<#f43f5e>クリックでこのチームを完全に削除</#f43f5e>"
+  "menu":
+    "title": "<#334155><bold>チーム選択</bold></#334155>"
+    "filler": "<dark_gray> </dark_gray>"
+    "join-by-name":
+      "text": "<#7dd3fc><bold>名前でチームに参加</bold></#7dd3fc>"
+      "lore": "<white>クリックしてIDか表示名を入力し参加します。</white>"
+    "info":
+      "text": "<#f4d35e><bold>チーム情報</bold></#f4d35e>"
+      "lore":
+        "size": "<#cbd5e1>最大人数：<white><size></white></#cbd5e1>"
+        "friendly":
+          "fire": "<#cbd5e1>フレンドリーファイア：<state></#cbd5e1>"
+        "current":
+          "text": "<#cbd5e1>現在のチーム：<white><team></white></#cbd5e1>"
+          "none": "<#cbd5e1>現在のチーム：<white>なし</white></#cbd5e1>"
+        "visibility":
+          "text": "<#cbd5e1>公開設定：<white><visibility></white></#cbd5e1>"
+          "none": "<#cbd5e1>公開設定：<white>なし</white></#cbd5e1>"
+        "leader":
+          "text": "<#cbd5e1>リーダー：<white><leader></white></#cbd5e1>"
+          "none": "<#cbd5e1>リーダー：<white>なし</white></#cbd5e1>"
+    "team":
+      "size": "<#cbd5e1>メンバー：<white><size></white></#cbd5e1>"
+      "members": "<#cbd5e1><members></#cbd5e1>"
+      "leader": "<#cbd5e1>リーダー：<white><leader></white></#cbd5e1>"
+      "visibility": "<#cbd5e1>公開設定：<white><visibility></white></#cbd5e1>"
+    "create":
+      "text": "<#6dd3a0><bold>チームを作成</bold></#6dd3a0>"
+      "lore": "<#cbd5e1>クリックで自分のチームを作る</#cbd5e1>"
+    "no":
+      "team": "<#f95738><bold>チームなし</bold></#f95738>"
+    "manage":
+      "text": "<#f4d35e><bold>チームを管理</bold></#f4d35e>"
+      "lore": "<#cbd5e1>リーダー用の操作を開く</#cbd5e1>"
+      "unavailable": "<#6b7280><bold>リーダー専用</bold></#6b7280>"
+    "click":
+      "join": "<#7dd3fc>クリックでこのチームに参加</#7dd3fc>"
+    "selected": "<#6dd3a0>現在選択中。</#6dd3a0>"
+    "leave":
+      "text": "<#f95738><bold>チームを抜ける</bold></#f95738>"
+      "lore": "<#cbd5e1>クリックで現在のチームを抜ける</#cbd5e1>"
+    "disband":
+      "text": "<#f95738><bold>チームを解散</bold></#f95738>"
+      "lore": "<#cbd5e1>このチームを削除し、全メンバーの所属を外します。</#cbd5e1>"
+    "invite":
+      "text": "<#7dd3fc><bold>プレイヤーを招待</bold></#7dd3fc>"
+      "lore": "<#cbd5e1>クリックでプレイヤーをチームに招待</#cbd5e1>"
+    "admin":
+      "text": "<#ffd166><bold>管理パネル</bold></#ffd166>"
+      "lore": "<#cbd5e1>チーム管理の操作を開く</#cbd5e1>"
+  "manage":
+    "title": "<#334155><bold><team> を管理</bold></#334155>"
+    "back": "<#7dd3fc><bold>戻る</bold></#7dd3fc>"
+    "set":
+      "public": "<#6dd3a0><bold>公開にする</bold></#6dd3a0>"
+      "private": "<#f4d35e><bold>非公開にする</bold></#f4d35e>"
+    "visibility":
+      "lore": "<#cbd5e1>現在：<white><visibility></white></#cbd5e1>"
+    "member":
+      "text": "<white><name></white>"
+      "leader": "<#f4d35e>リーダー</#f4d35e>"
+      "kick": "<#f95738>クリックでこのメンバーをキック</#f95738>"
+      "transfer": "<#ffd166>管理：リーダーをクリックでリーダー権を移譲</#ffd166>"
+    "rename":
+      "text": "<#ffd166><bold>チーム名を変更</bold></#ffd166>"
+      "lore": "<#cbd5e1>クリックで名前変更ダイアログを開く</#cbd5e1>"
+    "color":
+      "text": "<#ffd166><bold>色を変更</bold></#ffd166>"
+      "lore": "<#cbd5e1>クリックで色選択を開く</#cbd5e1>"
+    "invite-by-name":
+      "text": "<#6dd3a0><bold>名前でプレイヤーを招待</bold></#6dd3a0>"
+      "lore": "<white>クリックして名前を入力し招待します。</white>"
+    "transfer-leader":
+      "text": "<#f4d35e><bold>リーダー権を移譲</bold></#f4d35e>"
+      "lore": "<white>クリックしてメンバー名を入力し、リーダー権を移譲します。</white>"
+    "kick-by-name":
+      "text": "<#f95738><bold>名前でメンバーをキック</bold></#f95738>"
+      "lore": "<white>クリックして名前を入力しキックします。</white>"
+  "color":
+    "title": "<#334155><bold>チームの色 — <team></bold></#334155>"
+    "selected": "<#6dd3a0>現在選択中。</#6dd3a0>"
+    "click": "<#7dd3fc>クリックでこの色を適用</#7dd3fc>"
+  "create-dialog":
+    "title": "<#f4d35e><bold>チームを作成</bold></#f4d35e>"
+    "body": "<#9db4c0>新しいチームの表示名を入力してください。</#9db4c0>"
+    "input-label": "<#cbd5e1>チーム名</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>作成</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "rename-dialog":
+    "title": "<#f4d35e><bold>チーム名を変更</bold></#f4d35e>"
+    "body": "<#9db4c0>このチームの新しい表示名を入力してください。</#9db4c0>"
+    "input-label": "<#cbd5e1>新しい名前</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>変更</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "join-dialog":
+    "title": "<#f4d35e><bold>チームに参加</bold></#f4d35e>"
+    "body": "<#9db4c0>参加したいチームのIDか表示名を入力してください。</#9db4c0>"
+    "input-label": "<#cbd5e1>チームID／名前</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>参加</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "invite-dialog":
+    "title": "<#f4d35e><bold>プレイヤーを招待</bold></#f4d35e>"
+    "body": "<#9db4c0>招待したいプレイヤーのユーザー名を入力してください。</#9db4c0>"
+    "input-label": "<#cbd5e1>プレイヤー名</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>招待</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "transfer-dialog":
+    "title": "<#f4d35e><bold>リーダー権を移譲</bold></#f4d35e>"
+    "body": "<#9db4c0>リーダー権を渡すメンバーのユーザー名を入力してください。</#9db4c0>"
+    "input-label": "<#cbd5e1>メンバー名</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>移譲</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "kick-dialog":
+    "title": "<#f95738><bold>メンバーをキック</bold></#f95738>"
+    "body": "<#9db4c0>キックしたいメンバーのユーザー名を入力してください。</#9db4c0>"
+    "input-label": "<#cbd5e1>メンバー名</#cbd5e1>"
+    "confirm": "<#f95738><bold>キック</bold></#f95738>"
+    "cancel": "<#cbd5e1>キャンセル</#cbd5e1>"
+  "admin-set-dialog":
+    "title": "<#f4d35e><bold>プレイヤーのチームを設定</bold></#f4d35e>"
+    "body": "<#9db4c0>プレイヤーをチームに直接割り当てます。</#9db4c0>"
+    "player-label": "<#cbd5e1>プレイヤー名</#cbd5e1>"
+    "team-label": "<#cbd5e1>チームID／名前</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>割り当て</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "admin-rename-dialog":
+    "title": "<#f4d35e><bold>管理：チーム名変更</bold></#f4d35e>"
+    "body": "<#9db4c0>チームIDと新しい表示名を入力してください。</#9db4c0>"
+    "team-label": "<#cbd5e1>チームID</#cbd5e1>"
+    "name-label": "<#cbd5e1>新しい名前</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>変更</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "admin-recolor-dialog":
+    "title": "<#f4d35e><bold>管理：チームの色変更</bold></#f4d35e>"
+    "body": "<#9db4c0>チームIDと有効な色名（例：RED、BLUE）を入力してください。</#9db4c0>"
+    "team-label": "<#cbd5e1>チームID</#cbd5e1>"
+    "color-label": "<#cbd5e1>色名</#cbd5e1>"
+    "confirm": "<#6dd3a0><bold>色を変更</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+  "admin-delete-dialog":
+    "title": "<#f95738><bold>チームを削除</bold></#f95738>"
+    "body": "<#9db4c0>削除したいチームのIDを入力してください。</#9db4c0>"
+    "team-label": "<#cbd5e1>チームID</#cbd5e1>"
+    "confirm": "<#f95738><bold>削除</bold></#f95738>"
+    "cancel": "<#cbd5e1>キャンセル</#cbd5e1>"
+  "invite":
+    "title": "<#334155><bold>招待 — <team></bold></#334155>"
+    "sent": "<#6dd3a0><white><player></white> を <white><team></white> に招待しました。</#6dd3a0>"
+    "received": "<#f4d35e><leader></leader> から <white><team></white> への招待が届きました。</#f4d35e>"
+    "accepted": "<#6dd3a0>招待を受けて <white><team></white> に参加しました。</#6dd3a0>"
+    "declined": "<#f95738><white><team></white> への招待を断りました。</#f95738>"
+    "already-invited": "<#f95738><player> はすでにあなたのチームに招待されています。</#f95738>"
+    "already-invited-lore": "<#f4d35e>招待済み</#f4d35e>"
+    "not-pending": "<#f95738>そのチームからの招待はありません。</#f95738>"
+    "expired": "<#f95738>その招待は期限切れです。</#f95738>"
+    "target-has-team": "<#f95738><player> はすでに別のチームに入っています。</#f95738>"
+    "click-invite": "<#7dd3fc>クリックでこのプレイヤーを招待</#7dd3fc>"
+  "pagination":
+    "prev":
+      "text": "<#7dd3fc><bold>« 前のページ</bold></#7dd3fc>"
+      "lore": "<gray><page> ページ</gray>"
+    "next":
+      "text": "<#7dd3fc><bold>次のページ »</bold></#7dd3fc>"
+      "lore": "<gray><page> ページ</gray>"
+  "admin-clear-dialog":
+    "title": "<#f95738><bold>所属を全解除しますか？</bold></#f95738>"
+    "body": "<#9db4c0>本当にすべてのチーム所属を解除しますか？全員がチームから外れます。</#9db4c0>"
+    "confirm": "<#f95738><bold>解除</bold></#f95738>"
+    "cancel": "<#cbd5e1>キャンセル</#cbd5e1>"
+  "admin-delete-all-dialog":
+    "title": "<#f95738><bold>全チームを削除しますか？</bold></#f95738>"
+    "body": "<#9db4c0>本当にすべてのチームを完全に削除しますか？元に戻せません。</#9db4c0>"
+    "confirm": "<#f95738><bold>すべて削除</bold></#f95738>"
+    "cancel": "<#cbd5e1>キャンセル</#cbd5e1>"
+"goldenhead":
+  "given": "<#6dd3a0><white><player></white> にゴールデンヘッドを渡しました。</#6dd3a0>"
+  "received": "<#6dd3a0>ゴールデンヘッドを受け取りました。</#6dd3a0>"
+"practice":
+  "dialog":
+    "title": "<#f87171><bold>⚔ 練習場</bold></#f87171>"
+    "description": "<#cbd5e1>UHCキットで自由に練習。死んでもすぐリスポーンします。</#cbd5e1>"
+    "status-open": "<#6dd3a0>● 開放中</#6dd3a0> <#7b8aa0>· <white><players></white>/<max> 人が練習中</#7b8aa0>"
+    "status-closed": "<#f95738>● 閉鎖中</#f95738> <#7b8aa0>- 管理者がまだ開いていません。</#7b8aa0>"
+    "layout-custom": "<#7b8aa0>キット配置：</#7b8aa0> <#93c5fd>カスタム</#93c5fd>"
+    "layout-default": "<#7b8aa0>キット配置：</#7b8aa0> <white>デフォルト</white>"
+    "join": "<#6dd3a0><bold>⚔ 練習場に入る</bold></#6dd3a0>"
+    "leave": "<#f95738><bold>練習場を出る</bold></#f95738>"
+    "edit-layout": "<#93c5fd>✎ キット配置を編集</#93c5fd>"
+    "reset-layout": "<#f4d35e>↺ キット配置をリセット</#f4d35e>"
+  "layout":
+    "title": "<#93c5fd><bold>✎ キット配置</bold></#93c5fd>"
+    "help-title": "<#93c5fd><bold>使い方</bold></#93c5fd>"
+    "help-1": "<#cbd5e1>下のインベントリでアイテムを並べ替えてください。</#cbd5e1>"
+    "help-2": "<#7b8aa0>終わったらパネルを閉じるか保存を押してください。</#7b8aa0>"
+    "save": "<#6dd3a0><bold>✔ 保存</bold></#6dd3a0>"
+    "reset": "<#f4d35e><bold>↺ デフォルトに戻す</bold></#f4d35e>"
+    "cancel": "<#f95738><bold>✖ キャンセル</bold></#f95738>"
+    "editing": "<#93c5fd>インベントリで練習用キットを並べ、パネルを閉じると保存されます。</#93c5fd>"
+    "saved": "<#6dd3a0>キット配置を保存しました。練習場に入るたびに使われます。</#6dd3a0>"
+    "cancelled": "<#cbd5e1>キット配置は変更されていません。</#cbd5e1>"
+    "reset-done": "<#6dd3a0>キット配置をデフォルトに戻しました。</#6dd3a0>"
+    "lobby-only": "<#f95738>キット配置はロビーでのみ編集できます。</#f95738>"
+    "no-kit": "<#f95738>練習用キットがまだありません - 管理者が /practice setkit で設定します。</#f95738>"
+    "finish-first": "<#f95738>先にキット配置の編集を終えてください。</#f95738>"
+  "enabled": "<#6dd3a0>練習モードを有効にしました。</#6dd3a0>"
+  "disabled": "<#f95738>練習モードを無効にしました。</#f95738>"
+  "joined": "<#6dd3a0>練習モードに参加しました。</#6dd3a0>"
+  "left": "<#7b8aa0>練習モードを抜けました。</#7b8aa0>"
+  "kit-saved": "<#6dd3a0>練習用キットを保存しました。</#6dd3a0>"
+  "not-enabled": "<#f95738>練習モードは現在無効です。</#f95738>"
+  "full": "<#f95738>練習場は満員です。</#f95738>"
+  "leave-hint": "<#7b8aa0>もう一度 <white>/practice</white> で練習場を出られます。</#7b8aa0>"
+  "game-started": "<#f95738>試合が始まったため練習モードは閉じられました。</#f95738>"
+  "world-regenerating": "<#f95738>練習用ワールドを再生成中です。</#f95738>"
+  "regen-started": "<#ee964b>練習用ワールドの再生成を開始しました...</#ee964b>"
+  "regen-done": "<#6dd3a0>練習用ワールドの再生成が完了しました。</#6dd3a0>"
+  "regen-failed": "<red>練習用ワールドの再生成に失敗しました：古いワールドをアンロードできません。</red>"
+"scenarios":
+  "enchanting-disabled": "<#f95738>この試合ではエンチャントが無効です。"
+  "grindstone-disabled": "<#f95738>この試合では砥石が無効です。"
+  "enchanting-table-blocked": "<#f95738>この試合ではエンチャントテーブルを作れません。"
+  "hastey-grindstone-blocked": "<#f95738>この試合ではHasteyツールに砥石を使えません。"
+  "web-limit-reached": "<#f95738>この試合で持てるクモの巣の上限に達しています。"
+  "dnd-combat-locked": "<#f95738>すでに別のプレイヤーと戦闘中です。"
+  "backpack":
+    "title": "<dark_gray><bold>チームバックパック</bold>"
+  "extra-inventory":
+    "title": "<dark_gray><bold>追加インベントリ</bold>"
+  "backpack-not-active": "<#f95738>バックパックは試合中のみ使えます。"
+  "backpack-disabled": "<#f95738>「バックパック」シナリオは有効ではありません。"
+  "backpack-no-team": "<#f95738>バックパックを使うにはチームに入る必要があります。"
+  "extra-inventory-not-active": "<#f95738>追加インベントリは試合中のみ使えます。"
+  "extra-inventory-disabled": "<#f95738>「追加インベントリ」シナリオは有効ではありません。"
+  "nineslot-restricted": "<#f95738>この試合ではホットバー（9マス）しか使えません。"
+  "benchblitz-blocked": "<#f95738>この試合では作業台を追加で入手できません。"
+  "safe-loot-blocked": "<#f95738>このチェストはキルした人しか開けられません。"
+  "no-clean-protected": "<#6dd3a0><white><seconds></white> 秒間、プレイヤーの攻撃を受けません。"
+  "auto-disabled": "<#ee964b>競合するシナリオを自動で無効化しました：<white><scenarios></white></#ee964b>"
+  "start-title": "<#f4d35e><bold>シナリオ</bold>"
+  "start-subtitle": "<gray>健闘を祈ります。</gray>"
+  "start-divider": "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "start-header": "<#f4d35e><bold>⚑ 有効なシナリオ</bold>"
+  "start-entry": "  <#7b8aa0>◆</#7b8aa0> <white><name></white>"
+  "start-none": "  <gray><i>シナリオなし — バニラUHC。</i></gray>"
+  "start-footer": "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  "gui":
+    "title": "<dark_gray><bold>シナリオ</bold>"
+    "modifier-title": "<dark_gray><bold><scenario> の設定</bold>"
+    "modifier-anvil-title": "<dark_gray><bold>値を設定</bold>"
+    "modifier-dialog-title": "<dark_gray><bold><label></bold>"
+    "modifier-dialog-input-label": "<#7b8aa0>新しい値"
+    "modifier-dialog-submit": "<#6dd3a0><bold>確定</bold>"
+    "modifier-dialog-cancel": "<#f95738>キャンセル"
+    "modifier-back": "<#7dd3fc><bold>シナリオ一覧に戻る</bold>"
+    "hint-toggle": "<#93c5fd>▶ 左クリックで切り替え"
+    "hint-view": "<#f4d35e>▶ 閲覧のみ。変更は管理者に依頼してください。"
+    "hint-settings": "<#a78bfa>▶ 右クリックで設定を編集"
+    "modifier-hint": "<#93c5fd>▶ クリックで編集"
+    "modifier-value": "<#7b8aa0>値  <white><value></white>"
+    "modifier-summary": "<#7b8aa0><label>：</#7b8aa0> <white><value></white>"
+    "conflicts": "<#f4a261>競合：<conflicts>"
+    "status-lore": "<#7b8aa0>状態  <value>"
+    "prev": "<#7dd3fc>◀ 前のページ"
+    "next": "<#7dd3fc>次のページ ▶"
+    "page-indicator": "<bold><#f4d35e><current> / <total> ページ"
+    "category-lore": "<#7b8aa0>カテゴリ"
+    "category":
+      "world": "ワールド"
+      "meta": "その他"
+      "loot_death": "戦利品／死亡"
+      "ore_modifiers": "鉱石の変更"
+      "resource_restrictions": "資源の制限"
+      "enchanting": "エンチャント"
+      "tools_weapons": "道具／武器"
+      "exp": "経験値"
+      "drops": "ドロップの変更"
+      "player_effects": "プレイヤー効果"
+      "combat": "戦闘"
+      "inventory": "インベントリ／収納"
+      "game_mode": "ゲームモード"
+    "world":
+      "nether":
+        "name": "<bold><#f4d35e>ネザー"
+        "desc": "<gray>試合中にネザーへ入れるようにします。"
+      "end":
+        "name": "<bold><#f4d35e>エンド"
+        "desc": "<gray>試合中にエンドへ入れるようにします。"
+    "modifier":
+      "limitations-diamonds": "<bold><#f4d35e>ダイヤの上限"
+      "limitations-gold": "<bold><#f4d35e>金インゴットの上限"
+      "limitations-iron": "<bold><#f4d35e>鉄インゴットの上限"
+      "broadcaster-chance": "<bold><#f4d35e>通知の確率 (%)"
+      "sky-high-limit": "<bold><#f4d35e>Y座標の下限"
+      "no-clean-seconds": "<bold><#f4d35e>無敵の秒数"
+      "time-bomb-seconds": "<bold><#f4d35e>爆発までの秒数"
+      "coronavirus-interval-minutes": "<bold><#f4d35e>間隔（分）"
+      "raining-tnt-interval-minutes": "<bold><#f4d35e>間隔（分）"
+      "web-limit-count": "<bold><#f4d35e>所持できるクモの巣の上限"
+      "lucky-leaves-chance": "<bold><#f4d35e>金のリンゴの確率 (%)"
+      "nether-enable-time": "<bold><#f4d35e>開く時刻・分（0 = なし）"
+      "nether-disable-time": "<bold><#f4d35e>閉じる時刻・分（0 = なし）"
+      "end-enable-time": "<bold><#f4d35e>開く時刻・分（0 = なし）"
+      "end-disable-time": "<bold><#f4d35e>閉じる時刻・分（0 = なし）"
+    "scenario":
+      "random":
+        "name": "<bold><#f4d35e>ランダム"
+        "desc": "<#6b7280><i>試合開始時にシナリオがランダムに選ばれます。</i>"
+      "chest":
+        "name": "<bold><#f4d35e>チェスト"
+        "desc": "<#6b7280><i>キルした相手の戦利品は死亡地点のチェストに入ります。</i>"
+      "time-bomb":
+        "name": "<bold><#f4d35e>タイムボム"
+        "desc": "<#6b7280><i>キルした相手の戦利品はチェストに入り、一定秒数後に爆発します。</i>"
+      "safe-loot":
+        "name": "<bold><#f4d35e>セーフルート"
+        "desc": "<#6b7280><i>タイムボムが有効なとき、チェストはキルした人しか開けられません。</i>"
+      "no-clean":
+        "name": "<bold><#f4d35e>ノークリーン"
+        "desc": "<#6b7280><i>キルすると一定秒数の間、無敵になります。</i>"
+      "golden-retriever":
+        "name": "<bold><#f4d35e>ゴールデンリトリーバー"
+        "desc": "<#6b7280><i>プレイヤーは死亡時にゴールデンヘッドを1個落とします。</i>"
+      "bleedingsweets":
+        "name": "<bold><#f4d35e>ブリーディングスイーツ"
+        "desc": "<#6b7280><i>死亡時にダイヤ1個、金5個、矢16本、糸1本を落とします。</i>"
+      "bookception":
+        "name": "<bold><#f4d35e>ブックセプション"
+        "desc": "<#6b7280><i>死亡地点にランダムなエンチャントの本が出現します。</i>"
+      "zombies":
+        "name": "<bold><#f4d35e>ゾンビーズ"
+        "desc": "<#6b7280><i>死亡地点にゾンビが湧きます。</i>"
+      "betazombies":
+        "name": "<bold><#f4d35e>ベータゾンビ"
+        "desc": "<#6b7280><i>ゾンビを倒すと羽根を落とします。（ゾンビーズが必要）</i>"
+      "double-ores":
+        "name": "<bold><#f4d35e>鉱石2倍"
+        "desc": "<#6b7280><i>採掘した鉱石のドロップが2倍になります。</i>"
+      "triple-ores":
+        "name": "<bold><#f4d35e>鉱石3倍"
+        "desc": "<#6b7280><i>採掘した鉱石のドロップが3倍になります。</i>"
+      "double-or-nothing":
+        "name": "<bold><#f4d35e>ダブルオアナッシング"
+        "desc": "<#6b7280><i>鉄・金・ダイヤの鉱石を掘ると、50%でドロップ2倍、それ以外は0個。</i>"
+      "blood-diamonds":
+        "name": "<bold><#f4d35e>ブラッドダイヤ"
+        "desc": "<#6b7280><i>ダイヤ鉱石を掘るたびにハート半分のダメージ。</i>"
+      "blood-gold":
+        "name": "<bold><#f4d35e>ブラッドゴールド"
+        "desc": "<#6b7280><i>金鉱石を掘るたびにハート半分のダメージ。</i>"
+      "broadcaster":
+        "name": "<bold><#f4d35e>ブロードキャスター"
+        "desc": "<#6b7280><i>金やダイヤを掘ると、確率で座標が公開され発光します。</i>"
+      "limitations":
+        "name": "<bold><#f4d35e>リミテーション"
+        "desc": "<#6b7280><i>各プレイヤーが掘れるダイヤ・金・鉄の数に上限があります。</i>"
+      "diamond-less":
+        "name": "<bold><#f4d35e>ダイヤレス"
+        "desc": "<#6b7280><i>ダイヤは掘れません。代わりにキルごとにダイヤ1個。</i>"
+      "gold-less":
+        "name": "<bold><#f4d35e>ゴールドレス"
+        "desc": "<#6b7280><i>金は掘れません。代わりにキルごとに金インゴット1個。</i>"
+      "iron-less":
+        "name": "<bold><#f4d35e>アイアンレス"
+        "desc": "<#6b7280><i>鉄は掘れません。代わりにキルごとに鉄インゴット8個。</i>"
+      "woodlife":
+        "name": "<bold><#f4d35e>ウッドライフ"
+        "desc": "<#6b7280><i>石炭が無効です。</i>"
+      "nodiamondarmor":
+        "name": "<bold><#f4d35e>ダイヤ防具禁止"
+        "desc": "<#6b7280><i>ダイヤの防具を作れません。</i>"
+      "no-enchant":
+        "name": "<bold><#f4d35e>エンチャント禁止"
+        "desc": "<#6b7280><i>エンチャントテーブルと金床が無効です。</i>"
+      "bare-bones":
+        "name": "<bold><#f4d35e>ベアボーンズ"
+        "desc": "<#6b7280><i>エンチャントと金床が無効、金のリンゴは作れません。死亡時にダイヤ1個、金のリンゴ2個、矢32本、糸2本を落とします。</i>"
+      "limited-enchants":
+        "name": "<bold><#f4d35e>リミテッドエンチャント"
+        "desc": "<#6b7280><i>エンチャントテーブルは作れません。0,0と各象限の角（±500）に設置済みのテーブルがあります。</i>"
+      "infinite-enchant":
+        "name": "<bold><#f4d35e>無限エンチャント"
+        "desc": "<#6b7280><i>エンチャントし放題。テーブル、金床、本棚、30kのXPを持って開始します。</i>"
+      "blood-enchants":
+        "name": "<bold><#f4d35e>ブラッドエンチャント"
+        "desc": "<#6b7280><i>エンチャントに使ったレベル1つごとにハート半分のダメージ。</i>"
+      "better-enchant":
+        "name": "<bold><#f4d35e>ベターエンチャント"
+        "desc": "<#6b7280><i>金床でエンチャントの本を使うと、付与したエンチャントは本から消えます。すべて使うと普通の本に戻ります。</i>"
+      "limitedp4":
+        "name": "<bold><#f4d35e>プロテクション4制限"
+        "desc": "<#6b7280><i>プロテクション4を付けられるのは1アイテムだけです。</i>"
+      "exposure":
+        "name": "<bold><#f4d35e>エクスポージャー"
+        "desc": "<#6b7280><i>エンチャントテーブルを作ると地表にテレポートし、1分間採掘速度低下になります。</i>"
+      "hidden-enchant":
+        "name": "<bold><#f4d35e>ヒドゥンエンチャント"
+        "desc": "<#6b7280><i>エンチャントテーブルに名前が表示されず、手探りでエンチャントします。</i>"
+      "grindstone-less":
+        "name": "<bold><#f4d35e>砥石なし"
+        "desc": "<#6b7280><i>砥石が無効。エンチャントを外せません。</i>"
+      "blood-grindstone":
+        "name": "<bold><#f4d35e>ブラッド砥石"
+        "desc": "<#6b7280><i>砥石で外したエンチャントレベル1つごとにハート半分のダメージ。</i>"
+      "hastey-boys":
+        "name": "<bold><#f4d35e>ヘイスティボーイズ"
+        "desc": "<#6b7280><i>作った採掘ツールに効率強化3が付きます。砥石で効率強化は外せません。</i>"
+      "hastey-boys-lite":
+        "name": "<bold><#f4d35e>ヘイスティボーイズ・ライト"
+        "desc": "<#6b7280><i>作った採掘ツールに効率強化1が付きます。砥石で効率強化は外せません。</i>"
+      "op-hastey-boys":
+        "name": "<bold><#f4d35e>OPヘイスティボーイズ"
+        "desc": "<#6b7280><i>作った採掘ツールに効率強化5が付きます。砥石で効率強化は外せません。</i>"
+      "carrotcombo":
+        "name": "<bold><#f4d35e>キャロットコンボ"
+        "desc": "<#6b7280><i>剣を作るとエンチャントされたニンジンも手に入ります。</i>"
+      "bow-nerf":
+        "name": "<bold><#f4d35e>弓弱体化"
+        "desc": "<#6b7280><i>矢のダメージが50%減ります。</i>"
+      "rod-less":
+        "name": "<bold><#f4d35e>釣り竿なし"
+        "desc": "<#6b7280><i>釣り竿が無効です。</i>"
+      "bow-less":
+        "name": "<bold><#f4d35e>弓なし"
+        "desc": "<#6b7280><i>弓が無効です。</i>"
+      "sword-less":
+        "name": "<bold><#f4d35e>剣なし"
+        "desc": "<#6b7280><i>剣が無効です。</i>"
+      "horse-less":
+        "name": "<bold><#f4d35e>馬なし"
+        "desc": "<#6b7280><i>馬とロバを手なずけられません。</i>"
+      "fast-obsidian":
+        "name": "<bold><#f4d35e>高速黒曜石"
+        "desc": "<#6b7280><i>黒曜石が石と同じ速さで壊れます。</i>"
+      "double-exp":
+        "name": "<bold><#f4d35e>経験値2倍"
+        "desc": "<#6b7280><i>獲得する経験値が2倍になります。</i>"
+      "triple-exp":
+        "name": "<bold><#f4d35e>経験値3倍"
+        "desc": "<#6b7280><i>獲得する経験値が3倍になります。</i>"
+      "double-drops":
+        "name": "<bold><#f4d35e>ドロップ2倍"
+        "desc": "<#6b7280><i>動物とモブのドロップが2倍になります。</i>"
+      "triple-drops":
+        "name": "<bold><#f4d35e>ドロップ3倍"
+        "desc": "<#6b7280><i>動物とモブのドロップが3倍になります。</i>"
+      "cut-clean":
+        "name": "<bold><#f4d35e>カットクリーン"
+        "desc": "<#6b7280><i>鉱石と生肉はドロップ時に自動で精錬されます。</i>"
+      "lucky-leaves":
+        "name": "<bold><#f4d35e>ラッキーリーフ"
+        "desc": "<#6b7280><i>葉を壊すか消えると、設定した確率で金のリンゴが落ちます。</i>"
+      "tree-drops":
+        "name": "<bold><#f4d35e>ツリードロップ"
+        "desc": "<#6b7280><i>葉を壊すか消えると、金（0.5%）、ダイヤ（0.1%）、羽根（10%）が落ちることがあります。</i>"
+      "flower-power":
+        "name": "<bold><#f4d35e>フラワーパワー"
+        "desc": "<#6b7280><i>花を壊すとランダムなアイテムが落ちます。</i>"
+      "timber":
+        "name": "<bold><#f4d35e>ティンバー"
+        "desc": "<#6b7280><i>原木を1つ壊すとつながった木がまるごと倒れます（最大256個）。</i>"
+      "veinminer":
+        "name": "<bold><#f4d35e>一括採掘"
+        "desc": "<#6b7280><i>しゃがみながら鉱石を掘ると、つながった同じ鉱石をまとめて壊します。</i>"
+      "baldchicken":
+        "name": "<bold><#f4d35e>ハゲニワトリ"
+        "desc": "<#6b7280><i>ニワトリは羽根を落とさず、スケルトンは矢を3〜5本落とします。</i>"
+      "bats":
+        "name": "<bold><#f4d35e>コウモリの賭け"
+        "desc": "<#6b7280><i>コウモリを倒すと95%で金のリンゴ、5%で即死。</i>"
+      "no-fall-damage":
+        "name": "<bold><#f4d35e>落下ダメージなし"
+        "desc": "<#6b7280><i>落下ダメージを受けません。</i>"
+      "fire-less":
+        "name": "<bold><#f4d35e>火炎ダメージなし"
+        "desc": "<#6b7280><i>火と炎上のダメージを受けません。</i>"
+      "absorptionless":
+        "name": "<bold><#f4d35e>衝撃吸収なし"
+        "desc": "<#6b7280><i>衝撃吸収のハートなし。金のリンゴとヘッドは回復のみ。</i>"
+      "double-health":
+        "name": "<bold><#f4d35e>体力2倍"
+        "desc": "<#6b7280><i>全プレイヤーのハートが10個ではなく20個になります。</i>"
+      "night-vision":
+        "name": "<bold><#f4d35e>暗視"
+        "desc": "<#6b7280><i>全プレイヤーが永続の暗視で開始します。</i>"
+      "invisibility-protection":
+        "name": "<bold><#f4d35e>透明化プロテクション"
+        "desc": "<#6b7280><i>開始時に全プレイヤーが5分間透明化します。</i>"
+      "birds":
+        "name": "<bold><#f4d35e>バーズ"
+        "desc": "<#6b7280><i>全プレイヤーが飛べます。</i>"
+      "noodlejump":
+        "name": "<bold><#f4d35e>ヌードルジャンプ"
+        "desc": "<#6b7280><i>開始時に全プレイヤーが永続の跳躍力上昇を得ます。</i>"
+      "superheros":
+        "name": "<bold><#f4d35e>スーパーヒーローズ"
+        "desc": "<#6b7280><i>各プレイヤーがランダムな特殊能力を得ます。落下ダメージなし。</i>"
+      "everyrose":
+        "name": "<bold><#f4d35e>エブリローズ"
+        "desc": "<#6b7280><i>開始時に棘の鎧3付きの金のチェストプレートをもらえます。</i>"
+      "pyro":
+        "name": "<bold><#f4d35e>パイロ"
+        "desc": "<#6b7280><i>フレイム1と火属性1のエンチャントの本を持って開始します。</i>"
+      "criple":
+        "name": "<bold><#f4d35e>クリップル"
+        "desc": "<#6b7280><i>落下ダメージを受けると30秒間移動速度低下になります。</i>"
+      "sky-high":
+        "name": "<bold><#f4d35e>スカイハイ"
+        "desc": "<#6b7280><i>設定したY座標より下にいると30秒ごとにハート1個のダメージ。</i>"
+      "long-shots":
+        "name": "<bold><#f4d35e>ロングショット"
+        "desc": "<#6b7280><i>50ブロックより遠くから当てると、ハート1個回復し1.5倍のダメージ。</i>"
+      "switcheroo":
+        "name": "<bold><#f4d35e>スイッチェルー"
+        "desc": "<#6b7280><i>プレイヤーを射ると位置が入れ替わります。</i>"
+      "dnd":
+        "name": "<bold><#f4d35e>邪魔するな"
+        "desc": "<#6b7280><i>あるプレイヤーと戦闘に入ると、戦闘が終わるまでその相手としか戦えません。</i>"
+      "web-cage":
+        "name": "<bold><#f4d35e>ウェブケージ"
+        "desc": "<#6b7280><i>キルすると周りがクモの巣で囲まれます。</i>"
+      "web-limit":
+        "name": "<bold><#f4d35e>クモの巣制限"
+        "desc": "<#6b7280><i>インベントリに持てるクモの巣の数に上限があります。</i>"
+      "grass-explosion":
+        "name": "<bold><#f4d35e>草爆発"
+        "desc": "<#6b7280><i>草の上を歩くと25%で爆発が起きます。</i>"
+      "raining-tnt":
+        "name": "<bold><#f4d35e>TNTの雨"
+        "desc": "<#6b7280><i>一定間隔（設定可）でランダムな2人の上にTNTが降ります。</i>"
+      "coronavirus":
+        "name": "<bold><#f4d35e>コロナウイルス"
+        "desc": "<#6b7280><i>一定間隔（設定可）でランダムな1人が吐き気と毒を受けます。</i>"
+      "bombers":
+        "name": "<bold><#f4d35e>ボンバーズ"
+        "desc": "<#6b7280><i>全員が壊れない火打石と打ち金で開始し、ほとんどのモブがTNTを落とします。</i>"
+      "back-packs":
+        "name": "<bold><#f4d35e>バックパック"
+        "desc": "<#6b7280><i>/backpack でチーム共有のバックパックを開けます。</i>"
+      "extra-inventory":
+        "name": "<bold><#f4d35e>追加インベントリ"
+        "desc": "<#6b7280><i>/extrainventory で追加の収納を使えます。</i>"
+      "nineslot":
+        "name": "<bold><#f4d35e>ナインスロット"
+        "desc": "<#6b7280><i>各プレイヤーが使えるのはインベントリ9マスだけです。</i>"
+      "benchblitz":
+        "name": "<bold><#f4d35e>ベンチブリッツ"
+        "desc": "<#6b7280><i>作業台を1つ持って開始し、それ以上入手できません。</i>"
+      "gone-fishing":
+        "name": "<bold><#f4d35e>ゴーンフィッシング"
+        "desc": "<#6b7280><i>耐久力200の釣り竿と金床1スタックをもらえます。</i>"
+      "puppypower":
+        "name": "<bold><#f4d35e>パピーパワー"
+        "desc": "<#6b7280><i>全員が骨、腐った肉、オオカミのスポーンエッグを1スタックずつもらえます。</i>"
+      "build-uhc":
+        "name": "<bold><#f4d35e>ビルドUHC"
+        "desc": "<#6b7280><i>ゲーム開始時に全員がキットを受け取ります。</i>"
+      "soup":
+        "name": "<bold><#f4d35e>スープ"
+        "desc": "<#6b7280><i>キノコシチューを右クリックするとハート3.5個回復します。</i>"
+      "hypixel-heads":
+        "name": "<bold><#f4d35e>Hypixelヘッド"
+        "desc": "<#6b7280><i>プレイヤーの頭を右クリックすると再生能力3（4秒）と移動速度上昇2（20秒）。</i>"
+      "redvsblue":
+        "name": "<bold><#f4d35e>赤対青"
+        "desc": "<#6b7280><i>開始時に赤と青の2チームにランダムに分けられます。</i>"
+      "moles":
+        "name": "<bold><#f4d35e>モール"
+        "desc": "<#6b7280><i>各チームの1人が密かにモール（裏切り者）となり、他の人を倒そうとします。</i>"
+      "anonymous":
+        "name": "<bold><#f4d35e>アノニマス"
+        "desc": "<#6b7280><i>全プレイヤーの名前とスキンが隠されます。</i>"
+      "lafs":
+        "name": "<bold><#f4d35e>LAFS"
+        "desc": "<#6b7280><i>試合前にお互いを右クリックしてチームを組みます。</i>"
+      "tracker":
+        "name": "<bold><#f4d35e>トラッカー"
+        "desc": "<#6b7280><i>全員が他のプレイヤーを追跡するコンパスをもらえます。</i>"
+      "randomizer":
+        "name": "<bold><#f4d35e>ランダマイザー"
+        "desc": "<#6b7280><i>各ブロックが設定に基づいてランダムなアイテムを落とします。</i>"
+      "luckyroulette":
+        "name": "<bold><#f4d35e>ラッキールーレット"
+        "desc": "<#6b7280><i>2分ごとに全員がランダムなアイテムを受け取ります。</i>"
+      "lightsout":
+        "name": "<bold><#f4d35e>ライツアウト"
+        "desc": "<#6b7280><i>試合中は松明を置けません。</i>"
+    "status-enabled": "<#6dd3a0><bold>有効</bold>"
+    "status-disabled": "<#f95738><bold>無効</bold>"
+    "off": "オフ"
+    "reset": "<#f95738><bold>全シナリオをリセット</bold>"
+    "reset-lore": "<#7b8aa0>すべてのシナリオを無効にし、ワールド設定を初期値に戻します。"
+"scenario":
+  "broadcaster":
+    "found": "<prefix><#f4d35e><player></#f4d35e> <gray>が</gray> <white><x>, <y>, <z></white> <gray>で発見：</gray> <white><ore></white>"
+  "coronavirus":
+    "affected": "<prefix><#a78bfa><player></#a78bfa> <gray>がコロナウイルスに感染しました！</gray>"
+  "raining-tnt":
+    "targeted": "<prefix><#f95738><white><player></white> の上にTNTが降ってきます！"
+  "time-bomb":
+    "timer": "<bold><timer_color>💣 <seconds>秒</bold>"
+"arena":
+  "usage": "<#f4d35e><bold>/admin arena</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin arena generate <名前> [colosseum|forest|ruins]</#93c5fd> <#7b8aa0>- スポーン付きのアリーナを建設</#7b8aa0><newline> <#93c5fd>/admin arena pos1 | pos2</#93c5fd> <#7b8aa0>- 立っている場所を角として選択</#7b8aa0><newline> <#93c5fd>/admin arena create <名前></#93c5fd> <#7b8aa0>- 選択範囲をアリーナとして保存</#7b8aa0><newline> <#93c5fd>/admin arena import <名前> <schematic></#93c5fd> <#7b8aa0>- WorldEditのschematicを使う</#7b8aa0><newline> <#93c5fd>/admin arena paste <名前></#93c5fd> <#7b8aa0>- ここに設置して編集</#7b8aa0><newline> <#93c5fd>/admin arena addspawn | autospawns | clearspawns <名前></#93c5fd> <#7b8aa0>- スポーン地点を設定</#7b8aa0><newline> <#93c5fd>/admin arena use <name|random|off></#93c5fd> <#7b8aa0>- ミートアップ用のアリーナ</#7b8aa0><newline> <#93c5fd>/admin arena list | info <名前> | delete <名前></#93c5fd> <#7b8aa0>- アリーナを管理</#7b8aa0>"
+  "invalid-name": "<#f95738>アリーナ名には英字、数字、アンダースコア、ハイフンのみ使えます（「random」は不可）。</#f95738>"
+  "not-found": "<#f95738><white><name></white> という名前のアリーナは見つかりません。</#f95738>"
+  "corner-set": "<#6dd3a0>角 <white><corner></white> を <white><x>, <y>, <z></white> に設定しました。</#6dd3a0>"
+  "no-selection": "<#f95738>先にアリーナを選択してください：WorldEditの //wand を使うか、対角の2か所に立って /admin arena pos1 と /admin arena pos2 を使います。</#f95738>"
+  "created": "<#6dd3a0>アリーナ <white><name></white>（<white><size></white>）を <white><format></white> 形式で保存しました。</#6dd3a0> <#cbd5e1>各開始地点に立って /admin arena addspawn <name> を使ってください。</#cbd5e1>"
+  "save-failed": "<#f95738>アリーナ <white><name></white> を保存できません：<error></#f95738>"
+  "needs-worldedit": "<#f95738>schematicのインポートにはWorldEditかFastAsyncWorldEditが必要です。</#f95738>"
+  "schematic-not-found": "<#f95738>WorldEditのschematicsフォルダに <white><schematic></white> はありません。</#f95738>"
+  "imported": "<#6dd3a0>アリーナ <white><name></white>（<white><size></white>）をインポートしました。</#6dd3a0> <#cbd5e1>/admin arena paste <name> で設置してからスポーンを追加してください。</#cbd5e1>"
+  "pasted": "<#6dd3a0><white><name></white> を足元を角にして設置しました。</#6dd3a0> <#cbd5e1>各開始地点に立って /admin arena addspawn <name> を使ってください。</#cbd5e1>"
+  "paste-failed": "<#f95738>アリーナ <white><name></white> を設置できません：<error></#f95738>"
+  "unusable": "<#f95738><white><name></white> はWorldEditのschematicですが、WorldEditもFastAsyncWorldEditも導入されていません。</#f95738>"
+  "spawn-added": "<#6dd3a0><white><name></white> にスポーン <white>#<count></white> を追加しました。</#6dd3a0>"
+  "spawn-outside": "<#f95738>スポーンを追加するには <white><name></white> の中に立ってください。先に /admin arena paste <name> で設置してください。</#f95738>"
+  "spawns-cleared": "<#6dd3a0><white><name></white> のスポーンをすべて消去しました。プレイヤーは円形に配置されます。</#6dd3a0>"
+  "deleted": "<#6dd3a0>アリーナ <white><name></white> を削除しました。</#6dd3a0>"
+  "list": "<#7b8aa0>アリーナ：</#7b8aa0> <white><names></white>"
+  "list-empty": "<#7b8aa0>アリーナはまだありません。範囲を選択して /admin arena create <名前> を使ってください。</#7b8aa0>"
+  "info": "<white><name></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><size> · <format> · スポーン <spawns></#cbd5e1>"
+  "use-set": "<#6dd3a0>ミートアップは <white><name></white> で行われます。</#6dd3a0>"
+  "use-random": "<#6dd3a0>ミートアップはランダムなアリーナで行われます。</#6dd3a0>"
+  "use-off": "<#6dd3a0>ミートアップは通常のワールドで行われます。</#6dd3a0>"
+  "meetup-disabled": "<#f4d35e>ミートアップがオフです - アリーナを使うには /config で meetup.enabled を有効にしてください。</#f4d35e>"
+  "generate-usage": "<#f4d35e><bold>/admin arena generate</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin arena generate <名前> [colosseum|forest|ruins] [半径] [スポーン数]</#93c5fd> <#7b8aa0>- 半径 12〜60、スポーン 2〜100</#7b8aa0>"
+  "generating": "<#7dd3fc>アリーナ <white><name></white> を建設中...</#7dd3fc>"
+  "generated": "<#6dd3a0>アリーナ <white><name></white>（<white><size></white>）をスポーン <white><spawns></white> 個で建設しました。</#6dd3a0> <#cbd5e1>/admin arena use <name> で使えます。</#cbd5e1>"
+  "autospawns-done": "<#6dd3a0><white><name></white> にスポーンを <white><spawns></white> 個配置しました。</#6dd3a0>"
+  "autospawns-not-pasted": "<#f95738>アリーナ <white><name></white> はまだ設置されていません - 先に /admin arena paste <name> を使ってください。</#f95738>"
+"rank":
+  "help":
+    "title": "<#f4d35e><bold>ランクコマンド</bold></#f4d35e>"
+    "entry": "<#334155>  •</#334155> <#f4d35e><usage></#f4d35e> <#334155>-</#334155> <white><description></white>"
+    "hover": "<#7b8aa0>クリックで入力：</#7b8aa0> <white><command></white>"
+    "time": "<#7b8aa0>  時間：<white>30m</white>、<white>12h</white>、<white>7d</white>、<white>2w</white>、<white>1d12h</white> - 省略すると永久ランク。</#7b8aa0>"
+    "grant":
+      "usage": "/admin rank grant <プレイヤー> <ランク> [時間]"
+      "description": "プレイヤーにランクを与える"
+    "revoke":
+      "usage": "/admin rank revoke <プレイヤー> <ランク>"
+      "description": "ランクを外す"
+    "info":
+      "usage": "/admin rank info [プレイヤー]"
+      "description": "プレイヤーのランクを表示"
+    "list":
+      "usage": "/admin rank list [ランク]"
+      "description": "全ランク、またはそのランクの所持者を表示"
+  "unknown-rank": "<#f95738><white><rank></white> というランクはありません。ランク：<white><ranks></white></#f95738>"
+  "player-not-found": "<#f95738><white><player></white> というMinecraftアカウントは見つかりません。</#f95738>"
+  "looking-up": "<#7b8aa0><white><player></white> は未参加のため、アカウントを検索中...</#7b8aa0>"
+  "invalid-time": "<#f95738><white><time></white> は無効な時間です。例：30m、12h、7d、2w、1d12h。</#f95738>"
+  "granted": "<#6dd3a0><white><player></white> に <white><rank></white> ランクを与えました（<time>）。</#6dd3a0>"
+  "updated": "<#6dd3a0><white><player></white> はすでに <white><rank></white> を持っています - 期間を<time>に変更しました。</#6dd3a0>"
+  "revoked": "<#6dd3a0><white><player></white> から <white><rank></white> ランクを外しました。</#6dd3a0>"
+  "not-held": "<#f95738><white><player></white> は <white><rank></white> ランクを持っていません。</#f95738>"
+  "received": "<#6dd3a0><white><rank></white> ランクが与えられました（<time>）。</#6dd3a0>"
+  "removed": "<#f4d35e><white><rank></white> ランクが外されました。</#f4d35e>"
+  "expired": "<#f4d35e><white><rank></white> ランクの期限が切れました。</#f4d35e>"
+  "info-header": "<#7b8aa0><white><player></white> のランク：</#7b8aa0>"
+  "info-entry": "<#7b8aa0>  ▸</#7b8aa0> <rank_prefix><white><rank></white> <#7b8aa0>· <time></#7b8aa0>"
+  "info-none": "<#7b8aa0><white><player></white> はランクを持っていません。</#7b8aa0>"
+  "list-header": "<#7b8aa0>ランク（高い順）：</#7b8aa0>"
+  "list-entry": "<#7b8aa0>  ▸</#7b8aa0> <rank_prefix><white><rank></white> <#7b8aa0>· ID <id> · 重み <weight> · <count> 人</#7b8aa0>"
+  "list-empty": "<#7b8aa0>ランクが定義されていません。ranks.yml に追加してください。</#7b8aa0>"
+  "list-footer": "<#7b8aa0>  » クリックか入力：</#7b8aa0> <#7dd3fc>/admin rank help</#7dd3fc> <#7b8aa0>でランクコマンドを表示</#7b8aa0>"
+  "members": "<#7b8aa0><rank>：</#7b8aa0> <white><names></white>"
+  "members-none": "<#7b8aa0><white><rank></white> ランクを持つ人はいません。</#7b8aa0>"
+  "time-forever": "永久"
+  "time-for": "<time>間"
+  "time-permanent": "永久"
+  "time-left": "残り <time>"
+"give":
+  "usage": "<#f4d35e><bold>/admin give</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin give <プレイヤー|*> <アイテム> [数]</#93c5fd> <#7b8aa0>- アイテムを渡す</#7b8aa0><newline> <#64748b>* = 生存者全員（試合前はロビーの全員）</#64748b>"
+  "unknown-item": "<#f95738><white><item></white> というアイテムはありません。</#f95738>"
+  "invalid-amount": "<#f95738>数は1から <white><max></white> の間で指定してください。</#f95738>"
+  "sent": "<#6dd3a0><white><player></white> に <white><amount>× <item></white> を渡しました。</#6dd3a0>"
+  "received": "<#6dd3a0><white><amount>× <item></white> を受け取りました。</#6dd3a0>"
+"freeze-many": "<#6dd3a0><white><count></white> 人を凍結しました。</#6dd3a0>"
+"unfreeze-many": "<#6dd3a0><white><count></white> 人の凍結を解除しました。</#6dd3a0>"
+"potion-type-disabled": "<#f95738>この試合では<potion>のポーションが無効です。</#f95738>"
+"potion-name":
+  "strength": "力"
+  "speed": "移動速度上昇"
+  "invisibility": "透明化"
+"bed-explosions-disabled": "<#f95738>この試合ではベッドとリスポーンアンカーの爆発が無効です。</#f95738>"
+"whitelist":
+  "usage": "<#f4d35e><bold>/admin whitelist</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin whitelist on | off</#93c5fd> <#7b8aa0>- ホワイトリストのオン／オフ</#7b8aa0><newline> <#93c5fd>/admin whitelist add | remove <プレイヤー></#93c5fd> <#7b8aa0>- ホワイトリストを編集</#7b8aa0><newline> <#93c5fd>/admin whitelist list | clear</#93c5fd> <#7b8aa0>- 表示／空にする</#7b8aa0><newline> <#93c5fd>/admin whitelist all</#93c5fd> <#7b8aa0>- オンラインの全員を追加</#7b8aa0><newline> <#93c5fd>/admin whitelist reload</#93c5fd> <#7b8aa0>- whitelist.json を再読み込み</#7b8aa0>"
+  "reloaded": "<#6dd3a0>whitelist.json からホワイトリストを再読み込みしました。</#6dd3a0>"
+  "on": "<#6dd3a0>ホワイトリストを<white>オン</white>にしました。</#6dd3a0>"
+  "off": "<#6dd3a0>ホワイトリストを<white>オフ</white>にしました。</#6dd3a0>"
+  "added": "<#6dd3a0><white><player></white> をホワイトリストに追加しました。</#6dd3a0>"
+  "removed": "<#6dd3a0><white><player></white> をホワイトリストから外しました。</#6dd3a0>"
+  "list": "<#7b8aa0>ホワイトリスト（<white><state></white>、<white><count></white> 人）：</#7b8aa0> <white><names></white>"
+  "state-on": "オン"
+  "state-off": "オフ"
+  "cleared": "<#6dd3a0>ホワイトリストから <white><count></white> 人を外しました（常時許可の名前は残ります）。</#6dd3a0>"
+  "all": "<#6dd3a0>オンラインの <white><count></white> 人をホワイトリストに追加しました。</#6dd3a0>"
+"help-desc-helpop": "スタッフに質問する。"
+"help-desc-thank": "ホストにお礼を言う。"
+"helpop":
+  "staff": "<#c4b5fd>[ヘルプ]</#c4b5fd> <white><player></white><#7b8aa0>：</#7b8aa0> <#faf0ca><message></#faf0ca>"
+  "staff-hover": "<#7b8aa0>クリックで <white><player></white> に返信</#7b8aa0>"
+  "sent": "<#6dd3a0>質問をスタッフに送りました。</#6dd3a0>"
+  "no-staff": "<#f4d35e>今オンラインのスタッフはいません - 後でもう一度試すか /report を使ってください。</#f4d35e>"
+  "cooldown": "<#f95738><white><seconds>秒</white>待ってから再度質問してください。</#f95738>"
+  "dialog":
+    "title": "<#c4b5fd><bold>スタッフに質問</bold></#c4b5fd>"
+    "body": "<#9db4c0>質問を入力してください - オンラインのスタッフ全員に届きます。</#9db4c0>"
+    "input": "<#cbd5e1>質問内容</#cbd5e1>"
+    "send": "<#6dd3a0><bold>送信</bold></#6dd3a0>"
+    "cancel": "<#f95738>キャンセル</#f95738>"
+"thank":
+  "no-host": "<#f4d35e>今お礼を言えるホストはオンラインにいません。</#f4d35e>"
+  "cooldown": "<#f95738>次にホストへお礼を言えるのは <white><minutes> 分</white>後です。</#f95738>"
+  "sent": "<#6dd3a0><white><host></white> にお礼を伝えました！</#6dd3a0>"
+  "broadcast": "<#fb7185>❤</#fb7185> <white><player></white> <#faf0ca>がホスト</#faf0ca> <#f4d35e><host></#f4d35e><#faf0ca> にお礼を言いました！</#faf0ca>"
+  "broadcast-message": "<#fb7185>❤</#fb7185> <white><player></white> <#faf0ca>がホスト</#faf0ca> <#f4d35e><host></#f4d35e><#7b8aa0>：</#7b8aa0> <#faf0ca>「<message>」</#faf0ca>"
+  "title": "<#fb7185><bold>❤ ありがとう！</bold></#fb7185>"
+  "subtitle": "<white><player></white> <#faf0ca>からホストへのお礼が届きました</#faf0ca>"
+  "dialog":
+    "title": "<#fb7185><bold>ホストにお礼</bold></#fb7185>"
+    "body": "<#9db4c0>このゲームを開いてくれた <white><host></white> にお礼を伝えましょう。</#9db4c0>"
+    "input": "<#cbd5e1>メッセージ（任意）</#cbd5e1>"
+    "send": "<#fb7185><bold>❤ お礼を送る</bold></#fb7185>"
+"help-desc-cosmetics": "オービット、軌跡、キル、勝利エフェクトを購入・装備。"
+"help-desc-team": "チームの作成、参加、管理。"
+"help-desc-tm": "チームチャット：切り替え、または1件送信。"
+"help-desc-tc": "チームに座標を共有。"
+"help-desc-msg": "個別メッセージを送る。"
+"help-desc-r": "最後の個別メッセージに返信。"
+"help-desc-profile": "自分や他のプレイヤーの統計。"
+"help-desc-leaderboard": "勝利、キルなどの上位プレイヤー。"
+"help-desc-kit": "開始キットを見る（管理者は編集可）。"
+"help-desc-scenarios": "この試合のシナリオを見る（管理者は変更可）。"
+"help-desc-vote": "この試合のシナリオに投票。"
+"help-desc-language": "言語を選ぶ。"
+"help-desc-report": "プレイヤーをスタッフに通報。"
+"help-desc-list": "オンラインのプレイヤー。"
+"help-desc-ping": "自分、他のプレイヤー、全員（all）のPing。"
+"help-desc-menu": "全機能のクイックメニュー。"
+"help-desc-docs": "ゲーム内ガイド。"
+"help-desc-practice": "PvP練習場。"
+"help-desc-parkour": "ロビーのパルクール：リスタート、退出、ベストタイム。"
+"help-desc-hotpotato": "ロビーのホットポテトに参加・退出。"
+"help-desc-staff": "スタッフモードと管理ツール。"
+"help-desc-admin": "試合、ワールド、サーバーのツール。"
+"help-desc-gm": "ゲームモードを変更（自分または他人）。"
+"help-desc-world": "ワールドの読み込み、移動、削除。"
+"help-desc-heal": "体力と満腹度を全回復（* = 全員）。"
+"cosmetics":
+  "menu":
+    "title": "<#b7791f>✦</#b7791f> <#404040>コスメショップ</#404040>"
+    "type-title": "<#b7791f>✦</#b7791f> <#404040><type></#404040>"
+    "points": "<#facc15><bold>☀ <points> ポイント</bold></#facc15>"
+    "points-lore": "<#7b8aa0>キル、アシスト、勝利、アワード、試合参加でポイントがもらえます。</#7b8aa0>"
+    "equipped": "<#7b8aa0>装備中：</#7b8aa0> <white><name></white>"
+    "none": "<#6b7280>なし</#6b7280>"
+    "count": "<#7b8aa0><count> 種類から選べます</#7b8aa0>"
+    "back": "<#cbd5e1>← 戻る</#cbd5e1>"
+    "previous": "<#cbd5e1>← <page>/<pages> ページ</#cbd5e1>"
+    "next": "<#cbd5e1><page>/<pages> ページ →</#cbd5e1>"
+    "unequip": "<#f95738>装備を外す</#f95738>"
+  "type":
+    "orbit":
+      "name": "<#c4b5fd>オービットエフェクト</#c4b5fd>"
+      "lore": "<#9db4c0>ロビーであなたの周りを回るパーティクル。</#9db4c0>"
+    "walk-trail":
+      "name": "<#86efac>足跡エフェクト</#86efac>"
+      "lore": "<#9db4c0>ロビーで歩いた場所に残るパーティクル。</#9db4c0>"
+    "arrow-trail":
+      "name": "<#93c5fd>矢の軌跡</#93c5fd>"
+      "lore": "<#9db4c0>放った矢を追うパーティクル。</#9db4c0>"
+    "rod-trail":
+      "name": "<#7dd3fc>釣り竿の軌跡</#7dd3fc>"
+      "lore": "<#9db4c0>釣り針を追うパーティクル。</#9db4c0>"
+    "kill-effect":
+      "name": "<#f95738>キルエフェクト</#f95738>"
+      "lore": "<#9db4c0>倒した相手の場所で再生されます。</#9db4c0>"
+    "win-effect":
+      "name": "<#facc15>勝利エフェクト</#facc15>"
+      "lore": "<#9db4c0>試合に勝ったとき、あなたの周りで再生されます。</#9db4c0>"
+  "item":
+    "price": "<#7b8aa0>価格：</#7b8aa0> <#facc15><price> ポイント</#facc15>"
+    "equipped": "<#6dd3a0>✔ 装備中</#6dd3a0> <#7b8aa0>- クリックで外す</#7b8aa0>"
+    "owned": "<#93c5fd>所持</#93c5fd> <#7b8aa0>- クリックで装備</#7b8aa0>"
+    "buy": "<#facc15>クリックで購入</#facc15>"
+    "locked": "<#f95738>あと <missing> ポイント必要</#f95738>"
+    "preview": "<#c4b5fd>右クリックでプレビュー</#c4b5fd>"
+  "preview":
+    "started": "<#c4b5fd><name><#c4b5fd> をプレビュー中。スニークで終了。</#c4b5fd>"
+    "ended": "<#cbd5e1>プレビューを終了しました。</#cbd5e1>"
+    "unavailable": "<#f95738>コスメのプレビューは試合前のロビーでのみできます。</#f95738>"
+    "actionbar": "<#c4b5fd><bold>プレビュー</bold></#c4b5fd> <name> <#7b8aa0>· スニークで終了 · <seconds>秒</#7b8aa0>"
+  "bought": "<#6dd3a0><white><price></white> ポイントで <name><#6dd3a0> を購入して装備しました！</#6dd3a0>"
+  "equipped": "<#6dd3a0><name><#6dd3a0> を装備しました。</#6dd3a0>"
+  "unequipped": "<#cbd5e1>装備を外しました。</#cbd5e1>"
+  "not-enough": "<#f95738><white><price></white> ポイント必要です - 所持 <white><points></white>。</#f95738>"
+  "reloaded": "<#6dd3a0>cosmetics.yml を再読み込みしました。</#6dd3a0>"
+  "points-usage": "<#f4d35e><bold>/admin points</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin points <give|take> <プレイヤー|*> <量></#93c5fd> <#7b8aa0>- コスメポイントを増減</#7b8aa0>"
+  "points-adjusted": "<#6dd3a0><white><player></white> のポイント <amount>。</#6dd3a0>"
+  "points-received": "<#facc15>+<amount> ポイント</#facc15> <#7b8aa0>（現在 <points>）</#7b8aa0>"
+  "points-taken": "<#f95738>-<amount> ポイント</#f95738> <#7b8aa0>（現在 <points>）</#7b8aa0>"
+"announce-header": "<#f4d35e><bold>==============================</bold></#f4d35e>"
+"announce-title": "<#f95738><bold>     ✦ お知らせ ✦</bold></#f95738>"
+"announce-line": "<white>    <message></white>"
+"announce-signature": "<#7b8aa0>    — <sender></#7b8aa0>"
+"announce-footer": "<#f4d35e><bold>==============================</bold></#f4d35e>"
+"announce-sent": "<#6dd3a0>お知らせを送信しました。</#6dd3a0>"
+"lobby-games":
+  "reward": "<#facc15>+<points> コスメポイント！</#facc15>"
+  "started":
+    "type": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>が早打ちを開始！最初にこれを打った人の勝ち：</#cbd5e1> <white><phrase></white>"
+    "trivia": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>からクイズ：</#cbd5e1> <white><question></white>"
+    "number": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>が1から<max>の数字を思い浮かべています。チャットで当てよう！</#cbd5e1>"
+    "reaction": "<prefix><#f4d35e><sender></#f4d35e> <#cbd5e1>が反射神経ゲームを開始。クリックの準備を...</#cbd5e1>"
+  "title":
+    "type": "<white>入力：<phrase></white>"
+    "trivia": "<white>クイズ！チャットを見て</white>"
+    "number": "<white>1から<max>の数字を当てよう</white>"
+    "reaction": "<white>クリックの準備を...</white>"
+  "trivia":
+    "none": "<#f95738>クイズの問題が設定されていません。</#f95738>"
+  "reaction":
+    "button": "<prefix><#6dd3a0><bold>[ 今すぐクリック ]</bold></#6dd3a0>"
+    "hover": "<#6dd3a0>できるだけ早くクリック！</#6dd3a0>"
+    "too-late": "<#f95738>遅すぎ！先を越されました。</#f95738>"
+  "number":
+    "higher": "<#f4d35e><guess> は小さすぎ。もっと大きく！</#f4d35e>"
+    "lower": "<#f4d35e><guess> は大きすぎ。もっと小さく！</#f4d35e>"
+    "slow-down": "<#f95738>落ち着いて、1回ずつ答えてください。</#f95738>"
+  "direction":
+    "north": "北"
+    "north-east": "北東"
+    "east": "東"
+    "south-east": "南東"
+    "south": "南"
+    "south-west": "南西"
+    "west": "西"
+    "north-west": "北西"
+  "treasure":
+    "hidden": "<prefix><#facc15><bold>宝探し！</bold></#facc15> <#cbd5e1><sender> がロビーのどこかに宝を隠しました。最初に触れた人に <points> ポイント。</#cbd5e1>"
+    "hint": "<prefix><#cbd5e1>宝のヒント：スポーンの <white><direction></white>、約 <white><distance></white> ブロック先<height>。</#cbd5e1>"
+    "hint-close": "<prefix><#facc15>最後のヒント：</#facc15> <#cbd5e1><white>X <x></white>、<white>Z <z></white> あたり<height>。</#cbd5e1>"
+    "height":
+      "above": "、高い所"
+      "below": "、低い所"
+      "level": "、スポーンとほぼ同じ高さ"
+    "label": "<#facc15><bold>✦ 宝 ✦</bold></#facc15>"
+    "warm": "<#fb923c>🔥 温かい...宝は近い</#fb923c>"
+    "land": "<#facc15>宝の上に着地して手に入れよう！</#facc15>"
+    "hot": "<#f95738><bold>🔥🔥 熱い！すぐそこ</bold></#f95738>"
+    "found": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>が</#cbd5e1> <white><time></white><#cbd5e1> で宝を見つけました！</#cbd5e1>"
+    "expired": "<prefix><#f95738>誰も宝を見つけられませんでした。</#f95738> <#7b8aa0>場所は <x>, <y>, <z> でした。</#7b8aa0>"
+    "already": "<#f95738>宝はすでに隠されています。</#f95738>"
+    "no-spot": "<#f95738>ロビーのスポーン付近に宝を隠す場所が見つかりません。</#f95738>"
+  "potato":
+    "announce": "<prefix><#fb923c><bold>ホットポテト！</bold></#fb923c> <#cbd5e1><sender> がラウンドを開始。<seconds>秒以内に参加して、爆発する前に誰かを叩いてTNTを渡そう！</#cbd5e1>"
+    "join-button": "<prefix><#6dd3a0><bold>[ ホットポテトに参加 ]</bold></#6dd3a0>"
+    "join-hover": "<#6dd3a0>クリックで参加（または /hotpotato）</#6dd3a0>"
+    "joined": "<#6dd3a0><player> がホットポテトに参加しました。</#6dd3a0> <#7b8aa0>（<count> 人）</#7b8aa0>"
+    "already-joined": "<#f4d35e>すでに参加しています。</#f4d35e>"
+    "not-joining": "<#f95738>今参加できるホットポテトはありません。</#f95738>"
+    "not-in-lobby": "<#f95738>遊ぶにはロビーにいる必要があります。</#f95738>"
+    "not-playing": "<#f95738>ホットポテトに参加していません。</#f95738>"
+    "left": "<#f4d35e>ホットポテトから抜けました。</#f4d35e>"
+    "not-enough": "<prefix><#f95738>ホットポテトの参加者が足りません（<count>/<min>）。</#f95738>"
+    "already": "<#f95738>ホットポテトはすでに進行中です。</#f95738>"
+    "round": "<prefix><#fb923c><bold><player></bold></#fb923c> <#cbd5e1>がポテトを持っています！残り <count> 人。</#cbd5e1>"
+    "passed": "<#fb923c><player></#fb923c> <#cbd5e1>がポテトを</#cbd5e1> <#fb923c><target></#fb923c><#cbd5e1> に渡しました！</#cbd5e1>"
+    "exploded": "<prefix><#f95738>💥 <player> が爆発！</#f95738> <#cbd5e1>残り <count> 人。</#cbd5e1>"
+    "you-exploded": "<#f95738>脱落！次は頑張って。</#f95738>"
+    "winner": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>がホットポテトに勝利！</#cbd5e1>"
+    "you-title": "<#f95738><bold>ポテトを持っているのはあなた！</bold></#f95738>"
+    "you-subtitle": "<white>誰かを叩いて渡そう！</white>"
+    "actionbar-holder": "<#f95738><bold>ポテトを持っています</bold> · 誰かを叩け！<seconds>秒</#f95738>"
+    "actionbar-other": "<#fb923c><player> がポテトを持っています · <seconds>秒</#fb923c>"
+  "parkour":
+    "started": "<#6dd3a0>パルクール開始！ゴールを目指そう。</#6dd3a0> <#7b8aa0>（チェックポイント <total> 個）</#7b8aa0>"
+    "checkpoint": "<#93c5fd>チェックポイント <number>/<total></#93c5fd> <#7b8aa0>· <time></#7b8aa0>"
+    "missed-checkpoint": "<#f95738>チェックポイント <number> を飛ばしました！</#f95738>"
+    "fell": "<#f4d35e>最後のチェックポイントに戻りました。</#f4d35e>"
+    "cancelled": "<#f95738>パルクールを中止しました。</#f95738>"
+    "cancelled-fly": "<#f95738>パルクールを中止しました：飛行禁止です。</#f95738>"
+    "finished-self": "<#6dd3a0><white><time></white> でゴール。</#6dd3a0> <#7b8aa0>自己ベスト：<best></#7b8aa0>"
+    "personal-best": "<prefix><#6dd3a0><bold><player></bold></#6dd3a0> <#cbd5e1>がパルクールを</#cbd5e1> <white><time></white> <#cbd5e1>で完走</#cbd5e1> <#facc15>（自己ベスト）</#facc15>"
+    "record": "<prefix><#facc15><bold>パルクール新記録！</bold></#facc15> <#6dd3a0><player></#6dd3a0> <#cbd5e1>タイム</#cbd5e1> <white><time></white>"
+    "actionbar": "<#7b8aa0>パルクール</#7b8aa0> <white><time></white> <#7b8aa0>· チェックポイント</#7b8aa0> <white><checkpoint>/<total></white>"
+    "not-set": "<#f95738>パルクールのコースはまだ設定されていません。</#f95738>"
+    "not-in-lobby": "<#f95738>パルクールはロビーでのみ使えます。</#f95738>"
+    "top-header": "<#facc15><bold>🏃 パルクール ベストタイム</bold></#facc15>"
+    "top-entry": "<#7b8aa0>#<rank></#7b8aa0> <white><player></white> <#6dd3a0><time></#6dd3a0>"
+    "top-empty": "<#7b8aa0>まだ誰もパルクールを完走していません。</#7b8aa0>"
+    "hologram":
+      "start": "<#6dd3a0><bold>パルクール スタート</bold></#6dd3a0>"
+      "checkpoint": "<#93c5fd>チェックポイント <number></#93c5fd>"
+      "finish": "<#facc15><bold>ゴール</bold></#facc15>"
+    "setup":
+      "start": "<#6dd3a0>パルクールのスタートをここに設定しました。</#6dd3a0>"
+      "checkpoint": "<#6dd3a0>チェックポイント <number> をここに追加しました。</#6dd3a0>"
+      "checkpoint-removed": "<#f4d35e>最後のチェックポイントを削除しました（残り <count>）。</#f4d35e>"
+      "finish": "<#6dd3a0>パルクールのゴールをここに設定しました。</#6dd3a0>"
+      "cleared": "<#f95738>パルクールのコースを削除しました。</#f95738>"
+      "times-reset": "<#f95738>パルクールのベストタイムを消去しました。</#f95738>"
+"pause-menu-language-note": "<#7b8aa0>ポーズ画面（Esc）のクイックメニューは、次にサーバーに参加したときに言語が切り替わります。</#7b8aa0>"
+"lobby-container-blocked": "<#f95738>ロビーではコンテナを開けません。</#f95738>"
+"alerts-teleport-button": "<#93c5fd>[TP]</#93c5fd>"
+"alerts-teleport-hover": "<#cbd5e1>クリックで透明化して（スタッフモード）<white><player></white> の元へ</#cbd5e1>"
+"autostart":
+  "started": "<prefix><#6dd3a0><white><players></white> 人集まりました - <white><seconds>秒</white>後に試合が自動で始まります。</#6dd3a0>"
+  "countdown": "<prefix><#f4d35e>試合は <white><seconds>秒</white>後に自動で始まります。</#f4d35e>"
+  "cancelled": "<prefix><#f95738>自動開始を取り消しました - <white><players>/<needed></white> 人。</#f95738>"
+  "actionbar": "<#f4d35e>自動開始まで <white><bold><seconds></bold></white> 秒</#f4d35e>"
+"voting":
+  "menu-title": "<#334155><bold>シナリオ投票</bold></#334155> <#64748b>（最大 <max>）</#64748b>"
+  "item-votes": "<#f4d35e>★ <white><votes></white> 票</#f4d35e>"
+  "item-vote": "<#93c5fd>▶ クリックで投票</#93c5fd>"
+  "item-unvote": "<#6dd3a0>✔ 投票済み</#6dd3a0> <#7b8aa0>- クリックで取り消し</#7b8aa0>"
+  "voted": "<#6dd3a0><white><name></white> に投票しました。</#6dd3a0>"
+  "unvoted": "<#cbd5e1><white><name></white> への投票を取り消しました。</#cbd5e1>"
+  "max": "<#f95738>投票できるのは <white><max></white> 個までです - 先に1つ取り消してください。</#f95738>"
+  "disabled": "<#f95738>シナリオ投票はオフです。</#f95738>"
+  "closed": "<#f95738>投票は試合前のロビーでのみできます。</#f95738>"
+  "announce": "<prefix><#93c5fd>この試合のシナリオに投票しよう！</#93c5fd> <#f4d35e><bold>[クリックで投票]</bold></#f4d35e> <#7b8aa0>または /vote</#7b8aa0>"
+  "winners": "<prefix><#6dd3a0>投票結果：</#6dd3a0> <white><scenarios></white>"
+  "no-winners": "<prefix><#7b8aa0>この試合に追加できる投票シナリオはありませんでした。</#7b8aa0>"
+"reboot":
+  "countdown": "<prefix><#f95738><bold>サーバーは <white><time></white> 後に再起動します。</bold></#f95738>"
+  "now": "<prefix><#f95738><bold>再起動します - また後で！</bold></#f95738>"
+  "cancelled": "<prefix><#6dd3a0>サーバーの再起動を取り消しました。</#6dd3a0>"
+  "none": "<#f95738>予定された再起動はありません。</#f95738>"
+  bossbar: "<#f95738><bold>⟳ サーバー再起動まで</bold></#f95738> <white><bold><time></bold></white>"
+  title: "<color><bold><seconds></bold>"
+  title-subtitle: "<#cbd5e1>まもなくサーバーを再起動します…</#cbd5e1>"
+  final-title: "<#f95738><bold>⟳ 再起動中</bold></#f95738>"
+  final-subtitle: "<#cbd5e1>またすぐに！</#cbd5e1>"
+  kick: "<#f95738><bold>⟳ サーバー再起動中</bold></#f95738><newline><newline><#cbd5e1>サーバーを再起動しています。1分ほどで戻ります。</#cbd5e1><newline><#7b8aa0>少し待ってから再接続してください。</#7b8aa0>"
+"announcements":
+  "lines":
+    - "<prefix><#93c5fd>困ったら <white>/helpop</white> でスタッフに質問しよう。</#93c5fd>"
+    - "<prefix><#93c5fd>チーターを見つけたら <white>/report <プレイヤー> <理由></white> で通報してください。</#93c5fd>"
+    - "<prefix><#93c5fd>他チームとの協力（クロスチーム）は禁止です。違反者は試合から外されます。</#93c5fd>"
+    - "<prefix><#93c5fd>ここでは自然回復なし - 金のリンゴとゴールデンヘッドで回復しよう。</#93c5fd>"
+    - "<prefix><#93c5fd><white>/profile</white> で自分の統計、<white>/lb</white> で上位プレイヤーを確認。</#93c5fd>"
+    - "<prefix><#93c5fd><white>/cosmetics</white> でポイントを使ってエフェクトを買おう。</#93c5fd>"
+"admin":
+  "header": "<#f4d35e><bold>/admin</bold></#f4d35e> <#7b8aa0>使い方：（<count> 個のツール - クリックで入力）</#7b8aa0>"
+  "entry": " <#93c5fd>/admin <tool></#93c5fd> <#7b8aa0><description></#7b8aa0>"
+  "unknown": "<#f95738>不明な管理ツール <white><tool></white>。/admin で一覧を表示。</#f95738>"
+  "gm-usage": "<#f4d35e><bold>/admin gm</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin gm <c|s|a|sp> [プレイヤー]</#93c5fd> <#7b8aa0>- クリエイティブ、サバイバル、アドベンチャー、スペクテイター</#7b8aa0>"
+  "desc":
+    "start": "- 試合のカウントダウンを開始"
+    "forcestart": "- カウントダウンを省略して今すぐスキャッター"
+    "stop": "- 試合を停止"
+    "pause": "- 試合を一時停止"
+    "resume": "- 一時停止した試合を再開"
+    "state": "- 段階と人数"
+    "skipphase": "- 次の段階へ"
+    "skipgraceperiod": "- 猶予期間を終了、PvP解禁"
+    "rescatter": "- 全員を再スキャッター"
+    "checkready": "- 全員に準備確認"
+    "reset": "- 完全リセットしてロビーへ"
+    "revive": "- プレイヤーを復活"
+    "kill": "- プレイヤーを脱落させる"
+    "killalloffline": "- 切断中の全員を脱落"
+    "givegoldenhead": "- ゴールデンヘッドを渡す"
+    "lobbygame": "- ロビーミニゲーム"
+    "gen": "- 新しいゲームワールド（プレビュー付き）"
+    "preloadworld": "- Chunkyで事前生成"
+    "setworld": "- ゲームワールドを選ぶ"
+    "setlobby": "- 立っている場所をロビーのスポーンに"
+    "world": "- ワールドの読み込み、移動、削除"
+    "border": "- ワールドボーダー"
+    "arena": "- ミートアップ用アリーナ"
+    "config": "- ゲーム設定メニュー"
+    "preset": "- 設定プリセットの保存／読み込み"
+    "scenarios": "- シナリオのオン／オフ"
+    "kit": "- 開始キットを編集"
+    "team": "- チーム管理パネル"
+    "heal": "- 体力と満腹度を全回復"
+    "give": "- アイテムを渡す（* = 全員）"
+    "gm": "- ゲームモード：c / s / a / sp"
+    "experience": "- プロフィールのXPを設定・変更"
+    "rank": "- ランクの付与・剥奪"
+    "points": "- コスメポイントの付与・没収"
+    "database": "- プレイヤーデータの消去・インポート"
+    "whitelist": "- サーバーのホワイトリスト"
+    "setmaxplayers": "- 最大人数"
+    "reload": "- 設定を再読み込み"
+    "papi": "- PlaceholderAPIの状態"
+    "reboot": "- カウントダウン後に再起動"
+    namehistory: "- プレイヤーの以前の名前"
+    announce: "- 全員への大きなお知らせ"
+  "category":
+    "match": "<#f4d35e>▌ <bold>試合</bold></#f4d35e>"
+    "world": "<#f4d35e>▌ <bold>ワールドと準備</bold></#f4d35e>"
+    "players": "<#f4d35e>▌ <bold>プレイヤー</bold></#f4d35e>"
+    "server": "<#f4d35e>▌ <bold>サーバー</bold></#f4d35e>"
+"staff-tools":
+  "header": "<#f4d35e><bold>/staff</bold></#f4d35e> <#7b8aa0>使い方：（<count> 個のツール - クリックで入力）</#7b8aa0>"
+  "entry": " <#93c5fd>/staff <tool></#93c5fd> <#7b8aa0><description></#7b8aa0>"
+  "unknown": "<#f95738>不明なスタッフツール <white><tool></white>。/staff help で一覧を表示。</#f95738>"
+  "category":
+    "mode": "<#f4d35e>▌ <bold>スタッフモード</bold></#f4d35e>"
+    "players": "<#f4d35e>▌ <bold>プレイヤー</bold></#f4d35e>"
+    "chat": "<#f4d35e>▌ <bold>チャット</bold></#f4d35e>"
+  "desc":
+    "tp": "- 透明化してプレイヤーの元へ"
+    "list": "- オンラインのスタッフ"
+    "state": "- 試合の段階と人数"
+    "freeze": "- プレイヤーを動けなくする"
+    "unfreeze": "- 凍結を解除"
+    "invsee": "- プレイヤーのインベントリを開く"
+    "chat": "- スタッフ専用チャット"
+    "alerts": "- 受け取るアラートを選ぶ"
+    "announce": "- 大きなお知らせ"
+    "mutechat": "- 全体チャットをロック"
+    "unmutechat": "- 全体チャットのロック解除"
+    "clearchat": "- チャットを消去"
+    "cleardrop": "- ドロップアイテムを消去"
+"punish":
+  "no-reason": "理由なし"
+  "invalid-duration": "<#f95738>期間を 30m、12h、7d、2w のように指定してください。</#f95738>"
+  "exempt": "<#f95738><player> を処罰することはできません。</#f95738>"
+  "not-banned": "<#f4d35e><player> はBANされていません。</#f4d35e>"
+  "not-muted": "<#f4d35e><player> はミュートされていません。</#f4d35e>"
+  "not-online": "<#f4d35e><player> はオンラインではありません。</#f4d35e>"
+  "usage":
+    "ban": "<#f4d35e><bold>/ban</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/ban <プレイヤー> [理由]</#93c5fd> <#7b8aa0>- 永久BAN</#7b8aa0><newline> <#93c5fd>/ban <プレイヤー> <期間> [理由]</#93c5fd> <#7b8aa0>- 期間付きBAN（30m、12h、7d、2w）</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- サイレント：スタッフにのみ表示</#7b8aa0>"
+    "tempban": "<#f4d35e><bold>/tempban</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/tempban <プレイヤー> <期間> [理由]</#93c5fd> <#7b8aa0>- 期間付きBAN（30m、12h、7d、2w）</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- サイレント：スタッフにのみ表示</#7b8aa0>"
+    "unban": "<#f4d35e><bold>/unban</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/unban <プレイヤー></#93c5fd> <#7b8aa0>- BANを解除</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- サイレント：スタッフにのみ表示</#7b8aa0>"
+    "kick": "<#f4d35e><bold>/kick</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kick <プレイヤー> [理由]</#93c5fd> <#7b8aa0>- サーバーからキック</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- サイレント：スタッフにのみ表示</#7b8aa0>"
+    "mute": "<#f4d35e><bold>/mute</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/mute <プレイヤー> [理由]</#93c5fd> <#7b8aa0>- 永久ミュート</#7b8aa0><newline> <#93c5fd>/mute <プレイヤー> <期間> [理由]</#93c5fd> <#7b8aa0>- 期間付きミュート</#7b8aa0><newline> <#93c5fd>/mute</#93c5fd> <#7b8aa0>- 全員の全体チャットをロック</#7b8aa0>"
+    "tempmute": "<#f4d35e><bold>/tempmute</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/tempmute <プレイヤー> <期間> [理由]</#93c5fd> <#7b8aa0>- 期間付きミュート（30m、12h、7d）</#7b8aa0><newline> <#93c5fd>... -s</#93c5fd> <#7b8aa0>- サイレント：スタッフにのみ表示</#7b8aa0>"
+    "unmute": "<#f4d35e><bold>/unmute</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/unmute <プレイヤー></#93c5fd> <#7b8aa0>- ミュートを解除</#7b8aa0><newline> <#93c5fd>/unmute</#93c5fd> <#7b8aa0>- 全体チャットのロック解除</#7b8aa0>"
+    "warn": "<#f4d35e><bold>/warn</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/warn <プレイヤー> <理由></#93c5fd> <#7b8aa0>- プレイヤーに警告（本人とスタッフにのみ表示）</#7b8aa0>"
+    "history": "<#f4d35e><bold>/history</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/history <プレイヤー></#93c5fd> <#7b8aa0>- BAN、ミュート、キック、警告の履歴</#7b8aa0>"
+  "announce":
+    "ban": "<prefix><#f95738><bold><player></bold> が <staff> によってBANされました。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "tempban": "<prefix><#f95738><bold><player></bold> が <staff> によって <duration> BANされました。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "unban": "<prefix><#6dd3a0><player> のBANが <staff> によって解除されました。</#6dd3a0>"
+    "kick": "<prefix><#f4d35e><player> が <staff> によってキックされました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "mute": "<prefix><#f4d35e><player> が <staff> によってミュートされました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "tempmute": "<prefix><#f4d35e><player> が <staff> によって <duration> ミュートされました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "unmute": "<prefix><#6dd3a0><player> のミュートが <staff> によって解除されました。</#6dd3a0>"
+    "warn": "<prefix><#f4d35e><player> が <staff> から警告を受けました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+  "announce-silent":
+    "ban": "<#7b8aa0>[サイレント]</#7b8aa0> <#f95738><player> が <staff> によってBANされました。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "tempban": "<#7b8aa0>[サイレント]</#7b8aa0> <#f95738><player> が <staff> によって <duration> BANされました。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "unban": "<#7b8aa0>[サイレント]</#7b8aa0> <#6dd3a0><player> のBANが <staff> によって解除されました。</#6dd3a0>"
+    "kick": "<#7b8aa0>[サイレント]</#7b8aa0> <#f4d35e><player> が <staff> によってキックされました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "mute": "<#7b8aa0>[サイレント]</#7b8aa0> <#f4d35e><player> が <staff> によってミュートされました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "tempmute": "<#7b8aa0>[サイレント]</#7b8aa0> <#f4d35e><player> が <staff> によって <duration> ミュートされました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+    "unmute": "<#7b8aa0>[サイレント]</#7b8aa0> <#6dd3a0><player> のミュートが <staff> によって解除されました。</#6dd3a0>"
+    "warn": "<#7b8aa0>[スタッフ]</#7b8aa0> <#f4d35e><player> が <staff> から警告を受けました。</#f4d35e> <#7b8aa0>理由：<reason></#7b8aa0>"
+  "muted-self": "<#f95738>ミュートされました。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+  "muted-self-temp": "<#f95738><duration> ミュートされました。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+  "unmuted-self": "<#6dd3a0>再びチャットできるようになりました。</#6dd3a0>"
+  "still-muted": "<#f95738>ミュート中です。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+  "still-muted-temp": "<#f95738>ミュート中です。残り <duration>。</#f95738> <#7b8aa0>理由：<reason></#7b8aa0>"
+  "warned-self": "<#f95738><bold>警告：</bold></#f95738> <white><reason></white> <#7b8aa0>（<count> 回目の警告）</#7b8aa0>"
+  "screen":
+    "permanent": "永久"
+    "ban": "<#f95738><bold>このサーバーからBANされています。</bold></#f95738><newline><newline><#7b8aa0>理由：</#7b8aa0> <white><reason></white><newline><#7b8aa0>期間：</#7b8aa0> <white>永久</white>"
+    "tempban": "<#f95738><bold>このサーバーからBANされています。</bold></#f95738><newline><newline><#7b8aa0>理由：</#7b8aa0> <white><reason></white><newline><#7b8aa0>残り時間：</#7b8aa0> <white><duration></white>"
+    "kick": "<#f4d35e><bold>キックされました。</bold></#f4d35e><newline><newline><#7b8aa0>理由：</#7b8aa0> <white><reason></white>"
+    "full": "<#f4d35e><bold>サーバーは満員です。</bold></#f4d35e><newline><newline><#7b8aa0>オンライン：</#7b8aa0> <white><online>/<max></white><newline><#cbd5e1>少し待ってからもう一度お試しください。</#cbd5e1>"
+    "whitelist": "<#f4d35e><bold>ホワイトリストに登録されていません。</bold></#f4d35e><newline><newline><#cbd5e1>このサーバーは現在非公開です。ホストに追加を依頼してください。</#cbd5e1>"
+    "idle": "<#f4d35e><bold>放置のためキックされました。</bold></#f4d35e><newline><newline><#cbd5e1>いつでも再参加できます。</#cbd5e1>"
+    "restart": "<#93c5fd><bold>サーバーを再起動しています。</bold></#93c5fd><newline><newline><#cbd5e1>少ししてから再参加してください。進行中の試合はあなたを待っています。</#cbd5e1>"
+  "type":
+    "ban": "BAN"
+    "unban": "BAN解除"
+    "kick": "キック"
+    "mute": "ミュート"
+    "unmute": "ミュート解除"
+    "warn": "警告"
+  "history":
+    "header": "<#facc15><bold><player></bold></#facc15> <#7b8aa0>· BAN <bans> · ミュート <mutes> · キック <kicks> · 警告 <warns></#7b8aa0>"
+    "banned-now": "<#f95738>● BAN中</#f95738> <#7b8aa0>（<duration>）· <reason></#7b8aa0>"
+    "muted-now": "<#f4d35e>● ミュート中</#f4d35e> <#7b8aa0>（<duration>）· <reason></#7b8aa0>"
+    "entry": "<#7b8aa0><ago> 前</#7b8aa0> <white><type></white><#7b8aa0><duration> 実行者 <staff> · <reason></#7b8aa0>"
+    "empty": "<#7b8aa0>処罰の記録はありません。</#7b8aa0>"
+  "anim":
+    "ban-title": "<gradient:#ff3b3b:#7f1d1d><bold>BAN</bold></gradient>"
+    "ban-subtitle": "<#fca5a5><reason></#fca5a5>"
+    "kick-title": "<gradient:#fb923c:#f95738><bold>キック</bold></gradient>"
+    "kick-subtitle": "<#fed7aa><reason></#fed7aa>"
+    "mute-title": "<#94a3b8><bold>ミュート</bold></#94a3b8>"
+    "mute-subtitle": "<#cbd5e1><reason></#cbd5e1>"
+  "nametag-muted": "<item:barrier> "
+"profile-card":
+  "hover": "<#facc15><bold><player></bold></#facc15>  <rank><newline><#c4b5fd>レベル <level></#c4b5fd><newline><#f4d35e>★ 勝利</#f4d35e> <white><wins></white>  <#7b8aa0>試合数</#7b8aa0> <white><games></white><newline><#f95738>⚔ キル</#f95738> <white><kills></white>  <#9ca3af>☠ デス</#9ca3af> <white><deaths></white>  <#fda4af>K/D</#fda4af> <white><kd></white><newline><#facc15>🎉 ロビー勝利</#facc15> <white><lobby_wins></white>"
+  "no-rank": "<#7b8aa0>プレイヤー</#7b8aa0>"
+  "click-profile": "<#6b7280>▸ クリックで <player> のプロフィールを開く</#6b7280>"
+  "click-message": "<#6b7280>▸ クリックで <player> にメッセージ</#6b7280>"
+"dimension-schedule":
+  "name":
+    "nether": "ネザー"
+    "end": "エンド"
+  "warning": "<prefix><#f97316><dimension>はあと <white><time></white> で閉じます。それまでに脱出してください！</#f97316>"
+  "closed": "<prefix><#f95738><bold><dimension>が閉じました。</bold></#f95738> <#cbd5e1>中に残っていたプレイヤーはオーバーワールドに移動しました。</#cbd5e1>"
+  "opened": "<prefix><#6dd3a0><bold><dimension>が開きました！</bold></#6dd3a0>"
+  "moved": "<#f4d35e><dimension>が閉じたため、オーバーワールドに移動しました。</#f4d35e>"
+  "portal-closed": "<#f95738>この試合の残り時間、<dimension>は閉じています。</#f95738>"
+  "not-open-yet": "<#f4d35e><dimension>は <white><time></white> 後に開きます。</#f4d35e>"
+"config-menu-label-game-bed-explosions": "ベッド／アンカーの爆発"
+"config-menu-desc-game-bed-explosions": "バニラと同じく、ネザー／エンドのベッドとネザー以外のリスポーンアンカーが爆発します。"
+"config-menu-label-game-generation": "試合ワールドの地形"
+"config-menu-desc-game-generation": "新しく生成する試合ワールドの地形：NORMAL、AMPLIFIED、LARGE_BIOMES、FLAT、VOID。"
+"config-menu-label-game-invisibility-potions": "透明化のポーション"
+"config-menu-desc-game-invisibility-potions": "透明化のポーションが使えます（飲用、スプラッシュ、残留、効能付きの矢）。"
+"config-menu-label-game-no-baby-animals": "動物の繁殖禁止"
+"config-menu-desc-game-no-baby-animals": "動物の繁殖を禁止し、放置繁殖場を防ぎます。"
+"config-menu-label-game-no-nametag": "ネームタグなし"
+"config-menu-desc-game-no-nametag": "試合中ずっと全プレイヤーのネームタグを隠します。"
+"config-menu-label-game-ready-check-timeout-seconds": "準備確認の制限時間"
+"config-menu-desc-game-ready-check-timeout-seconds": "準備確認に答えるまでの秒数。"
+"config-menu-label-game-speed-potions": "移動速度上昇のポーション"
+"config-menu-desc-game-speed-potions": "移動速度上昇のポーションが使えます（飲用、スプラッシュ、残留、効能付きの矢）。"
+"config-menu-label-game-strength-potions": "力のポーション"
+"config-menu-desc-game-strength-potions": "力のポーションが使えます（飲用、スプラッシュ、残留、効能付きの矢）。"
+"config-menu-label-lobby-generation": "ロビーワールドの地形"
+"config-menu-desc-lobby-generation": "ロビーワールドを作る必要があるときの地形：VOID、NORMAL、FLAT、AMPLIFIED、LARGE_BIOMES。"
+"config-menu-label-meetup-arena": "ミートアップのアリーナ"
+"config-menu-desc-meetup-arena": "ミートアップを行う保存済みアリーナ（/arena を参照）。空 = 通常ワールド、\"random\" = ランダムなアリーナ。"
+"config-menu-label-meetup-border-size": "ミートアップのボーダーサイズ"
+"config-menu-desc-meetup-border-size": "ミートアップ開始時のボーダーサイズ。その後最終サイズまで縮みます。"
+"config-menu-label-meetup-enabled": "ミートアップ有効"
+"config-menu-desc-meetup-enabled": "サドンデスを岩盤ボックスではなく保存したアリーナ（meetup.arena）で行う。"
+"config-menu-label-meetup-kit": "ミートアップキット"
+"config-menu-desc-meetup-kit": "ミートアップ開始時に全員へランダムな鉄／ダイヤの防具と剣を渡します。"
+"config-menu-label-ui-arrow-health": "命中時の体力表示"
+"config-menu-desc-ui-arrow-health": "飛び道具を当てると、射った人のアクションバーに相手の残り体力を表示します。"
+"config-menu-label-ui-full-width-tab": "全幅Tab"
+"config-menu-desc-ui-full-width-tab": "全幅のTab：自分のチーム、他のチームと観戦者、最後の列に自分の統計。"
+"config-menu-label-ui-tab-health-mode": "Tabの体力表示"
+"leaderboard-hologram-title": "<#f4d35e><bold><stat> 上位</bold></#f4d35e>"
+"leaderboard-hologram-line": "<#7dd3fc><rank>.</#7dd3fc> <white><player></white> <#7b8aa0>-</#7b8aa0> <#f4d35e><value></#f4d35e>"
+"hologram-usage": "<#f4d35e>使い方：/hologram set <type></#f4d35e>"
+"hologram-invalid-type": "<#f95738>不明なホログラムの種類 <white><type></white>。</#f95738>"
+"hologram-set": "<#6dd3a0><white><type></white> ホログラムの位置を更新しました。</#6dd3a0>"
+"kit-set": "<#6dd3a0>キットを選択しました：<white><kit></white></#6dd3a0>"
+"config-menu-readonly-lore": "<#f4d35e>この項目はGUIでは読み取り専用です。</#f4d35e>"
+"papi-status-enabled-detail": "MiniMessageのPAPI解析が有効で、%試煉UHC_*% のプレースホルダーが登録されています。"
+"papi-status-disabled-detail": "PlaceholderAPIが読み込まれていません。PAPIのプレースホルダーを使うには plugins/ に導入してください。"
+"lobby-item":
+  "scenarios":
+    "name": "<#f4d35e><bold>シナリオ</bold></#f4d35e>"
+    "lore":
+      - "<#cbd5e1>この試合で有効なシナリオを見る。</#cbd5e1>"
+      - "<#6b7280>▸ 右クリックで開く</#6b7280>"
+  "cosmetics":
+    "name": "<gradient:#c084fc:#f472b6><bold>コスメショップ</bold></gradient>"
+    "lore":
+      - "<#cbd5e1>オービット、軌跡、キル、勝利エフェクト。</#cbd5e1>"
+      - "<#facc15>☀ <points> ポイント</#facc15>"
+      - "<#6b7280>▸ 右クリックで開く</#6b7280>"
+  "menu":
+    "name": "<gradient:#f4d35e:#ee964b><bold>メニュー</bold></gradient>"
+    "lore":
+      - "<#cbd5e1>すべての機能をひと目で。</#cbd5e1>"
+      - "<#6b7280>▸ 右クリックで開く</#6b7280>"
+  "settings":
+    "name": "<#cbd5e1><bold>設定</bold></#cbd5e1>"
+    "lore":
+      - "<#cbd5e1>スコアボード、ネームタグ、メッセージ、エフェクト。</#cbd5e1>"
+      - "<#6b7280>▸ 右クリックで開く</#6b7280>"
+  "docs":
+    "name": "<#64748b><bold>ガイド</bold></#64748b>"
+    "lore":
+      - "<#cbd5e1>サーバーとUHCの遊び方。</#cbd5e1>"
+      - "<#6b7280>▸ 右クリックで開く</#6b7280>"
+  "rules":
+    "name": "<#f95738><bold>ルール</bold></#f95738>"
+    "lore":
+      - "<#cbd5e1>サーバールールを読む。</#cbd5e1>"
+      - "<#6b7280>▸ 右クリックで開く</#6b7280>"
+  "helpop":
+    "name": "<#c4b5fd><bold>スタッフに質問</bold></#c4b5fd>"
+    "lore":
+      - "<#cbd5e1>オンラインのスタッフに質問する。</#cbd5e1>"
+      - "<#6b7280>▸ 右クリックで開く</#6b7280>"
+"spectator-item":
+  "teleporter":
+    "name": "<#6dd3a0><bold>プレイヤー一覧</bold></#6dd3a0>"
+    "lore":
+      - "<#cbd5e1>プレイヤー一覧を開く。</#cbd5e1>"
+      - "<#7b8aa0>プレイヤーをクリックでテレポート。</#7b8aa0>"
+  "random_player":
+    "name": "<#f4d35e><bold>ランダムなプレイヤー</bold></#f4d35e>"
+    "lore":
+      - "<white>ランダムな生存者にテレポート。</white>"
+      - "<#d7e1ea>マップを素早く見て回れます。</#d7e1ea>"
+  "center":
+    "name": "<#7dd3fc><bold>0,0 へ</bold></#7dd3fc>"
+    "lore":
+      - "<white>ワールドの中心へ直接テレポート。</white>"
+      - "<#d7e1ea>戦闘や最終決闘の観戦に。</#d7e1ea>"
+  "inspect":
+    "name": "<#fda4af><bold>インベントリ確認</bold></#fda4af>"
+    "lore":
+      - "<white>生存者の一覧を開く。</white>"
+      - "<#d7e1ea>クリックでそのプレイヤーのインベントリを見る。</#d7e1ea>"
+  "night_vision":
+    "name": "<#c4b5fd><bold>暗視</bold></#c4b5fd>"
+    "lore":
+      - "<white>観戦者の暗視を切り替え。</white>"
+      - "<#d7e1ea>洞窟や暗闇での戦闘の観戦に。</#d7e1ea>"
+  "speed":
+    "name": "<#a7f3d0><bold>速度調整</bold></#a7f3d0>"
+    "lore":
+      - "<white>飛行と歩行の速度を調整。</white>"
+      - "<#d7e1ea>速度調整メニューを開く。</#d7e1ea>"
+  "info":
+    "name": "<#9db4c0><bold>観戦モード</bold></#9db4c0>"
+    "lore":
+      - "<#cbd5e1>カスタム観戦モード中です。</#cbd5e1>"
+      - "<#7b8aa0>ツールで移動したりプレイヤーを確認できます。</#7b8aa0>"
+    "action-message": "<#9db4c0>観戦ツールでテレポート、プレイヤー確認、速度調整ができます。</#9db4c0>"
+"scoreboard-event-none": "なし"
+"scoreboard-event-live": "進行中"
+"scoreboard-event-match-start": "試合開始"
+"scoreboard-event-scattering": "スキャッター"
+"scoreboard-event-pvp": "PvP"
+"scoreboard-event-final-heal": "ファイナルヒール"
+"scoreboard-event-final-duel": "最終決闘"
+"scoreboard-event-border-stage": "ボーダー <stage>/<total>"
+"scoreboard-event-sudden-death": "サドンデス"
+"scoreboard-event-match-end": "試合終了"
+"scoreboard-event-lobby-return": "ロビーへ戻る"
+"scoreboard-status-off": "オフ"
+"scoreboard-status-done": "完了"
+"scoreboard":
+  "title": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>試練UHC</bold></gradient> <#fda4af>◆</#fda4af>"
+  "footer":
+    "lines":
+      - "<#a7f3d0>play.example.net</#a7f3d0>"
+  "default":
+    "lines":
+      - "<#7dd3fc>✦</#7dd3fc> <white>試練サーバー</white>"
+      - ""
+      - "<#7dd3fc>⌚</#7dd3fc> <white>段階：</white> <white><phase></white>"
+      - "<#a7f3d0>⌂</#a7f3d0> <white>ワールド：</white> <white><world></white>"
+      - "<#fda4af>☻</#fda4af> <white>オンライン：</white> <white><online></white>"
+  "waiting":
+    "lines":
+      - "<#c4b5fd>✦</#c4b5fd> <white>待機ロビー</white>"
+      - ""
+      - "<#fda4af>☻</#fda4af> <white>プレイヤー：</white> <white><online></white>"
+      - "<#f4d35e>⚑</#f4d35e> <white>あと：</white> <white><players_to_start></white>"
+      - "<#a7f3d0>⌂</#a7f3d0> <white>ワールド：</white> <white><world></white>"
+  "countdown":
+    "lines":
+      - "<#f4d35e>⌛</#f4d35e> <white>まもなく開始</white>"
+      - ""
+      - "<#f4d35e>⌚</#f4d35e> <white>カウントダウン：</white> <white><timer></white>"
+      - "<#fda4af>☻</#fda4af> <white>プレイヤー：</white> <white><online></white>"
+      - "<#a7f3d0>⌂</#a7f3d0> <white>ワールド：</white> <white><world></white>"
+  "grace":
+    "lines":
+      - "<#93c5fd>✚</#93c5fd> <white>猶予期間</white>"
+      - ""
+      - "<#f4d35e>⌚</#f4d35e> <white>残り：</white> <white><timer></white>"
+      - "<#fda4af>♥</#fda4af> <white>生存：</white> <white><alive></white>"
+      - "<#7dd3fc>◫</#7dd3fc> <white>ボーダー：</white> <white><border></white>"
+      - "<#86efac>✦</#86efac> <white>次のイベント：</white> <white><next_event></white>"
+      - "<#93c5fd>⌚</#93c5fd> <white>カウントダウン：</white> <white><next_event_timer></white>"
+  "running":
+    "lines":
+      - "<#ff8a80>✦</#ff8a80> <white>UHC進行中</white>"
+      - ""
+      - "<#fda4af>♥</#fda4af> <white>生存：</white> <white><alive></white>"
+      - "<#ff8a80>☠</#ff8a80> <white>死亡：</white> <white><dead></white>"
+      - "<#c4b5fd>☁</#c4b5fd> <white>観戦：</white> <white><spectators></white>"
+      - "<#7dd3fc>◫</#7dd3fc> <white>ボーダー：</white> <white><border></white>"
+      - "<#86efac>✦</#86efac> <white>次のイベント：</white> <white><next_event></white>"
+      - "<#93c5fd>⌚</#93c5fd> <white>カウントダウン：</white> <white><next_event_timer></white>"
+      - "<#f4d35e>⌚</#f4d35e> <white>経過時間：</white> <white><elapsed></white>"
+"tab":
+  "player-format": "<white>•</white> <#fff3b0><player></#fff3b0>"
+  "spectator-format": "<gray>• <player></gray>"
+  "disconnected-line": "<white>切断中：</white> <#fda4af><players></#fda4af>"
+  "default":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>試練UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>作者 <#ff8a80>平常網路資訊工作室</#ff8a80></white>\n"
+    "footer": "\n<white>バージョン：</white> <#fff3b0><version></#fff3b0>"
+  "waiting":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>試練UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>次の試合を準備中</white>\n"
+    "footer": "\n<white>開始まであと：</white> <#ff8a80><players_to_start></#ff8a80>"
+  "countdown":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>試練UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white><timer> 後に開始</white>\n"
+    "footer": "\n<white>ワールド：</white> <#fff3b0><world></#fff3b0>"
+  "grace":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>試練UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>猶予期間：<timer></white>\n"
+    "footer": "\n<white>生存：</white> <#fff3b0><alive></#fff3b0> <white>| ボーダー：</white> <#ffd166><border></#ffd166>"
+  "running":
+    "header": "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>試練UHC</bold></gradient> <#fda4af>◆</#fda4af>\n<white>試合進行中</white>\n"
+    "footer": "\n<white>生存：</white> <#fff3b0><alive></#fff3b0> <white>| 観戦：</white> <#fff3b0><spectators></#fff3b0>"
+"chat-clear-button": "<red><bold>[x]</bold></red>"
+profile-passport:
+  title: "<#f4d35e><bold>✈ プレイヤーパスポート</bold></#f4d35e> <#7b8aa0>（<page>/<pages>）</#7b8aa0>"
+  header: "<#cbd5e1>登録プレイヤー <white><count></white> 人。</#cbd5e1><#7b8aa0>名前にカーソルを合わせるとパスポート、クリックでプロフィールを開きます。</#7b8aa0>"
+  empty: "<#f4d35e>まだプレイヤーのプロフィールは記録されていません。</#f4d35e>"
+  button: "<white><player></white> <#a3e635>Lv<level></#a3e635>"
+  previous: "<#93c5fd>« <page> ページ</#93c5fd>"
+  next: "<#93c5fd><page> ページ »</#93c5fd>"
+  card: "<#f4d35e><bold>✈ 試煉UHC パスポート</bold></#f4d35e><newline><#334155>━━━━━━━━━━━━━━━━━━━━━━</#334155><newline><#7b8aa0>氏名</#7b8aa0>  <white><bold><player></bold></white><newline><#7b8aa0>ランク</#7b8aa0>  <rank><newline><#7b8aa0>旅券番号</#7b8aa0>  <#cbd5e1><number></#cbd5e1><newline><#7b8aa0>レベル</#7b8aa0>  <#a3e635>Lv<level></#a3e635><newline><#7b8aa0>戦績</#7b8aa0>  <#f4d35e><wins>勝</#f4d35e> <#7b8aa0>/</#7b8aa0> <white><games>試合</white><newline><#7b8aa0>戦闘</#7b8aa0>  <#fca5a5><kills>キル</#fca5a5>  <#9ca3af><deaths>デス</#9ca3af>  <#7dd3fc>K/D <kd></#7dd3fc><newline><#334155>━━━━━━━━━━━━━━━━━━━━━━</#334155><newline><#475569><machine></#475569><newline><#6dd3a0>クリックでプロフィールを開く</#6dd3a0>"
+# Custom commands (commands.yml)
+custom-command:
+  confirm-title: "<#f4d35e><bold>よろしいですか？</bold></#f4d35e>"
+  confirm-yes: "<#6dd3a0><bold>はい</bold></#6dd3a0>"
+  confirm-no: "<#f95738>キャンセル</#f95738>"
+  transferring: "<#7dd3fc><white><server></white> に移動しています...</#7dd3fc>"
+  players-only: "<#f95738>このコマンドはプレイヤーのみ使えます。</#f95738>"
+  unavailable: "<#f95738>このコマンドは削除されました。次回の再起動で消えます。</#f95738>"
+namehistory:
+  header: "<white><player></white> <#7b8aa0>の</#7b8aa0><#f4d35e><bold>名前履歴</bold></#f4d35e> <#475569>(<uuid>)</#475569> <#7b8aa0>- <count> 件、新しい順</#7b8aa0>"
+  entry: " <#334155>•</#334155> <white><name></white> <#7b8aa0><since></#7b8aa0><tags>"
+  tag-current: " <#6dd3a0>[現在]</#6dd3a0>"
+  tag-searched: " <#f4d35e>[検索]</#f4d35e>"
+  since-unknown: "記録開始前"
+  footer: "<#475569>このサーバーで確認された名前のみです。クリックでコピーできます。</#475569>"
+  shared: "<#f4d35e><white><player></white> という名前は <count> 人が使っています：</#f4d35e>"
+  not-found: "<#fda4af><white><player></white> という名前で参加したプレイヤーはいません。</#fda4af>"
+# A Discord chat-bridge message shown in game. <name> <message>
+discord-chat-in: "<#5865F2>[Discord]</#5865F2> <white><name></white><dark_gray>：</dark_gray> <#cbd5e1><message></#cbd5e1>"
+lobby-pvp-health: "<#fca5a5>⚔ <white><player></white></#fca5a5>  <bar>  <white><health></white><#7b8aa0>/<max_health></#7b8aa0>"
+# /list: rank group header (<rank> <count>), the no-rank group, between names
+list-group: "<#7b8aa0>▌</#7b8aa0> <rank> <#7b8aa0>(<count>)</#7b8aa0>"
+list-group-default: "<#7b8aa0>▌</#7b8aa0> <white>プレイヤー</white> <#7b8aa0>(<count>)</#7b8aa0>"
+list-separator: "<dark_gray>、</dark_gray>"
+# Maintenance mode (/admin maintenance)
+"maintenance.usage": "<#f4d35e><bold>/admin maintenance</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin maintenance on [時間] [理由]</#93c5fd> <#7b8aa0>- スタッフのみ参加可。時間（5m、30s）を付けると先にカウントダウン</#7b8aa0><newline> <#93c5fd>/admin maintenance cancel</#93c5fd> <#7b8aa0>- カウントダウンを中止</#7b8aa0><newline> <#93c5fd>/admin maintenance off</#93c5fd> <#7b8aa0>- サーバーを再開</#7b8aa0><newline> <#93c5fd>/admin maintenance status</#93c5fd> <#7b8aa0>- 状態、理由、許可リスト</#7b8aa0><newline> <#93c5fd>/admin maintenance allow | disallow <プレイヤー></#93c5fd> <#7b8aa0>- メンテナンス中の参加を許可</#7b8aa0>"
+"maintenance.enabled": "<prefix><#f95738>🛠 メンテナンスを<bold>開始</bold>しました - スタッフのみ参加できます。</#f95738>"
+"maintenance.disabled": "<prefix><#6dd3a0>🛠 メンテナンスが終了しました - 誰でも参加できます。</#6dd3a0>"
+"maintenance.kicked": "<#7b8aa0><white><kicked></white> 人をサーバーから退出させました。</#7b8aa0>"
+"maintenance.already-on": "<#f4d35e>メンテナンスはすでに有効です。</#f4d35e>"
+"maintenance.already-off": "<#f4d35e>メンテナンスはすでに無効です。</#f4d35e>"
+"maintenance.status": "<#7b8aa0>メンテナンス：</#7b8aa0> <state> <#7b8aa0>· 理由：</#7b8aa0> <white><reason></white> <#7b8aa0>· 許可：</#7b8aa0> <white><players></white>"
+"maintenance.state-on": "<#f95738><bold>オン</bold></#f95738>"
+"maintenance.state-off": "<#6dd3a0><bold>オフ</bold></#6dd3a0>"
+"maintenance.allowed": "<#6dd3a0><white><player></white> はメンテナンス中も参加できます。</#6dd3a0>"
+"maintenance.disallowed": "<#f4d35e><white><player></white> はメンテナンス中に参加できなくなりました。</#f4d35e>"
+"maintenance.no-reason": "まもなく再開します。"
+"punish.screen.maintenance": "<#f4d35e><bold>🛠 サーバーはメンテナンス中です。</bold></#f4d35e><newline><newline><#cbd5e1><reason></#cbd5e1><newline><#7b8aa0>しばらくしてからお越しください。</#7b8aa0>"
+"admin.desc.maintenance": "- メンテナンスモード（スタッフのみ参加可）"
+"maintenance.countdown": "<prefix><#f4d35e>🛠 <white><time></white> 後にメンテナンスを開始します。</#f4d35e> <#7b8aa0>プレイヤーはサーバーから退出します。</#7b8aa0>"
+"maintenance.bossbar": "<#f4d35e>🛠 メンテナンスまで</#f4d35e> <white><time></white>"
+"maintenance.cancelled": "<#6dd3a0>メンテナンスのカウントダウンを中止しました。</#6dd3a0>"
+"maintenance.no-countdown": "<#f4d35e>進行中のメンテナンスのカウントダウンはありません。</#f4d35e>"
+"voice-status":
+  "talking": "<#6dd3a0><bold>♪</bold></#6dd3a0> "
+  "connected": "<#7b8aa0>♪</#7b8aa0> "
+  "muted": "<#f95738>✖</#f95738> "
+"team.name-too-long": "<#f95738>チーム名は最大 <white><max></white> 文字までです。</#f95738>"
+"staff-mode.item.noclip.name": "<#c4b5fd><bold>壁抜け</bold></#c4b5fd>"
+"staff-mode.item.noclip.lore": "<#7b8aa0>右クリックで壁をすり抜けて飛行。/staff noclip で解除。</#7b8aa0>"
+"staff-mode.noclip-on": "<#c4b5fd>壁抜けオン - 壁をすり抜けて飛べます。</#c4b5fd> <#7b8aa0>壁抜け中はツールが使えません。<white>/staff noclip</white> で解除。</#7b8aa0>"
+"staff-mode.noclip-off": "<#6dd3a0>壁抜けオフ - スタッフツールが戻りました。</#6dd3a0>"
+"staff-mode.noclip-needs-staff": "<#f95738>壁抜けはスタッフモード中のみ使えます（/staff）。</#f95738>"
+"staff-mode.actionbar-noclip": " <#7b8aa0>·</#7b8aa0> <#c4b5fd>壁抜け</#c4b5fd> <#7b8aa0>(/staff noclip)</#7b8aa0>"
+"staff-mode.container-title": "<#334155><bold><container></bold></#334155> <#7b8aa0>（閲覧のみ）</#7b8aa0>"
+"staff-tools.desc.noclip": "- 壁をすり抜けて飛行（スタッフモード）"
+"tab-layout.player-left": "<rank><#6b7280><st><name></st> ☠</#6b7280>"
+"border-final-mobs-cleared": "<prefix><#93c5fd>ボーダーが最終サイズに達しました。敵対モブはもう出現しません。</#93c5fd> <#7b8aa0>（<count> 体を除去）</#7b8aa0>"
+"match.summary.team": "<#7b8aa0>  チーム   </#7b8aa0><members>"
+"match.summary.member-alive": "<white><player></white>"
+"match.summary.member-dead": "<gray><st><player></st></gray>"
+"language.dialog.title": "<#93c5fd><bold>🌐 言語</bold></#93c5fd>"
+"language.dialog.body": "<#cbd5e1>試練UHCで使う言語を選んでください。チャット、メニュー、タイトル、スコアボードがすべて切り替わります。</#cbd5e1>"
+"language.dialog.current": "<#7b8aa0>現在：</#7b8aa0> <white><language></white>"
+"language.dialog.current-auto": "<#7b8aa0>現在：</#7b8aa0> <white><language></white> <#7b8aa0>（自動）</#7b8aa0>"
+"language.dialog.auto": "<#7dd3fc>🌐 自動</#7dd3fc> <#7b8aa0>（Minecraftに合わせる）</#7b8aa0>"
+"language.dialog.auto-selected": "<#6dd3a0>✔</#6dd3a0> <#7dd3fc>自動</#7dd3fc> <#7b8aa0>（Minecraftに合わせる）</#7b8aa0>"
+"language.dialog.entry": "<white><name></white> <#7b8aa0><code></#7b8aa0>"
+"language.dialog.entry-selected": "<#6dd3a0>✔</#6dd3a0> <white><bold><name></bold></white> <#7b8aa0><code></#7b8aa0>"
+"language.dialog.tooltip": "<#7b8aa0>翻訳：</#7b8aa0> <white><translator></white>"
+"database.backup.usage": "<#f4d35e><bold>/admin database backup</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin database backup [create] [name]</#93c5fd> <#7b8aa0>- 全プレイヤーデータを今すぐバックアップ</#7b8aa0><newline> <#93c5fd>/admin database backup list</#93c5fd> <#7b8aa0>- 保存済みのバックアップ</#7b8aa0><newline> <#93c5fd>/admin database backup info <name></#93c5fd> <#7b8aa0>- バックアップの中身</#7b8aa0><newline> <#93c5fd>/admin database backup load <name> confirm</#93c5fd> <#7b8aa0>- 全プレイヤーデータをバックアップで置き換え</#7b8aa0><newline> <#93c5fd>/admin database backup delete <name> confirm</#93c5fd> <#7b8aa0>- バックアップを削除</#7b8aa0>"
+"database.backup.invalid-name": "<#f95738>バックアップ名には英数字・ドット・ハイフン・アンダースコアのみ使えます（48文字まで）。</#f95738>"
+"database.backup.exists": "<#f95738><white><name></white> という名前のバックアップは既にあります。</#f95738>"
+"database.backup.busy": "<#f4d35e>バックアップの作成または読み込み中です。少し待ってから再試行してください。</#f4d35e>"
+"database.backup.creating": "<#7dd3fc>全プレイヤーデータを <white><name></white> としてバックアップ中...</#7dd3fc>"
+"database.backup.created": "<#6dd3a0>バックアップ <white><name></white> を保存しました：<white><profiles></white> 件のプロフィール、<white><size></white>。</#6dd3a0>"
+"database.backup.failed": "<#f95738>バックアップに失敗しました：<white><error></white></#f95738>"
+"database.backup.list-empty": "<#7b8aa0>まだバックアップはありません。/admin database backup で作成できます。</#7b8aa0>"
+"database.backup.list-header": "<#f4d35e><bold>データベースのバックアップ</bold></#f4d35e> <#7b8aa0>（<count> 件、新しい順・クリックで詳細）</#7b8aa0>"
+"database.backup.list-entry": " <click:run_command:'/admin database backup info <name>'><#93c5fd><name></#93c5fd></click> <#7b8aa0>· <date> · <profiles> 件 · <size></#7b8aa0>"
+"database.backup.info": "<#f4d35e><bold>バックアップ <name></bold></#f4d35e><newline> <#7b8aa0>作成：</#7b8aa0> <white><date></white> <#7b8aa0>作成者</#7b8aa0> <white><by></white><newline> <#7b8aa0>元のストレージ：</#7b8aa0> <white><storage></white><newline> <#7b8aa0>プロフィール：</#7b8aa0> <white><profiles></white> <#7b8aa0>· サイズ：</#7b8aa0> <white><size></white><newline> <#7b8aa0>その他の内容：</#7b8aa0> <white><files></white><newline> <click:suggest_command:'/admin database backup load <name> confirm'><#f4d35e>[このバックアップを読み込む]</#f4d35e></click>"
+"database.backup.not-found": "<#f95738><white><name></white> という名前のバックアップはありません。/admin database backup list を確認してください。</#f95738>"
+"database.backup.load-confirm": "<#f95738><bold>すべての</bold>プレイヤーデータ（プロフィール・ランク・処罰・パルクール記録）をバックアップ <white><name></white> で置き換えます。</#f95738> <#cbd5e1>現在のデータは先にバックアップされます。続けるには</#cbd5e1> <click:suggest_command:'/admin database backup load <name> confirm'><white><u>/admin database backup load <name> confirm</u></white></click> <#cbd5e1>を実行してください。</#cbd5e1>"
+"database.backup.loading": "<#7dd3fc>現在のデータを <white><safety></white> として保存し、<white><name></white> を読み込み中...</#7dd3fc>"
+"database.backup.loaded": "<#6dd3a0>バックアップ <white><name></white> を読み込みました：<white><profiles></white> 件のプロフィールを復元。</#6dd3a0> <#7b8aa0>以前のデータは <white><safety></white> に保存されています。</#7b8aa0>"
+"database.backup.load-failed": "<#f95738>バックアップの読み込みに失敗しました：<white><error></white></#f95738> <#7b8aa0>復元の開始前なら何も変更されていません。コンソールを確認してください。</#7b8aa0>"
+"database.backup.delete-confirm": "<#f95738>バックアップ <white><name></white> を完全に削除しますか？</#f95738> <#cbd5e1>確認するには</#cbd5e1> <click:suggest_command:'/admin database backup delete <name> confirm'><white><u>/admin database backup delete <name> confirm</u></white></click> <#cbd5e1>を実行してください。</#cbd5e1>"
+"database.backup.deleted": "<#6dd3a0>バックアップ <white><name></white> を削除しました。</#6dd3a0>"
+"cosmetics.type.join-effect.name": "<#a78bfa>参加エフェクト</#a78bfa>"
+"cosmetics.type.join-effect.lore": "<#9db4c0>サーバーに参加したとき周りに表示されます。</#9db4c0>"
+"database.clear.dialog.title": "<#f95738><bold>🗑 プレイヤーデータの削除</bold></#f95738>"
+"database.clear.dialog.select-body": "<#cbd5e1><white><count></white> 人のデータを削除します：</#cbd5e1> <white><players></white><newline><newline><#7b8aa0>削除する項目にチェックを入れ、「次へ」で確認します。</#7b8aa0>"
+"database.clear.dialog.next": "<#f4d35e><bold>次へ ▶</bold></#f4d35e>"
+"database.clear.dialog.cancel": "<#cbd5e1>キャンセル</#cbd5e1>"
+"database.clear.dialog.nothing": "<#f4d35e>削除する項目を1つ以上選んでください。</#f4d35e>"
+"database.clear.dialog.confirm-title": "<#f95738><bold>⚠ 本当に削除しますか？</bold></#f95738>"
+"database.clear.dialog.confirm-body": "<#cbd5e1><white><count></white> 人（<white><players></white>）の次のデータを完全に削除します：</#cbd5e1><newline><newline><parts><newline><newline><#7b8aa0>元に戻せません。先に /admin database backup でバックアップしてください。</#7b8aa0>"
+"database.clear.dialog.confirm": "<#f95738><bold>🗑 削除する</bold></#f95738>"
+"database.clear.dialog.back": "<#cbd5e1>◀ 戻る</#cbd5e1>"
+"database.clear.dialog.done": "<#6dd3a0><white><count></white> 人の <white><parts></white> 種類のデータを削除しました。</#6dd3a0>"
+"database.clear.dialog.part.stats": "試合の統計（キル、デス、勝利、試合数、鉱石...）"
+"database.clear.dialog.part.level": "レベルと経験値"
+"database.clear.dialog.part.lobby": "ロビーゲームの統計とパルクール記録"
+"database.clear.dialog.part.cosmetics": "コスメとポイント"
+"database.clear.dialog.part.settings": "設定・言語・キット"
+"database.clear.dialog.part.names": "名前の履歴"
+"database.clear.dialog.part.ranks": "ランク"
+"database.clear.dialog.part.punishments": "処罰（履歴・ミュート・BAN）"
+"database.clear.dialog.part.everything": "<#f95738><bold>すべて</bold></#f95738>（プロフィールごと削除）"
+"ceremony.intro.title": "<gradient:#f4d35e:#ee964b><bold>試合アワード</bold></gradient>"
+"ceremony.intro.subtitle": "<#cbd5e1>今回いちばん輝いたのは？</#cbd5e1>"
+"ceremony.montage.title": "<#93c5fd><bold>その他のアワード</bold></#93c5fd>"
+"ceremony.montage.subtitle": "<#cbd5e1>特別賞</#cbd5e1>"
+"ceremony.podium.title": "<gradient:#f4d35e:#ee964b><bold>表彰台</bold></gradient>"
+"ceremony.podium.subtitle": "<#cbd5e1>トップ3</#cbd5e1>"
+"ceremony.podium.place.1": "<gradient:#fde047:#f59e0b><bold>🥇 1位</bold></gradient>"
+"ceremony.podium.place.2": "<gradient:#e5e7eb:#94a3b8><bold>🥈 2位</bold></gradient>"
+"ceremony.podium.place.3": "<gradient:#fdba74:#c2410c><bold>🥉 3位</bold></gradient>"
+"ceremony.podium.name": "<white><name></white>"
+"ceremony.award.kills.title": "<#f4d35e><bold>⚔ 最多キル</bold></#f4d35e>"
+"ceremony.award.kills.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> キル</#cbd5e1>"
+"ceremony.award.damage-dealt.title": "<#f4d35e><bold>✦ 最多ダメージ</bold></#f4d35e>"
+"ceremony.award.damage-dealt.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 与ダメ</#cbd5e1>"
+"ceremony.award.diamonds.title": "<#f4d35e><bold>◆ 最多ダイヤ</bold></#f4d35e>"
+"ceremony.award.diamonds.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>ダイヤ <value> 個</#cbd5e1>"
+"ceremony.award.golden-apples.title": "<#f4d35e><bold>🍎 金リンゴ王</bold></#f4d35e>"
+"ceremony.award.golden-apples.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 個食べた</#cbd5e1>"
+"ceremony.award.survived.title": "<#f4d35e><bold>⌛ 最長生存</bold></#f4d35e>"
+"ceremony.award.survived.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 生存</#cbd5e1>"
+"ceremony.award.damage-taken.title": "<#f4d35e><bold>🛡 タンク賞</bold></#f4d35e>"
+"ceremony.award.damage-taken.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 被ダメ</#cbd5e1>"
+"ceremony.award.gold.title": "<#f4d35e><bold>⛏ 金掘り名人</bold></#f4d35e>"
+"ceremony.award.gold.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>金 <value> 個</#cbd5e1>"
+"ceremony.award.assists.title": "<#f4d35e><bold>✚ ベストチームメイト</bold></#f4d35e>"
+"ceremony.award.assists.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> アシスト</#cbd5e1>"
+"ceremony.award.first-blood.title": "<#f4d35e><bold>🩸 ファーストブラッド</bold></#f4d35e>"
+"ceremony.award.first-blood.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>最初のキル</#cbd5e1>"
+"ceremony.award.iron.title": "<#f4d35e><bold>⛏ 鉄鉱夫</bold></#f4d35e>"
+"ceremony.award.iron.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>鉄 <value> 個</#cbd5e1>"
+"ceremony.skip-hint": "<#7b8aa0>スニーク2回でスキップ</#7b8aa0>"
+"ceremony.skip-confirm": "<#f4d35e>もう一度スニークでセレモニーをスキップ</#f4d35e>"
+"ceremony.skipped": "<#7b8aa0>セレモニーから抜けました。</#7b8aa0>"
+"ceremony.spawn-prompt": "<prefix><#cbd5e1>プレイありがとう！<click:run_command:'/spawn'><hover:show_text:'/spawn'><white><u>/spawn</u></white></hover></click> でスポーンに戻れます。</#cbd5e1>"
+"podium.usage": "<#f4d35e><bold>/admin podium</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin podium set <1|2|3|stage|view></#93c5fd> <#7b8aa0>- 立った場所に設定（表彰台・アワードステージ・観覧位置）</#7b8aa0><newline> <#93c5fd>/admin podium info</#93c5fd> <#7b8aa0>- 保存した位置を表示</#7b8aa0><newline> <#93c5fd>/admin podium test</#93c5fd> <#7b8aa0>- オンラインのプレイヤーでセレモニーをプレビュー</#7b8aa0><newline> <#93c5fd>/admin podium skip</#93c5fd> <#7b8aa0>- 進行中のセレモニーを全員分終了</#7b8aa0><newline> <#93c5fd>/admin podium clear</#93c5fd> <#7b8aa0>- 表彰台のNPCとテキストを消す</#7b8aa0>"
+"podium.set": "<#6dd3a0>表彰台の <white><spot></white> を今いる場所（と向き）に設定しました。</#6dd3a0>"
+"podium.spot.1": "1位"
+"podium.spot.2": "2位"
+"podium.spot.3": "3位"
+"podium.spot.stage": "アワードステージ"
+"podium.spot.view": "観覧位置"
+"podium.info-line": " <#93c5fd><spot></#93c5fd> <#7b8aa0>·</#7b8aa0> <white><where></white>"
+"podium.not-set": "<#7b8aa0>未設定</#7b8aa0>"
+"podium.fallback-note": "<#f4d35e>表彰台がすべて設定されていないため、ロビーのスポーン前に仮の表彰台を作ります。</#f4d35e>"
+"podium.cleared": "<#6dd3a0>表彰台のNPCとテキストを消しました。</#6dd3a0>"
+"podium.not-running": "<#f4d35e>進行中のセレモニーはありません。</#f4d35e>"
+"podium.skipped": "<#6dd3a0>全員のセレモニーを終了しました。</#6dd3a0>"
+"podium.test-busy": "<#f95738>ロビーでセレモニーが進行していないときのみ使えます。</#f95738>"
+"podium.test-started": "<#6dd3a0>エンドセレモニーのプレビューを再生中...</#6dd3a0>"
+"podium.no-lobby": "<#f95738>先にロビーのスポーンを設定してください（/admin setlobby）。</#f95738>"
+"admin.desc.podium": "- 試合後の表彰台とセレモニー"
+"match-exp-earned": "<#f4d35e>この試合で <white><experience></white> 経験値を獲得しました。</#f4d35e>"
+"match-points-earned": "<#facc15>この試合で <white><points></white> ポイントを獲得しました。</#facc15>"
+"scenarios.gui.none": "<#7b8aa0><bold>シナリオなし</bold></#7b8aa0>"
+"scenarios.gui.none-lore": "<#7b8aa0>この試合は通常のUHCです。有効なシナリオはありません。</#7b8aa0>"
+"scenarios.gui.filter.all": "<#93c5fd><bold>表示：すべてのシナリオ</bold></#93c5fd>"
+"scenarios.gui.filter.active": "<#6dd3a0><bold>表示：有効のみ</bold></#6dd3a0>"
+"scenarios.gui.filter.lore": "<#7b8aa0>クリックで「すべて」と「有効のみ」を切り替えます。</#7b8aa0>"
+"hub.no-return": "<#f4d35e>戻れるサーバーがありません。ロビーのスポーンへは <white>/spawn</white> を使ってください。</#f4d35e>"
+"item.empty": "<#f95738>見せたいアイテムを手に持ってください。</#f95738>"
+"list-vanished-tag": " <#7b8aa0><i>(透明)</i></#7b8aa0>"
+"sudden-death-box": "<prefix><#faf0ca><players> 人が <size>×<size> の岩盤ボックスに転送された。</#faf0ca>"
+"config-menu-label-game-sudden-death-box-size": "サドンデスの岩盤ボックスの広さ"
+"config-menu-desc-game-sudden-death-box-size": "試合時間が尽きると、生存者全員がこの広さの岩盤ボックスに閉じ込められ、最後の一人になるまで戦う。"
+"admin.desc.debug": "- デバッグ表示（中心マーカー）"
+"debug.usage": "<#f95738>使い方: /admin debug center_waypoint</#f95738>"
+"debug.center-waypoint": "<prefix><#6dd3a0>中心マーカーをこの場所に <seconds> 秒間表示します。</#6dd3a0>"
+"ceremony.crown.name": "<#f4d35e><bold>チャンピオンの王冠</bold></#f4d35e>"
+"ceremony.crown.lore": "<#faf0ca>前回の試合の勝者の証。</#faf0ca>"
+"ceremony.crown.given": "<prefix><#f4d35e>👑 優勝おめでとう！次の試合まで王冠をかぶっていよう。</#f4d35e>"
