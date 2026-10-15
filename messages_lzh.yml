@@ -142,7 +142,7 @@
     "level": "<#f4d35e><bold>/uhc level</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/uhc level [戲者]</#93c5fd> <#7b8aa0>- 觀等、經驗與進階之度</#7b8aa0>"
     "experience": "<#f4d35e><bold>/admin experience</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin experience <戲者|名式> set <數></#93c5fd> <#7b8aa0>- 定總經驗</#7b8aa0><newline> <#93c5fd>/admin experience <戲者|名式> add|remove <數></#93c5fd> <#7b8aa0>- 增減經驗</#7b8aa0><newline> <#93c5fd>/admin experience <戲者|名式> setlevel <等></#93c5fd> <#7b8aa0>- 逕定其等</#7b8aa0><newline> <#64748b>經驗百 = 一等 · * 代任意字，如 HippoDev_*</#64748b>"
     "revive": "<#f4d35e><bold>/revive</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/revive <戲者></#93c5fd> <#7b8aa0>- 復被汰之戲者</#7b8aa0>"
-    "lobbygame": "<#f4d35e><bold>/admin lobbygame</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin lobbygame start <game></#93c5fd> <#7b8aa0>- math、unscramble、type、trivia、number、reaction、treasure、potato</#7b8aa0><newline> <#93c5fd>/admin lobbygame stop</#93c5fd> <#7b8aa0>- 止方行之戲</#7b8aa0><newline> <#93c5fd>/admin lobbygame word <add|remove|list> [字]</#93c5fd> <#7b8aa0>- 修重組之字表</#7b8aa0><newline> <#93c5fd>/admin lobbygame parkour <setstart|addcheckpoint|removecheckpoint|setfinish|clear|resettimes|top></#93c5fd> <#7b8aa0>- 設跑酷</#7b8aa0><newline> <#93c5fd>/admin lobbygame range <setlane|removelane|addstray|removestray|addtarget|removetarget|area1|area2|cleararea|list|top> [道]</#93c5fd> <#7b8aa0>- 設射圃</#7b8aa0><newline> <#93c5fd>/admin lobbygame spleef|tntrun <pos1|pos2|save|setjoin|info|start|stop|clear></#93c5fd> <#7b8aa0>- 設掘地、TNT 疾走</#7b8aa0>"
+    "lobbygame": "<#f4d35e><bold>/admin lobbygame</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin lobbygame start <game></#93c5fd> <#7b8aa0>- math、unscramble、type、trivia、number、reaction、treasure、potato</#7b8aa0><newline> <#93c5fd>/admin lobbygame stop</#93c5fd> <#7b8aa0>- 止方行之戲</#7b8aa0><newline> <#93c5fd>/admin lobbygame word <add|remove|list> [字]</#93c5fd> <#7b8aa0>- 修重組之字表</#7b8aa0><newline> <#93c5fd>/admin lobbygame parkour <setstart|addcheckpoint|removecheckpoint|setfinish|clear|resettimes|top></#93c5fd> <#7b8aa0>- 設跑酷</#7b8aa0><newline> <#93c5fd>/admin lobbygame range <setlane|removelane|addstray|removestray|addtarget|removetarget|area1|area2|cleararea|list|top> [道]</#93c5fd> <#7b8aa0>- 設射圃</#7b8aa0><newline> <#93c5fd>/admin lobbygame spleef|tntrun <pos1|pos2|save|setjoin|info|start|stop|clear></#93c5fd> <#7b8aa0>- 設掘地、灹藥疾走</#7b8aa0>"
     "pm": "<#f4d35e><bold>/msg</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/msg <戲者> <言></#93c5fd> <#7b8aa0>- 致私書</#7b8aa0>"
     "reply": "<#f4d35e><bold>/r</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/r <言></#93c5fd> <#7b8aa0>- 覆前之私書</#7b8aa0>"
     "profile": "<#f4d35e><bold>/profile</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/profile [戲者]</#93c5fd> <#7b8aa0>- 觀其錄</#7b8aa0><newline> <#93c5fd>/profile list [頁]</#93c5fd> <#7b8aa0>- 列已存之錄</#7b8aa0>"
@@ -315,9 +315,9 @@
     "experience": "<#86efac><bold>經驗</bold></#86efac>"
     "kd": "<#fda4af><bold>KD</bold></#fda4af>"
     "killstreak": "<#fb7185><bold>連斬之最</bold></#fb7185>"
-    "diamonds": "<#7dd3fc><bold>鑽</bold></#7dd3fc>"
+    "diamonds": "<#7dd3fc><bold>金剛石</bold></#7dd3fc>"
     "gold": "<#f4d35e><bold>金</bold></#f4d35e>"
-    "apples": "<#facc15><bold>金蘋果</bold></#facc15>"
+    "apples": "<#facc15><bold>金林檎</bold></#facc15>"
     "lobby": "<#facc15><bold>大廳之戲</bold></#facc15>"
     "range": "<#facc15><bold>射圃</bold></#facc15>"
   "page": "<#f4d35e><bold>第 <page>/<max_page> 頁</bold></#f4d35e>"
@@ -361,7 +361,7 @@
         "2": "<#7b8aa0>第五列為快捷之欄。</#7b8aa0>"
     "offhand":
       "label": "<#9db4c0><bold>副手</bold></#9db4c0>"
-      "lore": "<#7b8aa0>可預觀盾、不死圖騰等副手之物。</#7b8aa0>"
+      "lore": "<#7b8aa0>可預觀盾、保命符等副手之物。</#7b8aa0>"
   "default":
     "description":
       - "<#cbd5e1>主事於戲中修之。</#cbd5e1>"
@@ -497,15 +497,15 @@
         "no":
           "mobs": "禁群怪"
           "suspicious":
-            "stew": "禁可疑之羹"
-          "enchanting": "禁附魔"
+            "stew": "禁謎羹"
+          "enchanting": "禁淬靈"
           "brewing": "禁釀"
-          "grindstone": "禁砂輪"
+          "grindstone": "禁礪"
         "mob":
           "rate":
             "multiplier": "群怪生之倍"
         "apple":
-          "rate": "蘋果墜之倍"
+          "rate": "林檎墜之倍"
         "mobs":
           "attack": "群怪主攻"
         "allow":
@@ -535,13 +535,13 @@
             "seconds": "局之最長秒"
         "ender":
           "pearl":
-            "damage": "終界珍珠之傷"
+            "damage": "終眇玥之傷"
         "shears":
-          "enabled": "剪落金蘋果"
-          "rate": "剪落金蘋果之率"
+          "enabled": "鉸落金林檎"
+          "rate": "鉸落金林檎之率"
         "enchanted":
           "golden":
-            "apples": "附魔金蘋果"
+            "apples": "淬靈金林檎"
         "golden":
           "heads": "金首"
         "player":
@@ -612,19 +612,19 @@
                   "game": "局中伍語"
     "desc":
       "game":
-        "antiburn": "局始之後，不受火焰燃燒之傷（岩漿猶傷之）。"
+        "antiburn": "局始之後，不受火焰燃燒之傷（熔石猶傷之）。"
         "no":
           "mobs": "局中不生諸敵怪。"
           "suspicious":
-            "stew": "去可疑之羹於戲中。"
-          "enchanting": "禁戲者用附魔之臺。"
+            "stew": "去謎羹於戲中。"
+          "enchanting": "禁戲者用淬靈案。"
           "brewing": "禁戲者釀藥。"
-          "grindstone": "禁戲者用砂輪。"
+          "grindstone": "禁戲者用礪。"
         "mob":
           "rate":
             "multiplier": "自然生怪之倍，1.0 = 如常。"
         "apple":
-          "rate": "葉朽墜金蘋果之倍，1.0 = 如常。"
+          "rate": "葉朽墜金林檎之倍，1.0 = 如常。"
         "mobs":
           "attack": "敵怪之鎖攻戲者與否。"
         "allow":
@@ -654,13 +654,13 @@
             "seconds": "局入驟死前之最長時；為 0 則無限。"
         "ender":
           "pearl":
-            "damage": "投終界珍珠落地，傷之與否。"
+            "damage": "投終眇玥落地，傷之與否。"
         "shears":
-          "enabled": "以剪剪羊毛，或墜金蘋果與否。"
-          "rate": "以剪右擊樹葉，墜金蘋果之率（0至100%）。"
+          "enabled": "以鉸剪羊毛，或墜金林檎與否。"
+          "rate": "以鉸右擊樹葉，墜金林檎之率（0至100%）。"
         "enchanted":
           "golden":
-            "apples": "附魔金蘋果可得而用與否。"
+            "apples": "淬靈金林檎可得而用與否。"
         "golden":
           "heads": "許以戲者之首與金錠合成金首。"
         "player":
@@ -690,7 +690,7 @@
             "isolated": "局中觀者之言，唯觀者與執事可見，以防被汰者洩其所在。"
         "disable":
           "natural":
-            "regen": "止飽所致之自然復血，戲者唯恃金蘋果以復。"
+            "regen": "止飽所致之自然復血，戲者唯恃金林檎以復。"
         "kick":
           "on":
             "death": "戲者被汰，立逐出伺服。"
@@ -836,9 +836,9 @@
   "games":
     "lore": "<#7b8aa0>局數：</#7b8aa0> <white><games></white>"
   "list":
-    "title": "<#6dd3a0><bold>所識之戲者</bold></#6dd3a0> <#7b8aa0>(凡 <count> 人)</#7b8aa0> <#334155>|</#334155> <#7b8aa0>第 <white><page></white>/<white><pages></white> 頁</#7b8aa0>"
+    "title": "<#6dd3a0><bold>所識之戲者</bold></#6dd3a0> <#7b8aa0>（凡 <count> 人）</#7b8aa0> <#334155>|</#334155> <#7b8aa0>第 <white><page></white>/<white><pages></white> 頁</#7b8aa0>"
     "entry":
-      "text": "<#334155><index>.</#334155> <white><player></white> <#334155>|</#334155> <#f4d35e><wins>勝</#f4d35e> <#fca5a5><kills>斬</#fca5a5> <#7b8aa0><deaths>歿</#7b8aa0> <#a3e635>等<level></#a3e635> <#7b8aa0>(<games> 局)</#7b8aa0>"
+      "text": "<#334155><index>.</#334155> <white><player></white> <#334155>|</#334155> <#f4d35e><wins>勝</#f4d35e> <#fca5a5><kills>斬</#fca5a5> <#7b8aa0><deaths>歿</#7b8aa0> <#a3e635>等<level></#a3e635> <#7b8aa0>（<games> 局）</#7b8aa0>"
       "hover": "<#cbd5e1>擊之以啟 <white><player></white> 之錄。</#cbd5e1>"
     "next": "<#7b8aa0>» 擊之以觀第 <white><next></white> 頁</#7b8aa0>"
     "empty": "<#f4d35e>今無戲者之錄。</#f4d35e>"
@@ -877,21 +877,21 @@
   "compact":
     "golden":
       "apple":
-        "name": "<#f4d35e><bold>壓金蘋果</bold></#f4d35e>"
+        "name": "<#f4d35e><bold>壓金林檎</bold></#f4d35e>"
         "lore":
           "1": "<#cbd5e1>以金塊為之。</#cbd5e1>"
-          "2": "<#7b8aa0>其復與吸收之效愈強。</#7b8aa0>"
+          "2": "<#7b8aa0>其復甦與消災之效愈強。</#7b8aa0>"
   "golden":
     "head":
       "name": "<#f4d35e><bold>金首</bold></#f4d35e>"
       "lore":
         "1": "<#cbd5e1>右擊以食之。</#cbd5e1>"
-        "2": "<#7b8aa0>予復血及額外吸收之效。</#7b8aa0>"
+        "2": "<#7b8aa0>予復血及額外消災之效。</#7b8aa0>"
 "join":
-  "message": "<#7b8aa0>[</#7b8aa0><#6dd3a0>+</#6dd3a0><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>入伺服。</#cbd5e1> <#6b7280>(<online> 人在)</#6b7280>"
+  "message": "<#7b8aa0>[</#7b8aa0><#6dd3a0>+</#6dd3a0><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>入伺服。</#cbd5e1> <#6b7280>（<online> 人在）</#6b7280>"
   "locked": "<#f4d35e>局已方行，汝以觀者入。</#f4d35e>"
 "quit":
-  "message": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>去伺服。</#cbd5e1> <#6b7280>(<online> 人在)</#6b7280>"
+  "message": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>去伺服。</#cbd5e1> <#6b7280>（<online> 人在）</#6b7280>"
 "world":
   "seed":
     "no-world": "<#f95738>今無賽界可取其種。</#f95738>"
@@ -987,23 +987,23 @@
   "waypoint":
     "name": "<gradient:#f4d35e:#ee964b><bold>中</bold></gradient>"
 "portals":
-  "disabled": "<#f95738>此伺服禁下界與終界之傳。</#f95738>"
+  "disabled": "<#f95738>此伺服禁焱界與終界之傳。</#f95738>"
 "potions":
   "disabled": "<#f95738>此局禁藥。</#f95738>"
 "suspicious":
   "stew":
-    "disabled": "<#f95738>此局禁可疑之羹。</#f95738>"
-"enchanted-golden-apple-disabled": "<#f95738>此局禁附魔金蘋果。</#f95738>"
+    "disabled": "<#f95738>此局禁謎羹。</#f95738>"
+"enchanted-golden-apple-disabled": "<#f95738>此局禁淬靈金林檎。</#f95738>"
 "golden-head-name": "<#f4d35e><bold>金首</bold></#f4d35e>"
 "recipe-golden-head-name": "<#f4d35e><bold>金首</bold></#f4d35e>"
 "recipe-golden-head-lore-1": "<#cbd5e1>右擊以食之。</#cbd5e1>"
-"recipe-golden-head-lore-2": "<#7b8aa0>予復血及額外吸收之效。</#7b8aa0>"
+"recipe-golden-head-lore-2": "<#7b8aa0>予復血及額外消災之效。</#7b8aa0>"
 "enchanting":
-  "disabled": "<#f95738>此局禁附魔。</#f95738>"
+  "disabled": "<#f95738>此局禁淬靈。</#f95738>"
 "brewing":
   "disabled": "<#f95738>此局禁釀。</#f95738>"
 "grindstone":
-  "disabled": "<#f95738>此局禁砂輪。</#f95738>"
+  "disabled": "<#f95738>此局禁礪。</#f95738>"
 "staff-mode":
   "enabled": "<#6dd3a0>執事之態已啟，汝今隱形。</#6dd3a0>"
   "disabled": "<#f4d35e>執事之態已閉。</#f4d35e>"
@@ -1056,7 +1056,7 @@
       "lobby": "<#93c5fd>大廳</#93c5fd>"
       "staff": "<#c4b5fd>執事</#c4b5fd>"
     "lore-ping": "<#7b8aa0>遲：</#7b8aa0> <white><ping>ms</white>"
-    "lore-match": "<#7b8aa0>此局：</#7b8aa0> <white><kills></white> <#7b8aa0>斬 ·</#7b8aa0> <#7dd3fc><diamonds></#7dd3fc> <#7b8aa0>鑽 ·</#7b8aa0> <#f4d35e><gold></#f4d35e> <#7b8aa0>金</#7b8aa0>"
+    "lore-match": "<#7b8aa0>此局：</#7b8aa0> <white><kills></white> <#7b8aa0>斬 ·</#7b8aa0> <#7dd3fc><diamonds></#7dd3fc> <#7b8aa0>金剛石 ·</#7b8aa0> <#f4d35e><gold></#f4d35e> <#7b8aa0>金</#7b8aa0>"
   "usage": "<#f4d35e><bold>/staff</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/staff</#93c5fd> <#7b8aa0>- 易執事之態</#7b8aa0><newline> <#93c5fd>/staff tp <戲者></#93c5fd> <#7b8aa0>- 隱形傳至戲者</#7b8aa0><newline> <#93c5fd>/staff list</#93c5fd> <#7b8aa0>- 在之執事</#7b8aa0><newline> <#93c5fd>/staff help</#93c5fd> <#7b8aa0>- 汝可用之執事諸具</#7b8aa0>"
   "list":
     "header": "<#93c5fd><bold>在之執事</bold></#93c5fd> <#7b8aa0>（<count>）</#7b8aa0>"
@@ -1066,10 +1066,10 @@
     "state-vanished": "<#6dd3a0>執事之態・隱形</#6dd3a0>"
     "state-visible": "<#f4d35e>執事之態・可見</#f4d35e>"
 "nether-close":
-  "warning": "<prefix><#f97316>下界將於 <white><time></white> 後閉，宜速出！</#f97316>"
-  "closed": "<prefix><#f95738><bold>下界今閉矣。</bold></#f95738> <#cbd5e1>其中之人，已移至主界。</#cbd5e1>"
-  "moved": "<#f4d35e>下界既閉，汝已移至主界。</#f4d35e>"
-  "portal-blocked": "<#f95738>此局所餘之時，下界皆閉。</#f95738>"
+  "warning": "<prefix><#f97316>焱界將於 <white><time></white> 後閉，宜速出！</#f97316>"
+  "closed": "<prefix><#f95738><bold>焱界今閉矣。</bold></#f95738> <#cbd5e1>其中之人，已移至主界。</#cbd5e1>"
+  "moved": "<#f4d35e>焱界既閉，汝已移至主界。</#f4d35e>"
+  "portal-blocked": "<#f95738>此局所餘之時，焱界皆閉。</#f95738>"
 "meetup":
   "start": "<prefix><#fb7185><bold>決戰！</bold></#fb7185> <#cbd5e1>眾 <white><players></white> 人皆已傳至中央。界：<white><size>×<size></white>。</#cbd5e1>"
   "arena-loading": "<prefix><#fb7185><bold>決戰！</bold></#fb7185> <#cbd5e1>鬥場 <white><arena></white> 猶在營建，成則即送爾入。</#cbd5e1>"
@@ -1083,17 +1083,17 @@
   "category":
     "damage-dealt": "所予之傷"
     "damage-taken": "所受之傷"
-    "diamonds": "所採之鑽"
+    "diamonds": "所採之金剛石"
     "gold": "所採之金"
-    "golden-apples": "所食金蘋果"
+    "golden-apples": "所食金林檎"
 "tab-layout":
-  "your-team": "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>(汝伍 · <alive>/<count>)</#7b8aa0>"
+  "your-team": "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>（汝伍 · <alive>/<count>）</#7b8aa0>"
   "team": "<<color>><bold>▌ <team></bold></<color>> <#7b8aa0>(<alive>/<count>)</#7b8aa0>"
   "players": "<#f4d35e><bold>▌ 戲者</bold></#f4d35e> <#7b8aa0>(<count>)</#7b8aa0>"
   "spectators": "<#9ca3af><bold>▌ 觀者</bold></#9ca3af> <#7b8aa0>(<count>)</#7b8aa0>"
   "player": "<rank><<color>><name></<color>>"
   "player-dead": "<rank><#6b7280><st><name></st></#6b7280>"
-  "player-offline": "<rank><#6b7280><name> <i>(去)</i></#6b7280>"
+  "player-offline": "<rank><#6b7280><name> <i>（去）</i></#6b7280>"
   "spectator": "<rank><#9ca3af><name></#9ca3af>"
   "staff": "<rank><#c4b5fd><name></#c4b5fd> <#7b8aa0>[執事]</#7b8aa0>"
   "health": " <#f95738><value></#f95738>"
@@ -1108,9 +1108,9 @@
     "kills": "斬"
     "damage-dealt": "予傷"
     "damage-taken": "受傷"
-    "diamonds": "鑽"
+    "diamonds": "金剛石"
     "gold": "金"
-    "golden-apples": "金蘋果"
+    "golden-apples": "金林檎"
     "alive": "存"
     "teams": "伍"
     "time": "時"
@@ -1139,9 +1139,9 @@
   "combat": "<#f95738>⚔ 斬</#f95738> <white><kills></white>   <#9ca3af>☠ 歿</#9ca3af> <white><deaths></white>   <#7dd3fc>✚ 助</#7dd3fc> <white><assists></white>   <#fda4af>K/D</#fda4af> <white><kd></white>"
   "games": "<#f4d35e>★ 勝</#f4d35e> <white><wins></white>   <#a7f3d0>局數</#a7f3d0> <white><games></white>   <#86efac>勝率</#86efac> <white><winrate></white>"
   "streak": "<#fb7185>🔥 連斬之最</#fb7185> <white><best></white>   <#7b8aa0>今</#7b8aa0> <white><current></white>"
-  "items": "<#f4d35e>金蘋果</#f4d35e> <white><golden_apples></white>   <#f4d35e>金首</#f4d35e> <white><golden_heads></white>   <#93c5fd>發矢</#93c5fd> <white><bow_shots></white>"
-  "ores": "<#7dd3fc>鑽</#7dd3fc> <white><diamonds></white>  <#f4d35e>金</#f4d35e> <white><gold></white>  <#cbd5e1>鐵</#cbd5e1> <white><iron></white>  <#6dd3a0>綠寶</#6dd3a0> <white><emeralds></white>  <#a8a29e>遠古殘骸</#a8a29e> <white><ancient_debris></white>  <#c4b5fd>生怪磚</#c4b5fd> <white><spawners></white>"
-  "lobby": "<#facc15>🎉 大廳之戲勝</#facc15> <white><lobby_wins></white>   <#7b8aa0>言戲</#7b8aa0> <white><chat_wins></white>  <#7b8aa0>寶</#7b8aa0> <white><treasures></white>  <#7b8aa0>燙手山芋</#7b8aa0> <white><potato_wins></white>  <#7b8aa0>跑酷之畢</#7b8aa0> <white><parkour></white>  <#7b8aa0>射圃之最</#7b8aa0> <white><range></white>  <#7b8aa0>掘地</#7b8aa0> <white><spleef_wins></white>  <#7b8aa0>TNT 疾走</#7b8aa0> <white><tntrun_wins></white>"
+  "items": "<#f4d35e>金林檎</#f4d35e> <white><golden_apples></white>   <#f4d35e>金首</#f4d35e> <white><golden_heads></white>   <#93c5fd>發矢</#93c5fd> <white><bow_shots></white>"
+  "ores": "<#7dd3fc>金剛石</#7dd3fc> <white><diamonds></white>  <#f4d35e>金</#f4d35e> <white><gold></white>  <#cbd5e1>鐵</#cbd5e1> <white><iron></white>  <#6dd3a0>祖母綠</#6dd3a0> <white><emeralds></white>  <#a8a29e>上古之骸</#a8a29e> <white><ancient_debris></white>  <#c4b5fd>孳衍籠</#c4b5fd> <white><spawners></white>"
+  "lobby": "<#facc15>🎉 大廳之戲勝</#facc15> <white><lobby_wins></white>   <#7b8aa0>言戲</#7b8aa0> <white><chat_wins></white>  <#7b8aa0>寶</#7b8aa0> <white><treasures></white>  <#7b8aa0>燙手山芋</#7b8aa0> <white><potato_wins></white>  <#7b8aa0>跑酷之畢</#7b8aa0> <white><parkour></white>  <#7b8aa0>射圃之最</#7b8aa0> <white><range></white>  <#7b8aa0>掘地</#7b8aa0> <white><spleef_wins></white>  <#7b8aa0>灹藥疾走</#7b8aa0> <white><tntrun_wins></white>"
   "rank": "<#7b8aa0>榜：</#7b8aa0> <#f4d35e>勝 <wins_rank></#f4d35e>  <#f95738>斬 <kills_rank></#f95738>  <#c4b5fd>等 <level_rank></#c4b5fd>"
   "button":
     "leaderboard": "<#fbbf24>🏆 榜</#fbbf24>"
@@ -1240,7 +1240,7 @@
   "exp":
     "earned": "<#f4d35e>汝於此局得經驗 <white><experience></white>。</#f4d35e>"
   "rejoined": "<#6dd3a0>汝已復入方行之局。</#6dd3a0> <#7dd3fc>重連餘時：</#7dd3fc> <white><time></white>"
-  "disconnected": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>去局，須於</#cbd5e1> <white><minutes> 分</white> <#6b7280>(餘 <time>)</#6b7280> <#cbd5e1>內復至</#cbd5e1>"
+  "disconnected": "<#7b8aa0>[</#7b8aa0><#f95738>-</#f95738><#7b8aa0>]</#7b8aa0> <#f4d35e><player></#f4d35e> <#cbd5e1>去局，須於</#cbd5e1> <white><minutes> 分</white> <#6b7280>（餘 <time>）</#6b7280> <#cbd5e1>內復至</#cbd5e1>"
   "draw": "<prefix><#f95738>此局無勝者。</#f95738>"
   "summary":
     "header": "<#334155><st>                                        </st></#334155>"
@@ -1458,7 +1458,7 @@
     "description": "墜虛空而歿。"
   "hot_feet":
     "title": "履炎"
-    "description": "焚於岩漿而歿。"
+    "description": "焚於熔石而歿。"
   "crispy":
     "title": "焦"
     "description": "焚而歿。"
@@ -1476,7 +1476,7 @@
     "description": "血餘二心以下而勝。"
   "totem_saved":
     "title": "死裡逃生"
-    "description": "以不死圖騰起於將歿之際。"
+    "description": "以保命符起於將歿之際。"
   "lobby_first_win":
     "title": "大廳之魁"
     "description": "勝汝之首局大廳之戲。"
@@ -1516,14 +1516,14 @@
     "start": "<prefix><#f4d35e>終決始矣；若無先勝者，局將於 <seconds> 秒後終。</#f4d35e>"
 "sudden":
   "death":
-    "start": "<prefix><#f95738>驟死之戰起！存者皆囚於基岩之箱，戰至一人而止。</#f95738>"
+    "start": "<prefix><#f95738>驟死之戰起！存者皆囚於基石之箱，戰至一人而止。</#f95738>"
     "finish": "<prefix><#f4d35e><player></#f4d35e> <#f95738>以驟死勝。</#f95738>"
 "eliminated":
   "text": "<#f95738>汝見汰矣。</#f95738>"
   "announcement": "<prefix><#f95738><player></#f95738> <#faf0ca>見汰。</#faf0ca>"
 "mannequin":
   "name": "<#fca5a5>已去</#fca5a5> <dark_gray>-</dark_gray> <white><player></white>"
-  "tab": "<gray><strikethrough><player></strikethrough></gray> <#fca5a5>(已去)</#fca5a5>"
+  "tab": "<gray><strikethrough><player></strikethrough></gray> <#fca5a5>（已去）</#fca5a5>"
 "kick":
   "on":
     "death":
@@ -1706,7 +1706,7 @@
   "disabled": "<#f95738>已閉</#f95738>"
 "team":
   "winner": "<prefix><#6dd3a0><team> 勝此局！</#6dd3a0>"
-  "eliminated": "<prefix><#f95738>☠</#f95738> <team> <#faf0ca>全伍盡歿！</#faf0ca> <#7b8aa0>(餘 <white><teams></white> 伍)</#7b8aa0>"
+  "eliminated": "<prefix><#f95738>☠</#f95738> <team> <#faf0ca>全伍盡歿！</#faf0ca> <#7b8aa0>（餘 <white><teams></white> 伍）</#7b8aa0>"
   "title":
     "winner": "<#6dd3a0><bold><team></bold></#6dd3a0>"
   "subtitle":
@@ -2048,14 +2048,14 @@
   "leave-hint": "<#7b8aa0>復用 <white>/practice</white> 以去練場。</#7b8aa0>"
   "game-started": "<#f95738>局已始，練場閉矣。</#f95738>"
   "world-regenerating": "<#f95738>練場之界方重生。</#f95738>"
-  "regen-started": "<#ee964b>練場之界始重生...</#ee964b>"
+  "regen-started": "<#ee964b>練場之界始重生⋯⋯</#ee964b>"
   "regen-done": "<#6dd3a0>練場之界重生已畢。</#6dd3a0>"
   "regen-failed": "<red>練場之界重生不成：舊界不能卸。</red>"
 "scenarios":
-  "enchanting-disabled": "<#f95738>此局禁附魔。"
-  "grindstone-disabled": "<#f95738>此局禁砂輪。"
-  "enchanting-table-blocked": "<#f95738>此局不得製附魔之臺。"
-  "hastey-grindstone-blocked": "<#f95738>此局不得以砂輪施於 Hastey 之具。"
+  "enchanting-disabled": "<#f95738>此局禁淬靈。"
+  "grindstone-disabled": "<#f95738>此局禁礪。"
+  "enchanting-table-blocked": "<#f95738>此局不得製淬靈案。"
+  "hastey-grindstone-blocked": "<#f95738>此局不得以礪施於 Hastey 之具。"
   "web-limit-reached": "<#f95738>此局汝之蛛網已至其限。"
   "dnd-combat-locked": "<#f95738>汝方與人交戰。"
   "backpack":
@@ -2068,7 +2068,7 @@
   "extra-inventory-not-active": "<#f95738>唯局方行之時，可用餘格。"
   "extra-inventory-disabled": "<#f95738>「餘格」之情境今未啟。"
   "nineslot-restricted": "<#f95738>此局汝唯可用快捷之欄（九格）。"
-  "benchblitz-blocked": "<#f95738>此局不得更得工作臺。"
+  "benchblitz-blocked": "<#f95738>此局不得更得製物案。"
   "safe-loot-blocked": "<#f95738>唯斬者可啟此箱。"
   "no-clean-protected": "<#6dd3a0>此後 <white><seconds></white> 秒，戲者不能傷汝。"
   "auto-disabled": "<#ee964b>相衝之情境已自閉：<white><scenarios></white></#ee964b>"
@@ -2106,7 +2106,7 @@
       "loot_death": "掠獲／死"
       "ore_modifiers": "礦之倍"
       "resource_restrictions": "物資之限"
-      "enchanting": "附魔"
+      "enchanting": "淬靈"
       "tools_weapons": "具／兵"
       "exp": "經驗"
       "drops": "墜物之倍"
@@ -2116,13 +2116,13 @@
       "game_mode": "戲式"
     "world":
       "nether":
-        "name": "<bold><#f4d35e>下界"
-        "desc": "<gray>許戲者於局中入下界。"
+        "name": "<bold><#f4d35e>焱界"
+        "desc": "<gray>許戲者於局中入焱界。"
       "end":
         "name": "<bold><#f4d35e>終界"
         "desc": "<gray>許戲者於局中入終界。"
     "modifier":
-      "limitations-diamonds": "<bold><#f4d35e>鑽之上限"
+      "limitations-diamonds": "<bold><#f4d35e>金剛石之上限"
       "limitations-gold": "<bold><#f4d35e>金錠之上限"
       "limitations-iron": "<bold><#f4d35e>鐵錠之上限"
       "broadcaster-chance": "<bold><#f4d35e>布告之率 (%)"
@@ -2132,7 +2132,7 @@
       "coronavirus-interval-minutes": "<bold><#f4d35e>間隔（分）"
       "raining-tnt-interval-minutes": "<bold><#f4d35e>間隔（分）"
       "web-limit-count": "<bold><#f4d35e>囊中蛛網之上限"
-      "lucky-leaves-chance": "<bold><#f4d35e>金蘋果之率 (%)"
+      "lucky-leaves-chance": "<bold><#f4d35e>金林檎之率 (%)"
       "nether-enable-time": "<bold><#f4d35e>第幾分開（0 = 不用）"
       "nether-disable-time": "<bold><#f4d35e>第幾分閉（0 = 不用）"
       "end-enable-time": "<bold><#f4d35e>第幾分開（0 = 不用）"
@@ -2158,10 +2158,10 @@
         "desc": "<#6b7280><i>戲者歿則墜金首一。</i>"
       "bleedingsweets":
         "name": "<bold><#f4d35e>血飴"
-        "desc": "<#6b7280><i>戲者歿則墜鑽一、金錠五、矢十六、線一。</i>"
+        "desc": "<#6b7280><i>戲者歿則墜金剛石一、金錠五、矢十六、綫一。</i>"
       "bookception":
         "name": "<bold><#f4d35e>書中書"
-        "desc": "<#6b7280><i>戲者歿則其處現附魔之書一，其效隨機。</i>"
+        "desc": "<#6b7280><i>戲者歿則其處現淬靈書一，其效隨機。</i>"
       "zombies":
         "name": "<bold><#f4d35e>殭屍"
         "desc": "<#6b7280><i>戲者歿則其處生殭屍一。</i>"
@@ -2176,22 +2176,22 @@
         "desc": "<#6b7280><i>採諸礦，所墜三倍之。</i>"
       "double-or-nothing":
         "name": "<bold><#f4d35e>倍或無"
-        "desc": "<#6b7280><i>採鐵、金、鑽之礦：半則倍之，半則一無所得。</i>"
+        "desc": "<#6b7280><i>採鐵、金、金剛石之礦：半則倍之，半則一無所得。</i>"
       "blood-diamonds":
-        "name": "<bold><#f4d35e>血鑽"
-        "desc": "<#6b7280><i>每採鑽礦一，損血半心。</i>"
+        "name": "<bold><#f4d35e>血金剛石"
+        "desc": "<#6b7280><i>每採金剛石礦一，損血半心。</i>"
       "blood-gold":
         "name": "<bold><#f4d35e>血金"
         "desc": "<#6b7280><i>每採金礦一，損血半心。</i>"
       "broadcaster":
         "name": "<bold><#f4d35e>布告者"
-        "desc": "<#6b7280><i>採金或鑽之礦，或布汝之座標而令汝發光。</i>"
+        "desc": "<#6b7280><i>採金或金剛石之礦，或布汝之座標而令汝發光。</i>"
       "limitations":
         "name": "<bold><#f4d35e>物資之限"
-        "desc": "<#6b7280><i>每人所採鑽、金、鐵，皆有其限。</i>"
+        "desc": "<#6b7280><i>每人所採金剛石、金、鐵，皆有其限。</i>"
       "diamond-less":
-        "name": "<bold><#f4d35e>無鑽"
-        "desc": "<#6b7280><i>鑽不可採；每斬一人，得鑽一。</i>"
+        "name": "<bold><#f4d35e>無金剛石"
+        "desc": "<#6b7280><i>金剛石不可採；每斬一人，得金剛石一。</i>"
       "gold-less":
         "name": "<bold><#f4d35e>無金"
         "desc": "<#6b7280><i>金不可採；每斬一人，得金錠一。</i>"
@@ -2202,59 +2202,59 @@
         "name": "<bold><#f4d35e>木生"
         "desc": "<#6b7280><i>禁煤。</i>"
       "nodiamondarmor":
-        "name": "<bold><#f4d35e>禁鑽甲"
-        "desc": "<#6b7280><i>戲者不得合成鑽甲。</i>"
+        "name": "<bold><#f4d35e>禁金剛石甲"
+        "desc": "<#6b7280><i>戲者不得合成金剛石甲。</i>"
       "no-enchant":
-        "name": "<bold><#f4d35e>禁附魔"
-        "desc": "<#6b7280><i>閉附魔之臺與鐵砧。</i>"
+        "name": "<bold><#f4d35e>禁淬靈"
+        "desc": "<#6b7280><i>閉淬靈案與鐵砧。</i>"
       "bare-bones":
         "name": "<bold><#f4d35e>至簡"
-        "desc": "<#6b7280><i>閉附魔與鐵砧，金蘋果不可合成。戲者歿則墜鑽一、金蘋果二、矢三十二、線二。</i>"
+        "desc": "<#6b7280><i>閉淬靈與鐵砧，金林檎不可合成。戲者歿則墜金剛石一、金林檎二、矢三十二、綫二。</i>"
       "limited-enchants":
-        "name": "<bold><#f4d35e>附魔臺有定"
-        "desc": "<#6b7280><i>附魔之臺不可合成。圖上預置之臺，在 0,0 與四隅（±500）。</i>"
+        "name": "<bold><#f4d35e>淬靈案有定"
+        "desc": "<#6b7280><i>淬靈案不可合成。圖上預置之臺，在 0,0 與四隅（±500）。</i>"
       "infinite-enchant":
-        "name": "<bold><#f4d35e>無盡附魔"
-        "desc": "<#6b7280><i>附魔無盡。戲者始得附魔之臺、鐵砧、書架與經驗 30k。</i>"
+        "name": "<bold><#f4d35e>無盡淬靈"
+        "desc": "<#6b7280><i>淬靈無盡。戲者始得淬靈案、鐵砧、書櫥與經驗 30k。</i>"
       "blood-enchants":
-        "name": "<bold><#f4d35e>血附魔"
-        "desc": "<#6b7280><i>每費附魔一等，損血半心。</i>"
+        "name": "<bold><#f4d35e>血淬靈"
+        "desc": "<#6b7280><i>每費淬靈一等，損血半心。</i>"
       "better-enchant":
         "name": "<bold><#f4d35e>書可復用"
-        "desc": "<#6b7280><i>以附魔書施於鐵砧，已施之效自書中去；效盡，則書復為常書。</i>"
+        "desc": "<#6b7280><i>以淬靈書施於鐵砧，已施之效自書中去；效盡，則書復為常書。</i>"
       "limitedp4":
         "name": "<bold><#f4d35e>保護四有限"
         "desc": "<#6b7280><i>每人唯得以保護 IV 施於一物。</i>"
       "exposure":
         "name": "<bold><#f4d35e>暴露"
-        "desc": "<#6b7280><i>合成附魔之臺，則傳汝至地表，予挖掘疲勞一分。</i>"
+        "desc": "<#6b7280><i>合成淬靈案，則傳汝至地表，予挖掘疲勞一分。</i>"
       "hidden-enchant":
-        "name": "<bold><#f4d35e>隱附魔"
-        "desc": "<#6b7280><i>附魔之臺不示其名，唯可盲附。</i>"
+        "name": "<bold><#f4d35e>隱淬靈"
+        "desc": "<#6b7280><i>淬靈案不示其名，唯可盲附。</i>"
       "grindstone-less":
-        "name": "<bold><#f4d35e>無砂輪"
-        "desc": "<#6b7280><i>閉砂輪，戲者不能去附魔。</i>"
+        "name": "<bold><#f4d35e>無礪"
+        "desc": "<#6b7280><i>閉礪，戲者不能去淬靈。</i>"
       "blood-grindstone":
-        "name": "<bold><#f4d35e>血砂輪"
-        "desc": "<#6b7280><i>用砂輪，每去附魔一等，損血半心。</i>"
+        "name": "<bold><#f4d35e>血礪"
+        "desc": "<#6b7280><i>用礪，每去淬靈一等，損血半心。</i>"
       "hastey-boys":
         "name": "<bold><#f4d35e>疾工"
-        "desc": "<#6b7280><i>所合成之採具自帶效率 III，砂輪不能去之。</i>"
+        "desc": "<#6b7280><i>所合成之採具自帶速 III，礪不能去之。</i>"
       "hastey-boys-lite":
         "name": "<bold><#f4d35e>疾工（輕）"
-        "desc": "<#6b7280><i>所合成之採具自帶效率 I，砂輪不能去之。</i>"
+        "desc": "<#6b7280><i>所合成之採具自帶速 I，礪不能去之。</i>"
       "op-hastey-boys":
         "name": "<bold><#f4d35e>至疾之工"
-        "desc": "<#6b7280><i>所合成之採具自帶效率 V，砂輪不能去之。</i>"
+        "desc": "<#6b7280><i>所合成之採具自帶速 V，礪不能去之。</i>"
       "carrotcombo":
-        "name": "<bold><#f4d35e>胡蘿蔔之配"
-        "desc": "<#6b7280><i>合成劍，則更得附魔胡蘿蔔一。</i>"
+        "name": "<bold><#f4d35e>胡蘆菔之配"
+        "desc": "<#6b7280><i>合成劍，則更得淬靈胡蘆菔一。</i>"
       "bow-nerf":
         "name": "<bold><#f4d35e>弓弱"
         "desc": "<#6b7280><i>矢之傷減半。</i>"
       "rod-less":
-        "name": "<bold><#f4d35e>無釣竿"
-        "desc": "<#6b7280><i>閉釣竿。</i>"
+        "name": "<bold><#f4d35e>無漁竿"
+        "desc": "<#6b7280><i>閉漁竿。</i>"
       "bow-less":
         "name": "<bold><#f4d35e>無弓"
         "desc": "<#6b7280><i>閉弓。</i>"
@@ -2284,10 +2284,10 @@
         "desc": "<#6b7280><i>諸原礦與生肉，墜時自冶。</i>"
       "lucky-leaves":
         "name": "<bold><#f4d35e>福葉"
-        "desc": "<#6b7280><i>葉破或朽，或墜金蘋果（其率可設）。</i>"
+        "desc": "<#6b7280><i>葉破或朽，或墜金林檎（其率可設）。</i>"
       "tree-drops":
         "name": "<bold><#f4d35e>葉中藏寶"
-        "desc": "<#6b7280><i>葉破或朽，或墜金（0.5%）、鑽（0.1%）或羽（10%）。</i>"
+        "desc": "<#6b7280><i>葉破或朽，或墜金（0.5%）、金剛石（0.1%）或羽（10%）。</i>"
       "flower-power":
         "name": "<bold><#f4d35e>花之力"
         "desc": "<#6b7280><i>破花則墜隨機之物。</i>"
@@ -2302,7 +2302,7 @@
         "desc": "<#6b7280><i>雞不墜羽，骷髏墜矢三至五。</i>"
       "bats":
         "name": "<bold><#f4d35e>蝠之賭"
-        "desc": "<#6b7280><i>斬蝠：九成五得金蘋果，半成立歿。</i>"
+        "desc": "<#6b7280><i>斬蝠：九成五得金林檎，半成立歿。</i>"
       "no-fall-damage":
         "name": "<bold><#f4d35e>無墜傷"
         "desc": "<#6b7280><i>戲者不受墜傷。</i>"
@@ -2310,8 +2310,8 @@
         "name": "<bold><#f4d35e>無火傷"
         "desc": "<#6b7280><i>戲者不受火焰燃燒之傷。</i>"
       "absorptionless":
-        "name": "<bold><#f4d35e>無吸收"
-        "desc": "<#6b7280><i>無吸收之心，金蘋果與金首但復血。</i>"
+        "name": "<bold><#f4d35e>無消災"
+        "desc": "<#6b7280><i>無消災之心，金林檎與金首但復血。</i>"
       "double-health":
         "name": "<bold><#f4d35e>血倍"
         "desc": "<#6b7280><i>眾戲者有心二十，非十。</i>"
@@ -2319,23 +2319,23 @@
         "name": "<bold><#f4d35e>夜視"
         "desc": "<#6b7280><i>眾戲者始得永久夜視。</i>"
       "invisibility-protection":
-        "name": "<bold><#f4d35e>隱形之護"
-        "desc": "<#6b7280><i>眾戲者始得隱形五分。</i>"
+        "name": "<bold><#f4d35e>隱之護"
+        "desc": "<#6b7280><i>眾戲者始得隱五分。</i>"
       "birds":
         "name": "<bold><#f4d35e>鳥人"
         "desc": "<#6b7280><i>眾戲者皆能飛。</i>"
       "noodlejump":
         "name": "<bold><#f4d35e>麵躍"
-        "desc": "<#6b7280><i>眾戲者始得永久躍升。</i>"
+        "desc": "<#6b7280><i>眾戲者始得永久躍昇。</i>"
       "superheros":
         "name": "<bold><#f4d35e>超凡之士"
         "desc": "<#6b7280><i>每人得一隨機異能，且無墜傷。</i>"
       "everyrose":
         "name": "<bold><#f4d35e>玫瑰有刺"
-        "desc": "<#6b7280><i>每人始得金胸甲一，附尖刺 III。</i>"
+        "desc": "<#6b7280><i>每人始得金鎧一，附荊棘 III。</i>"
       "pyro":
         "name": "<bold><#f4d35e>縱火者"
-        "desc": "<#6b7280><i>戲者始得附魔書一，附火焰 I 與燃燒 I。</i>"
+        "desc": "<#6b7280><i>戲者始得淬靈書一，附焰矢 I 與附焰 I。</i>"
       "criple":
         "name": "<bold><#f4d35e>跛"
         "desc": "<#6b7280><i>受墜傷，則得緩速三十秒。</i>"
@@ -2361,14 +2361,14 @@
         "name": "<bold><#f4d35e>草爆"
         "desc": "<#6b7280><i>行於草上，四之一或爆。</i>"
       "raining-tnt":
-        "name": "<bold><#f4d35e>TNT 之雨"
-        "desc": "<#6b7280><i>每隔若干時（可設），TNT 墜於隨機二人之上。</i>"
+        "name": "<bold><#f4d35e>灹藥之雨"
+        "desc": "<#6b7280><i>每隔若干時（可設），灹藥墜於隨機二人之上。</i>"
       "coronavirus":
         "name": "<bold><#f4d35e>疫"
-        "desc": "<#6b7280><i>每隔若干時（可設），隨機一人得噁心與中毒。</i>"
+        "desc": "<#6b7280><i>每隔若干時（可設），隨機一人得氣逆與毒。</i>"
       "bombers":
         "name": "<bold><#f4d35e>轟者"
-        "desc": "<#6b7280><i>眾人始得不壞之打火石，諸怪多墜 TNT。</i>"
+        "desc": "<#6b7280><i>眾人始得不壞之燧鐮，諸怪多墜灹藥。</i>"
       "back-packs":
         "name": "<bold><#f4d35e>伍之囊"
         "desc": "<#6b7280><i>戲者可以 /backpack 啟同伍共用之囊。</i>"
@@ -2380,19 +2380,19 @@
         "desc": "<#6b7280><i>每人唯可用物格九。</i>"
       "benchblitz":
         "name": "<bold><#f4d35e>一臺之戰"
-        "desc": "<#6b7280><i>戲者始得工作臺一，不得更得。</i>"
+        "desc": "<#6b7280><i>戲者始得製物案一，不得更得。</i>"
       "gone-fishing":
         "name": "<bold><#f4d35e>垂釣"
-        "desc": "<#6b7280><i>戲者得耐久二百之釣竿一，及鐵砧一組。</i>"
+        "desc": "<#6b7280><i>戲者得耐久二百之漁竿一，及鐵砧一組。</i>"
       "puppypower":
         "name": "<bold><#f4d35e>犬之力"
-        "desc": "<#6b7280><i>眾戲者得骨、腐肉及狼之生蛋各一組。</i>"
+        "desc": "<#6b7280><i>眾戲者得骨、胔及孳狼之卵各一組。</i>"
       "build-uhc":
         "name": "<bold><#f4d35e>築 UHC"
         "desc": "<#6b7280><i>眾戲者於局始得一套之裝。</i>"
       "soup":
-        "name": "<bold><#f4d35e>菌羹"
-        "desc": "<#6b7280><i>右擊菌羹，復血三心半。</i>"
+        "name": "<bold><#f4d35e>蕈羹"
+        "desc": "<#6b7280><i>右擊蕈羹，復血三心半。</i>"
       "hypixel-heads":
         "name": "<bold><#f4d35e>Hypixel 之首"
         "desc": "<#6b7280><i>右擊戲者之首，得回復 III 四秒、速 II 二十秒。</i>"
@@ -2410,7 +2410,7 @@
         "desc": "<#6b7280><i>局始之前，戲者相右擊即結為伍。</i>"
       "tracker":
         "name": "<bold><#f4d35e>追蹤者"
-        "desc": "<#6b7280><i>眾戲者得羅盤一，可追他人。</i>"
+        "desc": "<#6b7280><i>眾戲者得司南一，可追他人。</i>"
       "randomizer":
         "name": "<bold><#f4d35e>隨墜"
         "desc": "<#6b7280><i>每種方塊依所設而墜隨機之物。</i>"
@@ -2431,7 +2431,7 @@
   "coronavirus":
     "affected": "<prefix><#a78bfa><player></#a78bfa> <gray>染疫矣！</gray>"
   "raining-tnt":
-    "targeted": "<prefix><#f95738>TNT 方墜於 <white><player></white> 之上！"
+    "targeted": "<prefix><#f95738>灹藥方墜於 <white><player></white> 之上！"
   "time-bomb":
     "timer": "<bold><timer_color>💣 <seconds> 秒</bold>"
 "arena":
@@ -2484,7 +2484,7 @@
       "description": "列諸階，或某階之員"
   "unknown-rank": "<#f95738>無名 <white><rank></white> 之階。可用者：<white><ranks></white></#f95738>"
   "player-not-found": "<#f95738>無名 <white><player></white> 之 Minecraft 帳。</#f95738>"
-  "looking-up": "<#7b8aa0><white><player></white> 未嘗至此，方查其帳...</#7b8aa0>"
+  "looking-up": "<#7b8aa0><white><player></white> 未嘗至此，方查其帳⋯⋯</#7b8aa0>"
   "invalid-time": "<#f95738><white><time></white> 非有效之時。請用如 30m、12h、7d、2w 或 1d12h。</#f95738>"
   "granted": "<#6dd3a0>已授 <white><player></white> 以 <white><rank></white> 之階（<time>）。</#6dd3a0>"
   "updated": "<#6dd3a0><white><player></white> 已有 <white><rank></white> 之階——今改為<time>。</#6dd3a0>"
@@ -2519,7 +2519,7 @@
   "strength": "力"
   "speed": "速"
   "invisibility": "隱形"
-"bed-explosions-disabled": "<#f95738>此局禁床與重生錨之爆。</#f95738>"
+"bed-explosions-disabled": "<#f95738>此局禁床與復生錨之爆。</#f95738>"
 "whitelist":
   "usage": "<#f4d35e><bold>/admin whitelist</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin whitelist on | off</#93c5fd> <#7b8aa0>- 啟閉白名</#7b8aa0><newline> <#93c5fd>/admin whitelist add | remove <戲者></#93c5fd> <#7b8aa0>- 修白名</#7b8aa0><newline> <#93c5fd>/admin whitelist list | clear</#93c5fd> <#7b8aa0>- 觀／清白名</#7b8aa0><newline> <#93c5fd>/admin whitelist all</#93c5fd> <#7b8aa0>- 以在者盡入白名</#7b8aa0><newline> <#93c5fd>/admin whitelist reload</#93c5fd> <#7b8aa0>- 重載 whitelist.json</#7b8aa0>"
   "reloaded": "<#6dd3a0>白名已自 whitelist.json 重載。</#6dd3a0>"
@@ -2608,7 +2608,7 @@
       "name": "<#93c5fd>矢之拖尾</#93c5fd>"
       "lore": "<#9db4c0>隨汝所發之矢之粒。</#9db4c0>"
     "rod-trail":
-      "name": "<#7dd3fc>釣竿拖尾</#7dd3fc>"
+      "name": "<#7dd3fc>漁竿拖尾</#7dd3fc>"
       "lore": "<#9db4c0>隨汝魚鉤之粒。</#9db4c0>"
     "kill-effect":
       "name": "<#f95738>斬殺之效</#f95738>"
@@ -2691,7 +2691,7 @@
     "already": "<#f95738>已有寶藏焉。</#f95738>"
     "no-spot": "<#f95738>大廳生處之側，無可藏寶之地。</#f95738>"
   "potato":
-    "announce": "<prefix><#fb923c><bold>燙手山芋！</bold></#fb923c> <#cbd5e1><sender> 始一局。請於 <seconds> 秒內入之，TNT 未爆，擊他人以傳之！</#cbd5e1>"
+    "announce": "<prefix><#fb923c><bold>燙手山芋！</bold></#fb923c> <#cbd5e1><sender> 始一局。請於 <seconds> 秒內入之，灹藥未爆，擊他人以傳之！</#cbd5e1>"
     "join-button": "<prefix><#6dd3a0><bold>[ 入燙手山芋 ]</bold></#6dd3a0>"
     "join-hover": "<#6dd3a0>擊之以入（或書 /hotpotato）</#6dd3a0>"
     "joined": "<#6dd3a0><player> 入燙手山芋。</#6dd3a0> <#7b8aa0>（<count> 人）</#7b8aa0>"
@@ -2855,7 +2855,7 @@
     - "<prefix><#93c5fd>有所求乎？以 <white>/helpop</white> 問於執事。</#93c5fd>"
     - "<prefix><#93c5fd>見弊者乎？以 <white>/report <戲者> <由></white> 舉之。</#93c5fd>"
     - "<prefix><#93c5fd>禁與他伍相結（Cross-team），犯者逐出此局。</#93c5fd>"
-    - "<prefix><#93c5fd>此處血不自復，唯恃金蘋果與金首。</#93c5fd>"
+    - "<prefix><#93c5fd>此處血不自復，唯恃金林檎與金首。</#93c5fd>"
     - "<prefix><#93c5fd>以 <white>/profile</white> 觀己之數，<white>/lb</white> 觀榜。</#93c5fd>"
     - "<prefix><#93c5fd>於 <white>/cosmetics</white> 以點購特效。</#93c5fd>"
 "final-heal-skipped": "<prefix><#86efac>不俟其時，眾存者即得終治。</#86efac>"
@@ -2871,7 +2871,7 @@
   "header": "<#f4d35e><bold>/admin</bold></#f4d35e> <#7b8aa0>用法：（具凡 <count>，擊之即書）</#7b8aa0>"
   "entry": " <#93c5fd>/admin <tool></#93c5fd> <#7b8aa0><description></#7b8aa0>"
   "unknown": "<#f95738>無此主事之具 <white><tool></white>，書 /admin 以觀其列。</#f95738>"
-  "gm-usage": "<#f4d35e><bold>/admin gm</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin gm <c|s|a|sp> [戲者]</#93c5fd> <#7b8aa0>- 創造、生存、冒險或旁觀</#7b8aa0>"
+  "gm-usage": "<#f4d35e><bold>/admin gm</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin gm <c|s|a|sp> [戲者]</#93c5fd> <#7b8aa0>- 創造、生存、冒險或覽</#7b8aa0>"
   "desc":
     "start": "- 始局之倒數"
     "forcestart": "- 略倒數而立傳"
@@ -3021,7 +3021,7 @@
   "click-message": "<#6b7280>▸ 擊之以致書於 <player></#6b7280>"
 "dimension-schedule":
   "name":
-    "nether": "下界"
+    "nether": "焱界"
     "end": "終界"
   "warning": "<prefix><#f97316><dimension>將於 <white><time></white> 後閉，宜速出！</#f97316>"
   "closed": "<prefix><#f95738><bold><dimension>今閉矣。</bold></#f95738> <#cbd5e1>其中之人，已移至主界。</#cbd5e1>"
@@ -3029,22 +3029,22 @@
   "moved": "<#f4d35e><dimension>既閉，汝已移至主界。</#f4d35e>"
   "portal-closed": "<#f95738>此局所餘之時，<dimension>皆閉。</#f95738>"
   "not-open-yet": "<#f4d35e><dimension>將於 <white><time></white> 後開。</#f4d35e>"
-"config-menu-label-game-bed-explosions": "床／重生錨之爆"
-"config-menu-desc-game-bed-explosions": "床在下界／終界，重生錨在下界之外，皆如原版而爆。"
+"config-menu-label-game-bed-explosions": "床／復生錨之爆"
+"config-menu-desc-game-bed-explosions": "床在焱界／終界，復生錨在焱界之外，皆如原版而爆。"
 "config-menu-label-game-generation": "賽界之地形"
 "config-menu-desc-game-generation": "新生賽界所用之地形：NORMAL、AMPLIFIED、LARGE_BIOMES、FLAT 或 VOID。"
-"config-menu-label-game-invisibility-potions": "隱形之藥"
-"config-menu-desc-game-invisibility-potions": "隱形之藥可用（飲、濺、滯或藥矢）。"
+"config-menu-label-game-invisibility-potions": "隱劑"
+"config-menu-desc-game-invisibility-potions": "隱劑可用（飲、濺、滯或藥矢）。"
 "config-menu-label-game-no-baby-animals": "禁獸繁衍"
 "config-menu-desc-game-no-baby-animals": "禁獸繁衍，以杜掛機之畜場。"
 "config-menu-label-game-no-nametag": "隱名牌"
 "config-menu-desc-game-no-nametag": "終局永隱眾戲者之名牌。"
 "config-menu-label-game-ready-check-timeout-seconds": "備察之限"
 "config-menu-desc-game-ready-check-timeout-seconds": "戲者應備察之秒。"
-"config-menu-label-game-speed-potions": "迅捷之藥"
-"config-menu-desc-game-speed-potions": "迅捷之藥可用（飲、濺、滯或藥矢）。"
-"config-menu-label-game-strength-potions": "力之藥"
-"config-menu-desc-game-strength-potions": "力之藥可用（飲、濺、滯或藥矢）。"
+"config-menu-label-game-speed-potions": "速劑"
+"config-menu-desc-game-speed-potions": "速劑可用（飲、濺、滯或藥矢）。"
+"config-menu-label-game-strength-potions": "力劑"
+"config-menu-desc-game-strength-potions": "力劑可用（飲、濺、滯或藥矢）。"
 "config-menu-label-lobby-generation": "大廳之地形"
 "config-menu-desc-lobby-generation": "須立大廳之界時所用之地形：VOID、NORMAL、FLAT、AMPLIFIED 或 LARGE_BIOMES。"
 "config-menu-label-meetup-arena": "決戰之鬥場"
@@ -3052,9 +3052,9 @@
 "config-menu-label-meetup-border-size": "決戰之界廣"
 "config-menu-desc-meetup-border-size": "決戰始時之界廣，後縮至終廣。"
 "config-menu-label-meetup-enabled": "啟決戰"
-"config-menu-desc-meetup-enabled": "驟死之戰改於所存之場（meetup.arena），而不入基岩之箱。"
+"config-menu-desc-meetup-enabled": "驟死之戰改於所存之場（meetup.arena），而不入基石之箱。"
 "config-menu-label-meetup-kit": "決戰之裝"
-"config-menu-desc-meetup-kit": "決戰始時，予每人隨機之鐵／鑽甲與劍一。"
+"config-menu-desc-meetup-kit": "決戰始時，予每人隨機之鐵／金剛石甲與劍一。"
 "config-menu-label-ui-arrow-health": "矢中示血"
 "config-menu-desc-ui-arrow-health": "以投射之物中的，則於射者之動作欄示其餘血。"
 "config-menu-label-ui-full-width-tab": "全幅 Tab 之列"
@@ -3327,7 +3327,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "database.clear.dialog.part.wins": "勝"
 "database.clear.dialog.part.games": "局"
 "database.clear.dialog.part.killstreaks": "連斬（今與最）"
-"database.clear.dialog.part.match-counters": "局中之數（礦、金蘋、射...）"
+"database.clear.dialog.part.match-counters": "局中之數（礦、金蘋、射⋯⋯）"
 "database.clear.dialog.part.level": "等與經驗"
 "database.clear.dialog.part.lobby": "廳戲之數與跑酷之時"
 "database.clear.dialog.part.cosmetics": "飾效與點"
@@ -3350,8 +3350,8 @@ list-separator: "<dark_gray>、</dark_gray>"
 "ceremony.award.kills.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>斬 <value></#cbd5e1>"
 "ceremony.award.damage-dealt.title": "<#f4d35e><bold>✦ 傷敵最重</bold></#f4d35e>"
 "ceremony.award.damage-dealt.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>傷 <value></#cbd5e1>"
-"ceremony.award.diamonds.title": "<#f4d35e><bold>◆ 得鑽最多</bold></#f4d35e>"
-"ceremony.award.diamonds.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>鑽 <value> 枚</#cbd5e1>"
+"ceremony.award.diamonds.title": "<#f4d35e><bold>◆ 得金剛石最多</bold></#f4d35e>"
+"ceremony.award.diamonds.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>金剛石 <value> 枚</#cbd5e1>"
 "ceremony.award.golden-apples.title": "<#f4d35e><bold>🍎 食金蘋最多</bold></#f4d35e>"
 "ceremony.award.golden-apples.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1>食 <value> 枚</#cbd5e1>"
 "ceremony.award.survived.title": "<#f4d35e><bold>⌛ 存世最久</bold></#f4d35e>"
@@ -3384,7 +3384,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "podium.not-running": "<#f4d35e>今無典禮。</#f4d35e>"
 "podium.skipped": "<#6dd3a0>已為眾止典禮。</#6dd3a0>"
 "podium.test-busy": "<#f95738>唯於廳中且無典禮之時可用。</#f95738>"
-"podium.test-started": "<#6dd3a0>方預演典禮...</#6dd3a0>"
+"podium.test-started": "<#6dd3a0>方預演典禮⋯⋯</#6dd3a0>"
 "podium.no-lobby": "<#f95738>當先定廳之生處（/admin setlobby）。</#f95738>"
 "admin.desc.podium": "- 局終頒獎之臺與典禮"
 "match-exp-earned": "<#f4d35e>是局得歷練 <white><experience></white>。</#f4d35e>"
@@ -3396,12 +3396,12 @@ list-separator: "<dark_gray>、</dark_gray>"
 "scenarios.gui.filter.lore": "<#7b8aa0>擊之以易：示諸異局，或唯示已啟者。</#7b8aa0>"
 "hub.no-return": "<#f4d35e>無可歸之服。以 <white>/spawn</white> 歸廳之生處。</#f4d35e>"
 "item.empty": "<#f95738>當先執欲示之物。</#f95738>"
-"list-vanished-tag": " <#7b8aa0><i>(隱)</i></#7b8aa0>"
-"sudden-death-box": "<prefix><#faf0ca><players> 人已入 <size>×<size> 基岩之箱。</#faf0ca>"
-"config-menu-label-game-sudden-death-box-size": "驟死基岩箱之廣"
-"config-menu-desc-game-sudden-death-box-size": "時盡，存者皆囚於基岩之箱，廣若此數，戰至一人而止。"
+"list-vanished-tag": " <#7b8aa0><i>（隱）</i></#7b8aa0>"
+"sudden-death-box": "<prefix><#faf0ca><players> 人已入 <size>×<size> 基石之箱。</#faf0ca>"
+"config-menu-label-game-sudden-death-box-size": "驟死基石箱之廣"
+"config-menu-desc-game-sudden-death-box-size": "時盡，存者皆囚於基石之箱，廣若此數，戰至一人而止。"
 "config-menu-label-game-sudden-death-countdown-seconds": "驟死戰起之數"
-"config-menu-desc-game-sudden-death-countdown-seconds": "入基岩之箱後，數盡始戰，其間不得 PvP。0 = 即戰。"
+"config-menu-desc-game-sudden-death-countdown-seconds": "入基石之箱後，數盡始戰，其間不得 PvP。0 = 即戰。"
 "config-menu-label-border-dynamic-enabled": "隨人定界"
 "config-menu-desc-border-dynamic-enabled": "依人數定開局之界（border.dynamic.*），不逾初界之廣。"
 "config-menu-label-weekly-enabled": "每週 UHC"
@@ -3577,7 +3577,7 @@ list-separator: "<dark_gray>、</dark_gray>"
     "killstreak": "🔥 連斬榜 🔥"
     "diamonds": "💎 金剛石榜 💎"
     "gold": "🪙 金榜 🪙"
-    "apples": "🍎 金蘋果榜 🍎"
+    "apples": "🍎 金林檎榜 🍎"
     "lobby": "🎉 廳戲榜 🎉"
     "range": "🏹 射圃之榜 🏹"
   "divider": "<#7b8aa0>────────────────────</#7b8aa0>"
@@ -3601,8 +3601,8 @@ time-units:
 "cross-team.warning-actionbar": "<#f95738>⚠ 勿與 <other> 通敵！</#f95738>"
 "cross-team.exposed-self": "<#f95738>⚠ 汝與 <other> 通敵，已見揭。<white><seconds> 秒</white>內汝身生光，眾人之定位條皆見之。</#f95738>"
 "cross-team.exposed-broadcast": "<#f95738>⚠ <first> 與 <second> 疑相通敵！<white><seconds> 秒</white>內其身生光，眾人之定位條皆見之。</#f95738>"
-"cross-team.exposed-broadcast-bounty": "<#f95738>⚠ <first> 與 <second> 疑相通敵！<white><seconds> 秒</white>內其身生光，眾人之定位條皆見之 - 斬其一者賞<#f4d35e>金蘋果</#f4d35e>一枚。</#f95738>"
-"cross-team.bounty-claimed": "<#f4d35e>汝取 <white><player></white> 通敵之賞：金蘋果一枚。</#f4d35e>"
+"cross-team.exposed-broadcast-bounty": "<#f95738>⚠ <first> 與 <second> 疑相通敵！<white><seconds> 秒</white>內其身生光，眾人之定位條皆見之 - 斬其一者賞<#f4d35e>金林檎</#f4d35e>一枚。</#f95738>"
+"cross-team.bounty-claimed": "<#f4d35e>汝取 <white><player></white> 通敵之賞：金林檎一枚。</#f4d35e>"
 "replay.marker.cross-team": "疑通敵：<actor> & <target>"
 
 # Rules hologram
@@ -3615,13 +3615,13 @@ time-units:
 # Arena preview (/arenas)
 "help-desc-arenas": "往觀決戰之鬥場。"
 "arena-preview.list-header": "<#f4d35e><bold>鬥場</bold></#f4d35e> <#7b8aa0>- 擊之以往觀</#7b8aa0>"
-"arena-preview.list-entry": " <#93c5fd>▶ <name></#93c5fd> <#7b8aa0>(<size>，生處 <spawns>)</#7b8aa0>"
+"arena-preview.list-entry": " <#93c5fd>▶ <name></#93c5fd> <#7b8aa0>（<size>，生處 <spawns>）</#7b8aa0>"
 "arena-preview.list-hover": "<#cbd5e1>擊之以觀 <white><name></white></#cbd5e1>"
 "arena-preview.list-empty": "<#7b8aa0>今無鬥場可觀。</#7b8aa0>"
 "arena-preview.not-found": "<#f95738>無名 <white><name></white> 之鬥場。書 <white>/arenas</white> 以覽其全。</#f95738>"
 "arena-preview.unusable": "<#f95738>此服不能示 <white><name></white>。</#f95738>"
 "arena-preview.not-free": "<#f95738>唯於大廳可觀鬥場，賽將始則不可。</#f95738>"
-"arena-preview.already-loading": "<#f4d35e>所觀猶在載中...</#f4d35e>"
+"arena-preview.already-loading": "<#f4d35e>所觀猶在載中⋯⋯</#f4d35e>"
 "arena-preview.loading": "<#93c5fd>方載 <white><name></white>...</#93c5fd>"
 "arena-preview.failed": "<#f95738>不能載 <white><name></white>，請少頃再試。</#f95738>"
 "arena-preview.entered": "<#6dd3a0>方觀 <white><name></white>。可隨意飛覽 - <white><minutes></white> 分後自止。</#6dd3a0>"
@@ -3714,11 +3714,11 @@ time-units:
 "activity-card.mode": "- <scenario> — <description>"
 "activity-card.mode-name": "- <scenario>"
 "activity-card.note.difficulty": "難易：<difficulty>"
-"activity-card.note.apple-rate": "蘋果落率 <rate>%"
+"activity-card.note.apple-rate": "林檎落率 <rate>%"
 "activity-card.note.golden-heads": "金首（殺則落首）<mark>"
-"activity-card.note.enchanted-golden-apples": "附魔金蘋果 <mark>"
+"activity-card.note.enchanted-golden-apples": "淬靈金林檎 <mark>"
 "activity-card.note.potions": "藥 <mark>"
-"activity-card.note.potions-strength": "藥 <mark>（力藥 <strength>）"
+"activity-card.note.potions-strength": "藥 <mark>（力劑 <strength>）"
 "activity-card.note.bed-explosions": "冥界 / 末界 床爆 <mark>"
 "activity-card.note.ender-pearl-damage": "末影珠傷 <mark>"
 "activity-card.note.spectator-on-death": "死則為觀者"
@@ -3742,7 +3742,7 @@ time-units:
 
 # Spleef and TNT Run (lobby floor games).
 "lobby-games.floor.name.spleef": "<#7dd3fc><bold>掘地</bold></#7dd3fc>"
-"lobby-games.floor.name.tntrun": "<#fb923c><bold>TNT 疾走</bold></#fb923c>"
+"lobby-games.floor.name.tntrun": "<#fb923c><bold>灹藥疾走</bold></#fb923c>"
 "lobby-games.floor.not-set": "<#f95738><game>未設。</#f95738>"
 "lobby-games.floor.not-in-lobby": "<#f95738>須居大廳乃可戲。</#f95738>"
 "lobby-games.floor.already-playing": "<#f95738>汝已在此局。</#f95738>"
@@ -3787,7 +3787,7 @@ time-units:
 "lobby-games.floor.state.running": "局方行"
 "lobby-games.floor.state.resetting": "地方復"
 "lobby-games.floor.hologram.title.spleef": "<#7dd3fc><bold>❄ 掘地 ❄</bold></#7dd3fc>"
-"lobby-games.floor.hologram.title.tntrun": "<#fb923c><bold>💣 TNT 疾走 💣</bold></#fb923c>"
+"lobby-games.floor.hologram.title.tntrun": "<#fb923c><bold>💣 灹藥疾走 💣</bold></#fb923c>"
 "lobby-games.floor.hologram.waiting": "<#cbd5e1>候人中</#cbd5e1>"
 "lobby-games.floor.hologram.starting": "<#6dd3a0><seconds> 息後始</#6dd3a0>"
 "lobby-games.floor.hologram.running": "<#f4d35e>局方行 · 餘 <alive> 人</#f4d35e>"
@@ -3797,11 +3797,11 @@ time-units:
 "lobby-games.floor.hologram.hint.spleef": "<#7b8aa0>右擊或 /spleef 以入</#7b8aa0>"
 "lobby-games.floor.hologram.hint.tntrun": "<#7b8aa0>右擊或 /tntrun 以入</#7b8aa0>"
 "help-desc-spleef": "入或去掘地之列。"
-"help-desc-tntrun": "入或去 TNT 疾走之列。"
+"help-desc-tntrun": "入或去 灹藥疾走之列。"
 "leaderboard-stat-spleef": "<#7dd3fc><bold>掘地</bold></#7dd3fc>"
-"leaderboard-stat-tntrun": "<#fb923c><bold>TNT 疾走</bold></#fb923c>"
+"leaderboard-stat-tntrun": "<#fb923c><bold>灹藥疾走</bold></#fb923c>"
 "leaderboard-holo.board.spleef": "❄ 掘地之榜 ❄"
-"leaderboard-holo.board.tntrun": "💣 TNT 疾走之榜 💣"
+"leaderboard-holo.board.tntrun": "💣 灹藥疾走之榜 💣"
 "lobby-games.floor.top-header": "<#facc15><bold>🏆 <game> 勝者之榜</bold></#facc15>"
 "lobby-games.floor.top-entry": "<#7b8aa0>#<rank></#7b8aa0> <white><player></white> <#6dd3a0><wins> 勝</#6dd3a0>"
 "lobby-games.floor.top-empty": "<#7b8aa0>未有勝<game>者。</#7b8aa0>"
@@ -3888,16 +3888,13 @@ time-units:
 "discord-bot.option-page": "頁"
 
 # Supporter: /supporter, Supporter Points, the Supporter cosmetics, paid months and Discord role ranks.
-"supporter.points-earned": "<#fb923c>+<amount> 贊助點</#fb923c> <#7b8aa0>（今 <points>）</#7b8aa0>"
-"supporter.welcome": "<prefix><#fb923c>謝君助本服！贈君贊助點 <white><amount></white>，可用於 <white>/cosmetics supporter</white>。</#fb923c> <#7b8aa0>（今 <points>）</#7b8aa0>"
-"supporter.monthly": "<prefix><#fb923c>本月贊助點已至：<white>+<amount></white>。</#fb923c> <#7b8aa0>（今 <points>）</#7b8aa0>"
 "supporter.welcome-back": "<prefix><#fb923c>贊助者歸矣！君之贊助飾復解。</#fb923c>"
-"supporter.cosmetics-locked": "<prefix><#7b8aa0>君之贊助飾已卸，復為贊助者則解。飾與贊助點皆存。</#7b8aa0>"
+"supporter.cosmetics-locked": "<prefix><#7b8aa0>君之贊助飾已卸，復為贊助者則解。飾仍屬君。</#7b8aa0>"
 "supporter.ended": "<prefix><#fb923c>君之贊助者已期滿，深謝君助！可隨時續之：<white><link></white></#fb923c>"
 "supporter.paid": "<prefix><#fb923c>謝君！增贊助 <white><months></white> 月，至 <white><until></white> 止。</#fb923c>"
 "supporter.reminder": "<prefix><#fb923c>君之贊助者將於 <white><time></white> 後期滿（<until>）。續之則福利存：<white><link></white></#fb923c>"
-"supporter.reminder-dm": "試煉UHC：君之贊助者將於 <time> 後期滿（<until>）。謝君助本服！續之則稱號、贊助點與飾皆存。<link>"
-"supporter.ended-dm": "試煉UHC：君之贊助者已期滿，深謝君助！飾與贊助點皆存，續之則復解。<link>"
+"supporter.reminder-dm": "試煉UHC：君之贊助者將於 <time> 後期滿（<until>）。謝君助本服！續之則稱號、三倍之點與贊助飾皆存。<link>"
+"supporter.ended-dm": "試煉UHC：君之贊助者已期滿，深謝君助！贊助飾皆存，續之則復解。<link>"
 "supporter.renew-button": "續之"
 "supporter.admin-usage": "<#f4d35e><bold>/admin supporter</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin supporter add <人> [月]</#93c5fd> <#7b8aa0>- 增付費之月（月三十日）</#7b8aa0><newline> <#93c5fd>/admin supporter history <人></#93c5fd> <#7b8aa0>- 付款之錄</#7b8aa0><newline> <#93c5fd>/admin supporter info <人></#93c5fd> <#7b8aa0>- 贊助之狀</#7b8aa0>"
 "supporter.no-rank": "<#f95738>config.yml 之 supporter.rank「<rank>」非 ranks.yml 之階。</#f95738>"
@@ -3910,7 +3907,7 @@ time-units:
 "supporter.not-supporter": "<#7b8aa0>君未為贊助者。贊助者助本服長存，且得：</#7b8aa0>"
 "supporter.not-supporter-other": "<#7b8aa0><white><player></white> 非贊助者。</#7b8aa0>"
 "supporter.perk.tag": " <#fb923c>•</#fb923c> <white>橘色 <#fb923c>ꜱᴜᴘᴘᴏʀᴛᴇʀ</#fb923c> 之號</white> <#7b8aa0>見於言、Tab 與首上</#7b8aa0>"
-"supporter.perk.points": " <#fb923c>•</#fb923c> <white>贊助點</white> <#7b8aa0>月月有之，每戰亦得</#7b8aa0>"
+"supporter.perk.points": " <#fb923c>•</#fb923c> <white>點 <multiplier> 倍</white> <#7b8aa0>每戰與廳中之戲皆然</#7b8aa0>"
 "supporter.perk.cosmetics": " <#fb923c>•</#fb923c> <white>贊助者專屬之飾</white> <#7b8aa0>見 /cosmetics</#7b8aa0>"
 "supporter.perk.flight": " <#fb923c>•</#fb923c> <white>大廳之飛</white> <#7b8aa0>（於大廳 /fly）</#7b8aa0>"
 "supporter.kept-by-discord": "<#fb923c>君之贊助者由 Discord 持之</#fb923c> <#7b8aa0>（加成或付費之組），存則續。</#7b8aa0>"
@@ -3918,35 +3915,23 @@ time-units:
 "supporter.until": "<#fb923c>贊助者至 <white><until></white></#fb923c> <#7b8aa0>（餘 <time>）</#7b8aa0>"
 "supporter.permanent": "<#fb923c>永為贊助者，謝君！</#fb923c>"
 "supporter.through-rank": "<#fb923c>君之階已含贊助者之福。</#fb923c>"
-"supporter.balance": "<#7b8aa0>贊助點：</#7b8aa0><#fb923c><bold><points></bold></#fb923c> <#7b8aa0>（月朔 +<monthly>）</#7b8aa0>"
+"supporter.balance": "<#7b8aa0>點：</#7b8aa0><#fb923c><bold><points></bold></#fb923c> <#7b8aa0>（君得點 <multiplier> 倍）</#7b8aa0>"
 "supporter.open-cosmetics": "<#fb923c>[啟贊助者之飾]</#fb923c>"
 "supporter.price": "<#7b8aa0>贊助者：</#7b8aa0><white><price></white> <#7b8aa0>/ 月</#7b8aa0>"
 "supporter.how": "<#7b8aa0>加成吾等之 Discord，或以任何方式按月贊助：於 Discord 私訊管理者。</#7b8aa0>"
 "supporter.link": "<#fb923c>[<link>]</#fb923c> <#7b8aa0>- 點之則啟</#7b8aa0>"
 "cosmetics.supporter.tab": "<#fb923c><bold>贊助者之飾</bold></#fb923c>"
-"cosmetics.supporter.tab-lore": "<#9db4c0>唯贊助者可用，以贊助點購之。</#9db4c0>"
+"cosmetics.supporter.tab-lore": "<#9db4c0>唯贊助者可用，以點購之。</#9db4c0>"
 "cosmetics.supporter.tab-unlocked": "<#6dd3a0>✔ 君為贊助者，謝君！</#6dd3a0>"
 "cosmetics.supporter.tab-locked": "<#f95738>為贊助者則解，詳見 /supporter</#f95738>"
 "cosmetics.supporter.title": "<#b7791f>✦</#b7791f> <#404040>贊助者之飾</#404040>"
 "cosmetics.supporter.badge": "<#fb923c>✦ 贊助者專屬</#fb923c>"
-"cosmetics.supporter.price": "<#7b8aa0>價：</#7b8aa0><#fb923c>贊助點 <price></#fb923c>"
 "cosmetics.supporter.locked": "<#f95738>唯贊助者可用，詳見 /supporter</#f95738>"
 "cosmetics.supporter.locked-owned": "<#f95738>已有之，復為贊助者則解</#f95738>"
-"cosmetics.supporter.missing": "<#f95738>尚缺贊助點 <missing></#f95738>"
-"cosmetics.supporter.points": "<#fb923c><bold>✦ 贊助點 <points></bold></#fb923c>"
-"cosmetics.supporter.points-lore": "<#7b8aa0>贊助者月月與每戰得之，以購贊助者之飾。</#7b8aa0>"
-"cosmetics.supporter.points-lore-locked": "<#7b8aa0>唯贊助者得之，詳見 /supporter。</#7b8aa0>"
-"cosmetics.supporter.bought": "<#6dd3a0>以贊助點 <white><price></white> 購而佩 <name><#6dd3a0>！</#6dd3a0>"
-"cosmetics.supporter.not-enough": "<#f95738>需贊助點 <white><price></white>，君有 <white><points></white>。</#f95738>"
 "cosmetics.supporter.only": "<#f95738>此為贊助者之飾。書 <white>/supporter</white> 觀何以為贊助者！</#f95738>"
-"cosmetics.supporter.points-usage": "<#f4d35e><bold>/admin supporterpoints</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin supporterpoints <give|take> <人|*> <數></#93c5fd> <#7b8aa0>- 增減贊助點</#7b8aa0>"
-"cosmetics.supporter.points-adjusted": "<#6dd3a0>已為 <white><player></white> 增減贊助點 <amount>。</#6dd3a0>"
-"cosmetics.supporter.points-received": "<#fb923c>+<amount> 贊助點</#fb923c> <#7b8aa0>（今 <points>）</#7b8aa0>"
-"cosmetics.supporter.points-taken": "<#f95738>-<amount> 贊助點</#f95738> <#7b8aa0>（今 <points>）</#7b8aa0>"
 "discord.role-rank.granted": "<prefix><#f472b6>謝君於 Discord 之助！君得 <white><rank></white> 之階。</#f472b6>"
 "discord.role-rank.removed": "<prefix><#7b8aa0>君之 Discord 身分組已止，其所予 <white><rank></white> 之階已去。</#7b8aa0>"
 "admin.desc.supporter": "- 贊助者付費之月與付款之錄"
-"admin.desc.supporterpoints": "- 予或奪贊助點"
 "discord-bot.profile-supporter": "🧡 **贊助者**：謝君助本服！"
 
 # Private rounds (/private): starting, guests, guest books, maps, presets, seeds, bookings, the menus.
@@ -4275,3 +4260,114 @@ time-units:
 "scenario.sweep.brush-name": "<#f4d35e><bold>掃地之刷</bold></#f4d35e>"
 "scenario.sweep.start": "<prefix><#93c5fd>掃地板：礦唯以刷取之，對礦長按右鍵。汝旁之沙亦藏礦。</#93c5fd>"
 "scenario.sweep.use-brush": "<#f95738>礦唯以刷取之，對之長按右鍵。</#f95738>"
+"tutorial.stop.welcome.title": "<#f4d35e><bold>歡迎至試煉UHC</bold></#f4d35e>"
+"tutorial.stop.welcome.subtitle": "<#cbd5e1>略覽一周，再潛則出</#cbd5e1>"
+"tutorial.stop.welcome.text": "<prefix><#f4d35e><bold>歡迎至試煉UHC</bold></#f4d35e><newline><#cbd5e1>此廳也，局間候於此。且環顧之，約一分有半。</#cbd5e1>"
+"tutorial.stop.hotbar.title": "<#f4d35e><bold>快捷之欄</bold></#f4d35e>"
+"tutorial.stop.hotbar.subtitle": "<#cbd5e1>諸事一擊可達</#cbd5e1>"
+"tutorial.stop.hotbar.text": "<prefix><#f4d35e><bold>快捷之欄</bold></#f4d35e><newline><#cbd5e1>左為戲設、異式與伍；右為己檔與榜。此教即囊中之望遠鏡。<#93c5fd>/menu</#93c5fd> 啟捷單，<#93c5fd>/settings</#93c5fd> 啟己設。</#cbd5e1>"
+"tutorial.stop.parkour.title": "<#f4d35e><bold>跑酷</bold></#f4d35e>"
+"tutorial.stop.parkour.subtitle": "<#cbd5e1>越其道，勝其時</#cbd5e1>"
+"tutorial.stop.parkour.text": "<prefix><#f4d35e><bold>跑酷</bold></#f4d35e><newline><#cbd5e1>踏始板則始，檢點存其進。最佳之時登於跑酷之榜。<#93c5fd>/parkour</#93c5fd></#cbd5e1>"
+"tutorial.stop.spleef.title": "<#f4d35e><bold>掘地</bold></#f4d35e>"
+"tutorial.stop.spleef.subtitle": "<#cbd5e1>掘人足下之地</#cbd5e1>"
+"tutorial.stop.spleef.text": "<prefix><#f4d35e><bold>掘地</bold></#f4d35e><newline><#cbd5e1>掘他人足下之地，終立者勝。以 <#93c5fd>/spleef</#93c5fd> 入之。</#cbd5e1>"
+"tutorial.stop.tnt-run.title": "<#f4d35e><bold>灹藥奔</bold></#f4d35e>"
+"tutorial.stop.tnt-run.subtitle": "<#cbd5e1>勿止</#cbd5e1>"
+"tutorial.stop.tnt-run.text": "<prefix><#f4d35e><bold>灹藥奔</bold></#f4d35e><newline><#cbd5e1>所過之地即消，終存者勝。以 <#93c5fd>/tntrun</#93c5fd> 入之。</#cbd5e1>"
+"tutorial.stop.range.title": "<#f4d35e><bold>射場</bold></#f4d35e>"
+"tutorial.stop.range.subtitle": "<#cbd5e1>溫其弓</#cbd5e1>"
+"tutorial.stop.range.text": "<prefix><#f4d35e><bold>射場</bold></#f4d35e><newline><#cbd5e1>時盡之前，射所出之靶以得分。<#93c5fd>/range</#93c5fd></#cbd5e1>"
+"tutorial.stop.leaderboards.title": "<#f4d35e><bold>榜</bold></#f4d35e>"
+"tutorial.stop.leaderboards.subtitle": "<#cbd5e1>本服之魁</#cbd5e1>"
+"tutorial.stop.leaderboards.text": "<prefix><#f4d35e><bold>榜</bold></#f4d35e><newline><#cbd5e1>勝、殺、K/D 諸績，分總、月、週、日。擊榜以易之。<#93c5fd>/leaderboard</#93c5fd> <#93c5fd>/profile</#93c5fd></#cbd5e1>"
+"tutorial.stop.podium.title": "<#f4d35e><bold>領獎之台</bold></#f4d35e>"
+"tutorial.stop.podium.subtitle": "<#cbd5e1>勝者所立</#cbd5e1>"
+"tutorial.stop.podium.text": "<prefix><#f4d35e><bold>領獎之台</bold></#f4d35e><newline><#cbd5e1>每局既終，鏡至於此：先頒諸獎，後前三登台。</#cbd5e1>"
+"tutorial.stop.pvp.title": "<#f4d35e><bold>廳中相搏與習場</bold></#f4d35e>"
+"tutorial.stop.pvp.subtitle": "<#cbd5e1>候時亦可戰</#cbd5e1>"
+"tutorial.stop.pvp.text": "<prefix><#f4d35e><bold>廳中相搏與習場</bold></#f4d35e><newline><#cbd5e1>持劍於欄三秒，可與亦啟者相搏。<#93c5fd>/practice</#93c5fd> 引汝至備全之習場。</#cbd5e1>"
+"tutorial.stop.teams.title": "<#f4d35e><bold>伍、票與始物</bold></#f4d35e>"
+"tutorial.stop.teams.subtitle": "<#cbd5e1>備來局</#cbd5e1>"
+"tutorial.stop.teams.text": "<prefix><#f4d35e><bold>伍、票與始物</bold></#f4d35e><newline><#cbd5e1>以 <#93c5fd>/team</#93c5fd> 立伍或入伍，以 <#93c5fd>/vote</#93c5fd> 擇來局之異式，以 <#93c5fd>/kit</#93c5fd> 察始物。</#cbd5e1>"
+"tutorial.stop.game-goal.title": "<#f4d35e><bold>局之道</bold></#f4d35e>"
+"tutorial.stop.game-goal.subtitle": "<#cbd5e1>命唯一，血不自復。</#cbd5e1>"
+"tutorial.stop.game-goal.text": "<prefix><#f4d35e><bold>局之道</bold></#f4d35e><newline><#cbd5e1>UHC 者極硬之戲：血不自復，命唯一。存至最後之人或伍勝。</#cbd5e1>"
+"tutorial.stop.game-flow.title": "<#f4d35e><bold>散與休兵</bold></#f4d35e>"
+"tutorial.stop.game-flow.subtitle": "<#cbd5e1>初十分不相攻</#cbd5e1>"
+"tutorial.stop.game-flow.text": "<prefix><#f4d35e><bold>散與休兵</bold></#f4d35e><newline><#cbd5e1>眾散於圖中。初十分不得相攻，宜採礦、集物、造甲兵。至第十分，眾皆復滿血一次。</#cbd5e1>"
+"tutorial.stop.game-border.title": "<#f4d35e><bold>界與驟死</bold></#f4d35e>"
+"tutorial.stop.game-border.subtitle": "<#cbd5e1>圖漸小</#cbd5e1>"
+"tutorial.stop.game-border.text": "<prefix><#f4d35e><bold>界與驟死</bold></#f4d35e><newline><#cbd5e1>自第三十分，界漸縮向中。一時之後，存者入驟死之戰以決之。</#cbd5e1>"
+"tutorial.stop.game-healing.title": "<#f4d35e><bold>存身</bold></#f4d35e>"
+"tutorial.stop.game-healing.subtitle": "<#cbd5e1>金林檎與金首</#cbd5e1>"
+"tutorial.stop.game-healing.text": "<prefix><#f4d35e><bold>存身</bold></#f4d35e><newline><#cbd5e1>以金林檎療之。人死遺首，以金八環之成金首。<#93c5fd>/recipe</#93c5fd></#cbd5e1>"
+"tutorial.stop.game-after.title": "<#f4d35e><bold>死後</bold></#f4d35e>"
+"tutorial.stop.game-after.subtitle": "<#cbd5e1>觀之，復戲</#cbd5e1>"
+"tutorial.stop.game-after.text": "<prefix><#f4d35e><bold>死後</bold></#f4d35e><newline><#cbd5e1>既死則為觀者，至局終；未終則廳閉。隨時可復閱：<#93c5fd>/tutorial rules</#93c5fd></#cbd5e1>"
+"tutorial.book.1.title": "<#f4d35e><bold>旨</bold></#f4d35e>"
+"tutorial.book.1.text": "<#cbd5e1>UHC 者極硬之戲。命唯一，血不自復，雖食飽亦然。存至最後之人或伍勝。</#cbd5e1>"
+"tutorial.book.2.title": "<#f4d35e><bold>入局與伍</bold></#f4d35e>"
+"tutorial.book.2.text": "<#cbd5e1>局始於廳。伍戰之時，以 /team 立伍或入伍；/tm 語伍中，/tc 示所在。無伍者，局始自分之。</#cbd5e1>"
+"tutorial.book.3.title": "<#f4d35e><bold>散與休兵</bold></#f4d35e>"
+"tutorial.book.3.text": "<#cbd5e1>局始，眾傳至相遠之處。初十分不得相攻：採礦、集物、造甲兵。此時亦不得置熔石、火、灹藥於他伍之側。</#cbd5e1>"
+"tutorial.book.4.title": "<#f4d35e><bold>終療與界</bold></#f4d35e>"
+"tutorial.book.4.text": "<#cbd5e1>至第十分，眾復滿血一次，此後無復。自第三十分，界漸縮向中，終至百格；在外者引之入。</#cbd5e1>"
+"tutorial.book.5.title": "<#f4d35e><bold>驟死之戰</bold></#f4d35e>"
+"tutorial.book.5.text": "<#cbd5e1>一時之後，存者皆聚於閉箱或鬥場，戰至唯一人或一伍。</#cbd5e1>"
+"tutorial.book.6.title": "<#f4d35e><bold>療</bold></#f4d35e>"
+"tutorial.book.6.text": "<#cbd5e1>金林檎，療之要也：林檎取於樹，金取於礦。人死遺首，於製物案以金錠八環之，成金首，勝於金林檎。/recipe 示本服之方。</#cbd5e1>"
+"tutorial.book.7.title": "<#f4d35e><bold>異式與設</bold></#f4d35e>"
+"tutorial.book.7.text": "<#cbd5e1>異式易局之規：/scenarios 察所行，/vote 擇來局。/kit 察始物，/config 察局之設。主者可易此書所載之時。</#cbd5e1>"
+"tutorial.book.8.title": "<#f4d35e><bold>既出之後</bold></#f4d35e>"
+"tutorial.book.8.text": "<#cbd5e1>既出則為觀者至局終，廳閉；局中方入者亦觀之。勝、殺與經驗入於 /profile 與榜。規：/rules，舉弊：/report。</#cbd5e1>"
+"tutorial.only-lobby": "唯於廳中、無局之時可觀教。"
+"tutorial.busy": "先去所為（廳戲、習場、觀戰或司事之態）。"
+"tutorial.unavailable": "教未備：廳之生處未設。"
+"tutorial.started": "<prefix><#cbd5e1>教始。<white>再潛</white>則出。</#cbd5e1>"
+"tutorial.finished": "<prefix><#6dd3a0>覽畢！</#6dd3a0><#cbd5e1>欲徐閱局之道：<click:run_command:'/tutorial rules'><hover:show_text:'/tutorial rules'><white><u>/tutorial rules</u></white></hover></click>。復觀：/tutorial。</#cbd5e1>"
+"tutorial.left": "<prefix><#cbd5e1>教止。隨時以 <white>/tutorial</white> 復觀。</#cbd5e1>"
+"tutorial.match-start": "<prefix><#f4d35e>局將始，教止。</#f4d35e>"
+"tutorial.progress": "<#7b8aa0>教 <white><current>/<total></white> · 再潛則出</#7b8aa0>"
+"tutorial.skip-confirm": "<#f4d35e>復潛則出教</#f4d35e>"
+"tutorial.offer.title": "<#f4d35e><bold>歡迎至試煉UHC！</bold></#f4d35e>"
+"tutorial.offer.body": "<#cbd5e1>初至乎？略以鏡覽廳，並述局之道（約一分有半）。隨時再潛則出。</#cbd5e1>"
+"tutorial.offer.yes": "<#6dd3a0>示我</#6dd3a0>"
+"tutorial.offer.later": "<#7b8aa0>後之</#7b8aa0>"
+"tutorial.offer.later-hint": "<prefix><#cbd5e1>無妨，隨時以 <white>/tutorial</white> 或囊中之望遠鏡觀之。</#cbd5e1>"
+"tutorial.book.title": "<#f4d35e><bold>如何戲之</bold></#f4d35e> <#7b8aa0>（<page>/<pages>）</#7b8aa0>"
+"tutorial.book.close": "闔"
+"tutorial.book.back": "◀ 前頁"
+"tutorial.book.next": "次頁 ▶"
+"tutorial.book.done": "畢"
+"tutorial.admin.usage": "<#f4d35e><bold>/admin tutorial</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin tutorial point <站></#93c5fd> <#7b8aa0>- 於汝所立、向汝所視，增一鏡點；鏡依次飛經諸點</#7b8aa0><newline> <#93c5fd>/admin tutorial record <站></#93c5fd> <#7b8aa0>- 即錄其鏡：自飛之，復輸 record 以終</#7b8aa0><newline> <#93c5fd>/admin tutorial setstop <站></#93c5fd> <#7b8aa0>- 自此重始其路</#7b8aa0><newline> <#93c5fd>/admin tutorial clearstop <站></#93c5fd> <#7b8aa0>- 復環其處</#7b8aa0><newline> <#93c5fd>/admin tutorial stops</#93c5fd> <#7b8aa0>- 諸站與其鏡</#7b8aa0><newline> <#93c5fd>/admin tutorial test [站]</#93c5fd> <#7b8aa0>- 自觀之（或觀一站）</#7b8aa0>"
+"tutorial.admin.unknown-stop": "<#f95738>無此站。諸站：<white><stops></white></#f95738>"
+"tutorial.admin.cleared": "<#6dd3a0>站 <white><stop></white> 復其常鏡。</#6dd3a0>"
+"tutorial.admin.point-added": "<#6dd3a0>站 <white><stop></white>：鏡點 <white>#<number></white> 於 <white><x>, <y>, <z></white>，向汝所視。多增其點，鏡則飛經之。</#6dd3a0>"
+"tutorial.admin.list-header": "<#f4d35e><bold>教之諸站</bold></#f4d35e>"
+"tutorial.admin.list-entry": " <#93c5fd><stop></#93c5fd> <#7b8aa0>- <state></#7b8aa0>"
+"tutorial.admin.state-set": "鏡路，<points> 點"
+"tutorial.admin.state-default": "環其處"
+"tutorial.admin.state-none": "略之（未設）"
+"lobby-item.tutorial.name": "<#f4d35e><bold>教</bold></#f4d35e>"
+"lobby-item.tutorial.lore":
+  - "<#cbd5e1>以鏡覽廳，並述局之道。</#cbd5e1>"
+  - "<#6b7280>▸ 右擊觀之</#6b7280>"
+"tutorial.admin.record-started": "<#6dd3a0>方錄 <white><stop></white>：汝即為鏡，飛之（覽可穿牆）。復輸 <white>/admin tutorial record</white> 以終（至多六十秒）。放時其速如汝所飛。</#6dd3a0>"
+"tutorial.admin.recording": "<#f95738>● 錄</#f95738> <white><stop></white> <#7b8aa0><seconds> 秒 - /admin tutorial record 以終</#7b8aa0>"
+"tutorial.admin.record-saved": "<#6dd3a0>站 <white><stop></white>：已錄鏡 <white><seconds> 秒</white>。以 <white>/admin tutorial test <stop></white> 觀之。</#6dd3a0>"
+"tutorial.admin.record-too-short": "<#f95738>太短，至少錄一秒。</#f95738>"
+"tutorial.disabled": "<#f95738>廳中之教未開。<white>/tutorial rules</white> 可觀玩法。</#f95738>"
+"recipe.golden_head.name": "<#f4d35e><bold>金首</bold></#f4d35e>"
+"recipe.compact_golden_apple.name": "<#f4d35e><bold>壓金林檎</bold></#f4d35e>"
+"recipe.bottle_o_enchanting.name": "<#7dd3fc><bold>淬靈甁</bold></#7dd3fc>"
+"recipe.bundle_arrows.name": "<#faf0ca><bold>束矢</bold></#faf0ca>"
+"recipe.obsidian.name": "<#334155><bold>黑曜石</bold></#334155>"
+"recipe.saddle.name": "<#c08457><bold>鞍</bold></#c08457>"
+"recipe.trident.name": "<#7dd3fc><bold>三叉戟</bold></#7dd3fc>"
+"recipe.totem.name": "<#f4d35e><bold>保命符</bold></#f4d35e>"
+"supporter.points-converted": "<prefix><#fb923c>贊助點今併入常點：君之 <white><amount></white> 已入點中。</#fb923c> <#7b8aa0>（今 <points>）</#7b8aa0>"
+"match-points-earned-supporter": "<#facc15>是局得點 <white><points></white></#facc15><#fb923c>（贊助者 <multiplier> 倍）</#fb923c><#facc15>。</#facc15>"
+"cosmetics.supporter.boost": "<#fb923c><bold>✦ 贊助者得點 <multiplier> 倍</bold></#fb923c>"
+"cosmetics.supporter.boost-lore": "<#6dd3a0>已行：戲中所得之點皆 <multiplier> 倍。謝君！</#6dd3a0>"
+"cosmetics.supporter.boost-lore-locked": "<#7b8aa0>贊助者戲中得點 <multiplier> 倍，詳見 /supporter。</#7b8aa0>"
