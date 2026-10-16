@@ -167,7 +167,7 @@
       "create": "<#f4d35e><bold>/kit create</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kit create <kit></#93c5fd> <#7b8aa0>- 인벤토리로 키트 만들기</#7b8aa0>"
       "edit": "<#f4d35e><bold>/kit edit</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kit edit <kit></#93c5fd> <#7b8aa0>- 키트를 인벤토리로 불러와 편집</#7b8aa0>"
       "save": "<#f4d35e><bold>/kit save</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/kit save [키트]</#93c5fd> <#7b8aa0>- 편집 중인 키트 저장</#7b8aa0>"
-    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin reboot <time></#93c5fd> <#7b8aa0>- 카운트다운 후 재시작: 30s, 5m, 1h, 1m30s (숫자만 = 분)</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 재시작 취소</#7b8aa0>"
+    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin reboot <time></#93c5fd> <#7b8aa0>- 카운트다운 후 재시작: 1s, 30s, 5m, 1h, 1m30s, now (숫자만 = 분)</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 재시작 취소</#7b8aa0>"
     "namehistory": "<#f4d35e><bold>/admin namehistory</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin namehistory <name></#93c5fd> <#7b8aa0>- 플레이어가 접속했던 모든 이름 (현재 이름 또는 예전 이름으로 검색)</#7b8aa0>"
   "team":
     "root": "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- 팀 메뉴 열기</#7b8aa0><newline> <#93c5fd>/team list | join <team> | leave</#93c5fd> <#7b8aa0>- 팀 둘러보기, 참가, 나가기</#7b8aa0><newline> <#93c5fd>/team create [이름]</#93c5fd> <#7b8aa0>- 내 팀 만들기</#7b8aa0><newline> <#93c5fd>/team invite <player></#93c5fd> <#7b8aa0>- 초대하기 (리더)</#7b8aa0><newline> <#93c5fd>/team rename <display name> | color <color></#93c5fd> <#7b8aa0>- 팀 이름/색 바꾸기 (리더)</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- 참가 허용 범위 (리더)</#7b8aa0><newline> <#93c5fd>/team transfer <player> | kick <player> | disband</#93c5fd> <#7b8aa0>- 팀 관리 (리더)</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- 팀 채팅 전환 (또는 /tm)</#7b8aa0>"
@@ -4412,6 +4412,8 @@ time-units:
 "discord-bot.clan-thread-moved": "🛡️ 이제 클랜 전용 채널이 생겼습니다: <channel>. 이 스레드는 보관됩니다."
 "discord-bot.clan-thread-welcome": "🛡️ **[<tag>] <clan>**의 Discord 공간입니다. 계정을 연동(/link)한 클랜원은 자동으로 추가됩니다."
 "clan":
+  "retagged": "<prefix><#6dd3a0><white><player></white>님이 클랜 태그를 바꿨습니다: <white><old></white> → <clan_tag></#6dd3a0>"
+  "renamed": "<prefix><clan_tag> <#6dd3a0><white><player></white>님이 클랜 이름을 바꿨습니다: <white><old></white> → <white><clan></white></#6dd3a0>"
   "created": "<prefix><#6dd3a0><clan_tag> <white><clan></white> 클랜을 만들었습니다!</#6dd3a0> <#7b8aa0>(-<cost> 포인트) <white>/clan invite <player></white> 로 친구를 초대하세요.</#7b8aa0>"
   "created-free": "<prefix><#6dd3a0><clan_tag> <white><clan></white> 클랜을 무료로 만들었습니다. 서버 최초의 클랜 중 하나예요!</#6dd3a0> <#7b8aa0><white>/clan invite <player></white>로 친구를 초대하세요.</#7b8aa0>"
   "icon-set": "<clan_tag> <#6dd3a0>클랜 아이콘이 바뀌었습니다.</#6dd3a0>"
@@ -4479,6 +4481,9 @@ time-units:
     "dark_gray": "진한 회색"
     "black": "검은색"
   "error":
+    "rename-cost": "<#f95738>변경에는 <white><cost></white> 포인트가 필요합니다. 보유: <white><balance></white>.</#f95738>"
+    "same-name": "<#f95738>이미 그 이름/태그입니다.</#f95738>"
+    "stat": "<#f95738>그런 통계는 없습니다. 사용 가능: <white><stats></white></#f95738>"
     "icon": "<#f95738>그건 클랜 아이콘으로 쓸 수 없습니다.</#f95738>"
     "icon-empty-hand": "<#f95738>쓰고 싶은 아이템을 먼저 주로 사용하는 손에 드세요.</#f95738>"
     "disabled": "<#f95738>이 서버에서는 클랜 기능이 꺼져 있습니다.</#f95738>"
@@ -4568,6 +4573,13 @@ time-units:
     "line": "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><clan></white> <#6dd3a0><value></#6dd3a0>"
     "empty": "<#7b8aa0>아직 여기에 기록이 있는 클랜이 없습니다.</#7b8aa0>"
   "admin":
+    "stat-changed": "<#6dd3a0><clan_tag> <white><clan></white>의 <stat>: <white><before></white> → <white><after></white> (레벨 <level>)</#6dd3a0>"
+    "stats-reset": "<#6dd3a0><clan_tag> <white><clan></white>의 <white><stat></white>을(를) 초기화했습니다 (레벨 <level>).</#6dd3a0>"
+    "all-stats": "모든 통계"
+    "role-set": "<#6dd3a0><white><player></white>님은 이제 <clan_tag> <white><clan></white>의 <role>입니다.</#6dd3a0>"
+    "role-leader": "<#f95738>그 사람은 리더입니다. 리더 변경은 setleader를 사용하세요.</#f95738>"
+    "join-set": "<#6dd3a0><clan_tag> <white><clan></white>은(는) 이제 <mode><#6dd3a0>입니다.</#6dd3a0>"
+    "description-set": "<#6dd3a0><clan_tag> <white><clan></white>의 설명을 변경했습니다.</#6dd3a0>"
     "resynced": "<#6dd3a0>클랜 <white><count></white>개를 Discord와 다시 동기화합니다.</#6dd3a0>"
     "resync-offline": "<#f95738>Discord 봇이 연결되어 있지 않습니다.</#f95738>"
     "disbanded": "<#6dd3a0><white><clan></white>을(를) 해체했습니다.</#6dd3a0>"
@@ -4580,15 +4592,24 @@ time-units:
     "info-id": "<#7b8aa0>ID</#7b8aa0> <white><id></white> <#7b8aa0>· 스타일</#7b8aa0> <white><style></white> <#7b8aa0>· 색상</#7b8aa0> <white><color></white>"
     "info-former": "<#7b8aa0>이전 멤버:</#7b8aa0> <gray><players></gray>"
   "usage":
-    "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- 클랜 메뉴 열기</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- 클랜 만들기 (포인트 필요)</#7b8aa0><newline> <#93c5fd>/clan info [clan|player] | list [page] | top [stat] [period]</#93c5fd> <#7b8aa0>- 클랜 찾아보기</#7b8aa0><newline> <#93c5fd>/clan join <clan> | accept [clan] | deny [clan] | leave</#93c5fd> <#7b8aa0>- 가입 또는 탈퇴</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- 플레이어 초대 (간부)</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <player></#93c5fd> <#7b8aa0>- 멤버 관리</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- 태그, 설명, 가입 방식 (리더)</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- 클랜전 참가 신청 및 출전 멤버 선택</#7b8aa0><newline> <#93c5fd>/cc [message]</#93c5fd> <#7b8aa0>- 클랜 채팅 (단독 입력: 클랜 채팅 모드 전환)</#7b8aa0>"
+    "retag": "<#f4d35e><bold>/clan retag</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan retag <tag></#93c5fd> <#7b8aa0>- 클랜 태그 변경 (리더)</#7b8aa0>"
+    "rename": "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan rename <name></#93c5fd> <#7b8aa0>- 클랜 이름 변경 (리더)</#7b8aa0>"
+    "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- 클랜 메뉴 열기</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- 클랜 만들기 (포인트 필요)</#7b8aa0><newline> <#93c5fd>/clan info [clan|player] | list [page] | top [stat] [period]</#93c5fd> <#7b8aa0>- 클랜 찾아보기</#7b8aa0><newline> <#93c5fd>/clan join <clan> | accept [clan] | deny [clan] | leave</#93c5fd> <#7b8aa0>- 가입 또는 탈퇴</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- 플레이어 초대 (간부)</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <player></#93c5fd> <#7b8aa0>- 멤버 관리</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- 태그, 설명, 가입 방식 (리더)</#7b8aa0><newline> <#93c5fd>/clan rename <name> | retag <tag></#93c5fd> <#7b8aa0>- 클랜 이름 또는 태그 변경 (리더, 포인트 필요)</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- 클랜전 참가 신청 및 출전 멤버 선택</#7b8aa0><newline> <#93c5fd>/cc [message]</#93c5fd> <#7b8aa0>- 클랜 채팅 (단독 입력: 클랜 채팅 모드 전환)</#7b8aa0>"
     "create": "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- 이름에는 띄어쓰기를 쓸 수 있고, 태그는 마지막 단어입니다 (2~5자)</#7b8aa0>"
     "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- 접속 중인 플레이어 초대</#7b8aa0>"
     "kick": "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan kick <player></#93c5fd> <#7b8aa0>- 멤버 추방</#7b8aa0>"
     "promote": "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan promote <player></#93c5fd> <#7b8aa0>- 멤버를 간부로 승급</#7b8aa0>"
     "demote": "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan demote <player></#93c5fd> <#7b8aa0>- 간부를 멤버로 강등</#7b8aa0>"
     "transfer": "<#f4d35e><bold>/clan transfer</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan transfer <player></#93c5fd> <#7b8aa0>- 다른 멤버에게 클랜 넘기기</#7b8aa0>"
-    "admin": "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin clan info <clan></#93c5fd> <#7b8aa0>- 전체 정보</#7b8aa0><newline> <#93c5fd>/admin clan rename <clan> <name> | retag <clan> <tag></#93c5fd> <#7b8aa0>- 이름이나 태그 변경</#7b8aa0><newline> <#93c5fd>/admin clan disband <clan></#93c5fd> <#7b8aa0>- 해체</#7b8aa0><newline> <#93c5fd>/admin clan setleader <clan> <player></#93c5fd> <#7b8aa0>- 리더 변경</#7b8aa0><newline> <#93c5fd>/admin clan addmember <clan> <player> | removemember <player></#93c5fd> <#7b8aa0>- 플레이어 이동</#7b8aa0><newline> <#93c5fd>/admin clan xp <clan> <amount></#93c5fd> <#7b8aa0>- 클랜 XP 지급</#7b8aa0><newline> <#93c5fd>/admin clan resync [clan]</#93c5fd> <#7b8aa0>- Discord 다시 동기화 (모든 클랜 또는 하나)</#7b8aa0>"
+    "admin": "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin clan info <clan></#93c5fd> <#7b8aa0>- 전체 정보</#7b8aa0><newline> <#93c5fd>/admin clan rename <clan> <name> | retag <clan> <tag></#93c5fd> <#7b8aa0>- 이름이나 태그 변경</#7b8aa0><newline> <#93c5fd>/admin clan disband <clan></#93c5fd> <#7b8aa0>- 해체</#7b8aa0><newline> <#93c5fd>/admin clan setleader <clan> <player></#93c5fd> <#7b8aa0>- 리더 변경</#7b8aa0><newline> <#93c5fd>/admin clan addmember <clan> <player> | removemember <player></#93c5fd> <#7b8aa0>- 플레이어 이동</#7b8aa0><newline> <#93c5fd>/admin clan stat <clan> <stat> <give|take|set> <amount></#93c5fd> <#7b8aa0>- 클랜 통계(xp, wins, kills 등)를 지급, 차감 또는 설정</#7b8aa0><newline> <#93c5fd>/admin clan resetstats <clan> [stat]</#93c5fd> <#7b8aa0>- 통계 하나 또는 전부 초기화</#7b8aa0><newline> <#93c5fd>/admin clan setrole <clan> <player> <officer|member></#93c5fd> <#7b8aa0>- 멤버를 간부나 멤버로 지정</#7b8aa0><newline> <#93c5fd>/admin clan setjoin <clan> <open|invite></#93c5fd> <#7b8aa0>- 공개 가입 또는 초대 전용으로 변경</#7b8aa0><newline> <#93c5fd>/admin clan setdescription <clan> <text></#93c5fd> <#7b8aa0>- 설명 변경</#7b8aa0><newline> <#93c5fd>/admin clan xp <clan> <amount></#93c5fd> <#7b8aa0>- 클랜 XP 지급 (stat … xp give 와 같음)</#7b8aa0><newline> <#93c5fd>/admin clan resync [clan]</#93c5fd> <#7b8aa0>- Discord 다시 동기화 (모든 클랜 또는 하나)</#7b8aa0>"
   "input":
+    "rename": "<#6dd3a0>변경 (<cost> 포인트)</#6dd3a0>"
+    "rename-confirm-free": "<#cbd5e1><white><value></white>(으)로 바꿀까요?</#cbd5e1>"
+    "rename-confirm": "<#cbd5e1><white><cost></white> 포인트로 <white><value></white>(으)로 바꿀까요?</#cbd5e1>"
+    "rename-body-free": "<#7b8aa0>이름: 3-24자. 태그: 2-5자 (A-Z, 0-9 또는 한중일 문자).</#7b8aa0>"
+    "rename-body": "<#cbd5e1><white><cost></white> 포인트가 듭니다.</#cbd5e1><newline><#7b8aa0>이름: 3-24자. 태그: 2-5자 (A-Z, 0-9 또는 한중일 문자).</#7b8aa0>"
+    "retag-title": "태그 변경"
+    "rename-title": "클랜 이름 변경"
     "create-body-free": "<#6dd3a0><bold>무료!</bold></#6dd3a0> <#cbd5e1>서버의 첫 클랜들은 포인트가 들지 않습니다. <white><free_left></white>자리 남았어요.</#cbd5e1><newline><#7b8aa0>이름: 3-24자. 태그: 2-5자 (A-Z, 0-9 또는 한중일 문자).</#7b8aa0>"
     "create-confirm-free": "<#cbd5e1><white>[<tag>] <clan></white> 클랜을 <#6dd3a0><bold>무료</bold></#6dd3a0>로 만들까요?</#cbd5e1><newline><#7b8aa0>서버 최초의 클랜 중 하나입니다 (무료 자리 <free_left>개 남음).</#7b8aa0>"
     "create-free": "<#6dd3a0>만들기 (무료)</#6dd3a0>"
@@ -4723,6 +4744,18 @@ time-units:
       "transfer": "<#f4d35e><bold>리더로 지정</bold></#f4d35e>"
       "kick": "<#f95738><bold>추방</bold></#f95738>"
     "settings":
+      "retag-lore-free":
+        - "<#7b8aa0>현재:</#7b8aa0> <clan_tag>"
+      "retag-lore":
+        - "<#7b8aa0>현재:</#7b8aa0> <clan_tag>"
+        - "<#7b8aa0><cost> 포인트</#7b8aa0>"
+      "rename-lore-free":
+        - "<#7b8aa0>현재:</#7b8aa0> <white><clan></white>"
+      "rename-lore":
+        - "<#7b8aa0>현재:</#7b8aa0> <white><clan></white>"
+        - "<#7b8aa0><cost> 포인트</#7b8aa0>"
+      "retag": "<#cbd5e1><bold>태그 변경</bold></#cbd5e1>"
+      "rename": "<#cbd5e1><bold>클랜 이름 변경</bold></#cbd5e1>"
       "hex": "<#cbd5e1><bold>원하는 색 (16진수)</bold></#cbd5e1>"
       "hex-lore": "<#7b8aa0>#RRGGBB 형식으로 입력합니다. 예: #3fa9f5</#7b8aa0>"
       "icon": "<#cbd5e1><bold>클랜 아이콘</bold></#cbd5e1>"
@@ -4740,6 +4773,7 @@ time-units:
         - "<#7b8aa0>현재:</#7b8aa0> <clan_tag>"
       "color2": "<#cbd5e1><bold>그라데이션 두 번째 색상</bold></#cbd5e1>"
       "color2-lore":
+        - "<#7b8aa0>현재:</#7b8aa0> <second>"
         - "<#7b8aa0>그라데이션 태그 스타일에 사용됩니다.</#7b8aa0>"
       "style": "<#cbd5e1><bold>태그 스타일</bold></#cbd5e1>"
       "style-lore":
@@ -4770,7 +4804,8 @@ time-units:
     "yours": "<#7b8aa0>내 클랜:</#7b8aa0> <white>#<rank></white> <#6dd3a0><value></#6dd3a0>"
     "yours-unranked": "<#7b8aa0>내 클랜 <clan_tag>은(는) 아직 여기 순위에 없습니다.</#7b8aa0>"
   "holo":
-    "board": "🛡 클랜 랭킹 🛡"
+    "board": "🛡 클랜 랭킹 · <stat> 🛡"
+    "hint": "<#7b8aa0>우/좌클릭으로 기간 변경 · 웅크리고 클릭하면 항목 변경</#7b8aa0>"
     "value": "<value> XP"
     "you": "<#6dd3a0>내 클랜 · <period>:</#6dd3a0> <white>#<rank></white> <#7b8aa0>-</#7b8aa0> <#f95738><value></#f95738>"
     "you-unranked": "<#6dd3a0>내 클랜 · <period>:</#6dd3a0> <#7b8aa0>순위 밖 -</#7b8aa0> <#f95738><value></#f95738>"

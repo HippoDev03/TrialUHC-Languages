@@ -167,7 +167,7 @@
       "create": "<#f4d35e><bold>/kit create</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kit create <キット></#93c5fd> <#7b8aa0>- インベントリからキットを作成</#7b8aa0>"
       "edit": "<#f4d35e><bold>/kit edit</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kit edit <キット></#93c5fd> <#7b8aa0>- キットをインベントリに読み込んで編集</#7b8aa0>"
       "save": "<#f4d35e><bold>/kit save</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/kit save [キット]</#93c5fd> <#7b8aa0>- 編集中のキットを保存</#7b8aa0>"
-    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin reboot <時間></#93c5fd> <#7b8aa0>- カウントダウン後に再起動：30s, 5m, 1h, 1m30s（数字だけなら分）</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 再起動を取り消す</#7b8aa0>"
+    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin reboot <時間></#93c5fd> <#7b8aa0>- カウントダウン後に再起動：1s, 30s, 5m, 1h, 1m30s, now（数字だけなら分）</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 再起動を取り消す</#7b8aa0>"
     namehistory: "<#f4d35e><bold>/admin namehistory</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin namehistory <名前></#93c5fd> <#7b8aa0>- プレイヤーが使った全ての名前（現在または以前の名前で検索）</#7b8aa0>"
   "team":
     "root": "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- チームメニューを開く</#7b8aa0><newline> <#93c5fd>/team list | join <チーム> | leave</#93c5fd> <#7b8aa0>- チームを見る、参加、脱退</#7b8aa0><newline> <#93c5fd>/team create [名前]</#93c5fd> <#7b8aa0>- 自分のチームを作る</#7b8aa0><newline> <#93c5fd>/team invite <プレイヤー></#93c5fd> <#7b8aa0>- 招待する（リーダー）</#7b8aa0><newline> <#93c5fd>/team rename <表示名> | color <色></#93c5fd> <#7b8aa0>- チームの見た目を変更（リーダー）</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- 参加できる人（リーダー）</#7b8aa0><newline> <#93c5fd>/team transfer <プレイヤー> | kick <プレイヤー> | disband</#93c5fd> <#7b8aa0>- チームを管理（リーダー）</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- チームチャットの切替（または /tm）</#7b8aa0>"
@@ -4416,6 +4416,8 @@ time-units:
 "discord-bot.clan-thread-moved": "🛡️ クラン専用チャンネルができました：<channel>。このスレッドはアーカイブされます。"
 "discord-bot.clan-thread-welcome": "🛡️ **[<tag>] <clan>** の Discord の場所です。アカウントを連携（/link）したメンバーは自動で追加されます。"
 "clan":
+  "retagged": "<prefix><#6dd3a0><white><player></white> がクランタグを変更しました：<white><old></white> → <clan_tag></#6dd3a0>"
+  "renamed": "<prefix><clan_tag> <#6dd3a0><white><player></white> がクラン名を変更しました：<white><old></white> → <white><clan></white></#6dd3a0>"
   "created": "<prefix><#6dd3a0><clan_tag> <white><clan></white> を作成しました！</#6dd3a0> <#7b8aa0>（-<cost> ポイント）<white>/clan invite <player></white> でフレンドを招待しましょう。</#7b8aa0>"
   "created-free": "<prefix><#6dd3a0><clan_tag> <white><clan></white> を無料で作成しました：サーバー最初期のクランのひとつです！</#6dd3a0> <#7b8aa0><white>/clan invite <プレイヤー></white> で友達を招待しよう。</#7b8aa0>"
   "icon-set": "<clan_tag> <#6dd3a0>クランのアイコンが変わりました。</#6dd3a0>"
@@ -4483,6 +4485,9 @@ time-units:
     "dark_gray": "暗い灰色"
     "black": "黒"
   "error":
+    "rename-cost": "<#f95738>変更には <white><cost></white> ポイント必要です。所持：<white><balance></white>。</#f95738>"
+    "same-name": "<#f95738>すでにその名前／タグです。</#f95738>"
+    "stat": "<#f95738>その統計はありません。使えるもの：<white><stats></white></#f95738>"
     "icon": "<#f95738>それはクランアイコンにできません。</#f95738>"
     "icon-empty-hand": "<#f95738>使いたいアイテムを先に利き手に持ってください。</#f95738>"
     "disabled": "<#f95738>このサーバーではクランはオフになっています。</#f95738>"
@@ -4572,6 +4577,13 @@ time-units:
     "line": "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><clan></white> <#6dd3a0><value></#6dd3a0>"
     "empty": "<#7b8aa0>ここで記録のあるクランはまだありません。</#7b8aa0>"
   "admin":
+    "stat-changed": "<#6dd3a0><clan_tag> <white><clan></white> の<stat>：<white><before></white> → <white><after></white>（レベル <level>）</#6dd3a0>"
+    "stats-reset": "<#6dd3a0><clan_tag> <white><clan></white> の<white><stat></white>をリセットしました（レベル <level>）。</#6dd3a0>"
+    "all-stats": "すべての統計"
+    "role-set": "<#6dd3a0><white><player></white> は <clan_tag> <white><clan></white> の<role>になりました。</#6dd3a0>"
+    "role-leader": "<#f95738>その人はリーダーです。リーダーの変更は setleader を使ってください。</#f95738>"
+    "join-set": "<#6dd3a0><clan_tag> <white><clan></white> は<mode><#6dd3a0>になりました。</#6dd3a0>"
+    "description-set": "<#6dd3a0><clan_tag> <white><clan></white> の説明を変更しました。</#6dd3a0>"
     "resynced": "<#6dd3a0><white><count></white> 個のクランを Discord と再同期しています。</#6dd3a0>"
     "resync-offline": "<#f95738>Discord ボットが接続されていません。</#f95738>"
     "disbanded": "<#6dd3a0><white><clan></white> を解散しました。</#6dd3a0>"
@@ -4584,15 +4596,24 @@ time-units:
     "info-id": "<#7b8aa0>ID</#7b8aa0> <white><id></white> <#7b8aa0>· スタイル</#7b8aa0> <white><style></white> <#7b8aa0>· 色</#7b8aa0> <white><color></white>"
     "info-former": "<#7b8aa0>元メンバー：</#7b8aa0> <gray><players></gray>"
   "usage":
-    "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- クランメニューを開く</#7b8aa0><newline> <#93c5fd>/clan create <名前> <タグ></#93c5fd> <#7b8aa0>- クランを作る（ポイントが必要）</#7b8aa0><newline> <#93c5fd>/clan info [クラン|プレイヤー] | list [ページ] | top [統計] [期間]</#93c5fd> <#7b8aa0>- クランを調べる</#7b8aa0><newline> <#93c5fd>/clan join <クラン> | accept [クラン] | deny [クラン] | leave</#93c5fd> <#7b8aa0>- 参加・脱退</#7b8aa0><newline> <#93c5fd>/clan invite <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを招待（オフィサー）</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <プレイヤー></#93c5fd> <#7b8aa0>- メンバーの管理</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- タグ、説明、参加方式（リーダー）</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- クラン戦に参加登録してメンバーを選ぶ</#7b8aa0><newline> <#93c5fd>/cc [メッセージ]</#93c5fd> <#7b8aa0>- クランチャット（引数なし：クランチャットモードの切替）</#7b8aa0>"
+    "retag": "<#f4d35e><bold>/clan retag</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan retag <タグ></#93c5fd> <#7b8aa0>- クランのタグを変更（リーダー）</#7b8aa0>"
+    "rename": "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan rename <名前></#93c5fd> <#7b8aa0>- クラン名を変更（リーダー）</#7b8aa0>"
+    "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- クランメニューを開く</#7b8aa0><newline> <#93c5fd>/clan create <名前> <タグ></#93c5fd> <#7b8aa0>- クランを作る（ポイントが必要）</#7b8aa0><newline> <#93c5fd>/clan info [クラン|プレイヤー] | list [ページ] | top [統計] [期間]</#93c5fd> <#7b8aa0>- クランを調べる</#7b8aa0><newline> <#93c5fd>/clan join <クラン> | accept [クラン] | deny [クラン] | leave</#93c5fd> <#7b8aa0>- 参加・脱退</#7b8aa0><newline> <#93c5fd>/clan invite <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを招待（オフィサー）</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <プレイヤー></#93c5fd> <#7b8aa0>- メンバーの管理</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- タグ、説明、参加方式（リーダー）</#7b8aa0><newline> <#93c5fd>/clan rename <名前> | retag <タグ></#93c5fd> <#7b8aa0>- クラン名やタグを変更（リーダー、ポイントが必要）</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- クラン戦に参加登録してメンバーを選ぶ</#7b8aa0><newline> <#93c5fd>/cc [メッセージ]</#93c5fd> <#7b8aa0>- クランチャット（引数なし：クランチャットモードの切替）</#7b8aa0>"
     "create": "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan create <名前> <タグ></#93c5fd> <#7b8aa0>- 名前にはスペースを使えます。タグは最後の単語です（2〜5 文字）</#7b8aa0>"
     "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan invite <プレイヤー></#93c5fd> <#7b8aa0>- オンラインのプレイヤーを招待</#7b8aa0>"
     "kick": "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan kick <プレイヤー></#93c5fd> <#7b8aa0>- メンバーを外す</#7b8aa0>"
     "promote": "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan promote <プレイヤー></#93c5fd> <#7b8aa0>- メンバーをオフィサーにする</#7b8aa0>"
     "demote": "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan demote <プレイヤー></#93c5fd> <#7b8aa0>- オフィサーをメンバーに戻す</#7b8aa0>"
     "transfer": "<#f4d35e><bold>/clan transfer</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan transfer <プレイヤー></#93c5fd> <#7b8aa0>- クランを別のメンバーに譲る</#7b8aa0>"
-    "admin": "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin clan info <クラン></#93c5fd> <#7b8aa0>- 詳細情報</#7b8aa0><newline> <#93c5fd>/admin clan rename <クラン> <名前> | retag <クラン> <タグ></#93c5fd> <#7b8aa0>- 名前やタグを変更</#7b8aa0><newline> <#93c5fd>/admin clan disband <クラン></#93c5fd> <#7b8aa0>- 解散</#7b8aa0><newline> <#93c5fd>/admin clan setleader <クラン> <プレイヤー></#93c5fd> <#7b8aa0>- リーダーを変更</#7b8aa0><newline> <#93c5fd>/admin clan addmember <クラン> <プレイヤー> | removemember <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを移動</#7b8aa0><newline> <#93c5fd>/admin clan xp <クラン> <量></#93c5fd> <#7b8aa0>- クランXPを付与</#7b8aa0><newline> <#93c5fd>/admin clan resync [クラン]</#93c5fd> <#7b8aa0>- Discord を再同期（全クラン、または1つ）</#7b8aa0>"
+    "admin": "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin clan info <クラン></#93c5fd> <#7b8aa0>- 詳細情報</#7b8aa0><newline> <#93c5fd>/admin clan rename <クラン> <名前> | retag <クラン> <タグ></#93c5fd> <#7b8aa0>- 名前やタグを変更</#7b8aa0><newline> <#93c5fd>/admin clan disband <クラン></#93c5fd> <#7b8aa0>- 解散</#7b8aa0><newline> <#93c5fd>/admin clan setleader <クラン> <プレイヤー></#93c5fd> <#7b8aa0>- リーダーを変更</#7b8aa0><newline> <#93c5fd>/admin clan addmember <クラン> <プレイヤー> | removemember <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを移動</#7b8aa0><newline> <#93c5fd>/admin clan stat <クラン> <項目> <give|take|set> <量></#93c5fd> <#7b8aa0>- クランの統計（xp、wins、kills など）を付与・減算・設定</#7b8aa0><newline> <#93c5fd>/admin clan resetstats <クラン> [項目]</#93c5fd> <#7b8aa0>- 1つの統計、またはすべてをリセット</#7b8aa0><newline> <#93c5fd>/admin clan setrole <クラン> <プレイヤー> <officer|member></#93c5fd> <#7b8aa0>- メンバーをオフィサーかメンバーにする</#7b8aa0><newline> <#93c5fd>/admin clan setjoin <クラン> <open|invite></#93c5fd> <#7b8aa0>- 自由参加か招待制にする</#7b8aa0><newline> <#93c5fd>/admin clan setdescription <クラン> <テキスト></#93c5fd> <#7b8aa0>- 説明を変更</#7b8aa0><newline> <#93c5fd>/admin clan xp <クラン> <量></#93c5fd> <#7b8aa0>- クランXPを付与（stat … xp give と同じ）</#7b8aa0><newline> <#93c5fd>/admin clan resync [クラン]</#93c5fd> <#7b8aa0>- Discord を再同期（全クラン、または1つ）</#7b8aa0>"
   "input":
+    "rename": "<#6dd3a0>変更（<cost> ポイント）</#6dd3a0>"
+    "rename-confirm-free": "<#cbd5e1><white><value></white> に変更しますか？</#cbd5e1>"
+    "rename-confirm": "<#cbd5e1><white><cost></white> ポイントで <white><value></white> に変更しますか？</#cbd5e1>"
+    "rename-body-free": "<#7b8aa0>名前：3〜24文字。タグ：2〜5文字（A-Z、0-9 または CJK）。</#7b8aa0>"
+    "rename-body": "<#cbd5e1><white><cost></white> ポイントかかります。</#cbd5e1><newline><#7b8aa0>名前：3〜24文字。タグ：2〜5文字（A-Z、0-9 または CJK）。</#7b8aa0>"
+    "retag-title": "タグを変更"
+    "rename-title": "クラン名を変更"
     "create-body-free": "<#6dd3a0><bold>無料！</bold></#6dd3a0> <#cbd5e1>サーバー最初のクランはポイント不要です。残り <white><free_left></white> 枠。</#cbd5e1><newline><#7b8aa0>名前：3〜24文字。タグ：2〜5文字（A-Z、0-9 または CJK）。</#7b8aa0>"
     "create-confirm-free": "<#cbd5e1><white>[<tag>] <clan></white> を<#6dd3a0><bold>無料</bold></#6dd3a0>で作成しますか？</#cbd5e1><newline><#7b8aa0>サーバー最初期のクランです（無料枠は残り <free_left>）。</#7b8aa0>"
     "create-free": "<#6dd3a0>作成（無料）</#6dd3a0>"
@@ -4727,6 +4748,18 @@ time-units:
       "transfer": "<#f4d35e><bold>リーダーにする</bold></#f4d35e>"
       "kick": "<#f95738><bold>キック</bold></#f95738>"
     "settings":
+      "retag-lore-free":
+        - "<#7b8aa0>現在：</#7b8aa0><clan_tag>"
+      "retag-lore":
+        - "<#7b8aa0>現在：</#7b8aa0><clan_tag>"
+        - "<#7b8aa0><cost> ポイント</#7b8aa0>"
+      "rename-lore-free":
+        - "<#7b8aa0>現在：</#7b8aa0><white><clan></white>"
+      "rename-lore":
+        - "<#7b8aa0>現在：</#7b8aa0><white><clan></white>"
+        - "<#7b8aa0><cost> ポイント</#7b8aa0>"
+      "retag": "<#cbd5e1><bold>タグを変更</bold></#cbd5e1>"
+      "rename": "<#cbd5e1><bold>クラン名を変更</bold></#cbd5e1>"
       "hex": "<#cbd5e1><bold>好きな色（16進数）</bold></#cbd5e1>"
       "hex-lore": "<#7b8aa0>#RRGGBB で色を入力します。例：#3fa9f5</#7b8aa0>"
       "icon": "<#cbd5e1><bold>クランアイコン</bold></#cbd5e1>"
@@ -4744,6 +4777,7 @@ time-units:
         - "<#7b8aa0>現在：</#7b8aa0> <clan_tag>"
       "color2": "<#cbd5e1><bold>グラデーションの2色目</bold></#cbd5e1>"
       "color2-lore":
+        - "<#7b8aa0>現在：</#7b8aa0><second>"
         - "<#7b8aa0>グラデーション系のタグスタイルで使います。</#7b8aa0>"
       "style": "<#cbd5e1><bold>タグスタイル</bold></#cbd5e1>"
       "style-lore":
@@ -4774,7 +4808,8 @@ time-units:
     "yours": "<#7b8aa0>あなたのクラン：</#7b8aa0> <white>#<rank></white> <#6dd3a0><value></#6dd3a0>"
     "yours-unranked": "<#7b8aa0>あなたのクラン <clan_tag> はまだここにランクインしていません。</#7b8aa0>"
   "holo":
-    "board": "🛡 クランランキング 🛡"
+    "board": "🛡 クランランキング · <stat> 🛡"
+    "hint": "<#7b8aa0>右/左クリックで期間切替 · しゃがんでクリックで項目切替</#7b8aa0>"
     "value": "<value> XP"
     "you": "<#6dd3a0>あなたのクラン・<period>：</#6dd3a0> <white>#<rank></white> <#7b8aa0>-</#7b8aa0> <#f95738><value></#f95738>"
     "you-unranked": "<#6dd3a0>あなたのクラン・<period>：</#6dd3a0> <#7b8aa0>ランク外 -</#7b8aa0> <#f95738><value></#f95738>"

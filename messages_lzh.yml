@@ -167,7 +167,7 @@
       "create": "<#f4d35e><bold>/kit create</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/kit create <裝></#93c5fd> <#7b8aa0>- 以今之囊立一裝</#7b8aa0>"
       "edit": "<#f4d35e><bold>/kit edit</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/kit edit <裝></#93c5fd> <#7b8aa0>- 載裝入囊以修之</#7b8aa0>"
       "save": "<#f4d35e><bold>/kit save</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/kit save [裝]</#93c5fd> <#7b8aa0>- 存方修之裝</#7b8aa0>"
-    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin reboot <時></#93c5fd> <#7b8aa0>- 倒數而後重啟：30s、5m、1h、1m30s（但書數 = 分）</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 罷重啟</#7b8aa0>"
+    "reboot": "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin reboot <時></#93c5fd> <#7b8aa0>- 倒數而後重啟：1s、30s、5m、1h、1m30s 或 now（但書數 = 分）</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- 罷重啟</#7b8aa0>"
     namehistory: "<#f4d35e><bold>/admin namehistory</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin namehistory <名></#93c5fd> <#7b8aa0>- 觀士所用諸名（今名舊名皆可）</#7b8aa0>"
   "team":
     "root": "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- 啟伍之單</#7b8aa0><newline> <#93c5fd>/team list | join <伍> | leave</#93c5fd> <#7b8aa0>- 覽、入或去伍</#7b8aa0><newline> <#93c5fd>/team create [名]</#93c5fd> <#7b8aa0>- 自立一伍</#7b8aa0><newline> <#93c5fd>/team invite <戲者></#93c5fd> <#7b8aa0>- 邀戲者（伍長）</#7b8aa0><newline> <#93c5fd>/team rename <示名> | color <色></#93c5fd> <#7b8aa0>- 易伍之貌（伍長）</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- 定誰可入（伍長）</#7b8aa0><newline> <#93c5fd>/team transfer <戲者> | kick <戲者> | disband</#93c5fd> <#7b8aa0>- 治伍（伍長）</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- 易伍中之言（或 /tm）</#7b8aa0>"
@@ -4386,6 +4386,8 @@ time-units:
 "cosmetics.supporter.boost-lore": "<#6dd3a0>已行：戲中所得之點皆 <multiplier> 倍。謝君！</#6dd3a0>"
 "cosmetics.supporter.boost-lore-locked": "<#7b8aa0>贊助者戲中得點 <multiplier> 倍，詳見 /supporter。</#7b8aa0>"
 "clan":
+  "retagged": "<prefix><#6dd3a0><white><player></white> 易盟之標：<white><old></white> → <clan_tag></#6dd3a0>"
+  "renamed": "<prefix><clan_tag> <#6dd3a0><white><player></white> 易盟之名：<white><old></white> → <white><clan></white></#6dd3a0>"
   "created": "<prefix><#6dd3a0>汝已立 <clan_tag> <white><clan></white>！</#6dd3a0> <#7b8aa0>（費 <cost> 點）以 <white>/clan invite <戲者></white> 邀友入盟。</#7b8aa0>"
   "created-free": "<prefix><#6dd3a0>汝立 <clan_tag> <white><clan></white>，不費一點：乃伺服最初之盟也！</#6dd3a0> <#7b8aa0>以 <white>/clan invite <戲者></white> 邀友。</#7b8aa0>"
   "icon-set": "<clan_tag> <#6dd3a0>盟易新徽。</#6dd3a0>"
@@ -4453,6 +4455,9 @@ time-units:
     "dark_gray": "深灰"
     "black": "玄"
   "error":
+    "rename-cost": "<#f95738>易名需 <white><cost></white> 點，汝唯 <white><balance></white>。</#f95738>"
+    "same-name": "<#f95738>盟本即此名此標。</#f95738>"
+    "stat": "<#f95738>無此績。可用者：<white><stats></white></#f95738>"
     "icon": "<#f95738>此物不可為盟之徽。</#f95738>"
     "icon-empty-hand": "<#f95738>先執欲用之物於手。</#f95738>"
     "disabled": "<#f95738>本服未開結盟之制。</#f95738>"
@@ -4542,6 +4547,13 @@ time-units:
     "line": "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><clan></white> <#6dd3a0><value></#6dd3a0>"
     "empty": "<#7b8aa0>此榜尚無盟之績。</#7b8aa0>"
   "admin":
+    "stat-changed": "<#6dd3a0><clan_tag> <white><clan></white> 之<stat>：<white><before></white> → <white><after></white>（<level> 等）</#6dd3a0>"
+    "stats-reset": "<#6dd3a0>已除 <clan_tag> <white><clan></white> 之<white><stat></white>（<level> 等）。</#6dd3a0>"
+    "all-stats": "諸績"
+    "role-set": "<#6dd3a0><white><player></white> 今為 <clan_tag> <white><clan></white> 之<role>。</#6dd3a0>"
+    "role-leader": "<#f95738>此乃盟主，欲易盟主，用 setleader。</#f95738>"
+    "join-set": "<#6dd3a0><clan_tag> <white><clan></white> 今為<mode><#6dd3a0>。</#6dd3a0>"
+    "description-set": "<#6dd3a0>已易 <clan_tag> <white><clan></white> 之述。</#6dd3a0>"
     "resynced": "<#6dd3a0>方與 Discord 重合 <white><count></white> 盟。</#6dd3a0>"
     "resync-offline": "<#f95738>Discord 之機未連。</#f95738>"
     "disbanded": "<#6dd3a0>已散 <white><clan></white>。</#6dd3a0>"
@@ -4554,15 +4566,24 @@ time-units:
     "info-id": "<#7b8aa0>ID</#7b8aa0> <white><id></white> <#7b8aa0>· 式</#7b8aa0> <white><style></white> <#7b8aa0>· 色</#7b8aa0> <white><color></white>"
     "info-former": "<#7b8aa0>舊盟眾：</#7b8aa0> <gray><players></gray>"
   "usage":
-    "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- 啟盟之單</#7b8aa0><newline> <#93c5fd>/clan create <名> <標></#93c5fd> <#7b8aa0>- 立盟（費點）</#7b8aa0><newline> <#93c5fd>/clan info [盟|戲者] | list [頁] | top [績] [期]</#93c5fd> <#7b8aa0>- 察諸盟</#7b8aa0><newline> <#93c5fd>/clan join <盟> | accept [盟] | deny [盟] | leave</#93c5fd> <#7b8aa0>- 入盟或去盟</#7b8aa0><newline> <#93c5fd>/clan invite <戲者></#93c5fd> <#7b8aa0>- 邀人（盟佐）</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <戲者></#93c5fd> <#7b8aa0>- 理盟眾</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- 標、述、入盟之法（盟主）</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- 署名盟戰並擇出戰之人</#7b8aa0><newline> <#93c5fd>/cc [言]</#93c5fd> <#7b8aa0>- 盟言（無言則易盟言之態）</#7b8aa0>"
+    "retag": "<#f4d35e><bold>/clan retag</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan retag <標></#93c5fd> <#7b8aa0>- 易汝盟之標（盟主）</#7b8aa0>"
+    "rename": "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan rename <名></#93c5fd> <#7b8aa0>- 易汝盟之名（盟主）</#7b8aa0>"
+    "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- 啟盟之單</#7b8aa0><newline> <#93c5fd>/clan create <名> <標></#93c5fd> <#7b8aa0>- 立盟（費點）</#7b8aa0><newline> <#93c5fd>/clan info [盟|戲者] | list [頁] | top [績] [期]</#93c5fd> <#7b8aa0>- 察諸盟</#7b8aa0><newline> <#93c5fd>/clan join <盟> | accept [盟] | deny [盟] | leave</#93c5fd> <#7b8aa0>- 入盟或去盟</#7b8aa0><newline> <#93c5fd>/clan invite <戲者></#93c5fd> <#7b8aa0>- 邀人（盟佐）</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <戲者></#93c5fd> <#7b8aa0>- 理盟眾</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- 標、述、入盟之法（盟主）</#7b8aa0><newline> <#93c5fd>/clan rename <名> | retag <標></#93c5fd> <#7b8aa0>- 易盟之名或標（盟主，費點）</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- 署名盟戰並擇出戰之人</#7b8aa0><newline> <#93c5fd>/cc [言]</#93c5fd> <#7b8aa0>- 盟言（無言則易盟言之態）</#7b8aa0>"
     "create": "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan create <名> <標></#93c5fd> <#7b8aa0>- 名可有空；末一詞為標（二至五字）</#7b8aa0>"
     "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan invite <戲者></#93c5fd> <#7b8aa0>- 邀在列之戲者</#7b8aa0>"
     "kick": "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan kick <戲者></#93c5fd> <#7b8aa0>- 逐一盟眾</#7b8aa0>"
     "promote": "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan promote <戲者></#93c5fd> <#7b8aa0>- 擢盟眾為盟佐</#7b8aa0>"
     "demote": "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan demote <戲者></#93c5fd> <#7b8aa0>- 降盟佐為盟眾</#7b8aa0>"
     "transfer": "<#f4d35e><bold>/clan transfer</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan transfer <戲者></#93c5fd> <#7b8aa0>- 以盟授他人</#7b8aa0>"
-    "admin": "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin clan info <盟></#93c5fd> <#7b8aa0>- 盡察其詳</#7b8aa0><newline> <#93c5fd>/admin clan rename <盟> <名> | retag <盟> <標></#93c5fd> <#7b8aa0>- 易其名或標</#7b8aa0><newline> <#93c5fd>/admin clan disband <盟></#93c5fd> <#7b8aa0>- 散之</#7b8aa0><newline> <#93c5fd>/admin clan setleader <盟> <戲者></#93c5fd> <#7b8aa0>- 易盟主</#7b8aa0><newline> <#93c5fd>/admin clan addmember <盟> <戲者> | removemember <戲者></#93c5fd> <#7b8aa0>- 遷戲者</#7b8aa0><newline> <#93c5fd>/admin clan xp <盟> <數></#93c5fd> <#7b8aa0>- 予盟之經驗</#7b8aa0><newline> <#93c5fd>/admin clan resync [盟]</#93c5fd> <#7b8aa0>- 令 Discord 與盟復合（諸盟或一盟）</#7b8aa0>"
+    "admin": "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin clan info <盟></#93c5fd> <#7b8aa0>- 盡察其詳</#7b8aa0><newline> <#93c5fd>/admin clan rename <盟> <名> | retag <盟> <標></#93c5fd> <#7b8aa0>- 易其名或標</#7b8aa0><newline> <#93c5fd>/admin clan disband <盟></#93c5fd> <#7b8aa0>- 散之</#7b8aa0><newline> <#93c5fd>/admin clan setleader <盟> <戲者></#93c5fd> <#7b8aa0>- 易盟主</#7b8aa0><newline> <#93c5fd>/admin clan addmember <盟> <戲者> | removemember <戲者></#93c5fd> <#7b8aa0>- 遷戲者</#7b8aa0><newline> <#93c5fd>/admin clan stat <盟> <績> <give|take|set> <數></#93c5fd> <#7b8aa0>- 予、奪或定盟之任一績（xp、wins、kills…）</#7b8aa0><newline> <#93c5fd>/admin clan resetstats <盟> [績]</#93c5fd> <#7b8aa0>- 除一績，或盡除之</#7b8aa0><newline> <#93c5fd>/admin clan setrole <盟> <戲者> <officer|member></#93c5fd> <#7b8aa0>- 令盟眾為盟佐或盟眾</#7b8aa0><newline> <#93c5fd>/admin clan setjoin <盟> <open|invite></#93c5fd> <#7b8aa0>- 令其開放或唯邀</#7b8aa0><newline> <#93c5fd>/admin clan setdescription <盟> <文></#93c5fd> <#7b8aa0>- 易其述</#7b8aa0><newline> <#93c5fd>/admin clan xp <盟> <數></#93c5fd> <#7b8aa0>- 予盟之經驗（同 stat … xp give）</#7b8aa0><newline> <#93c5fd>/admin clan resync [盟]</#93c5fd> <#7b8aa0>- 令 Discord 與盟復合（諸盟或一盟）</#7b8aa0>"
   "input":
+    "rename": "<#6dd3a0>易之（<cost> 點）</#6dd3a0>"
+    "rename-confirm-free": "<#cbd5e1>易為 <white><value></white> 乎？</#cbd5e1>"
+    "rename-confirm": "<#cbd5e1>費 <white><cost></white> 點易為 <white><value></white> 乎？</#cbd5e1>"
+    "rename-body-free": "<#7b8aa0>名：三至二十四字。標：二至五字（A-Z、0-9 或中日韓之字）。</#7b8aa0>"
+    "rename-body": "<#cbd5e1>需費 <white><cost></white> 點。</#cbd5e1><newline><#7b8aa0>名：三至二十四字。標：二至五字（A-Z、0-9 或中日韓之字）。</#7b8aa0>"
+    "retag-title": "易盟之標"
+    "rename-title": "易盟之名"
     "create-body-free": "<#6dd3a0><bold>不費！</bold></#6dd3a0> <#cbd5e1>伺服最初之數盟不費點，尚餘 <white><free_left></white>。</#cbd5e1><newline><#7b8aa0>名：三至二十四字。標：二至五字（A-Z、0-9 或中日韓之字）。</#7b8aa0>"
     "create-confirm-free": "<#cbd5e1><#6dd3a0><bold>不費</bold></#6dd3a0>而立 <white>[<tag>] <clan></white> 乎？</#cbd5e1><newline><#7b8aa0>乃伺服最初之盟（尚餘 <free_left> 不費）。</#7b8aa0>"
     "create-free": "<#6dd3a0>立之（不費）</#6dd3a0>"
@@ -4697,6 +4718,18 @@ time-units:
       "transfer": "<#f4d35e><bold>立為盟主</bold></#f4d35e>"
       "kick": "<#f95738><bold>逐之</bold></#f95738>"
     "settings":
+      "retag-lore-free":
+        - "<#7b8aa0>今：</#7b8aa0><clan_tag>"
+      "retag-lore":
+        - "<#7b8aa0>今：</#7b8aa0><clan_tag>"
+        - "<#7b8aa0>費 <cost> 點</#7b8aa0>"
+      "rename-lore-free":
+        - "<#7b8aa0>今：</#7b8aa0><white><clan></white>"
+      "rename-lore":
+        - "<#7b8aa0>今：</#7b8aa0><white><clan></white>"
+        - "<#7b8aa0>費 <cost> 點</#7b8aa0>"
+      "retag": "<#cbd5e1><bold>易盟之標</bold></#cbd5e1>"
+      "rename": "<#cbd5e1><bold>易盟之名</bold></#cbd5e1>"
       "hex": "<#cbd5e1><bold>任色（十六進）</bold></#cbd5e1>"
       "hex-lore": "<#7b8aa0>以 #RRGGBB 書色，如 #3fa9f5。</#7b8aa0>"
       "icon": "<#cbd5e1><bold>盟徽</bold></#cbd5e1>"
@@ -4714,6 +4747,7 @@ time-units:
         - "<#7b8aa0>今：</#7b8aa0> <clan_tag>"
       "color2": "<#cbd5e1><bold>漸色之次色</bold></#cbd5e1>"
       "color2-lore":
+        - "<#7b8aa0>今：</#7b8aa0><second>"
         - "<#7b8aa0>漸色之標式用之。</#7b8aa0>"
       "style": "<#cbd5e1><bold>標之式</bold></#cbd5e1>"
       "style-lore":
@@ -4744,7 +4778,8 @@ time-units:
     "yours": "<#7b8aa0>汝盟：</#7b8aa0> <white>#<rank></white> <#6dd3a0><value></#6dd3a0>"
     "yours-unranked": "<#7b8aa0>汝盟 <clan_tag> 尚未列於此榜。</#7b8aa0>"
   "holo":
-    "board": "🛡 盟之榜 🛡"
+    "board": "🛡 盟之榜 · <stat> 🛡"
+    "hint": "<#7b8aa0>右擊左擊以易期 · 蹲而擊之以易績</#7b8aa0>"
     "value": "經驗 <value>"
     "you": "<#6dd3a0>汝盟·<period>：</#6dd3a0> <white>#<rank></white> <#7b8aa0>-</#7b8aa0> <#f95738><value></#f95738>"
     "you-unranked": "<#6dd3a0>汝盟·<period>：</#6dd3a0> <#7b8aa0>未上榜 -</#7b8aa0> <#f95738><value></#f95738>"

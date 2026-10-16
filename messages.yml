@@ -170,7 +170,7 @@ usage:
       create: "<#f4d35e><bold>/kit create</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/kit create <kit></#93c5fd> <#7b8aa0>- make a kit from your inventory</#7b8aa0>"
       edit: "<#f4d35e><bold>/kit edit</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/kit edit <kit></#93c5fd> <#7b8aa0>- load a kit into your inventory to edit</#7b8aa0>"
       save: "<#f4d35e><bold>/kit save</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/kit save [kit]</#93c5fd> <#7b8aa0>- save the kit you're editing</#7b8aa0>"
-    reboot: "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/admin reboot <time></#93c5fd> <#7b8aa0>- restart after a countdown: 30s, 5m, 1h, 1m30s (a bare number = minutes)</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- cancel the restart</#7b8aa0>"
+    reboot: "<#f4d35e><bold>/admin reboot</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/admin reboot <time></#93c5fd> <#7b8aa0>- restart after a countdown: 1s, 30s, 5m, 1h, 1m30s or now (a bare number = minutes)</#7b8aa0><newline> <#93c5fd>/admin reboot cancel</#93c5fd> <#7b8aa0>- cancel the restart</#7b8aa0>"
     namehistory: "<#f4d35e><bold>/admin namehistory</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/admin namehistory <name></#93c5fd> <#7b8aa0>- every name a player has joined with (their current or an old name)</#7b8aa0>"
   team:
     root: "<#f4d35e><bold>/team</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/team</#93c5fd> <#7b8aa0>- open the team menu</#7b8aa0><newline> <#93c5fd>/team list | join <team> | leave</#93c5fd> <#7b8aa0>- browse, join or leave teams</#7b8aa0><newline> <#93c5fd>/team create [name]</#93c5fd> <#7b8aa0>- start your own team</#7b8aa0><newline> <#93c5fd>/team invite <player></#93c5fd> <#7b8aa0>- invite someone (leader)</#7b8aa0><newline> <#93c5fd>/team rename <display name> | color <color></#93c5fd> <#7b8aa0>- change your team's look (leader)</#7b8aa0><newline> <#93c5fd>/team public | private</#93c5fd> <#7b8aa0>- who can join (leader)</#7b8aa0><newline> <#93c5fd>/team transfer <player> | kick <player> | disband</#93c5fd> <#7b8aa0>- manage your team (leader)</#7b8aa0><newline> <#93c5fd>/team chat</#93c5fd> <#7b8aa0>- toggle team chat (or /tm)</#7b8aa0>"
@@ -4321,6 +4321,8 @@ time-units:
 "cosmetics.supporter.boost-lore": "<#6dd3a0>Active: every point you earn by playing counts <multiplier>x. Thank you!</#6dd3a0>"
 "cosmetics.supporter.boost-lore-locked": "<#7b8aa0>Supporters earn every point <multiplier>x faster - see /supporter.</#7b8aa0>"
 clan:
+  retagged: "<prefix><#6dd3a0><white><player></white> changed the clan tag: <white><old></white> → <clan_tag></#6dd3a0>"
+  renamed: "<prefix><clan_tag> <#6dd3a0><white><player></white> renamed the clan: <white><old></white> → <white><clan></white></#6dd3a0>"
   created: "<prefix><#6dd3a0>You created <clan_tag> <white><clan></white>!</#6dd3a0> <#7b8aa0>(-<cost> points) Invite friends with <white>/clan invite <player></white>.</#7b8aa0>"
   created-free: "<prefix><#6dd3a0>You created <clan_tag> <white><clan></white> for free - it was one of the server's first clans!</#6dd3a0> <#7b8aa0>Invite friends with <white>/clan invite <player></white>.</#7b8aa0>"
   icon-set: "<clan_tag> <#6dd3a0>The clan has a new icon.</#6dd3a0>"
@@ -4388,6 +4390,9 @@ clan:
     dark_gray: "Dark Gray"
     black: "Black"
   error:
+    rename-cost: "<#f95738>Renaming costs <white><cost></white> points; you have <white><balance></white>.</#f95738>"
+    same-name: "<#f95738>That's already the clan's name / tag.</#f95738>"
+    stat: "<#f95738>Unknown stat. Stats: <white><stats></white></#f95738>"
     icon: "<#f95738>That can't be a clan icon.</#f95738>"
     icon-empty-hand: "<#f95738>Hold the item you want in your main hand first.</#f95738>"
     disabled: "<#f95738>Clans are turned off on this server.</#f95738>"
@@ -4477,6 +4482,13 @@ clan:
     line: "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><clan></white> <#6dd3a0><value></#6dd3a0>"
     empty: "<#7b8aa0>No clan has scored here yet.</#7b8aa0>"
   admin:
+    stat-changed: "<#6dd3a0><clan_tag> <white><clan></white> <stat>: <white><before></white> → <white><after></white> (level <level>)</#6dd3a0>"
+    stats-reset: "<#6dd3a0>Cleared <white><stat></white> of <clan_tag> <white><clan></white> (level <level>).</#6dd3a0>"
+    all-stats: "every stat"
+    role-set: "<#6dd3a0><white><player></white> is now <role> of <clan_tag> <white><clan></white>.</#6dd3a0>"
+    role-leader: "<#f95738>That's the Leader - use setleader to change who leads.</#f95738>"
+    join-set: "<#6dd3a0><clan_tag> <white><clan></white> is now <mode><#6dd3a0>.</#6dd3a0>"
+    description-set: "<#6dd3a0>Changed the description of <clan_tag> <white><clan></white>.</#6dd3a0>"
     resynced: "<#6dd3a0>Resyncing <white><count></white> clan(s) with Discord.</#6dd3a0>"
     resync-offline: "<#f95738>The Discord bot isn't connected.</#f95738>"
     disbanded: "<#6dd3a0>Disbanded <white><clan></white>.</#6dd3a0>"
@@ -4489,15 +4501,24 @@ clan:
     info-id: "<#7b8aa0>ID</#7b8aa0> <white><id></white> <#7b8aa0>· style</#7b8aa0> <white><style></white> <#7b8aa0>· colours</#7b8aa0> <white><color></white>"
     info-former: "<#7b8aa0>Former members:</#7b8aa0> <gray><players></gray>"
   usage:
-    root: "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- open the clan menu</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- start a clan (costs points)</#7b8aa0><newline> <#93c5fd>/clan info [clan|player] | list [page] | top [stat] [period]</#93c5fd> <#7b8aa0>- look clans up</#7b8aa0><newline> <#93c5fd>/clan join <clan> | accept [clan] | deny [clan] | leave</#93c5fd> <#7b8aa0>- join or leave</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- invite someone (Officer)</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <player></#93c5fd> <#7b8aa0>- manage members</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- tag, description, joining (Leader)</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- sign up for a clan war and pick the roster</#7b8aa0><newline> <#93c5fd>/cc [message]</#93c5fd> <#7b8aa0>- clan chat (alone: switch clan chat mode)</#7b8aa0>"
+    retag: "<#f4d35e><bold>/clan retag</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan retag <tag></#93c5fd> <#7b8aa0>- change your clan's tag (Leader)</#7b8aa0>"
+    rename: "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan rename <name></#93c5fd> <#7b8aa0>- rename your clan (Leader)</#7b8aa0>"
+    root: "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- open the clan menu</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- start a clan (costs points)</#7b8aa0><newline> <#93c5fd>/clan info [clan|player] | list [page] | top [stat] [period]</#93c5fd> <#7b8aa0>- look clans up</#7b8aa0><newline> <#93c5fd>/clan join <clan> | accept [clan] | deny [clan] | leave</#93c5fd> <#7b8aa0>- join or leave</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- invite someone (Officer)</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <player></#93c5fd> <#7b8aa0>- manage members</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- tag, description, joining (Leader)</#7b8aa0><newline> <#93c5fd>/clan rename <name> | retag <tag></#93c5fd> <#7b8aa0>- rename the clan or change its tag (Leader, costs points)</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- sign up for a clan war and pick the roster</#7b8aa0><newline> <#93c5fd>/cc [message]</#93c5fd> <#7b8aa0>- clan chat (alone: switch clan chat mode)</#7b8aa0>"
     create: "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- the name can have spaces; the tag is the last word (2-5 characters)</#7b8aa0>"
     invite: "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- invite an online player</#7b8aa0>"
     kick: "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan kick <player></#93c5fd> <#7b8aa0>- remove a member</#7b8aa0>"
     promote: "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan promote <player></#93c5fd> <#7b8aa0>- make a Member an Officer</#7b8aa0>"
     demote: "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan demote <player></#93c5fd> <#7b8aa0>- make an Officer a Member</#7b8aa0>"
     transfer: "<#f4d35e><bold>/clan transfer</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan transfer <player></#93c5fd> <#7b8aa0>- hand the clan to another member</#7b8aa0>"
-    admin: "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/admin clan info <clan></#93c5fd> <#7b8aa0>- full info</#7b8aa0><newline> <#93c5fd>/admin clan rename <clan> <name> | retag <clan> <tag></#93c5fd> <#7b8aa0>- change the name or tag</#7b8aa0><newline> <#93c5fd>/admin clan disband <clan></#93c5fd> <#7b8aa0>- disband</#7b8aa0><newline> <#93c5fd>/admin clan setleader <clan> <player></#93c5fd> <#7b8aa0>- change the Leader</#7b8aa0><newline> <#93c5fd>/admin clan addmember <clan> <player> | removemember <player></#93c5fd> <#7b8aa0>- move players</#7b8aa0><newline> <#93c5fd>/admin clan xp <clan> <amount></#93c5fd> <#7b8aa0>- give clan XP</#7b8aa0><newline> <#93c5fd>/admin clan resync [clan]</#93c5fd> <#7b8aa0>- put Discord back in step (all clans, or one)</#7b8aa0>"
+    admin: "<#f4d35e><bold>/admin clan</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/admin clan info <clan></#93c5fd> <#7b8aa0>- full info</#7b8aa0><newline> <#93c5fd>/admin clan rename <clan> <name> | retag <clan> <tag></#93c5fd> <#7b8aa0>- change the name or tag</#7b8aa0><newline> <#93c5fd>/admin clan disband <clan></#93c5fd> <#7b8aa0>- disband</#7b8aa0><newline> <#93c5fd>/admin clan setleader <clan> <player></#93c5fd> <#7b8aa0>- change the Leader</#7b8aa0><newline> <#93c5fd>/admin clan addmember <clan> <player> | removemember <player></#93c5fd> <#7b8aa0>- move players</#7b8aa0><newline> <#93c5fd>/admin clan stat <clan> <stat> <give|take|set> <amount></#93c5fd> <#7b8aa0>- give, take or set any clan stat (xp, wins, kills ...)</#7b8aa0><newline> <#93c5fd>/admin clan resetstats <clan> [stat]</#93c5fd> <#7b8aa0>- clear one stat, or all of them</#7b8aa0><newline> <#93c5fd>/admin clan setrole <clan> <player> <officer|member></#93c5fd> <#7b8aa0>- make a member an Officer or a Member</#7b8aa0><newline> <#93c5fd>/admin clan setjoin <clan> <open|invite></#93c5fd> <#7b8aa0>- open to anyone, or invite only</#7b8aa0><newline> <#93c5fd>/admin clan setdescription <clan> <text></#93c5fd> <#7b8aa0>- change the description</#7b8aa0><newline> <#93c5fd>/admin clan xp <clan> <amount></#93c5fd> <#7b8aa0>- give clan XP (same as stat ... xp give)</#7b8aa0><newline> <#93c5fd>/admin clan resync [clan]</#93c5fd> <#7b8aa0>- put Discord back in step (all clans, or one)</#7b8aa0>"
   input:
+    rename: "<#6dd3a0>Change (<cost> points)</#6dd3a0>"
+    rename-confirm-free: "<#cbd5e1>Change it to <white><value></white>?</#cbd5e1>"
+    rename-confirm: "<#cbd5e1>Change it to <white><value></white> for <white><cost></white> points?</#cbd5e1>"
+    rename-body-free: "<#7b8aa0>Name: 3-24 characters. Tag: 2-5 characters (A-Z, 0-9 or CJK).</#7b8aa0>"
+    rename-body: "<#cbd5e1>This costs <white><cost></white> points.</#cbd5e1><newline><#7b8aa0>Name: 3-24 characters. Tag: 2-5 characters (A-Z, 0-9 or CJK).</#7b8aa0>"
+    retag-title: "Change the Tag"
+    rename-title: "Rename the Clan"
     create-body-free: "<#6dd3a0><bold>Free!</bold></#6dd3a0> <#cbd5e1>The server's first clans cost nothing - <white><free_left></white> left.</#cbd5e1><newline><#7b8aa0>Name: 3-24 characters. Tag: 2-5 characters (A-Z, 0-9 or CJK).</#7b8aa0>"
     create-confirm-free: "<#cbd5e1>Create <white>[<tag>] <clan></white> for <#6dd3a0><bold>free</bold></#6dd3a0>?</#cbd5e1><newline><#7b8aa0>One of the server's first clans (<free_left> free left).</#7b8aa0>"
     create-free: "<#6dd3a0>Create (free)</#6dd3a0>"
@@ -4632,6 +4653,18 @@ clan:
       transfer: "<#f4d35e><bold>Make Leader</bold></#f4d35e>"
       kick: "<#f95738><bold>Kick</bold></#f95738>"
     settings:
+      retag-lore-free:
+        - "<#7b8aa0>Now:</#7b8aa0> <clan_tag>"
+      retag-lore:
+        - "<#7b8aa0>Now:</#7b8aa0> <clan_tag>"
+        - "<#7b8aa0>Costs <cost> points</#7b8aa0>"
+      rename-lore-free:
+        - "<#7b8aa0>Now:</#7b8aa0> <white><clan></white>"
+      rename-lore:
+        - "<#7b8aa0>Now:</#7b8aa0> <white><clan></white>"
+        - "<#7b8aa0>Costs <cost> points</#7b8aa0>"
+      retag: "<#cbd5e1><bold>Change the tag</bold></#cbd5e1>"
+      rename: "<#cbd5e1><bold>Rename the clan</bold></#cbd5e1>"
       hex: "<#cbd5e1><bold>Any colour (hex)</bold></#cbd5e1>"
       hex-lore: "<#7b8aa0>Type a colour as #RRGGBB, e.g. #3fa9f5.</#7b8aa0>"
       icon: "<#cbd5e1><bold>Clan icon</bold></#cbd5e1>"
@@ -4649,6 +4682,7 @@ clan:
         - "<#7b8aa0>Now:</#7b8aa0> <clan_tag>"
       color2: "<#cbd5e1><bold>Gradient's second colour</bold></#cbd5e1>"
       color2-lore:
+        - "<#7b8aa0>Now:</#7b8aa0> <second>"
         - "<#7b8aa0>Used by the gradient tag styles.</#7b8aa0>"
       style: "<#cbd5e1><bold>Tag style</bold></#cbd5e1>"
       style-lore:
@@ -4679,7 +4713,8 @@ clan:
     yours: "<#7b8aa0>Your clan:</#7b8aa0> <white>#<rank></white> <#6dd3a0><value></#6dd3a0>"
     yours-unranked: "<#7b8aa0>Your clan <clan_tag> isn't ranked here yet.</#7b8aa0>"
   holo:
-    board: "🛡 Clan Leaderboard 🛡"
+    board: "🛡 Clans · <stat> 🛡"
+    hint: "<#7b8aa0>Click to switch period · sneak + click to switch stat</#7b8aa0>"
     value: "<value> XP"
     you: "<#6dd3a0>Your clan · <period>:</#6dd3a0> <white>#<rank></white> <#7b8aa0>-</#7b8aa0> <#f95738><value></#f95738>"
     you-unranked: "<#6dd3a0>Your clan · <period>:</#6dd3a0> <#7b8aa0>Not ranked -</#7b8aa0> <#f95738><value></#f95738>"
