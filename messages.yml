@@ -1216,7 +1216,8 @@ settings-dialog:
     hide-lobby-players: "<item:ender_eye>"
     floating-leaderboards: "<item:item_frame>"
     lobby-fly: "<item:feather>"
-    clan-teams: "<item:white_banner>"
+    lobby-music: "<item:music_disc_cat>"
+    clan-teams: "<item:goat_horn>"
   setting:
     scoreboard: "<icon> <white>Scoreboard</white>  <state>"
     own-nametag: "<icon> <white>Own nametag</white>  <state>"
@@ -1226,6 +1227,7 @@ settings-dialog:
     hide-lobby-players: "<icon> <white>Hide players in lobby</white>  <state>"
     floating-leaderboards: "<icon> <white>Floating leaderboards</white>  <state>"
     lobby-fly: "<icon> <white>Lobby flight</white>  <state>"
+    lobby-music: "<icon> <white>Lobby music</white>  <state>"
     clan-teams: "<icon> <white>Team up with clanmates</white>  <state>"
   tooltip:
     scoreboard: "<#cbd5e1>Show the match scoreboard on the side of your screen. Shortcut: /sb</#cbd5e1>"
@@ -1236,6 +1238,7 @@ settings-dialog:
     hide-lobby-players: "<#cbd5e1>Hide everyone else while you are in the lobby. Matches are not affected.</#cbd5e1>"
     floating-leaderboards: "<#cbd5e1>Let the lobby leaderboards drift gently up and down. Turn off to keep them still.</#cbd5e1>"
     lobby-fly: "<#cbd5e1>Fly around the lobby. Only works in the lobby.</#cbd5e1>"
+    lobby-music: "<#cbd5e1>Quiet note-block music in the lobby. Its loudness follows your Jukebox/Note Blocks volume.</#cbd5e1>"
     clan-teams: "<#cbd5e1>At match start, put me on a team with clanmates who don't have one.</#cbd5e1>"
 lobbygame:
   only:
@@ -4392,6 +4395,7 @@ clan:
     dark_gray: "Dark Gray"
     black: "Black"
   error:
+    invite-unknown: "<#f95738><white><player></white> has never played here.</#f95738>"
     rename-cost: "<#f95738>Renaming costs <white><cost></white> points; you have <white><balance></white>.</#f95738>"
     same-name: "<#f95738>That's already the clan's name / tag.</#f95738>"
     stat: "<#f95738>Unknown stat. Stats: <white><stats></white></#f95738>"
@@ -4429,6 +4433,8 @@ clan:
     color-locked: "<#f95738>That colour unlocks at clan level <white><level></white>.</#f95738>"
     style-locked: "<#f95738>That tag style unlocks at clan level <white><level></white>.</#f95738>"
   invite:
+    sent-offline: "<#6dd3a0>Invited <white><player></white> to <white><clan></white>.</#6dd3a0> <#7b8aa0>They're offline - they'll see it when they join (it waits <days> days).</#7b8aa0>"
+    pending-join: "<prefix><#f4d35e>While you were away, <white><player></white> invited you to the clan <clan_tag> <white><clan></white> (<members>/<max> members, level <level>).</#f4d35e>"
     sent: "<#6dd3a0>Invited <white><player></white> to <white><clan></white>.</#6dd3a0>"
     received: "<prefix><#f4d35e><white><player></white> invited you to a clan!</#f4d35e><newline>  <clan_tag> <white><bold><clan></bold></white><newline>  <#7b8aa0>Members</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· Level</#7b8aa0> <#c4b5fd><level></#c4b5fd><newline>  <#7b8aa0>The invite runs out in <white><minutes></white> minutes.</#7b8aa0>"
     buttons: "  <click:run_command:'/clan accept <tag>'><hover:show_text:'<gray>/clan accept <tag></gray>'><#6dd3a0><bold>[Join]</bold></#6dd3a0></hover></click>  <click:run_command:'/clan deny <tag>'><hover:show_text:'<gray>/clan deny <tag></gray>'><#f95738><bold>[Decline]</bold></#f95738></hover></click>"
@@ -4508,7 +4514,7 @@ clan:
     rename: "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan rename <name></#93c5fd> <#7b8aa0>- rename your clan (Leader)</#7b8aa0>"
     root: "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- open the clan menu</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- start a clan (costs points)</#7b8aa0><newline> <#93c5fd>/clan info [clan|player] | list [page] | top [stat] [period]</#93c5fd> <#7b8aa0>- look clans up</#7b8aa0><newline> <#93c5fd>/clan join <clan> | accept [clan] | deny [clan] | leave</#93c5fd> <#7b8aa0>- join or leave</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- invite someone (Officer)</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <player></#93c5fd> <#7b8aa0>- manage members</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- tag, description, joining (Leader)</#7b8aa0><newline> <#93c5fd>/clan rename <name> | retag <tag></#93c5fd> <#7b8aa0>- rename the clan or change its tag (Leader, costs points)</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- sign up for a clan war and pick the roster</#7b8aa0><newline> <#93c5fd>/cc [message]</#93c5fd> <#7b8aa0>- clan chat (alone: switch clan chat mode)</#7b8aa0>"
     create: "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- the name can have spaces; the tag is the last word (2-5 characters)</#7b8aa0>"
-    invite: "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- invite an online player</#7b8aa0>"
+    invite: "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- invite a player (offline ones see it when they join)</#7b8aa0>"
     kick: "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan kick <player></#93c5fd> <#7b8aa0>- remove a member</#7b8aa0>"
     promote: "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan promote <player></#93c5fd> <#7b8aa0>- make a Member an Officer</#7b8aa0>"
     demote: "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/clan demote <player></#93c5fd> <#7b8aa0>- make an Officer a Member</#7b8aa0>"
@@ -4606,7 +4612,7 @@ clan:
         - "<#cbd5e1><members>/<max> members, <online> online.</#cbd5e1>"
       invite: "<#6dd3a0><bold>Invite a player</bold></#6dd3a0>"
       invite-lore:
-        - "<#cbd5e1>Click to invite someone online.</#cbd5e1>"
+        - "<#cbd5e1>Click to invite a player (offline ones see it when they join).</#cbd5e1>"
         - "<#7b8aa0>Join requests: <requests> (right-click)</#7b8aa0>"
       stats: "<#facc15><bold>Stats</bold></#facc15>"
       stats-lore:
@@ -4748,3 +4754,21 @@ clan:
       not-picked: "<#7b8aa0>Not on the roster</#7b8aa0>"
       click-pick: "<#93c5fd>Click to add or remove</#93c5fd>"
       withdraw: "<#f95738><bold>Leave the clan war</bold></#f95738>"
+lobby-music:
+  # The lobby music's toast. Two lines on purpose: the game then shows its own header line only for a moment.
+  # <title> = the song's name (lobby-music.yml)
+  now-playing: "<#f4d35e>♪ Now playing</#f4d35e><newline><white><title></white>"
+music:
+  status: "<#f4d35e>♪ Now playing:</#f4d35e> <white><title></white> <#7b8aa0>· lobby music <state></#7b8aa0>"
+  none: "<#7b8aa0>There's no lobby music.</#7b8aa0>"
+  "on": "<#6dd3a0>♪ Lobby music on.</#6dd3a0>"
+  "off": "<#f4d35e>Lobby music off.</#f4d35e> <#7b8aa0><white>/music play</white> turns it back on.</#7b8aa0>"
+  state-on: "<#6dd3a0>on</#6dd3a0>"
+  state-off: "<#f95738>off</#f95738>"
+  skipped: "<#6dd3a0>⏭ Skipped - now playing <white><title></white>.</#6dd3a0>"
+  jumped: "<#6dd3a0>♪ Now playing <white><title></white> for everyone in the lobby.</#6dd3a0>"
+  unknown: "<#f95738>There's no song called <white><song></white>. See <white>/music list</white>.</#f95738>"
+  list-header: "<#f4d35e><bold>♪ Lobby playlist</bold></#f4d35e> <#7b8aa0>(<count>)</#7b8aa0>"
+  list-line: "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>(<song>)</#7b8aa0>"
+  list-playing: "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>(<song>)</#7b8aa0>"
+  usage: "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- what's playing</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- turn the lobby music on or off for you</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- the playlist</#7b8aa0><newline> <#93c5fd>/music skip | play <song></#93c5fd> <#7b8aa0>- change the song for everyone (staff)</#7b8aa0>"

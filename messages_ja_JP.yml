@@ -1176,7 +1176,8 @@
     "hide-lobby-players": "<item:ender_eye>"
     "floating-leaderboards": "<item:item_frame>"
     "lobby-fly": "<item:feather>"
-    "clan-teams": "<item:white_banner>"
+    "lobby-music": "<item:music_disc_cat>"
+    "clan-teams": "<item:goat_horn>"
   "setting":
     "scoreboard": "<icon> <white>スコアボード</white>  <state>"
     "own-nametag": "<icon> <white>自分のネームタグ</white>  <state>"
@@ -1186,6 +1187,7 @@
     "hide-lobby-players": "<icon> <white>ロビーでプレイヤーを隠す</white>  <state>"
     "floating-leaderboards": "<icon> <white>ロビーのランキングを浮かせる</white>  <state>"
     "lobby-fly": "<icon> <white>ロビー飛行</white>  <state>"
+    "lobby-music": "<icon> <white>ロビー音楽</white>  <state>"
     "clan-teams": "<icon> <white>クランメンバーとチームを組む</white>  <state>"
   "tooltip":
     "scoreboard": "<#cbd5e1>画面の横に試合のスコアボードを表示します。ショートカット：/sb</#cbd5e1>"
@@ -1196,6 +1198,7 @@
     "hide-lobby-players": "<#cbd5e1>ロビーにいる間、他の全員を隠します。試合には影響しません。</#cbd5e1>"
     "floating-leaderboards": "<#cbd5e1>ロビーのランキングボードをゆっくり上下に浮かせます。オフにすると静止します。</#cbd5e1>"
     "lobby-fly": "<#cbd5e1>ロビーで飛び回れます。ロビーでのみ有効。</#cbd5e1>"
+    "lobby-music": "<#cbd5e1>ロビーで流れる小さな音ブロックの音楽。音量は「ジュークボックス/音ブロック」の設定に従います。</#cbd5e1>"
     "clan-teams": "<#cbd5e1>試合開始時、チームのないクランメンバーと同じチームになります。</#cbd5e1>"
 "lobbygame":
   "only":
@@ -4487,6 +4490,7 @@ time-units:
     "dark_gray": "暗い灰色"
     "black": "黒"
   "error":
+    "invite-unknown": "<#f95738><white><player></white> はこのサーバーに来たことがありません。</#f95738>"
     "rename-cost": "<#f95738>変更には <white><cost></white> ポイント必要です。所持：<white><balance></white>。</#f95738>"
     "same-name": "<#f95738>すでにその名前／タグです。</#f95738>"
     "stat": "<#f95738>その統計はありません。使えるもの：<white><stats></white></#f95738>"
@@ -4524,6 +4528,8 @@ time-units:
     "color-locked": "<#f95738>その色はクランレベル <white><level></white> で解放されます。</#f95738>"
     "style-locked": "<#f95738>そのタグスタイルはクランレベル <white><level></white> で解放されます。</#f95738>"
   "invite":
+    "sent-offline": "<#6dd3a0><white><player></white> を <white><clan></white> に招待しました。</#6dd3a0> <#7b8aa0>オフラインなので、次にログインしたときに届きます（<days> 日間有効）。</#7b8aa0>"
+    "pending-join": "<prefix><#f4d35e>あなたがいない間に、<white><player></white> がクラン <clan_tag> <white><clan></white> に招待しました（メンバー <members>/<max>、レベル <level>）。</#f4d35e>"
     "sent": "<#6dd3a0><white><player></white> を <white><clan></white> に招待しました。</#6dd3a0>"
     "received": "<prefix><#f4d35e><white><player></white> があなたをクランに招待しました！</#f4d35e><newline>  <clan_tag> <white><bold><clan></bold></white><newline>  <#7b8aa0>メンバー</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· レベル</#7b8aa0> <#c4b5fd><level></#c4b5fd><newline>  <#7b8aa0>招待は <white><minutes></white> 分で期限切れになります。</#7b8aa0>"
     "buttons": "  <click:run_command:'/clan accept <tag>'><hover:show_text:'<gray>/clan accept <tag></gray>'><#6dd3a0><bold>[参加]</bold></#6dd3a0></hover></click>  <click:run_command:'/clan deny <tag>'><hover:show_text:'<gray>/clan deny <tag></gray>'><#f95738><bold>[断る]</bold></#f95738></hover></click>"
@@ -4603,7 +4609,7 @@ time-units:
     "rename": "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan rename <名前></#93c5fd> <#7b8aa0>- クラン名を変更（リーダー）</#7b8aa0>"
     "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- クランメニューを開く</#7b8aa0><newline> <#93c5fd>/clan create <名前> <タグ></#93c5fd> <#7b8aa0>- クランを作る（ポイントが必要）</#7b8aa0><newline> <#93c5fd>/clan info [クラン|プレイヤー] | list [ページ] | top [統計] [期間]</#93c5fd> <#7b8aa0>- クランを調べる</#7b8aa0><newline> <#93c5fd>/clan join <クラン> | accept [クラン] | deny [クラン] | leave</#93c5fd> <#7b8aa0>- 参加・脱退</#7b8aa0><newline> <#93c5fd>/clan invite <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを招待（オフィサー）</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <プレイヤー></#93c5fd> <#7b8aa0>- メンバーの管理</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- タグ、説明、参加方式（リーダー）</#7b8aa0><newline> <#93c5fd>/clan rename <名前> | retag <タグ></#93c5fd> <#7b8aa0>- クラン名やタグを変更（リーダー、ポイントが必要）</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- クラン戦に参加登録してメンバーを選ぶ</#7b8aa0><newline> <#93c5fd>/cc [メッセージ]</#93c5fd> <#7b8aa0>- クランチャット（引数なし：クランチャットモードの切替）</#7b8aa0>"
     "create": "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan create <名前> <タグ></#93c5fd> <#7b8aa0>- 名前にはスペースを使えます。タグは最後の単語です（2〜5 文字）</#7b8aa0>"
-    "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan invite <プレイヤー></#93c5fd> <#7b8aa0>- オンラインのプレイヤーを招待</#7b8aa0>"
+    "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan invite <プレイヤー></#93c5fd> <#7b8aa0>- プレイヤーを招待（オフラインなら次のログイン時に届く）</#7b8aa0>"
     "kick": "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan kick <プレイヤー></#93c5fd> <#7b8aa0>- メンバーを外す</#7b8aa0>"
     "promote": "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan promote <プレイヤー></#93c5fd> <#7b8aa0>- メンバーをオフィサーにする</#7b8aa0>"
     "demote": "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/clan demote <プレイヤー></#93c5fd> <#7b8aa0>- オフィサーをメンバーに戻す</#7b8aa0>"
@@ -4701,7 +4707,7 @@ time-units:
         - "<#cbd5e1>メンバー <members>/<max>、オンライン <online>。</#cbd5e1>"
       "invite": "<#6dd3a0><bold>プレイヤーを招待</bold></#6dd3a0>"
       "invite-lore":
-        - "<#cbd5e1>クリックでオンラインのプレイヤーを招待。</#cbd5e1>"
+        - "<#cbd5e1>クリックでプレイヤーを招待（オフラインなら次のログイン時に届く）。</#cbd5e1>"
         - "<#7b8aa0>参加申請：<requests>（右クリック）</#7b8aa0>"
       "stats": "<#facc15><bold>統計</bold></#facc15>"
       "stats-lore":
@@ -4843,3 +4849,21 @@ time-units:
       "not-picked": "<#7b8aa0>出場メンバーではありません</#7b8aa0>"
       "click-pick": "<#93c5fd>クリックで追加／外す</#93c5fd>"
       "withdraw": "<#f95738><bold>クラン戦から辞退</bold></#f95738>"
+"lobby-music":
+  # The lobby music's toast. Two lines on purpose: the game then shows its own header line only for a moment.
+  # <title> = the song's name (lobby-music.yml)
+  "now-playing": "<#f4d35e>♪ 再生中</#f4d35e><newline><white><title></white>"
+"music":
+  "status": "<#f4d35e>♪ 再生中：</#f4d35e><white><title></white> <#7b8aa0>· ロビー音楽 <state></#7b8aa0>"
+  "none": "<#7b8aa0>ロビー音楽はありません。</#7b8aa0>"
+  "on": "<#6dd3a0>♪ ロビー音楽をオンにしました。</#6dd3a0>"
+  "off": "<#f4d35e>ロビー音楽をオフにしました。</#f4d35e> <#7b8aa0><white>/music play</white> で戻せます。</#7b8aa0>"
+  "state-on": "<#6dd3a0>オン</#6dd3a0>"
+  "state-off": "<#f95738>オフ</#f95738>"
+  "skipped": "<#6dd3a0>⏭ スキップしました。再生中：<white><title></white></#6dd3a0>"
+  "jumped": "<#6dd3a0>♪ ロビー全体で <white><title></white> を再生します。</#6dd3a0>"
+  "unknown": "<#f95738><white><song></white> という曲はありません。<white>/music list</white> を見てください。</#f95738>"
+  "list-header": "<#f4d35e><bold>♪ ロビーのプレイリスト</bold></#f4d35e> <#7b8aa0>（<count>）</#7b8aa0>"
+  "list-line": "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>（<song>）</#7b8aa0>"
+  "list-playing": "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>（<song>）</#7b8aa0>"
+  "usage": "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 再生中の曲</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 自分のロビー音楽をオン／オフ</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- プレイリスト</#7b8aa0><newline> <#93c5fd>/music skip | play <曲></#93c5fd> <#7b8aa0>- 全員の曲を変える（スタッフ）</#7b8aa0>"

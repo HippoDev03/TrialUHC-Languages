@@ -1176,7 +1176,8 @@
     "hide-lobby-players": "<item:ender_eye>"
     "floating-leaderboards": "<item:item_frame>"
     "lobby-fly": "<item:feather>"
-    "clan-teams": "<item:white_banner>"
+    "lobby-music": "<item:music_disc_cat>"
+    "clan-teams": "<item:goat_horn>"
   "setting":
     "scoreboard": "<icon> <white>스코어보드</white>  <state>"
     "own-nametag": "<icon> <white>내 이름표</white>  <state>"
@@ -1186,6 +1187,7 @@
     "hide-lobby-players": "<icon> <white>로비 플레이어 숨기기</white>  <state>"
     "floating-leaderboards": "<icon> <white>로비 순위판 떠다니기</white>  <state>"
     "lobby-fly": "<icon> <white>로비 비행</white>  <state>"
+    "lobby-music": "<icon> <white>로비 음악</white>  <state>"
     "clan-teams": "<icon> <white>클랜원과 팀 짜기</white>  <state>"
   "tooltip":
     "scoreboard": "<#cbd5e1>화면 옆에 경기 스코어보드를 표시합니다. 단축 명령어: /sb</#cbd5e1>"
@@ -1196,6 +1198,7 @@
     "hide-lobby-players": "<#cbd5e1>로비에 있는 동안 다른 플레이어를 모두 숨깁니다. 경기에는 영향이 없습니다.</#cbd5e1>"
     "floating-leaderboards": "<#cbd5e1>로비 순위판이 천천히 위아래로 떠다닙니다. 끄면 멈춰 있습니다.</#cbd5e1>"
     "lobby-fly": "<#cbd5e1>로비에서 날아다닙니다. 로비에서만 작동합니다.</#cbd5e1>"
+    "lobby-music": "<#cbd5e1>로비에서 작게 흐르는 소리 블록 음악. 음량은 '주크박스/소리 블록' 설정을 따릅니다.</#cbd5e1>"
     "clan-teams": "<#cbd5e1>경기 시작 시 팀이 없는 클랜원과 같은 팀이 됩니다.</#cbd5e1>"
 "lobbygame":
   "only":
@@ -4483,6 +4486,7 @@ time-units:
     "dark_gray": "진한 회색"
     "black": "검은색"
   "error":
+    "invite-unknown": "<#f95738><white><player></white>님은 이 서버에 온 적이 없습니다.</#f95738>"
     "rename-cost": "<#f95738>변경에는 <white><cost></white> 포인트가 필요합니다. 보유: <white><balance></white>.</#f95738>"
     "same-name": "<#f95738>이미 그 이름/태그입니다.</#f95738>"
     "stat": "<#f95738>그런 통계는 없습니다. 사용 가능: <white><stats></white></#f95738>"
@@ -4520,6 +4524,8 @@ time-units:
     "color-locked": "<#f95738>그 색상은 클랜 레벨 <white><level></white>에서 해금됩니다.</#f95738>"
     "style-locked": "<#f95738>그 태그 스타일은 클랜 레벨 <white><level></white>에서 해금됩니다.</#f95738>"
   "invite":
+    "sent-offline": "<#6dd3a0><white><player></white>님을 <white><clan></white>에 초대했습니다.</#6dd3a0> <#7b8aa0>오프라인이라 다음 접속 때 보게 됩니다 (<days>일 동안 유효).</#7b8aa0>"
+    "pending-join": "<prefix><#f4d35e>접속하지 않은 동안 <white><player></white>님이 클랜 <clan_tag> <white><clan></white>에 초대했습니다 (멤버 <members>/<max>, 레벨 <level>).</#f4d35e>"
     "sent": "<#6dd3a0><white><player></white>님을 <white><clan></white>에 초대했습니다.</#6dd3a0>"
     "received": "<prefix><#f4d35e><white><player></white>님이 클랜에 초대했습니다!</#f4d35e><newline>  <clan_tag> <white><bold><clan></bold></white><newline>  <#7b8aa0>멤버</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· 레벨</#7b8aa0> <#c4b5fd><level></#c4b5fd><newline>  <#7b8aa0>초대는 <white><minutes></white>분 후 만료됩니다.</#7b8aa0>"
     "buttons": "  <click:run_command:'/clan accept <tag>'><hover:show_text:'<gray>/clan accept <tag></gray>'><#6dd3a0><bold>[가입]</bold></#6dd3a0></hover></click>  <click:run_command:'/clan deny <tag>'><hover:show_text:'<gray>/clan deny <tag></gray>'><#f95738><bold>[거절]</bold></#f95738></hover></click>"
@@ -4599,7 +4605,7 @@ time-units:
     "rename": "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan rename <name></#93c5fd> <#7b8aa0>- 클랜 이름 변경 (리더)</#7b8aa0>"
     "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- 클랜 메뉴 열기</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- 클랜 만들기 (포인트 필요)</#7b8aa0><newline> <#93c5fd>/clan info [clan|player] | list [page] | top [stat] [period]</#93c5fd> <#7b8aa0>- 클랜 찾아보기</#7b8aa0><newline> <#93c5fd>/clan join <clan> | accept [clan] | deny [clan] | leave</#93c5fd> <#7b8aa0>- 가입 또는 탈퇴</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- 플레이어 초대 (간부)</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <player></#93c5fd> <#7b8aa0>- 멤버 관리</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- 태그, 설명, 가입 방식 (리더)</#7b8aa0><newline> <#93c5fd>/clan rename <name> | retag <tag></#93c5fd> <#7b8aa0>- 클랜 이름 또는 태그 변경 (리더, 포인트 필요)</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- 클랜전 참가 신청 및 출전 멤버 선택</#7b8aa0><newline> <#93c5fd>/cc [message]</#93c5fd> <#7b8aa0>- 클랜 채팅 (단독 입력: 클랜 채팅 모드 전환)</#7b8aa0>"
     "create": "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan create <name> <tag></#93c5fd> <#7b8aa0>- 이름에는 띄어쓰기를 쓸 수 있고, 태그는 마지막 단어입니다 (2~5자)</#7b8aa0>"
-    "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- 접속 중인 플레이어 초대</#7b8aa0>"
+    "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan invite <player></#93c5fd> <#7b8aa0>- 플레이어 초대 (오프라인이면 다음 접속 때 표시)</#7b8aa0>"
     "kick": "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan kick <player></#93c5fd> <#7b8aa0>- 멤버 추방</#7b8aa0>"
     "promote": "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan promote <player></#93c5fd> <#7b8aa0>- 멤버를 간부로 승급</#7b8aa0>"
     "demote": "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/clan demote <player></#93c5fd> <#7b8aa0>- 간부를 멤버로 강등</#7b8aa0>"
@@ -4697,7 +4703,7 @@ time-units:
         - "<#cbd5e1>멤버 <members>/<max>, <online>명 접속 중.</#cbd5e1>"
       "invite": "<#6dd3a0><bold>플레이어 초대</bold></#6dd3a0>"
       "invite-lore":
-        - "<#cbd5e1>클릭하여 접속 중인 플레이어를 초대합니다.</#cbd5e1>"
+        - "<#cbd5e1>클릭하여 플레이어를 초대합니다 (오프라인이면 다음 접속 때 표시).</#cbd5e1>"
         - "<#7b8aa0>가입 신청: <requests> (우클릭)</#7b8aa0>"
       "stats": "<#facc15><bold>통계</bold></#facc15>"
       "stats-lore":
@@ -4839,3 +4845,21 @@ time-units:
       "not-picked": "<#7b8aa0>출전 명단에 없음</#7b8aa0>"
       "click-pick": "<#93c5fd>클릭하여 추가 또는 제거</#93c5fd>"
       "withdraw": "<#f95738><bold>클랜전에서 빠지기</bold></#f95738>"
+"lobby-music":
+  # The lobby music's toast. Two lines on purpose: the game then shows its own header line only for a moment.
+  # <title> = the song's name (lobby-music.yml)
+  "now-playing": "<#f4d35e>♪ 재생 중</#f4d35e><newline><white><title></white>"
+"music":
+  "status": "<#f4d35e>♪ 재생 중:</#f4d35e> <white><title></white> <#7b8aa0>· 로비 음악 <state></#7b8aa0>"
+  "none": "<#7b8aa0>로비 음악이 없습니다.</#7b8aa0>"
+  "on": "<#6dd3a0>♪ 로비 음악을 켰습니다.</#6dd3a0>"
+  "off": "<#f4d35e>로비 음악을 껐습니다.</#f4d35e> <#7b8aa0><white>/music play</white>로 다시 켤 수 있습니다.</#7b8aa0>"
+  "state-on": "<#6dd3a0>켜짐</#6dd3a0>"
+  "state-off": "<#f95738>꺼짐</#f95738>"
+  "skipped": "<#6dd3a0>⏭ 건너뛰었습니다. 지금 재생: <white><title></white></#6dd3a0>"
+  "jumped": "<#6dd3a0>♪ 로비 전체에 <white><title></white>을(를) 재생합니다.</#6dd3a0>"
+  "unknown": "<#f95738><white><song></white>(이)라는 곡은 없습니다. <white>/music list</white>를 확인하세요.</#f95738>"
+  "list-header": "<#f4d35e><bold>♪ 로비 재생 목록</bold></#f4d35e> <#7b8aa0>(<count>)</#7b8aa0>"
+  "list-line": "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>(<song>)</#7b8aa0>"
+  "list-playing": "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>(<song>)</#7b8aa0>"
+  "usage": "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 지금 재생 중인 곡</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 내 로비 음악 켜기/끄기</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- 재생 목록</#7b8aa0><newline> <#93c5fd>/music skip | play <song></#93c5fd> <#7b8aa0>- 모두의 곡 변경 (스태프)</#7b8aa0>"

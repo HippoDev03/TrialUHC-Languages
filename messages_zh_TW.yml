@@ -1954,7 +1954,8 @@ settings-dialog:
     hide-lobby-players: "<item:ender_eye>"
     floating-leaderboards: "<item:item_frame>"
     lobby-fly: "<item:feather>"
-    clan-teams: "<item:white_banner>"
+    lobby-music: "<item:music_disc_cat>"
+    clan-teams: "<item:goat_horn>"
   setting:
     scoreboard: "<icon> <white>計分板</white>  <state>"
     own-nametag: "<icon> <white>顯示自己的名牌</white>  <state>"
@@ -1964,6 +1965,7 @@ settings-dialog:
     hide-lobby-players: "<icon> <white>隱藏大廳玩家</white>  <state>"
     floating-leaderboards: "<icon> <white>大廳排行榜浮動</white>  <state>"
     lobby-fly: "<icon> <white>大廳飛行</white>  <state>"
+    lobby-music: "<icon> <white>大廳音樂</white>  <state>"
     clan-teams: "<icon> <white>與戰隊隊友組隊</white>  <state>"
   tooltip:
     scoreboard: "<#cbd5e1>在畫面側邊顯示比賽計分板。快捷指令：/sb</#cbd5e1>"
@@ -1974,6 +1976,7 @@ settings-dialog:
     hide-lobby-players: "<#cbd5e1>在大廳時隱藏其他所有玩家，不影響比賽。</#cbd5e1>"
     floating-leaderboards: "<#cbd5e1>讓大廳排行榜輕輕上下浮動。關閉後排行榜會保持不動。</#cbd5e1>"
     lobby-fly: "<#cbd5e1>在大廳中飛行，只在大廳有效。</#cbd5e1>"
+    lobby-music: "<#cbd5e1>大廳裡小聲的音符盒背景音樂，音量跟著你的「唱片機／音符盒」音量設定。</#cbd5e1>"
     clan-teams: "<#cbd5e1>比賽開始時，把我和沒有隊伍的戰隊隊友分在同一隊。</#cbd5e1>"
 database:
   clear:
@@ -5069,6 +5072,7 @@ clan:
     dark_gray: "深灰色"
     black: "黑色"
   error:
+    invite-unknown: "<#f95738><white><player></white> 從來沒有來過這個伺服器。</#f95738>"
     rename-cost: "<#f95738>改名要 <white><cost></white> 點，你只有 <white><balance></white> 點。</#f95738>"
     same-name: "<#f95738>戰隊本來就是這個名稱或標籤。</#f95738>"
     stat: "<#f95738>沒有這個統計項目。可用的有：<white><stats></white></#f95738>"
@@ -5106,6 +5110,8 @@ clan:
     color-locked: "<#f95738>這個顏色在戰隊等級 <white><level></white> 解鎖。</#f95738>"
     style-locked: "<#f95738>這個標籤樣式在戰隊等級 <white><level></white> 解鎖。</#f95738>"
   invite:
+    sent-offline: "<#6dd3a0>已邀請 <white><player></white> 加入 <white><clan></white>。</#6dd3a0> <#7b8aa0>對方不在線上，下次上線就會看到（邀請保留 <days> 天）。</#7b8aa0>"
+    pending-join: "<prefix><#f4d35e>你不在的時候，<white><player></white> 邀請你加入戰隊 <clan_tag> <white><clan></white>（<members>/<max> 名隊員，等級 <level>）。</#f4d35e>"
     sent: "<#6dd3a0>已邀請 <white><player></white> 加入 <white><clan></white>。</#6dd3a0>"
     received: "<prefix><#f4d35e><white><player></white> 邀請你加入戰隊！</#f4d35e><newline>  <clan_tag> <white><bold><clan></bold></white><newline>  <#7b8aa0>隊員</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· 等級</#7b8aa0> <#c4b5fd><level></#c4b5fd><newline>  <#7b8aa0>邀請將在 <white><minutes></white> 分鐘後失效。</#7b8aa0>"
     buttons: "  <click:run_command:'/clan accept <tag>'><hover:show_text:'<gray>/clan accept <tag></gray>'><#6dd3a0><bold>[加入]</bold></#6dd3a0></hover></click>  <click:run_command:'/clan deny <tag>'><hover:show_text:'<gray>/clan deny <tag></gray>'><#f95738><bold>[婉拒]</bold></#f95738></hover></click>"
@@ -5185,7 +5191,7 @@ clan:
     rename: "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan rename <名稱></#93c5fd> <#7b8aa0>- 幫你的戰隊改名（隊長）</#7b8aa0>"
     root: "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- 開啟戰隊選單</#7b8aa0><newline> <#93c5fd>/clan create <名稱> <標籤></#93c5fd> <#7b8aa0>- 建立戰隊（需要點數）</#7b8aa0><newline> <#93c5fd>/clan info [戰隊|玩家] | list [頁數] | top [統計] [期間]</#93c5fd> <#7b8aa0>- 查詢戰隊</#7b8aa0><newline> <#93c5fd>/clan join <戰隊> | accept [戰隊] | deny [戰隊] | leave</#93c5fd> <#7b8aa0>- 加入或離開</#7b8aa0><newline> <#93c5fd>/clan invite <玩家></#93c5fd> <#7b8aa0>- 邀請玩家（幹部）</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <玩家></#93c5fd> <#7b8aa0>- 管理隊員</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- 標籤、簡介、加入方式（隊長）</#7b8aa0><newline> <#93c5fd>/clan rename <名稱> | retag <標籤></#93c5fd> <#7b8aa0>- 幫戰隊改名或更換標籤（隊長，需花點數）</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- 報名戰隊戰並選擇出賽名單</#7b8aa0><newline> <#93c5fd>/cc [訊息]</#93c5fd> <#7b8aa0>- 戰隊聊天（不加訊息：切換戰隊聊天模式）</#7b8aa0>"
     create: "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan create <名稱> <標籤></#93c5fd> <#7b8aa0>- 名稱可以有空格；最後一個詞是標籤（2-5 個字元）</#7b8aa0>"
-    invite: "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan invite <玩家></#93c5fd> <#7b8aa0>- 邀請一位在線玩家</#7b8aa0>"
+    invite: "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan invite <玩家></#93c5fd> <#7b8aa0>- 邀請玩家（不在線上的人下次上線會看到）</#7b8aa0>"
     kick: "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan kick <玩家></#93c5fd> <#7b8aa0>- 移除一位隊員</#7b8aa0>"
     promote: "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan promote <玩家></#93c5fd> <#7b8aa0>- 將隊員升為幹部</#7b8aa0>"
     demote: "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan demote <玩家></#93c5fd> <#7b8aa0>- 將幹部降為隊員</#7b8aa0>"
@@ -5283,7 +5289,7 @@ clan:
         - "<#cbd5e1><members>/<max> 名隊員，<online> 人在線。</#cbd5e1>"
       invite: "<#6dd3a0><bold>邀請玩家</bold></#6dd3a0>"
       invite-lore:
-        - "<#cbd5e1>點擊邀請一位在線玩家。</#cbd5e1>"
+        - "<#cbd5e1>點擊邀請玩家（不在線上的人下次上線會看到）。</#cbd5e1>"
         - "<#7b8aa0>加入申請：<requests>（右鍵）</#7b8aa0>"
       stats: "<#facc15><bold>統計</bold></#facc15>"
       stats-lore:
@@ -5455,3 +5461,21 @@ clan:
 "discord-bot.clan-thread-moved": "🛡️ 戰隊現在有專屬頻道了：<channel>。這個討論串已封存。"
 "discord-bot.clan-thread-welcome": "🛡️ 這裡是 **[<tag>] <clan>** 在 Discord 上的地方。成員綁定帳號（/link）後會自動被加進來。"
 "discord-bot.clan-chat-out": "💬 **<player>**：<message>"
+lobby-music:
+  # The lobby music's toast. Two lines on purpose: the game then shows its own header line only for a moment.
+  # <title> = the song's name (lobby-music.yml)
+  now-playing: "<#f4d35e>♪ 正在播放</#f4d35e><newline><white><title></white>"
+music:
+  status: "<#f4d35e>♪ 正在播放：</#f4d35e><white><title></white> <#7b8aa0>· 大廳音樂<state></#7b8aa0>"
+  none: "<#7b8aa0>目前沒有大廳音樂。</#7b8aa0>"
+  "on": "<#6dd3a0>♪ 已開啟大廳音樂。</#6dd3a0>"
+  "off": "<#f4d35e>已關閉大廳音樂。</#f4d35e> <#7b8aa0>輸入 <white>/music play</white> 可以再打開。</#7b8aa0>"
+  state-on: "<#6dd3a0>開啟</#6dd3a0>"
+  state-off: "<#f95738>關閉</#f95738>"
+  skipped: "<#6dd3a0>⏭ 已跳過，現在播放 <white><title></white>。</#6dd3a0>"
+  jumped: "<#6dd3a0>♪ 大廳現在播放 <white><title></white>。</#6dd3a0>"
+  unknown: "<#f95738>沒有叫 <white><song></white> 的歌，請看 <white>/music list</white>。</#f95738>"
+  list-header: "<#f4d35e><bold>♪ 大廳播放清單</bold></#f4d35e> <#7b8aa0>（<count>）</#7b8aa0>"
+  list-line: "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>（<song>）</#7b8aa0>"
+  list-playing: "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>（<song>）</#7b8aa0>"
+  usage: "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 現在播放的歌</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 開啟或關閉你的大廳音樂</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- 播放清單</#7b8aa0><newline> <#93c5fd>/music skip | play <歌曲></#93c5fd> <#7b8aa0>- 幫大家換歌（管理員）</#7b8aa0>"

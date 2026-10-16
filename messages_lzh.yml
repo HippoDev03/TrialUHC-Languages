@@ -1176,7 +1176,8 @@
     "hide-lobby-players": "<item:ender_eye>"
     "floating-leaderboards": "<item:item_frame>"
     "lobby-fly": "<item:feather>"
-    "clan-teams": "<item:white_banner>"
+    "lobby-music": "<item:music_disc_cat>"
+    "clan-teams": "<item:goat_horn>"
   "setting":
     "scoreboard": "<icon> <white>計分之板</white>  <state>"
     "own-nametag": "<icon> <white>示己之名牌</white>  <state>"
@@ -1186,6 +1187,7 @@
     "hide-lobby-players": "<icon> <white>隱大廳眾人</white>  <state>"
     "floating-leaderboards": "<icon> <white>大廳榜浮動</white>  <state>"
     "lobby-fly": "<icon> <white>大廳之飛</white>  <state>"
+    "lobby-music": "<icon> <white>大廳之樂</white>  <state>"
     "clan-teams": "<icon> <white>與盟友同伍</white>  <state>"
   "tooltip":
     "scoreboard": "<#cbd5e1>示局之計分板於幕側。速令：/sb</#cbd5e1>"
@@ -1196,6 +1198,7 @@
     "hide-lobby-players": "<#cbd5e1>在大廳則隱眾人，不涉於局。</#cbd5e1>"
     "floating-leaderboards": "<#cbd5e1>令大廳之榜徐徐浮沉。閉之則榜靜止。</#cbd5e1>"
     "lobby-fly": "<#cbd5e1>飛於大廳，唯大廳有效。</#cbd5e1>"
+    "lobby-music": "<#cbd5e1>大廳之中，音符盒輕奏之樂；其聲隨汝「唱片機／音符盒」之量。</#cbd5e1>"
     "clan-teams": "<#cbd5e1>戰始，與無伍之盟友同伍。</#cbd5e1>"
 "lobbygame":
   "only":
@@ -4456,6 +4459,7 @@ time-units:
     "dark_gray": "深灰"
     "black": "玄"
   "error":
+    "invite-unknown": "<#f95738><white><player></white> 未嘗至此伺服。</#f95738>"
     "rename-cost": "<#f95738>易名需 <white><cost></white> 點，汝唯 <white><balance></white>。</#f95738>"
     "same-name": "<#f95738>盟本即此名此標。</#f95738>"
     "stat": "<#f95738>無此績。可用者：<white><stats></white></#f95738>"
@@ -4493,6 +4497,8 @@ time-units:
     "color-locked": "<#f95738>此色待盟至 <white><level></white> 等乃啟。</#f95738>"
     "style-locked": "<#f95738>此標式待盟至 <white><level></white> 等乃啟。</#f95738>"
   "invite":
+    "sent-offline": "<#6dd3a0>已邀 <white><player></white> 入 <white><clan></white>。</#6dd3a0> <#7b8aa0>其人未在，再至則見之（邀存 <days> 日）。</#7b8aa0>"
+    "pending-join": "<prefix><#f4d35e>汝不在時，<white><player></white> 邀汝入盟 <clan_tag> <white><clan></white>（盟眾 <members>/<max>，<level> 等）。</#f4d35e>"
     "sent": "<#6dd3a0>已邀 <white><player></white> 入 <white><clan></white>。</#6dd3a0>"
     "received": "<prefix><#f4d35e><white><player></white> 邀汝入盟！</#f4d35e><newline>  <clan_tag> <white><bold><clan></bold></white><newline>  <#7b8aa0>盟眾</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· 等</#7b8aa0> <#c4b5fd><level></#c4b5fd><newline>  <#7b8aa0>邀於 <white><minutes></white> 分後失效。</#7b8aa0>"
     "buttons": "  <click:run_command:'/clan accept <tag>'><hover:show_text:'<gray>/clan accept <tag></gray>'><#6dd3a0><bold>[入]</bold></#6dd3a0></hover></click>  <click:run_command:'/clan deny <tag>'><hover:show_text:'<gray>/clan deny <tag></gray>'><#f95738><bold>[辭]</bold></#f95738></hover></click>"
@@ -4572,7 +4578,7 @@ time-units:
     "rename": "<#f4d35e><bold>/clan rename</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan rename <名></#93c5fd> <#7b8aa0>- 易汝盟之名（盟主）</#7b8aa0>"
     "root": "<#f4d35e><bold>/clan</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan</#93c5fd> <#7b8aa0>- 啟盟之單</#7b8aa0><newline> <#93c5fd>/clan create <名> <標></#93c5fd> <#7b8aa0>- 立盟（費點）</#7b8aa0><newline> <#93c5fd>/clan info [盟|戲者] | list [頁] | top [績] [期]</#93c5fd> <#7b8aa0>- 察諸盟</#7b8aa0><newline> <#93c5fd>/clan join <盟> | accept [盟] | deny [盟] | leave</#93c5fd> <#7b8aa0>- 入盟或去盟</#7b8aa0><newline> <#93c5fd>/clan invite <戲者></#93c5fd> <#7b8aa0>- 邀人（盟佐）</#7b8aa0><newline> <#93c5fd>/clan kick | promote | demote | transfer <戲者></#93c5fd> <#7b8aa0>- 理盟眾</#7b8aa0><newline> <#93c5fd>/clan settings | disband</#93c5fd> <#7b8aa0>- 標、述、入盟之法（盟主）</#7b8aa0><newline> <#93c5fd>/clan rename <名> | retag <標></#93c5fd> <#7b8aa0>- 易盟之名或標（盟主，費點）</#7b8aa0><newline> <#93c5fd>/clan war</#93c5fd> <#7b8aa0>- 署名盟戰並擇出戰之人</#7b8aa0><newline> <#93c5fd>/cc [言]</#93c5fd> <#7b8aa0>- 盟言（無言則易盟言之態）</#7b8aa0>"
     "create": "<#f4d35e><bold>/clan create</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan create <名> <標></#93c5fd> <#7b8aa0>- 名可有空；末一詞為標（二至五字）</#7b8aa0>"
-    "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan invite <戲者></#93c5fd> <#7b8aa0>- 邀在列之戲者</#7b8aa0>"
+    "invite": "<#f4d35e><bold>/clan invite</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan invite <戲者></#93c5fd> <#7b8aa0>- 邀戲者（不在者，再至則見之）</#7b8aa0>"
     "kick": "<#f4d35e><bold>/clan kick</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan kick <戲者></#93c5fd> <#7b8aa0>- 逐一盟眾</#7b8aa0>"
     "promote": "<#f4d35e><bold>/clan promote</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan promote <戲者></#93c5fd> <#7b8aa0>- 擢盟眾為盟佐</#7b8aa0>"
     "demote": "<#f4d35e><bold>/clan demote</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/clan demote <戲者></#93c5fd> <#7b8aa0>- 降盟佐為盟眾</#7b8aa0>"
@@ -4670,7 +4676,7 @@ time-units:
         - "<#cbd5e1>盟眾 <members>/<max>，<online> 在列。</#cbd5e1>"
       "invite": "<#6dd3a0><bold>邀戲者</bold></#6dd3a0>"
       "invite-lore":
-        - "<#cbd5e1>擊之以邀在列之人。</#cbd5e1>"
+        - "<#cbd5e1>擊之以邀人（不在者，再至則見之）。</#cbd5e1>"
         - "<#7b8aa0>請入者：<requests>（右擊）</#7b8aa0>"
       "stats": "<#facc15><bold>績</bold></#facc15>"
       "stats-lore":
@@ -4842,3 +4848,21 @@ time-units:
 "discord-bot.clan-thread-moved": "🛡️ 盟今有專頻：<channel>。此串已藏。"
 "discord-bot.clan-thread-welcome": "🛡️ 此乃 **[<tag>] <clan>** 於 Discord 之所。盟眾綁其帳（/link），則自入於此。"
 "discord-bot.clan-chat-out": "💬 **<player>**：<message>"
+"lobby-music":
+  # The lobby music's toast. Two lines on purpose: the game then shows its own header line only for a moment.
+  # <title> = the song's name (lobby-music.yml)
+  "now-playing": "<#f4d35e>♪ 今奏</#f4d35e><newline><white><title></white>"
+"music":
+  "status": "<#f4d35e>♪ 今奏：</#f4d35e><white><title></white> <#7b8aa0>· 大廳之樂<state></#7b8aa0>"
+  "none": "<#7b8aa0>今無大廳之樂。</#7b8aa0>"
+  "on": "<#6dd3a0>♪ 大廳之樂已啟。</#6dd3a0>"
+  "off": "<#f4d35e>大廳之樂已閉。</#f4d35e> <#7b8aa0>書 <white>/music play</white> 復啟之。</#7b8aa0>"
+  "state-on": "<#6dd3a0>啟</#6dd3a0>"
+  "state-off": "<#f95738>閉</#f95738>"
+  "skipped": "<#6dd3a0>⏭ 已越之，今奏 <white><title></white>。</#6dd3a0>"
+  "jumped": "<#6dd3a0>♪ 大廳今奏 <white><title></white>。</#6dd3a0>"
+  "unknown": "<#f95738>無名 <white><song></white> 之曲，觀 <white>/music list</white>。</#f95738>"
+  "list-header": "<#f4d35e><bold>♪ 大廳曲目</bold></#f4d35e> <#7b8aa0>（<count>）</#7b8aa0>"
+  "list-line": "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>（<song>）</#7b8aa0>"
+  "list-playing": "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>（<song>）</#7b8aa0>"
+  "usage": "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 今奏何曲</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 啟或閉汝之大廳之樂</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- 曲目</#7b8aa0><newline> <#93c5fd>/music skip | play <曲></#93c5fd> <#7b8aa0>- 為眾易曲（執事）</#7b8aa0>"
