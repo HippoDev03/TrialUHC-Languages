@@ -1163,10 +1163,11 @@
   "view-profile": "<#7dd3fc>▶ 클릭하여 프로필 보기</#7dd3fc>"
 "settings-dialog":
   "title": "<item:comparator> <#cbd5e1><bold>설정</bold></#cbd5e1>"
-  "description": "<#7b8aa0>설정을 클릭하면 켜거나 끕니다. 선택은 프로필에 저장됩니다.</#7b8aa0>"
+  "description": "<#7b8aa0>클릭하면 켜고 끌 수 있고, 마우스를 올리면 설명이 보입니다. 변경 사항은 바로 저장됩니다.</#7b8aa0>"
+  "done": "<white>완료</white>"
   "state":
-    "on": "<item:lime_dye> <#6dd3a0><bold>켜짐</bold></#6dd3a0>"
-    "off": "<item:gray_dye> <#f95738><bold>꺼짐</bold></#f95738>"
+    "on": "<#6dd3a0><bold>✔ 켜짐</bold></#6dd3a0>"
+    "off": "<#f95738><bold>✘ 꺼짐</bold></#f95738>"
   "icon":
     "scoreboard": "<item:paper>"
     "own-nametag": "<item:name_tag>"
@@ -1177,6 +1178,8 @@
     "floating-leaderboards": "<item:item_frame>"
     "lobby-fly": "<item:feather>"
     "lobby-music": "<item:music_disc_cat>"
+    "old-client-tip": "<item:spyglass>"
+    "old-client-full-text": "<item:glow_ink_sac>"
     "clan-teams": "<item:goat_horn>"
   "setting":
     "scoreboard": "<icon> <white>스코어보드</white>  <state>"
@@ -1188,6 +1191,8 @@
     "floating-leaderboards": "<icon> <white>로비 순위판 떠다니기</white>  <state>"
     "lobby-fly": "<icon> <white>로비 비행</white>  <state>"
     "lobby-music": "<icon> <white>로비 음악</white>  <state>"
+    "old-client-tip": "<icon> <white>구버전 안내</white>  <state>"
+    "old-client-full-text": "<icon> <white>보드 글자 먼 거리 표시</white>  <state>"
     "clan-teams": "<icon> <white>클랜원과 팀 짜기</white>  <state>"
   "tooltip":
     "scoreboard": "<#cbd5e1>화면 옆에 경기 스코어보드를 표시합니다. 단축 명령어: /sb</#cbd5e1>"
@@ -1198,7 +1203,9 @@
     "hide-lobby-players": "<#cbd5e1>로비에 있는 동안 다른 플레이어를 모두 숨깁니다. 경기에는 영향이 없습니다.</#cbd5e1>"
     "floating-leaderboards": "<#cbd5e1>로비 순위판이 천천히 위아래로 떠다닙니다. 끄면 멈춰 있습니다.</#cbd5e1>"
     "lobby-fly": "<#cbd5e1>로비에서 날아다닙니다. 로비에서만 작동합니다.</#cbd5e1>"
-    "lobby-music": "<#cbd5e1>로비에서 작게 흐르는 소리 블록 음악. 음량은 '주크박스/소리 블록' 설정을 따릅니다.</#cbd5e1>"
+    "lobby-music": "<#cbd5e1>로비에서 경쾌한 소리 블록 곡이 흐릅니다 (기본 꺼짐).<newline>음량은 '주크박스/소리 블록' 설정을 따릅니다.<newline><white>/music</white>으로 재생 목록을 볼 수 있습니다.</#cbd5e1>"
+    "old-client-tip": "<#cbd5e1>오래된 Minecraft로 접속하면 로비를 부드럽게 해 주는 모드를 안내합니다.</#cbd5e1>"
+    "old-client-full-text": "<#cbd5e1>Minecraft가 서버보다 오래되어 보드 글자가 가까이에서만 보입니다. ImmediatelyFast를 설치했다면 켜세요.</#cbd5e1>"
     "clan-teams": "<#cbd5e1>경기 시작 시 팀이 없는 클랜원과 같은 팀이 됩니다.</#cbd5e1>"
 "lobbygame":
   "only":
@@ -3456,7 +3463,7 @@
 "history.delete.stats-reverted": "<prefix><#6dd3a0>플레이어 기록 <players>건에서 경기 기록을 차감하고 랭킹을 업데이트했습니다.</#6dd3a0>"
 "admin.desc.history": "- 지난 경기 보기 및 삭제"
 "admin.desc.hologram": "- 클릭 가능한 랭킹 홀로그램"
-"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin hologram set <종류></#93c5fd> <#7b8aa0>- 서 있는 위치에 랭킹 배치</#7b8aa0><newline> <#93c5fd>/admin hologram item <종류></#93c5fd> <#7b8aa0>- 손에 든 아이템을 아이콘으로 사용</#7b8aa0><newline> <#93c5fd>/admin hologram size <종류> <너비> <높이></#93c5fd> <#7b8aa0>- 보드 크기 변경 (기본 5 x 4, 규칙 8 x 4)</#7b8aa0><newline> <#93c5fd>/admin hologram remove <종류></#93c5fd> <#7b8aa0>- 랭킹 삭제</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- 모든 랭킹 보기 (클릭하면 이동)</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- 클릭 범위를 파티클로 표시</#7b8aa0><newline> <#7b8aa0>stat 대신 <#93c5fd>rules</#93c5fd>, <#93c5fd>activities</#93c5fd>, <#93c5fd>links</#93c5fd>, <#93c5fd>clans</#93c5fd> 를 쓰면 서버 규칙, 이벤트 일정, 링크, 클랜 랭킹 보드를 설치합니다.</#7b8aa0>"
+"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/admin hologram set <종류></#93c5fd> <#7b8aa0>- 서 있는 위치에 랭킹 배치</#7b8aa0><newline> <#93c5fd>/admin hologram item <종류></#93c5fd> <#7b8aa0>- 손에 든 아이템을 아이콘으로 사용</#7b8aa0><newline> <#93c5fd>/admin hologram size <종류> <너비> <높이></#93c5fd> <#7b8aa0>- 보드 크기 변경 (기본 5 x 4, 규칙 8 x 4)</#7b8aa0><newline> <#93c5fd>/admin hologram remove <종류></#93c5fd> <#7b8aa0>- 랭킹 삭제</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- 모든 랭킹 보기 (클릭하면 이동)</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- 클릭 범위를 파티클로 표시</#7b8aa0><newline> <#93c5fd>/admin hologram toggle [all|text|frames]</#93c5fd> <#7b8aa0>- 나에게만 보드(또는 글자/틀만) 숨기기/보이기 (FPS 비교 등)</#7b8aa0><newline> <#93c5fd>/admin hologram client [player]</#93c5fd> <#7b8aa0>- 플레이어의 게임이 보내는 정보: 버전, 클라이언트, 모드 채널</#7b8aa0><newline> <#7b8aa0>stat 대신 <#93c5fd>rules</#93c5fd>, <#93c5fd>activities</#93c5fd>, <#93c5fd>links</#93c5fd>, <#93c5fd>clans</#93c5fd> 를 쓰면 서버 규칙, 이벤트 일정, 링크, 클랜 랭킹 보드를 설치합니다.</#7b8aa0>"
 "lb-hologram.set": "<#6dd3a0><stat> <#6dd3a0>랭킹을 <white><where></white>에 배치했습니다.</#6dd3a0>"
 "lb-hologram.removed": "<#6dd3a0><stat> <#6dd3a0>랭킹을 삭제했습니다.</#6dd3a0>"
 "lb-hologram.resized": "<#6dd3a0><stat> <#6dd3a0>보드 크기: 너비 <white><width></white>, 높이 <white><height></white></#6dd3a0>"
@@ -4461,6 +4468,8 @@ time-units:
     "wars": "클랜전"
   "unlock":
     "hex-colors": "원하는 태그 색 (16진수)"
+    "member-slots": "멤버 정원 <slots>명"
+    "level-points": "멤버 전원 <points> 포인트"
     "basic-colors": "기본 색상 태그"
     "all-colors": "모든 태그 색상"
     "bold-tag": "굵은 태그"
@@ -4560,6 +4569,8 @@ time-units:
     "subtitle": "<clan_tag> <white><clan></white>"
     "chat": "<prefix><clan_tag> <#f4d35e><bold>클랜이 레벨 <level>에 도달했습니다!</bold></#f4d35e>"
     "unlock": "  <#6dd3a0>✔ 해금:</#6dd3a0> <white><unlock></white>"
+    "points": "  <#f4d35e>✦ +<points> 포인트</#f4d35e> <#7b8aa0>(멤버 전원)</#7b8aa0>"
+    "slots": "  <#6dd3a0>✔ 멤버 정원:</#6dd3a0> <white><max></white>"
   "info":
     "header": "<#f4d35e><bold>━━ </bold></#f4d35e><clan_tag> <#f4d35e><bold><clan> ━━</bold></#f4d35e>"
     "description": "<#cbd5e1><i><description></i></#cbd5e1>"
@@ -4683,6 +4694,22 @@ time-units:
         - "<#7b8aa0>레벨 <level> · 멤버 <members>/<max> · 리더 <leader></#7b8aa0>"
         - "<#cbd5e1><description></#cbd5e1>"
         - "<#6dd3a0>좌클릭하여 가입</#6dd3a0> <#7b8aa0>·</#7b8aa0> <#f95738>우클릭하여 거절</#f95738>"
+    "list":
+      "title": "모든 클랜 (<page>/<pages>)"
+      "empty": "<#7b8aa0>아직 클랜이 없습니다</#7b8aa0>"
+      "name": "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><bold><clan></bold></white>"
+      "lore":
+        - "<#7b8aa0>레벨</#7b8aa0> <#c4b5fd><level></#c4b5fd> <#7b8aa0>· <xp> XP</#7b8aa0>"
+        - "<#7b8aa0>멤버</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· 리더</#7b8aa0> <white><leader></white>"
+        - "<#7b8aa0>가입 방식:</#7b8aa0> <white><mode></white>"
+        - "<#cbd5e1><description></#cbd5e1>"
+        - ""
+      "click-join": "<#6dd3a0>클릭해서 가입</#6dd3a0>"
+      "click-info": "<#93c5fd>클릭해서 클랜 정보 보기</#93c5fd>"
+    "all-clans": "<#93c5fd><bold>모든 클랜</bold></#93c5fd>"
+    "all-clans-lore":
+      - "<#7b8aa0>클랜 <count>개, 클랜 XP 순위</#7b8aa0>"
+      - "<#6dd3a0>클릭해서 둘러보기</#6dd3a0>"
     "browse":
       "title": "공개 클랜 (<page>/<pages>)"
       "empty": "<#7b8aa0>지금은 공개 클랜이 없습니다</#7b8aa0>"
@@ -4863,3 +4890,19 @@ time-units:
   "list-line": "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>(<song>)</#7b8aa0>"
   "list-playing": "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>(<song>)</#7b8aa0>"
   "usage": "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>사용법:</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 지금 재생 중인 곡</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 내 로비 음악 켜기/끄기</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- 재생 목록</#7b8aa0><newline> <#93c5fd>/music skip | play <song></#93c5fd> <#7b8aa0>- 모두의 곡 변경 (스태프)</#7b8aa0>"
+"lb-hologram.hidden": "<#f4d35e>모든 보드를 숨겼습니다.</#f4d35e> <#7b8aa0>FPS를 확인한 뒤 <white>/admin hologram toggle</white>을 다시 입력하면 돌아옵니다.</#7b8aa0>"
+"lb-hologram.unhidden": "<#6dd3a0>보드가 다시 보입니다.</#6dd3a0>"
+"lb-hologram.client": "<#f4d35e><player></#f4d35e> <#7b8aa0>· 게임:</#7b8aa0> <white><version></white> <#7b8aa0>· 클라이언트:</#7b8aa0> <white><brand></white> <#7b8aa0>· 글자 가속 모드:</#7b8aa0> <white><fast></white><newline><#7b8aa0>채널:</#7b8aa0> <white><channels></white>"
+"lb-hologram.client-older": "서버보다 오래된 버전 (ViaVersion)"
+"lb-hologram.client-current": "서버와 같은 버전"
+"old-client-tip":
+  "title": "<#f4d35e><bold>Minecraft 버전이 오래되었습니다</bold></#f4d35e>"
+  "body": "<white>서버보다 오래된 Minecraft로 접속했습니다. 이 버전은 글자를 느리게 그려서 로비 보드 때문에 FPS가 크게 떨어질 수 있습니다.</white><newline><newline><#cbd5e1>더 부드럽게 플레이하려면:</#cbd5e1><newline><#6dd3a0>• <white>ImmediatelyFast</white> 모드(Fabric/NeoForge)를 설치하거나</#6dd3a0><newline><#6dd3a0>• 서버와 같은 Minecraft <white><version></white>로 플레이하세요.</#6dd3a0><newline><newline><#7b8aa0>그전까지는 보드 글자가 가까이 있을 때만 보입니다.</#7b8aa0>"
+  "mod-button": "<#6dd3a0>ImmediatelyFast 받기</#6dd3a0>"
+  "mod-tooltip": "<#cbd5e1>Modrinth 페이지를 엽니다</#cbd5e1>"
+  "have-button": "<#93c5fd>이미 설치했어요</#93c5fd>"
+  "have-tooltip": "<#cbd5e1>보드 글자를 원래 거리에서 보여 줍니다 (서버는 이 모드를 감지할 수 없습니다)</#cbd5e1>"
+  "have-done": "<#6dd3a0>보드 글자를 다시 먼 거리에서도 보여 줍니다.</#6dd3a0> <#7b8aa0><white>/settings</white>에서 언제든 바꿀 수 있습니다.</#7b8aa0>"
+  "never-button": "<#7b8aa0>다시 보지 않기</#7b8aa0>"
+  "close-button": "<white>확인</white>"
+  "never-done": "<#7b8aa0>알겠습니다. <white>/settings</white>에서 다시 켤 수 있습니다.</#7b8aa0>"

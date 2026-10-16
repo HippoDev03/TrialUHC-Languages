@@ -1941,10 +1941,11 @@ leaderboard-dialog:
   view-profile: "<#7dd3fc>▶ 點擊查看個人檔案</#7dd3fc>"
 settings-dialog:
   title: "<item:comparator> <#cbd5e1><bold>個人設定</bold></#cbd5e1>"
-  description: "<#7b8aa0>點擊設定即可開啟或關閉，你的選擇會儲存在個人資料中。</#7b8aa0>"
+  description: "<#7b8aa0>點擊即可切換開關，把滑鼠移到設定上可以看說明。變更會立即儲存。</#7b8aa0>"
+  done: "<white>完成</white>"
   state:
-    'on': "<item:lime_dye> <#6dd3a0><bold>開啟</bold></#6dd3a0>"
-    'off': "<item:gray_dye> <#f95738><bold>關閉</bold></#f95738>"
+    'on': "<#6dd3a0><bold>✔ 開啟</bold></#6dd3a0>"
+    'off': "<#f95738><bold>✘ 關閉</bold></#f95738>"
   icon:
     scoreboard: "<item:paper>"
     own-nametag: "<item:name_tag>"
@@ -1955,6 +1956,8 @@ settings-dialog:
     floating-leaderboards: "<item:item_frame>"
     lobby-fly: "<item:feather>"
     lobby-music: "<item:music_disc_cat>"
+    old-client-tip: "<item:spyglass>"
+    old-client-full-text: "<item:glow_ink_sac>"
     clan-teams: "<item:goat_horn>"
   setting:
     scoreboard: "<icon> <white>計分板</white>  <state>"
@@ -1966,6 +1969,8 @@ settings-dialog:
     floating-leaderboards: "<icon> <white>大廳排行榜浮動</white>  <state>"
     lobby-fly: "<icon> <white>大廳飛行</white>  <state>"
     lobby-music: "<icon> <white>大廳音樂</white>  <state>"
+    old-client-tip: "<icon> <white>舊版本提示</white>  <state>"
+    old-client-full-text: "<icon> <white>完整距離看板文字</white>  <state>"
     clan-teams: "<icon> <white>與戰隊隊友組隊</white>  <state>"
   tooltip:
     scoreboard: "<#cbd5e1>在畫面側邊顯示比賽計分板。快捷指令：/sb</#cbd5e1>"
@@ -1976,7 +1981,9 @@ settings-dialog:
     hide-lobby-players: "<#cbd5e1>在大廳時隱藏其他所有玩家，不影響比賽。</#cbd5e1>"
     floating-leaderboards: "<#cbd5e1>讓大廳排行榜輕輕上下浮動。關閉後排行榜會保持不動。</#cbd5e1>"
     lobby-fly: "<#cbd5e1>在大廳中飛行，只在大廳有效。</#cbd5e1>"
-    lobby-music: "<#cbd5e1>大廳裡小聲的音符盒背景音樂，音量跟著你的「唱片機／音符盒」音量設定。</#cbd5e1>"
+    lobby-music: "<#cbd5e1>大廳輪流播放輕快的音符盒歌曲，預設關閉。<newline>音量跟著你的「唱片機／音符盒」設定。<newline>輸入 <white>/music</white> 查看播放清單。</#cbd5e1>"
+    old-client-tip: "<#cbd5e1>用較舊的 Minecraft 加入時，提示能讓大廳更順的模組。</#cbd5e1>"
+    old-client-full-text: "<#cbd5e1>你的 Minecraft 比伺服器舊，看板文字只會在靠近時顯示。如果有安裝 ImmediatelyFast 就開啟。</#cbd5e1>"
     clan-teams: "<#cbd5e1>比賽開始時，把我和沒有隊伍的戰隊隊友分在同一隊。</#cbd5e1>"
 database:
   clear:
@@ -4062,7 +4069,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "history.delete.stats-reverted": "<prefix><#6dd3a0>已從 <players> 筆玩家紀錄中扣回這些比賽的統計，排行榜已更新。</#6dd3a0>"
 "admin.desc.history": "- 比賽紀錄：查看與刪除"
 "admin.desc.hologram": "- 可點擊的排行榜全息圖"
-"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin hologram set <類型></#93c5fd> <#7b8aa0>- 將排行榜放在你站的位置</#7b8aa0><newline> <#93c5fd>/admin hologram item <類型></#93c5fd> <#7b8aa0>- 用手上的物品當作圖示</#7b8aa0><newline> <#93c5fd>/admin hologram size <類型> <寬> <高></#93c5fd> <#7b8aa0>- 調整看板大小（預設 5 x 4，規則 8 x 4）</#7b8aa0><newline> <#93c5fd>/admin hologram remove <類型></#93c5fd> <#7b8aa0>- 移除排行榜</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- 列出所有排行榜（點擊可傳送）</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- 用粒子顯示點擊範圍</#7b8aa0><newline> <#7b8aa0>將 stat 換成 <#93c5fd>rules</#93c5fd>、<#93c5fd>activities</#93c5fd>、<#93c5fd>links</#93c5fd> 或 <#93c5fd>clans</#93c5fd> 即可放置伺服器規則看板、活動排程看板、連結看板或戰隊排行看板。</#7b8aa0>"
+"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin hologram set <類型></#93c5fd> <#7b8aa0>- 將排行榜放在你站的位置</#7b8aa0><newline> <#93c5fd>/admin hologram item <類型></#93c5fd> <#7b8aa0>- 用手上的物品當作圖示</#7b8aa0><newline> <#93c5fd>/admin hologram size <類型> <寬> <高></#93c5fd> <#7b8aa0>- 調整看板大小（預設 5 x 4，規則 8 x 4）</#7b8aa0><newline> <#93c5fd>/admin hologram remove <類型></#93c5fd> <#7b8aa0>- 移除排行榜</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- 列出所有排行榜（點擊可傳送）</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- 用粒子顯示點擊範圍</#7b8aa0><newline> <#93c5fd>/admin hologram toggle [all|text|frames]</#93c5fd> <#7b8aa0>- 只對你隱藏或顯示看板（或只有文字／框架），例如比較 FPS</#7b8aa0><newline> <#93c5fd>/admin hologram client [玩家]</#93c5fd> <#7b8aa0>- 查看玩家遊戲送出的資訊：版本、用戶端和模組頻道</#7b8aa0><newline> <#7b8aa0>將 stat 換成 <#93c5fd>rules</#93c5fd>、<#93c5fd>activities</#93c5fd>、<#93c5fd>links</#93c5fd> 或 <#93c5fd>clans</#93c5fd> 即可放置伺服器規則看板、活動排程看板、連結看板或戰隊排行看板。</#7b8aa0>"
 "lb-hologram.set": "<#6dd3a0>已將 <stat> <#6dd3a0>排行榜放在 <white><where></white>。</#6dd3a0>"
 "lb-hologram.removed": "<#6dd3a0>已移除 <stat> <#6dd3a0>排行榜。</#6dd3a0>"
 "lb-hologram.resized": "<#6dd3a0><stat> <#6dd3a0>的看板現在寬 <white><width></white>、高 <white><height></white>。</#6dd3a0>"
@@ -5047,6 +5054,8 @@ clan:
     wars: "戰隊戰"
   unlock:
     hex-colors: "任意標籤顏色（十六進位）"
+    member-slots: "<slots> 個隊員名額"
+    level-points: "每位隊員 <points> 點數"
     basic-colors: "基本顏色的標籤"
     all-colors: "所有標籤顏色"
     bold-tag: "粗體標籤"
@@ -5146,6 +5155,8 @@ clan:
     subtitle: "<clan_tag> <white><clan></white>"
     chat: "<prefix><clan_tag> <#f4d35e><bold>你的戰隊達到等級 <level>！</bold></#f4d35e>"
     unlock: "  <#6dd3a0>✔ 已解鎖：</#6dd3a0> <white><unlock></white>"
+    points: "  <#f4d35e>✦ +<points> 點數</#f4d35e> <#7b8aa0>（每位隊員都有）</#7b8aa0>"
+    slots: "  <#6dd3a0>✔ 隊員名額：</#6dd3a0> <white><max></white>"
   info:
     header: "<#f4d35e><bold>━━ </bold></#f4d35e><clan_tag> <#f4d35e><bold><clan> ━━</bold></#f4d35e>"
     description: "<#cbd5e1><i><description></i></#cbd5e1>"
@@ -5269,6 +5280,22 @@ clan:
         - "<#7b8aa0>等級 <level> · <members>/<max> 名隊員 · 隊長 <leader></#7b8aa0>"
         - "<#cbd5e1><description></#cbd5e1>"
         - "<#6dd3a0>左鍵加入</#6dd3a0> <#7b8aa0>·</#7b8aa0> <#f95738>右鍵婉拒</#f95738>"
+    list:
+      title: "所有戰隊（<page>/<pages>）"
+      empty: "<#7b8aa0>還沒有任何戰隊</#7b8aa0>"
+      name: "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><bold><clan></bold></white>"
+      lore:
+        - "<#7b8aa0>等級</#7b8aa0> <#c4b5fd><level></#c4b5fd> <#7b8aa0>· <xp> 經驗值</#7b8aa0>"
+        - "<#7b8aa0>隊員</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· 隊長</#7b8aa0> <white><leader></white>"
+        - "<#7b8aa0>加入方式：</#7b8aa0><white><mode></white>"
+        - "<#cbd5e1><description></#cbd5e1>"
+        - ""
+      click-join: "<#6dd3a0>點擊加入</#6dd3a0>"
+      click-info: "<#93c5fd>點擊查看戰隊資訊</#93c5fd>"
+    all-clans: "<#93c5fd><bold>所有戰隊</bold></#93c5fd>"
+    all-clans-lore:
+      - "<#7b8aa0>共 <count> 個戰隊，依戰隊經驗值排名</#7b8aa0>"
+      - "<#6dd3a0>點擊瀏覽</#6dd3a0>"
     browse:
       title: "開放的戰隊（<page>/<pages>）"
       empty: "<#7b8aa0>目前沒有開放的戰隊</#7b8aa0>"
@@ -5479,3 +5506,19 @@ music:
   list-line: "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>（<song>）</#7b8aa0>"
   list-playing: "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>（<song>）</#7b8aa0>"
   usage: "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 現在播放的歌</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 開啟或關閉你的大廳音樂</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- 播放清單</#7b8aa0><newline> <#93c5fd>/music skip | play <歌曲></#93c5fd> <#7b8aa0>- 幫大家換歌（管理員）</#7b8aa0>"
+"lb-hologram.hidden": "<#f4d35e>已對你隱藏所有看板。</#f4d35e> <#7b8aa0>看看 FPS，再輸入 <white>/admin hologram toggle</white> 就會顯示回來。</#7b8aa0>"
+"lb-hologram.unhidden": "<#6dd3a0>看板已重新顯示。</#6dd3a0>"
+"lb-hologram.client": "<#f4d35e><player></#f4d35e> <#7b8aa0>· 遊戲：</#7b8aa0><white><version></white> <#7b8aa0>· 用戶端：</#7b8aa0><white><brand></white> <#7b8aa0>· 有加速文字的模組：</#7b8aa0><white><fast></white><newline><#7b8aa0>頻道：</#7b8aa0><white><channels></white>"
+"lb-hologram.client-older": "比伺服器舊（ViaVersion）"
+"lb-hologram.client-current": "和伺服器相同"
+old-client-tip:
+  title: "<#f4d35e><bold>你的 Minecraft 版本較舊</bold></#f4d35e>"
+  body: "<white>你使用比伺服器舊的 Minecraft 版本加入，這個版本繪製文字很慢，大廳的看板可能會讓 FPS 大幅下降。</white><newline><newline><#cbd5e1>想玩得更順，可以：</#cbd5e1><newline><#6dd3a0>• 安裝 <white>ImmediatelyFast</white> 模組（Fabric／NeoForge），或</#6dd3a0><newline><#6dd3a0>• 改用伺服器的版本 Minecraft <white><version></white>。</#6dd3a0><newline><newline><#7b8aa0>在那之前，看板的文字只會在你靠近時顯示。</#7b8aa0>"
+  mod-button: "<#6dd3a0>下載 ImmediatelyFast</#6dd3a0>"
+  mod-tooltip: "<#cbd5e1>打開它的 Modrinth 頁面</#cbd5e1>"
+  have-button: "<#93c5fd>我已經安裝了</#93c5fd>"
+  have-tooltip: "<#cbd5e1>看板文字恢復原本的顯示距離（伺服器無法偵測這個模組）</#cbd5e1>"
+  have-done: "<#6dd3a0>已恢復看板文字的完整顯示距離。</#6dd3a0> <#7b8aa0>隨時可以在 <white>/settings</white> 更改。</#7b8aa0>"
+  never-button: "<#7b8aa0>不再顯示</#7b8aa0>"
+  close-button: "<white>知道了</white>"
+  never-done: "<#7b8aa0>好的，之後可以在 <white>/settings</white> 重新開啟這個提示。</#7b8aa0>"

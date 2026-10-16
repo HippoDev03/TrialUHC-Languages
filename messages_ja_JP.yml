@@ -1163,10 +1163,11 @@
   "view-profile": "<#7dd3fc>▶ クリックでプロフィールを見る</#7dd3fc>"
 "settings-dialog":
   "title": "<item:comparator> <#cbd5e1><bold>設定</bold></#cbd5e1>"
-  "description": "<#7b8aa0>設定をクリックしてオン／オフを切り替えます。選択はプロフィールに保存されます。</#7b8aa0>"
+  "description": "<#7b8aa0>クリックで切り替え。マウスを合わせると説明が出ます。変更はすぐに保存されます。</#7b8aa0>"
+  "done": "<white>完了</white>"
   "state":
-    "on": "<item:lime_dye> <#6dd3a0><bold>オン</bold></#6dd3a0>"
-    "off": "<item:gray_dye> <#f95738><bold>オフ</bold></#f95738>"
+    "on": "<#6dd3a0><bold>✔ オン</bold></#6dd3a0>"
+    "off": "<#f95738><bold>✘ オフ</bold></#f95738>"
   "icon":
     "scoreboard": "<item:paper>"
     "own-nametag": "<item:name_tag>"
@@ -1177,6 +1178,8 @@
     "floating-leaderboards": "<item:item_frame>"
     "lobby-fly": "<item:feather>"
     "lobby-music": "<item:music_disc_cat>"
+    "old-client-tip": "<item:spyglass>"
+    "old-client-full-text": "<item:glow_ink_sac>"
     "clan-teams": "<item:goat_horn>"
   "setting":
     "scoreboard": "<icon> <white>スコアボード</white>  <state>"
@@ -1188,6 +1191,8 @@
     "floating-leaderboards": "<icon> <white>ロビーのランキングを浮かせる</white>  <state>"
     "lobby-fly": "<icon> <white>ロビー飛行</white>  <state>"
     "lobby-music": "<icon> <white>ロビー音楽</white>  <state>"
+    "old-client-tip": "<icon> <white>旧バージョンのヒント</white>  <state>"
+    "old-client-full-text": "<icon> <white>ボード文字を遠くまで表示</white>  <state>"
     "clan-teams": "<icon> <white>クランメンバーとチームを組む</white>  <state>"
   "tooltip":
     "scoreboard": "<#cbd5e1>画面の横に試合のスコアボードを表示します。ショートカット：/sb</#cbd5e1>"
@@ -1198,7 +1203,9 @@
     "hide-lobby-players": "<#cbd5e1>ロビーにいる間、他の全員を隠します。試合には影響しません。</#cbd5e1>"
     "floating-leaderboards": "<#cbd5e1>ロビーのランキングボードをゆっくり上下に浮かせます。オフにすると静止します。</#cbd5e1>"
     "lobby-fly": "<#cbd5e1>ロビーで飛び回れます。ロビーでのみ有効。</#cbd5e1>"
-    "lobby-music": "<#cbd5e1>ロビーで流れる小さな音ブロックの音楽。音量は「ジュークボックス/音ブロック」の設定に従います。</#cbd5e1>"
+    "lobby-music": "<#cbd5e1>ロビーで軽快な音ブロックの曲が流れます（初期はオフ）。<newline>音量は「ジュークボックス/音ブロック」の設定に従います。<newline><white>/music</white> で曲の一覧を見られます。</#cbd5e1>"
+    "old-client-tip": "<#cbd5e1>古い Minecraft で参加したとき、ロビーを快適にする MOD を案内します。</#cbd5e1>"
+    "old-client-full-text": "<#cbd5e1>Minecraft がサーバーより古いため、ボードの文字は近くでのみ表示されます。ImmediatelyFast を入れているならオンに。</#cbd5e1>"
     "clan-teams": "<#cbd5e1>試合開始時、チームのないクランメンバーと同じチームになります。</#cbd5e1>"
 "lobbygame":
   "only":
@@ -3460,7 +3467,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "history.delete.stats-reverted": "<prefix><#6dd3a0><players> 件のプレイヤー記録から試合の成績を差し引き、ランキングを更新しました。</#6dd3a0>"
 "admin.desc.history": "- 過去の試合の表示と削除"
 "admin.desc.hologram": "- クリックできるランキングホログラム"
-"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin hologram set <種類></#93c5fd> <#7b8aa0>- 立っている場所にランキングを置く</#7b8aa0><newline> <#93c5fd>/admin hologram item <種類></#93c5fd> <#7b8aa0>- 手に持っているアイテムをアイコンにする</#7b8aa0><newline> <#93c5fd>/admin hologram size <種類> <幅> <高さ></#93c5fd> <#7b8aa0>- ボードの大きさを変える（初期値 5 x 4、ルールは 8 x 4）</#7b8aa0><newline> <#93c5fd>/admin hologram remove <種類></#93c5fd> <#7b8aa0>- ランキングを削除</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- すべてのランキングを表示（クリックでテレポート）</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- クリック範囲をパーティクルで表示</#7b8aa0><newline> <#7b8aa0>stat の代わりに <#93c5fd>rules</#93c5fd>、<#93c5fd>activities</#93c5fd>、<#93c5fd>links</#93c5fd>、<#93c5fd>clans</#93c5fd> を指定するとサーバールール、イベント予定、リンク、クランランキングのボードを設置します。</#7b8aa0>"
+"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/admin hologram set <種類></#93c5fd> <#7b8aa0>- 立っている場所にランキングを置く</#7b8aa0><newline> <#93c5fd>/admin hologram item <種類></#93c5fd> <#7b8aa0>- 手に持っているアイテムをアイコンにする</#7b8aa0><newline> <#93c5fd>/admin hologram size <種類> <幅> <高さ></#93c5fd> <#7b8aa0>- ボードの大きさを変える（初期値 5 x 4、ルールは 8 x 4）</#7b8aa0><newline> <#93c5fd>/admin hologram remove <種類></#93c5fd> <#7b8aa0>- ランキングを削除</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- すべてのランキングを表示（クリックでテレポート）</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- クリック範囲をパーティクルで表示</#7b8aa0><newline> <#93c5fd>/admin hologram toggle [all|text|frames]</#93c5fd> <#7b8aa0>- 自分だけボード（または文字／枠だけ）を隠す／表示（FPS の比較など）</#7b8aa0><newline> <#93c5fd>/admin hologram client [プレイヤー]</#93c5fd> <#7b8aa0>- プレイヤーのゲームが送る情報：バージョン、クライアント、MOD のチャンネル</#7b8aa0><newline> <#7b8aa0>stat の代わりに <#93c5fd>rules</#93c5fd>、<#93c5fd>activities</#93c5fd>、<#93c5fd>links</#93c5fd>、<#93c5fd>clans</#93c5fd> を指定するとサーバールール、イベント予定、リンク、クランランキングのボードを設置します。</#7b8aa0>"
 "lb-hologram.set": "<#6dd3a0><stat> <#6dd3a0>ランキングを <white><where></white> に置きました。</#6dd3a0>"
 "lb-hologram.removed": "<#6dd3a0><stat> <#6dd3a0>ランキングを削除しました。</#6dd3a0>"
 "lb-hologram.resized": "<#6dd3a0><stat> <#6dd3a0>のボードを幅 <white><width></white>、高さ <white><height></white> にしました。</#6dd3a0>"
@@ -4465,6 +4472,8 @@ time-units:
     "wars": "クラン戦"
   "unlock":
     "hex-colors": "タグの好きな色（16進数）"
+    "member-slots": "メンバー枠 <slots>"
+    "level-points": "メンバー全員に <points> ポイント"
     "basic-colors": "基本色のタグ"
     "all-colors": "すべてのタグ色"
     "bold-tag": "太字のタグ"
@@ -4564,6 +4573,8 @@ time-units:
     "subtitle": "<clan_tag> <white><clan></white>"
     "chat": "<prefix><clan_tag> <#f4d35e><bold>クランがレベル <level> になりました！</bold></#f4d35e>"
     "unlock": "  <#6dd3a0>✔ 解放：</#6dd3a0> <white><unlock></white>"
+    "points": "  <#f4d35e>✦ +<points> ポイント</#f4d35e> <#7b8aa0>（メンバー全員に）</#7b8aa0>"
+    "slots": "  <#6dd3a0>✔ メンバー枠：</#6dd3a0> <white><max></white>"
   "info":
     "header": "<#f4d35e><bold>━━ </bold></#f4d35e><clan_tag> <#f4d35e><bold><clan> ━━</bold></#f4d35e>"
     "description": "<#cbd5e1><i><description></i></#cbd5e1>"
@@ -4687,6 +4698,22 @@ time-units:
         - "<#7b8aa0>レベル <level> · メンバー <members>/<max> · リーダー <leader></#7b8aa0>"
         - "<#cbd5e1><description></#cbd5e1>"
         - "<#6dd3a0>左クリックで参加</#6dd3a0> <#7b8aa0>·</#7b8aa0> <#f95738>右クリックで断る</#f95738>"
+    "list":
+      "title": "すべてのクラン（<page>/<pages>）"
+      "empty": "<#7b8aa0>まだクランはありません</#7b8aa0>"
+      "name": "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><bold><clan></bold></white>"
+      "lore":
+        - "<#7b8aa0>レベル</#7b8aa0> <#c4b5fd><level></#c4b5fd> <#7b8aa0>· <xp> XP</#7b8aa0>"
+        - "<#7b8aa0>メンバー</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· リーダー</#7b8aa0> <white><leader></white>"
+        - "<#7b8aa0>参加方法：</#7b8aa0><white><mode></white>"
+        - "<#cbd5e1><description></#cbd5e1>"
+        - ""
+      "click-join": "<#6dd3a0>クリックで参加</#6dd3a0>"
+      "click-info": "<#93c5fd>クリックでクラン情報</#93c5fd>"
+    "all-clans": "<#93c5fd><bold>すべてのクラン</bold></#93c5fd>"
+    "all-clans-lore":
+      - "<#7b8aa0><count> クラン、クラン XP 順</#7b8aa0>"
+      - "<#6dd3a0>クリックで一覧</#6dd3a0>"
     "browse":
       "title": "公開クラン（<page>/<pages>）"
       "empty": "<#7b8aa0>今は公開クランがありません</#7b8aa0>"
@@ -4867,3 +4894,19 @@ time-units:
   "list-line": "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>（<song>）</#7b8aa0>"
   "list-playing": "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>（<song>）</#7b8aa0>"
   "usage": "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>使い方：</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 再生中の曲</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 自分のロビー音楽をオン／オフ</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- プレイリスト</#7b8aa0><newline> <#93c5fd>/music skip | play <曲></#93c5fd> <#7b8aa0>- 全員の曲を変える（スタッフ）</#7b8aa0>"
+"lb-hologram.hidden": "<#f4d35e>すべてのボードを隠しました。</#f4d35e> <#7b8aa0>FPS を確認したら、もう一度 <white>/admin hologram toggle</white> で戻せます。</#7b8aa0>"
+"lb-hologram.unhidden": "<#6dd3a0>ボードを再表示しました。</#6dd3a0>"
+"lb-hologram.client": "<#f4d35e><player></#f4d35e> <#7b8aa0>· ゲーム：</#7b8aa0><white><version></white> <#7b8aa0>· クライアント：</#7b8aa0><white><brand></white> <#7b8aa0>· 文字を速くする MOD：</#7b8aa0><white><fast></white><newline><#7b8aa0>チャンネル：</#7b8aa0><white><channels></white>"
+"lb-hologram.client-older": "サーバーより古い（ViaVersion）"
+"lb-hologram.client-current": "サーバーと同じ"
+"old-client-tip":
+  "title": "<#f4d35e><bold>Minecraft のバージョンが古いです</bold></#f4d35e>"
+  "body": "<white>サーバーより古い Minecraft で参加しています。このバージョンは文字の描画が遅く、ロビーのボードで FPS が大きく下がることがあります。</white><newline><newline><#cbd5e1>快適に遊ぶには：</#cbd5e1><newline><#6dd3a0>• <white>ImmediatelyFast</white> MOD（Fabric／NeoForge）を入れる、または</#6dd3a0><newline><#6dd3a0>• サーバーと同じ Minecraft <white><version></white> で遊ぶ。</#6dd3a0><newline><newline><#7b8aa0>それまでは、ボードの文字は近くにいるときだけ表示されます。</#7b8aa0>"
+  "mod-button": "<#6dd3a0>ImmediatelyFast を入手</#6dd3a0>"
+  "mod-tooltip": "<#cbd5e1>Modrinth のページを開きます</#cbd5e1>"
+  "have-button": "<#93c5fd>もう入れています</#93c5fd>"
+  "have-tooltip": "<#cbd5e1>ボードの文字を元の距離で表示します（サーバーからは MOD を検出できません）</#cbd5e1>"
+  "have-done": "<#6dd3a0>ボードの文字を元の距離で表示します。</#6dd3a0> <#7b8aa0><white>/settings</white> でいつでも変更できます。</#7b8aa0>"
+  "never-button": "<#7b8aa0>今後表示しない</#7b8aa0>"
+  "close-button": "<white>OK</white>"
+  "never-done": "<#7b8aa0>了解です。<white>/settings</white> でまたオンにできます。</#7b8aa0>"

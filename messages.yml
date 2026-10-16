@@ -1203,10 +1203,11 @@ leaderboard-dialog:
 # <sprite:atlas:path> any sprite. They work in every message, not only here.
 settings-dialog:
   title: "<item:comparator> <#cbd5e1><bold>Settings</bold></#cbd5e1>"
-  description: "<#7b8aa0>Click a setting to switch it on or off. Your choices are saved to your profile.</#7b8aa0>"
+  description: "<#7b8aa0>Click a setting to switch it. Hover over one to see what it does - changes are saved right away.</#7b8aa0>"
+  done: "<white>Done</white>"
   state:
-    'on': "<item:lime_dye> <#6dd3a0><bold>ON</bold></#6dd3a0>"
-    'off': "<item:gray_dye> <#f95738><bold>OFF</bold></#f95738>"
+    'on': "<#6dd3a0><bold>✔ ON</bold></#6dd3a0>"
+    'off': "<#f95738><bold>✘ OFF</bold></#f95738>"
   icon:
     scoreboard: "<item:paper>"
     own-nametag: "<item:name_tag>"
@@ -1217,6 +1218,8 @@ settings-dialog:
     floating-leaderboards: "<item:item_frame>"
     lobby-fly: "<item:feather>"
     lobby-music: "<item:music_disc_cat>"
+    old-client-tip: "<item:spyglass>"
+    old-client-full-text: "<item:glow_ink_sac>"
     clan-teams: "<item:goat_horn>"
   setting:
     scoreboard: "<icon> <white>Scoreboard</white>  <state>"
@@ -1228,6 +1231,8 @@ settings-dialog:
     floating-leaderboards: "<icon> <white>Floating leaderboards</white>  <state>"
     lobby-fly: "<icon> <white>Lobby flight</white>  <state>"
     lobby-music: "<icon> <white>Lobby music</white>  <state>"
+    old-client-tip: "<icon> <white>Old version tip</white>  <state>"
+    old-client-full-text: "<icon> <white>Full-range board text</white>  <state>"
     clan-teams: "<icon> <white>Team up with clanmates</white>  <state>"
   tooltip:
     scoreboard: "<#cbd5e1>Show the match scoreboard on the side of your screen. Shortcut: /sb</#cbd5e1>"
@@ -1238,7 +1243,9 @@ settings-dialog:
     hide-lobby-players: "<#cbd5e1>Hide everyone else while you are in the lobby. Matches are not affected.</#cbd5e1>"
     floating-leaderboards: "<#cbd5e1>Let the lobby leaderboards drift gently up and down. Turn off to keep them still.</#cbd5e1>"
     lobby-fly: "<#cbd5e1>Fly around the lobby. Only works in the lobby.</#cbd5e1>"
-    lobby-music: "<#cbd5e1>Quiet note-block music in the lobby. Its loudness follows your Jukebox/Note Blocks volume.</#cbd5e1>"
+    lobby-music: "<#cbd5e1>Upbeat note-block songs in the lobby (off by default).<newline>Loudness follows your Jukebox/Note Blocks volume.<newline>Type <white>/music</white> to see the playlist.</#cbd5e1>"
+    old-client-tip: "<#cbd5e1>When you join on an older Minecraft, a tip about mods that make the lobby smoother.</#cbd5e1>"
+    old-client-full-text: "<#cbd5e1>Your Minecraft is older than the server's, so board text only shows up close. Turn this on if you have ImmediatelyFast.</#cbd5e1>"
     clan-teams: "<#cbd5e1>At match start, put me on a team with clanmates who don't have one.</#cbd5e1>"
 lobbygame:
   only:
@@ -3380,7 +3387,7 @@ list-separator: "<dark_gray>, </dark_gray>"
 "history.delete.stats-reverted": "<prefix><#6dd3a0>Took the matches' stats back off <players> player entries; the leaderboards are updated.</#6dd3a0>"
 "admin.desc.history": "- past matches: view and delete"
 "admin.desc.hologram": "- clickable leaderboard holograms"
-"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/admin hologram set <stat></#93c5fd> <#7b8aa0>- put the leaderboard where you stand</#7b8aa0><newline> <#93c5fd>/admin hologram item <stat></#93c5fd> <#7b8aa0>- use the item in your hand as its icon</#7b8aa0><newline> <#93c5fd>/admin hologram size <stat> <width> <height></#93c5fd> <#7b8aa0>- resize its board (default 5 x 4, rules 8 x 4)</#7b8aa0><newline> <#93c5fd>/admin hologram remove <stat></#93c5fd> <#7b8aa0>- remove the leaderboard</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- show every leaderboard (click one to teleport)</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- outline the click boxes with particles</#7b8aa0><newline> <#7b8aa0>Use <#93c5fd>rules</#93c5fd>, <#93c5fd>activities</#93c5fd>, <#93c5fd>links</#93c5fd> or <#93c5fd>clans</#93c5fd> as the stat to place the server rules board, the activity schedule, the links board or the top clans board.</#7b8aa0>"
+"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/admin hologram set <stat></#93c5fd> <#7b8aa0>- put the leaderboard where you stand</#7b8aa0><newline> <#93c5fd>/admin hologram item <stat></#93c5fd> <#7b8aa0>- use the item in your hand as its icon</#7b8aa0><newline> <#93c5fd>/admin hologram size <stat> <width> <height></#93c5fd> <#7b8aa0>- resize its board (default 5 x 4, rules 8 x 4)</#7b8aa0><newline> <#93c5fd>/admin hologram remove <stat></#93c5fd> <#7b8aa0>- remove the leaderboard</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- show every leaderboard (click one to teleport)</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- outline the click boxes with particles</#7b8aa0><newline> <#93c5fd>/admin hologram toggle [all|text|frames]</#93c5fd> <#7b8aa0>- hide or show the boards (or only their text / frames) just for you, e.g. to compare FPS</#7b8aa0><newline> <#93c5fd>/admin hologram client [player]</#93c5fd> <#7b8aa0>- what a player's game sends: version, brand and mod channels</#7b8aa0><newline> <#7b8aa0>Use <#93c5fd>rules</#93c5fd>, <#93c5fd>activities</#93c5fd>, <#93c5fd>links</#93c5fd> or <#93c5fd>clans</#93c5fd> as the stat to place the server rules board, the activity schedule, the links board or the top clans board.</#7b8aa0>"
 "lb-hologram.set": "<#6dd3a0>The <stat> <#6dd3a0>leaderboard is now at <white><where></white>.</#6dd3a0>"
 "lb-hologram.removed": "<#6dd3a0>Removed the <stat> <#6dd3a0>leaderboard.</#6dd3a0>"
 "lb-hologram.resized": "<#6dd3a0>The <stat> <#6dd3a0>board is now <white><width></white> wide and <white><height></white> tall.</#6dd3a0>"
@@ -4370,6 +4377,8 @@ clan:
     wars: "Clan wars"
   unlock:
     hex-colors: "Any tag colour (hex)"
+    member-slots: "<slots> member slots"
+    level-points: "<points> points for every member"
     basic-colors: "Tag in the basic colours"
     all-colors: "Every tag colour"
     bold-tag: "Bold tag"
@@ -4469,6 +4478,8 @@ clan:
     subtitle: "<clan_tag> <white><clan></white>"
     chat: "<prefix><clan_tag> <#f4d35e><bold>Your clan reached level <level>!</bold></#f4d35e>"
     unlock: "  <#6dd3a0>✔ Unlocked:</#6dd3a0> <white><unlock></white>"
+    points: "  <#f4d35e>✦ +<points> points</#f4d35e> <#7b8aa0>for every member</#7b8aa0>"
+    slots: "  <#6dd3a0>✔ Member slots:</#6dd3a0> <white><max></white>"
   info:
     header: "<#f4d35e><bold>━━ </bold></#f4d35e><clan_tag> <#f4d35e><bold><clan> ━━</bold></#f4d35e>"
     description: "<#cbd5e1><i><description></i></#cbd5e1>"
@@ -4592,6 +4603,22 @@ clan:
         - "<#7b8aa0>Level <level> · <members>/<max> members · Leader <leader></#7b8aa0>"
         - "<#cbd5e1><description></#cbd5e1>"
         - "<#6dd3a0>Left-click to join</#6dd3a0> <#7b8aa0>·</#7b8aa0> <#f95738>right-click to decline</#f95738>"
+    list:
+      title: "All Clans (<page>/<pages>)"
+      empty: "<#7b8aa0>No clans yet</#7b8aa0>"
+      name: "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><bold><clan></bold></white>"
+      lore:
+        - "<#7b8aa0>Level</#7b8aa0> <#c4b5fd><level></#c4b5fd> <#7b8aa0>· <xp> XP</#7b8aa0>"
+        - "<#7b8aa0>Members</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· Leader</#7b8aa0> <white><leader></white>"
+        - "<#7b8aa0>Joining:</#7b8aa0> <white><mode></white>"
+        - "<#cbd5e1><description></#cbd5e1>"
+        - ""
+      click-join: "<#6dd3a0>Click to join</#6dd3a0>"
+      click-info: "<#93c5fd>Click for the clan's info</#93c5fd>"
+    all-clans: "<#93c5fd><bold>All Clans</bold></#93c5fd>"
+    all-clans-lore:
+      - "<#7b8aa0><count> clans, ranked by clan XP</#7b8aa0>"
+      - "<#6dd3a0>Click to browse them</#6dd3a0>"
     browse:
       title: "Open Clans (<page>/<pages>)"
       empty: "<#7b8aa0>No open clans right now</#7b8aa0>"
@@ -4772,3 +4799,19 @@ music:
   list-line: "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>(<song>)</#7b8aa0>"
   list-playing: "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>(<song>)</#7b8aa0>"
   usage: "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>usage:</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- what's playing</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- turn the lobby music on or off for you</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- the playlist</#7b8aa0><newline> <#93c5fd>/music skip | play <song></#93c5fd> <#7b8aa0>- change the song for everyone (staff)</#7b8aa0>"
+"lb-hologram.hidden": "<#f4d35e>Every board is hidden for you.</#f4d35e> <#7b8aa0>Watch your FPS, then <white>/admin hologram toggle</white> again to bring them back.</#7b8aa0>"
+"lb-hologram.unhidden": "<#6dd3a0>The boards are back.</#6dd3a0>"
+"lb-hologram.client": "<#f4d35e><player></#f4d35e> <#7b8aa0>· game:</#7b8aa0> <white><version></white> <#7b8aa0>· brand:</#7b8aa0> <white><brand></white> <#7b8aa0>· text-speeding mod found:</#7b8aa0> <white><fast></white><newline><#7b8aa0>Channels:</#7b8aa0> <white><channels></white>"
+"lb-hologram.client-older": "older than the server (ViaVersion)"
+"lb-hologram.client-current": "same as the server"
+old-client-tip:
+  title: "<#f4d35e><bold>Your Minecraft is an older version</bold></#f4d35e>"
+  body: "<white>You joined on an older Minecraft than the server, which draws text slowly - the lobby boards can drop your FPS a lot.</white><newline><newline><#cbd5e1>For a smoother game, either:</#cbd5e1><newline><#6dd3a0>• install the <white>ImmediatelyFast</white> mod (Fabric / NeoForge), or</#6dd3a0><newline><#6dd3a0>• play on Minecraft <white><version></white>, the server's own version.</#6dd3a0><newline><newline><#7b8aa0>Until then, board text only shows when you're near a board.</#7b8aa0>"
+  mod-button: "<#6dd3a0>Get ImmediatelyFast</#6dd3a0>"
+  mod-tooltip: "<#cbd5e1>Opens its Modrinth page</#cbd5e1>"
+  have-button: "<#93c5fd>I already have it</#93c5fd>"
+  have-tooltip: "<#cbd5e1>Shows the boards' text from as far as before (the server can't see the mod itself)</#cbd5e1>"
+  have-done: "<#6dd3a0>Board text is back to full range for you.</#6dd3a0> <#7b8aa0>Change it any time in <white>/settings</white>.</#7b8aa0>"
+  never-button: "<#7b8aa0>Don't show again</#7b8aa0>"
+  close-button: "<white>OK</white>"
+  never-done: "<#7b8aa0>Got it - you can turn the tip back on in <white>/settings</white>.</#7b8aa0>"

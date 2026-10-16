@@ -1163,10 +1163,11 @@
   "view-profile": "<#7dd3fc>▶ 擊之以觀其錄</#7dd3fc>"
 "settings-dialog":
   "title": "<item:comparator> <#cbd5e1><bold>己之設</bold></#cbd5e1>"
-  "description": "<#7b8aa0>擊一設以啟閉之，汝之所擇存於錄中。</#7b8aa0>"
+  "description": "<#7b8aa0>擊之則易其啟閉，置指於上可觀其說。所易即存。</#7b8aa0>"
+  "done": "<white>畢</white>"
   "state":
-    "on": "<item:lime_dye> <#6dd3a0><bold>啟</bold></#6dd3a0>"
-    "off": "<item:gray_dye> <#f95738><bold>閉</bold></#f95738>"
+    "on": "<#6dd3a0><bold>✔ 啟</bold></#6dd3a0>"
+    "off": "<#f95738><bold>✘ 閉</bold></#f95738>"
   "icon":
     "scoreboard": "<item:paper>"
     "own-nametag": "<item:name_tag>"
@@ -1177,6 +1178,8 @@
     "floating-leaderboards": "<item:item_frame>"
     "lobby-fly": "<item:feather>"
     "lobby-music": "<item:music_disc_cat>"
+    "old-client-tip": "<item:spyglass>"
+    "old-client-full-text": "<item:glow_ink_sac>"
     "clan-teams": "<item:goat_horn>"
   "setting":
     "scoreboard": "<icon> <white>計分之板</white>  <state>"
@@ -1188,6 +1191,8 @@
     "floating-leaderboards": "<icon> <white>大廳榜浮動</white>  <state>"
     "lobby-fly": "<icon> <white>大廳之飛</white>  <state>"
     "lobby-music": "<icon> <white>大廳之樂</white>  <state>"
+    "old-client-tip": "<icon> <white>舊版之示</white>  <state>"
+    "old-client-full-text": "<icon> <white>榜文遠視</white>  <state>"
     "clan-teams": "<icon> <white>與盟友同伍</white>  <state>"
   "tooltip":
     "scoreboard": "<#cbd5e1>示局之計分板於幕側。速令：/sb</#cbd5e1>"
@@ -1198,7 +1203,9 @@
     "hide-lobby-players": "<#cbd5e1>在大廳則隱眾人，不涉於局。</#cbd5e1>"
     "floating-leaderboards": "<#cbd5e1>令大廳之榜徐徐浮沉。閉之則榜靜止。</#cbd5e1>"
     "lobby-fly": "<#cbd5e1>飛於大廳，唯大廳有效。</#cbd5e1>"
-    "lobby-music": "<#cbd5e1>大廳之中，音符盒輕奏之樂；其聲隨汝「唱片機／音符盒」之量。</#cbd5e1>"
+    "lobby-music": "<#cbd5e1>大廳輪奏輕快之音符盒曲，本為閉。<newline>其聲隨汝「唱片機／音符盒」之量。<newline>書 <white>/music</white> 以觀曲目。</#cbd5e1>"
+    "old-client-tip": "<#cbd5e1>以舊版入時，示令大廳更順之模組。</#cbd5e1>"
+    "old-client-full-text": "<#cbd5e1>汝之 Minecraft 舊於伺服，榜文唯近乃現。若已裝 ImmediatelyFast 則啟之。</#cbd5e1>"
     "clan-teams": "<#cbd5e1>戰始，與無伍之盟友同伍。</#cbd5e1>"
 "lobbygame":
   "only":
@@ -3460,7 +3467,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "history.delete.stats-reverted": "<prefix><#6dd3a0>已自 <players> 錄中除諸局之績，榜已更新。</#6dd3a0>"
 "admin.desc.history": "- 戰錄：觀之、刪之"
 "admin.desc.hologram": "- 可擊之榜影"
-"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin hologram set <類></#93c5fd> <#7b8aa0>- 置榜於汝所立之處</#7b8aa0><newline> <#93c5fd>/admin hologram item <類></#93c5fd> <#7b8aa0>- 以手中之物為其標</#7b8aa0><newline> <#93c5fd>/admin hologram size <類> <寬> <高></#93c5fd> <#7b8aa0>- 易榜之大小（本為 5 x 4，規則 8 x 4）</#7b8aa0><newline> <#93c5fd>/admin hologram remove <類></#93c5fd> <#7b8aa0>- 去其榜</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- 列諸榜（擊之則往）</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- 以微光示擊域</#7b8aa0><newline> <#7b8aa0>以 <#93c5fd>rules</#93c5fd>、<#93c5fd>activities</#93c5fd>、<#93c5fd>links</#93c5fd> 或 <#93c5fd>clans</#93c5fd> 代 stat，則置伺服之規榜、事程之榜、連結之榜或諸盟之榜。</#7b8aa0>"
+"lb-hologram.usage": "<#f4d35e><bold>/admin hologram</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin hologram set <類></#93c5fd> <#7b8aa0>- 置榜於汝所立之處</#7b8aa0><newline> <#93c5fd>/admin hologram item <類></#93c5fd> <#7b8aa0>- 以手中之物為其標</#7b8aa0><newline> <#93c5fd>/admin hologram size <類> <寬> <高></#93c5fd> <#7b8aa0>- 易榜之大小（本為 5 x 4，規則 8 x 4）</#7b8aa0><newline> <#93c5fd>/admin hologram remove <類></#93c5fd> <#7b8aa0>- 去其榜</#7b8aa0><newline> <#93c5fd>/admin hologram list</#93c5fd> <#7b8aa0>- 列諸榜（擊之則往）</#7b8aa0><newline> <#93c5fd>/admin hologram show</#93c5fd> <#7b8aa0>- 以微光示擊域</#7b8aa0><newline> <#93c5fd>/admin hologram toggle [all|text|frames]</#93c5fd> <#7b8aa0>- 唯於汝隱顯諸榜（或唯其文、其框），如較 FPS</#7b8aa0><newline> <#93c5fd>/admin hologram client [戲者]</#93c5fd> <#7b8aa0>- 觀戲者之端所傳：版本、端名、模組頻道</#7b8aa0><newline> <#7b8aa0>以 <#93c5fd>rules</#93c5fd>、<#93c5fd>activities</#93c5fd>、<#93c5fd>links</#93c5fd> 或 <#93c5fd>clans</#93c5fd> 代 stat，則置伺服之規榜、事程之榜、連結之榜或諸盟之榜。</#7b8aa0>"
 "lb-hologram.set": "<#6dd3a0><stat> <#6dd3a0>之榜，已置於 <white><where></white>。</#6dd3a0>"
 "lb-hologram.removed": "<#6dd3a0>已去 <stat> <#6dd3a0>之榜。</#6dd3a0>"
 "lb-hologram.resized": "<#6dd3a0><stat> <#6dd3a0>之榜，今寬 <white><width></white>，高 <white><height></white>。</#6dd3a0>"
@@ -4434,6 +4441,8 @@ time-units:
     "wars": "盟戰"
   "unlock":
     "hex-colors": "標之任色（十六進）"
+    "member-slots": "盟員之額 <slots>"
+    "level-points": "盟眾各得 <points> 點"
     "basic-colors": "標用常色"
     "all-colors": "標用諸色"
     "bold-tag": "粗體之標"
@@ -4533,6 +4542,8 @@ time-units:
     "subtitle": "<clan_tag> <white><clan></white>"
     "chat": "<prefix><clan_tag> <#f4d35e><bold>汝盟已至 <level> 等！</bold></#f4d35e>"
     "unlock": "  <#6dd3a0>✔ 已啟：</#6dd3a0> <white><unlock></white>"
+    "points": "  <#f4d35e>✦ +<points> 點</#f4d35e> <#7b8aa0>（盟眾皆得）</#7b8aa0>"
+    "slots": "  <#6dd3a0>✔ 盟員之額：</#6dd3a0> <white><max></white>"
   "info":
     "header": "<#f4d35e><bold>━━ </bold></#f4d35e><clan_tag> <#f4d35e><bold><clan> ━━</bold></#f4d35e>"
     "description": "<#cbd5e1><i><description></i></#cbd5e1>"
@@ -4656,6 +4667,22 @@ time-units:
         - "<#7b8aa0><level> 等 · 盟眾 <members>/<max> · 盟主 <leader></#7b8aa0>"
         - "<#cbd5e1><description></#cbd5e1>"
         - "<#6dd3a0>左擊以入</#6dd3a0> <#7b8aa0>·</#7b8aa0> <#f95738>右擊以辭</#f95738>"
+    "list":
+      "title": "諸盟（<page>/<pages>）"
+      "empty": "<#7b8aa0>尚無盟</#7b8aa0>"
+      "name": "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><bold><clan></bold></white>"
+      "lore":
+        - "<#7b8aa0>等</#7b8aa0> <#c4b5fd><level></#c4b5fd> <#7b8aa0>· 歷練 <xp></#7b8aa0>"
+        - "<#7b8aa0>盟眾</#7b8aa0> <white><members>/<max></white> <#7b8aa0>· 盟主</#7b8aa0> <white><leader></white>"
+        - "<#7b8aa0>入盟之法：</#7b8aa0><white><mode></white>"
+        - "<#cbd5e1><description></#cbd5e1>"
+        - ""
+      "click-join": "<#6dd3a0>擊之以入</#6dd3a0>"
+      "click-info": "<#93c5fd>擊之以觀其盟</#93c5fd>"
+    "all-clans": "<#93c5fd><bold>諸盟</bold></#93c5fd>"
+    "all-clans-lore":
+      - "<#7b8aa0>凡 <count> 盟，以歷練為次</#7b8aa0>"
+      - "<#6dd3a0>擊之以覽</#6dd3a0>"
     "browse":
       "title": "門開之盟（<page>/<pages>）"
       "empty": "<#7b8aa0>今無門開之盟</#7b8aa0>"
@@ -4866,3 +4893,19 @@ time-units:
   "list-line": "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>（<song>）</#7b8aa0>"
   "list-playing": "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>（<song>）</#7b8aa0>"
   "usage": "<#f4d35e><bold>/music</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/music</#93c5fd> <#7b8aa0>- 今奏何曲</#7b8aa0><newline> <#93c5fd>/music play | stop</#93c5fd> <#7b8aa0>- 啟或閉汝之大廳之樂</#7b8aa0><newline> <#93c5fd>/music list</#93c5fd> <#7b8aa0>- 曲目</#7b8aa0><newline> <#93c5fd>/music skip | play <曲></#93c5fd> <#7b8aa0>- 為眾易曲（執事）</#7b8aa0>"
+"lb-hologram.hidden": "<#f4d35e>諸榜已於汝隱。</#f4d35e> <#7b8aa0>觀 FPS，復書 <white>/admin hologram toggle</white> 則榜復現。</#7b8aa0>"
+"lb-hologram.unhidden": "<#6dd3a0>諸榜復現。</#6dd3a0>"
+"lb-hologram.client": "<#f4d35e><player></#f4d35e> <#7b8aa0>· 戲本：</#7b8aa0><white><version></white> <#7b8aa0>· 端名：</#7b8aa0><white><brand></white> <#7b8aa0>· 有速文之模組：</#7b8aa0><white><fast></white><newline><#7b8aa0>頻道：</#7b8aa0><white><channels></white>"
+"lb-hologram.client-older": "舊於伺服（ViaVersion）"
+"lb-hologram.client-current": "與伺服同"
+"old-client-tip":
+  "title": "<#f4d35e><bold>汝之 Minecraft 版舊</bold></#f4d35e>"
+  "body": "<white>汝以舊於伺服之版入，此版繪文甚緩，大廳諸榜或令 FPS 大減。</white><newline><newline><#cbd5e1>欲其順，可：</#cbd5e1><newline><#6dd3a0>• 裝 <white>ImmediatelyFast</white> 模組（Fabric／NeoForge），或</#6dd3a0><newline><#6dd3a0>• 改用伺服之版 Minecraft <white><version></white>。</#6dd3a0><newline><newline><#7b8aa0>未改之前，榜文唯近乃現。</#7b8aa0>"
+  "mod-button": "<#6dd3a0>取 ImmediatelyFast</#6dd3a0>"
+  "mod-tooltip": "<#cbd5e1>啟其 Modrinth 之頁</#cbd5e1>"
+  "have-button": "<#93c5fd>吾已裝之</#93c5fd>"
+  "have-tooltip": "<#cbd5e1>榜文復其遠視（伺服不能察此模組）</#cbd5e1>"
+  "have-done": "<#6dd3a0>榜文已復其遠。</#6dd3a0> <#7b8aa0>可隨時於 <white>/settings</white> 改之。</#7b8aa0>"
+  "never-button": "<#7b8aa0>勿復示</#7b8aa0>"
+  "close-button": "<white>知矣</white>"
+  "never-done": "<#7b8aa0>諾，可於 <white>/settings</white> 復啟此示。</#7b8aa0>"
