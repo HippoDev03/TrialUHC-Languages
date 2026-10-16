@@ -3273,6 +3273,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "maintenance.cancelled": "<#6dd3a0>メンテナンスのカウントダウンを中止しました。</#6dd3a0>"
 "maintenance.no-countdown": "<#f4d35e>進行中のメンテナンスのカウントダウンはありません。</#f4d35e>"
 "team.name-too-long": "<#f95738>チーム名は最大 <white><max></white> 文字までです。</#f95738>"
+"team.name-too-wide": "<#f95738>チーム名が長すぎます：漢字なら約 <white><cjk></white> 文字、英字なら約 <white><letters></white> 文字までです。</#f95738>"
 "staff-mode.item.noclip.name": "<#c4b5fd><bold>壁抜け</bold></#c4b5fd>"
 "staff-mode.item.noclip.lore": "<#7b8aa0>右クリックで壁をすり抜けて飛行。/staff noclip で解除。</#7b8aa0>"
 "staff-mode.noclip-on": "<#c4b5fd>壁抜けオン - 壁をすり抜けて飛べます。</#c4b5fd> <#7b8aa0>壁抜け中はツールが使えません。<white>/staff noclip</white> で解除。</#7b8aa0>"
@@ -4415,6 +4416,7 @@ time-units:
 "discord-bot.clan-channel-welcome": "🛡️ **[<tag>] <clan>** 専用チャンネルへようこそ！クランメンバー（とスタッフ）だけが見られます。"
 "discord-bot.clan-thread-moved": "🛡️ クラン専用チャンネルができました：<channel>。このスレッドはアーカイブされます。"
 "discord-bot.clan-thread-welcome": "🛡️ **[<tag>] <clan>** の Discord の場所です。アカウントを連携（/link）したメンバーは自動で追加されます。"
+"discord-bot.clan-chat-out": "💬 **<player>**：<message>"
 "clan":
   "retagged": "<prefix><#6dd3a0><white><player></white> がクランタグを変更しました：<white><old></white> → <clan_tag></#6dd3a0>"
   "renamed": "<prefix><clan_tag> <#6dd3a0><white><player></white> がクラン名を変更しました：<white><old></white> → <white><clan></white></#6dd3a0>"
@@ -4542,6 +4544,7 @@ time-units:
   "chat":
     "format": "<#f472b6>[クラン]</#f472b6> <role><white><player></white><dark_gray> » </dark_gray><#fbcfe8><message></#fbcfe8>"
     "spy-format": "<#7b8aa0>[監視]</#7b8aa0> <clan_tag> <white><player></white><dark_gray> » </dark_gray><gray><message></gray>"
+    "discord-format": "<#f472b6>[クラン]</#f472b6> <#5865f2>[Discord]</#5865f2> <white><player></white><dark_gray> » </dark_gray><#fbcfe8><message></#fbcfe8>"
     "mode-on": "<#6dd3a0>クランチャット オン：メッセージはクランに送られます。</#6dd3a0> <#7b8aa0>! で始めると全体チャットに送ります。もう一度 <white>/cc</white> でオフにします。</#7b8aa0>"
     "mode-off": "<#f4d35e>クランチャット オフ。</#f4d35e>"
     "paused": "<#f95738>試合中はクランチャットが停止しています</#f95738> <#7b8aa0>（クランメンバーが別チームかもしれないため）。<white>/cc</white> でクランチャットモードをオフにします。</#7b8aa0>"
