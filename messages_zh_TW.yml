@@ -5782,7 +5782,7 @@ admin-help:
       supporter: "<動作> <玩家> ..."
       goldenhead: "<玩家> [數量]"
       names: "<玩家>"
-      data: "<backup|import|clear|cleardata> ..."
+      data: "<backup|import|cleardata|clearall> ..."
     lobby:
       hologram: "<set|物品|size|remove|toggle> ..."
       tutorial: "<動作> ..."
@@ -5852,3 +5852,14 @@ staff-help:
     chat:
       staff: "[訊息]"
       announce: "<訊息>"
+"team.locked": "<#f95738>比賽進行中，隊伍已鎖定。</#f95738>"
+"match-countdown-cancelled": "<#f95738>倒數已取消：剩餘玩家或隊伍數量不足。</#f95738>"
+"errors.world-preloading": "<#f95738>地圖仍在預先生成中（<white><percent>%</white>），完成後即可開始比賽。</#f95738>"
+"autostart.failed": "<#f95738>自動開始未能進行，將於一分鐘後再次嘗試：</#f95738>"
+"callouts.ally-hit": "<#f95738>⚔ <white><player></white> 正遭受攻擊 · ❤ <hearts> · <distance> 格</#f95738>"
+"team.lobby-locked": "<#f95738>大廳目前不開放更換隊伍。</#f95738>"
+"alert-combat-log": "<#f95738>戰鬥中離線</#f95738> <#7b8aa0>| 玩家：</#7b8aa0> <white><player></white> <#7b8aa0>| 於戰鬥中離開</#7b8aa0>"
+"match-rejoins-left": "<#7b8aa0>本場剩餘重新連線次數：<white><left></white>/<max>。</#7b8aa0>"
+"match-rejoins-last": "<#f95738>這是您最後一次重新連線，再次離開將被淘汰。</#f95738>"
+"match-rejoin-limit": "<#7b8aa0>本場最多可重新連線 <white><max></white> 次。戰鬥後 <combat> 秒內離線，僅有 <window> 秒可重新加入。</#7b8aa0>"
+"portal-trap-blocked": "<#f95738>傳送門附近禁止此操作，以防設陷。</#f95738>"

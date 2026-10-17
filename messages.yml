@@ -5076,7 +5076,7 @@ admin-help:
       supporter: "<action> <player> ..."
       goldenhead: "<player> [amount]"
       names: "<player>"
-      data: "<backup|import|clear|cleardata> ..."
+      data: "<backup|import|cleardata|clearall> ..."
     lobby:
       hologram: "<set|item|size|remove|toggle> ..."
       tutorial: "<action> ..."
@@ -5146,3 +5146,14 @@ staff-help:
     chat:
       staff: "[message]"
       announce: "<message>"
+"team.locked": "<#f95738>Teams are locked while a match is on.</#f95738>"
+"match-countdown-cancelled": "<#f95738>The countdown was cancelled: not enough players or teams are left.</#f95738>"
+"errors.world-preloading": "<#f95738>The map is still being pregenerated (<white><percent>%</white>). The match can start once it's done.</#f95738>"
+"autostart.failed": "<#f95738>The automatic start didn't go ahead. It will try again in a minute:</#f95738>"
+"callouts.ally-hit": "<#f95738>⚔ <white><player></white> is under attack · ❤ <hearts> · <distance>m</#f95738>"
+"team.lobby-locked": "<#f95738>Switching teams in the lobby is turned off.</#f95738>"
+"alert-combat-log": "<#f95738>Combat log</#f95738> <#7b8aa0>| Player:</#7b8aa0> <white><player></white> <#7b8aa0>| left during a fight</#7b8aa0>"
+"match-rejoins-left": "<#7b8aa0>Reconnects left this match: <white><left></white>/<max>.</#7b8aa0>"
+"match-rejoins-last": "<#f95738>That was your last reconnect: if you leave again, you're out of the match.</#f95738>"
+"match-rejoin-limit": "<#7b8aa0>You can reconnect up to <white><max></white> times this match. Leaving within <combat>s of a fight gives you only <window>s to come back.</#7b8aa0>"
+"portal-trap-blocked": "<#f95738>Not next to a portal: no trapping it.</#f95738>"

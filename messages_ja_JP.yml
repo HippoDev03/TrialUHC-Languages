@@ -5170,7 +5170,7 @@ admin-help:
       supporter: "<操作> <プレイヤー> ..."
       goldenhead: "<プレイヤー> [数]"
       names: "<プレイヤー>"
-      data: "<backup|import|clear|cleardata> ..."
+      data: "<backup|import|cleardata|clearall> ..."
     lobby:
       hologram: "<set|アイテム|size|remove|toggle> ..."
       tutorial: "<操作> ..."
@@ -5240,3 +5240,14 @@ staff-help:
     chat:
       staff: "[メッセージ]"
       announce: "<メッセージ>"
+"team.locked": "<#f95738>試合中はチームが固定されています。</#f95738>"
+"match-countdown-cancelled": "<#f95738>カウントダウンを中止しました：残りのプレイヤーまたはチームが足りません。</#f95738>"
+"errors.world-preloading": "<#f95738>マップを事前生成中です（<white><percent>%</white>）。完了後に試合を開始できます。</#f95738>"
+"autostart.failed": "<#f95738>自動開始できませんでした。1分後に再試行します：</#f95738>"
+"callouts.ally-hit": "<#f95738>⚔ <white><player></white> が攻撃を受けています · ❤ <hearts> · <distance>m</#f95738>"
+"team.lobby-locked": "<#f95738>ロビーでのチーム変更は現在できません。</#f95738>"
+"alert-combat-log": "<#f95738>戦闘ログアウト</#f95738> <#7b8aa0>| プレイヤー：</#7b8aa0> <white><player></white> <#7b8aa0>| 戦闘中に退出</#7b8aa0>"
+"match-rejoins-left": "<#7b8aa0>この試合の再接続の残り回数：<white><left></white>/<max>。</#7b8aa0>"
+"match-rejoins-last": "<#f95738>これが最後の再接続です。次に退出すると脱落します。</#f95738>"
+"match-rejoin-limit": "<#7b8aa0>この試合では最大 <white><max></white> 回まで再接続できます。戦闘後 <combat> 秒以内に退出すると、戻れるのは <window> 秒以内です。</#7b8aa0>"
+"portal-trap-blocked": "<#f95738>ポータルの近くではできません（ポータルトラップ防止）。</#f95738>"

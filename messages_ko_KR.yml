@@ -5166,7 +5166,7 @@ admin-help:
       supporter: "<동작> <플레이어> ..."
       goldenhead: "<플레이어> [수량]"
       names: "<플레이어>"
-      data: "<backup|import|clear|cleardata> ..."
+      data: "<backup|import|cleardata|clearall> ..."
     lobby:
       hologram: "<set|아이템|size|remove|toggle> ..."
       tutorial: "<동작> ..."
@@ -5236,3 +5236,14 @@ staff-help:
     chat:
       staff: "[메시지]"
       announce: "<메시지>"
+"team.locked": "<#f95738>경기 중에는 팀이 고정됩니다.</#f95738>"
+"match-countdown-cancelled": "<#f95738>카운트다운이 취소되었습니다: 남은 플레이어 또는 팀이 부족합니다.</#f95738>"
+"errors.world-preloading": "<#f95738>맵을 아직 미리 생성하는 중입니다 (<white><percent>%</white>). 완료되면 경기를 시작할 수 있습니다.</#f95738>"
+"autostart.failed": "<#f95738>자동 시작이 진행되지 않았습니다. 1분 후 다시 시도합니다:</#f95738>"
+"callouts.ally-hit": "<#f95738>⚔ <white><player></white> 공격받는 중 · ❤ <hearts> · <distance>m</#f95738>"
+"team.lobby-locked": "<#f95738>로비에서 팀 변경이 꺼져 있습니다.</#f95738>"
+"alert-combat-log": "<#f95738>전투 중 로그아웃</#f95738> <#7b8aa0>| 플레이어:</#7b8aa0> <white><player></white> <#7b8aa0>| 전투 중 나감</#7b8aa0>"
+"match-rejoins-left": "<#7b8aa0>이번 경기 남은 재접속 횟수: <white><left></white>/<max>.</#7b8aa0>"
+"match-rejoins-last": "<#f95738>마지막 재접속이었습니다. 다시 나가면 탈락합니다.</#f95738>"
+"match-rejoin-limit": "<#7b8aa0>이번 경기에서는 최대 <white><max></white>번 재접속할 수 있습니다. 전투 후 <combat>초 안에 나가면 <window>초 안에만 돌아올 수 있습니다.</#7b8aa0>"
+"portal-trap-blocked": "<#f95738>포털 근처에서는 할 수 없습니다 (포털 트랩 방지).</#f95738>"
