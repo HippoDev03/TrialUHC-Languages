@@ -206,6 +206,7 @@
     "enabled": "<#9db4c0>관전 모드입니다. 경기에 배치되지 않습니다.</#9db4c0>"
     "disabled": "<#6dd3a0>다음 경기 대기열로 돌아왔습니다.</#6dd3a0>"
   "fly":
+    "only-lobby": "<#f95738>/fly는 경기가 없을 때 로비에서만 사용할 수 있습니다.</#f95738>"
     "enabled": "<#7dd3fc>로비 비행을 켰습니다.</#7dd3fc>"
     "disabled": "<#f4d35e>로비 비행을 껐습니다.</#f4d35e>"
     "blocked": "<#f95738>로비 PvP가 켜져 있는 동안에는 로비 비행을 사용할 수 없습니다.</#f95738>"
@@ -5012,6 +5013,8 @@ time-units:
 "lobby-stack":
   # Shown to the player at the bottom when someone climbs on them in the lobby.
   "throw-hint": "<#f4d35e>누군가 당신 위에 올라탔습니다!</#f4d35e> <#cbd5e1><white>웅크리기</white>를 길게 눌러 떨어뜨리세요.</#cbd5e1>"
+  # Filling while the bottom of a stack holds sneak; full = thrown.
+  "throw-charging": "<#f4d35e>던지기</#f4d35e> <#f95738><filled></#f95738><#3f4a5a><empty></#3f4a5a>"
 "clan-stage":
   # The 3D clan view (/clan info, the clan list), next to profile-stage.
   "members-title": "<#f95738><bold><title></bold></#f95738> <#7b8aa0>(<page>/<pages>)</#7b8aa0>"
@@ -5069,3 +5072,23 @@ time-units:
     "rank-war-wins": "클랜전 승리 순위"
     "week-wins": "이번 주 승리"
     "week-kills": "이번 주 킬"
+"settings-screen":
+  # /settings2: the full-screen settings page with a cursor (screen/). Settings use settings-dialog.*.
+  "title": "<#f95738><bold>⚙ TrialUHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>설정</white>"
+  "player": "<white><player></white>"
+  "close": "<white><bold>✕</bold></white>"
+  "tab-title": "<white><bold><title></bold></white>"
+  "hint": "<#7b8aa0>버튼을 보고 클릭 (또는 스페이스) · 웅크리기로 닫기</#7b8aa0>"
+  "unavailable": "<#f95738>로비에서 경기가 없을 때만 열 수 있습니다.</#f95738>"
+  "tab":
+    "display": "화면"
+    "chat": "채팅"
+    "lobby": "로비"
+    "game": "경기"
+    "other": "기타"
+  "tab-description":
+    "display": "<#9db4c0>로비와 경기 중 화면에 보이는 것들.</#9db4c0>"
+    "chat": "<#9db4c0>다른 플레이어와 서버의 메시지.</#9db4c0>"
+    "lobby": "<#9db4c0>로비에서 기다리는 동안의 것들.</#9db4c0>"
+    "game": "<#9db4c0>경기에서 당신을 어떻게 배정할지.</#9db4c0>"
+    "other": "<#9db4c0>오래된 Minecraft 버전 사용자용.</#9db4c0>"

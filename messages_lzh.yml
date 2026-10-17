@@ -206,6 +206,7 @@
     "enabled": "<#9db4c0>汝今為觀者，不入戲中。</#9db4c0>"
     "disabled": "<#6dd3a0>汝復列於次局之候。</#6dd3a0>"
   "fly":
+    "only-lobby": "<#f95738>唯於大廳、無賽之時，方可用 /fly。</#f95738>"
     "enabled": "<#7dd3fc>大廳之飛已啟。</#7dd3fc>"
     "disabled": "<#f4d35e>大廳之飛已閉。</#f4d35e>"
     "blocked": "<#f95738>汝之大廳 PvP 方啟，不得飛。</#f95738>"
@@ -5015,6 +5016,8 @@ time-units:
 "lobby-stack":
   # Shown to the player at the bottom when someone climbs on them in the lobby.
   "throw-hint": "<#f4d35e>有人登汝之肩！</#f4d35e> <#cbd5e1>久按 <white>潛行</white> 則擲之。</#cbd5e1>"
+  # Filling while the bottom of a stack holds sneak; full = thrown.
+  "throw-charging": "<#f4d35e>將擲</#f4d35e> <#f95738><filled></#f95738><#3f4a5a><empty></#3f4a5a>"
 "clan-stage":
   # The 3D clan view (/clan info, the clan list), next to profile-stage.
   "members-title": "<#f95738><bold><title></bold></#f95738> <#7b8aa0>（<page>/<pages>）</#7b8aa0>"
@@ -5072,3 +5075,23 @@ time-units:
     "rank-war-wins": "盟戰勝之名次"
     "week-wins": "本週之勝"
     "week-kills": "本週之斬"
+"settings-screen":
+  # /settings2: the full-screen settings page with a cursor (screen/). Settings use settings-dialog.*.
+  "title": "<#f95738><bold>⚙ 試煉UHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>私設</white>"
+  "player": "<white><player></white>"
+  "close": "<white><bold>✕</bold></white>"
+  "tab-title": "<white><bold><title></bold></white>"
+  "hint": "<#7b8aa0>注目於鈕而擊之（或按空白）・潛行以閉</#7b8aa0>"
+  "unavailable": "<#f95738>唯於大廳、無戰之時可啟。</#f95738>"
+  "tab":
+    "display": "顯"
+    "chat": "言"
+    "lobby": "大廳"
+    "game": "戰"
+    "other": "餘"
+  "tab-description":
+    "display": "<#9db4c0>大廳與戰中，目之所見。</#9db4c0>"
+    "chat": "<#9db4c0>他人與伺服之言。</#9db4c0>"
+    "lobby": "<#9db4c0>候於大廳之事。</#9db4c0>"
+    "game": "<#9db4c0>戰時如何為汝安排。</#9db4c0>"
+    "other": "<#9db4c0>為用舊版者設。</#9db4c0>"

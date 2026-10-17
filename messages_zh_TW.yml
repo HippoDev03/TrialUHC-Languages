@@ -1983,9 +1983,9 @@ settings-dialog:
     hide-lobby-players: "<#cbd5e1>在大廳時隱藏其他所有玩家，不影響比賽。</#cbd5e1>"
     floating-leaderboards: "<#cbd5e1>讓大廳排行榜輕輕上下浮動。關閉後排行榜會保持不動。</#cbd5e1>"
     lobby-fly: "<#cbd5e1>在大廳中飛行，只在大廳有效。</#cbd5e1>"
-    lobby-music: "<#cbd5e1>大廳輪流播放輕快的音符盒歌曲，預設關閉。<newline>音量跟著你的「唱片機／音符盒」設定。<newline>輸入 <white>/music</white> 查看播放清單。</#cbd5e1>"
+    lobby-music: "<#cbd5e1>大廳輪流播放輕快的音階盒歌曲，預設關閉。<newline>音量跟著你的「唱片機／音階盒」音量設定。<newline>輸入 <white>/music</white> 查看播放清單。</#cbd5e1>"
     profile-3d: "<#cbd5e1>在大廳輸入 /profile 時，在你面前顯示 3D 個人資料。<newline>關閉後改用舊版視窗。</#cbd5e1>"
-    old-client-tip: "<#cbd5e1>用較舊的 Minecraft 加入時，提示能讓大廳更順的模組。</#cbd5e1>"
+    old-client-tip: "<#cbd5e1>用較舊的 Minecraft 加入時，提醒你可以安裝讓大廳更順的模組。</#cbd5e1>"
     old-client-full-text: "<#cbd5e1>你的 Minecraft 比伺服器舊，看板文字只會在靠近時顯示。如果有安裝 ImmediatelyFast 就開啟。</#cbd5e1>"
     clan-teams: "<#cbd5e1>比賽開始時，把我和沒有隊伍的戰隊隊友分在同一隊。</#cbd5e1>"
 database:
@@ -2868,6 +2868,7 @@ lobby:
     enabled: "<#9db4c0>你現在是旁觀者模式，不會被傳送進遊戲。</#9db4c0>"
     disabled: "<#6dd3a0>你已重新排入下一場遊戲。</#6dd3a0>"
   fly:
+    only-lobby: "<#f95738>只有在大廳、沒有比賽進行時才能使用 /fly。</#f95738>"
     enabled: "<#7dd3fc>大廳飛行已啟用。</#7dd3fc>"
     disabled: "<#f4d35e>大廳飛行已停用。</#f4d35e>"
     blocked: "<#f95738>開啟大廳 PvP 時不能飛行。</#f95738>"
@@ -5297,7 +5298,7 @@ clan:
       click-info: "<#93c5fd>點擊查看戰隊資訊</#93c5fd>"
     all-clans: "<#93c5fd><bold>所有戰隊</bold></#93c5fd>"
     all-clans-lore:
-      - "<#7b8aa0>共 <count> 個戰隊，依戰隊經驗值排名</#7b8aa0>"
+      - "<#7b8aa0>共 <count> 支戰隊，依戰隊經驗值排名</#7b8aa0>"
       - "<#6dd3a0>點擊瀏覽</#6dd3a0>"
     browse:
       title: "開放的戰隊（<page>/<pages>）"
@@ -5499,12 +5500,12 @@ music:
   status: "<#f4d35e>♪ 正在播放：</#f4d35e><white><title></white> <#7b8aa0>· 大廳音樂<state></#7b8aa0>"
   none: "<#7b8aa0>目前沒有大廳音樂。</#7b8aa0>"
   "on": "<#6dd3a0>♪ 已開啟大廳音樂。</#6dd3a0>"
-  "off": "<#f4d35e>已關閉大廳音樂。</#f4d35e> <#7b8aa0>輸入 <white>/music play</white> 可以再打開。</#7b8aa0>"
+  "off": "<#f4d35e>已關閉大廳音樂。</#f4d35e> <#7b8aa0>輸入 <white>/music play</white> 可以再開啟。</#7b8aa0>"
   state-on: "<#6dd3a0>開啟</#6dd3a0>"
   state-off: "<#f95738>關閉</#f95738>"
   skipped: "<#6dd3a0>⏭ 已跳過，現在播放 <white><title></white>。</#6dd3a0>"
   jumped: "<#6dd3a0>♪ 大廳現在播放 <white><title></white>。</#6dd3a0>"
-  unknown: "<#f95738>沒有叫 <white><song></white> 的歌，請看 <white>/music list</white>。</#f95738>"
+  unknown: "<#f95738>未知的歌曲：<white><song></white>。輸入 <white>/music list</white> 查看播放清單。</#f95738>"
   list-header: "<#f4d35e><bold>♪ 大廳播放清單</bold></#f4d35e> <#7b8aa0>（<count>）</#7b8aa0>"
   list-line: "  <#7b8aa0>·</#7b8aa0> <white><title></white> <#7b8aa0>（<song>）</#7b8aa0>"
   list-playing: "  <#f4d35e>▶</#f4d35e> <#f4d35e><title></#f4d35e> <#7b8aa0>（<song>）</#7b8aa0>"
@@ -5523,13 +5524,13 @@ old-client-tip:
   have-tooltip: "<#cbd5e1>看板文字恢復原本的顯示距離（伺服器無法偵測這個模組）</#cbd5e1>"
   have-done: "<#6dd3a0>已恢復看板文字的完整顯示距離。</#6dd3a0> <#7b8aa0>隨時可以在 <white>/settings</white> 更改。</#7b8aa0>"
   never-button: "<#7b8aa0>不再顯示</#7b8aa0>"
-  close-button: "<white>知道了</white>"
-  never-done: "<#7b8aa0>好的，之後可以在 <white>/settings</white> 重新開啟這個提示。</#7b8aa0>"
+  close-button: "<white>了解</white>"
+  never-done: "<#7b8aa0>之後可以在 <white>/settings</white> 重新開啟這個提示。</#7b8aa0>"
 profile-stage:
   # The 3D /profile (profile/stage). <name> = a button's name; <title> = a panel's title.
   hint: "<#7b8aa0>看著按鈕並點擊</#7b8aa0>"
   row-marker: "<#f4d35e>▶</#f4d35e> "
-  title: "<#f95738><bold>試煉UHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>玩家資料</white>"
+  title: "<#f95738><bold>試煉UHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>個人資料</white>"
   overview: "生涯概覽"
   panel-title: "<#f95738><bold><title></bold></#f95738>"
   divider: "<#3f4a5a>──────────────</#3f4a5a>"
@@ -5590,7 +5591,7 @@ profile-stage:
     points: "點數"
     assists: "助攻"
     current-streak: "目前連殺"
-    bow-shots: "弓箭射擊"
+    bow-shots: "射箭次數"
     golden-apples: "金蘋果"
     golden-heads: "金頭顱"
     diamonds: "鑽石"
@@ -5628,6 +5629,8 @@ profile-stage:
 lobby-stack:
   # Shown to the player at the bottom when someone climbs on them in the lobby.
   throw-hint: "<#f4d35e>有人爬到你身上了！</#f4d35e> <#cbd5e1>長按 <white>潛行</white> 把他們甩下去。</#cbd5e1>"
+  # Filling while the bottom of a stack holds sneak; full = thrown.
+  throw-charging: "<#f4d35e>甩出</#f4d35e> <#f95738><filled></#f95738><#3f4a5a><empty></#3f4a5a>"
 clan-stage:
   # The 3D clan view (/clan info, the clan list), next to profile-stage.
   members-title: "<#f95738><bold><title></bold></#f95738> <#7b8aa0>（<page>/<pages>）</#7b8aa0>"
@@ -5685,3 +5688,23 @@ clan-stage:
     rank-war-wins: "戰隊戰勝場排名"
     week-wins: "本週勝場"
     week-kills: "本週擊殺"
+settings-screen:
+  # /settings2: the full-screen settings page with a cursor (screen/). Settings use settings-dialog.*.
+  title: "<#f95738><bold>⚙ 試煉UHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>個人設定</white>"
+  player: "<white><player></white>"
+  close: "<white><bold>✕</bold></white>"
+  tab-title: "<white><bold><title></bold></white>"
+  hint: "<#7b8aa0>看著按鈕並點擊（或按空白鍵），潛行關閉</#7b8aa0>"
+  unavailable: "<#f95738>只有在大廳、沒有比賽進行時才能打開。</#f95738>"
+  tab:
+    display: "顯示"
+    chat: "聊天"
+    lobby: "大廳"
+    game: "比賽"
+    other: "其他"
+  tab-description:
+    display: "<#9db4c0>在大廳和比賽中，畫面上顯示的東西。</#9db4c0>"
+    chat: "<#9db4c0>其他玩家和伺服器的訊息。</#9db4c0>"
+    lobby: "<#9db4c0>等比賽時，大廳裡的音樂、飛行和其他玩家。</#9db4c0>"
+    game: "<#9db4c0>比賽開始時怎麼幫你分隊。</#9db4c0>"
+    other: "<#9db4c0>給使用較舊 Minecraft 版本的玩家。</#9db4c0>"

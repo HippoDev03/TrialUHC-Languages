@@ -206,6 +206,7 @@
     "enabled": "<#9db4c0>スペクテイターモードになりました。試合には参加しません。</#9db4c0>"
     "disabled": "<#6dd3a0>次の試合の参加待ちに戻りました。</#6dd3a0>"
   "fly":
+    "only-lobby": "<#f95738>/fly は試合のない間、ロビーでのみ使えます。</#f95738>"
     "enabled": "<#7dd3fc>ロビーでの飛行を有効にしました。</#7dd3fc>"
     "disabled": "<#f4d35e>ロビーでの飛行を無効にしました。</#f4d35e>"
     "blocked": "<#f95738>ロビーPvPが有効な間はロビーで飛行できません。</#f95738>"
@@ -5016,6 +5017,8 @@ time-units:
 "lobby-stack":
   # Shown to the player at the bottom when someone climbs on them in the lobby.
   "throw-hint": "<#f4d35e>誰かが上に乗りました！</#f4d35e> <#cbd5e1><white>スニーク</white>を長押しで振り落とせます。</#cbd5e1>"
+  # Filling while the bottom of a stack holds sneak; full = thrown.
+  "throw-charging": "<#f4d35e>投げる</#f4d35e> <#f95738><filled></#f95738><#3f4a5a><empty></#3f4a5a>"
 "clan-stage":
   # The 3D clan view (/clan info, the clan list), next to profile-stage.
   "members-title": "<#f95738><bold><title></bold></#f95738> <#7b8aa0>（<page>/<pages>）</#7b8aa0>"
@@ -5073,3 +5076,23 @@ time-units:
     "rank-war-wins": "クラン戦勝利順位"
     "week-wins": "今週の勝利"
     "week-kills": "今週のキル"
+"settings-screen":
+  # /settings2: the full-screen settings page with a cursor (screen/). Settings use settings-dialog.*.
+  "title": "<#f95738><bold>⚙ TrialUHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>設定</white>"
+  "player": "<white><player></white>"
+  "close": "<white><bold>✕</bold></white>"
+  "tab-title": "<white><bold><title></bold></white>"
+  "hint": "<#7b8aa0>ボタンを見てクリック（またはスペース）・スニークで閉じる</#7b8aa0>"
+  "unavailable": "<#f95738>ロビーで試合がないときだけ開けます。</#f95738>"
+  "tab":
+    "display": "表示"
+    "chat": "チャット"
+    "lobby": "ロビー"
+    "game": "試合"
+    "other": "その他"
+  "tab-description":
+    "display": "<#9db4c0>ロビーや試合中に画面に表示されるもの。</#9db4c0>"
+    "chat": "<#9db4c0>ほかのプレイヤーやサーバーからのメッセージ。</#9db4c0>"
+    "lobby": "<#9db4c0>ロビーで待っている間のこと。</#9db4c0>"
+    "game": "<#9db4c0>試合でのあなたの扱い。</#9db4c0>"
+    "other": "<#9db4c0>古い Minecraft を使うプレイヤー向け。</#9db4c0>"
