@@ -899,6 +899,7 @@
     "no-world": "<#f95738>今無賽界可取其種。</#f95738>"
     "invalid-name": "<#f95738>名唯可用一至三十二之字母、數字、- 或 _（不得為 \"saved\"）。</#f95738>"
     "already": "<#f4d35e>此種已存為 <white><name></white> <#7b8aa0>（<seed>）</#7b8aa0>。</#f4d35e>"
+    "name-taken": "<#f95738>名 <white><name></white> 已為他種所用，請易之。</#f95738>"
     "saved": "<#6dd3a0>已存種 <white><name></white> <#7b8aa0>（<seed>，<terrain>）</#7b8aa0>。以 <white>/admin world gen seed=<name></white> 生之。</#6dd3a0>"
     "removed": "<#6dd3a0>已去種 <white><name></white>。</#6dd3a0>"
     "not-found": "<#f95738>無名 <white><name></white> 之所存種。</#f95738>"

@@ -930,6 +930,7 @@ world:
     no-world: "<#f95738>There's no game world to take the seed from.</#f95738>"
     invalid-name: "<#f95738>Use 1-32 letters, numbers, - or _ for the name (not \"saved\").</#f95738>"
     already: "<#f4d35e>This seed is already saved as <white><name></white> <#7b8aa0>(<seed>)</#7b8aa0>.</#f4d35e>"
+    name-taken: "<#f95738>The name <white><name></white> is already used by another seed. Pick another name.</#f95738>"
     saved: "<#6dd3a0>Saved seed <white><name></white> <#7b8aa0>(<seed>, <terrain>)</#7b8aa0>. Use it with <white>/admin world gen seed=<name></white>.</#6dd3a0>"
     removed: "<#6dd3a0>Removed saved seed <white><name></white>.</#6dd3a0>"
     not-found: "<#f95738>There's no saved seed called <white><name></white>.</#f95738>"

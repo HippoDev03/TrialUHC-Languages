@@ -899,6 +899,7 @@
     "no-world": "<#f95738>シードを取得できるゲームワールドがありません。</#f95738>"
     "invalid-name": "<#f95738>名前は 1〜32 文字の英数字、- または _ で指定してください（\"saved\" は不可）。</#f95738>"
     "already": "<#f4d35e>このシードは <white><name></white> として保存済みです <#7b8aa0>（<seed>）</#7b8aa0>。</#f4d35e>"
+    "name-taken": "<#f95738>名前 <white><name></white> はほかのシードで使われています。別の名前にしてください。</#f95738>"
     "saved": "<#6dd3a0>シード <white><name></white> を保存しました <#7b8aa0>（<seed>、<terrain>）</#7b8aa0>。<white>/admin world gen seed=<name></white> で使えます。</#6dd3a0>"
     "removed": "<#6dd3a0>保存済みシード <white><name></white> を削除しました。</#6dd3a0>"
     "not-found": "<#f95738><white><name></white> という保存済みシードはありません。</#f95738>"

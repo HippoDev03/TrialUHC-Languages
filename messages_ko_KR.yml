@@ -899,6 +899,7 @@
     "no-world": "<#f95738>시드를 가져올 게임 월드가 없습니다.</#f95738>"
     "invalid-name": "<#f95738>이름은 1~32자의 영문, 숫자, - 또는 _만 쓸 수 있습니다 (\"saved\" 제외).</#f95738>"
     "already": "<#f4d35e>이 시드는 이미 <white><name></white>(으)로 저장되어 있습니다 <#7b8aa0>(<seed>)</#7b8aa0>.</#f4d35e>"
+    "name-taken": "<#f95738>이름 <white><name></white>은(는) 다른 시드가 이미 쓰고 있습니다. 다른 이름을 골라 주세요.</#f95738>"
     "saved": "<#6dd3a0>시드 <white><name></white> 저장됨 <#7b8aa0>(<seed>, <terrain>)</#7b8aa0>. <white>/admin world gen seed=<name></white>으로 사용하세요.</#6dd3a0>"
     "removed": "<#6dd3a0>저장된 시드 <white><name></white>을(를) 삭제했습니다.</#6dd3a0>"
     "not-found": "<#f95738><white><name></white>(이)라는 저장된 시드가 없습니다.</#f95738>"

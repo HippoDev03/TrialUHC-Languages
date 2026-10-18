@@ -2227,6 +2227,7 @@ world:
     no-world: "<#f95738>目前沒有可取得種子的比賽世界。</#f95738>"
     invalid-name: "<#f95738>名稱只能使用 1-32 個英文字母、數字、- 或 _（不能是「saved」）。</#f95738>"
     already: "<#f4d35e>這個種子已存為 <white><name></white> <#7b8aa0>（<seed>）</#7b8aa0>。</#f4d35e>"
+    name-taken: "<#f95738>名稱 <white><name></white> 已被其他種子使用，請換一個名稱。</#f95738>"
     saved: "<#6dd3a0>已儲存種子 <white><name></white> <#7b8aa0>（<seed>，<terrain>）</#7b8aa0>。使用 <white>/admin world gen seed=<name></white> 生成。</#6dd3a0>"
     removed: "<#6dd3a0>已刪除種子 <white><name></white>。</#6dd3a0>"
     not-found: "<#f95738>找不到名為 <white><name></white> 的已存種子。</#f95738>"
