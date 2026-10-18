@@ -3451,6 +3451,7 @@
 "history.view.info": "<#7b8aa0>시간</#7b8aa0> <white><duration></white> <#7b8aa0>· 모드</#7b8aa0> <white><mode></white> <#7b8aa0>· 월드</#7b8aa0> <white><world></white>"
 "history.view.winner": "<#7b8aa0>승자</#7b8aa0> <#f4d35e><winner></#f4d35e>"
 "history.view.scenarios": "<#7b8aa0>시나리오</#7b8aa0> <white><scenarios></white>"
+"history.view.health": "<#7b8aa0>서버</#7b8aa0> <#7b8aa0>틱당 평균</#7b8aa0> <white><mspt> ms</white> <#7b8aa0>· 가장 느린 틱</#7b8aa0> <white><peak> ms</white> <#7b8aa0>· 20 TPS 미만</#7b8aa0> <white><lag>초</white> <#7b8aa0>· 최대 엔티티</#7b8aa0> <white><entities></white><#7b8aa0>개, 플레이어</#7b8aa0> <white><players></white><#7b8aa0>명</#7b8aa0>"
 "history.view.none": "없음"
 "history.view.player": "<#7b8aa0><place>.</#7b8aa0> <white><player></white><team> <#7b8aa0>·</#7b8aa0> <#f95738><kills>킬</#f95738> <#7b8aa0>· 준 피해 <damage>❤ · <diamonds>◆ · <gapples>🍎 ·</#7b8aa0> <status>"
 "history.view.team": " <#7b8aa0>(<team>)</#7b8aa0>"
