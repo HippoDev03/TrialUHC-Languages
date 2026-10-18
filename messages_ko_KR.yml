@@ -5215,7 +5215,7 @@ command-help:
 staff-help:
   area:
     mode: "스태프 모드: 투명화, 텔레포트, 벽 통과, 경기 상태"
-    player: "플레이어 한 명: 얼리기, 인벤토리 보기"
+    player: "플레이어 한 명: 얼리기, 인벤토리 보기, 채굴량 확인"
     punish: "차단, 채팅 금지, 추방, 경고와 플레이어의 처벌 기록"
     chat: "스태프 채팅, 알림, 클랜 채팅 감시, 공지, 채팅 잠금"
   syntax:
@@ -5408,3 +5408,11 @@ staff-help:
 "player-help.private.reset": "플레이어 비공개 게임 초기화"
 "player-help.private.cancel": "예약 취소"
 "player-help.private.promote": "호스트 프리셋을 서버 프리셋으로"
+"staff-tools.desc.ores": "- 각 플레이어가 이번 경기에서 캔 다이아몬드와 금, 시간당 개수 (투시 확인)"
+"staff-help.syntax.player.ores": "[플레이어]"
+"staff-ores.header": "<#f4d35e><bold>이번 경기 채굴량</bold></#f4d35e> <#7b8aa0>(<minutes>분 · 시간당 다이아몬드가 많은 순 · 클릭하면 이동)</#7b8aa0>"
+"staff-ores.line": " <white><player></white> <#7b8aa0>·</#7b8aa0> <#67e8f9>다이아몬드 <diamonds></#67e8f9> <#7b8aa0>(시간당 <diamonds_hour>) ·</#7b8aa0> <#f4d35e>금 <gold></#f4d35e> <#7b8aa0>(시간당 <gold_hour>) · 철 <iron> · <minutes>분</#7b8aa0>"
+"staff-ores.line-marked": " <#f95738>⚠ <player></#f95738> <#7b8aa0>·</#7b8aa0> <#f95738>다이아몬드 <diamonds> (시간당 <diamonds_hour>)</#f95738> <#7b8aa0>·</#7b8aa0> <#f4d35e>금 <gold></#f4d35e> <#7b8aa0>(시간당 <gold_hour>) · 철 <iron> · <minutes>분 - 다른 플레이어보다 훨씬 많음</#7b8aa0>"
+"staff-ores.hover": "<#7b8aa0>클릭하면 <white><player></white>에게 이동 (투명)</#7b8aa0>"
+"staff-ores.empty": "<#7b8aa0>아직 다이아몬드나 금을 캔 사람이 없습니다.</#7b8aa0>"
+"staff-ores.no-match": "<#f95738>진행 중인 경기가 없습니다.</#f95738>"

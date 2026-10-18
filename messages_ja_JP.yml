@@ -5219,7 +5219,7 @@ command-help:
 staff-help:
   area:
     mode: "スタッフモード：透明化・テレポート・すり抜け・試合の状態"
-    player: "プレイヤー個人：フリーズ・インベントリ確認"
+    player: "プレイヤー個人：フリーズ・インベントリ確認、採掘量の確認"
     punish: "BAN・ミュート・キック・警告とプレイヤーの処罰履歴"
     chat: "スタッフチャット・アラート・クランチャット監視・告知・チャットロック"
   syntax:
@@ -5412,3 +5412,11 @@ staff-help:
 "player-help.private.reset": "プレイヤーのプライベート戦をリセット"
 "player-help.private.cancel": "予約を取り消す"
 "player-help.private.promote": "ホストのプリセットをサーバープリセットに"
+"staff-tools.desc.ores": "- 各プレイヤーがこの試合で掘ったダイヤモンドと金、1 時間あたりの数（透視チェック）"
+"staff-help.syntax.player.ores": "[プレイヤー]"
+"staff-ores.header": "<#f4d35e><bold>この試合の採掘量</bold></#f4d35e> <#7b8aa0>（<minutes> 分 · 1 時間あたりのダイヤモンドが多い順 · クリックで移動）</#7b8aa0>"
+"staff-ores.line": " <white><player></white> <#7b8aa0>·</#7b8aa0> <#67e8f9>ダイヤモンド <diamonds></#67e8f9> <#7b8aa0>（<diamonds_hour>/時）·</#7b8aa0> <#f4d35e>金 <gold></#f4d35e> <#7b8aa0>（<gold_hour>/時）· 鉄 <iron> · <minutes> 分</#7b8aa0>"
+"staff-ores.line-marked": " <#f95738>⚠ <player></#f95738> <#7b8aa0>·</#7b8aa0> <#f95738>ダイヤモンド <diamonds>（<diamonds_hour>/時）</#f95738> <#7b8aa0>·</#7b8aa0> <#f4d35e>金 <gold></#f4d35e> <#7b8aa0>（<gold_hour>/時）· 鉄 <iron> · <minutes> 分 - ほかより大幅に多い</#7b8aa0>"
+"staff-ores.hover": "<#7b8aa0>クリックで <white><player></white> のところへ移動（透明）</#7b8aa0>"
+"staff-ores.empty": "<#7b8aa0>まだ誰もダイヤモンドや金を掘っていません。</#7b8aa0>"
+"staff-ores.no-match": "<#f95738>進行中の試合はありません。</#f95738>"

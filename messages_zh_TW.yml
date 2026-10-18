@@ -5831,7 +5831,7 @@ command-help:
 staff-help:
   area:
     mode: "管理模式：隱身、傳送、穿牆、比賽狀態"
-    player: "單一玩家：凍結、查看物品欄"
+    player: "單一玩家：凍結、查看物品欄、查看挖礦量"
     punish: "封鎖、禁言、踢出、警告和玩家的懲處紀錄"
     chat: "管理員聊天、警示、戰隊聊天監聽、公告、聊天鎖定"
   syntax:
@@ -6024,3 +6024,11 @@ staff-help:
 "player-help.private.reset": "重設玩家的私人場"
 "player-help.private.cancel": "取消預約"
 "player-help.private.promote": "將主持人的預設改為伺服器預設"
+"staff-tools.desc.ores": "- 每位玩家這場挖到的鑽石和金，以及每小時的數量（檢查透視）"
+"staff-help.syntax.player.ores": "[玩家]"
+"staff-ores.header": "<#f4d35e><bold>本場挖礦量</bold></#f4d35e> <#7b8aa0>（<minutes> 分鐘 · 依每小時鑽石數排序 · 點一下前往）</#7b8aa0>"
+"staff-ores.line": " <white><player></white> <#7b8aa0>·</#7b8aa0> <#67e8f9>鑽石 <diamonds></#67e8f9> <#7b8aa0>（每小時 <diamonds_hour>）·</#7b8aa0> <#f4d35e>金 <gold></#f4d35e> <#7b8aa0>（每小時 <gold_hour>）· 鐵 <iron> · <minutes> 分鐘</#7b8aa0>"
+"staff-ores.line-marked": " <#f95738>⚠ <player></#f95738> <#7b8aa0>·</#7b8aa0> <#f95738>鑽石 <diamonds>（每小時 <diamonds_hour>）</#f95738> <#7b8aa0>·</#7b8aa0> <#f4d35e>金 <gold></#f4d35e> <#7b8aa0>（每小時 <gold_hour>）· 鐵 <iron> · <minutes> 分鐘 - 遠高於其他玩家</#7b8aa0>"
+"staff-ores.hover": "<#7b8aa0>點一下前往 <white><player></white>（隱身）</#7b8aa0>"
+"staff-ores.empty": "<#7b8aa0>目前還沒有人挖到鑽石或金。</#7b8aa0>"
+"staff-ores.no-match": "<#f95738>目前沒有進行中的比賽。</#f95738>"

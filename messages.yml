@@ -5125,7 +5125,7 @@ command-help:
 staff-help:
   area:
     mode: "staff mode: vanish, teleport, noclip, the match state"
-    player: "one player: freeze, look in their inventory"
+    player: "one player: freeze, look in their inventory, their ores"
     punish: "bans, mutes, kicks, warnings and a player's record"
     chat: "staff chat, alerts, clan chat spy, announcements, the chat lock"
   syntax:
@@ -5318,3 +5318,11 @@ staff-help:
 "player-help.private.reset": "reset a player's private round"
 "player-help.private.cancel": "cancel a booking"
 "player-help.private.promote": "turn a host's preset into a server preset"
+"staff-tools.desc.ores": "- diamonds and gold each player mined, per hour in the match (x-ray check)"
+"staff-help.syntax.player.ores": "[player]"
+"staff-ores.header": "<#f4d35e><bold>Ores this match</bold></#f4d35e> <#7b8aa0>(<minutes> min · most diamonds an hour first · click to go there)</#7b8aa0>"
+"staff-ores.line": " <white><player></white> <#7b8aa0>·</#7b8aa0> <#67e8f9><diamonds> diamonds</#67e8f9> <#7b8aa0>(<diamonds_hour>/h) ·</#7b8aa0> <#f4d35e><gold> gold</#f4d35e> <#7b8aa0>(<gold_hour>/h) · <iron> iron · <minutes> min</#7b8aa0>"
+"staff-ores.line-marked": " <#f95738>⚠ <player></#f95738> <#7b8aa0>·</#7b8aa0> <#f95738><diamonds> diamonds (<diamonds_hour>/h)</#f95738> <#7b8aa0>·</#7b8aa0> <#f4d35e><gold> gold</#f4d35e> <#7b8aa0>(<gold_hour>/h) · <iron> iron · <minutes> min - far above the rest</#7b8aa0>"
+"staff-ores.hover": "<#7b8aa0>Click to go to <white><player></white> (vanished)</#7b8aa0>"
+"staff-ores.empty": "<#7b8aa0>Nobody has mined diamonds or gold yet.</#7b8aa0>"
+"staff-ores.no-match": "<#f95738>No match is running.</#f95738>"

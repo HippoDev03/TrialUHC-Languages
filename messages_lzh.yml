@@ -5218,7 +5218,7 @@ command-help:
 staff-help:
   area:
     mode: "執事之態：隱、傳、穿壁、賽況"
-    player: "一戲者：凍之、觀其囊"
+    player: "一戲者：凍之、觀其囊、察其所採"
     punish: "禁錮、噤聲、逐出、誡及其錄"
     chat: "執事之言、警、窺盟言、告、鎖言"
   syntax:
@@ -5411,3 +5411,11 @@ staff-help:
 "player-help.private.reset": "復戲者之私局"
 "player-help.private.cancel": "撤約"
 "player-help.private.promote": "以主之設為服之設"
+"staff-tools.desc.ores": "- 諸戲者此局所採之鑽與金，及每時之數（察透視）"
+"staff-help.syntax.player.ores": "[戲者]"
+"staff-ores.header": "<#f4d35e><bold>此局所採</bold></#f4d35e> <#7b8aa0>（<minutes> 分 · 以每時採鑽之多寡為序 · 點之即往）</#7b8aa0>"
+"staff-ores.line": " <white><player></white> <#7b8aa0>·</#7b8aa0> <#67e8f9>鑽 <diamonds></#67e8f9> <#7b8aa0>（每時 <diamonds_hour>）·</#7b8aa0> <#f4d35e>金 <gold></#f4d35e> <#7b8aa0>（每時 <gold_hour>）· 鐵 <iron> · <minutes> 分</#7b8aa0>"
+"staff-ores.line-marked": " <#f95738>⚠ <player></#f95738> <#7b8aa0>·</#7b8aa0> <#f95738>鑽 <diamonds>（每時 <diamonds_hour>）</#f95738> <#7b8aa0>·</#7b8aa0> <#f4d35e>金 <gold></#f4d35e> <#7b8aa0>（每時 <gold_hour>）· 鐵 <iron> · <minutes> 分 - 遠過於眾</#7b8aa0>"
+"staff-ores.hover": "<#7b8aa0>點之以往 <white><player></white> 處（隱身）</#7b8aa0>"
+"staff-ores.empty": "<#7b8aa0>尚無人採得鑽或金。</#7b8aa0>"
+"staff-ores.no-match": "<#f95738>今無進行之局。</#f95738>"
