@@ -5131,9 +5131,9 @@ lag:
 
 "admin.desc.tutorial": "- 로비 투어 녹화 및 편집"
 "admin.desc.clan": "- 모든 클랜 관리: 정보, 이름 변경, 멤버, 통계, Discord"
-"admin.desc.skip": "- 유예 시간 종료(PvP 켜짐), 다음 단계로, 또는 최종 회복 즉시 지급"
+"admin.desc.skip": "- 유예 시간 종료(PvP 켜짐), 다음 단계로, 최종 회복 즉시 지급, 또는 이름표 다시 표시"
 admin-help:
-  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal></#f4d35e> <#7b8aa0>- 유예 시간 종료, 다음 단계로, 또는 최종 회복 즉시 지급.</#7b8aa0>"
+  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal|nametags></#f4d35e> <#7b8aa0>- 유예 시간 종료, 다음 단계로, 최종 회복 즉시 지급, 또는 이름표 다시 표시.</#7b8aa0>"
   area:
     match: "경기 진행: 시작, 일시정지, 건너뛰기, 부활"
     game: "경기 설정: 설정, 프리셋, 시나리오, 키트, 팀, 아레나"
@@ -5143,7 +5143,7 @@ admin-help:
     server: "서버: 리로드, 재시작, 화이트리스트, 렉, 기록, 클랜"
   syntax:
     match:
-      skip: "<grace|phase|finalheal>"
+      skip: "<grace|phase|finalheal|nametags>"
       revive: "<플레이어>"
       kill: "<플레이어|*>"
     game:
@@ -5435,3 +5435,7 @@ staff-help:
 "pingall-nav-page": "<gray><page>페이지</gray>"
 "world.generate.bar-start": "UHC 월드 생성 중…"
 "world.generate.bar-progress": "<#93c5fd>UHC 월드 생성 중: <attempt>/<max>번째 (<world>)</#93c5fd>"
+"nametags-visible": "<item:name_tag> <dark_gray>»</dark_gray> <#93c5fd>이름표가 다시 보입니다.</#93c5fd>"
+"nametags-skipped": "<#6dd3a0>이름표 숨김을 끝냈습니다. 남은 경기 동안 모두의 이름이 보입니다.</#6dd3a0>"
+"nametags-skip-none": "<#f4d35e>지금은 시간제로 이름표를 숨기고 있지 않습니다.</#f4d35e>"
+"nametags-skip-rule": "<#f4d35e>규칙(이름표 없음 또는 익명)으로 경기 내내 이름표가 숨겨져 있습니다. /admin game config에서 끄세요.</#f4d35e>"

@@ -5135,9 +5135,9 @@ lag:
 
 "admin.desc.tutorial": "- ロビーツアーの録画と編集"
 "admin.desc.clan": "- 任意のクランを管理：情報・名前変更・メンバー・統計・Discord"
-"admin.desc.skip": "- 猶予期間を終了（PvP 有効）、次のフェーズへ、または最終回復を今すぐ"
+"admin.desc.skip": "- 猶予期間を終了（PvP 有効）、次のフェーズへ、最終回復を今すぐ、またはネームタグを再表示"
 admin-help:
-  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal></#f4d35e> <#7b8aa0>- 猶予期間を終了、次のフェーズへ、または最終回復を今すぐ。</#7b8aa0>"
+  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal|nametags></#f4d35e> <#7b8aa0>- 猶予時間の終了、次のフェーズへ、最終回復を今すぐ、またはネームタグを再表示。</#7b8aa0>"
   area:
     match: "試合の進行：開始・一時停止・スキップ・復活"
     game: "試合の設定：設定・プリセット・シナリオ・キット・チーム・アリーナ"
@@ -5147,7 +5147,7 @@ admin-help:
     server: "サーバー：リロード・再起動・ホワイトリスト・ラグ・履歴・クラン"
   syntax:
     match:
-      skip: "<grace|phase|finalheal>"
+      skip: "<grace|phase|finalheal|nametags>"
       revive: "<プレイヤー>"
       kill: "<プレイヤー|*>"
     game:
@@ -5439,3 +5439,7 @@ staff-help:
 "pingall-nav-page": "<gray><page> ページ</gray>"
 "world.generate.bar-start": "UHC ワールドを生成中…"
 "world.generate.bar-progress": "<#93c5fd>UHC ワールドを生成中：<attempt>/<max> 回目（<world>）</#93c5fd>"
+"nametags-visible": "<item:name_tag> <dark_gray>»</dark_gray> <#93c5fd>ネームタグが再び表示されています。</#93c5fd>"
+"nametags-skipped": "<#6dd3a0>ネームタグの非表示を終了しました。試合の残り時間、全員の名前が表示されます。</#6dd3a0>"
+"nametags-skip-none": "<#f4d35e>今はタイマーでネームタグを隠していません。</#f4d35e>"
+"nametags-skip-rule": "<#f4d35e>ネームタグはルール（ネームタグなし・匿名）で試合中ずっと隠れています。/admin game config でオフにしてください。</#f4d35e>"

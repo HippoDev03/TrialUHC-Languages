@@ -5747,9 +5747,9 @@ lag:
 
 "admin.desc.tutorial": "- 錄製和編輯大廳導覽"
 "admin.desc.clan": "- 管理任何戰隊：資訊、改名、成員、數據、Discord"
-"admin.desc.skip": "- 結束保護時間（開啟 PvP）、跳到下一個階段，或立即發放最終回血"
+"admin.desc.skip": "- 結束保護時間（開啟 PvP）、跳到下一個階段、立即發放最終回血，或重新顯示名牌"
 admin-help:
-  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal></#f4d35e> <#7b8aa0>- 結束保護時間、跳到下一個階段，或立即發放最終回血。</#7b8aa0>"
+  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal|nametags></#f4d35e> <#7b8aa0>- 結束保護時間、跳到下一個階段、立即發放最終回血，或重新顯示名牌。</#7b8aa0>"
   area:
     match: "比賽進行：開始、暫停、跳過、復活"
     game: "比賽設定：設定、預設、情境、套裝、隊伍、競技場"
@@ -5759,7 +5759,7 @@ admin-help:
     server: "伺服器：重新載入、重新啟動、白名單、卡頓、紀錄、戰隊"
   syntax:
     match:
-      skip: "<grace|phase|finalheal>"
+      skip: "<grace|phase|finalheal|nametags>"
       revive: "<玩家>"
       kill: "<玩家|*>"
     game:
@@ -6051,3 +6051,7 @@ staff-help:
 "pingall-nav-page": "<gray>第 <page> 頁</gray>"
 "world.generate.bar-start": "正在產生 UHC 世界…"
 "world.generate.bar-progress": "<#93c5fd>正在產生 UHC 世界：第 <attempt>/<max> 次（<world>）</#93c5fd>"
+"nametags-visible": "<item:name_tag> <dark_gray>»</dark_gray> <#93c5fd>名牌已重新顯示。</#93c5fd>"
+"nametags-skipped": "<#6dd3a0>已結束名牌隱藏，本場剩下的時間都會顯示所有人的名字。</#6dd3a0>"
+"nametags-skip-none": "<#f4d35e>目前沒有在倒數隱藏名牌。</#f4d35e>"
+"nametags-skip-rule": "<#f4d35e>名牌是依規則整場隱藏（無名牌或匿名），請改到 /admin game config 關閉。</#f4d35e>"

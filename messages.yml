@@ -5041,9 +5041,9 @@ lag:
 
 "admin.desc.tutorial": "- record and edit the lobby tour"
 "admin.desc.clan": "- manage any clan: info, rename, members, stats, Discord"
-"admin.desc.skip": "- end grace (PvP on), jump to the next phase, or give the final heal now"
+"admin.desc.skip": "- end grace (PvP on), jump to the next phase, give the final heal now, or show nametags again"
 admin-help:
-  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal></#f4d35e> <#7b8aa0>- end grace, jump to the next phase, or give the final heal now.</#7b8aa0>"
+  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal|nametags></#f4d35e> <#7b8aa0>- end grace, jump to the next phase, give the final heal now, or show nametags again.</#7b8aa0>"
   area:
     match: "run the match: start, pause, skip, revive"
     game: "match setup: settings, presets, scenarios, kits, teams, arenas"
@@ -5053,7 +5053,7 @@ admin-help:
     server: "server: reload, restart, whitelist, lag, history, clans"
   syntax:
     match:
-      skip: "<grace|phase|finalheal>"
+      skip: "<grace|phase|finalheal|nametags>"
       revive: "<player>"
       kill: "<player|*>"
     game:
@@ -5345,3 +5345,7 @@ staff-help:
 "pingall-nav-page": "<gray>Page <page></gray>"
 "world.generate.bar-start": "Generating the UHC world..."
 "world.generate.bar-progress": "<#93c5fd>Generating the UHC world: attempt <attempt>/<max> (<world>)</#93c5fd>"
+"nametags-visible": "<item:name_tag> <dark_gray>»</dark_gray> <#93c5fd>Nametags are showing again.</#93c5fd>"
+"nametags-skipped": "<#6dd3a0>Nametag hiding ended - everyone's name shows again for the rest of the match.</#6dd3a0>"
+"nametags-skip-none": "<#f4d35e>Nametags aren't being hidden on a timer right now.</#f4d35e>"
+"nametags-skip-rule": "<#f4d35e>Nametags are hidden for the whole match by the rules (No Nametags or Anonymous) - turn that off in /admin game config instead.</#f4d35e>"

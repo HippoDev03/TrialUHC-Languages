@@ -5134,9 +5134,9 @@ lag:
 
 "admin.desc.tutorial": "- 錄、改廳之導覽"
 "admin.desc.clan": "- 理諸盟：詳、改名、員、數、Discord"
-"admin.desc.skip": "- 止護時（啟鬥）、越次階、或即予終療"
+"admin.desc.skip": "- 止護時（啟鬥）、越次階、即予終療，或復示名牌"
 admin-help:
-  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal></#f4d35e> <#7b8aa0>- 止護時、越次階、或即予終療。</#7b8aa0>"
+  skip-usage: "<#f4d35e>/admin match skip <grace|phase|finalheal|nametags></#f4d35e> <#7b8aa0>- 止護時、進下一階、即施終癒，或復示名牌。</#7b8aa0>"
   area:
     match: "行賽：始、止、略、復生"
     game: "賽之設：設、預設、情境、裝、伍、場"
@@ -5146,7 +5146,7 @@ admin-help:
     server: "伺服：重載、重啟、白名、滯、錄、盟"
   syntax:
     match:
-      skip: "<grace|phase|finalheal>"
+      skip: "<grace|phase|finalheal|nametags>"
       revive: "<戲者>"
       kill: "<戲者|*>"
     game:
@@ -5438,3 +5438,7 @@ staff-help:
 "pingall-nav-page": "<gray>第 <page> 頁</gray>"
 "world.generate.bar-start": "方生 UHC 之世…"
 "world.generate.bar-progress": "<#93c5fd>方生 UHC 之世：第 <attempt>/<max> 試（<world>）</#93c5fd>"
+"nametags-visible": "<item:name_tag> <dark_gray>»</dark_gray> <#93c5fd>名牌復現矣。</#93c5fd>"
+"nametags-skipped": "<#6dd3a0>名牌之隱已止，此局餘時皆示眾人之名。</#6dd3a0>"
+"nametags-skip-none": "<#f4d35e>今無計時隱名牌之事。</#f4d35e>"
+"nametags-skip-rule": "<#f4d35e>名牌依規終局而隱（無名牌或匿名），當於 /admin game config 罷之。</#f4d35e>"
