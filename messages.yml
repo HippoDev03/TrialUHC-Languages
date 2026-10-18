@@ -5337,3 +5337,4 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "The floor once the border has stopped."
 "config.menu.label.height.border.final.max.y": "Final Ceiling (Y)"
 "config.menu.desc.height.border.final.max.y": "The ceiling once the border has stopped."
+"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>No towering or tunnelling in the arena: stay between Y <white><min></white> and <white><max></white> - the ceiling comes down with the border.</#ee964b>"

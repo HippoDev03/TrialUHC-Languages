@@ -5430,3 +5430,4 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "界止時地之高。"
 "config.menu.label.height.border.final.max.y": "終頂（Y）"
 "config.menu.desc.height.border.final.max.y": "界止時頂之高。"
+"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>場中勿築高、勿掘下：當居 Y <white><min></white> 至 <white><max></white> 之間，頂隨界而降。</#ee964b>"

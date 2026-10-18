@@ -5427,3 +5427,4 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "경계가 멈췄을 때의 바닥 높이."
 "config.menu.label.height.border.final.max.y": "최종 천장 (Y)"
 "config.menu.desc.height.border.final.max.y": "경계가 멈췄을 때의 천장 높이."
+"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>아레나에서는 높이 쌓거나 파고들 수 없습니다. Y <white><min></white>~<white><max></white> 사이에 있어야 하며, 천장은 경계와 함께 내려옵니다.</#ee964b>"

@@ -5431,3 +5431,4 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "ボーダーが止まった時の床の高さ。"
 "config.menu.label.height.border.final.max.y": "最終的な天井（Y）"
 "config.menu.desc.height.border.final.max.y": "ボーダーが止まった時の天井の高さ。"
+"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>アリーナでは積み上げも掘り下げもできません。Y <white><min></white>〜<white><max></white> の間にいてください。天井はボーダーと一緒に下がります。</#ee964b>"
