@@ -813,6 +813,11 @@ spectator-item:
     lore:
       - "<white>調整您的飛行與行走速度。</white>"
       - "<#d7e1ea>開啟速度控制選單。</#d7e1ea>"
+  camera:
+    name: "<#fdba74><bold>自動鏡頭</bold></#fdba74>"
+    lore:
+      - "<white>鏡頭自動跟拍場上的戰鬥。</white>"
+      - "<#d7e1ea>潛行即可離開。</#d7e1ea>"
   info:
     name: "<#9db4c0><bold>旁觀者模式</bold></#9db4c0>"
     lore:
@@ -3799,6 +3804,10 @@ spectator:
     vision:
       enabled: "<#c4b5fd>旁觀夜視已啟用。</#c4b5fd>"
       disabled: "<#f4d35e>旁觀夜視已停用。</#f4d35e>"
+  camera:
+    'on': "<#fdba74>自動鏡頭已開啟，潛行即可離開。</#fdba74>"
+    'off': "<#fdba74>自動鏡頭已關閉。</#fdba74>"
+    nothing: "<#f4d35e>目前沒有可以拍的玩家。</#f4d35e>"
   teleported:
     text: "<#6dd3a0>已傳送至 <player>。</#6dd3a0>"
     center: "<#7dd3fc>已傳送至邊界中心。</#7dd3fc>"
@@ -6032,7 +6041,7 @@ staff-help:
 "staff-ores.hover": "<#7b8aa0>點一下前往 <white><player></white>（隱身）</#7b8aa0>"
 "staff-ores.empty": "<#7b8aa0>目前還沒有人挖到鑽石或金。</#7b8aa0>"
 "staff-ores.no-match": "<#f95738>目前沒有進行中的比賽。</#f95738>"
-"height-border.started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>地板和天花板開始隨邊界收縮：邊界停止時，請待在 Y <white><min></white> 到 <white><max></white> 之間。</#ee964b>"
+"height-border.started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>地板和天花板開始隨邊界收縮：邊界停止時，請待在 Y <white><min></white> 到 <white><max></white> 之間。</#ee964b>"
 "height-border.countdown": "<#f95738><bold>⚠ <time></bold></#f95738>"
 "height-border.damage": "<#f95738><bold>⚠ 超出高度範圍</bold></#f95738>"
 "height-border.too-low": "<white>太深了，請往上到 Y <y> 以上</white>"
@@ -6043,7 +6052,7 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "邊界停止時的地板高度。"
 "config.menu.label.height.border.final.max.y": "最終天花板（Y）"
 "config.menu.desc.height.border.final.max.y": "邊界停止時的天花板高度。"
-"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>競技場內不能疊高或往下挖：請待在 Y <white><min></white> 到 <white><max></white> 之間，天花板會隨邊界降低。</#ee964b>"
+"height-border.meetup-started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>競技場內不能疊高或往下挖：請待在 Y <white><min></white> 到 <white><max></white> 之間，天花板會隨邊界降低。</#ee964b>"
 "team.invite.accept-button": "<#6dd3a0><bold>[接受]</bold></#6dd3a0>"
 "team.invite.accept-hover": "<gray>加入這支隊伍</gray>"
 "team.invite.decline-button": "<#f95738><bold>[拒絕]</bold></#f95738>"

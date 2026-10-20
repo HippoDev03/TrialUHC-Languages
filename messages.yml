@@ -1659,6 +1659,10 @@ spectator:
     vision:
       enabled: "<#c4b5fd>Spectator night vision enabled.</#c4b5fd>"
       disabled: "<#f4d35e>Spectator night vision disabled.</#f4d35e>"
+  camera:
+    'on': "<#fdba74>Auto camera on. Sneak to leave it.</#fdba74>"
+    'off': "<#fdba74>Auto camera off.</#fdba74>"
+    nothing: "<#f4d35e>No one is left to film right now.</#f4d35e>"
   teleported:
     text: "<#7dd3fc>Teleported to <player>.</#7dd3fc>"
     center: "<#7dd3fc>Teleported to border center.</#7dd3fc>"
@@ -5326,7 +5330,7 @@ staff-help:
 "staff-ores.hover": "<#7b8aa0>Click to go to <white><player></white> (vanished)</#7b8aa0>"
 "staff-ores.empty": "<#7b8aa0>Nobody has mined diamonds or gold yet.</#7b8aa0>"
 "staff-ores.no-match": "<#f95738>No match is running.</#f95738>"
-"height-border.started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>The floor and ceiling are closing in with the border: by the time it stops, stay between Y <white><min></white> and <white><max></white>.</#ee964b>"
+"height-border.started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>The floor and ceiling are closing in with the border: by the time it stops, stay between Y <white><min></white> and <white><max></white>.</#ee964b>"
 "height-border.countdown": "<#f95738><bold>⚠ <time></bold></#f95738>"
 "height-border.damage": "<#f95738><bold>⚠ Out of bounds</bold></#f95738>"
 "height-border.too-low": "<white>Too deep - climb above Y <y></white>"
@@ -5337,7 +5341,7 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "The floor once the border has stopped."
 "config.menu.label.height.border.final.max.y": "Final Ceiling (Y)"
 "config.menu.desc.height.border.final.max.y": "The ceiling once the border has stopped."
-"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>No towering or tunnelling in the arena: stay between Y <white><min></white> and <white><max></white> - the ceiling comes down with the border.</#ee964b>"
+"height-border.meetup-started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>No towering or tunnelling in the arena: stay between Y <white><min></white> and <white><max></white> - the ceiling comes down with the border.</#ee964b>"
 "team.invite.accept-button": "<#6dd3a0><bold>[Accept]</bold></#6dd3a0>"
 "team.invite.accept-hover": "<gray>Join the team</gray>"
 "team.invite.decline-button": "<#f95738><bold>[Decline]</bold></#f95738>"

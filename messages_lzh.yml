@@ -1600,6 +1600,10 @@
     "vision":
       "enabled": "<#c4b5fd>觀戰夜視已啟。</#c4b5fd>"
       "disabled": "<#f4d35e>觀戰夜視已閉。</#f4d35e>"
+  "camera":
+    "on": "<#fdba74>自動鏡頭已啟。潛行以出。</#fdba74>"
+    "off": "<#fdba74>自動鏡頭已閉。</#fdba74>"
+    "nothing": "<#f4d35e>今無可攝之人。</#f4d35e>"
   "teleported":
     "text": "<#7dd3fc>已傳至 <player>。</#7dd3fc>"
     "center": "<#7dd3fc>已傳至界之中央。</#7dd3fc>"
@@ -3156,6 +3160,11 @@
     "lore":
       - "<white>調汝飛行之速。</white>"
       - "<#d7e1ea>啟速之制單。</#d7e1ea>"
+  "camera":
+    "name": "<#fdba74><bold>自動鏡頭</bold></#fdba74>"
+    "lore":
+      - "<white>鏡頭自尋鬥處而攝之。</white>"
+      - "<#d7e1ea>潛行以出。</#d7e1ea>"
   "info":
     "name": "<#9db4c0><bold>觀戰之態</bold></#9db4c0>"
     "lore":
@@ -5419,7 +5428,7 @@ staff-help:
 "staff-ores.hover": "<#7b8aa0>點之以往 <white><player></white> 處（隱身）</#7b8aa0>"
 "staff-ores.empty": "<#7b8aa0>尚無人採得鑽或金。</#7b8aa0>"
 "staff-ores.no-match": "<#f95738>今無進行之局。</#f95738>"
-"height-border.started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>地與頂隨界而收：界止之時，當居 Y <white><min></white> 至 <white><max></white> 之間。</#ee964b>"
+"height-border.started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>地與頂隨界而收：界止之時，當居 Y <white><min></white> 至 <white><max></white> 之間。</#ee964b>"
 "height-border.countdown": "<#f95738><bold>⚠ <time></bold></#f95738>"
 "height-border.damage": "<#f95738><bold>⚠ 逾高下之限</bold></#f95738>"
 "height-border.too-low": "<white>過深矣，當升至 Y <y> 之上</white>"
@@ -5430,7 +5439,7 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "界止時地之高。"
 "config.menu.label.height.border.final.max.y": "終頂（Y）"
 "config.menu.desc.height.border.final.max.y": "界止時頂之高。"
-"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>場中勿築高、勿掘下：當居 Y <white><min></white> 至 <white><max></white> 之間，頂隨界而降。</#ee964b>"
+"height-border.meetup-started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>場中勿築高、勿掘下：當居 Y <white><min></white> 至 <white><max></white> 之間，頂隨界而降。</#ee964b>"
 "team.invite.accept-button": "<#6dd3a0><bold>[允]</bold></#6dd3a0>"
 "team.invite.accept-hover": "<gray>入此伍</gray>"
 "team.invite.decline-button": "<#f95738><bold>[辭]</bold></#f95738>"

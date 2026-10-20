@@ -1600,6 +1600,10 @@
     "vision":
       "enabled": "<#c4b5fd>관전자 야간 투시를 켰습니다.</#c4b5fd>"
       "disabled": "<#f4d35e>관전자 야간 투시를 껐습니다.</#f4d35e>"
+  "camera":
+    "on": "<#fdba74>자동 카메라를 켰습니다. 웅크리면 나갑니다.</#fdba74>"
+    "off": "<#fdba74>자동 카메라를 껐습니다.</#fdba74>"
+    "nothing": "<#f4d35e>지금은 촬영할 플레이어가 없습니다.</#f4d35e>"
   "teleported":
     "text": "<#7dd3fc><player> 님에게 이동했습니다.</#7dd3fc>"
     "center": "<#7dd3fc>경계 중심으로 이동했습니다.</#7dd3fc>"
@@ -3156,6 +3160,11 @@
     "lore":
       - "<white>비행과 걷기 속도를 조절합니다.</white>"
       - "<#d7e1ea>속도 조절 메뉴를 엽니다.</#d7e1ea>"
+  "camera":
+    "name": "<#fdba74><bold>자동 카메라</bold></#fdba74>"
+    "lore":
+      - "<white>카메라가 전투를 알아서 찍어 줍니다.</white>"
+      - "<#d7e1ea>웅크리면 나갑니다.</#d7e1ea>"
   "info":
     "name": "<#9db4c0><bold>관전 모드</bold></#9db4c0>"
     "lore":
@@ -5416,7 +5425,7 @@ staff-help:
 "staff-ores.hover": "<#7b8aa0>클릭하면 <white><player></white>에게 이동 (투명)</#7b8aa0>"
 "staff-ores.empty": "<#7b8aa0>아직 다이아몬드나 금을 캔 사람이 없습니다.</#7b8aa0>"
 "staff-ores.no-match": "<#f95738>진행 중인 경기가 없습니다.</#f95738>"
-"height-border.started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>경계와 함께 바닥과 천장이 좁혀집니다. 경계가 멈출 때까지 Y <white><min></white>~<white><max></white> 사이에 있어야 합니다.</#ee964b>"
+"height-border.started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>경계와 함께 바닥과 천장이 좁혀집니다. 경계가 멈출 때까지 Y <white><min></white>~<white><max></white> 사이에 있어야 합니다.</#ee964b>"
 "height-border.countdown": "<#f95738><bold>⚠ <time></bold></#f95738>"
 "height-border.damage": "<#f95738><bold>⚠ 높이 범위 밖</bold></#f95738>"
 "height-border.too-low": "<white>너무 깊습니다. Y <y> 위로 올라가세요</white>"
@@ -5427,7 +5436,7 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "경계가 멈췄을 때의 바닥 높이."
 "config.menu.label.height.border.final.max.y": "최종 천장 (Y)"
 "config.menu.desc.height.border.final.max.y": "경계가 멈췄을 때의 천장 높이."
-"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>아레나에서는 높이 쌓거나 파고들 수 없습니다. Y <white><min></white>~<white><max></white> 사이에 있어야 하며, 천장은 경계와 함께 내려옵니다.</#ee964b>"
+"height-border.meetup-started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>아레나에서는 높이 쌓거나 파고들 수 없습니다. Y <white><min></white>~<white><max></white> 사이에 있어야 하며, 천장은 경계와 함께 내려옵니다.</#ee964b>"
 "team.invite.accept-button": "<#6dd3a0><bold>[수락]</bold></#6dd3a0>"
 "team.invite.accept-hover": "<gray>팀에 들어갑니다</gray>"
 "team.invite.decline-button": "<#f95738><bold>[거절]</bold></#f95738>"

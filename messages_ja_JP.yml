@@ -1600,6 +1600,10 @@
     "vision":
       "enabled": "<#c4b5fd>観戦用の暗視を有効にしました。</#c4b5fd>"
       "disabled": "<#f4d35e>観戦用の暗視を無効にしました。</#f4d35e>"
+  "camera":
+    "on": "<#fdba74>オートカメラをオンにしました。スニークで解除します。</#fdba74>"
+    "off": "<#fdba74>オートカメラをオフにしました。</#fdba74>"
+    "nothing": "<#f4d35e>今は撮影できるプレイヤーがいません。</#f4d35e>"
   "teleported":
     "text": "<#7dd3fc><player> にテレポートしました。</#7dd3fc>"
     "center": "<#7dd3fc>ボーダーの中心にテレポートしました。</#7dd3fc>"
@@ -3156,6 +3160,11 @@
     "lore":
       - "<white>飛行と歩行の速度を調整。</white>"
       - "<#d7e1ea>速度調整メニューを開く。</#d7e1ea>"
+  "camera":
+    "name": "<#fdba74><bold>オートカメラ</bold></#fdba74>"
+    "lore":
+      - "<white>カメラが戦闘を自動で撮影します。</white>"
+      - "<#d7e1ea>スニークで解除します。</#d7e1ea>"
   "info":
     "name": "<#9db4c0><bold>スペクテイターモード</bold></#9db4c0>"
     "lore":
@@ -5420,7 +5429,7 @@ staff-help:
 "staff-ores.hover": "<#7b8aa0>クリックで <white><player></white> のところへ移動（透明）</#7b8aa0>"
 "staff-ores.empty": "<#7b8aa0>まだ誰もダイヤモンドや金を掘っていません。</#7b8aa0>"
 "staff-ores.no-match": "<#f95738>進行中の試合はありません。</#f95738>"
-"height-border.started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>ボーダーと一緒に床と天井が迫ってきます。ボーダーが止まるまでに Y <white><min></white>〜<white><max></white> の間に入ってください。</#ee964b>"
+"height-border.started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>ボーダーと一緒に床と天井が迫ってきます。ボーダーが止まるまでに Y <white><min></white>〜<white><max></white> の間に入ってください。</#ee964b>"
 "height-border.countdown": "<#f95738><bold>⚠ <time></bold></#f95738>"
 "height-border.damage": "<#f95738><bold>⚠ 高さの範囲外</bold></#f95738>"
 "height-border.too-low": "<white>深すぎます。Y <y> より上へ</white>"
@@ -5431,7 +5440,7 @@ staff-help:
 "config.menu.desc.height.border.final.min.y": "ボーダーが止まった時の床の高さ。"
 "config.menu.label.height.border.final.max.y": "最終的な天井（Y）"
 "config.menu.desc.height.border.final.max.y": "ボーダーが止まった時の天井の高さ。"
-"height-border.meetup-started": "<item:scaffolding> <dark_gray>»</dark_gray> <#ee964b>アリーナでは積み上げも掘り下げもできません。Y <white><min></white>〜<white><max></white> の間にいてください。天井はボーダーと一緒に下がります。</#ee964b>"
+"height-border.meetup-started": "<block:scaffolding_side> <dark_gray>»</dark_gray> <#ee964b>アリーナでは積み上げも掘り下げもできません。Y <white><min></white>〜<white><max></white> の間にいてください。天井はボーダーと一緒に下がります。</#ee964b>"
 "team.invite.accept-button": "<#6dd3a0><bold>[参加]</bold></#6dd3a0>"
 "team.invite.accept-hover": "<gray>チームに参加する</gray>"
 "team.invite.decline-button": "<#f95738><bold>[断る]</bold></#f95738>"
