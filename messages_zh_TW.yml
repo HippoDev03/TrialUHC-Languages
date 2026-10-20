@@ -60,7 +60,7 @@ info:
   title: "<gradient:#f4d35e:#ee964b><bold>試煉UHC</bold></gradient>"
   version: "<#7b8aa0>版本：</#7b8aa0> <white><version></white>"
   author:
-    text: "<#7b8aa0>作者：</#7b8aa0> <#f95738><u>平常網路資訊工作室</u></#f95738>"
+    text: "<#7b8aa0>作者：</#7b8aa0> <#f95738><u>Formosa Network's Dev</u></#f95738>"
     hover: "<#faf0ca>開啟 GitHub</#faf0ca>"
   author-hover: "<#faf0ca>開啟 GitHub</#faf0ca>"
 # Command usage

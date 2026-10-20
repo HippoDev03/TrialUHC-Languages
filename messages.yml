@@ -136,7 +136,7 @@ info:
   title: "<gradient:#f4d35e:#ee964b><bold>TrialUHC</bold></gradient>"
   version: "<#7b8aa0>Version:</#7b8aa0> <white><version></white>"
   author:
-    text: "<#7b8aa0>Developed by:</#7b8aa0> <#f4d35e>平常網路資訊工作室</#f4d35e>"
+    text: "<#7b8aa0>Developed by:</#7b8aa0> <#f4d35e>Formosa Network's Dev</#f4d35e>"
     hover: "<#faf0ca>Click to open GitHub</#faf0ca>"
 usage:
   uhc:
