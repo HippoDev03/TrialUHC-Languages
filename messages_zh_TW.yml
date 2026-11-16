@@ -32,12 +32,12 @@ advancement-message: "<#86efac>★</#86efac> <dark_gray>»</dark_gray> <#f4d35e>
 discord-link: "<white><click:open_url:'<link>'><underlined><link></underlined></click></white>"
 nightvision-enabled: "<#6dd3a0>已啟用夜視。</#6dd3a0>"
 nightvision-disabled: "<#f95738>已停用夜視。</#f95738>"
-scoreboard-shown: "<#6dd3a0>已顯示計分板。</#6dd3a0>"
-scoreboard-hidden: "<#f95738>已隱藏計分板。</#f95738> <#7b8aa0>輸入 <white>/sb</white> 可重新顯示。</#7b8aa0>"
+hud-shown: "<#6dd3a0>已顯示資訊面板。</#6dd3a0>"
+hud-hidden: "<#f95738>已隱藏資訊面板。</#f95738> <#7b8aa0>輸入 <white>/hud</white> 可重新顯示。</#7b8aa0>"
 settings-unknown: "<#f95738>未知的設定：<white><setting></white>。</#f95738>"
 pm-disabled: "<#f95738><player> 目前不接受私訊。</#f95738>"
 usage-settings: "<#f4d35e><bold>/settings</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/settings</#93c5fd> <#7b8aa0>- 開啟個人設定</#7b8aa0><newline> <#93c5fd>/settings toggle <設定></#93c5fd> <#7b8aa0>- 切換單一設定</#7b8aa0>"
-usage-scoreboard: "<#f4d35e><bold>/sb</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/sb [on|off]</#93c5fd> <#7b8aa0>- 顯示或隱藏計分板</#7b8aa0>"
+usage-hud: "<#f4d35e><bold>/hud</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/hud [on|off]</#93c5fd> <#7b8aa0>- 顯示或隱藏資訊面板（也可用 /sb）</#7b8aa0>"
 usage-setmaxplayers: "<#f4d35e><bold>/admin server maxplayers</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin server maxplayers <數量></#93c5fd> <#7b8aa0>- 變更伺服器人數上限</#7b8aa0>"
 usage-database-import: "<#f4d35e><bold>/admin player data</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin player data import <yaml|postgresql|mariadb></#93c5fd> <#7b8aa0>- 從其他儲存方式匯入個人資料</#7b8aa0>"
 database-import-started: "<#7dd3fc>正在從 <white><type></white> 匯入玩家資料⋯⋯將於背景執行。</#7dd3fc>"
@@ -71,7 +71,7 @@ usage:
     level: "<#f4d35e><bold>/uhc level</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/uhc level [玩家]</#93c5fd> <#7b8aa0>- 查看等級、經驗與升級進度</#7b8aa0>"
     experience: "<#f4d35e><bold>/admin player xp</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin player xp <玩家|名稱模式> set <數量></#93c5fd> <#7b8aa0>- 設定總經驗</#7b8aa0><newline> <#93c5fd>/admin player xp <玩家|名稱模式> add|remove <數量></#93c5fd> <#7b8aa0>- 增加或減少經驗</#7b8aa0><newline> <#93c5fd>/admin player xp <玩家|名稱模式> setlevel <等級></#93c5fd> <#7b8aa0>- 直接設定等級</#7b8aa0><newline> <#64748b>100 經驗 = 1 級 · * 代表任意字元，例如 HippoDev_*</#64748b>"
     revive: "<#f4d35e><bold>/revive</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/revive <玩家></#93c5fd> <#7b8aa0>- 復活被淘汰的玩家</#7b8aa0>"
-    lobbygame: "<#f4d35e><bold>/admin lobby games</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin lobby games start <game></#93c5fd> <#7b8aa0>- math、unscramble、type、trivia、number、reaction、treasure、potato</#7b8aa0><newline> <#93c5fd>/admin lobby games stop</#93c5fd> <#7b8aa0>- 停止進行中的遊戲</#7b8aa0><newline> <#93c5fd>/admin lobby games word <add|remove|list> [單字]</#93c5fd> <#7b8aa0>- 編輯重組單字清單</#7b8aa0><newline> <#93c5fd>/admin lobby games parkour <edit|setstart|addcheckpoint|removecheckpoint|setfinish|clear|resettimes|top></#93c5fd> <#7b8aa0>- 設定跑酷</#7b8aa0><newline> <#93c5fd>/admin lobby games range <setlane|removelane|addstray|removestray|addtarget|removetarget|area1|area2|cleararea|joinarea1|joinarea2|clearjoinarea|list|top> [靶道]</#93c5fd> <#7b8aa0>- 設定靶場</#7b8aa0><newline> <#93c5fd>/admin lobby games spleef|tntrun <pos1|pos2|save|setjoin|info|start|stop|clear></#93c5fd> <#7b8aa0>- 設定掘地／TNT 快跑</#7b8aa0>"
+    lobbygame: "<#f4d35e><bold>/admin lobby games</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin lobby games start <game></#93c5fd> <#7b8aa0>- math、unscramble、type、trivia、number、reaction、treasure、potato</#7b8aa0><newline> <#93c5fd>/admin lobby games stop</#93c5fd> <#7b8aa0>- 停止進行中的遊戲</#7b8aa0><newline> <#93c5fd>/admin lobby games word <add|remove|list> [單字]</#93c5fd> <#7b8aa0>- 編輯重組單字清單</#7b8aa0><newline> <#93c5fd>/admin lobby games parkour <edit|setstart|addcheckpoint|removecheckpoint|setfinish|clear|resettimes|top></#93c5fd> <#7b8aa0>- 設定跑酷</#7b8aa0><newline> <#93c5fd>/admin lobby games range <setlane|removelane|addstray|removestray|addtarget|removetarget|area1|area2|cleararea|joinarea1|joinarea2|clearjoinarea|list|top> [靶道]</#93c5fd> <#7b8aa0>- 設定靶場</#7b8aa0><newline> <#93c5fd>/admin lobby games spleef|tntrun <pos1|pos2|save|setjoin|setleave|info|start|stop|clear></#93c5fd> <#7b8aa0>- 設定掘地／TNT 快跑</#7b8aa0>"
     pm: "<#f4d35e><bold>/msg</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/msg <玩家> <訊息></#93c5fd> <#7b8aa0>- 傳送私人訊息</#7b8aa0>"
     reply: "<#f4d35e><bold>/r</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/r <訊息></#93c5fd> <#7b8aa0>- 回覆最後一則私人訊息</#7b8aa0>"
     profile: "<#f4d35e><bold>/profile</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/profile [玩家]</#93c5fd> <#7b8aa0>- 查看個人資料</#7b8aa0><newline> <#93c5fd>/profile list [頁數]</#93c5fd> <#7b8aa0>- 列出已儲存的個人資料</#7b8aa0>"
@@ -195,8 +195,6 @@ kit-menu-selected-lore: "<#6dd3a0>目前啟用中。</#6dd3a0>"
 kit-menu-preview-title: "<#f4d35e><bold><kit></bold></#f4d35e>"
 kit-menu-preview-lore-1: "<#cbd5e1>此預覽即為您開局時取得的物品欄。</#cbd5e1>"
 kit-menu-preview-lore-2: "<#7b8aa0>第五排為快捷列。</#7b8aa0>"
-kit-menu-offhand-label: "<#9db4c0><bold>非慣用手</bold></#9db4c0>"
-kit-menu-offhand-lore: "<#7b8aa0>可預覽盾牌、不死圖騰等非慣用手物品。</#7b8aa0>"
 kit-default-description:
   - "<#cbd5e1>由管理員在遊戲內編輯。</#cbd5e1>"
 kit-set: "<#6dd3a0>已選擇套裝：<white><kit></white></#6dd3a0>"
@@ -211,8 +209,6 @@ kit-set-global-broadcast: "<#93c5fd>⚒</#93c5fd> <dark_gray>»</dark_gray> <#93
 kit-edit-failed: "<#f95738>無法將此套裝儲存至 kits.yml。</#f95738>"
 config-menu-title: "<#334155><bold>遊戲設定</bold></#334155>"
 config-menu-status-lore: "<#7b8aa0>狀態</#7b8aa0>  <value>"
-config-menu-filler: "<dark_gray> </dark_gray>"
-config-menu-no-permission: "<#f4d35e>您可查看此選單，但僅管理員可編輯數值。</#f4d35e>"
 config-menu-admin-title: "<#6dd3a0><bold>管理員編輯模式</bold></#6dd3a0>"
 config-menu-viewer-title: "<#f4d35e><bold>查看模式</bold></#f4d35e>"
 config-menu-admin-lore: "<#cbd5e1>點擊下方項目可即時更新設定值。</#cbd5e1>"
@@ -228,13 +224,11 @@ config-menu-next: "<#7dd3fc><bold>下一頁</bold></#7dd3fc>"
 config-menu-entry-name: "<#f4d35e><bold><label></bold></#f4d35e>"
 config-menu-type-lore: "<#7b8aa0>類型：</#7b8aa0> <white><type></white>"
 config-menu-path-lore: "<#6b7280>路徑：</#6b7280> <white><path></white>"
-config-menu-double-edit-lore: "<#cbd5e1>左鍵：-0.5 右鍵：+0.5 Shift：±5.0 丟棄鍵：±0.1</#cbd5e1>"
 config-menu-readonly-lore: "<#f4d35e>此項目於 GUI 中僅供查看，無法修改。</#f4d35e>"
 config-menu-readonly: "<#f4d35e>此設定於設定介面中僅供查看，無法修改。</#f4d35e>"
 config-menu-chat-prompt: "<#7dd3fc>正在編輯 <white><path></white>。</#7dd3fc> <#7b8aa0>目前值：</#7b8aa0> <white><current></white>"
 config-menu-chat-hint: "<#cbd5e1>請在聊天輸入新值。輸入 <white>exit</white> 取消，輸入 <white>sth</white> 設為空字串。</#cbd5e1>"
 config-menu-chat-cancelled: "<#f4d35e>已取消設定編輯。</#f4d35e>"
-config-menu-group-lore: "<#7b8aa0>分類</#7b8aa0>"
 config-menu-group-game: "<#f4d35e><bold>遊戲</bold></#f4d35e>"
 config-menu-group-time: "<#f59e0b><bold>時間</bold></#f59e0b>"
 config-menu-group-rules: "<#7dd3fc><bold>規則</bold></#7dd3fc>"
@@ -251,10 +245,6 @@ config-menu-group-chat: "<#e879f9><bold>聊天</bold></#e879f9>"
 config-menu-group-other: "<#d1d5db><bold>其他</bold></#d1d5db>"
 config-menu-action-set-lobby: "<#93c5fd><bold>設定大廳</bold></#93c5fd>"
 config-menu-action-set-lobby-lore-1: "<#cbd5e1>將大廳設定於您目前的位置。</#cbd5e1>"
-config-menu-action-set-lobby-lore-2: "<#93c5fd>▶ 點擊將大廳設於此處。</#93c5fd>"
-config-menu-value-lore: "<#7b8aa0>目前：</#7b8aa0> <white><value></white>"
-config-menu-int-edit-lore: "<#cbd5e1>左鍵：-1 右鍵：+1 Shift：±10</#cbd5e1>"
-config-menu-bool-edit-lore: "<#cbd5e1>點擊切換此設定。</#cbd5e1>"
 config-menu-view-lore: "<#f4d35e>僅供查看，如需修改請聯絡管理員。</#f4d35e>"
 config-menu-bool-on: "啟用"
 config-menu-bool-off: "停用"
@@ -276,18 +266,16 @@ config-preset-dialog-save: "<green>以輸入的名稱儲存</green>"
 config-preset-dialog-delete: "<red>刪除輸入的名稱</red>"
 config-preset-dialog-preset: "<aqua><name></aqua>"
 config-preset-dialog-load-hint: "<gray>點擊載入此預設。</gray><newline><dark_gray>/admin game preset load <id></dark_gray>"
-config-menu-start-button: "<#22c55e><bold>開始遊戲</bold></#22c55e>"
+config-menu-start-button: "<#22c45e><bold>開始遊戲</bold></#22c45e>"
 config-menu-start-button-active: "<#ef4444><bold>遊戲進行中</bold></#ef4444>"
 config-menu-start-button-lore: "<#cbd5e1>點擊開始 UHC 遊戲。</#cbd5e1>"
 config-menu-start-button-active-lore: "<#7b8aa0>目前已有比賽正在進行。</#7b8aa0>"
 config-menu-stop-button: "<#f95738><bold>停止比賽</bold></#f95738>"
 config-menu-stop-button-idle: "<#7b8aa0><bold>停止比賽</bold></#7b8aa0>"
 config-menu-stop-button-lore: "<#cbd5e1>點擊停止目前的比賽，並將玩家送回大廳。</#cbd5e1>"
-config-menu-stop-button-confirm-lore: "<#f4d35e>需要再次確認。</#f4d35e>"
 config-menu-stop-button-idle-lore: "<#7b8aa0>目前無進行中的比賽可停止。</#7b8aa0>"
 config-menu-reset-button: "<#f4d35e><bold>重置比賽</bold></#f4d35e>"
 config-menu-reset-button-lore: "<#cbd5e1>強制完全重置比賽，並將所有玩家送回大廳狀態。</#cbd5e1>"
-config-menu-reset-button-confirm-lore: "<#f4d35e>需要再次確認。</#f4d35e>"
 config-menu-option-min-players: "<#f4d35e><bold>最少玩家數</bold></#f4d35e>"
 config-menu-option-countdown: "<#f4d35e><bold>倒數秒數</bold></#f4d35e>"
 config-menu-option-disable-natural-regen: "<#f95738><bold>停用自然回血</bold></#f95738>"
@@ -322,7 +310,7 @@ spawn:
 help-desc-rules: "查看伺服器規則。"
 help-desc-nightvision: "切換自己的夜視效果。"
 help-desc-settings: "個人設定。"
-help-desc-scoreboard: "顯示或隱藏計分板。"
+help-desc-hud: "顯示或隱藏資訊面板。"
 papi-status-enabled-detail: "MiniMessage 的 PAPI 解析已啟用，%試煉UHC_*% 佔位符已註冊。"
 papi-status-disabled-detail: "未載入 PlaceholderAPI。若要使用 PAPI 佔位符，請安裝到 plugins/。"
 # Gamemode shortcuts
@@ -471,12 +459,11 @@ lobby-item:
       - "<#cbd5e1>預覽開局套裝。</#cbd5e1>"
       - "<#6b7280>▸ 右鍵開啟</#6b7280>"
   pvp_sword:
-    name: "<#f95738><bold>大廳 PvP</bold></#f95738>"
+    name: "<#f95738><bold>練習場</bold></#f95738>"
     lore:
-      - "<#cbd5e1>按住 3 秒即可在大廳對戰。</#cbd5e1>"
       - "<#93c5fd>右鍵：練習場與套裝排版。</#93c5fd>"
   cosmetics:
-    name: "<gradient:#c084fc:#f472b6><bold>特效商店</bold></gradient>"
+    name: "<gradient:#c084fc:#f472b6><bold>特效收藏</bold></gradient>"
     lore:
       - "<#cbd5e1>環繞特效、拖尾、擊殺與勝利特效。</#cbd5e1>"
       - "<#facc15>☀ <points> 點數</#facc15>"
@@ -512,7 +499,7 @@ lobby-item:
   settings:
     name: "<#cbd5e1><bold>個人設定</bold></#cbd5e1>"
     lore:
-      - "<#cbd5e1>計分板、名牌、訊息與特效。</#cbd5e1>"
+      - "<#cbd5e1>資訊面板、名牌、訊息與特效。</#cbd5e1>"
       - "<#6b7280>▸ 右鍵開啟</#6b7280>"
   leaderboard:
     name: "<#fbbf24><bold>排行榜</bold></#fbbf24>"
@@ -538,10 +525,6 @@ lobby-item:
 match-starting: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#f4d35e>比賽將於 <seconds> 秒後開始。</#f4d35e>"
 match-force-started: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#f95738>已強制開始比賽並跳過倒數。</#f95738>"
 countdown: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#ee964b><seconds> 秒後開始。</#ee964b>"
-title-opening: "<gradient:#f4d35e:#ee964b><bold>試煉UHC</bold></gradient>"
-subtitle-opening-starting: "<white>即將開始</white>"
-subtitle-opening-credits: "<#7b8aa0>作者：<white>平常網路資訊工作室 (RNIS)</white></#7b8aa0>"
-subtitle-opening-version: "<#7b8aa0>版本 <white><version></white></#7b8aa0>"
 title-match-starting: "<#f4d35e><bold>比賽即將開始</bold></#f4d35e>"
 subtitle-match-starting: "<white><seconds> 秒後開始倒數。</white>"
 title-countdown: "<#ee964b><bold><seconds></bold></#ee964b>"
@@ -572,8 +555,8 @@ scatter-sequence-start: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#faf0
 scatter-settle-wait: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#9db4c0>等待地圖穩定中（<seconds> 秒）。</#9db4c0>"
 scatter-bossbar: "<#f4d35e>正在分散玩家 <white><current>/<total></white> <#7b8aa0>（<percent>%）</#7b8aa0>"
 rescatter-started: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#f4d35e>正在為參賽者重新分散傳送。</#f4d35e>"
-scatter-countdown-bossbar: "<#22c55e>比賽將於 <white><seconds></white> 秒後開始"
-scatter-countdown-title: "<#22c55e><bold><seconds></bold></#22c55e>"
+scatter-countdown-bossbar: "<#22c45e>比賽將於 <white><seconds></white> 秒後開始"
+scatter-countdown-title: "<#22c45e><bold><seconds></bold></#22c45e>"
 scattered: "<#6dd3a0>您已被隨機分散傳送。</#6dd3a0>"
 achievement:
   root:
@@ -862,7 +845,7 @@ match-summary-title: "<#f4d35e><bold>  ⚔ 本場結算</bold></#f4d35e>"
 match-summary-winner: "<#7b8aa0>  勝利者   </#7b8aa0><#f4d35e><bold><winner></bold></#f4d35e>"
 match-summary-duration: "<#7b8aa0>  持續時間 </#7b8aa0><white><duration></white>"
 match-summary-players: "<#7b8aa0>  玩家人數 </#7b8aa0><white><players></white>"
-match-summary-divider: "<#1e293b><st>                                        </st></#1e293b>"
+match-summary-divider: "<#1e283b><st>                                        </st></#1e283b>"
 match-summary-kills-header: "<#93c5fd>  擊殺排行榜</#93c5fd>"
 match-summary-kills-entry: "<#7b8aa0>  <rank>.</#7b8aa0> <white><player></white><#7b8aa0> — </#7b8aa0><#f4d35e><kills> 擊殺</#f4d35e>"
 match-summary-kills-none: "<#7b8aa0>  尚無擊殺紀錄。</#7b8aa0>"
@@ -870,76 +853,16 @@ match-summary-footer: "<#334155><st>                                        </st
 match-ending: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#faf0ca><seconds> 秒後將所有玩家傳送回大廳。</#faf0ca>"
 match-ending-actionbar: "<#faf0ca><seconds> 秒後返回大廳</#faf0ca>"
 match-countdown-actionbar: "<#ee964b>遊戲將於 <white><seconds> 秒</white>後開始</#ee964b>"
-# Scoreboard labels and chat controls
+# Chat controls
 border-shrinking: "<item:barrier> <dark_gray>»</dark_gray> <#ee964b>邊界第 <stage>/<total> 階段：正在縮小至 <size>。</#ee964b>"
 title-border-shrinking: "<#ee964b><bold>邊界縮小</bold></#ee964b>"
 subtitle-border-shrinking: "<white>階段 <stage>/<total>，目標 <size>。</white>"
-title-final-heal: "<#6dd3a0><bold>最終治療</bold></#6dd3a0>"
+title-final-heal: "<#6dd3a0><bold>最終回血</bold></#6dd3a0>"
 subtitle-final-heal: "<white>生命值與飢餓值已恢復。</white>"
 title-eliminated: "<#f95738><bold>已淘汰</bold></#f95738>"
 subtitle-eliminated: "<white>您已離開本場比賽。</white>"
 title-eliminated-announcement: "<#f95738><bold>玩家淘汰</bold></#f95738>"
 subtitle-eliminated-announcement: "<white><player> 已被淘汰。</white>"
-scoreboard-event-none: "無"
-scoreboard-event-live: "進行中"
-scoreboard-event-match-start: "比賽開始"
-scoreboard-event-scattering: "分散傳送"
-scoreboard-event-pvp: "PvP"
-scoreboard-event-final-heal: "最終回血"
-scoreboard-event-final-duel: "最終對決"
-scoreboard-event-border-stage: "邊界 <stage>/<total>"
-scoreboard-event-sudden-death: "殊死戰"
-scoreboard-event-match-end: "比賽結束"
-scoreboard-event-lobby-return: "返回大廳"
-scoreboard-status-off: "關閉"
-scoreboard-status-done: "完成"
-scoreboard:
-  title: "<#7dd3fc>◆</#7dd3fc> <gradient:#fff3b0:#f4d35e><bold>試煉UHC</bold></gradient> <#fda4af>◆</#fda4af>"
-  footer:
-    lines:
-      - "<#a7f3d0>play.example.net</#a7f3d0>"
-  default:
-    lines:
-      - "<#7dd3fc>✦</#7dd3fc> <white>Trial 伺服器</white>"
-      - ""
-      - "<#7dd3fc>⌚</#7dd3fc> <white>階段：</white> <white><phase></white>"
-      - "<#a7f3d0>⌂</#a7f3d0> <white>世界：</white> <white><world></white>"
-      - "<#fda4af>☻</#fda4af> <white>線上：</white> <white><online></white>"
-  waiting:
-    lines:
-      - "<#c4b5fd>✦</#c4b5fd> <white>等待大廳</white>"
-      - ""
-      - "<#fda4af>☻</#fda4af> <white>玩家：</white> <white><online></white>"
-      - "<#f4d35e>⚑</#f4d35e> <white>尚需：</white> <white><players_to_start></white>"
-      - "<#a7f3d0>⌂</#a7f3d0> <white>世界：</white> <white><world></white>"
-  countdown:
-    lines:
-      - "<#f4d35e>⌛</#f4d35e> <white>比賽即將開始</white>"
-      - ""
-      - "<#f4d35e>⌚</#f4d35e> <white>開始倒數：</white> <white><timer></white>"
-      - "<#fda4af>☻</#fda4af> <white>玩家：</white> <white><online></white>"
-      - "<#a7f3d0>⌂</#a7f3d0> <white>世界：</white> <white><world></white>"
-  grace:
-    lines:
-      - "<#93c5fd>✚</#93c5fd> <white>保護時間</white>"
-      - ""
-      - "<#f4d35e>⌚</#f4d35e> <white>剩餘：</white> <white><timer></white>"
-      - "<#fda4af>♥</#fda4af> <white>存活：</white> <white><alive></white>"
-      - "<#7dd3fc>◫</#7dd3fc> <white>邊界：</white> <white><border></white>"
-      - "<#86efac>✦</#86efac> <white>下一事件：</white> <white><next_event></white>"
-      - "<#93c5fd>⌚</#93c5fd> <white>倒數：</white> <white><next_event_timer></white>"
-  running:
-    lines:
-      - "<#ff8a80>✦</#ff8a80> <white>UHC 進行中</white>"
-      - ""
-      - "<#fda4af>♥</#fda4af> <white>存活：</white> <white><alive></white>"
-      - "<#ff8a80>☠</#ff8a80> <white>死亡：</white> <white><dead></white>"
-      - "<#c4b5fd>☁</#c4b5fd> <white>旁觀：</white> <white><spectators></white>"
-      - "<#7dd3fc>◫</#7dd3fc> <white>邊界：</white> <white><border></white>"
-      - "<#86efac>✦</#86efac> <white>下一事件：</white> <white><next_event></white>"
-      - "<#93c5fd>⌚</#93c5fd> <white>倒數：</white> <white><next_event_timer></white>"
-      - "<#f4d35e>⌚</#f4d35e> <white>經過時間：</white> <white><elapsed></white>"
-
 tab:
   player-format: "<white>•</white> <#fff3b0><player></#fff3b0>"
   spectator-format: "<gray>• <player></gray>"
@@ -1018,7 +941,6 @@ staff-mode:
     lore-health: "<#7b8aa0>生命值：</#7b8aa0> <#f95738><health> ❤</#f95738>"
     lore-world: "<#7b8aa0>世界：</#7b8aa0> <white><world></white>"
     lore-frozen: "<#7dd3fc><bold>已凍結</bold></#7dd3fc>"
-    lore-actions: "<#7b8aa0>左鍵：傳送 · 右鍵：查看物品欄 · Shift：凍結</#7b8aa0>"
     state:
       alive: "<#6dd3a0>存活</#6dd3a0>"
       spectator: "<#7b8aa0>旁觀者</#7b8aa0>"
@@ -1165,8 +1087,8 @@ scenarios:
   start-entry: "  <#7b8aa0>◆</#7b8aa0> <white><name></white>"
   start-none: "  <gray><i>無情境 — 原版 UHC。</i></gray>"
   start-subtitle: "<gray>祝您好運。</gray>"
-  start-divider: "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-  start-footer: "<#3d4451>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  start-divider: "<#3d4551>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  start-footer: "<#3d4551>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   enchanting-disabled: "<#f95738>本場比賽已停用附魔。"
   grindstone-disabled: "<#f95738>本場比賽已停用砂輪。"
   enchanting-table-blocked: "<#f95738>本場比賽無法製作附魔台。"
@@ -1191,7 +1113,6 @@ scenarios:
     status-enabled: "<#6dd3a0>✔ 已啟用"
     status-disabled: "<#f95738>✘ 已停用"
     status-lore: "<#7b8aa0>狀態  <value>"
-    hint-toggle: "<yellow>點擊切換"
     hint-view: "<#7b8aa0>僅供查看"
     hint-settings: "<#a78bfa>▶ 右鍵點擊編輯設定。"
     conflicts: "<#f4a261>衝突：<conflicts>"
@@ -1201,13 +1122,8 @@ scenarios:
     page-indicator: "<bold><#f4d35e>第 <current> / <total> 頁"
     modifier-title: "<dark_gray><bold><scenario> 設定</bold>"
     modifier-anvil-title: "<dark_gray><bold>設定數值</bold>"
-    modifier-dialog-title: "<dark_gray><bold><label></bold>"
-    modifier-dialog-input-label: "<#7b8aa0>新數值"
     modifier-dialog-submit: "<#6dd3a0><bold>確認</bold>"
     modifier-dialog-cancel: "<#f95738>取消"
-    modifier-back: "<#7dd3fc><bold>返回情境列表</bold>"
-    modifier-hint: "<#93c5fd>▶ 點擊編輯。"
-    modifier-value: "<#7b8aa0>數值  <white><value></white>"
     modifier-summary: "<#7b8aa0><label>：</#7b8aa0> <white><value></white>"
     modifier:
       limitations-diamonds: "<bold><#f4d35e>鑽石數量上限"
@@ -1657,6 +1573,8 @@ team:
         lore: <gray>點擊將這位玩家移出目前的隊伍。</gray>
       assign-team-lore: <#7dd3fc>點擊將玩家指派到這個隊伍。</#7dd3fc>
       removed-from-team: <green>已將 <player> 移出所屬隊伍。</green>
+      current-team: "<gray>目前隊伍：</gray><#cbd5e1><team></#cbd5e1>"
+      assigned: <green>已將 <player> 指派到隊伍 <team>。</green>
       recolor-team:
         title: "<#475569><bold>管理員：更改隊伍顏色</bold></#475569>"
         lore: <#7dd3fc>點擊選擇要更改顏色的隊伍。</#7dd3fc>
@@ -1665,7 +1583,7 @@ team:
         lore: <#f43f5e>點擊永久刪除這個隊伍。</#f43f5e>
   menu:
     title: <#334155><bold>隊伍選單</bold></#334155>
-    filler: <dark_gray> </dark_gray>
+    close: <#f95738><bold>關閉</bold></#f95738>
     join-by-name:
       text: <#7dd3fc><bold>依名稱加入隊伍</bold></#7dd3fc>
       lore: <white>點擊後輸入隊伍 ID 或顯示名稱來加入。</white>
@@ -1697,7 +1615,6 @@ team:
     manage:
       text: <#f4d35e><bold>管理隊伍</bold></#f4d35e>
       lore: <#cbd5e1>開啟隊長控制面板。</#cbd5e1>
-      unavailable: <#6b7280><bold>僅限隊長</bold></#6b7280>
     click:
       join: <#7dd3fc>點擊加入這個隊伍。</#7dd3fc>
     selected: <#6dd3a0>目前已選擇。</#6dd3a0>
@@ -1721,11 +1638,7 @@ team:
       private: <#f4d35e><bold>設為私人</bold></#f4d35e>
     visibility:
       lore: '<#cbd5e1>目前：<white><visibility></white></#cbd5e1>'
-    member:
-      text: <white><name></white>
-      leader: <#f4d35e>隊長</#f4d35e>
-      kick: <#f95738>點擊踢出這位成員。</#f95738>
-      transfer: <#ffd166>管理員：點擊隊長以轉移隊長身分。</#ffd166>
+    no-members: <#7b8aa0>目前沒有其他成員。</#7b8aa0>
     rename:
       text: <#ffd166><bold>重新命名隊伍</bold></#ffd166>
       lore: <#cbd5e1>點擊開啟重新命名對話框。</#cbd5e1>
@@ -1737,10 +1650,12 @@ team:
       lore: <white>點擊後輸入要邀請的玩家名稱。</white>
     transfer-leader:
       text: <#f4d35e><bold>轉移隊長身分</bold></#f4d35e>
-      lore: <white>點擊後輸入要接任隊長的成員名稱。</white>
+      lore: <white>選擇一位成員接任隊長。</white>
+      click: <#7dd3fc>點擊讓這位成員接任隊長。</#7dd3fc>
     kick-by-name:
-      text: <#f95738><bold>依名稱踢出成員</bold></#f95738>
-      lore: <white>點擊後輸入要踢出的成員名稱。</white>
+      text: <#f95738><bold>踢出成員</bold></#f95738>
+      lore: <white>選擇要踢出隊伍的成員。</white>
+      click: <#f43f5e>點擊將這位成員踢出隊伍。</#f43f5e>
   color:
     title: <#334155><bold>隊伍顏色 — <team></bold></#334155>
     selected: <#6dd3a0>目前已選擇。</#6dd3a0>
@@ -1816,6 +1731,7 @@ team:
     declined: "<#f95738>您已拒絕加入 <white><team></white> 的邀請。</#f95738>"
     already-invited: "<#f95738>您已邀請過 <player>。</#f95738>"
     already-invited-lore: <#f4d35e>已邀請</#f4d35e>
+    empty: <#7b8aa0>目前沒有未加入隊伍的線上玩家。</#7b8aa0>
     not-pending: "<#f95738>您目前未收到該隊伍的邀請。</#f95738>"
     expired: <#f95738>這個邀請已過期。</#f95738>
     target-has-team: "<#f95738><player> 已加入其他隊伍。</#f95738>"
@@ -1840,7 +1756,7 @@ team:
 
 practice:
   dialog:
-    title: "<#f87171><bold>⚔ 練習場</bold></#f87171>"
+    title: "<#f87171><bold>練習場</bold></#f87171>"
     description: "<#cbd5e1>使用 UHC 套裝自由對戰，死亡後會立即重生。</#cbd5e1>"
     status-open: "<#6dd3a0>● 開放中</#6dd3a0> <#7b8aa0>· <white><players></white>/<max> 人在練習</#7b8aa0>"
     status-closed: "<#f95738>● 未開放</#f95738> <#7b8aa0>· 管理員尚未開啟。</#7b8aa0>"
@@ -1916,34 +1832,160 @@ tab-layout:
     online: "線上"
     needed: "還需"
     ping: "延遲"
-profile-dialog:
-  title: "<#f4d35e><bold><player></bold></#f4d35e><#7b8aa0> 的個人資料</#7b8aa0>"
-  level: "<#c4b5fd><bold>等級 <level></bold></#c4b5fd>  <bar>  <#7b8aa0><experience>/<needed> 經驗</#7b8aa0>"
-  combat: "<#f95738>⚔ 擊殺</#f95738> <white><kills></white>   <#9ca3af>☠ 死亡</#9ca3af> <white><deaths></white>   <#7dd3fc>✚ 助攻</#7dd3fc> <white><assists></white>   <#fda4af>K/D</#fda4af> <white><kd></white>"
-  games: "<#f4d35e>★ 勝場</#f4d35e> <white><wins></white>   <#a7f3d0>場數</#a7f3d0> <white><games></white>   <#86efac>勝率</#86efac> <white><winrate></white>"
-  streak: "<#fb7185>🔥 最高連殺</#fb7185> <white><best></white>   <#7b8aa0>目前</#7b8aa0> <white><current></white>"
-  items: "<#f4d35e>金蘋果</#f4d35e> <white><golden_apples></white>   <#f4d35e>金頭顱</#f4d35e> <white><golden_heads></white>   <#93c5fd>射箭</#93c5fd> <white><bow_shots></white>"
-  ores: "<#7dd3fc>鑽石</#7dd3fc> <white><diamonds></white>  <#f4d35e>金</#f4d35e> <white><gold></white>  <#cbd5e1>鐵</#cbd5e1> <white><iron></white>  <#6dd3a0>綠寶石</#6dd3a0> <white><emeralds></white>  <#a8a29e>遠古遺骸</#a8a29e> <white><ancient_debris></white>  <#c4b5fd>生怪磚</#c4b5fd> <white><spawners></white>"
-  lobby: "<#facc15>🎉 大廳遊戲勝場</#facc15> <white><lobby_wins></white>   <#7b8aa0>聊天遊戲</#7b8aa0> <white><chat_wins></white>  <#7b8aa0>寶藏</#7b8aa0> <white><treasures></white>  <#7b8aa0>燙手山芋</#7b8aa0> <white><potato_wins></white>  <#7b8aa0>跑酷完成</#7b8aa0> <white><parkour></white>  <#7b8aa0>靶場最高分</#7b8aa0> <white><range></white>  <#7b8aa0>掘地</#7b8aa0> <white><spleef_wins></white>  <#7b8aa0>TNT 快跑</#7b8aa0> <white><tntrun_wins></white>"
-  rank: "<#7b8aa0>排行榜：</#7b8aa0> <#f4d35e>勝場 <wins_rank></#f4d35e>  <#f95738>擊殺 <kills_rank></#f95738>  <#c4b5fd>等級 <level_rank></#c4b5fd>"
+profile-panel:
+  title: "個人資料"
+  title-other: "<player> 的個人資料"
+  subtitle: "你的等級、數據與排名"
+  subtitle-other: "等級、數據與排名"
+  no-clan: "<#8a96b0>沒有戰隊</#8a96b0>"
+  level: "<#e2e8f0>等級</#e2e8f0> <#e8c462><level></#e8c462>"
+  experience: "<#8a96b0><experience> / <needed> XP</#8a96b0>"
+  stats-title: "<player> 的完整數據"
+  stats-subtitle: "這份個人資料的所有數字"
+  section:
+    combat: "戰鬥"
+    gathering: "採集"
+    lobby: "大廳"
+  stat:
+    games: "場數"
+    wins: "勝場"
+    winrate: "勝率"
+    kd: "K/D"
+    kills: "擊殺"
+    deaths: "死亡"
+    killstreak: "最高連殺"
+    assists: "助攻"
+    wins-rank: "勝場排名"
+    level-rank: "等級排名"
+    current-streak: "目前連殺"
+    diamonds: "鑽石"
+    gold: "金"
+    iron: "鐵"
+    emeralds: "綠寶石"
+    ancient-debris: "遠古遺骸"
+    spawners: "生怪磚"
+    golden-apples: "金蘋果"
+    golden-heads: "金頭顱"
+    bow-shots: "射箭"
+    lobby-wins: "大廳遊戲勝場"
+    chat-wins: "聊天遊戲"
+    treasures: "寶藏"
+    potato-wins: "燙手山芋"
+    parkour: "跑酷完成"
+    range: "靶場最高分"
+    spleef-wins: "掘地"
+    tntrun-wins: "TNT 快跑"
   button:
-    leaderboard: "<#fbbf24>🏆 排行榜</#fbbf24>"
-    kits: "<#fb923c>🎒 套裝</#fb923c>"
-    language: "<#7dd3fc>🌐 語言</#7dd3fc>"
-    players: "<#cbd5e1>👥 所有玩家</#cbd5e1>"
-    settings: "<#cbd5e1>🔧 個人設定</#cbd5e1>"
-leaderboard-dialog:
-  title: "<#fbbf24><bold>🏆 排行榜</bold></#fbbf24>"
-  header: "<#7b8aa0>排序依據</#7b8aa0> <stat>   <#7b8aa0>第 <page>/<max_page> 頁</#7b8aa0>"
-  entry: "<#f4d35e><bold>#<rank></bold></#f4d35e>  <white><player></white>  <#7b8aa0>-</#7b8aa0>  <#f4d35e><value></#f4d35e>"
-  you: "<#7b8aa0>您的排名：</#7b8aa0> <#6dd3a0><bold>#<rank></bold></#6dd3a0> <#7b8aa0>（<value>）</#7b8aa0>"
-  you-unranked: "<#7b8aa0>您在此項目尚無排名。</#7b8aa0>"
-  stat-selected: "<#6dd3a0>▶</#6dd3a0> <stat> <#6dd3a0>◀</#6dd3a0>"
-  prev: "<#7dd3fc>◀ 上一頁</#7dd3fc>"
-  prev-disabled: "<#3f4a5a>◀ 上一頁</#3f4a5a>"
-  next: "<#7dd3fc>下一頁 ▶</#7dd3fc>"
-  next-disabled: "<#3f4a5a>下一頁 ▶</#3f4a5a>"
-  view-profile: "<#7dd3fc>▶ 點擊查看個人檔案</#7dd3fc>"
+    leaderboard: "<item:gold_ingot> <white>排行榜</white>"
+    cosmetics: "<item:amethyst_shard> <white>特效收藏</white>"
+    replay: "<item:clock_00> <white>回放</white>"
+    kits: "<item:iron_sword> <white>套裝</white>"
+    clan: "<item:flower_banner_pattern> <white>戰隊</white>"
+    settings: "<item:comparator> <white>設定</white>"
+    players: "<item:name_tag> <white>所有玩家</white>"
+    stats: "<item:book> <white>完整數據</white>"
+    back: "<white>‹ 回到個人資料</white>"
+"clan-panel":
+  # The drawn clan pages (clan/ClanDialog): /clan, /clan info, /clan view.
+  "subtitle": "等級 <level> · 隊員 <members>/<max> · <join>"
+  "leader": "<#8a96b0>隊長</#8a96b0> <white><player></white>"
+  "your-role": "<#8a96b0>您的身分</#8a96b0> <#e8c462><role></#e8c462>"
+  "member-column": "隊員"
+  "role-column": "身分"
+  "empty": "<#8a96b0>目前還沒有內容。</#8a96b0>"
+  "reward-level": "Lv.<level>"
+  "reached": "<#6dd3a0>✔</#6dd3a0>"
+  "locked": "<#7b8aa0>✘</#7b8aa0>"
+  "max-level": "最高等級"
+  "description": "<#9db4c0><italic><description></italic></#9db4c0>"
+  "member-info": "<#f4d35e><role></#f4d35e> <#7b8aa0>·</#7b8aa0> <state>"
+  "member-joined": "<#7b8aa0>加入於 <white><date></white></#7b8aa0>"
+  "online": "<#6dd3a0>● 線上</#6dd3a0>"
+  "offline": "<#7b8aa0>● 離線</#7b8aa0>"
+  "unranked": "未上榜"
+  "page":
+    "members": "成員"
+    "clan-ranks": "排名"
+    "rewards": "等級獎勵"
+    "clan-cosmetics": "戰隊造型"
+    "wars": "戰隊戰"
+    "manage": "管理"
+  "button":
+    "members": "<item:name_tag> <white>成員</white>"
+    "ranks": "<item:gold_ingot> <white>排名</white>"
+    "rewards": "<item:experience_bottle> <white>等級獎勵</white>"
+    "cosmetics": "<item:amethyst_shard> <white>戰隊造型</white>"
+    "wars": "<item:golden_sword> <white>戰隊戰</white>"
+    "manage": "<item:comparator> <white>管理</white>"
+    "join": "<item:lime_dye> <white>加入戰隊</white>"
+    "all-clans": "<item:gold_ingot> <white>所有戰隊</white>"
+    "back": "<white>‹ 返回</white>"
+    "profile": "<item:name_tag> <white>查看個人資料</white>"
+  "action":
+    "promote": "<item:emerald> <#6dd3a0>升為幹部</#6dd3a0>"
+    "demote": "<item:redstone> <#f4d35e>降為隊員</#f4d35e>"
+    "transfer": "<item:golden_helmet> <#f4d35e>轉讓隊長</#f4d35e>"
+    "kick": "<item:iron_boots> <#f95738>踢出戰隊</#f95738>"
+    "back": "<#9db4c0>← 回到成員列表</#9db4c0>"
+    "invite": "<item:writable_book> <#6dd3a0>邀請玩家</#6dd3a0>"
+    "requests": "<item:paper> <#93c5fd>加入申請（<count>）</#93c5fd>"
+    "chat-on": "<item:oak_sign> <#cbd5e1>戰隊聊天：</#cbd5e1><#6dd3a0>開啟</#6dd3a0>"
+    "chat-off": "<item:oak_sign> <#cbd5e1>戰隊聊天：</#cbd5e1><#7b8aa0>關閉</#7b8aa0>"
+    "settings": "<item:comparator> <#cbd5e1>戰隊設定</#cbd5e1>"
+    "disband": "<item:barrier> <#f95738>解散戰隊</#f95738>"
+    "leave": "<item:iron_door> <#f95738>離開戰隊</#f95738>"
+    "base": "<item:campfire> <#6dd3a0>戰隊基地</#6dd3a0>"
+    "base-locked": "<item:campfire> <#7b8aa0>戰隊基地（等級 <needed>）</#7b8aa0>"
+  "label":
+    "your-role": "您的身分"
+    "war-losses": "戰隊戰敗場"
+    "war-winrate": "戰隊戰勝率"
+    "month-war-wins": "本月戰隊戰勝場排名"
+    "level": "等級"
+    "xp": "經驗值"
+    "members": "隊員"
+    "leader": "隊長"
+    "join": "加入方式"
+    "founded": "創立日期"
+    "wins": "勝場"
+    "kills": "擊殺"
+    "games": "場數"
+    "hours": "遊玩時數"
+    "war-wins": "戰隊戰勝場"
+    "wars": "戰隊戰場數"
+    "rank-xp": "經驗值排名"
+    "rank-wins": "勝場排名"
+    "rank-kills": "擊殺排名"
+    "rank-war-wins": "戰隊戰勝場排名"
+    "week-wins": "本週勝場"
+    "week-kills": "本週擊殺"
+leaderboard-panel:
+  title: "排行榜"
+  subtitle: "<#8a96b0>全服的<stat>排名 · <period></#8a96b0>"
+  clan-subtitle: "<#8a96b0>戰隊的<stat>排名 · <period></#8a96b0>"
+  scope:
+    players: "玩家"
+    clans: "戰隊"
+  more: "更多"
+  more-title: "所有項目"
+  more-subtitle: "<#8a96b0>選擇要排名的數據</#8a96b0>"
+  you: "<#e2e8f0>你</#e2e8f0> <#e8c462>第 <rank> 名</#e8c462>"
+  you-unranked: "<#8a96b0>你還沒有上榜</#8a96b0>"
+  clan-you: "<#e2e8f0>你的戰隊 <clan_tag></#e2e8f0> <#e8c462>第 <rank> 名</#e8c462>"
+  clan-you-unranked: "<#8a96b0>你的戰隊 <clan_tag> 還沒有上榜</#8a96b0>"
+  clan-none: "<#8a96b0>你還沒有加入戰隊，輸入 /clan 加入</#8a96b0>"
+  clan-row: "<clan_tag> <white><clan></white>"
+  clan-hover: "<clan_tag> <white><clan></white><newline><#8a96b0>等級 <level> · 成員 <members>/<max></#8a96b0><newline><#7dd3fc>▶ 點擊查看戰隊資訊</#7dd3fc>"
+  column:
+    player: "玩家"
+    clan: "戰隊"
+  empty: "<#8a96b0>還沒有人上榜。</#8a96b0>"
+  prev: "<#e2e8f0>‹ 上一頁</#e2e8f0>"
+  prev-disabled: "<#4a5568>‹ 上一頁</#4a5568>"
+  next: "<#e2e8f0>下一頁 ›</#e2e8f0>"
+  next-disabled: "<#4a5568>下一頁 ›</#4a5568>"
+  page: "<#e8c462><page> / <pages></#e8c462>"
+  view-profile: "<#7dd3fc>▶ 點擊查看個人資料</#7dd3fc>"
 settings-dialog:
   title: "<item:comparator> <#cbd5e1><bold>個人設定</bold></#cbd5e1>"
   description: "<#7b8aa0>點擊即可切換開關，將游標移至設定上可查看說明。變更將立即儲存。</#7b8aa0>"
@@ -1952,7 +1994,7 @@ settings-dialog:
     'on': "<#6dd3a0><bold>✔ 開啟</bold></#6dd3a0>"
     'off': "<#f95738><bold>✘ 關閉</bold></#f95738>"
   icon:
-    scoreboard: "<item:paper>"
+    hud: "<item:paper>"
     own-nametag: "<item:name_tag>"
     private-messages: "<item:writable_book>"
     join-leave-messages: "<item:oak_door>"
@@ -1967,7 +2009,7 @@ settings-dialog:
     old-client-full-text: "<item:glow_ink_sac>"
     clan-teams: "<item:goat_horn>"
   setting:
-    scoreboard: "<icon> <white>計分板</white>  <state>"
+    hud: "<icon> <white>資訊面板</white>  <state>"
     own-nametag: "<icon> <white>顯示自己的名牌</white>  <state>"
     private-messages: "<icon> <white>私訊</white>  <state>"
     join-leave-messages: "<icon> <white>進出伺服器訊息</white>  <state>"
@@ -1977,12 +2019,12 @@ settings-dialog:
     floating-leaderboards: "<icon> <white>大廳排行榜浮動</white>  <state>"
     lobby-fly: "<icon> <white>大廳飛行</white>  <state>"
     lobby-music: "<icon> <white>大廳音樂</white>  <state>"
-    profile-3d: "<icon> <white>3D 個人資料</white>  <state>"
+    profile-3d: "<icon> <white>3D 戰隊檢視</white>  <state>"
     old-client-tip: "<icon> <white>舊版本提示</white>  <state>"
     old-client-full-text: "<icon> <white>完整距離看板文字</white>  <state>"
     clan-teams: "<icon> <white>與戰隊隊友組隊</white>  <state>"
   tooltip:
-    scoreboard: "<#cbd5e1>在畫面側邊顯示比賽計分板。快捷指令：/sb</#cbd5e1>"
+    hud: "<#cbd5e1>顯示資訊面板（使用資源包時是畫面左上角的卡片）。快捷指令：/hud</#cbd5e1>"
     own-nametag: "<#cbd5e1>在自己頭上顯示名牌，切換至第三人稱（F5）時即可看到。</#cbd5e1>"
     private-messages: "<#cbd5e1>允許其他玩家使用 /msg 私訊您。管理員仍可私訊您。</#cbd5e1>"
     join-leave-messages: "<#cbd5e1>玩家加入或離開伺服器時在聊天欄顯示訊息。</#cbd5e1>"
@@ -1992,7 +2034,7 @@ settings-dialog:
     floating-leaderboards: "<#cbd5e1>讓大廳排行榜緩慢上下浮動。關閉後排行榜將保持靜止。</#cbd5e1>"
     lobby-fly: "<#cbd5e1>在大廳中飛行，只在大廳有效。</#cbd5e1>"
     lobby-music: "<#cbd5e1>大廳輪流播放輕快的音階盒歌曲，預設關閉。<newline>音量依照您的「唱片機／音階盒」音量設定。<newline>輸入 <white>/music</white> 查看播放清單。</#cbd5e1>"
-    profile-3d: "<#cbd5e1>在大廳輸入 /profile 時，在您面前顯示 3D 個人資料。<newline>關閉後改用舊版視窗。</#cbd5e1>"
+    profile-3d: "<#cbd5e1>在大廳輸入 /clan info 時，在你面前顯示 3D 戰隊舞台。<newline>關閉後改用視窗。</#cbd5e1>"
     old-client-tip: "<#cbd5e1>使用較舊版本的 Minecraft 加入時，提示您可安裝讓大廳更流暢的模組。</#cbd5e1>"
     old-client-full-text: "<#cbd5e1>您的 Minecraft 版本較伺服器舊，看板文字僅在靠近時顯示。若已安裝 ImmediatelyFast，請開啟此設定。</#cbd5e1>"
     clan-teams: "<#cbd5e1>比賽開始時，將您與未加入隊伍的戰隊隊友分在同一隊。</#cbd5e1>"
@@ -2174,7 +2216,7 @@ help-desc-world: "載入、傳送或刪除世界。"
 help-desc-heal: "回滿生命值與飢餓值（* = 所有人）。"
 cosmetics:
   menu:
-    title: "<#b7791f>✦</#b7791f> <#404040>特效商店</#404040>"
+    title: "<#b7791f>✦</#b7791f> <#404040>特效收藏</#404040>"
     type-title: "<#b7791f>✦</#b7791f> <#404040><type></#404040>"
     points: "<#facc15><bold>☀ <points> 點數</bold></#facc15>"
     points-lore: "<#7b8aa0>擊殺、助攻、勝利、頒獎與參加比賽都能獲得點數。</#7b8aa0>"
@@ -2205,21 +2247,16 @@ cosmetics:
       name: "<#facc15>勝利特效</#facc15>"
       lore: "<#9db4c0>贏得比賽時在您身邊播放。</#9db4c0>"
   item:
-    price: "<#7b8aa0>價格：</#7b8aa0> <#facc15><price> 點數</#facc15>"
     equipped: "<#6dd3a0>✔ 已裝備</#6dd3a0> <#7b8aa0>· 點擊取消裝備</#7b8aa0>"
     owned: "<#93c5fd>已擁有</#93c5fd> <#7b8aa0>· 點擊裝備</#7b8aa0>"
-    buy: "<#facc15>點擊購買</#facc15>"
-    locked: "<#f95738>尚差 <missing> 點數</#f95738>"
-    preview: "<#c4b5fd>右鍵預覽</#c4b5fd>"
+    preview: "<#c4b5fd>預覽</#c4b5fd>"
   preview:
     started: "<#c4b5fd>正在預覽 <name><#c4b5fd>。蹲下即可離開。</#c4b5fd>"
     ended: "<#cbd5e1>預覽結束。</#cbd5e1>"
     unavailable: "<#f95738>僅可於比賽開始前在大廳預覽造型。</#f95738>"
     actionbar: "<#c4b5fd><bold>預覽</bold></#c4b5fd> <name> <#7b8aa0>· 蹲下離開 · <seconds> 秒</#7b8aa0>"
-  bought: "<#6dd3a0>已花費 <white><price></white> 點數購買並裝備 <name><#6dd3a0>。</#6dd3a0>"
   equipped: "<#6dd3a0>已裝備 <name><#6dd3a0>。</#6dd3a0>"
   unequipped: "<#cbd5e1>已取消裝備。</#cbd5e1>"
-  not-enough: "<#f95738>需要 <white><price></white> 點數，您目前有 <white><points></white> 點。</#f95738>"
   reloaded: "<#6dd3a0>已重新載入 cosmetics.yml。</#6dd3a0>"
   points-usage: "<#f4d35e><bold>/admin player points</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin player points <give|take> <玩家|*> <數量></#93c5fd> <#7b8aa0>- 調整特效點數</#7b8aa0>"
   points-adjusted: "<#6dd3a0><white><player></white> 點數 <amount>。</#6dd3a0>"
@@ -2492,6 +2529,8 @@ goldenhead:
   given: "<#6dd3a0>已給予 <white><player></white> 一顆金頭顱。</#6dd3a0>"
   received: "<#6dd3a0>您獲得了一顆金頭顱。</#6dd3a0>"
 scenario:
+  death-chest:
+    title: "<player> 的死亡寶箱"
   broadcaster:
     found: "<#c4b5fd>✧</#c4b5fd> <dark_gray>»</dark_gray> <#f4d35e><player></#f4d35e> <gray>在</gray> <white><x>, <y>, <z></white> <gray>挖到了</gray> <white><ore></white>"
   coronavirus:
@@ -2502,11 +2541,8 @@ scenario:
     timer: "<bold><timer_color>💣 <seconds> 秒</bold>"
 pingall-entry: "<#7b8aa0>  <ping_color><player></#7b8aa0></ping_color><#7b8aa0>：</#7b8aa0> <ping_color><ping>ms</ping_color>"
 config-menu-group-meetup: "<#fb7185><bold>決戰</bold></#fb7185>"
-config-menu-action-no-permission-lore: "<#f95738>您沒有權限使用此功能。</#f95738>"
-config-menu-action-set-lobby-lore-3: "<#7b8aa0>等同於 /admin world setlobby</#7b8aa0>"
 config-menu-status-on: "<#6dd3a0><bold>已啟用</bold></#6dd3a0>"
 config-menu-status-off: "<#f95738><bold>已停用</bold></#f95738>"
-config-menu-string-cycle-lore: "<#93c5fd>▶ 左鍵 / 右鍵切換選項。</#93c5fd>"
 config-menu-label-game-antiburn: "防火傷"
 config-menu-label-game-no-mobs: "禁止生物"
 config-menu-label-game-no-suspicious-stew: "停用可疑的燉湯"
@@ -2851,12 +2887,10 @@ config-menu-label-ui-full-width-tab: "全寬 Tab 列表"
 config-menu-desc-ui-full-width-tab: "全寬 Tab：先顯示您的隊伍，再顯示其他隊伍與旁觀者，最後一欄為您的統計。"
 config-menu-label-ui-tab-health-mode: "Tab 生命值顯示"
 profile-passport:
-  title: "<#f4d35e><bold>✈ 玩家護照</bold></#f4d35e> <#7b8aa0>（<page>/<pages>）</#7b8aa0>"
-  header: "<#cbd5e1>共 <white><count></white> 名已收錄的玩家。</#cbd5e1><#7b8aa0>將滑鼠移到名字上查看護照，點擊開啟個人檔案。</#7b8aa0>"
-  empty: "<#f4d35e>目前尚無任何玩家的個人檔案。</#f4d35e>"
-  button: "<white><player></white> <#a3e635>Lv<level></#a3e635>"
-  previous: "<#93c5fd>« 第 <page> 頁</#93c5fd>"
-  next: "<#93c5fd>第 <page> 頁 »</#93c5fd>"
+  title: "玩家護照"
+  subtitle: "<#8a96b0>共 <count> 名玩家 · 游標移到名字上查看護照</#8a96b0>"
+  sort-name: "名稱"
+  empty: "<#8a96b0>目前尚無任何玩家的個人檔案。</#8a96b0>"
   card: "<#f4d35e><bold>✈ 試煉UHC 護照</bold></#f4d35e><newline><#334155>━━━━━━━━━━━━━━━━━━━━━━</#334155><newline><#7b8aa0>姓名</#7b8aa0>  <white><bold><player></bold></white><newline><#7b8aa0>階級</#7b8aa0>  <rank><newline><#7b8aa0>護照號碼</#7b8aa0>  <#cbd5e1><number></#cbd5e1><newline><#7b8aa0>等級</#7b8aa0>  <#a3e635>Lv<level></#a3e635><newline><#7b8aa0>戰績</#7b8aa0>  <#f4d35e><wins> 勝</#f4d35e> <#7b8aa0>/</#7b8aa0> <white><games> 場</white><newline><#7b8aa0>戰鬥</#7b8aa0>  <#fca5a5><kills> 擊殺</#fca5a5>  <#9ca3af><deaths> 死亡</#9ca3af>  <#7dd3fc>K/D <kd></#7dd3fc><newline><#334155>━━━━━━━━━━━━━━━━━━━━━━</#334155><newline><#475569><machine></#475569><newline><#6dd3a0>點擊開啟個人檔案</#6dd3a0>"
 lobby:
   set: "<#6dd3a0>大廳位置已更新。</#6dd3a0>"
@@ -2904,8 +2938,8 @@ lobby:
       name: "<#34d399><bold>合成配方</bold></#34d399>"
       lore: ["<#cbd5e1>金頭顱與其他自訂合成。</#cbd5e1>", "<#6b7280>▸ 右鍵開啟</#6b7280>"]
     pvp_sword:
-      name: "<#f95738><bold>大廳 PvP</bold></#f95738>"
-      lore: ["<#cbd5e1>按住 3 秒即可在大廳對戰。</#cbd5e1>", "<#93c5fd>右鍵：練習場與套裝排版。</#93c5fd>"]
+      name: "<#f95738><bold>練習場</bold></#f95738>"
+      lore: ["<#93c5fd>右鍵：練習場與套裝排版。</#93c5fd>"]
     stats:
       name: "<#818cf8><bold>個人資料</bold></#818cf8>"
       lore: ["<#cbd5e1>等級 <white><level></white> · 您的統計與紀錄。</#cbd5e1>", "<#6b7280>▸ 右鍵開啟</#6b7280>"]
@@ -3029,9 +3063,6 @@ kit:
 config:
   menu:
     title: "<#334155><bold>遊戲設定</bold></#334155>"
-    filler: "<dark_gray> </dark_gray>"
-    'no':
-      permission: "<#f4d35e>您可查看此選單，但僅管理員可編輯數值。</#f4d35e>"
     admin:
       title: "<#6dd3a0><bold>管理員編輯模式</bold></#6dd3a0>"
       lore: "<#cbd5e1>點擊下方項目可即時更新設定值。</#cbd5e1>"
@@ -3059,7 +3090,6 @@ config:
       hint: "<#cbd5e1>請在聊天欄輸入新值。輸入 <white>exit</white> 取消，輸入 <white>sth</white> 設為空字串。</#cbd5e1>"
       cancelled: "<#f4d35e>已取消設定編輯。</#f4d35e>"
     group:
-      lore: "<#7b8aa0>分類</#7b8aa0>"
       game: "<#f4d35e><bold>遊戲</bold></#f4d35e>"
       time: "<#f59e0b><bold>時間</bold></#f59e0b>"
       rules: "<#7dd3fc><bold>規則</bold></#7dd3fc>"
@@ -3077,19 +3107,14 @@ config:
       chat: "<#e879f9><bold>聊天</bold></#e879f9>"
       other: "<#d1d5db><bold>其他</bold></#d1d5db>"
     action:
-      'no':
-        permission:
-          lore: "<#f95738>您沒有使用此功能的權限。</#f95738>"
       set:
         lobby:
           text: "<#93c5fd><bold>設定大廳</bold></#93c5fd>"
           lore:
             1: "<#cbd5e1>將大廳設於您目前的位置。</#cbd5e1>"
-            2: "<#93c5fd>▶ 點擊將大廳設於此處。</#93c5fd>"
-            3: "<#7b8aa0>等同於 /admin world setlobby</#7b8aa0>"
       start:
         button:
-          text: "<#22c55e><bold>開始遊戲</bold></#22c55e>"
+          text: "<#22c45e><bold>開始遊戲</bold></#22c45e>"
           lore: "<#cbd5e1>點擊開始 UHC 遊戲。</#cbd5e1>"
           active:
             text: "<#ef4444><bold>遊戲進行中</bold></#ef4444>"
@@ -3109,34 +3134,15 @@ config:
           lore: "<#cbd5e1>強制完整重設比賽，並讓所有人回到大廳狀態。</#cbd5e1>"
           confirm:
             lore: "<#f4d35e>需要再次確認。</#f4d35e>"
-    value:
-      lore: "<#7b8aa0>目前：</#7b8aa0> <white><value></white>"
     status:
       lore: "<#7b8aa0>狀態</#7b8aa0>  <value>"
       'on': "<#6dd3a0><bold>已啟用</bold></#6dd3a0>"
       'off': "<#f95738><bold>已停用</bold></#f95738>"
-    int:
-      edit:
-        lore: "<#cbd5e1>左鍵：-1 右鍵：+1 Shift：±10</#cbd5e1>"
-    double:
-      edit:
-        lore: "<#cbd5e1>左鍵：-0.5 右鍵：+0.5 Shift：±5.0 丟棄鍵：±0.1</#cbd5e1>"
     bool:
-      edit:
-        lore: "<#cbd5e1>點擊切換此設定。</#cbd5e1>"
       'on': "啟用"
       'off': "停用"
     editor:
-      title: "<#f4d35e><bold><option></bold></#f4d35e>"
-      body: "<#cbd5e1>留空即可清除此設定。</#cbd5e1>"
-      input: "<#7b8aa0>新的值</#7b8aa0>"
       save: "<#6dd3a0><bold>儲存</bold></#6dd3a0>"
-      cancel: "<#f95738>取消</#f95738>"
-    string:
-      edit:
-        lore: "<#93c5fd>▶ 點擊編輯。</#93c5fd>"
-      cycle:
-        lore: "<#93c5fd>▶ 左鍵 / 右鍵切換選項。</#93c5fd>"
     view:
       lore: "<#f4d35e>僅供查看，如需修改請聯絡管理員。</#f4d35e>"
     label:
@@ -3428,7 +3434,7 @@ announce:
   sent: "<#6dd3a0>公告已發送。</#6dd3a0>"
 confirm:
   title: "<red><bold>是否確定？</bold></red>"
-  filler: "<dark_red> </dark_red>"
+  subtitle: "<#8a96b0>繼續之前，請再確認一次。</#8a96b0>"
   continue:
     text: "<#6dd3a0><bold>繼續</bold></#6dd3a0>"
     lore: "<#cbd5e1>點擊確認此操作。</#cbd5e1>"
@@ -3438,7 +3444,6 @@ confirm:
   cancelled: "<#f4d35e>操作已取消。</#f4d35e>"
 checkready:
   title: "<#f4d35e><bold>準備確認</bold></#f4d35e>"
-  filler: "<dark_gray> </dark_gray>"
   ready:
     text: "<#6dd3a0><bold>已準備</bold></#6dd3a0>"
     lore: "<#cbd5e1>準備完成後請點擊此處。</#cbd5e1>"
@@ -3500,24 +3505,19 @@ recipes:
   title: "<#334155><bold>自訂配方</bold></#334155>"
   detail:
     title: "<#334155><bold><recipe></bold></#334155>"
-  filler: "<dark_gray> </dark_gray>"
-  close: "<#f95738><bold>關閉</bold></#f95738>"
   shaped: "有序合成"
   shapeless: "無序合成"
   click:
-    view: "<#93c5fd>▶ 點擊查看配方</#93c5fd>"
-    toggle: "<#93c5fd>▶ 右鍵開啟/關閉</#93c5fd>"
+    toggle: "<#93c5fd>開啟/關閉</#93c5fd>"
+    view: "<#93c5fd>▶ 點擊查看配方。</#93c5fd>"
   empty: "<#f95738><bold>無自訂配方</bold></#f95738>"
   result:
     label: "<#7b8aa0><bold>結果</bold></#7b8aa0>"
   back: "<#f95738><bold>返回配方</bold></#f95738>"
   type: "<#7b8aa0>類型：</#7b8aa0> <white><type></white>"
-  shape:
-    text: "<#7b8aa0>形狀：</#7b8aa0>"
-    row: "<#9db4c0><row></#9db4c0>"
   ingredients: "<#7b8aa0>材料：</#7b8aa0>"
   ingredient:
-    entry: "<#9db4c0>- <white><ingredient></white></#9db4c0>"
+    entry: "<#9db4c0>- <white><amount> × <ingredient></white></#9db4c0>"
   water:
     bottle:
       name: "水瓶"
@@ -3619,7 +3619,7 @@ match:
     winner: "<#7b8aa0>  勝利者   </#7b8aa0><#f4d35e><bold><winner></bold></#f4d35e>"
     duration: "<#7b8aa0>  持續時間 </#7b8aa0><white><duration></white>"
     players: "<#7b8aa0>  玩家人數 </#7b8aa0><white><players></white>"
-    divider: "<#1e293b><st>                                        </st></#1e293b>"
+    divider: "<#1e283b><st>                                        </st></#1e283b>"
     kills:
       header: "<#93c5fd>  擊殺排行榜</#93c5fd>"
       entry: "<#7b8aa0>  <rank>.</#7b8aa0> <white><player></white><#7b8aa0> — </#7b8aa0><#f4d35e><kills> 擊殺</#f4d35e>"
@@ -3633,7 +3633,6 @@ match:
   stopped: "<#f95738>比賽已停止。</#f95738>"
   reset: "<#6dd3a0>所有比賽狀態與玩家資料已強制重設。</#6dd3a0>"
 title:
-  opening: "<gradient:#f4d35e:#ee964b><bold>試煉UHC</bold></gradient>"
   match:
     starting: "<#f4d35e><bold>比賽即將開始</bold></#f4d35e>"
     started: "<#6dd3a0><bold>比賽開始</bold></#6dd3a0>"
@@ -3656,7 +3655,7 @@ title:
   final:
     duel:
       start: "<#f4d35e><bold>最終對決</bold></#f4d35e>"
-    heal: "<#6dd3a0><bold>最終治療</bold></#6dd3a0>"
+    heal: "<#6dd3a0><bold>最終回血</bold></#6dd3a0>"
   sudden:
     death:
       start: "<#f95738><bold>殊死戰</bold></#f95738>"
@@ -3670,10 +3669,6 @@ title:
     text: "<#f95738><bold>已淘汰</bold></#f95738>"
     announcement: "<#f95738><bold>玩家淘汰</bold></#f95738>"
 subtitle:
-  opening:
-    starting: "<white>即將開始</white>"
-    credits: "<#7b8aa0>作者：<white>平常網路資訊工作室 (RNIS)</white></#7b8aa0>"
-    version: "<#7b8aa0>版本 <white><version></white></#7b8aa0>"
   match:
     starting: "<white><seconds> 秒後開始倒數。</white>"
     started: "<white>UHC 比賽正式開始。</white>"
@@ -3728,13 +3723,14 @@ unfreeze:
   notify: "<#6dd3a0>您已解除凍結。</#6dd3a0>"
 scatter:
   sequence:
+    tour: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#faf0ca>比賽導覽開始：導覽期間會替每個人選好落點，結束後大家一起降落。</#faf0ca>"
     start: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#faf0ca>開始分散傳送，玩家將依序傳送。</#faf0ca>"
   bossbar: "<#f4d35e>正在分散玩家 <white><current>/<total></white> <#7b8aa0>（<percent>%）</#7b8aa0>"
   settle:
     wait: "<#6dd3a0>⚑</#6dd3a0> <dark_gray>»</dark_gray> <#9db4c0>等待地圖穩定中（<seconds> 秒）。</#9db4c0>"
   countdown:
-    bossbar: "<#22c55e>比賽將在 <white><seconds></white> 秒後開始"
-    title: "<#22c55e><bold><seconds></bold></#22c55e>"
+    bossbar: "<#22c45e>比賽將在 <white><seconds></white> 秒後開始"
+    title: "<#22c45e><bold><seconds></bold></#22c45e>"
 grace:
   start: "<#f95738>⚔</#f95738> <dark_gray>»</dark_gray> <#faf0ca>保護時間開始（<seconds> 秒）。</#faf0ca>"
   end: "<#f95738>⚔</#f95738> <dark_gray>»</dark_gray> <#f95738>保護時間結束，PvP 已啟用。</#f95738>"
@@ -3781,10 +3777,6 @@ spectator:
   target:
     head:
       name: "<#6dd3a0><bold><player></bold></#6dd3a0>"
-      teleport:
-        lore: "<#cbd5e1>點擊傳送。</#cbd5e1>"
-      inspect:
-        lore: "<#cbd5e1>點擊查看物品欄。</#cbd5e1>"
       health: "<#fca5a5>❤ <white><health></white></#fca5a5>   <#7b8aa0>延遲</#7b8aa0> <white><ping>ms</white>"
       coords: "<#7b8aa0>X:</#7b8aa0> <white><x></white> <#7b8aa0>Y:</#7b8aa0> <white><y></white> <#7b8aa0>Z:</#7b8aa0> <white><z></white>"
     offline: "<#f95738>找不到玩家 <player>。</#f95738>"
@@ -3840,7 +3832,6 @@ staffchat:
   disabled: "<#f95738>管理員聊天模式已停用。</#f95738>"
 alerts:
   title: "<black><bold>警示設定</bold></black>"
-  filler: "<dark_gray> </dark_gray>"
   report: "<#f95738><bold>檢舉警示</bold></#f95738>"
   item:
     pvp: "<#ee964b><bold>物品 PvP 警示</bold></#ee964b>"
@@ -3849,8 +3840,6 @@ alerts:
   status:
     'on': "<#6dd3a0>狀態：已啟用</#6dd3a0>"
     'off': "<#f95738>狀態：已停用</#f95738>"
-  click:
-    toggle: "<#cbd5e1>點擊切換此警示類型。</#cbd5e1>"
   category:
     enabled: "<#6dd3a0><category> 警示已啟用。</#6dd3a0>"
     disabled: "<#f95738><category> 警示已停用。</#f95738>"
@@ -3924,7 +3913,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "match.summary.member-alive": "<white><player></white>"
 "match.summary.member-dead": "<gray><st><player></st></gray>"
 "language.dialog.title": "<#93c5fd><bold>🌐 語言</bold></#93c5fd>"
-"language.dialog.body": "<#cbd5e1>選擇試煉UHC的顯示語言，聊天、選單、標題與計分板將同步切換。</#cbd5e1>"
+"language.dialog.body": "<#cbd5e1>選擇試煉UHC的顯示語言，聊天、選單、標題與資訊面板將同步切換。</#cbd5e1>"
 "language.dialog.current": "<#7b8aa0>目前：</#7b8aa0> <white><language></white>"
 "language.dialog.current-auto": "<#7b8aa0>目前：</#7b8aa0> <white><language></white> <#7b8aa0>（自動）</#7b8aa0>"
 "language.dialog.auto": "<#7dd3fc>🌐 自動</#7dd3fc> <#7b8aa0>（跟隨 Minecraft）</#7b8aa0>"
@@ -3984,9 +3973,9 @@ list-separator: "<dark_gray>、</dark_gray>"
 "ceremony.montage.subtitle": "<#cbd5e1>特別表揚</#cbd5e1>"
 "ceremony.podium.title": "<gradient:#f4d35e:#ee964b><bold>頒獎台</bold></gradient>"
 "ceremony.podium.subtitle": "<#cbd5e1>前三名</#cbd5e1>"
-"ceremony.podium.place.1": "<gradient:#fde047:#f59e0b><bold>🥇 第一名</bold></gradient>"
-"ceremony.podium.place.2": "<gradient:#e5e7eb:#94a3b8><bold>🥈 第二名</bold></gradient>"
-"ceremony.podium.place.3": "<gradient:#fdba74:#c2410c><bold>🥉 第三名</bold></gradient>"
+"ceremony.podium.place.1": "<glyph:medal_gold> <gradient:#fde047:#f59e0b><bold>第一名</bold></gradient>"
+"ceremony.podium.place.2": "<glyph:medal_silver> <gradient:#e5e7eb:#94a3b8><bold>第二名</bold></gradient>"
+"ceremony.podium.place.3": "<glyph:medal_bronze> <gradient:#fdba74:#c2410c><bold>第三名</bold></gradient>"
 "ceremony.podium.name": "<white><name></white>"
 "ceremony.award.kills.title": "<#f4d35e><bold>⚔ 最多擊殺</bold></#f4d35e>"
 "ceremony.award.kills.value": "<white><player></white> <#7b8aa0>·</#7b8aa0> <#cbd5e1><value> 殺</#cbd5e1>"
@@ -4062,7 +4051,7 @@ list-separator: "<dark_gray>、</dark_gray>"
 "history.nav.select": "<#f95738>[刪除比賽…]</#f95738>"
 "history.no-winner": "無勝者"
 "history.not-found": "<#9db4c0>☰</#9db4c0> <dark_gray>»</dark_gray> <#f95738>找不到第 #<id> 場比賽。</#f95738>"
-"history.view.header": "<#f4d35e><bold>第 #<id> 場比賽</bold></#f4d35e> <#7b8aa0><date></#7b8aa0>"
+"history.view.header": "<#f4d35e><bold>第 #<id> 場比賽</bold></#f4d35e> <#7b8aa0><date></#7b8aa0> <#64748b><code></#64748b>"
 "history.view.info": "<#7b8aa0>時長</#7b8aa0> <white><duration></white> <#7b8aa0>· 模式</#7b8aa0> <white><mode></white> <#7b8aa0>· 世界</#7b8aa0> <white><world></white>"
 "history.view.winner": "<#7b8aa0>勝者</#7b8aa0> <#f4d35e><winner></#f4d35e>"
 "history.view.scenarios": "<#7b8aa0>情境</#7b8aa0> <white><scenarios></white>"
@@ -4089,6 +4078,17 @@ list-separator: "<dark_gray>、</dark_gray>"
 "history.delete.stats-reverted": "<#9db4c0>☰</#9db4c0> <dark_gray>»</dark_gray> <#6dd3a0>已從 <players> 筆玩家紀錄中扣回這些比賽的統計，排行榜已更新。</#6dd3a0>"
 "admin.desc.history": "- 比賽紀錄：查看與刪除"
 "admin.desc.hologram": "- 可點擊的排行榜全息圖"
+"admin.desc.lobbytitle": "- 大廳的 3D 標題（每種語言一個模型）"
+"admin.desc.npc-create": "- 在你站的位置放一個 NPC，面向你看的方向"
+"admin.desc.npc-move": "- 把 NPC 移到你站的位置"
+"admin.desc.npc-tp": "- 傳送到 NPC"
+"admin.desc.npc-remove": "- 移除 NPC"
+"admin.desc.npc-list": "- 列出所有 NPC"
+"admin.desc.npc-skin": "- 玩家 NPC 的外觀（玩家名稱）"
+"admin.desc.npc-name": "- 玩家 NPC 的標籤（MiniMessage，留空就移除）"
+"admin.desc.npc-action": "- 點 NPC 時執行的指令（留空則用該種類預設的動作）"
+"admin.desc.npc-pose": "- 玩家 NPC 的姿勢：站、坐或蹲"
+"admin.desc.npc-item": "- 讓玩家 NPC 拿著你手上的物品"
 "lb-hologram.usage": "<#f4d35e><bold>/admin lobby hologram</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin lobby hologram set <類型></#93c5fd> <#7b8aa0>- 將排行榜放置於您所在的位置</#7b8aa0><newline> <#93c5fd>/admin lobby hologram item <類型></#93c5fd> <#7b8aa0>- 使用手上的物品作為圖示</#7b8aa0><newline> <#93c5fd>/admin lobby hologram size <類型> <寬> <高></#93c5fd> <#7b8aa0>- 調整看板大小（預設 5 x 4，規則 8 x 4）</#7b8aa0><newline> <#93c5fd>/admin lobby hologram remove <類型></#93c5fd> <#7b8aa0>- 移除排行榜</#7b8aa0><newline> <#93c5fd>/admin lobby hologram list</#93c5fd> <#7b8aa0>- 列出所有排行榜（點擊可傳送）</#7b8aa0><newline> <#93c5fd>/admin lobby hologram show</#93c5fd> <#7b8aa0>- 以粒子顯示點擊範圍</#7b8aa0><newline> <#93c5fd>/admin lobby hologram toggle [all|text|frames]</#93c5fd> <#7b8aa0>- 僅對您隱藏或顯示看板（或只有文字／框架），例如比較 FPS</#7b8aa0><newline> <#93c5fd>/admin lobby hologram client [玩家]</#93c5fd> <#7b8aa0>- 查看玩家遊戲送出的資訊：版本、用戶端和模組頻道</#7b8aa0><newline> <#7b8aa0>將 stat 換成 <#93c5fd>rules</#93c5fd>、<#93c5fd>activities</#93c5fd>、<#93c5fd>links</#93c5fd> 或 <#93c5fd>clans</#93c5fd> 即可放置伺服器規則看板、活動排程看板、連結看板或戰隊排行看板。</#7b8aa0>"
 "lb-hologram.set": "<#6dd3a0>已將 <stat> <#6dd3a0>排行榜放在 <white><where></white>。</#6dd3a0>"
 "lb-hologram.removed": "<#6dd3a0>已移除 <stat> <#6dd3a0>排行榜。</#6dd3a0>"
@@ -4322,6 +4322,7 @@ time-units:
 "activity-dialog.entry-started": "<#7b8aa0><st><name></st></#7b8aa0>"
 "activity-dialog.entry-tooltip": "<#cbd5e1>入場</#cbd5e1> <white><open></white><newline><#cbd5e1>開始</#cbd5e1> <white><start></white><newline><#cbd5e1>模式</#cbd5e1> <white><preset></white>"
 "activity-dialog.close": "關閉"
+"menu-dialog.close": "<#7b8aa0>關閉</#7b8aa0>"
 "activity-dialog.new-title": "<#93c5fd><bold>新增活動</bold></#93c5fd>"
 "activity-dialog.edit-title": "<#93c5fd><bold>編輯活動</bold></#93c5fd>"
 "activity-dialog.form-body": "<#cbd5e1>日期：2026-10-10 或 10/10 · 時間：20:00（<zone>）。名稱可使用顏色（MiniMessage）。設定預設將公告於 Discord，並於開放入場時載入。</#cbd5e1>"
@@ -4424,6 +4425,7 @@ time-units:
 "lobby-games.floor.setup.saved": "<#6dd3a0>場地已儲存：<layers> 層共 <blocks> 個地板方塊，水面 Y <water>。</#6dd3a0> <#7b8aa0>每次重置皆會還原為此狀態。</#7b8aa0>"
 "lobby-games.floor.setup.no-water": "無（掉出範圍下方即出局）"
 "lobby-games.floor.setup.join-set": "<#6dd3a0>加入用全息字已放置於此處。</#6dd3a0>"
+"lobby-games.floor.setup.leave-set": "<#6dd3a0>已把離開點設在這裡。</#6dd3a0> <#7b8aa0>離開、出局或比完的玩家會傳送到這裡。</#7b8aa0>"
 "lobby-games.floor.setup.cannot-start": "<#f95738>目前無法開始（尚未設定，或正在進行／重置中）。</#f95738>"
 "lobby-games.floor.setup.not-enough": "<#f95738>至少需要 <min> 人排隊。</#f95738>"
 "lobby-games.floor.setup.stopped": "<#6dd3a0>已停止本局，地板正在重置。</#6dd3a0>"
@@ -4431,7 +4433,7 @@ time-units:
 "lobby-games.floor.setup.cleared": "<#6dd3a0>場地已移除。</#6dd3a0>"
 "lobby-games.floor.setup.unset": "未設定"
 "lobby-games.floor.setup.saved-short": "<blocks> 個方塊，<layers> 層"
-"lobby-games.floor.setup.info": "<#f4d35e><bold><game></bold></#f4d35e><newline> <#7b8aa0>pos1：</#7b8aa0> <white><pos1></white><newline> <#7b8aa0>pos2：</#7b8aa0> <white><pos2></white><newline> <#7b8aa0>已存地板：</#7b8aa0> <white><saved></white><newline> <#7b8aa0>加入點：</#7b8aa0> <white><join></white><newline> <#7b8aa0>狀態：</#7b8aa0> <white><state></white> <#7b8aa0>· 排隊</#7b8aa0> <white><queue></white> <#7b8aa0>· 遊玩中</#7b8aa0> <white><alive></white>"
+"lobby-games.floor.setup.info": "<#f4d35e><bold><game></bold></#f4d35e><newline> <#7b8aa0>pos1：</#7b8aa0> <white><pos1></white><newline> <#7b8aa0>pos2：</#7b8aa0> <white><pos2></white><newline> <#7b8aa0>已存地板：</#7b8aa0> <white><saved></white><newline> <#7b8aa0>加入點：</#7b8aa0> <white><join></white><newline> <#7b8aa0>離開點：</#7b8aa0> <white><leave></white><newline> <#7b8aa0>狀態：</#7b8aa0> <white><state></white> <#7b8aa0>· 排隊</#7b8aa0> <white><queue></white> <#7b8aa0>· 遊玩中</#7b8aa0> <white><alive></white>"
 "lobby-games.floor.state.waiting": "等待玩家"
 "lobby-games.floor.state.running": "進行中"
 "lobby-games.floor.state.resetting": "重置地板中"
@@ -4570,7 +4572,7 @@ time-units:
 "supporter.how": "<#7b8aa0>加成我們的 Discord 伺服器，或以任何方式按月贊助：請在 Discord 私訊管理員。</#7b8aa0>"
 "supporter.link": "<#fb923c>[<link>]</#fb923c> <#7b8aa0>- 點擊開啟</#7b8aa0>"
 "cosmetics.supporter.tab": "<#fb923c><bold>贊助者造型</bold></#fb923c>"
-"cosmetics.supporter.tab-lore": "<#9db4c0>贊助者限定，用點數購買。</#9db4c0>"
+"cosmetics.supporter.tab-lore": "<#9db4c0>贊助者限定：只有贊助者能從抽獎機抽到。</#9db4c0>"
 "cosmetics.supporter.tab-unlocked": "<#6dd3a0>✔ 您是贊助者，感謝您的支持！</#6dd3a0>"
 "cosmetics.supporter.tab-locked": "<#f95738>成為贊助者即可解鎖，詳見 /supporter</#f95738>"
 "cosmetics.supporter.title": "<#b7791f>✦</#b7791f> <#404040>贊助者造型</#404040>"
@@ -4721,7 +4723,6 @@ time-units:
 "private.menu.public-presets": "<#6dd3a0><bold>其他主持人的公開預設 →</bold></#6dd3a0>"
 "private.menu.preset-public": "<#6dd3a0>公開：其他主持人也可載入</#6dd3a0>"
 "private.menu.preset-private": "<#c084fc>私人：僅限您本人</#c084fc>"
-"private.menu.preset-actions": "<#f4d35e>左鍵：載入 · 右鍵：公開/私人 · Shift+右鍵：刪除</#f4d35e>"
 "private.menu.preset-by": "<#7b8aa0>作者：<player></#7b8aa0>"
 "private.menu.click-load": "<#f4d35e>點擊載入</#f4d35e>"
 "private.menu.save-preset": "<#6dd3a0><bold>儲存目前設定</bold></#6dd3a0>"
@@ -4729,7 +4730,6 @@ time-units:
 "private.menu.seeds": "<#e5e7eb><bold>種子</bold></#e5e7eb>"
 "private.menu.seeds-lore": "<#7b8aa0>您儲存的地圖種子</#7b8aa0>"
 "private.menu.seeds-title": "<#404040>您的種子 <count>/<max></#404040>"
-"private.menu.seed-actions": "<#f4d35e>點擊：公開/私人 · Shift+右鍵：刪除</#f4d35e>"
 "private.menu.save-seed": "<#6dd3a0><bold>儲存這張地圖的種子</bold></#6dd3a0>"
 "private.menu.save-seed-lore": "<#7b8aa0>日後可再次遊玩同一張地圖</#7b8aa0>"
 "private.menu.end": "<#f95738><bold>結束私人場</bold></#f95738>"
@@ -4933,9 +4933,9 @@ time-units:
 "tutorial.stop.podium.title": "<#f4d35e><bold>頒獎台</bold></#f4d35e>"
 "tutorial.stop.podium.subtitle": "<#cbd5e1>贏家登台之處</#cbd5e1>"
 "tutorial.stop.podium.text": "<#93c5fd>ⓘ</#93c5fd> <dark_gray>»</dark_gray> <#f4d35e><bold>頒獎台</bold></#f4d35e><newline><#cbd5e1>每場比賽結束後，鏡頭將移至此處：先頒發各項獎項，再由前三名登上頒獎台。</#cbd5e1>"
-"tutorial.stop.pvp.title": "<#f4d35e><bold>大廳 PvP 與練習場</bold></#f4d35e>"
+"tutorial.stop.pvp.title": "<#f4d35e><bold>練習場</bold></#f4d35e>"
 "tutorial.stop.pvp.subtitle": "<#cbd5e1>等候期間也可對戰</#cbd5e1>"
-"tutorial.stop.pvp.text": "<#93c5fd>ⓘ</#93c5fd> <dark_gray>»</dark_gray> <#f4d35e><bold>大廳 PvP 與練習場</bold></#f4d35e><newline><#cbd5e1>將快捷欄中的劍持於手上 3 秒，即可與同樣開啟 PvP 的玩家對戰。<#93c5fd>/practice</#93c5fd> 將帶您前往配有完整套裝的練習場。</#cbd5e1>"
+"tutorial.stop.pvp.text": "<#93c5fd>ⓘ</#93c5fd> <dark_gray>»</dark_gray> <#f4d35e><bold>練習場</bold></#f4d35e><newline><#cbd5e1>對快捷欄中的劍按右鍵，或使用 <#93c5fd>/practice</#93c5fd>，即可前往配有完整套裝的練習場對戰。</#cbd5e1>"
 "tutorial.stop.teams.title": "<#f4d35e><bold>隊伍、投票與套裝</bold></#f4d35e>"
 "tutorial.stop.teams.subtitle": "<#cbd5e1>為下一場比賽做準備</#cbd5e1>"
 "tutorial.stop.teams.text": "<#93c5fd>ⓘ</#93c5fd> <dark_gray>»</dark_gray> <#f4d35e><bold>隊伍、投票與套裝</bold></#f4d35e><newline><#cbd5e1>使用 <#93c5fd>/team</#93c5fd> 建立或加入隊伍，使用 <#93c5fd>/vote</#93c5fd> 投票選擇下一場的情境，使用 <#93c5fd>/kit</#93c5fd> 查看開場套裝。</#cbd5e1>"
@@ -5159,7 +5159,7 @@ clan:
     was-denied: "<#f4d35e><white><clan></white> 已拒絕您的加入申請。</#f4d35e>"
     waiting: "<#c4b5fd>⚜</#c4b5fd> <dark_gray>»</dark_gray> <#f4d35e>有 <white><count></white> 位玩家申請加入您的戰隊。</#f4d35e> <click:run_command:'/clan'><#93c5fd><u>開啟 /clan</u></#93c5fd></click>"
   chat:
-    format: "<#f472b6>[戰隊]</#f472b6> <role><white><player></white><dark_gray> » </dark_gray><#fbcfe8><message></#fbcfe8>"
+    format: "<white><font:trialuhc:rank>\uE045</font></white> <dark_gray>│</dark_gray> <role><white><player></white><dark_gray>:</dark_gray> <#fbcfe8><message></#fbcfe8>"
     spy-format: "<#7b8aa0>[監聽]</#7b8aa0> <clan_tag> <white><player></white><dark_gray> » </dark_gray><gray><message></gray>"
     discord-format: "<#f472b6>[戰隊]</#f472b6> <#5865f2>[Discord]</#5865f2> <white><player></white><dark_gray> » </dark_gray><#fbcfe8><message></#fbcfe8>"
     mode-on: "<#6dd3a0>已開啟戰隊聊天：您的訊息將傳送至戰隊。</#6dd3a0> <#7b8aa0>訊息開頭加上 ! 可在公開聊天發言；再輸入一次 <white>/cc</white> 即可關閉。</#7b8aa0>"
@@ -5337,7 +5337,7 @@ clan:
       invite: "<#6dd3a0><bold>邀請玩家</bold></#6dd3a0>"
       invite-lore:
         - "<#cbd5e1>點擊邀請玩家（離線玩家將於下次上線時收到）。</#cbd5e1>"
-        - "<#7b8aa0>加入申請：<requests>（右鍵）</#7b8aa0>"
+        - "<#7b8aa0>加入申請：<requests></#7b8aa0>"
       stats: "<#facc15><bold>統計</bold></#facc15>"
       stats-lore:
         - "<#f4d35e>★ 勝場</#f4d35e> <white><wins></white>"
@@ -5363,7 +5363,7 @@ clan:
     requests:
       title: "加入申請"
       lore:
-        - "<#6dd3a0>左鍵接受</#6dd3a0> <#7b8aa0>·</#7b8aa0> <#f95738>右鍵拒絕</#f95738>"
+        - "<#6dd3a0>點擊接受</#6dd3a0>"
     levels:
       title: "[<tag>] 等級"
       current: "<#c4b5fd><bold>等級 <level></bold></#c4b5fd> <#7b8aa0>（<xp> 經驗值）</#7b8aa0>"
@@ -5437,14 +5437,6 @@ clan:
         - "<#7b8aa0>將先確認，且無法復原。</#7b8aa0>"
       pick: "<#6dd3a0>點擊使用</#6dd3a0>"
       locked: "<#f95738>戰隊等級 <level> 解鎖</#f95738>"
-  leaderboard:
-    title: "<#f472b6><bold>🛡 戰隊排行</bold></#f472b6>"
-    tab: "<#f472b6>🛡 戰隊</#f472b6>"
-    players: "<#cbd5e1>« 玩家</#cbd5e1>"
-    header: "<#f4d35e><bold><stat></bold></#f4d35e> <#7b8aa0>· <period></#7b8aa0>"
-    entry: "<#7b8aa0>#<rank></#7b8aa0> <clan_tag> <white><clan></white> <#6dd3a0><value></#6dd3a0> <#7b8aa0>· 等級 <level></#7b8aa0>"
-    yours: "<#7b8aa0>您的戰隊：</#7b8aa0> <white>#<rank></white> <#6dd3a0><value></#6dd3a0>"
-    yours-unranked: "<#7b8aa0>您的戰隊 <clan_tag> 尚未上榜。</#7b8aa0>"
   holo:
     board: "🛡 戰隊排行榜 · <stat> 🛡"
     hint: "<#7b8aa0>按右鍵或左鍵切換時段 · 潛行時點擊切換項目</#7b8aa0>"
@@ -5647,63 +5639,6 @@ lobby-stack:
   throw-hint: "<#f4d35e>有玩家爬到您身上。</#f4d35e> <#cbd5e1>長按 <white>潛行</white> 即可將對方甩下。</#cbd5e1>"
   # Filling while the bottom of a stack holds sneak; full = thrown.
   throw-charging: "<#f4d35e>甩出</#f4d35e> <#f95738><filled></#f95738><#3f4a5a><empty></#3f4a5a>"
-clan-stage:
-  # The 3D clan view (/clan info, the clan list), next to profile-stage.
-  members-title: "<#f95738><bold><title></bold></#f95738> <#7b8aa0>（<page>/<pages>）</#7b8aa0>"
-  page-prev: "<#93c5fd>◀ 上一頁</#93c5fd>"
-  page-next: "<#93c5fd>下一頁 ▶</#93c5fd>"
-  member-info: "<#f4d35e><role></#f4d35e> <#7b8aa0>·</#7b8aa0> <state>"
-  member-joined: "<#7b8aa0>加入於 <white><date></white></#7b8aa0>"
-  action:
-    profile: "<#93c5fd>查看 3D 個人資料</#93c5fd>"
-    promote: "<#6dd3a0>升為幹部</#6dd3a0>"
-    demote: "<#f4d35e>降為隊員</#f4d35e>"
-    transfer: "<#f4d35e>轉讓隊長</#f4d35e>"
-    kick: "<#f95738>踢出戰隊</#f95738>"
-    back: "<#9db4c0>← 回到成員列表</#9db4c0>"
-    invite: "<#6dd3a0>邀請玩家</#6dd3a0>"
-    requests: "<#93c5fd>加入申請（<count>）</#93c5fd>"
-    chat-on: "<#cbd5e1>戰隊聊天：</#cbd5e1><#6dd3a0>開啟</#6dd3a0>"
-    chat-off: "<#cbd5e1>戰隊聊天：</#cbd5e1><#7b8aa0>關閉</#7b8aa0>"
-    settings: "<#cbd5e1>戰隊設定</#cbd5e1>"
-    disband: "<#f95738>解散戰隊</#f95738>"
-    leave: "<#f95738>離開戰隊</#f95738>"
-  title: "<#f95738><bold>試煉UHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>戰隊資料</white>"
-  overview: "戰隊概覽"
-  max-level: "最高等級"
-  description: "<#9db4c0><italic><description></italic></#9db4c0>"
-  member-online: "<#6dd3a0>●</#6dd3a0> <#f4d35e><role></#f4d35e> <white><name></white>"
-  member-offline: "<#3f4a5a>●</#3f4a5a> <#7b8aa0><role></#7b8aa0> <#9db4c0><name></#9db4c0>"
-  more: "<#7b8aa0>另有 <count> 人</#7b8aa0>"
-  reward-reached: "<#6dd3a0>✔ Lv.<level></#6dd3a0> <white><rewards></white>"
-  reward-locked: "<#7b8aa0>✘ Lv.<level> <rewards></#7b8aa0>"
-  reward-separator: "、"
-  figure-line: "<#f4d35e><role></#f4d35e> <white><player></white>"
-  name: "<clan_tag> <white><bold><clan></bold></white>"
-  status: "<#c4b5fd>等級 <level></#c4b5fd> <#6dd3a0><filled></#6dd3a0><#3f4a5a><empty></#3f4a5a> <#7b8aa0><percent>%</#7b8aa0><newline><#9db4c0>隊員 <white><members>/<max></white></#9db4c0>"
-  label:
-    your-role: "您的身分"
-    war-losses: "戰隊戰敗場"
-    war-winrate: "戰隊戰勝率"
-    month-war-wins: "本月戰隊戰勝場排名"
-    level: "等級"
-    xp: "經驗值"
-    members: "隊員"
-    leader: "隊長"
-    join: "加入方式"
-    founded: "創立日期"
-    wins: "勝場"
-    kills: "擊殺"
-    games: "場數"
-    hours: "遊玩時數"
-    war-wins: "戰隊戰勝場"
-    wars: "戰隊戰場數"
-    rank-xp: "經驗值排名"
-    rank-wins: "勝場排名"
-    rank-kills: "擊殺排名"
-    rank-war-wins: "戰隊戰勝場排名"
-    week-wins: "本週勝場"
-    week-kills: "本週擊殺"
 settings-screen:
   # /settings2: the full-screen settings page with a cursor (screen/). Settings use settings-dialog.*.
   title: "<#f95738><bold>⚙ 試煉UHC</bold></#f95738> <#7b8aa0>/</#7b8aa0> <white>個人設定</white>"
@@ -5765,6 +5700,7 @@ admin-help:
     world: "比賽世界、大廳重生點和邊界"
     player: "玩家：回復、給予物品、遊戲模式、經驗值、階級、點數、資料"
     lobby: "大廳看板、導覽、大廳小遊戲、活動"
+    npc: "大廳 NPC（Discord NPC 會打開 /discord）"
     server: "伺服器：重新載入、重新啟動、白名單、卡頓、紀錄、戰隊"
   syntax:
     match:
@@ -5796,10 +5732,21 @@ admin-help:
       data: "<backup|import|cleardata|clearall> ..."
     lobby:
       hologram: "<set|物品|size|remove|toggle> ..."
+      title: "<set|turn|remove>"
       tutorial: "<動作> ..."
       games: "<start|stop> <遊戲>"
       activity: "[動作] ..."
       announce: "<訊息>"
+    npc:
+      create: "<id> [discord]"
+      move: "<id>"
+      tp: "<id>"
+      remove: "<id>"
+      skin: "<id> <player>"
+      name: "<id> [text]"
+      action: "<id> [command]"
+      pose: "<id> <stand|sit|sneak>"
+      item: "<id>"
     server:
       reboot: "[時間|cancel]"
       maintenance: "<on|off> [時間]"
@@ -5922,9 +5869,9 @@ staff-help:
 "player-help.discord.unlink": "解除 Discord 帳號連結"
 "player-help.settings.self": "開啟個人設定"
 "player-help.settings.toggle": "切換單一設定"
-"player-help.sb.self": "顯示或隱藏計分板"
-"player-help.sb.on": "顯示計分板"
-"player-help.sb.off": "隱藏計分板"
+"player-help.hud.self": "顯示或隱藏資訊面板"
+"player-help.hud.on": "顯示資訊面板"
+"player-help.hud.off": "隱藏資訊面板"
 "player-help.team.self": "開啟隊伍選單"
 "player-help.team.list": "所有隊伍"
 "player-help.team.join": "加入隊伍"
@@ -6238,8 +6185,6 @@ staff-help:
   - "<#7b8aa0>想選位置：站過去，基地選單 → 設這裡為重生點。</#7b8aa0>"
 "clan-base.menu.settings.on": "<#6dd3a0><bold>開啟</bold></#6dd3a0>"
 "clan-base.menu.settings.off": "<#9ca3af><bold>關閉</bold></#9ca3af>"
-"clan-base.menu.settings.click-toggle":
-  - "<#7b8aa0>點擊切換</#7b8aa0>"
 "clan-base.menu.people.title": "[<tag>] 基地裡的人（<count>）"
 "clan-base.menu.people.empty": "<#7b8aa0>目前沒有人在這裡</#7b8aa0>"
 "clan-base.menu.people.name": "<white><player></white>"
@@ -6268,8 +6213,6 @@ staff-help:
 "clan.unlock.clan-base": "戰隊基地（/clan base）"
 "clan.unlock.base-size": "基地 <size>"
 "clan.level-up.base": "  <#6dd3a0>✔ 戰隊基地：</#6dd3a0> <white><size></white>"
-"clan-stage.action.base": "<#6dd3a0>⌂ 戰隊基地</#6dd3a0>"
-"clan-stage.action.base-locked": "<#7b8aa0>⌂ 戰隊基地（等級 <needed>）</#7b8aa0>"
 "player-help.clan.base": "前往戰隊基地，或參觀其他基地"
 "clan-base.fight.members-only": "<#6dd3a0>⌂</#6dd3a0> <dark_gray>»</dark_gray> <#f95738>只有戰隊成員可以加入這裡的友誼賽。</#f95738>"
 "clan.menu.home.base-next": "<#93c5fd>戰隊等級 <level> 時擴大為 <white><size></white></#93c5fd>"
@@ -6342,3 +6285,272 @@ staff-help:
 "podium.effect.option.purple": "紫色"
 "podium.effect.option.pink": "粉紅色"
 "podium.effect.option.white": "白色"
+"resource-pack.prompt": "<#f4d35e>試煉UHC 的畫面上方資訊列、選單和大廳排行榜都使用伺服器自己的資源包。</#f4d35e>"
+"resource-pack.kick-declined": "<#f95738>此伺服器需要使用它的資源包。</#f95738><newline><newline><#9094A8>請到</#9094A8> <white>多人遊戲</white> <#9094A8>→ 選擇伺服器 →</#9094A8> <white>編輯</white><#9094A8>，將</#9094A8> <white>伺服器資源包</white> <#9094A8>設為</#9094A8> <white>啟用</white><#9094A8>，再重新加入。</#9094A8>"
+"resource-pack.kick-failed": "<#f95738>資源包下載失敗。</#f95738><newline><newline><#9094A8>請重新加入再試一次；若一直失敗，請告訴管理人員。</#9094A8>"
+"config-menu-filler": "<dark_gray> </dark_gray>"
+"config-menu-no-permission": "<#f4d35e>您可查看此選單，但僅管理員可編輯數值。</#f4d35e>"
+"config-menu-double-edit-lore": "<#cbd5e1>左鍵：-0.5 右鍵：+0.5 Shift：±5.0 丟棄鍵：±0.1</#cbd5e1>"
+"config-menu-group-lore": "<#7b8aa0>分類</#7b8aa0>"
+"config-menu-action-set-lobby-lore-2": "<#93c5fd>▶ 點擊將大廳設於此處。</#93c5fd>"
+"config-menu-value-lore": "<#7b8aa0>目前：</#7b8aa0> <white><value></white>"
+"config-menu-int-edit-lore": "<#cbd5e1>左鍵：-1 右鍵：+1 Shift：±10</#cbd5e1>"
+"config-menu-bool-edit-lore": "<#cbd5e1>點擊切換此設定。</#cbd5e1>"
+"config-menu-stop-button-confirm-lore": "<#f4d35e>需要再次確認。</#f4d35e>"
+"config-menu-reset-button-confirm-lore": "<#f4d35e>需要再次確認。</#f4d35e>"
+"scenarios.gui.hint-toggle": "<yellow>點擊切換"
+"scenarios.gui.modifier-dialog-title": "<dark_gray><bold><label></bold>"
+"scenarios.gui.modifier-dialog-input-label": "<#7b8aa0>新數值"
+"scenarios.gui.modifier-back": "<#7dd3fc><bold>返回情境列表</bold>"
+"scenarios.gui.modifier-hint": "<#93c5fd>▶ 點擊編輯。"
+"scenarios.gui.modifier-value": "<#7b8aa0>數值  <white><value></white>"
+"config-menu-action-no-permission-lore": "<#f95738>您沒有權限使用此功能。</#f95738>"
+"config-menu-action-set-lobby-lore-3": "<#7b8aa0>等同於 /admin world setlobby</#7b8aa0>"
+"config-menu-string-cycle-lore": "<#93c5fd>▶ 左鍵 / 右鍵切換選項。</#93c5fd>"
+"config.menu.filler": "<dark_gray> </dark_gray>"
+"config.menu.no.permission": "<#f4d35e>您可查看此選單，但僅管理員可編輯數值。</#f4d35e>"
+"config.menu.group.lore": "<#7b8aa0>分類</#7b8aa0>"
+"config.menu.action.no.permission.lore": "<#f95738>您沒有使用此功能的權限。</#f95738>"
+"config.menu.action.set.lobby.lore.2": "<#93c5fd>▶ 點擊將大廳設於此處。</#93c5fd>"
+"config.menu.action.set.lobby.lore.3": "<#7b8aa0>等同於 /admin world setlobby</#7b8aa0>"
+"config.menu.value.lore": "<#7b8aa0>目前：</#7b8aa0> <white><value></white>"
+"config.menu.int.edit.lore": "<#cbd5e1>左鍵：-1 右鍵：+1 Shift：±10</#cbd5e1>"
+"config.menu.double.edit.lore": "<#cbd5e1>左鍵：-0.5 右鍵：+0.5 Shift：±5.0 丟棄鍵：±0.1</#cbd5e1>"
+"config.menu.bool.edit.lore": "<#cbd5e1>點擊切換此設定。</#cbd5e1>"
+"config.menu.editor.title": "<#f4d35e><bold><option></bold></#f4d35e>"
+"config.menu.editor.body": "<#cbd5e1>留空即可清除此設定。</#cbd5e1>"
+"config.menu.editor.input": "<#7b8aa0>新的值</#7b8aa0>"
+"config.menu.editor.cancel": "<#f95738>取消</#f95738>"
+"config.menu.string.edit.lore": "<#93c5fd>▶ 點擊編輯。</#93c5fd>"
+"config.menu.string.cycle.lore": "<#93c5fd>▶ 左鍵 / 右鍵切換選項。</#93c5fd>"
+"cosmetics.shop.trails.name": "<#86efac>拖尾特效</#86efac>"
+"cosmetics.shop.trails.lore": "<#9db4c0>足跡、箭矢與釣竿的拖尾。</#9db4c0>"
+"cosmetics.shop.equipped-type": "<#7b8aa0><type>：</#7b8aa0> <white><name></white>"
+"cosmetics.shop.preview-hint": "<#c4b5fd>右鍵點擊以預覽</#c4b5fd>"
+menu:
+  extra:
+    deny: "<#f95738>拒絕</#f95738>"
+    requests: "<#93c5fd>加入申請</#93c5fd>"
+    toggle-public: "<#93c5fd>公開／私人</#93c5fd>"
+    delete: "<#f95738>刪除</#f95738>"
+  click-hint:
+    right: "<#7b8aa0>右鍵：</#7b8aa0>"
+    shift-right: "<#7b8aa0>Shift + 右鍵：</#7b8aa0>"
+  back: "<#7dd3fc><bold>返回</bold></#7dd3fc>"
+  title-path: "<menu> › <section>"
+  open-hint: "<#93c5fd>▶ 點擊開啟。</#93c5fd>"
+  section:
+    categories: "分類"
+    match: "比賽"
+    worlds: "維度"
+    clan: "戰隊"
+    you: "個人"
+  config:
+    category-lore: "<#7b8aa0><count> 項設定</#7b8aa0>"
+    scenarios: "<#c4b5fd><bold>情境</bold></#c4b5fd>"
+    scenarios-lore: "<#cbd5e1>開啟情境選單。</#cbd5e1>"
+  scenarios:
+    enabled: "<#6dd3a0><bold>已啟用的情境</bold></#6dd3a0> <#7b8aa0>（<count>）</#7b8aa0>"
+    enabled-line: "<#cbd5e1>• <name></#cbd5e1>"
+    enabled-more: "<#7b8aa0>……還有 <count> 個</#7b8aa0>"
+    enabled-none: "<#7b8aa0>無，本場是原版 UHC。</#7b8aa0>"
+    enabled-title: "已啟用"
+    category-lore: "<#7b8aa0>已啟用 <enabled> / <total></#7b8aa0>"
+"config-menu-locked-by": "<#f95738>🔒 已被 <white><setting></white> 鎖定</#f95738>"
+"toast.dimension.nether.opened.title": "<#6dd3a0><bold>地獄已開放</bold></#6dd3a0>"
+"toast.dimension.nether.opened.subtitle": "<white>地獄傳送門現在可以使用了。</white>"
+"toast.dimension.nether.closed.title": "<#f95738><bold>地獄已關閉</bold></#f95738>"
+"toast.dimension.nether.closed.subtitle": "<white>仍在其中的玩家已移至主世界。</white>"
+"toast.dimension.end.opened.title": "<#6dd3a0><bold>終界已開放</bold></#6dd3a0>"
+"toast.dimension.end.opened.subtitle": "<white>終界傳送門現在可以使用了。</white>"
+"toast.dimension.end.closed.title": "<#f95738><bold>終界已關閉</bold></#f95738>"
+"toast.dimension.end.closed.subtitle": "<white>仍在其中的玩家已移至主世界。</white>"
+"toast.level-up.title": "<#f4d35e><bold>等級提升</bold></#f4d35e>"
+"toast.level-up.subtitle": "<white>您已達到等級 <level>。</white>"
+"toast.rank-up.title": "<#f4d35e><bold>新階級</bold></#f4d35e>"
+"toast.rank-up.subtitle": "<white>您已獲得 <rank> 階級。</white>"
+"npc.usage": "<#f4d35e><bold>/admin npc</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin npc create <id> [discord]</#93c5fd> <#7b8aa0>- 在你站的位置放一個 NPC，面向你看的方向</#7b8aa0><newline> <#93c5fd>/admin npc move <id></#93c5fd> <#7b8aa0>- 移到你站的位置</#7b8aa0><newline> <#93c5fd>/admin npc tp <id></#93c5fd> <#7b8aa0>- 傳送過去</#7b8aa0><newline> <#93c5fd>/admin npc remove <id></#93c5fd> <#7b8aa0>- 移除</#7b8aa0><newline> <#93c5fd>/admin npc list</#93c5fd> <#7b8aa0>- 所有 NPC</#7b8aa0><newline> <#93c5fd>/admin npc create <id> player</#93c5fd> <#7b8aa0>- 玩家外型的 NPC</#7b8aa0><newline> <#93c5fd>/admin npc skin <id> <玩家></#93c5fd> <#7b8aa0>- 外觀</#7b8aa0><newline> <#93c5fd>/admin npc name <id> [文字]</#93c5fd> <#7b8aa0>- 標籤</#7b8aa0><newline> <#93c5fd>/admin npc action <id> [指令]</#93c5fd> <#7b8aa0>- 點它時執行的指令，例如 range</#7b8aa0><newline> <#93c5fd>/admin npc pose <id> <stand|sit|sneak></#93c5fd> <#7b8aa0>- 姿勢</#7b8aa0><newline> <#93c5fd>/admin npc item <id></#93c5fd> <#7b8aa0>- 拿著你手上的物品</#7b8aa0>"
+"npc.created": "<#6dd3a0>已放置 <white><type></white> NPC <white><id></white>。</#6dd3a0>"
+"npc.moved": "<#6dd3a0>已把 NPC <white><id></white> 移到這裡。</#6dd3a0>"
+"npc.removed": "<#6dd3a0>已移除 NPC <white><id></white>。</#6dd3a0>"
+"npc.not-found": "<#f95738>沒有叫 <white><id></white> 的 NPC。</#f95738> <#7b8aa0>請看 /admin npc list。</#7b8aa0>"
+"npc.exists": "<#f95738>已經有叫 <white><id></white> 的 NPC 了。</#f95738>"
+"npc.bad-id": "<#f95738>NPC 的 ID 是 1 到 32 個英文字母、數字、- 或 _。</#f95738>"
+"npc.bad-type": "<#f95738>沒有這種 NPC。可用的種類：<white><types></white>。</#f95738>"
+"npc.list-header": "<#f4d35e><bold>NPC</bold></#f4d35e>"
+"npc.list-entry": " <white><id></white> <#7b8aa0>·</#7b8aa0> <#93c5fd><type></#93c5fd> <#7b8aa0>·</#7b8aa0> <white><world> <x>, <y>, <z></white>"
+"npc.list-empty": "<#7b8aa0>還沒有放任何 NPC。用 /admin npc create <id> 放一個。</#7b8aa0>"
+"npc.discord.label": "<#5865F2><bold>Discord</bold></#5865F2><newline><#cbd5e1>點我加入</#cbd5e1>"
+"npc.changed": "<#6dd3a0>已更改 NPC <white><id></white> 的 <setting>。</#6dd3a0>"
+"npc.item-set": "<#6dd3a0>NPC <white><id></white> 現在拿著你手上的物品。</#6dd3a0>"
+"npc.player-only": "<#f95738>只有玩家 NPC 有這個設定。</#f95738> <#7b8aa0><white><id></white> 不是玩家 NPC。</#7b8aa0>"
+"npc.bad-pose": "<#f95738>可用的姿勢：<white><poses></white>。</#f95738>"
+"website-link": "<#9db4c0>伺服器官網：</#9db4c0><white><click:open_url:'<link>'><underlined><link></underlined></click></white>"
+"errors.website-not-configured": "<red>還沒有設定網站網址（lobby.yml 的 links.website）。</red>"
+"help-desc-website": "取得伺服器的網站連結。"
+"player-help.website.self": "伺服器的網站"
+
+# /tpsbar and /rambar: the admin lines beside the hotbar (debug/AdminBars). <tps>, <mspt>, <ping>, <used> come coloured.
+adminbar:
+  tps: "<#7b8aa0>TPS</#7b8aa0> <tps> <#7b8aa0>MSPT</#7b8aa0> <mspt> <#7b8aa0>延遲</#7b8aa0> <ping><#7b8aa0>ms</#7b8aa0>"
+  region: "<#7b8aa0>區域</#7b8aa0> <white>#<id></white> <#7b8aa0><chunks> 區塊</#7b8aa0> <#7b8aa0>TPS</#7b8aa0> <tps> <#7b8aa0>MSPT</#7b8aa0> <mspt> <#7b8aa0>延遲</#7b8aa0> <ping><#7b8aa0>ms</#7b8aa0>"
+  ram: "<#7b8aa0>記憶體</#7b8aa0> <used><#7b8aa0>/<max> GB</#7b8aa0>"
+  tps-on: "<#9db4c0>⚙</#9db4c0> <dark_gray>»</dark_gray> <#6dd3a0>已開啟伺服器效能列。</#6dd3a0> <#7b8aa0>再輸入一次 /tpsbar 即可隱藏。</#7b8aa0>"
+  tps-off: "<#9db4c0>⚙</#9db4c0> <dark_gray>»</dark_gray> <#9db4c0>已關閉伺服器效能列。</#9db4c0>"
+  ram-on: "<#9db4c0>⚙</#9db4c0> <dark_gray>»</dark_gray> <#6dd3a0>已開啟記憶體列。</#6dd3a0> <#7b8aa0>再輸入一次 /rambar 即可隱藏。</#7b8aa0>"
+  ram-off: "<#9db4c0>⚙</#9db4c0> <dark_gray>»</dark_gray> <#9db4c0>已關閉記憶體列。</#9db4c0>"
+
+# 比賽開場（game.intro）：倒數時的大廳空拍與傳送時的比賽世界巡覽卡片。
+intro:
+  mode-solo: "個人戰"
+  mode-team: "<size> 人隊伍"
+  card:
+    setup:
+      title: "<#f4d35e><bold>本場比賽</bold></#f4d35e>"
+      subtitle: "<white><players> 位玩家 · <mode> · 邊界 <border>×<border></white>"
+    scenarios:
+      title: "<#c4b5fd><bold>情境</bold></#c4b5fd>"
+      subtitle: "<white><scenarios></white>"
+    rules:
+      title: "<#93c5fd><bold>規則</bold></#93c5fd>"
+      subtitle: "<white><rules></white> <#7b8aa0>· /rules</#7b8aa0>"
+    after:
+      title: "<#6dd3a0><bold>比賽結束後</bold></#6dd3a0>"
+      subtitle: "<white>經驗值、階級與戰隊點數 · 頒獎台 · 回到大廳</white>"
+    arrival:
+      title: "<#faf0ca><bold>比賽世界</bold></#faf0ca>"
+      subtitle: "<white>邊界 <border>×<border>，中心在 0 0</white>"
+    grace:
+      title: "<#faf0ca><bold>保護時間</bold></#faf0ca>"
+      subtitle: "<white><time> 前不能 PvP，先把裝備備齊</white>"
+    border:
+      title: "<#ee964b><bold>邊界</bold></#ee964b>"
+      subtitle: "<white>從 <start> 到 <end> 縮小到 <size>×<size></white>"
+    nether:
+      title: "<#f95738><bold>地獄</bold></#f95738>"
+      subtitle: "<white><time> 關閉，在那之前離開</white>"
+    heal:
+      title: "<#6dd3a0><bold>最終回血</bold></#6dd3a0>"
+      subtitle: "<white><time> 所有存活玩家回滿生命值</white>"
+    meetup:
+      title: "<#fb7185><bold>Meetup</bold></#fb7185>"
+      subtitle: "<white><time> 剩下的玩家在競技場決戰</white>"
+    sudden-death:
+      title: "<#f95738><bold>殊死戰</bold></#f95738>"
+      subtitle: "<white><time> 剩下的玩家在基岩箱裡分出勝負</white>"
+    last-standing:
+      title: "<#f4d35e><bold>活到最後</bold></#f4d35e>"
+      subtitle: "<white>沒有時間限制，活到最後就贏</white>"
+    final-duel:
+      title: "<#f97316><bold>最終決鬥</bold></#f97316>"
+      subtitle: "<white>剩下兩方時：<time> 內分出勝負</white>"
+    win:
+      title: "<#f4d35e><bold>獲勝條件</bold></#f4d35e>"
+      subtitle: "<white>活到最後就是贏家</white>"
+  # The step explained in chat, framed (MatchIntro.sendChat; the rule also frames /tutorial's stops).
+  chat:
+    rule: "<gradient:#5c4c26:#f4d35e:#5c4c26><st>                                                            </st></gradient>"
+    head: " <#f4d35e>✦</#f4d35e> <title> <#475569>·</#475569> <#64748b><step>/<total></#64748b>"
+    setup-players: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><players></white> 位玩家 · <white><mode></white></#cbd5e1>"
+    setup-map: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>地圖大小 <white><border>×<border></white> 格，中心在 <white>0 0</white></#cbd5e1>"
+    setup-scatter: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>倒數結束後，所有人會被分散到地圖各處；先跟著鏡頭看一遍比賽流程</#cbd5e1>"
+    scenarios-list: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>本場情境：<white><all></white></#cbd5e1>"
+    scenarios-more: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>情境會改變一般規則，輸入 <#93c5fd>/scenarios</#93c5fd> 查看每個情境的說明</#cbd5e1>"
+    rules-list: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><all></white></#cbd5e1>"
+    rules-more: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>隨時輸入 <#93c5fd>/rules</#93c5fd> 閱讀完整規則</#cbd5e1>"
+    after-xp: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>勝利、擊殺和存活時間都能換到經驗值、階級和戰隊點數</#cbd5e1>"
+    after-podium: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>鏡頭會帶所有人到頒獎台：先頒獎，再請前三名上台</#cbd5e1>"
+    after-lobby: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>之後回到大廳，等下一場比賽</#cbd5e1>"
+    arrival-world: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>這就是比賽世界：<white><border>×<border></white> 格，中心在 <white>0 0</white></#cbd5e1>"
+    arrival-centre: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>地圖中心有從哪裡都看得到的標記，定位條也會指向它</#cbd5e1>"
+    arrival-drop: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>導覽結束後，你會在自己的位置降落</#cbd5e1>"
+    grace-off: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><time></white> 前不能 PvP，沒有玩家能傷害你</#cbd5e1>"
+    grace-traps: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>這段時間也不能在其他隊伍附近放置熔岩、火和 TNT</#cbd5e1>"
+    grace-gear: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>挖礦、收集蘋果和金子，做好盔甲和武器</#cbd5e1>"
+    grace-after: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><time></white> 之後，每一場戰鬥都算數</#cbd5e1>"
+    heal-when: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><time></white> 時所有存活的玩家回滿生命值</#cbd5e1>"
+    heal-last: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>只有這一次，也是整場比賽最後一次免費回血</#cbd5e1>"
+    heal-after: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>之後只能靠金蘋果和金頭顱回血</#cbd5e1>"
+    nether-open: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>地獄開放到 <white><time></white></#cbd5e1>"
+    nether-close: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>時間到時還在地獄的人會被移到主世界，傳送門也會失效</#cbd5e1>"
+    border-start: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><start></white> 起世界邊界開始往中心縮小</#cbd5e1>"
+    border-end: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>到 <white><end></white> 時從 <white><from>×<from></white> 縮到 <white><size>×<size></white></#cbd5e1>"
+    border-outside-tp: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>被困在邊界外？會受到傷害，並被傳送回邊界內</#cbd5e1>"
+    border-outside: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>被困在邊界外？回到邊界內之前會一直受到傷害</#cbd5e1>"
+    border-watch: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><#ee964b>現在就看：</#ee964b>邊界會像這樣縮進來</#cbd5e1>"
+    duel-when: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>只剩 2 位玩家或 2 支隊伍時，他們有 <white><time></white> 分出勝負</#cbd5e1>"
+    duel-closest: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>時間到時，離中心最近的一方獲勝</#cbd5e1>"
+    end-box: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><time></white> 時所有存活的玩家會被關進內部 <white><box>×<box></white> 的基岩箱</#cbd5e1>"
+    end-arena: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><white><time></white> 時所有存活的玩家會被帶到 Meetup 競技場</#cbd5e1>"
+    end-kit: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>每個人都會拿到隨機的鐵或鑽石盔甲和一把劍</#cbd5e1>"
+    end-spectators: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>決戰在另一個世界進行，旁觀者也會一起被帶過去觀戰</#cbd5e1>"
+    end-countdown: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>所有人落地後有 <white><countdown></white> 秒準備時間，這段時間不能 PvP</#cbd5e1>"
+    end-shrink: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>接著邊界在 <white><seconds></white> 秒內縮到 <white><size>×<size></white></#cbd5e1>"
+    end-damage: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>站在邊界外，每離開一格，每秒扣 <white><damage></white> 點生命值</#cbd5e1>"
+    end-win: "  <#f4d35e>▸</#f4d35e> <#cbd5e1><#fb7185>沒有時間限制：</#fb7185>最後存活的玩家或隊伍獲勝</#cbd5e1>"
+    last-nolimit: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>本場比賽沒有時間限制，也沒有殊死戰</#cbd5e1>"
+    last-win: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>不管多久，最後存活的玩家或隊伍獲勝</#cbd5e1>"
+    win-last: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>最後存活的玩家或隊伍贏得比賽</#cbd5e1>"
+    win-after: "  <#f4d35e>▸</#f4d35e> <#cbd5e1>接著是經驗值、點數和頒獎台，祝你好運！</#cbd5e1>"
+
+flyspeed:
+  set: "<#9db4c0>⚙</#9db4c0> <dark_gray>»</dark_gray> <#6dd3a0>飛行速度已設為 <#f4d35e><speed></#f4d35e>。</#6dd3a0> <#7b8aa0>單打 /flyspeed 可恢復。</#7b8aa0>"
+  reset: "<#9db4c0>⚙</#9db4c0> <dark_gray>»</dark_gray> <#9db4c0>飛行速度已恢復正常。</#9db4c0>"
+  usage: "<#f95738>用法：/flyspeed [1-10]，1 為正常，10 最快。</#f95738>"
+"loading-screen.subtitle": "<#cbd5e1>載入中...</#cbd5e1>"
+
+# The cosmetics machine (lobby.yml cosmetic-machine): draws, rarities and shards.
+"cosmetics.rarity.common": "普通"
+"cosmetics.rarity.rare": "稀有"
+"cosmetics.rarity.epic": "史詩"
+"cosmetics.rarity.legendary": "傳說"
+"cosmetics.rarity.mythic": "神話"
+"cosmetics.item.draw": "<#7b8aa0>尚未擁有：到大廳的特效抽獎機抽抽看。</#7b8aa0>"
+"cosmetics.item.trade": "<#facc15>可用 <cost> 個碎片兌換</#facc15>"
+"cosmetics.item.trade-short": "<#f95738>兌換需要 <cost> 個碎片（您有 <shards> 個）</#f95738>"
+"cosmetics.item.trade-button": "<#facc15>用 <cost> 碎片兌換</#facc15>"
+"cosmetics.item.trade-hint": "<#facc15>Shift + 左鍵：用碎片兌換</#facc15>"
+"cosmetics.menu.shards": "<#c084fc>◆ <shards> 碎片</#c084fc>"
+"cosmetics.menu.machine-hint": "<#7b8aa0>點數可以在大廳的特效抽獎機抽特效。抽到已擁有的特效會變成碎片，碎片可以在這裡兌換您想要的特效。</#7b8aa0>"
+"cosmetics.not-owned": "<#f95738>您還沒有 <name><#f95738>。到大廳的特效抽獎機抽抽看，或在這裡用 <white><cost></white> 個碎片兌換。</#f95738>"
+"cosmetics.traded": "<#6dd3a0>已用 <white><cost></white> 個碎片兌換並裝備 <name><#6dd3a0>！</#6dd3a0>"
+"cosmetics.not-enough-shards": "<#f95738><name><#f95738> 需要 <white><cost></white> 個碎片，您有 <white><shards></white> 個。</#f95738>"
+"cosmetics.machine.label": "<gradient:#c084fc:#f472b6><bold>特效抽獎機</bold></gradient><newline><#cbd5e1>右鍵抽獎</#cbd5e1><newline><#facc15>☀ 每抽 <cost> 點數</#facc15>"
+"cosmetics.machine.title": "<#b7791f>✦</#b7791f> <#404040>特效抽獎機</#404040>"
+"cosmetics.machine.draw-one": "<#c084fc><bold>抽 1 次</bold></#c084fc>"
+"cosmetics.machine.draw-ten": "<#f472b6><bold>抽 10 次</bold></#f472b6>"
+"cosmetics.machine.cost": "<#facc15>☀ <cost> 點數</#facc15>"
+"cosmetics.machine.ten-lore": "<#7b8aa0>保證至少一個史詩以上。</#7b8aa0>"
+"cosmetics.machine.odds": "<#93c5fd><bold>機率</bold></#93c5fd>"
+"cosmetics.machine.odds-line": "<rarity> <#7b8aa0>·</#7b8aa0> <white><chance>%</white>"
+"cosmetics.machine.pity-epic": "<#c084fc><white><count></white> 抽內必出史詩以上</#c084fc>"
+"cosmetics.machine.pity-legendary": "<#fbbf24><white><count></white> 抽內必出傳說以上</#fbbf24>"
+"cosmetics.machine.duplicates": "<#7b8aa0>抽到已擁有的特效會變成碎片。</#7b8aa0>"
+"cosmetics.machine.collection": "<#93c5fd><bold>我的收藏</bold></#93c5fd>"
+"cosmetics.machine.collection-lore": "<#7b8aa0>裝備、預覽，或用碎片兌換特效。</#7b8aa0>"
+"cosmetics.machine.busy": "<#f95738>有人正在抽獎，請稍等一下。</#f95738>"
+"cosmetics.machine.not-enough": "<#f95738>需要 <white><cost></white> 點數，您有 <white><points></white> 點。</#f95738>"
+"cosmetics.machine.empty": "<#f95738>抽獎機裡沒有您能抽的特效。</#f95738>"
+"cosmetics.machine.drawing": "<#c084fc><bold><player></bold></#c084fc><newline><#cbd5e1>抽獎中……</#cbd5e1>"
+"cosmetics.machine.spotlight": "<white><bold><player></bold></white><newline><rarity> <name>"
+"cosmetics.machine.results": "<#c084fc><bold>✦ 抽獎結果</bold></#c084fc>"
+"cosmetics.machine.result-new": " <#7b8aa0>▸</#7b8aa0> <rarity> <name> <#6dd3a0><bold>新！</bold></#6dd3a0>"
+"cosmetics.machine.result-duplicate": " <#7b8aa0>▸</#7b8aa0> <rarity> <name> <#7b8aa0>· 已擁有，+<shards> 碎片</#7b8aa0>"
+"cosmetics.machine.results-footer": "<#7b8aa0>碎片：<#c084fc><shards></#c084fc> · 可在 /cosmetics 兌換</#7b8aa0>"
+"cosmetics.machine.broadcast": "<#c4b5fd>✦</#c4b5fd> <dark_gray>»</dark_gray> <#f4d35e><player></#f4d35e> <#cbd5e1>在特效抽獎機抽到了</#cbd5e1> <rarity> <name><#cbd5e1>！</#cbd5e1>"
+"cosmetics.machine.set": "<#6dd3a0>特效抽獎機 <white><id></white> 已設在那個方塊上。</#6dd3a0>"
+"cosmetics.machine.removed": "<#6dd3a0>已移除特效抽獎機 <white><id></white>。</#6dd3a0>"
+"cosmetics.machine.not-set": "<#f95738>沒有名為 <white><id></white> 的特效抽獎機。</#f95738>"
+"cosmetics.machine.look-at-block": "<#f95738>請看著要放抽獎機的方塊（6 格內）再試一次。</#f95738>"
+"cosmetics.machine.usage": "<#f4d35e><bold>/admin lobby machine</bold></#f4d35e> <#7b8aa0>用法：</#7b8aa0><newline> <#93c5fd>/admin lobby machine set <id></#93c5fd> <#7b8aa0>- 在您看著的方塊上放一台（新的，或移動原本的）</#7b8aa0><newline> <#93c5fd>/admin lobby machine remove <id></#93c5fd><newline> <#93c5fd>/admin lobby machine list</#93c5fd>"
+"admin.desc.machine": "- 放置、移動或移除特效抽獎機（大廳可以放好幾台）"
+"admin-help.syntax.lobby.machine": "<set|remove> <id> | list"
+"cosmetics.machine.list-header": "<#f4d35e><bold>特效抽獎機</bold></#f4d35e> <#7b8aa0>（<count> 台）</#7b8aa0>"
+"cosmetics.machine.list-entry": " <#7b8aa0>▸</#7b8aa0> <white><id></white> <#7b8aa0><world> <x>, <y>, <z></#7b8aa0>"
+"cosmetics.machine.list-empty": "<#7b8aa0>還沒有特效抽獎機，用 /admin lobby machine set <id> 放一台。</#7b8aa0>"
+# The lobby's 3D title: baked into the resource pack by scripts/lobby_title.py (run it after changing the text).
+"lobby-title.text": "試煉UHC"
+"lobby-title.set": "<#6dd3a0>大廳標題已放在這裡，面向你。</#6dd3a0>"
+"lobby-title.removed": "<#f4d35e>已移除大廳標題。</#f4d35e>"
+"lobby-title.usage": "<#f4d35e>用法：/admin lobby title <set|turn|remove></#f4d35e>"
+"lobby-title.turned": "<#6dd3a0>大廳標題已轉向另一面。</#6dd3a0>"
